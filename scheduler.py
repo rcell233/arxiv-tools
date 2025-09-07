@@ -104,7 +104,8 @@ def main():
     logger.info("🎯 论文收集定时任务调度器启动")
     logger.info("📅 任务时间: 每天北京时间 10:00 和 14:00")
     
-    # 设置定时任务 - 北京时间10:00和14:00
+    # 设置定时任务 - 北京时间10:00和14:00对应的UTC时间
+    # 北京时间比UTC快8小时，所以北京时间10:00 = UTC 02:00，北京时间14:00 = UTC 06:00
     schedule.every().day.at("02:00").do(daily_task)  # UTC 02:00 = 北京时间 10:00
     schedule.every().day.at("06:00").do(daily_task)  # UTC 06:00 = 北京时间 14:00
     
@@ -121,6 +122,32 @@ def main():
     try:
         while True:
             schedule.run_pending()
+            
+            # 显示距离下次任务的时间
+            next_run = schedule.next_run()
+            if next_run:
+                # 获取当前UTC时间（不带时区信息，与schedule库保持一致）
+                now = datetime.utcnow()
+                time_until_next = next_run - now
+                
+                # 转换为北京时间显示
+                beijing_next_run = next_run.replace(tzinfo=pytz.UTC).astimezone(beijing_tz)
+                beijing_now = now.replace(tzinfo=pytz.UTC).astimezone(beijing_tz)
+                
+                # 计算剩余时间
+                total_seconds = int(time_until_next.total_seconds())
+                if total_seconds < 0:
+                    total_seconds = 0  # 防止负数时间
+                
+                hours = total_seconds // 3600
+                minutes = (total_seconds % 3600) // 60
+                seconds = total_seconds % 60
+                
+                logger.info(f"⏰ 当前时间: {beijing_now.strftime('%Y-%m-%d %H:%M:%S')} (北京时间)")
+                logger.info(f"📅 下次任务: {beijing_next_run.strftime('%Y-%m-%d %H:%M:%S')} (北京时间)")
+                logger.info(f"⏳ 距离下次执行还有: {hours}小时 {minutes}分钟 {seconds}秒")
+                logger.info("-" * 40)
+            
             time.sleep(60)  # 每分钟检查一次
     except KeyboardInterrupt:
         logger.info("👋 接收到停止信号，正在退出...")
