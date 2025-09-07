@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArXiv 论文数据可视化</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            /* 滚动优化 */
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .controls {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 30px;
+        }
+
+        .controls-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f1f3f4;
+        }
+
+        .controls-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .stats-info {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-item .label {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            margin-top: 2px;
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .control-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .control-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .control-group select, .control-group input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .control-group select:focus, .control-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+
+        .papers-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .paper-card {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border-left: 4px solid #667eea;
+            /* 添加硬件加速和渲染优化 */
+            transform: translateZ(0);
+            will-change: transform;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            /* 强制使用实色背景避免闪烁 */
+            background-color: #ffffff;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .paper-header {
+            margin-bottom: 15px;
+        }
+
+        .paper-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .paper-title-zh {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .paper-link {
+            display: inline-flex;
+            align-items: center;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .paper-link:hover {
+            color: #764ba2;
+        }
+
+        .paper-link i {
+            margin-right: 5px;
+        }
+
+        .paper-authors {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            max-width: 800px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .paper-date {
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        .paper-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .tag.primary {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .tag.topic {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .tag.category {
+            background: #e8f5e8;
+            color: #388e3c;
+        }
+
+        .expand-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .expand-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .paper-abstract {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            display: none;
+        }
+
+        .paper-abstract.expanded {
+            display: block;
+        }
+
+        .abstract-section {
+            margin-bottom: 15px;
+        }
+
+        .abstract-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .abstract-text {
+            line-height: 1.6;
+            color: #34495e;
+            text-align: justify;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 50px;
+            color: #7f8c8d;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .no-results i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #bdc3c7;
+        }
+
+            @media (max-width: 768px) {
+                .controls-grid {
+                    grid-template-columns: 1fr;
+                }
+                
+                .controls-header {
+                    flex-direction: column;
+                    gap: 15px;
+                    text-align: center;
+                }
+                
+                .stats-info {
+                    gap: 20px;
+                }
+                
+                .header h1 {
+                    font-size: 2rem;
+                }
+                
+                .paper-meta {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            padding-left: 40px;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #7f8c8d;
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, #6488e5 0%, #764ba2 100%);
+            margin: 30px 0 20px 0;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .category-header h2 {
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .category-header h2 i {
+            font-size: 1.4rem;
+            opacity: 0.9;
+        }
+
+        .compact-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .compact-checkbox {
+            display: none;
+        }
+
+        .compact-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+            color: #495057;
+        }
+
+        .compact-label:hover {
+            background: #e9ecef;
+            border-color: #667eea;
+        }
+
+        .compact-checkbox:checked + .compact-label {
+            background: #667eea;
+            border-color: #667eea;
+            color: white;
+        }
+
+        /* 紧凑模式样式 */
+        .papers-grid.compact {
+            gap: 10px;
+        }
+
+        .paper-card.compact {
+            padding: 15px 20px;
+            margin-bottom: 0;
+            /* 继承父类的渲染优化 */
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .paper-card.compact .paper-header {
+            margin-bottom: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .paper-card.compact .paper-titles {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .paper-card.compact .paper-title {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .paper-card.compact .paper-title-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .paper-card.compact .paper-link-compact {
+            flex-shrink: 0;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #667eea;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .paper-card.compact .paper-link-compact:hover {
+            background: rgba(102, 126, 234, 0.1);
+            color: #764ba2;
+        }
+
+        .paper-card.compact .paper-title-zh {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        .paper-card.compact .paper-meta,
+        .paper-card.compact .paper-tags {
+            display: none;
+        }
+
+        .paper-card.compact .expand-btn {
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+            white-space: nowrap;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="controls">
+            <div class="controls-header">
+                <div class="controls-title">
+                    <i class="fas fa-filter"></i> 筛选与搜索
+                </div>
+                <div class="stats-info">
+                    <div class="stat-item">
+                        <span class="number" id="filteredPapers">0</span>
+                        <div class="label">当前显示</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number" id="totalPapers">0</span>
+                        <div class="label">总论文数</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls-grid">
+                <div class="control-group">
+                    <label for="dateSelect">选择日期</label>
+                    <select id="dateSelect">
+                        <option value="">加载中...</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="categoryFilter">按类别筛选</label>
+                    <select id="categoryFilter">
+                        <option value="">所有类别</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="topicFilter">按主题筛选</label>
+                    <select id="topicFilter">
+                        <option value="">所有主题</option>
+                    </select>
+                </div>
+                
+                
+                <div class="control-group">
+                    <label for="compactMode">显示模式</label>
+                    <div class="compact-toggle">
+                        <input type="checkbox" id="compactMode" class="compact-checkbox">
+                        <label for="compactMode" class="compact-label">
+                            <i class="fas fa-list"></i> 紧凑模式
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="loadingMessage" class="loading">
+            <i class="fas fa-spinner fa-spin"></i> 正在加载数据...
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h3>未找到匹配的论文</h3>
+            <p>请尝试调整筛选条件或搜索关键词</p>
+        </div>
+
+        <div id="papersContainer" class="papers-grid"></div>
+    </div>
+
+    <script>
+        class PaperVisualization {
+            constructor() {
+                this.allPapers = [];
+                this.currentPapers = [];
+                this.availableDates = [];
+                this.categories = new Set();
+                this.topics = new Set();
+                
+                this.initializeElements();
+                this.attachEventListeners();
+                this.loadInitialData();
+            }
+
+            initializeElements() {
+                this.dateSelect = document.getElementById('dateSelect');
+                this.categoryFilter = document.getElementById('categoryFilter');
+                this.topicFilter = document.getElementById('topicFilter');
+                this.compactMode = document.getElementById('compactMode');
+                this.papersContainer = document.getElementById('papersContainer');
+                this.loadingMessage = document.getElementById('loadingMessage');
+                this.noResults = document.getElementById('noResults');
+                
+                this.totalPapersEl = document.getElementById('totalPapers');
+                this.filteredPapersEl = document.getElementById('filteredPapers');
+            }
+
+            attachEventListeners() {
+                this.dateSelect.addEventListener('change', () => this.onDateChange());
+                this.categoryFilter.addEventListener('change', () => this.applyFilters());
+                this.topicFilter.addEventListener('change', () => this.applyFilters());
+                this.compactMode.addEventListener('change', () => this.toggleCompactMode());
+            }
+
+            async loadInitialData() {
+                try {
+                    const response = await fetch('./data/index.json');
+                    const indexData = await response.json();
+                    this.availableDates = indexData.dates.sort().reverse(); // 最新日期在前
+                    
+                    this.populateDateSelect();
+                    
+                    // 默认加载最新日期的数据
+                    if (this.availableDates.length > 0) {
+                        this.dateSelect.value = this.availableDates[0];
+                        await this.loadPapersForDate(this.availableDates[0]);
+                    }
+                } catch (error) {
+                    console.error('加载索引数据失败:', error);
+                    this.showError('加载数据失败，请刷新页面重试');
+                }
+            }
+
+            populateDateSelect() {
+                this.dateSelect.innerHTML = '';
+                this.availableDates.forEach(date => {
+                    const option = document.createElement('option');
+                    option.value = date;
+                    option.textContent = this.formatDate(date);
+                    this.dateSelect.appendChild(option);
+                });
+            }
+
+            async onDateChange() {
+                const selectedDate = this.dateSelect.value;
+                if (selectedDate) {
+                    await this.loadPapersForDate(selectedDate);
+                }
+            }
+
+            async loadPapersForDate(date) {
+                this.showLoading();
+                try {
+                    const response = await fetch(`./data/papers/${date}.json`);
+                    const papers = await response.json();
+                    
+                    this.allPapers = papers;
+                    this.extractFiltersData();
+                    this.populateFilters();
+                    this.applyFilters();
+                    this.updateStats();
+                } catch (error) {
+                    console.error('加载论文数据失败:', error);
+                    this.showError('加载论文数据失败');
+                }
+            }
+
+            extractFiltersData() {
+                this.categories.clear();
+                this.topics.clear();
+
+                this.allPapers.forEach(paper => {
+                    if (paper.category) {
+                        paper.category.forEach(cat => this.categories.add(cat));
+                    }
+                    if (paper.topic) {
+                        paper.topic.forEach(topic => this.topics.add(topic));
+                    }
+                });
+            }
+
+            populateFilters() {
+                // 按照指定顺序排列类别，而不是字母顺序
+                const categoryOrder = ['Music', 'Speech', 'Other', 'Image'];
+                const sortedCategories = [];
+                
+                // 先添加按顺序的类别
+                categoryOrder.forEach(orderCategory => {
+                    if (this.categories.has(orderCategory)) {
+                        sortedCategories.push(orderCategory);
+                    }
+                });
+                
+                // 再添加其他未在顺序中的类别（字母排序）
+                Array.from(this.categories).sort().forEach(category => {
+                    if (!categoryOrder.includes(category)) {
+                        sortedCategories.push(category);
+                    }
+                });
+                
+                this.populateSelect(this.categoryFilter, sortedCategories, '所有类别');
+                this.populateSelect(this.topicFilter, Array.from(this.topics).sort(), '所有主题');
+            }
+
+            populateSelect(selectElement, options, defaultText) {
+                const currentValue = selectElement.value;
+                selectElement.innerHTML = `<option value="">${defaultText}</option>`;
+                
+                options.forEach(option => {
+                    const optionElement = document.createElement('option');
+                    optionElement.value = option;
+                    optionElement.textContent = option;
+                    selectElement.appendChild(optionElement);
+                });
+                
+                selectElement.value = currentValue;
+            }
+
+            applyFilters() {
+                const categoryFilter = this.categoryFilter.value;
+                const topicFilter = this.topicFilter.value;
+
+                this.currentPapers = this.allPapers.filter(paper => {
+                    // 类别筛选
+                    if (categoryFilter && (!paper.category || !paper.category.includes(categoryFilter))) {
+                        return false;
+                    }
+                    
+                    // 主题筛选
+                    if (topicFilter && (!paper.topic || !paper.topic.includes(topicFilter))) {
+                        return false;
+                    }
+                    
+                    return true;
+                });
+
+                this.renderPapers();
+                this.updateFilteredCount();
+            }
+
+            toggleCompactMode() {
+                const isCompact = this.compactMode.checked;
+                if (isCompact) {
+                    this.papersContainer.classList.add('compact');
+                } else {
+                    this.papersContainer.classList.remove('compact');
+                }
+                this.renderPapers();
+            }
+
+            renderPapers() {
+                this.hideLoading();
+                
+                if (this.currentPapers.length === 0) {
+                    this.showNoResults();
+                    return;
+                }
+                
+                this.hideNoResults();
+                
+                // 按照 category 顺序排序并分组论文
+                const groupedPapers = this.groupPapersByCategory(this.currentPapers);
+                
+                this.papersContainer.innerHTML = '';
+                groupedPapers.forEach(group => {
+                    // 添加分类标题
+                    const categoryHeader = this.createCategoryHeader(group.category);
+                    this.papersContainer.appendChild(categoryHeader);
+                    
+                    // 添加该分类下的论文
+                    group.papers.forEach(paper => {
+                        const paperCard = this.createPaperCard(paper);
+                        this.papersContainer.appendChild(paperCard);
+                    });
+                });
+            }
+
+            groupPapersByCategory(papers) {
+                const categoryOrder = ['music', 'speech', 'other', 'image'];
+                const categoryNames = {
+                    'music': '音乐处理 Music Processing', 
+                    'speech': '语音处理 Speech Processing',
+                    'other': '其他音频论文 Others',
+                    'image': '图像处理 Image Processing'
+                };
+                
+                // 先按照原来的方式排序
+                const sortedPapers = this.sortPapersByCategory(papers);
+                
+                // 然后按照 category 分组
+                const groups = [];
+                let currentGroup = null;
+                
+                sortedPapers.forEach(paper => {
+                    const paperCategory = this.getPaperMainCategory(paper);
+                    
+                    if (!currentGroup || currentGroup.category !== paperCategory) {
+                        currentGroup = {
+                            category: paperCategory,
+                            displayName: categoryNames[paperCategory] || paperCategory,
+                            papers: []
+                        };
+                        groups.push(currentGroup);
+                    }
+                    
+                    currentGroup.papers.push(paper);
+                });
+                
+                return groups;
+            }
+
+            sortPapersByCategory(papers) {
+                const categoryOrder = ['music', 'speech', 'other', 'image'];
+                
+                return papers.sort((a, b) => {
+                    const priorityA = this.getCategoryPriority(a);
+                    const priorityB = this.getCategoryPriority(b);
+                    
+                    return priorityA - priorityB;
+                });
+            }
+
+            getPaperMainCategory(paper) {
+                const categoryOrder = ['music', 'speech', 'other', 'image'];
+                
+                if (!paper.category || paper.category.length === 0) {
+                    return 'uncategorized';
+                }
+                
+                // 查找论文的 category 中最高优先级的分类
+                for (let category of paper.category) {
+                    const found = categoryOrder.find(cat => cat.toLowerCase() === category.toLowerCase());
+                    if (found) {
+                        return found;
+                    }
+                }
+                return 'uncategorized';
+            }
+
+            getCategoryPriority(paper) {
+                const categoryOrder = ['music', 'speech', 'other', 'image'];
+                const mainCategory = this.getPaperMainCategory(paper);
+                const index = categoryOrder.indexOf(mainCategory);
+                return index !== -1 ? index : categoryOrder.length;
+            }
+
+            createCategoryHeader(category) {
+                const header = document.createElement('div');
+                header.className = 'category-header';
+                
+                const categoryNames = {
+                    'music': '音乐处理 Music Processing', 
+                    'speech': '语音处理 Speech Processing',
+                    'other': '其他音频论文 Others',
+                    'image': '图像处理 Image Processing',
+                    'uncategorized': '未分类 Uncategorized'
+                };
+                
+                const displayName = categoryNames[category] || category;
+                
+                header.innerHTML = `
+                    <h2><i class="fas fa-folder-open"></i> ${displayName}</h2>
+                `;
+                
+                return header;
+            }
+
+            createPaperCard(paper) {
+                const card = document.createElement('div');
+                const isCompact = this.compactMode.checked;
+                card.className = isCompact ? 'paper-card compact' : 'paper-card';
+                
+                if (isCompact) {
+                    // 紧凑模式：标题行包含论文链接，展开按钮在右侧
+                    card.innerHTML = `
+                        <div class="paper-header">
+                            <div class="paper-titles">
+                                <h3 class="paper-title">
+                                    <span class="paper-title-text">${this.escapeHtml(paper.paper_title)}</span>
+                                    <a href="https://arxiv.org/abs/${paper.paper_id}" target="_blank" class="paper-link-compact">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        ${paper.paper_id}
+                                    </a>
+                                </h3>
+                                ${paper.paper_title_zh ? `<p class="paper-title-zh">${this.escapeHtml(paper.paper_title_zh)}</p>` : ''}
+                            </div>
+                            <button class="expand-btn" onclick="toggleAbstract(this)">
+                                <i class="fas fa-chevron-down"></i> 详情
+                            </button>
+                        </div>
+                        
+                        <div class="paper-abstract">
+                            <div class="paper-meta">
+                                <a href="https://arxiv.org/abs/${paper.paper_id}" target="_blank" class="paper-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    ${paper.paper_id}
+                                </a>
+                                <span class="paper-authors">
+                                    <i class="fas fa-users"></i>
+                                    ${this.escapeHtml(this.truncateText(paper.paper_authors, 120))}
+                                </span>
+                                <span class="paper-date">
+                                    <i class="fas fa-calendar"></i>
+                                    ${this.formatDate(paper.update_time)}
+                                </span>
+                            </div>
+                            
+                            <div class="paper-tags">
+                                <span class="tag primary">${paper.primary_category}</span>
+                                ${paper.category ? paper.category.map(cat => `<span class="tag category">${cat}</span>`).join('') : ''}
+                                ${paper.topic ? paper.topic.map(topic => `<span class="tag topic">${topic}</span>`).join('') : ''}
+                            </div>
+                            
+                            <div class="abstract-section">
+                                <div class="abstract-title">英文摘要:</div>
+                                <div class="abstract-text">${this.escapeHtml(paper.paper_abstract)}</div>
+                            </div>
+                            ${paper.paper_abstract_zh ? `
+                            <div class="abstract-section">
+                                <div class="abstract-title">中文摘要:</div>
+                                <div class="abstract-text">${this.escapeHtml(paper.paper_abstract_zh)}</div>
+                            </div>
+                            ` : ''}
+                        </div>
+                    `;
+                } else {
+                    // 普通模式：显示所有信息
+                    card.innerHTML = `
+                        <div class="paper-header">
+                            <h3 class="paper-title">${this.escapeHtml(paper.paper_title)}</h3>
+                            ${paper.paper_title_zh ? `<p class="paper-title-zh">${this.escapeHtml(paper.paper_title_zh)}</p>` : ''}
+                        </div>
+                        
+                        <div class="paper-meta">
+                            <a href="https://arxiv.org/abs/${paper.paper_id}" target="_blank" class="paper-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                ${paper.paper_id}
+                            </a>
+                            <span class="paper-authors">
+                                <i class="fas fa-users"></i>
+                                ${this.escapeHtml(this.truncateText(paper.paper_authors, 120))}
+                            </span>
+                            <span class="paper-date">
+                                <i class="fas fa-calendar"></i>
+                                ${this.formatDate(paper.update_time)}
+                            </span>
+                        </div>
+                        
+                        <div class="paper-tags">
+                            <span class="tag primary">${paper.primary_category}</span>
+                            ${paper.category ? paper.category.map(cat => `<span class="tag category">${cat}</span>`).join('') : ''}
+                            ${paper.topic ? paper.topic.map(topic => `<span class="tag topic">${topic}</span>`).join('') : ''}
+                        </div>
+                        
+                        <button class="expand-btn" onclick="toggleAbstract(this)">
+                            <i class="fas fa-chevron-down"></i> 展开详情
+                        </button>
+                        
+                        <div class="paper-abstract">
+                            <div class="abstract-section">
+                                <div class="abstract-title">英文摘要:</div>
+                                <div class="abstract-text">${this.escapeHtml(paper.paper_abstract)}</div>
+                            </div>
+                            ${paper.paper_abstract_zh ? `
+                            <div class="abstract-section">
+                                <div class="abstract-title">中文摘要:</div>
+                                <div class="abstract-text">${this.escapeHtml(paper.paper_abstract_zh)}</div>
+                            </div>
+                            ` : ''}
+                        </div>
+                    `;
+                }
+                
+                return card;
+            }
+
+            updateStats() {
+                this.totalPapersEl.textContent = this.allPapers.length;
+            }
+
+            updateFilteredCount() {
+                this.filteredPapersEl.textContent = this.currentPapers.length;
+            }
+
+            formatDate(dateStr) {
+                const date = new Date(dateStr);
+                return date.toLocaleDateString('zh-CN', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+            }
+
+            escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+
+            truncateText(text, maxLength = 80) {
+                if (!text) return '';
+                if (text.length <= maxLength) return text;
+                return text.substring(0, maxLength) + '...';
+            }
+
+            showLoading() {
+                this.loadingMessage.style.display = 'block';
+                this.papersContainer.style.display = 'none';
+                this.noResults.style.display = 'none';
+            }
+
+            hideLoading() {
+                this.loadingMessage.style.display = 'none';
+                this.papersContainer.style.display = 'grid';
+            }
+
+            showNoResults() {
+                this.noResults.style.display = 'block';
+                this.papersContainer.style.display = 'none';
+            }
+
+            hideNoResults() {
+                this.noResults.style.display = 'none';
+            }
+
+            showError(message) {
+                this.loadingMessage.innerHTML = `<i class="fas fa-exclamation-triangle"></i> ${message}`;
+            }
+        }
+
+        // 切换摘要显示的函数
+        function toggleAbstract(button) {
+            // 找到论文卡片容器
+            const paperCard = button.closest('.paper-card');
+            const abstractDiv = paperCard.querySelector('.paper-abstract');
+            const icon = button.querySelector('i');
+            const isCompact = paperCard.classList.contains('compact');
+            
+            if (abstractDiv.classList.contains('expanded')) {
+                abstractDiv.classList.remove('expanded');
+                icon.className = 'fas fa-chevron-down';
+                button.innerHTML = isCompact ? 
+                    '<i class="fas fa-chevron-down"></i> 详情' : 
+                    '<i class="fas fa-chevron-down"></i> 展开详情';
+            } else {
+                abstractDiv.classList.add('expanded');
+                icon.className = 'fas fa-chevron-up';
+                button.innerHTML = isCompact ? 
+                    '<i class="fas fa-chevron-up"></i> 收起' : 
+                    '<i class="fas fa-chevron-up"></i> 收起详情';
+            }
+        }
+
+        // 初始化应用
+        document.addEventListener('DOMContentLoaded', () => {
+            new PaperVisualization();
+        });
+    </script>
+</body>
+</html>
