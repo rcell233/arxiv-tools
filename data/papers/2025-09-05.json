@@ -374,22 +374,6 @@
     ]
   },
   {
-    "paper_title": "Extending FKG.in: Towards a Food Claim Traceability Network",
-    "paper_title_zh": "扩展 FKG.in：构建食品声明可追溯网络",
-    "paper_id": "2508.16117v2",
-    "paper_abstract": "The global food landscape is rife with scientific, cultural, and commercial claims about what foods are, what they do, what they should not do, or should not do. These range from rigorously studied health benefits (probiotics improve gut health) and misrepresentations (soaked almonds make one smarter) to vague promises (superfoods boost immunity) and culturally rooted beliefs (cold foods cause coughs). Despite their widespread influence, the infrastructure for tracing, verifying, and contextualizing these claims remains fragmented and underdeveloped. In this paper, we propose a Food Claim-Traceability Network (FCN) as an extension of FKG[.]in, a knowledge graph of Indian food that we have been incrementally building. We also present the ontology design and the semi-automated knowledge curation workflow that we used to develop a proof of concept of FKG[.]in-FCN using Reddit data and Large Language Models. FCN integrates curated data inputs, structured schemas, and provenance-aware pipelines for food-related claim extraction and validation. While directly linked to the Indian food knowledge graph as an application, our methodology remains application-agnostic and adaptable to other geographic, culinary, or regulatory settings. By modeling food claims and their traceability in a structured, verifiable, and explainable way, we aim to contribute to more transparent and accountable food knowledge ecosystems, supporting researchers, policymakers, and most importantly, everyday consumers in navigating a world saturated with dietary assertions.",
-    "paper_abstract_zh": "全球食品领域充斥着关于食品功效、禁忌与文化的各种科学、传统与商业声明：从经严谨研究的益生菌有益肠道，到“泡杏仁更聪明”的误导，再到“超级食物增强免疫力”的模糊承诺以及“寒凉食物致咳”的文化观念。尽管这些声明影响广泛，但其追踪、验证与情境化的基础设施仍零散且薄弱。本文提出食品声明可追溯网络（FCN），作为我们持续构建的印度食品知识图谱 FKG.in 的延伸。我们给出本体设计方案与半自动知识管理流程，利用 Reddit 数据与大语言模型构建 FKG.in-FCN 的概念验证。FCN 整合 curated 数据输入、结构化模式与可追溯管道，实现食品相关声明的抽取与验证。虽与印度食品知识图谱直接关联，但方法本身与地域、菜系或监管环境无关，可灵活迁移。通过以结构化、可验证且可解释的方式建模食品声明及其可追溯链，我们旨在推动更透明、可信的食品知识生态，助力研究者、政策制定者，尤其是普通消费者，在充斥饮食断言的世界中明辨真伪。",
-    "primary_category": "cs.AI",
-    "update_time": "2025-09-04",
-    "paper_authors": "Saransh Kumar Gupta, Rizwan Gulzar Mir, Lipika Dey, Partha Pratim Das, Anirban Sen, Ramesh Jain",
-    "topic": [
-      "Music Information Retrieval"
-    ],
-    "category": [
-      "Music"
-    ]
-  },
-  {
     "paper_title": "Synthesizing Sheet Music Problems for Evaluation and Reinforcement Learning",
     "paper_title_zh": "面向评估与强化学习的乐谱题目合成",
     "paper_id": "2509.04059v1",
