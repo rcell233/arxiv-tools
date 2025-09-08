@@ -1,10 +1,10 @@
 [
   {
     "paper_title": "WenetSpeech-Yue: A Large-scale Cantonese Speech Corpus with Multi-dimensional Annotation",
-    "paper_title_zh": "",
+    "paper_title_zh": "WenetSpeech-Yue：一个带有多维度标注的大规模粤语语音语料库",
     "paper_id": "2509.03959v2",
     "paper_abstract": "The development of speech understanding and generation has been significantly accelerated by the availability of large-scale, high-quality speech datasets. Among these, ASR and TTS are regarded as the most established and fundamental tasks. However, for Cantonese (Yue Chinese), spoken by approximately 84.9 million native speakers worldwide, limited annotated resources have hindered progress and resulted in suboptimal ASR and TTS performance. To address this challenge, we propose WenetSpeech-Pipe, an integrated pipeline for building large-scale speech corpus with multi-dimensional annotation tailored for speech understanding and generation. It comprises six modules: Audio Collection, Speaker Attributes Annotation, Speech Quality Annotation, Automatic Speech Recognition, Text Postprocessing and Recognizer Output Voting, enabling rich and high-quality annotations. Based on this pipeline, we release WenetSpeech-Yue, the first large-scale Cantonese speech corpus with multi-dimensional annotation for ASR and TTS, covering 21,800 hours across 10 domains with annotations including ASR transcription, text confidence, speaker identity, age, gender, speech quality scores, among other annotations. We also release WSYue-eval, a comprehensive Cantonese benchmark with two components: WSYue-ASR-eval, a manually annotated set for evaluating ASR on short and long utterances, code-switching, and diverse acoustic conditions, and WSYue-TTS-eval, with base and coverage subsets for standard and generalization testing. Experimental results show that models trained on WenetSpeech-Yue achieve competitive results against state-of-the-art (SOTA) Cantonese ASR and TTS systems, including commercial and LLM-based models, highlighting the value of our dataset and pipeline.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "大规模高质量语音数据集的可用性极大推动了语音理解与生成的发展，其中自动语音识别（ASR）与语音合成（TTS）被视为最成熟且基础的任务。然而，对于全球约8490万母语使用者的粤语（粤方言），有限的标注资源阻碍了研究进展，导致ASR与TTS性能欠佳。为此，我们提出WenetSpeech-Pipe——一套面向语音理解与生成、可构建大规模多维度标注语音语料库的集成流水线。该流水线包含音频采集、说话人属性标注、语音质量标注、自动语音识别、文本后处理及识别结果投票六大模块，可生成丰富且高质量的多维标注。基于该流水线，我们发布首个大规模多维度标注粤语语料库WenetSpeech-Yue，涵盖10大领域共21800小时语音，标注内容包括ASR转写、文本置信度、说话人身份、年龄、性别、语音质量评分等。同时，我们推出综合粤语评测基准WSYue-eval，包含两部分：WSYue-ASR-eval为人工标注集，用于评估短句、长句、语码转换及多样声学条件下的ASR性能；WSYue-TTS-eval则提供基础与覆盖两个子集，分别用于标准测试与泛化测试。实验表明，基于WenetSpeech-Yue训练的模型在粤语ASR与TTS任务上可与最先进的商业及大模型系统竞争，凸显本数据集与流水线的价值。",
     "primary_category": "cs.SD",
     "update_time": "2025-09-05",
     "paper_authors": "Longhao Li, Zhao Guo, Hongjie Chen, Yuhang Dai, Ziyu Zhang, Hongfei Xue, Tianlun Zuo, Chengyou Wang, Shuiyuan Wang, Jie Li, Jian Kang, Xin Xu, Hui Bu, Binbin Zhang, Ruibin Yuan, Ziya Zhou, Wei Xue, Lei Xie",
@@ -18,10 +18,10 @@
   },
   {
     "paper_title": "Exploring persuasive interactions with generative social robots: An experimental framework",
-    "paper_title_zh": "",
+    "paper_title_zh": "探索生成式社交机器人的说服交互：一个实验框架",
     "paper_id": "2509.03231v2",
     "paper_abstract": "Integrating generative AI such as Large Language Models into social robots has improved their ability to engage in natural, human-like communication. This study presents a method to examine their persuasive capabilities. We designed an experimental framework focused on decision making and tested it in a pilot that varied robot appearance and self-knowledge. Using qualitative analysis, we evaluated interaction quality, persuasion effectiveness, and the robot's communicative strategies. Participants generally experienced the interaction positively, describing the robot as competent, friendly, and supportive, while noting practical limits such as delayed responses and occasional speech-recognition errors. Persuasiveness was highly context dependent and shaped by robot behavior: Participants responded well to polite, reasoned suggestions and expressive gestures, but emphasized the need for more personalized, context-aware arguments and clearer social roles. These findings suggest that generative social robots can influence user decisions, but their effectiveness depends on communicative nuance and contextual relevance. We propose refinements to the framework to further study persuasive dynamics between robots and human users.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "将大语言模型等生成式AI集成到社交机器人中，显著提升了其自然、类人交互的能力。本研究提出一套用于检验机器人说服力的实验方法。我们围绕决策场景设计实验框架，并在试点研究中通过改变机器人外观与自我知识进行测试。借助定性分析，我们评估了交互质量、说服效果以及机器人的沟通策略。参与者普遍对交互体验持积极态度，认为机器人能干、友好且支持性强，同时也指出响应延迟和偶尔语音识别错误等实际局限。说服效果高度依赖情境，并受机器人行为影响：参与者对礼貌、有理有据的建议及富有表现力的手势反应良好，但强调需要更个性化、情境感知的论据以及更清晰的社会角色定位。研究结果表明，生成式社交机器人能够影响用户决策，但其有效性取决于沟通细节与情境相关性。我们进一步提出对该框架的改进建议，以深入探究机器人与用户之间的说服动态。",
     "primary_category": "cs.RO",
     "update_time": "2025-09-05",
     "paper_authors": "Stephan Vonschallen, Larissa Julia Corina Finsler, Theresa Schmiedel, Friederike Eyssel",
@@ -34,10 +34,10 @@
   },
   {
     "paper_title": "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets",
-    "paper_title_zh": "",
+    "paper_title_zh": "利用GFlowNet分布对齐缓解基于语言模型的TTS幻觉",
     "paper_id": "2508.15442v3",
     "paper_abstract": "Language Model (LM)-based Text-to-Speech (TTS) systems often generate hallucinated speech that deviates from input text. Existing mitigation strategies either demand excessive training resources or introduce significant inference latency. In this paper, we propose GFlOwNet-guided distribution AlignmenT (GOAT) for LM-based TTS, a post-training framework that mitigates hallucinations without relying on massive resources or inference cost. Specifically, we first conduct an uncertainty analysis, revealing a strong positive correlation between hallucination and model uncertainty. Based on this, we reformulate TTS generation as a trajectory flow optimization problem and introduce an enhanced Subtrajectory Balance objective together with a sharpened internal reward as target distribution. We further integrate reward temperature decay and learning rate optimization for stability and performance balance. Extensive experiments show that GOAT reduce over 50% character error rates on challenging test cases and lowering uncertainty by up to 58%, demonstrating its strong generalization ability and effectiveness.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "基于语言模型（LM）的文本到语音（TTS）系统常生成偏离输入文本的幻觉语音。现有缓解策略要么需要大量训练资源，要么显著增加推理延迟。本文提出GFlowNet引导的分布对齐（GOAT）框架，用于LM-based TTS的后训练，无需庞大资源或推理开销即可抑制幻觉。具体而言，我们首先进行不确定性分析，发现幻觉与模型不确定性呈强正相关。基于此，将TTS生成重新表述为轨迹流优化问题，引入增强的子轨迹平衡目标及锐化的内部奖励作为目标分布。进一步融入奖励温度衰减与学习率优化，以平衡稳定性与性能。大量实验表明，GOAT在挑战性测试集上降低50%以上的字符错误率，不确定性最多下降58%，展现出强大的泛化能力与有效性。",
     "primary_category": "eess.AS",
     "update_time": "2025-09-05",
     "paper_authors": "Chenlin Liu, Minghui Fang, Patrick Zhang, Wei Zhou, Jie Gao, Jiqing Han",
@@ -50,10 +50,10 @@
   },
   {
     "paper_title": "InfoScale: Unleashing Training-free Variable-scaled Image Generation via Effective Utilization of Information",
-    "paper_title_zh": "",
+    "paper_title_zh": "InfoScale：通过高效信息利用实现免训练可变分辨率图像生成",
     "paper_id": "2509.01421v2",
     "paper_abstract": "Diffusion models (DMs) have become dominant in visual generation but suffer performance drop when tested on resolutions that differ from the training scale, whether lower or higher. In fact, the key challenge in generating variable-scale images lies in the differing amounts of information across resolutions, which requires information conversion procedures to be varied for generating variable-scaled images. In this paper, we investigate the issues of three critical aspects in DMs for a unified analysis in variable-scaled generation: dilated convolution, attention mechanisms, and initial noise. Specifically, 1) dilated convolution in DMs for the higher-resolution generation loses high-frequency information. 2) Attention for variable-scaled image generation struggles to adjust the information aggregation adaptively. 3) The spatial distribution of information in the initial noise is misaligned with variable-scaled image. To solve the above problems, we propose \\textbf{InfoScale}, an information-centric framework for variable-scaled image generation by effectively utilizing information from three aspects correspondingly. For information loss in 1), we introduce Progressive Frequency Compensation module to compensate for high-frequency information lost by dilated convolution in higher-resolution generation. For information aggregation inflexibility in 2), we introduce Adaptive Information Aggregation module to adaptively aggregate information in lower-resolution generation and achieve an effective balance between local and global information in higher-resolution generation. For information distribution misalignment in 3), we design Noise Adaptation module to re-distribute information in initial noise for variable-scaled generation. Our method is plug-and-play for DMs and extensive experiments demonstrate the effectiveness in variable-scaled image generation.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "扩散模型（DMs）已成为视觉生成的主流，但在与训练分辨率不同的更高或更低分辨率测试时性能下降。可变分辨率图像生成的关键在于不同分辨率所含信息量不同，需对信息转换过程进行相应调整。本文对DMs中三个关键方面进行统一分析：膨胀卷积、注意力机制与初始噪声。具体而言：1）用于高分辨率生成的膨胀卷积会丢失高频信息；2）可变分辨率生成中的注意力难以自适应调整信息聚合；3）初始噪声的空间信息分布与可变分辨率图像不匹配。针对上述问题，我们提出以信息为中心的框架InfoScale，从三方面有效利用信息：针对1）的信息损失，引入渐进频率补偿模块，补偿高分辨率生成中膨胀卷积丢失的高频信息；针对2）的聚合不灵活，引入自适应信息聚合模块，在低分辨率生成中自适应聚合信息，并在高分辨率生成中平衡局部与全局信息；针对3）的分布错位，设计噪声适配模块，对初始噪声进行信息重分布以实现可变分辨率生成。该方法即插即用，大量实验验证了其在可变分辨率图像生成中的有效性。",
     "primary_category": "cs.CV",
     "update_time": "2025-09-05",
     "paper_authors": "Guohui Zhang, Jiangtong Tan, Linjiang Huang, Zhonghang Yuan, Naishan Zheng, Jie Huang, Feng Zhao",
@@ -66,10 +66,10 @@
   },
   {
     "paper_title": "Semi-Supervised Bayesian GANs with Log-Signatures for Uncertainty-Aware Credit Card Fraud Detection",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于对数签名的半监督贝叶斯GAN用于不确定性感知的信用卡欺诈检测",
     "paper_id": "2509.00931v2",
     "paper_abstract": "We present a novel deep generative semi-supervised framework for credit card fraud detection, formulated as time series classification task. As financial transaction data streams grow in scale and complexity, traditional methods often require large labeled datasets, struggle with time series of irregular sampling frequencies and varying sequence lengths. To address these challenges, we extend conditional Generative Adversarial Networks (GANs) for targeted data augmentation, integrate Bayesian inference to obtain predictive distributions and quantify uncertainty, and leverage log-signatures for robust feature encoding of transaction histories. We introduce a novel Wasserstein distance-based loss to align generated and real unlabeled samples while simultaneously maximizing classification accuracy on labeled data. Our approach is evaluated on the BankSim dataset, a widely used simulator for credit card transaction data, under varying proportions of labeled samples, demonstrating consistent improvements over benchmarks in both global statistical and domain-specific metrics. These findings highlight the effectiveness of GAN-driven semi-supervised learning with log-signatures for irregularly sampled time series and emphasize the importance of uncertainty-aware predictions.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们提出一种新颖的深度生成半监督框架，将信用卡欺诈检测形式化为时间序列分类任务。随着金融交易数据流规模与复杂度的增长，传统方法往往需要大量标注数据，且难以处理采样频率不规则、序列长度不一的时间序列。为此，我们扩展条件生成对抗网络（GAN）以实现针对性数据增强，集成贝叶斯推理以获得预测分布并量化不确定性，并利用对数签名对交易历史进行鲁棒特征编码。我们引入基于Wasserstein距离的新损失函数，在最大化标注数据分类准确率的同时，对齐生成样本与真实无标注样本的分布。该方法在广泛使用的信用卡交易模拟数据集BankSim上，于不同标注比例下进行评估，在全球统计指标与领域特定指标上均持续优于基准方法。结果凸显了GAN驱动的半监督学习结合对数签名在不规则采样时间序列中的有效性，并强调了不确定性感知预测的重要性。",
     "primary_category": "stat.ML",
     "update_time": "2025-09-05",
     "paper_authors": "David Hirnschall",
@@ -82,10 +82,10 @@
   },
   {
     "paper_title": "TPA: Temporal Prompt Alignment for Fetal Congenital Heart Defect Classification",
-    "paper_title_zh": "",
+    "paper_title_zh": "TPA：面向胎儿先天性心脏缺陷分类的时间提示对齐方法",
     "paper_id": "2508.15298v5",
     "paper_abstract": "Congenital heart defect (CHD) detection in ultrasound videos is hindered by image noise and probe positioning variability. While automated methods can reduce operator dependence, current machine learning approaches often neglect temporal information, limit themselves to binary classification, and do not account for prediction calibration. We propose Temporal Prompt Alignment (TPA), a method leveraging foundation image-text model and prompt-aware contrastive learning to classify fetal CHD on cardiac ultrasound videos. TPA extracts features from each frame of video subclips using an image encoder, aggregates them with a trainable temporal extractor to capture heart motion, and aligns the video representation with class-specific text prompts via a margin-hinge contrastive loss. To enhance calibration for clinical reliability, we introduce a Conditional Variational Autoencoder Style Modulation (CVAESM) module, which learns a latent style vector to modulate embeddings and quantifies classification uncertainty. Evaluated on a private dataset for CHD detection and on a large public dataset, EchoNet-Dynamic, for systolic dysfunction, TPA achieves state-of-the-art macro F1 scores of 85.40% for CHD diagnosis, while also reducing expected calibration error by 5.38% and adaptive ECE by 6.8%. On EchoNet-Dynamic's three-class task, it boosts macro F1 by 4.73% (from 53.89% to 58.62%). Temporal Prompt Alignment (TPA) is a framework for fetal congenital heart defect (CHD) classification in ultrasound videos that integrates temporal modeling, prompt-aware contrastive learning, and uncertainty quantification.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "超声视频中的先天性心脏缺陷（CHD）检测受图像噪声和探头位置变化的影响。尽管自动化方法可降低对操作者的依赖，现有机器学习方案常忽视时间信息、仅做二分类且未考虑预测校准。我们提出时间提示对齐（TPA），利用基础图文模型与提示感知对比学习，在心脏超声视频中进行胎儿CHD分类。TPA先用图像编码器提取视频子剪辑各帧特征，再用可训练的时间聚合器捕捉心脏运动，并通过带间隔的铰链对比损失将视频表征与类别文本提示对齐。为提升临床所需的校准性，我们引入条件变分自编码器风格调制模块（CVAESM），学习潜在风格向量以调制嵌入并量化分类不确定性。在私有CHD数据集与公开EchoNet-Dynamic数据集（用于收缩功能障碍）上的实验表明，TPA在CHD诊断中取得85.40%的宏观F1，并将期望校准误差降低5.38%、自适应ECE降低6.8%。在EchoNet-Dynamic三分类任务中，宏观F1提升4.73%（53.89%→58.62%）。TPA通过整合时间建模、提示感知对比学习与不确定性量化，为胎儿CHD分类提供了新框架。",
     "primary_category": "cs.CV",
     "update_time": "2025-09-05",
     "paper_authors": "Darya Taratynova, Alya Almsouti, Beknur Kalmakhanbet, Numan Saeed, Mohammad Yaqub",
@@ -94,6 +94,572 @@
     ],
     "category": [
       "Image"
+    ]
+  },
+  {
+    "paper_title": "Optimizing Small Transformer-Based Language Models for Multi-Label Sentiment Analysis in Short Texts",
+    "paper_title_zh": "面向短文本多标签情感分析的小型Transformer语言模型优化",
+    "paper_id": "2509.04982v1",
+    "paper_abstract": "Sentiment classification in short text datasets faces significant challenges such as class imbalance, limited training samples, and the inherent subjectivity of sentiment labels -- issues that are further intensified by the limited context in short texts. These factors make it difficult to resolve ambiguity and exacerbate data sparsity, hindering effective learning. In this paper, we evaluate the effectiveness of small Transformer-based models (i.e., BERT and RoBERTa, with fewer than 1 billion parameters) for multi-label sentiment classification, with a particular focus on short-text settings. Specifically, we evaluated three key factors influencing model performance: (1) continued domain-specific pre-training, (2) data augmentation using automatically generated examples, specifically generative data augmentation, and (3) architectural variations of the classification head. Our experiment results show that data augmentation improves classification performance, while continued pre-training on augmented datasets can introduce noise rather than boost accuracy. Furthermore, we confirm that modifications to the classification head yield only marginal benefits. These findings provide practical guidance for optimizing BERT-based models in resource-constrained settings and refining strategies for sentiment classification in short-text datasets.",
+    "paper_abstract_zh": "短文本情感分类面临类别不平衡、训练样本稀缺及标签主观性强等挑战，上下文受限进一步加剧歧义与数据稀疏，阻碍有效学习。本文评估参数量不足10亿的小型Transformer模型（BERT与RoBERTa）在短文本多标签情感分类中的效果，重点考察三大因素：（1）领域持续预训练；（2）基于自动生成样本的数据增强（生成式增强）；（3）分类头结构变体。实验表明，数据增强可提升性能，但在已增强数据上继续预训练反而会引入噪声、降低准确率；分类头改动仅带来边际收益。研究结果为资源受限场景下优化BERT类模型及短文本情感策略提供了实用指导。",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-05",
+    "paper_authors": "Julius Neumann, Robert Lange, Yuni Susanti, Michael Färber",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "An Emotion Recognition Framework via Cross-modal Alignment of EEG and Eye Movement Data",
+    "paper_title_zh": "基于脑电与眼动跨模态对齐的情绪识别框架",
+    "paper_id": "2509.04938v1",
+    "paper_abstract": "Emotion recognition is essential for applications in affective computing and behavioral prediction, but conventional systems relying on single-modality data often fail to capture the complexity of affective states. To address this limitation, we propose an emotion recognition framework that achieves accurate multimodal alignment of Electroencephalogram (EEG) and eye movement data through a hybrid architecture based on cross-modal attention mechanism. Experiments on the SEED-IV dataset demonstrate that our method achieve 90.62% accuracy. This work provides a promising foundation for leveraging multimodal data in emotion recognition",
+    "paper_abstract_zh": "情绪识别对情感计算与行为预测至关重要，但依赖单一模态的传统系统难以捕捉情感状态的复杂性。为此，我们提出一种混合架构的情绪识别框架，通过跨模态注意力机制实现脑电（EEG）与眼动数据的多模态精准对齐。在SEED-IV数据集上的实验表明，该方法准确率达90.62%，为利用多模态数据进行情绪识别提供了有前景的基础。",
+    "primary_category": "cs.MM",
+    "update_time": "2025-09-05",
+    "paper_authors": "Jianlu Wang, Yanan Wang, Tong Liu",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Cloning a Conversational Voice AI Agent from Call\\,Recording Datasets for Telesales",
+    "paper_title_zh": "从电话录音数据集克隆对话式语音AI电销代理",
+    "paper_id": "2509.04871v1",
+    "paper_abstract": "Recent advances in language and speech modelling have made it possible to build autonomous voice assistants that understand and generate human dialogue in real time. These systems are increasingly being deployed in domains such as customer service and healthcare care, where they can automate repetitive tasks, reduce operational costs, and provide constant support around the clock. In this paper, we present a general methodology for cloning a conversational voice AI agent from a corpus of call recordings. Although the case study described in this paper uses telesales data to illustrate the approach, the underlying process generalizes to any domain where call transcripts are available. Our system listens to customers over the telephone, responds with a synthetic voice, and follows a structured playbook learned from top performing human agents. We describe the domain selection, knowledge extraction, and prompt engineering used to construct the agent, integrating automatic speech recognition, a large language model based dialogue manager, and text to speech synthesis into a streaming inference pipeline. The cloned agent is evaluated against human agents on a rubric of 22 criteria covering introduction, product communication, sales drive, objection handling, and closing. Blind tests show that the AI agent approaches human performance in routine aspects of the call while underperforming in persuasion and objection handling. We analyze these shortcomings and refine the prompt accordingly. The paper concludes with design lessons and avenues for future research, including large scale simulation and automated evaluation.",
+    "paper_abstract_zh": "近期语言与语音建模进展使实时理解并生成人类对话的自主语音助手成为可能。这类系统已应用于客服、医疗等领域，可自动化重复任务、降低运营成本并提供全天候支持。本文提出一种从通话录音语料克隆对话式语音AI代理的通用方法。虽以电销数据为案例，其流程可推广至任何拥有通话转录的领域。系统通过电话聆听客户、用合成语音回应，并遵循从顶尖销售代理学习到的结构化话术。我们阐述了领域选择、知识抽取与提示工程，将自动语音识别、基于大模型的对话管理及文本到语音合成整合为流式推理管线。克隆代理在涵盖开场、产品沟通、销售推进、异议处理与成交的22项指标上与真人对比。盲测显示，AI在常规通话环节接近人类水平，但在说服与异议处理方面仍逊一筹。我们分析不足并改进提示，最后总结设计经验与未来研究方向，包括大规模仿真与自动评估。",
+    "primary_category": "cs.AI",
+    "update_time": "2025-09-05",
+    "paper_authors": "Krittanon Kaewtawee, Wachiravit Modecrua, Krittin Pachtrachai, Touchapon Kraisingkorn",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Layer-wise Analysis for Quality of Multilingual Synthesized Speech",
+    "paper_title_zh": "多语言合成语音质量的逐层分析",
+    "paper_id": "2509.04830v1",
+    "paper_abstract": "While supervised quality predictors for synthesized speech have demonstrated strong correlations with human ratings, their requirement for in-domain labeled training data hinders their generalization ability to new domains. Unsupervised approaches based on pretrained self-supervised learning (SSL) based models and automatic speech recognition (ASR) models are a promising alternative; however, little is known about how these models encode information about speech quality. Towards the goal of better understanding how different aspects of speech quality are encoded in a multilingual setting, we present a layer-wise analysis of multilingual pretrained speech models based on reference modeling. We find that features extracted from early SSL layers show correlations with human ratings of synthesized speech, and later layers of ASR models can predict quality of non-neural systems as well as intelligibility. We also demonstrate the importance of using well-matched reference data.",
+    "paper_abstract_zh": "尽管有监督的合成语音质量预测器与人类评分高度相关，其依赖域内标注数据的特点限制了跨域泛化。基于预训练自监督（SSL）模型与自动语音识别（ASR）模型的无监督方法是颇具前景的替代方案，但目前尚不清楚这些模型如何编码语音质量信息。为理解多语言环境下不同层面如何编码语音质量，我们基于参考建模对多语言预训练语音模型进行逐层分析。研究发现，SSL早期层特征与合成语音的人类评分相关，而ASR模型深层可预测非神经系统的质量及可懂度；同时，使用匹配良好的参考数据至关重要。",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-05",
+    "paper_authors": "Erica Cooper, Takuma Okamoto, Yamato Ohtani, Tomoki Toda, Hisashi Kawai",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Mind the Gap: Evaluating Model- and Agentic-Level Vulnerabilities in LLMs with Action Graphs",
+    "paper_title_zh": "",
+    "paper_id": "2509.04802v1",
+    "paper_abstract": "As large language models transition to agentic systems, current safety evaluation frameworks face critical gaps in assessing deployment-specific risks. We introduce AgentSeer, an observability-based evaluation framework that decomposes agentic executions into granular action and component graphs, enabling systematic agentic-situational assessment. Through cross-model validation on GPT-OSS-20B and Gemini-2.0-flash using HarmBench single turn and iterative refinement attacks, we demonstrate fundamental differences between model-level and agentic-level vulnerability profiles. Model-level evaluation reveals baseline differences: GPT-OSS-20B (39.47% ASR) versus Gemini-2.0-flash (50.00% ASR), with both models showing susceptibility to social engineering while maintaining logic-based attack resistance. However, agentic-level assessment exposes agent-specific risks invisible to traditional evaluation. We discover \"agentic-only\" vulnerabilities that emerge exclusively in agentic contexts, with tool-calling showing 24-60% higher ASR across both models. Cross-model analysis reveals universal agentic patterns, agent transfer operations as highest-risk tools, semantic rather than syntactic vulnerability mechanisms, and context-dependent attack effectiveness, alongside model-specific security profiles in absolute ASR levels and optimal injection strategies. Direct attack transfer from model-level to agentic contexts shows degraded performance (GPT-OSS-20B: 57% human injection ASR; Gemini-2.0-flash: 28%), while context-aware iterative attacks successfully compromise objectives that failed at model-level, confirming systematic evaluation gaps. These findings establish the urgent need for agentic-situation evaluation paradigms, with AgentSeer providing the standardized methodology and empirical validation.",
+    "paper_abstract_zh": "",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-05",
+    "paper_authors": "Ilham Wicaksono, Zekun Wu, Theo King, Adriano Koshiyama, Philip Treleaven",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Testing Magnetic Field Configurations in Spider Pulsar PSR J1723-2837 with IXPE",
+    "paper_title_zh": "",
+    "paper_id": "2509.05240v1",
+    "paper_abstract": "We present the first X-ray polarimetry observations of a redback millisecond pulsar binary, \\src, with the Imaging X-ray Polarimetry Explorer (IXPE). Redbacks are compact binaries in which a rotation-powered millisecond pulsar interacts with a non-degenerate companion via an intrabinary shock, forming ideal laboratories for probing pulsar winds and relativistic shock physics, where ordered magnetic fields and particle acceleration shape the observed radiation. We conduct a spectro-polarimetric analysis combining IXPE data with archival Chandra, XMM-Newton, NuSTAR, and Swift observations. We explore two limiting magnetic field configurations, parallel and perpendicular to the bulk flow, and simulate their expected polarization signatures using the {\\tt 3DPol} radiative transport code. To account for the rapid rotation of the polarization angle predicted by these models, we implement a phase-dependent Stokes alignment procedure that preserves the polarization degree while correcting for phase-rotating PA. We also devise a new maximum-likelihood fitting strategy to determine the phase-dependence of the polarization angle by minimizing the polarization degree uncertainty. This technique shows a hint the binary may be rotating clockwise relative to the celestial north pole. We find no significant detection of polarization in the IXPE data, with PD<51% at 99% confidence level. Our results excludes the high-polarization degree scenario predicted by the perpendicular field model during the brightest orbital phase bin. Simulations show that doubling the current exposure would make the parallel configuration detectable. The new PA rotation technique is also applicable to IXPE data of many sources whose intrinsic PA variation is apriori not known but is strictly periodic.",
+    "paper_abstract_zh": "",
+    "primary_category": "astro-ph.HE",
+    "update_time": "2025-09-05",
+    "paper_authors": "Michela Negro, Haocheng Zhang, Niccolò Di Lalla, Slavko Bogdanov, Zorawar Wadiasingh, Noel Klingler, Jeremy Hare",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Deep Inverse Rosenblatt Transport for Structural Reliability Analysis",
+    "paper_title_zh": "",
+    "paper_id": "2509.05061v1",
+    "paper_abstract": "Accurately estimating the probability of failure in engineering systems under uncertainty is a fundamental challenge, particularly in high-dimensional settings and for rare events. Conventional reliability analysis methods often become computationally intractable or exhibit high estimator variance when applied to problems with hundreds of uncertain parameters or highly concentrated failure regions. In this work, we investigate the use of the recently proposed Deep Inverse Rosenblatt Transport (DIRT) framework for reliability analysis in solid mechanics. DIRT combines a TT decomposition with an inverse Rosenblatt transformation to construct a low-rank approximation of the posterior distribution, enabling efficient sampling and probability estimation in high-dimensional spaces. By representing the optimal importance density in the TT format, DIRT scales linearly in the input dimension while maintaining a compact, reusable surrogate of the target distribution. We demonstrate the effectiveness of the DIRT framework on three analytical reliability problems and one numerical example with dimensionality ranging from 2 to 250. Compared to established methods such as Bayesian updating with Subset Simulation (BUS-SuS), DIRT seems to lower the estimator variance while accurately capturing rare event probabilities for the benchmark problems of this study.",
+    "paper_abstract_zh": "",
+    "primary_category": "cs.CE",
+    "update_time": "2025-09-05",
+    "paper_authors": "Aryan Tyagi, Jan N. Fuhg",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Sticker-TTS: Learn to Utilize Historical Experience with a Sticker-driven Test-Time Scaling Framework",
+    "paper_title_zh": "",
+    "paper_id": "2509.05007v1",
+    "paper_abstract": "Large reasoning models (LRMs) have exhibited strong performance on complex reasoning tasks, with further gains achievable through increased computational budgets at inference. However, current test-time scaling methods predominantly rely on redundant sampling, ignoring the historical experience utilization, thereby limiting computational efficiency. To overcome this limitation, we propose Sticker-TTS, a novel test-time scaling framework that coordinates three collaborative LRMs to iteratively explore and refine solutions guided by historical attempts. At the core of our framework are distilled key conditions-termed stickers-which drive the extraction, refinement, and reuse of critical information across multiple rounds of reasoning. To further enhance the efficiency and performance of our framework, we introduce a two-stage optimization strategy that combines imitation learning with self-improvement, enabling progressive refinement. Extensive evaluations on three challenging mathematical reasoning benchmarks, including AIME-24, AIME-25, and OlymMATH, demonstrate that Sticker-TTS consistently surpasses strong baselines, including self-consistency and advanced reinforcement learning approaches, under comparable inference budgets. These results highlight the effectiveness of sticker-guided historical experience utilization. Our code and data are available at https://github.com/RUCAIBox/Sticker-TTS.",
+    "paper_abstract_zh": "",
+    "primary_category": "cs.AI",
+    "update_time": "2025-09-05",
+    "paper_authors": "Jie Chen, Jinhao Jiang, Yingqian Min, Zican Dong, Shijie Wang, Wayne Xin Zhao, Ji-Rong Wen",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Lightweight DNN for Full-Band Speech Denoising on Mobile Devices: Exploiting Long and Short Temporal Patterns",
+    "paper_title_zh": "",
+    "paper_id": "2509.05079v1",
+    "paper_abstract": "Speech denoising (SD) is an important task of many, if not all, modern signal processing chains used in devices and for everyday-life applications. While there are many published and powerful deep neural network (DNN)-based methods for SD, few are optimized for resource-constrained platforms such as mobile devices. Additionally, most DNN-based methods for SD are not focusing on full-band (FB) signals, i.e. having 48 kHz sampling rate, and/or low latency cases. In this paper we present a causal, low latency, and lightweight DNN-based method for full-band SD, leveraging both short and long temporal patterns. The method is based on a modified UNet architecture employing look-back frames, temporal spanning of convolutional kernels, and recurrent neural networks for exploiting short and long temporal patterns in the signal and estimated denoising mask. The DNN operates on a causal frame-by-frame basis taking as an input the STFT magnitude, utilizes inverted bottlenecks inspired by MobileNet, employs causal instance normalization for channel-wise normalization, and achieves a real-time factor below 0.02 when deployed on a modern mobile phone. The proposed method is evaluated using established speech denoising metrics and publicly available datasets, demonstrating its effectiveness in achieving an (SI-)SDR value that outperforms existing FB and low latency SD methods.",
+    "paper_abstract_zh": "",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-05",
+    "paper_authors": "Konstantinos Drossos, Mikko Heikkinen, Paschalis Tsiaflakis",
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Quantum Fourier Transform Based Denoising: Unitary Filtering for Enhanced Speech Clarity",
+    "paper_title_zh": "基于量子傅里叶变换的去噪：用于提升语音清晰度的酉滤波",
+    "paper_id": "2509.04851v1",
+    "paper_abstract": "This paper introduces a quantum-inspired denoising framework that integrates the Quantum Fourier Transform (QFT) into classical audio enhancement pipelines. Unlike conventional Fast Fourier Transform (FFT) based methods, QFT provides a unitary transformation with global phase coherence and energy preservation, enabling improved discrimination between speech and noise. The proposed approach replaces FFT in Wiener and spectral subtraction filters with a QFT operator, ensuring consistent hyperparameter settings for fair comparison. Experiments on clean speech, synthetic tones, and noisy mixtures across diverse signal to noise ratio (SNR) conditions, demonstrate statistically significant gains in SNR, with up to 15 dB improvement and reduced artifact generation. Results confirm that QFT based denoising offers robustness under low SNR and nonstationary noise scenarios without additional computational overhead, highlighting its potential as a scalable pathway toward quantum-enhanced speech processing.",
+    "paper_abstract_zh": "本文提出一种受量子启发的去噪框架，将量子傅里叶变换（QFT）融入经典音频增强流程。与基于快速傅里叶变换（FFT）的传统方法不同，QFT 提供具有全局相位相干性和能量保持的酉变换，能够更好地区分语音与噪声。该方法在维纳滤波与谱减法中用 QFT 算子替代 FFT，并保持超参数一致以进行公平比较。在干净语音、合成音及多种信噪比（SNR）条件下的带噪混合信号上的实验表明，SNR 提升最高可达 15 dB，且伪影显著减少，结果具有统计显著性。实验证实，QFT 去噪在低 SNR 和非平稳噪声场景下鲁棒性更强，且不增加额外计算开销，为可扩展的量子增强语音处理开辟了新路径。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-05",
+    "paper_authors": "Rajeshwar Tripathi, Sahil Tomar, Sandeep Kumar, Monika Aggarwal",
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Training a Perceptual Model for Evaluating Auditory Similarity in Music Adversarial Attack",
+    "paper_title_zh": "训练感知模型以评估音乐对抗攻击中的听觉相似性",
+    "paper_id": "2509.04985v1",
+    "paper_abstract": "Music Information Retrieval (MIR) systems are highly vulnerable to adversarial attacks that are often imperceptible to humans, primarily due to a misalignment between model feature spaces and human auditory perception. Existing defenses and perceptual metrics frequently fail to adequately capture these auditory nuances, a limitation supported by our initial listening tests showing low correlation between common metrics and human judgments. To bridge this gap, we introduce Perceptually-Aligned MERT Transformer (PAMT), a novel framework for learning robust, perceptually-aligned music representations. Our core innovation lies in the psychoacoustically-conditioned sequential contrastive transformer, a lightweight projection head built atop a frozen MERT encoder. PAMT achieves a Spearman correlation coefficient of 0.65 with subjective scores, outperforming existing perceptual metrics. Our approach also achieves an average of 9.15\\% improvement in robust accuracy on challenging MIR tasks, including Cover Song Identification and Music Genre Classification, under diverse perceptual adversarial attacks. This work pioneers architecturally-integrated psychoacoustic conditioning, yielding representations significantly more aligned with human perception and robust against music adversarial attacks.",
+    "paper_abstract_zh": "音乐信息检索（MIR）系统极易受到对人类几乎不可察觉的对抗攻击，根本原因在于模型特征空间与人类听觉感知错位。现有防御与感知指标常难以捕捉这些听觉细节，我们初步听音测试显示常见指标与人类主观评分相关性低。为弥合这一鸿沟，我们提出感知对齐的 MERT 变换器（PAMT），用于学习鲁棒且感知对齐的音乐表征。核心创新在于心理声学条件序列对比变换器——一种基于冻结 MERT 编码器的轻量级投影头。PAMT 与主观评分的斯皮尔曼相关系数达 0.65，超越现有感知指标。在翻唱识别、音乐流派分类等挑战性 MIR 任务上，面对多种感知对抗攻击，PAMT 平均鲁棒准确率提升 9.15%。本工作首次将心理声学条件融入架构，获得与人类感知显著对齐且对音乐对抗攻击更具鲁棒的表征。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-05",
+    "paper_authors": "Yuxuan Liu, Rui Sang, Peihong Zhang, Zhixin Li, Shengchen Li",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "MAIA: An Inpainting-Based Approach for Music Adversarial Attacks",
+    "paper_title_zh": "MAIA：一种基于修复的音乐对抗攻击方法",
+    "paper_id": "2509.04980v1",
+    "paper_abstract": "Music adversarial attacks have garnered significant interest in the field of Music Information Retrieval (MIR). In this paper, we present Music Adversarial Inpainting Attack (MAIA), a novel adversarial attack framework that supports both white-box and black-box attack scenarios. MAIA begins with an importance analysis to identify critical audio segments, which are then targeted for modification. Utilizing generative inpainting models, these segments are reconstructed with guidance from the output of the attacked model, ensuring subtle and effective adversarial perturbations. We evaluate MAIA on multiple MIR tasks, demonstrating high attack success rates in both white-box and black-box settings while maintaining minimal perceptual distortion. Additionally, subjective listening tests confirm the high audio fidelity of the adversarial samples. Our findings highlight vulnerabilities in current MIR systems and emphasize the need for more robust and secure models.",
+    "paper_abstract_zh": "音乐对抗攻击在音乐信息检索（MIR）领域备受关注。本文提出音乐对抗修复攻击（MAIA），一种支持白盒与黑盒场景的新型攻击框架。MAIA 首先通过重要性分析定位关键音频片段，随后利用生成式修复模型在受攻击模型输出的引导下重构这些片段，实现隐蔽且有效的对抗扰动。我们在多项 MIR 任务上评估 MAIA，在白盒与黑盒设置下均取得高攻击成功率，同时保持极低感知失真。主观听音测试进一步证实对抗样本具有高音频保真度。研究结果揭示了当前 MIR 系统的脆弱性，强调构建更鲁棒、安全模型的必要性。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-05",
+    "paper_authors": "Yuxuan Liu, Peihong Zhang, Rui Sang, Zhixin Li, Shengchen Li",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Movable IRS-Aided ISAC Systems: Joint Beamforming and Position Optimization",
+    "paper_title_zh": "可移动 IRS 辅助的 ISAC 系统：联合波束成形与位置优化",
+    "paper_id": "2509.04873v1",
+    "paper_abstract": "Driven by intelligent reflecting surface (IRS) and movable antenna (MA) technologies, movable IRS (MIRS) has been proposed to improve the adaptability and performance of conventional IRS, enabling flexible adjustment of the IRS reflecting element positions. This paper investigates MIRS-aided integrated sensing and communication (ISAC) systems. The objective is to minimize the power required for satisfying the quality-of-service (QoS) of sensing and communication by jointly optimizing the MIRS element positions, IRS reflection coefficients, transmit beamforming, and receive filters. To balance the performance-cost trade-off, we proposed two MIRS schemes: element-wise control and array-wise control, where the positions of individual reflecting elements and arrays consisting of multiple elements are controllable, respectively. To address the joint beamforming and position optimization, a product Riemannian manifold optimization (PRMO) method is proposed, where the variables are updated over a constructed product Riemannian manifold space (PRMS) in parallel via penalty-based transformation and Riemannian Broyden-Fletcher-Goldfarb-Shanno (RBFGS) algorithm. Simulation results demonstrate that the proposed MIRS outperforms conventional IRS in power minimization with both element-wise control and array-wise control. Specifically, with different system parameters, the minimum power is achieved by the MIRS with the element-wise control scheme, while suboptimal solution and higher computational efficiency are achieved by the MIRS with array-wise control scheme.",
+    "paper_abstract_zh": "受智能反射面（IRS）与可移动天线（MA）技术驱动，可移动 IRS（MIRS）被提出以提升传统 IRS 的适应性与性能，实现反射单元位置的灵活调整。本文研究 MIRS 辅助的通感一体化（ISAC）系统，目标是通过联合优化 MIRS 单元位置、IRS 反射系数、发射波束成形与接收滤波器，在满足感知与通信服务质量（QoS）的前提下最小化功耗。为平衡性能与成本，我们提出两种 MIRS 方案：单元级控制与阵列级控制，分别调控单个反射单元与由多个单元组成的阵列位置。针对联合波束成形与位置优化，提出乘积黎曼流形优化（PRMO）方法，通过罚函数变换与黎曼 BFGS 算法在构建的乘积黎曼流形空间（PRMS）中并行更新变量。仿真结果表明，所提 MIRS 在功耗最小化方面优于传统 IRS；在不同系统参数下，单元级控制方案可获得最低功耗，而阵列级控制方案以稍逊的性能换取更高计算效率。",
+    "primary_category": "eess.SP",
+    "update_time": "2025-09-05",
+    "paper_authors": "Yue Geng, Tee Hiang Cheng, Kai Zhong, Kah Chan Teh, Qingqing Wu",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "WildScore: Benchmarking MLLMs in-the-Wild Symbolic Music Reasoning",
+    "paper_title_zh": "WildScore：评测多模态大模型在真实场景下的符号音乐推理能力",
+    "paper_id": "2509.04744v1",
+    "paper_abstract": "Recent advances in Multimodal Large Language Models (MLLMs) have demonstrated impressive capabilities across various vision-language tasks. However, their reasoning abilities in the multimodal symbolic music domain remain largely unexplored. We introduce WildScore, the first in-the-wild multimodal symbolic music reasoning and analysis benchmark, designed to evaluate MLLMs' capacity to interpret real-world music scores and answer complex musicological queries. Each instance in WildScore is sourced from genuine musical compositions and accompanied by authentic user-generated questions and discussions, capturing the intricacies of practical music analysis. To facilitate systematic evaluation, we propose a systematic taxonomy, comprising both high-level and fine-grained musicological ontologies. Furthermore, we frame complex music reasoning as multiple-choice question answering, enabling controlled and scalable assessment of MLLMs' symbolic music understanding. Empirical benchmarking of state-of-the-art MLLMs on WildScore reveals intriguing patterns in their visual-symbolic reasoning, uncovering both promising directions and persistent challenges for MLLMs in symbolic music reasoning and analysis. We release the dataset and code.",
+    "paper_abstract_zh": "近期多模态大语言模型（MLLM）在各类视觉-语言任务中表现亮眼，但其在多模态符号音乐领域的推理能力仍鲜有人探究。我们推出 WildScore——首个真实场景多模态符号音乐推理与分析基准，用于评估 MLLM 解读真实乐谱并回答复杂音乐学查询的能力。WildScore 的每个样本均来自真实音乐作品，并配有用户生成的真实问题与讨论，捕捉实际音乐分析的细微之处。为便于系统评估，我们提出涵盖高层与细粒度音乐学本体的系统分类法，并将复杂音乐推理转化为多项选择题形式，实现对 MLLM 符号音乐理解的可控、可扩展评测。在 WildScore 上对主流 MLLM 的实证评测揭示了其视觉-符号推理的有趣模式，既展现了前景方向，也暴露了符号音乐推理与分析中的持续挑战。数据集与代码已公开发布。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-05",
+    "paper_authors": "Gagan Mundada, Yash Vishe, Amit Namburi, Xin Xu, Zachary Novack, Julian McAuley, Junda Wu",
+    "topic": [
+      "Music Information Retrieval",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Exploring Situated Stabilities of a Rhythm Generation System through Variational Cross-Examination",
+    "paper_title_zh": "通过变式交叉审视探索节奏生成系统的情境稳定性",
+    "paper_id": "2509.05145v1",
+    "paper_abstract": "This paper investigates GrooveTransformer, a real-time rhythm generation system, through the postphenomenological framework of Variational Cross-Examination (VCE). By reflecting on its deployment across three distinct artistic contexts, we identify three stabilities: an autonomous drum accompaniment generator, a rhythmic control voltage sequencer in Eurorack format, and a rhythm driver for a harmonic accompaniment system. The versatility of its applications was not an explicit goal from the outset of the project. Thus, we ask: how did this multistability emerge? Through VCE, we identify three key contributors to its emergence: the affordances of system invariants, the interdisciplinary collaboration, and the situated nature of its development. We conclude by reflecting on the viability of VCE as a descriptive and analytical method for Digital Musical Instrument (DMI) design, emphasizing its value in uncovering how technologies mediate, co-shape, and are co-shaped by users and contexts.",
+    "paper_abstract_zh": "本文借助后现象学框架“变式交叉审视”（VCE），对实时节奏生成系统 GrooveTransformer 进行研究。通过反思其在三种不同艺术场景中的部署，我们识别出三种稳定性：自主鼓伴奏生成器、Eurorack 格式的节奏控制电压音序器，以及和声伴奏系统的节奏驱动器。这些多样化应用并非项目初始的明确目标。因此，我们追问：这种多重稳定性如何涌现？借助 VCE，我们发现其涌现的三大关键因素：系统不变量的可供性、跨学科协作，以及开发过程的情境性。最后，我们反思 VCE 作为数字乐器（DMI）设计的描述与分析方法的可行性，强调其在揭示技术如何中介、共同塑造并被用户与情境共同塑造方面的价值。",
+    "primary_category": "cs.HC",
+    "update_time": "2025-09-05",
+    "paper_authors": "Błażej Kotowski, Nicholas Evans, Behzad Haki, Frederic Font, Sergi Jordà",
+    "topic": [
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Painting the market: generative diffusion models for financial limit order book simulation and forecasting",
+    "paper_title_zh": "描绘市场：用于金融限价订单簿模拟与预测的生成分散模型",
+    "paper_id": "2509.05107v1",
+    "paper_abstract": "Simulating limit order books (LOBs) has important applications across forecasting and backtesting for financial market data. However, deep generative models struggle in this context due to the high noise and complexity of the data. Previous work uses autoregressive models, although these experience error accumulation over longer-time sequences. We introduce a novel approach, converting LOB data into a structured image format, and applying diffusion models with inpainting to generate future LOB states. This method leverages spatio-temporal inductive biases in the order book and enables parallel generation of long sequences overcoming issues with error accumulation. We also publicly contribute to LOB-Bench, the industry benchmark for LOB generative models, to allow fair comparison between models using Level-2 and Level-3 order book data (with or without message level data respectively). We show that our model achieves state-of-the-art performance on LOB-Bench, despite using lower fidelity data as input. We also show that our method prioritises coherent global structures over local, high-fidelity details, providing significant improvements over existing methods on certain metrics. Overall, our method lays a strong foundation for future research into generative diffusion approaches to LOB modelling.",
+    "paper_abstract_zh": "限价订单簿（LOB）模拟在金融数据预测与回测中具有重要应用。然而，深度生成模型因数据高噪声与复杂性而表现不佳。先前工作采用自回归模型，但其在长序列上误差累积严重。我们提出一种新方法：将 LOB 数据转化为结构化图像格式，并应用修复式扩散模型生成未来 LOB 状态。该方法利用订单簿的时空归纳偏置，实现长序列并行生成，避免误差累积。我们还公开贡献于行业基准 LOB-Bench，以便在 Level-2 与 Level-3 订单簿数据（是否含消息级数据）上公平比较模型。实验表明，尽管输入数据保真度较低，我们的模型仍在 LOB-Bench 上达到最先进性能；同时，该方法优先保证全局结构一致性而非局部高保真细节，在部分指标上显著优于现有方法，为 LOB 建模范式下的生成分散研究奠定坚实基础。",
+    "primary_category": "q-fin.TR",
+    "update_time": "2025-09-05",
+    "paper_authors": "Alfred Backhouse, Kang Li, Jakob Foerster, Anisoara Calinescu, Stefan Zohren",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "MM-DREX: Multimodal-Driven Dynamic Routing of LLM Experts for Financial Trading",
+    "paper_title_zh": "MM-DREX：面向金融交易的多模态驱动动态路由大模型专家系统",
+    "paper_id": "2509.05080v1",
+    "paper_abstract": "The inherent non-stationarity of financial markets and the complexity of multi-modal information pose significant challenges to existing quantitative trading models. Traditional methods relying on fixed structures and unimodal data struggle to adapt to market regime shifts, while large language model (LLM)-driven solutions - despite their multi-modal comprehension - suffer from static strategies and homogeneous expert designs, lacking dynamic adjustment and fine-grained decision mechanisms. To address these limitations, we propose MM-DREX: a Multimodal-driven, Dynamically-Routed EXpert framework based on large language models. MM-DREX explicitly decouples market state perception from strategy execution to enable adaptive sequential decision-making in non-stationary environments. Specifically, it (1) introduces a vision-language model (VLM)-powered dynamic router that jointly analyzes candlestick chart patterns and long-term temporal features to allocate real-time expert weights; (2) designs four heterogeneous trading experts (trend, reversal, breakout, positioning) generating specialized fine-grained sub-strategies; and (3) proposes an SFT-RL hybrid training paradigm to synergistically optimize the router's market classification capability and experts' risk-adjusted decision-making. Extensive experiments on multi-modal datasets spanning stocks, futures, and cryptocurrencies demonstrate that MM-DREX significantly outperforms 15 baselines (including state-of-the-art financial LLMs and deep reinforcement learning models) across key metrics: total return, Sharpe ratio, and maximum drawdown, validating its robustness and generalization. Additionally, an interpretability module traces routing logic and expert behavior in real time, providing an audit trail for strategy transparency.",
+    "paper_abstract_zh": "金融市场固有的非平稳性与多模态信息的复杂性，对现有量化交易模型构成重大挑战。传统固定结构、单模态方法难以适应市场机制切换；而大语言模型（LLM）方案虽具备多模态理解能力，却受限于静态策略与同质化专家设计，缺乏动态调整与细粒度决策机制。为此，我们提出 MM-DREX：一种基于大语言模型的多模态驱动动态路由专家框架。MM-DREX 将市场状态感知与策略执行显式解耦，以在非平稳环境中实现自适应序列决策。具体而言，(1) 引入视觉-语言模型（VLM）驱动的动态路由器，联合分析 K 线图形与长期时序特征，实时分配专家权重；(2) 设计四种异构交易专家（趋势、反转、突破、仓位），生成专门的细粒度子策略；(3) 提出 SFT-RL 混合训练范式，协同优化路由器的市场分类能力与专家的风险调整决策。在覆盖股票、期货、加密货币的多模态数据集上，MM-DREX 在总收益、夏普比率、最大回撤等关键指标上显著优于 15 个基线（包括最先进的金融 LLM 与深度强化学习模型），验证其鲁棒性与泛化能力。此外，可解释模块实时追踪路由逻辑与专家行为，为策略透明提供审计轨迹。",
+    "primary_category": "q-fin.TR",
+    "update_time": "2025-09-05",
+    "paper_authors": "Yang Chen, Yueheng Jiang, Zhaozhao Ma, Yuchen Cao Jacky Keung, Kun Kuang, Leilei Gan, Yiquan Wu, Fei Wu",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "QCA-MolGAN: Quantum Circuit Associative Molecular GAN with Multi-Agent Reinforcement Learning",
+    "paper_title_zh": "QCA-MolGAN：基于多智能体强化学习的量子电路关联分子 GAN",
+    "paper_id": "2509.05051v1",
+    "paper_abstract": "Navigating the vast chemical space of molecular structures to design novel drug molecules with desired target properties remains a central challenge in drug discovery. Recent advances in generative models offer promising solutions. This work presents a novel quantum circuit Born machine (QCBM)-enabled Generative Adversarial Network (GAN), called QCA-MolGAN, for generating drug-like molecules. The QCBM serves as a learnable prior distribution, which is associatively trained to define a latent space aligning with high-level features captured by the GANs discriminator. Additionally, we integrate a novel multi-agent reinforcement learning network to guide molecular generation with desired targeted properties, optimising key metrics such as quantitative estimate of drug-likeness (QED), octanol-water partition coefficient (LogP) and synthetic accessibility (SA) scores in conjunction with one another. Experimental results demonstrate that our approach enhances the property alignment of generated molecules with the multi-agent reinforcement learning agents effectively balancing chemical properties.",
+    "paper_abstract_zh": "在庞大的化学空间中导航，以设计具有理想靶点特性的新药分子，仍是药物发现的核心挑战。最新生成模型进展提供了有前景的解决方案。本文提出一种基于量子电路 Born 机（QCBM）的新型生成对抗网络（GAN）——QCA-MolGAN，用于生成类药分子。QCBM 作为可学习先验分布，通过关联训练定义与 GAN 判别器捕获的高层特征对齐的潜在空间。此外，我们集成一种新型多智能体强化学习网络，以引导分子生成朝向期望的靶点特性，联合优化药物相似性定量估计（QED）、辛醇-水分配系数（LogP）与合成可及性（SA）评分。实验结果表明，该方法提升了生成分子的性质对齐，多智能体强化学习智能体有效平衡了各项化学性质。",
+    "primary_category": "quant-ph",
+    "update_time": "2025-09-05",
+    "paper_authors": "Aaron Mark Thomas, Yu-Cheng Chen, Hubert Okadome Valencia, Sharu Theresa Jose, Ronin Wu",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "LUIVITON: Learned Universal Interoperable VIrtual Try-ON",
+    "paper_title_zh": "LUIVITON：可学习的通用互操作虚拟试穿",
+    "paper_id": "2509.05030v1",
+    "paper_abstract": "We present LUIVITON, an end-to-end system for fully automated virtual try-on, capable of draping complex, multi-layer clothing onto diverse and arbitrarily posed humanoid characters. To address the challenge of aligning complex garments with arbitrary and highly diverse body shapes, we use SMPL as a proxy representation and separate the clothing-to-body draping problem into two correspondence tasks: 1) clothing-to-SMPL and 2) body-to-SMPL correspondence, where each has its unique challenges. While we address the clothing-to-SMPL fitting problem using a geometric learning-based approach for partial-to-complete shape correspondence prediction, we introduce a diffusion model-based approach for body-to-SMPL correspondence using multi-view consistent appearance features and a pre-trained 2D foundation model. Our method can handle complex geometries, non-manifold meshes, and generalizes effectively to a wide range of humanoid characters -- including humans, robots, cartoon subjects, creatures, and aliens, while maintaining computational efficiency for practical adoption. In addition to offering a fully automatic fitting solution, LUIVITON supports fast customization of clothing size, allowing users to adjust clothing sizes and material properties after they have been draped. We show that our system can produce high-quality 3D clothing fittings without any human labor, even when 2D clothing sewing patterns are not available.",
+    "paper_abstract_zh": "我们提出 LUIVITON，一个端到端全自动虚拟试穿系统，能够将复杂的多层服装披覆到姿态各异、体型多样的人形角色上。为解决复杂服装与任意体型对齐的难题，我们以 SMPL 作为代理表征，将“服装-身体”披覆问题拆分为两个对应任务：1) 服装到 SMPL；2) 身体到 SMPL 的对应，各自面临独特挑战。对于服装到 SMPL 的拟合，我们采用基于几何学习的部分到完整形状对应预测方法；对于身体到 SMPL 的对应，我们提出基于扩散模型的方法，利用多视角一致的外观特征与预训练 2D 基础模型。该方法可处理复杂几何、非流形网格，并泛化至人类、机器人、卡通角色、生物、外星人等广泛人形角色，同时保持计算效率以满足实际应用。除提供全自动披覆方案外，LUIVITON 还支持服装尺寸快速定制，允许用户在披覆后调整服装尺寸与材质属性。实验表明，即便缺乏 2D 服装纸样，我们的系统也能在无需人工干预的情况下生成高质量 3D 服装试穿效果。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-05",
+    "paper_authors": "Cong Cao, Xianhang Cheng, Jingyuan Liu, Yujian Zheng, Zhenhui Lin, Meriem Chkir, Hao Li",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Improving Spatial Resolution of Background Oriented Schlieren Based on Directional Rays",
+    "paper_title_zh": "基于定向射线的背景导向纹影空间分辨率提升方法",
+    "paper_id": "2509.04992v1",
+    "paper_abstract": "The background-oriented Schlieren technique has emerged as a promising method for visualizing density gradients and performing quantitative measurements. However, an inherent constraint of BOS is the compromise between spatial resolution and measurement sensitivity, as the BOS camera typically remains focused on the background pattern. To overcome the resolution-sensitivity constraint, a new variant of BOS based on nominally directional rays has been proposed in this paper. Instead of utilizing diffusively reflective background patterns, a spherically concave mirror etched with random dots has been used to create a dotted background that reflects rays directionally. Combined with coaxial LED light illumination, we demonstrate that the current setup can improve the spatial resolution of canonical BOS without compromising measurement sensitivity. Moreover, the proposed setup decouples the requirement of a small lens aperture to achieve a large depth of field, thereby significantly alleviating the need for strong background light illumination in high-speed BOS applications. To demonstrate the effectiveness of the proposed method in improving the BOS spatial resolution, both synthetic BOS image generations and experiments on low- and high-speed jets are conducted. Results show that the proposed variant of BOS can be advantageous for measuring density-varying flows with a limited field of view.",
+    "paper_abstract_zh": "背景导向纹影（BOS）技术已成为可视化密度梯度并进行定量测量的有力手段。然而，BOS 固有的分辨率-灵敏度权衡限制了其性能：相机通常聚焦于背景图案，导致空间分辨率与测量灵敏度无法兼顾。本文提出一种基于“准定向射线”的新型 BOS 变体，以突破该约束。该方法不再使用漫反射背景，而是采用刻有随机点阵的球面凹面镜，产生定向反射的点状背景。配合同轴 LED 照明，实验表明新系统在保持测量灵敏度的同时显著提升了传统 BOS 的空间分辨率；此外，该方案解耦了“小光圈获得大景深”的需求，从而大幅缓解高速 BOS 对强背景照明的依赖。通过合成 BOS 图像生成以及低速/高速射流实验，验证了该方法在视场受限条件下对密度变化流场测量的优势。",
+    "primary_category": "physics.flu-dyn",
+    "update_time": "2025-09-05",
+    "paper_authors": "Xiang Li, Muen Gao, Weiran Wang, Jiawei Li, Chong Pan, Jinjun Wang, Yuan Xiong",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Plug-and-Play Latent Diffusion for Electromagnetic Inverse Scattering with Application to Brain Imaging",
+    "paper_title_zh": "即插即用潜扩散电磁逆散射成像及其在脑部成像中的应用",
+    "paper_id": "2509.04860v1",
+    "paper_abstract": "Electromagnetic (EM) imaging is an important tool for non-invasive sensing with low-cost and portable devices. One emerging application is EM stroke imaging, which enables early diagnosis and continuous monitoring of brain strokes. Quantitative imaging is achieved by solving an inverse scattering problem (ISP) that reconstructs permittivity and conductivity maps from measurements. In general, the reconstruction accuracy is limited by its inherent nonlinearity and ill-posedness. Existing methods, including learning-free and learning-based approaches, fail to either incorporate complicated prior distributions or provide theoretical guarantees, posing difficulties in balancing interpretability, distortion error, and reliability. To overcome these limitations, we propose a posterior sampling method based on latent diffusion for quantitative EM brain imaging, adapted from a generative plug-and-play (PnP) posterior sampling framework. Our approach allows to flexibly integrate prior knowledge into physics-based inversion without requiring paired measurement-label datasets. We first learn the prior distribution of targets from an unlabeled dataset, and then incorporate the learned prior into posterior sampling. In particular, we train a latent diffusion model on permittivity and conductivity maps to capture their prior distribution. Then, given measurements and the forward model describing EM wave physics, we perform posterior sampling by alternating between two samplers that respectively enforce the likelihood and prior distributions. Finally, reliable reconstruction is obtained through minimum mean squared error (MMSE) estimation based on the samples. Experimental results on brain imaging demonstrate that our approach achieves state-of-the-art performance in reconstruction accuracy and structural similarity while maintaining high measurement fidelity.",
+    "paper_abstract_zh": "电磁（EM）成像是一种低成本、便携的非侵入式传感工具，新兴应用之一是脑卒中电磁成像，可实现早期诊断与连续监测。定量成像通过求解逆散射问题（ISP），从测量数据重建介电常数与电导率分布。然而，非线性强、病态性重，重建精度受限。现有无学习与有学习方法要么难以嵌入复杂先验，要么缺乏理论保证，在可解释性、失真误差与可靠性之间难以平衡。本文提出一种基于潜扩散的后验采样方法，用于定量电磁脑部成像，其脱胎于生成式即插即用（PnP）后验采样框架。该方法无需成对的“测量-标签”数据，即可将先验知识灵活融入物理反演。首先利用无标签数据集学习目标先验分布；随后将所学先验嵌入后验采样。具体而言，我们在介电常数与电导率图上训练潜扩散模型以捕获先验；给定测量与描述电磁波物理的正向模型后，通过交替执行似然与先验采样器进行后验采样；最后基于采样结果做最小均方误差（MMSE）估计，获得可靠重建。脑部成像实验表明，该方法在重建精度与结构相似性上达到 SOTA，同时保持高测量保真度。",
+    "primary_category": "eess.SP",
+    "update_time": "2025-09-05",
+    "paper_authors": "Rui Guo, Yi Zhang, Yhonatan Kvich, Tianyao Huang, Maokun Li, Yonina C. Eldar",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "A Knowledge-Driven Diffusion Policy for End-to-End Autonomous Driving Based on Expert Routing",
+    "paper_title_zh": "基于专家路由的知识驱动扩散策略端到端自动驾驶",
+    "paper_id": "2509.04853v1",
+    "paper_abstract": "End-to-end autonomous driving remains constrained by the need to generate multi-modal actions, maintain temporal stability, and generalize across diverse scenarios. Existing methods often collapse multi-modality, struggle with long-horizon consistency, or lack modular adaptability. This paper presents KDP, a knowledge-driven diffusion policy that integrates generative diffusion modeling with a sparse mixture-of-experts routing mechanism. The diffusion component generates temporally coherent and multi-modal action sequences, while the expert routing mechanism activates specialized and reusable experts according to context, enabling modular knowledge composition. Extensive experiments across representative driving scenarios demonstrate that KDP achieves consistently higher success rates, reduced collision risk, and smoother control compared to prevailing paradigms. Ablation studies highlight the effectiveness of sparse expert activation and the Transformer backbone, and activation analyses reveal structured specialization and cross-scenario reuse of experts. These results establish diffusion with expert routing as a scalable and interpretable paradigm for knowledge-driven end-to-end autonomous driving.",
+    "paper_abstract_zh": "端到端自动驾驶仍面临多模态动作生成、时序稳定性与跨场景泛化的三重挑战。现有方法常出现模态坍缩、长时一致性差或缺乏模块化适应能力等问题。本文提出 KDP——一种知识驱动的扩散策略，将生成式扩散模型与稀疏混合专家路由机制相结合。扩散组件生成时序连贯且多模态的动作序列；专家路由根据上下文激活专用且可复用的专家，实现模块化知识组合。在代表性驾驶场景的大量实验表明，KDP 相比主流方案成功率更高、碰撞风险更低、控制更平滑。消融实验验证了稀疏专家激活与 Transformer 主干的有效性；激活分析揭示了专家的结构化专业化与跨场景复用。结果确立了“扩散+专家路由”作为可扩展、可解释的知识驱动端到端自动驾驶新范式。",
+    "primary_category": "cs.RO",
+    "update_time": "2025-09-05",
+    "paper_authors": "Chengkai Xu, Jiaqi Liu, Yicheng Guo, Peng Hang, Jian Sun",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "AURAD: Anatomy-Pathology Unified Radiology Synthesis with Progressive Representations",
+    "paper_title_zh": "AURAD：基于渐进表征的解剖-病理统一放射影像合成",
+    "paper_id": "2509.04819v1",
+    "paper_abstract": "Medical image synthesis has become an essential strategy for augmenting datasets and improving model generalization in data-scarce clinical settings. However, fine-grained and controllable synthesis remains difficult due to limited high-quality annotations and domain shifts across datasets. Existing methods, often designed for natural images or well-defined tumors, struggle to generalize to chest radiographs, where disease patterns are morphologically diverse and tightly intertwined with anatomical structures. To address these challenges, we propose AURAD, a controllable radiology synthesis framework that jointly generates high-fidelity chest X-rays and pseudo semantic masks. Unlike prior approaches that rely on randomly sampled masks-limiting diversity, controllability, and clinical relevance-our method learns to generate masks that capture multi-pathology coexistence and anatomical-pathological consistency. It follows a progressive pipeline: pseudo masks are first generated from clinical prompts conditioned on anatomical structures, and then used to guide image synthesis. We also leverage pretrained expert medical models to filter outputs and ensure clinical plausibility. Beyond visual realism, the synthesized masks also serve as labels for downstream tasks such as detection and segmentation, bridging the gap between generative modeling and real-world clinical applications. Extensive experiments and blinded radiologist evaluations demonstrate the effectiveness and generalizability of our method across tasks and datasets. In particular, 78% of our synthesized images are classified as authentic by board-certified radiologists, and over 40% of predicted segmentation overlays are rated as clinically useful. All code, pre-trained models, and the synthesized dataset will be released upon publication.",
+    "paper_abstract_zh": "医学图像合成已成为数据稀缺临床环境中扩增数据集、提升模型泛化的关键策略。然而，由于高质量标注有限且跨数据集域偏移大，细粒度、可控的合成仍具挑战。现有方法多面向自然图像或边界清晰的肿瘤，难以泛化至疾病模式形态多样、与解剖结构紧密交织的胸部 X 光片。为此，本文提出 AURAD——一种可控放射影像合成框架，联合生成高保真胸部 X 光与伪语义掩膜。与以往依赖随机采样掩膜（限制多样性、可控性与临床相关性）的方法不同，AURAD 学习生成能捕捉多病理共存与解剖-病理一致性的掩膜。其采用渐进流程：首先基于解剖结构由临床提示生成伪掩膜，再以此引导图像合成。我们还利用预训练医学专家模型过滤输出，确保临床合理性。除视觉逼真外，合成掩膜可直接作为下游检测与分割任务的标签，弥合生成建模与真实临床应用的鸿沟。大量实验与盲评显示，78% 的合成图像被认证放射医师判为真实，超过 40% 的预测分割叠加被评为临床可用。代码、预训练模型及合成数据集将在发表后公开。",
+    "primary_category": "eess.IV",
+    "update_time": "2025-09-05",
+    "paper_authors": "Shuhan Ding, Jingjing Fu, Yu Gu, Naiteek Sangani, Mu Wei, Paul Vozila, Nan Liu, Jiang Bian, Hoifung Poon",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "SemSteDiff: Generative Diffusion Model-based Coverless Semantic Steganography Communication",
+    "paper_title_zh": "SemSteDiff：基于生成扩散模型的无载体语义隐写通信",
+    "paper_id": "2509.04803v1",
+    "paper_abstract": "Semantic communication (SemCom), as a novel paradigm for future communication systems, has recently attracted much attention due to its superiority in communication efficiency. However, similar to traditional communication, it also suffers from eavesdropping threats. Intelligent eavesdroppers could launch advanced semantic analysis techniques to infer secret semantic information. Therefore, some researchers have designed Semantic Steganography Communication (SemSteCom) scheme to confuse semantic eavesdroppers. However, the state-of-the-art SemSteCom schemes for image transmission rely on the pre-selected cover image, which limits the universality. To address this issue, we propose a Generative Diffusion Model-based Coverless Semantic Steganography Communication (SemSteDiff) scheme to hide secret images into generated stego images. The semantic related private and public keys enable legitimate receiver to decode secret images correctly while the eavesdropper without completely true key-pairs fail to obtain them. Simulation results demonstrate the effectiveness of the plug-and-play design in different Joint Source-Channel Coding (JSCC) frameworks. The comparison results under different eavesdroppers' threats show that, when Signal-to-Noise Ratio (SNR) = 0 dB, the peak signal-to-noise ratio (PSNR) of the legitimate receiver is 4.14 dB higher than that of the eavesdropper.",
+    "paper_abstract_zh": "语义通信（SemCom）作为未来通信系统的新范式，因通信效率高而备受关注。然而，与传统通信一样，它也面临窃听威胁：智能窃听者可通过高级语义分析推断秘密语义信息。为此，研究者提出语义隐写通信（SemSteCom）方案以迷惑语义窃听者。但现有图像传输的 SemSteCom 均依赖预选的载体图像，通用性受限。本文提出 SemSteDiff——一种基于生成扩散模型的无载体语义隐写通信方案，将秘密图像隐藏于生成的隐写图像中。语义相关的私钥与公钥使合法接收方可正确解码秘密图像，而无完整密钥对的窃听者则无法恢复。仿真表明，该即插即用设计在不同联合信源-信道编码（JSCC）框架下均有效。在多种窃听威胁下的对比结果显示，当信噪比 SNR = 0 dB 时，合法接收者的峰值信噪比（PSNR）比窃听者高 4.14 dB。",
+    "primary_category": "eess.SP",
+    "update_time": "2025-09-05",
+    "paper_authors": "Song Gao, Rui Meng, Xiaodong Xu, Haixiao Gao, Yiming Liu, Chenyuan Feng, Ping Zhang, Tony Q. S. Quek, Dusit Niyato",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "STADI: Fine-Grained Step-Patch Diffusion Parallelism for Heterogeneous GPUs",
+    "paper_title_zh": "STADI：面向异构 GPU 的细粒度步-块扩散并行方法",
+    "paper_id": "2509.04719v1",
+    "paper_abstract": "The escalating adoption of diffusion models for applications such as image generation demands efficient parallel inference techniques to manage their substantial computational cost. However, existing diffusion parallelism inference schemes often underutilize resources in heterogeneous multi-GPU environments, where varying hardware capabilities or background tasks cause workload imbalance. This paper introduces Spatio-Temporal Adaptive Diffusion Inference (STADI), a novel framework to accelerate diffusion model inference in such settings. At its core is a hybrid scheduler that orchestrates fine-grained parallelism across both temporal and spatial dimensions. Temporally, STADI introduces a novel computation-aware step allocator applied after warmup phases, using a least-common-multiple-minimizing quantization technique to reduce denoising steps on slower GPUs and execution synchronization. To further minimize GPU idle periods, STADI executes an elastic patch parallelism mechanism that allocates variably sized image patches to GPUs according to their computational capability, ensuring balanced workload distribution through a complementary spatial mechanism. Extensive experiments on both load-imbalanced and heterogeneous multi-GPU clusters validate STADI's efficacy, demonstrating improved load balancing and mitigation of performance bottlenecks. Compared to patch parallelism, a state-of-the-art diffusion inference framework, our method significantly reduces end-to-end inference latency by up to 45% and significantly improves resource utilization on heterogeneous GPUs.",
+    "paper_abstract_zh": "随着扩散模型在图像生成等应用中的快速普及，亟需高效并行推理技术来应对其巨大的计算开销。然而，现有扩散并行推理方案在异构多 GPU 环境中常因硬件能力差异或后台任务导致负载失衡，资源利用率低下。本文提出时空自适应扩散推理框架 STADI，通过混合调度器在时序与空间两个维度上协同编排细粒度并行。时序上，STADI 在预热阶段后引入计算感知的步分配器，利用最小公倍数最小化量化技术减少慢速 GPU 的去噪步数并降低执行同步开销；空间上，采用弹性块并行机制，根据各 GPU 计算能力动态分配不同大小的图像块，通过互补的空间策略实现负载均衡。在负载失衡与异构多 GPU 集群上的大量实验表明，STADI 显著改善负载均衡并消除性能瓶颈。与当前最先进的块并行扩散推理框架相比，STADI 将端到端推理延迟最高降低 45%，大幅提升异构 GPU 的资源利用率。",
+    "primary_category": "cs.DC",
+    "update_time": "2025-09-05",
+    "paper_authors": "Han Liang, Jiahui Zhou, Zicheng Zhou, Xiaoxi Zhang, Xu Chen",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Imitation Learning Based on Disentangled Representation Learning of Behavioral Characteristics",
+    "paper_title_zh": "基于行为特征解耦表征学习的模仿学习",
+    "paper_id": "2509.04737v1",
+    "paper_abstract": "In the field of robot learning, coordinating robot actions through language instructions is becoming increasingly feasible. However, adapting actions to human instructions remains challenging, as such instructions are often qualitative and require exploring behaviors that satisfy varying conditions. This paper proposes a motion generation model that adapts robot actions in response to modifier directives human instructions imposing behavioral conditions during task execution. The proposed method learns a mapping from modifier directives to actions by segmenting demonstrations into short sequences, assigning weakly supervised labels corresponding to specific modifier types. We evaluated our method in wiping and pick and place tasks. Results show that it can adjust motions online in response to modifier directives, unlike conventional batch-based methods that cannot adapt during execution.",
+    "paper_abstract_zh": "在机器人学习领域，通过语言指令协调机器人动作已日益可行。然而，使动作适应人类指令仍具挑战：这些指令往往是定性的，需要探索满足多变条件的行为。本文提出一种运动生成模型，可在任务执行过程中根据人类指令中的修饰性指令（即对行为施加限定条件）在线调整机器人动作。该方法将演示切分为短序列，并为每段序列赋予对应修饰类型的弱监督标签，从而学习从修饰指令到动作的映射。我们在擦拭与拾取放置任务上评估了该方法，结果显示其可在执行过程中根据修饰指令实时调整运动，而传统批处理方法无法在运行阶段进行适应。",
+    "primary_category": "cs.RO",
+    "update_time": "2025-09-05",
+    "paper_authors": "Ryoga Oishi, Sho Sakaino, Toshiaki Tsuji",
+    "topic": [
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "VLSM-Ensemble: Ensembling CLIP-based Vision-Language Models for Enhanced Medical Image Segmentation",
+    "paper_title_zh": "VLSM-Ensemble：集成基于 CLIP 的视觉-语言模型以提升医学图像分割",
+    "paper_id": "2509.05154v1",
+    "paper_abstract": "Vision-language models and their adaptations to image segmentation tasks present enormous potential for producing highly accurate and interpretable results. However, implementations based on CLIP and BiomedCLIP are still lagging behind more sophisticated architectures such as CRIS. In this work, instead of focusing on text prompt engineering as is the norm, we attempt to narrow this gap by showing how to ensemble vision-language segmentation models (VLSMs) with a low-complexity CNN. By doing so, we achieve a significant Dice score improvement of 6.3% on the BKAI polyp dataset using the ensembled BiomedCLIPSeg, while other datasets exhibit gains ranging from 1% to 6%. Furthermore, we provide initial results on additional four radiology and non-radiology datasets. We conclude that ensembling works differently across these datasets (from outperforming to underperforming the CRIS model), indicating a topic for future investigation by the community. The code is available at https://github.com/juliadietlmeier/VLSM-Ensemble.",
+    "paper_abstract_zh": "视觉-语言模型及其在图像分割任务中的适配展现出产生高精度且可解释结果的巨大潜力。然而，基于 CLIP 与 BiomedCLIP 的实现仍落后于 CRIS 等更精细的架构。本文跳出常规的文本提示工程思路，通过将视觉-语言分割模型（VLSM）与低复杂度 CNN 集成来缩小性能差距。在 BKAI 息肉数据集上，集成的 BiomedCLIPSeg 将 Dice 分数显著提升 6.3%，其他数据集的增益介于 1%–6%。此外，我们在另外四个放射与非放射数据集上给出初步结果，发现集成效果因数据集而异（从超越到不及 CRIS），这为社区未来研究提供了新课题。代码已开源：https://github.com/juliadietlmeier/VLSM-Ensemble。",
+    "primary_category": "eess.IV",
+    "update_time": "2025-09-05",
+    "paper_authors": "Julia Dietlmeier, Oluwabukola Grace Adegboro, Vayangi Ganepola, Claudia Mazo, Noel E. O'Connor",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "StimulHeat: a Low-Energy Wearable Thermal Feedback Device Using Peltier Elements with Heat Flow Controlled Loop for Hand Interactions in Virtual Reality",
+    "paper_title_zh": "StimulHeat：一种用于虚拟现实手部交互的低功耗可穿戴热反馈设备，采用热流闭环控制的帕尔贴元件",
+    "paper_id": "2509.05020v1",
+    "paper_abstract": "Nowadays, the majority of wearable thermal feedback systems designed for use in virtual reality applications are not compatible or not integrated to standard controllers and are based on temperature control. The objectives of the present work is to enable integration with existing controllers, in this case Valve Index controllers, and to propose an alternative approach to managing thermal stimulation with Peltier modules by controlling heat flow instead of temperature. We introduce StimulHeat as a wireless, low power thermal feedback system, based on the continuous relationship between heat and current injection in thermoelectric device (TED). First, we designed an optimized TED driver capable of injecting a continuous, bidirectional current into the TED, thereby driving it as a heater or cooler. Subsequently, this driver was implemented in an electronic board to include temperature and heat flow control loops, as well as Bluetooth Low Energy interface for remote control. A mechanical integration was conducted, in the form of a controller extension which is non-intrusive and can be clipped to Valve Index controllers to enclose the TED, temperature sensors and electronics. Finally, we present a user study validating StimulHeat for use in Virtual Reality, utilizing a Unity-built virtual environment with our open-source package.",
+    "paper_abstract_zh": "目前多数面向虚拟现实的可穿戴热反馈系统无法与标准控制器兼容或集成，且普遍基于温度控制。本研究旨在实现与现有控制器（如 Valve Index 手柄）的集成，并提出通过控制热流而非温度来管理帕尔贴模块热刺激的新方法。我们推出 StimulHeat——一种无线、低功耗的热反馈系统，利用热电装置（TED）中热流与注入电流的连续关系。首先设计优化 TED 驱动器，可连续双向注入电流，使 TED 既能加热也能制冷；随后将该驱动器集成到电路板，实现温度与热流双闭环控制，并配备蓝牙低功耗接口以供远程操控。机械层面，设计了一款可夹持在 Valve Index 手柄上的非侵入式扩展模块，将 TED、温度传感器与电路一体封装。最后，通过 Unity 搭建的虚拟环境及开源包进行用户实验，验证了 StimulHeat 在虚拟现实中的可用性。",
+    "primary_category": "eess.SY",
+    "update_time": "2025-09-05",
+    "paper_authors": "Matthieu Mesnage, Sophie Villenave, Bertrand Massot, Matthieu Blanchard, Pierre Raimbaud, Guillaume Lavoué, Claudine Gehin",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Hybrid-Tower: Fine-grained Pseudo-query Interaction and Generation for Text-to-Video Retrieval",
+    "paper_title_zh": "Hybrid-Tower：面向文本到视频检索的细粒度伪查询交互与生成",
+    "paper_id": "2509.04773v1",
+    "paper_abstract": "The Text-to-Video Retrieval (T2VR) task aims to retrieve unlabeled videos by textual queries with the same semantic meanings. Recent CLIP-based approaches have explored two frameworks: Two-Tower versus Single-Tower framework, yet the former suffers from low effectiveness, while the latter suffers from low efficiency. In this study, we explore a new Hybrid-Tower framework that can hybridize the advantages of the Two-Tower and Single-Tower framework, achieving high effectiveness and efficiency simultaneously. We propose a novel hybrid method, Fine-grained Pseudo-query Interaction and Generation for T2VR, ie, PIG, which includes a new pseudo-query generator designed to generate a pseudo-query for each video. This enables the video feature and the textual features of pseudo-query to interact in a fine-grained manner, similar to the Single-Tower approaches to hold high effectiveness, even before the real textual query is received. Simultaneously, our method introduces no additional storage or computational overhead compared to the Two-Tower framework during the inference stage, thus maintaining high efficiency. Extensive experiments on five commonly used text-video retrieval benchmarks demonstrate that our method achieves a significant improvement over the baseline, with an increase of $1.6\\% \\sim 3.9\\%$ in R@1. Furthermore, our method matches the efficiency of Two-Tower models while achieving near state-of-the-art performance, highlighting the advantages of the Hybrid-Tower framework.",
+    "paper_abstract_zh": "文本到视频检索（T2VR）旨在通过文本查询检索语义一致的未标注视频。近期基于 CLIP 的方法探索了双塔与单塔两种框架，但前者效果欠佳，后者效率不足。本文提出新的 Hybrid-Tower 框架，融合双塔与单塔优势，同时实现高效果与高效率。我们设计了细粒度伪查询交互与生成方法 PIG：首先为每段视频生成伪查询，使视频特征与伪查询文本特征在接收真实查询前就能像单塔方法一样细粒度交互，从而保持高效果；推理阶段不引入额外存储或计算开销，维持双塔级的高效率。在五个常用文本-视频检索基准上的大量实验表明，PIG 在 R@1 指标上较基线提升 1.6%–3.9%，效率与双塔模型相当，性能接近最前沿，充分展现了 Hybrid-Tower 框架的优势。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-05",
+    "paper_authors": "Bangxiang Lan, Ruobing Xie, Ruixiang Zhao, Xingwu Sun, Zhanhui Kang, Gang Yang, Xirong Li",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Dynamic Group Detection using VLM-augmented Temporal Groupness Graph",
+    "paper_title_zh": "基于VLM增强的时序群体图动态群体检测",
+    "paper_id": "2509.04758v1",
+    "paper_abstract": "This paper proposes dynamic human group detection in videos. For detecting complex groups, not only the local appearance features of in-group members but also the global context of the scene are important. Such local and global appearance features in each frame are extracted using a Vision-Language Model (VLM) augmented for group detection in our method. For further improvement, the group structure should be consistent over time. While previous methods are stabilized on the assumption that groups are not changed in a video, our method detects dynamically changing groups by global optimization using a graph with all frames' groupness probabilities estimated by our groupness-augmented CLIP features. Our experimental results demonstrate that our method outperforms state-of-the-art group detection methods on public datasets. Code: https://github.com/irajisamurai/VLM-GroupDetection.git",
+    "paper_abstract_zh": "本文提出了一种视频中的动态人群分组检测方法。为了识别复杂群体，不仅需要成员局部外观特征，还需要场景的全局上下文。我们利用为群体检测任务增强的视觉-语言模型（VLM）提取每帧的局部与全局外观特征。为进一步提升性能，群体结构应在时间上保持一致。以往方法假设视频中群体不变，而本文通过构建包含所有帧“群体度”概率的图进行全局优化，实现动态变化的群体检测。实验表明，该方法在公开数据集上优于现有最佳群体检测方法。代码地址：https://github.com/irajisamurai/VLM-GroupDetection.git",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-05",
+    "paper_authors": "Kaname Yokoyama, Chihiro Nakatani, Norimichi Ukita",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Recomposer: Event-roll-guided generative audio editing",
+    "paper_title_zh": "Recomposer：事件卷轴引导的生成式音频编辑",
+    "paper_id": "2509.05256v1",
+    "paper_abstract": "Editing complex real-world sound scenes is difficult because individual sound sources overlap in time. Generative models can fill-in missing or corrupted details based on their strong prior understanding of the data domain. We present a system for editing individual sound events within complex scenes able to delete, insert, and enhance individual sound events based on textual edit descriptions (e.g., ``enhance Door'') and a graphical representation of the event timing derived from an ``event roll'' transcription. We present an encoder-decoder transformer working on SoundStream representations, trained on synthetic (input, desired output) audio example pairs formed by adding isolated sound events to dense, real-world backgrounds. Evaluation reveals the importance of each part of the edit descriptions -- action, class, timing. Our work demonstrates ``recomposition'' is an important and practical application.",
+    "paper_abstract_zh": "由于真实世界声景中各声源在时间上重叠，编辑复杂场景十分困难。生成模型凭借对数据域的强先验理解，可补全缺失或损坏的细节。我们提出一个可在复杂场景中针对单个声音事件进行删除、插入与增强的编辑系统，用户只需给出文本编辑描述（如“增强门声”）及源自“事件卷轴”转录的图形化事件时间线。系统采用基于 SoundStream 表示的编码器-解码器 Transformer，在合成（输入，期望输出）音频对上训练，这些样本通过在密集真实背景上叠加孤立声事件生成。评估表明，编辑描述中的动作、类别、时间信息均至关重要。本工作证明“重作曲”是一项重要且实用的应用。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-05",
+    "paper_authors": "Daniel P. W. Ellis, Eduardo Fonseca, Ron J. Weiss, Kevin Wilson, Scott Wisdom, Hakan Erdogan, John R. Hershey, Aren Jansen, R. Channing Moore, Manoj Plakal",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "MEAN-RIR: Multi-Modal Environment-Aware Network for Robust Room Impulse Response Estimation",
+    "paper_title_zh": "MEAN-RIR：多模态环境感知网络用于鲁棒房间脉冲响应估计",
+    "paper_id": "2509.05205v1",
+    "paper_abstract": "This paper presents a Multi-Modal Environment-Aware Network (MEAN-RIR), which uses an encoder-decoder framework to predict room impulse response (RIR) based on multi-level environmental information from audio, visual, and textual sources. Specifically, reverberant speech capturing room acoustic properties serves as the primary input, which is combined with panoramic images and text descriptions as supplementary inputs. Each input is processed by its respective encoder, and the outputs are fed into cross-attention modules to enable effective interaction between different modalities. The MEAN-RIR decoder generates two distinct components: the first component captures the direct sound and early reflections, while the second produces masks that modulate learnable filtered noise to synthesize the late reverberation. These two components are mixed to reconstruct the final RIR. The results show that MEAN-RIR significantly improves RIR estimation, with notable gains in acoustic parameters.",
+    "paper_abstract_zh": "本文提出多模态环境感知网络（MEAN-RIR），采用编码器-解码器框架，融合音频、视觉与文本等多层次环境信息来预测房间脉冲响应（RIR）。具体而言，以混响语音（蕴含房间声学特性）为主输入，辅以全景图像与文本描述作为补充输入。各模态经对应编码器处理后，通过交叉注意力模块实现有效交互。MEAN-RIR 解码器输出两部分：第一部分捕捉直达声与早期反射，第二部分生成掩码以调制可学习滤波噪声，合成后期混响。两部分混合后重建最终 RIR。实验表明，MEAN-RIR 显著提升了 RIR 估计精度，并在声学参数上取得明显增益。",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-05",
+    "paper_authors": "Jiajian Chen, Jiakang Chen, Hang Chen, Qing Wang, Yu Gao, Jun Du",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Room-acoustic simulations as an alternative to measurements for audio-algorithm evaluation",
+    "paper_title_zh": "房间声学仿真：音频算法评估中测量的替代方案",
+    "paper_id": "2509.05175v1",
+    "paper_abstract": "Audio-signal-processing and audio-machine-learning (ASP/AML) algorithms are ubiquitous in modern technology like smart devices, wearables, and entertainment systems. Development of such algorithms and models typically involves a formal evaluation to demonstrate their effectiveness and progress beyond the state-of-the-art. Ideally, a thorough evaluation should cover many diverse application scenarios and room-acoustic conditions. However, in practice, evaluation datasets are often limited in size and diversity because they rely on costly and time-consuming measurements. This paper explores how room-acoustic simulations can be used for evaluating ASP/AML algorithms. To this end, we evaluate three ASP/AML algorithms with room-acoustic measurements and data from different simulation engines, and assess the match between the evaluation results obtained from measurements and simulations. The presented investigation compares a numerical wave-based solver with two geometrical acoustics simulators. While numerical wave-based simulations yielded similar evaluation results as measurements for all three evaluated ASP/AML algorithms, geometrical acoustic simulations could not replicate the measured evaluation results as reliably.",
+    "paper_abstract_zh": "音频信号处理与音频机器学习（ASP/AML）算法已广泛应用于智能设备、可穿戴设备及娱乐系统等现代技术。开发此类算法通常需正式评估以证明其有效性并超越现有水平。理想评估应覆盖多种应用场景与房间声学条件，然而实际数据集因依赖昂贵耗时的测量而在规模与多样性上受限。本文探讨如何利用房间声学仿真评估 ASP/AML 算法。我们使用实测数据与三种不同仿真引擎的数据，对三种 ASP/AML 算法进行评估，并比较测量与仿真所得评估结果的一致性。研究对比了数值波动方程求解器与两种几何声学仿真器。结果表明，数值波动仿真对所有三种算法均能获得与测量相近的评估结果，而几何声学仿真则无法同样可靠地复现实测评估结果。",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-05",
+    "paper_authors": "Georg Götz, Daniel Gert Nielsen, Steinar Guðjónsson, Finnur Pind",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Efficient Video-to-Audio Generation via Multiple Foundation Models Mapper",
+    "paper_title_zh": "基于多基础模型映射器的高效视频到音频生成",
+    "paper_id": "2509.04957v1",
+    "paper_abstract": "Recent Video-to-Audio (V2A) generation relies on extracting semantic and temporal features from video to condition generative models. Training these models from scratch is resource intensive. Consequently, leveraging foundation models (FMs) has gained traction due to their cross-modal knowledge transfer and generalization capabilities. One prior work has explored fine-tuning a lightweight mapper network to connect a pre-trained visual encoder with a text-to-audio generation model for V2A. Inspired by this, we introduce the Multiple Foundation Model Mapper (MFM-Mapper). Compared to the previous mapper approach, MFM-Mapper benefits from richer semantic and temporal information by fusing features from dual visual encoders. Furthermore, by replacing a linear mapper with GPT-2, MFM-Mapper improves feature alignment, drawing parallels between cross-modal features mapping and autoregressive translation tasks. Our MFM-Mapper exhibits remarkable training efficiency. It achieves better performance in semantic and temporal consistency with fewer training consuming, requiring only 16\\% of the training scale compared to previous mapper-based work, yet achieves competitive performance with models trained on a much larger scale.",
+    "paper_abstract_zh": "近期视频到音频（V2A）生成依赖从视频中提取语义与时序特征以条件化生成模型。从头训练此类模型资源消耗巨大，因此利用基础模型（FMs）因其跨模态知识迁移与泛化能力而受到关注。已有研究尝试微调轻量级映射网络，将预训练视觉编码器与文本到音频生成模型连接以实现 V2A。受此启发，我们提出多基础模型映射器（MFM-Mapper）。相比先前映射方法，MFM-Mapper 通过融合双视觉编码器特征获得更丰富的语义与时序信息；此外，将线性映射器替换为 GPT-2，改善特征对齐，把跨模态特征映射视为自回归翻译任务。MFM-Mapper 训练效率极高，仅需先前映射方法 16% 的训练量，却在语义与时序一致性上表现更佳，并可与大规模训练模型竞争。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-05",
+    "paper_authors": "Gehui Chen, Guan'an Wang, Xiaowen Huang, Jitao Sang",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Learning and composing of classical music using restricted Boltzmann machines",
+    "paper_title_zh": "基于受限玻尔兹曼机的古典音乐学习与创作",
+    "paper_id": "2509.04899v1",
+    "paper_abstract": "Recently, software has been developed that uses machine learning to mimic the style of a particular composer, such as J. S. Bach. However, since such software often adopts machine learning models with complex structures, it is difficult to analyze how the software understands the characteristics of the composer's music. In this study, we adopted J. S. Bach's music for training of a restricted Boltzmann machine (RBM). Since the structure of RBMs is simple, it allows us to investigate the internal states after learning. We found that the learned RBM is able to compose music.",
+    "paper_abstract_zh": "近年来，已有软件利用机器学习模仿特定作曲家（如 J. S. 巴赫）的风格。然而，这类软件通常采用结构复杂的机器学习模型，难以分析其如何理解作曲家音乐的特征。本研究选用 J. S. 巴赫的作品训练受限玻尔兹曼机（RBM）。由于 RBM 结构简单，我们得以在学习后探究其内部状态。实验表明，训练后的 RBM 能够创作音乐。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-05",
+    "paper_authors": "Mutsumi Kobayashi, Hiroshi Watanabe",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "A Multiclass Acoustic Dataset and Interactive Tool for Analyzing Drone Signatures in Real-World Environments",
+    "paper_title_zh": "多类别无人机声学数据集与交互式工具：真实场景下的无人机声纹分析",
+    "paper_id": "2509.04715v1",
+    "paper_abstract": "The rapid proliferation of drones across various industries has introduced significant challenges related to privacy, security, and noise pollution. Current drone detection systems, primarily based on visual and radar technologies, face limitations under certain conditions, highlighting the need for effective acoustic-based detection methods. This paper presents a unique and comprehensive dataset of drone acoustic signatures, encompassing 32 different categories differentiated by brand and model. The dataset includes raw audio recordings, spectrogram plots, and Mel-frequency cepstral coefficient (MFCC) plots for each drone. Additionally, we introduce an interactive web application that allows users to explore this dataset by selecting specific drone categories, listening to the associated audio, and viewing the corresponding spectrogram and MFCC plots. This tool aims to facilitate research in drone detection, classification, and acoustic analysis, supporting both technological advancements and educational initiatives. The paper details the dataset creation process, the design and implementation of the web application, and provides experimental results and user feedback. Finally, we discuss potential applications and future work to expand and enhance the project.",
+    "paper_abstract_zh": "无人机在各行业的迅速普及带来了隐私、安全与噪声污染等多重挑战。现有无人机探测系统主要依赖视觉与雷达技术，在特定条件下存在局限，亟需高效的声学探测方法。本文发布了一个独特且全面的无人机声学特征数据集，涵盖 32 种不同品牌与型号。数据集包含原始音频、频谱图及每架无人机的梅尔频率倒谱系数（MFCC）图。此外，我们推出一款交互式网页应用，用户可按类别选择无人机，试听对应音频并查看频谱图与 MFCC 图，以支持无人机检测、分类与声学分析的研究，促进技术进步与科普教育。文章详述了数据集构建、网页应用的设计与实现，并给出实验结果与用户反馈，最后探讨了潜在应用与未来扩展方向。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-05",
+    "paper_authors": "Mia Y. Wang, Mackenzie Linn, Andrew P. Berg, Qian Zhang",
+    "topic": [],
+    "category": [
+      "Other"
     ]
   }
 ]
