@@ -117,11 +117,24 @@ class DailyPaperCollector:
         """将作者列表转换为字符串"""
         return ", ".join(str(author) for author in authors)
     
+    def get_arxiv_search_date(self, target_date: date) -> date:
+        """获取arXiv搜索日期，处理周末逻辑"""
+        # 如果是周一（weekday=0），需要回溯到上周五
+        if target_date.weekday() == 0:  # 周一
+            # 回溯到上周五（3天前）
+            arxiv_search_date = target_date - timedelta(days=3)
+        else:
+            # 其他日期，查找前一天
+            arxiv_search_date = target_date - timedelta(days=1)
+        
+        logging.info(f"Target date: {target_date} (weekday: {target_date.weekday()}), searching arXiv papers from: {arxiv_search_date}")
+        return arxiv_search_date
+    
     def is_target_date(self, paper_date: date, target_date: date) -> bool:
         """检查论文日期是否为目标日期（arXiv论文通常是前一天发表的）"""
-        # arXiv论文的发表日期通常比我们看到的日期早一天
-        arxiv_publish_date = target_date - timedelta(days=1)
-        return paper_date == arxiv_publish_date
+        # 获取应该搜索的arXiv日期
+        arxiv_search_date = self.get_arxiv_search_date(target_date)
+        return paper_date == arxiv_search_date
     
     def search_papers_by_keywords(self, target_date: date, max_results: int = 100) -> Dict[str, List[Dict]]:
         """方式1: 使用关键词搜索论文"""
@@ -248,7 +261,7 @@ class DailyPaperCollector:
     def collect_daily_papers(self, target_date: date):
         """收集指定日期的论文（增量模式）"""
         date_str = target_date.strftime('%Y-%m-%d')
-        arxiv_date = target_date - timedelta(days=1)
+        arxiv_date = self.get_arxiv_search_date(target_date)
         logging.info(f"Collecting papers for date: {date_str} (searching arXiv papers from {arxiv_date})")
         
         # 加载已存在的论文数据

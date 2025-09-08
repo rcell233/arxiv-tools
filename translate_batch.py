@@ -6,7 +6,7 @@ from typing import Dict, Any, List
 
 # OpenRouter API配置
 # API_KEY = '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'
-API_KEY = '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'
+API_KEY = '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'
 
 BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "moonshotai/kimi-k2:free"

@@ -1,0 +1,99 @@
+[
+  {
+    "paper_title": "WenetSpeech-Yue: A Large-scale Cantonese Speech Corpus with Multi-dimensional Annotation",
+    "paper_title_zh": "",
+    "paper_id": "2509.03959v2",
+    "paper_abstract": "The development of speech understanding and generation has been significantly accelerated by the availability of large-scale, high-quality speech datasets. Among these, ASR and TTS are regarded as the most established and fundamental tasks. However, for Cantonese (Yue Chinese), spoken by approximately 84.9 million native speakers worldwide, limited annotated resources have hindered progress and resulted in suboptimal ASR and TTS performance. To address this challenge, we propose WenetSpeech-Pipe, an integrated pipeline for building large-scale speech corpus with multi-dimensional annotation tailored for speech understanding and generation. It comprises six modules: Audio Collection, Speaker Attributes Annotation, Speech Quality Annotation, Automatic Speech Recognition, Text Postprocessing and Recognizer Output Voting, enabling rich and high-quality annotations. Based on this pipeline, we release WenetSpeech-Yue, the first large-scale Cantonese speech corpus with multi-dimensional annotation for ASR and TTS, covering 21,800 hours across 10 domains with annotations including ASR transcription, text confidence, speaker identity, age, gender, speech quality scores, among other annotations. We also release WSYue-eval, a comprehensive Cantonese benchmark with two components: WSYue-ASR-eval, a manually annotated set for evaluating ASR on short and long utterances, code-switching, and diverse acoustic conditions, and WSYue-TTS-eval, with base and coverage subsets for standard and generalization testing. Experimental results show that models trained on WenetSpeech-Yue achieve competitive results against state-of-the-art (SOTA) Cantonese ASR and TTS systems, including commercial and LLM-based models, highlighting the value of our dataset and pipeline.",
+    "paper_abstract_zh": "",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-05",
+    "paper_authors": "Longhao Li, Zhao Guo, Hongjie Chen, Yuhang Dai, Ziyu Zhang, Hongfei Xue, Tianlun Zuo, Chengyou Wang, Shuiyuan Wang, Jie Li, Jian Kang, Xin Xu, Hui Bu, Binbin Zhang, Ruibin Yuan, Ziya Zhou, Wei Xue, Lei Xie",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Exploring persuasive interactions with generative social robots: An experimental framework",
+    "paper_title_zh": "",
+    "paper_id": "2509.03231v2",
+    "paper_abstract": "Integrating generative AI such as Large Language Models into social robots has improved their ability to engage in natural, human-like communication. This study presents a method to examine their persuasive capabilities. We designed an experimental framework focused on decision making and tested it in a pilot that varied robot appearance and self-knowledge. Using qualitative analysis, we evaluated interaction quality, persuasion effectiveness, and the robot's communicative strategies. Participants generally experienced the interaction positively, describing the robot as competent, friendly, and supportive, while noting practical limits such as delayed responses and occasional speech-recognition errors. Persuasiveness was highly context dependent and shaped by robot behavior: Participants responded well to polite, reasoned suggestions and expressive gestures, but emphasized the need for more personalized, context-aware arguments and clearer social roles. These findings suggest that generative social robots can influence user decisions, but their effectiveness depends on communicative nuance and contextual relevance. We propose refinements to the framework to further study persuasive dynamics between robots and human users.",
+    "paper_abstract_zh": "",
+    "primary_category": "cs.RO",
+    "update_time": "2025-09-05",
+    "paper_authors": "Stephan Vonschallen, Larissa Julia Corina Finsler, Theresa Schmiedel, Friederike Eyssel",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets",
+    "paper_title_zh": "",
+    "paper_id": "2508.15442v3",
+    "paper_abstract": "Language Model (LM)-based Text-to-Speech (TTS) systems often generate hallucinated speech that deviates from input text. Existing mitigation strategies either demand excessive training resources or introduce significant inference latency. In this paper, we propose GFlOwNet-guided distribution AlignmenT (GOAT) for LM-based TTS, a post-training framework that mitigates hallucinations without relying on massive resources or inference cost. Specifically, we first conduct an uncertainty analysis, revealing a strong positive correlation between hallucination and model uncertainty. Based on this, we reformulate TTS generation as a trajectory flow optimization problem and introduce an enhanced Subtrajectory Balance objective together with a sharpened internal reward as target distribution. We further integrate reward temperature decay and learning rate optimization for stability and performance balance. Extensive experiments show that GOAT reduce over 50% character error rates on challenging test cases and lowering uncertainty by up to 58%, demonstrating its strong generalization ability and effectiveness.",
+    "paper_abstract_zh": "",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-05",
+    "paper_authors": "Chenlin Liu, Minghui Fang, Patrick Zhang, Wei Zhou, Jie Gao, Jiqing Han",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "InfoScale: Unleashing Training-free Variable-scaled Image Generation via Effective Utilization of Information",
+    "paper_title_zh": "",
+    "paper_id": "2509.01421v2",
+    "paper_abstract": "Diffusion models (DMs) have become dominant in visual generation but suffer performance drop when tested on resolutions that differ from the training scale, whether lower or higher. In fact, the key challenge in generating variable-scale images lies in the differing amounts of information across resolutions, which requires information conversion procedures to be varied for generating variable-scaled images. In this paper, we investigate the issues of three critical aspects in DMs for a unified analysis in variable-scaled generation: dilated convolution, attention mechanisms, and initial noise. Specifically, 1) dilated convolution in DMs for the higher-resolution generation loses high-frequency information. 2) Attention for variable-scaled image generation struggles to adjust the information aggregation adaptively. 3) The spatial distribution of information in the initial noise is misaligned with variable-scaled image. To solve the above problems, we propose \\textbf{InfoScale}, an information-centric framework for variable-scaled image generation by effectively utilizing information from three aspects correspondingly. For information loss in 1), we introduce Progressive Frequency Compensation module to compensate for high-frequency information lost by dilated convolution in higher-resolution generation. For information aggregation inflexibility in 2), we introduce Adaptive Information Aggregation module to adaptively aggregate information in lower-resolution generation and achieve an effective balance between local and global information in higher-resolution generation. For information distribution misalignment in 3), we design Noise Adaptation module to re-distribute information in initial noise for variable-scaled generation. Our method is plug-and-play for DMs and extensive experiments demonstrate the effectiveness in variable-scaled image generation.",
+    "paper_abstract_zh": "",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-05",
+    "paper_authors": "Guohui Zhang, Jiangtong Tan, Linjiang Huang, Zhonghang Yuan, Naishan Zheng, Jie Huang, Feng Zhao",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Semi-Supervised Bayesian GANs with Log-Signatures for Uncertainty-Aware Credit Card Fraud Detection",
+    "paper_title_zh": "",
+    "paper_id": "2509.00931v2",
+    "paper_abstract": "We present a novel deep generative semi-supervised framework for credit card fraud detection, formulated as time series classification task. As financial transaction data streams grow in scale and complexity, traditional methods often require large labeled datasets, struggle with time series of irregular sampling frequencies and varying sequence lengths. To address these challenges, we extend conditional Generative Adversarial Networks (GANs) for targeted data augmentation, integrate Bayesian inference to obtain predictive distributions and quantify uncertainty, and leverage log-signatures for robust feature encoding of transaction histories. We introduce a novel Wasserstein distance-based loss to align generated and real unlabeled samples while simultaneously maximizing classification accuracy on labeled data. Our approach is evaluated on the BankSim dataset, a widely used simulator for credit card transaction data, under varying proportions of labeled samples, demonstrating consistent improvements over benchmarks in both global statistical and domain-specific metrics. These findings highlight the effectiveness of GAN-driven semi-supervised learning with log-signatures for irregularly sampled time series and emphasize the importance of uncertainty-aware predictions.",
+    "paper_abstract_zh": "",
+    "primary_category": "stat.ML",
+    "update_time": "2025-09-05",
+    "paper_authors": "David Hirnschall",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "TPA: Temporal Prompt Alignment for Fetal Congenital Heart Defect Classification",
+    "paper_title_zh": "",
+    "paper_id": "2508.15298v5",
+    "paper_abstract": "Congenital heart defect (CHD) detection in ultrasound videos is hindered by image noise and probe positioning variability. While automated methods can reduce operator dependence, current machine learning approaches often neglect temporal information, limit themselves to binary classification, and do not account for prediction calibration. We propose Temporal Prompt Alignment (TPA), a method leveraging foundation image-text model and prompt-aware contrastive learning to classify fetal CHD on cardiac ultrasound videos. TPA extracts features from each frame of video subclips using an image encoder, aggregates them with a trainable temporal extractor to capture heart motion, and aligns the video representation with class-specific text prompts via a margin-hinge contrastive loss. To enhance calibration for clinical reliability, we introduce a Conditional Variational Autoencoder Style Modulation (CVAESM) module, which learns a latent style vector to modulate embeddings and quantifies classification uncertainty. Evaluated on a private dataset for CHD detection and on a large public dataset, EchoNet-Dynamic, for systolic dysfunction, TPA achieves state-of-the-art macro F1 scores of 85.40% for CHD diagnosis, while also reducing expected calibration error by 5.38% and adaptive ECE by 6.8%. On EchoNet-Dynamic's three-class task, it boosts macro F1 by 4.73% (from 53.89% to 58.62%). Temporal Prompt Alignment (TPA) is a framework for fetal congenital heart defect (CHD) classification in ultrasound videos that integrates temporal modeling, prompt-aware contrastive learning, and uncertainty quantification.",
+    "paper_abstract_zh": "",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-05",
+    "paper_authors": "Darya Taratynova, Alya Almsouti, Beknur Kalmakhanbet, Numan Saeed, Mohammad Yaqub",
+    "topic": [
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  }
+]
