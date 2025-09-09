@@ -1,0 +1,724 @@
+[
+  {
+    "paper_title": "E-THER: A Multimodal Dataset for Empathic AI - Towards Emotional Mismatch Awareness",
+    "paper_title_zh": "E-THER：用于共情AI的多模态数据集——迈向情绪失配感知",
+    "paper_id": "2509.02100v2",
+    "paper_abstract": "A prevalent shortfall among current empathic AI systems is their inability to recognize when verbal expressions may not fully reflect underlying emotional states. This is because the existing datasets, used for the training of these systems, focus on surface-level emotion recognition without addressing the complex verbal-visual incongruence (mismatch) patterns useful for empathic understanding. In this paper, we present E-THER, the first Person-Centered Therapy-grounded multimodal dataset with multidimensional annotations for verbal-visual incongruence detection, enabling training of AI systems that develop genuine rather than performative empathic capabilities. The annotations included in the dataset are drawn from humanistic approach, i.e., identifying verbal-visual emotional misalignment in client-counsellor interactions - forming a framework for training and evaluating AI on empathy tasks. Additional engagement scores provide behavioral annotations for research applications. Notable gains in empathic and therapeutic conversational qualities are observed in state-of-the-art vision-language models (VLMs), such as IDEFICS and VideoLLAVA, using evaluation metrics grounded in empathic and therapeutic principles. Empirical findings indicate that our incongruence-trained models outperform general-purpose models in critical traits, such as sustaining therapeutic engagement, minimizing artificial or exaggerated linguistic patterns, and maintaining fidelity to PCT theoretical framework.",
+    "paper_abstract_zh": "当前共情AI系统的普遍缺陷是无法识别言语表达与潜在情绪状态不一致的情况，原因在于现有训练数据集仅关注表层情绪识别，未涵盖对共情理解至关重要的言语-视觉失配（mismatch）模式。本文提出E-THER，首个以人为中心疗法（Person-Centered Therapy, PCT）为基础、带有多维标注的多模态数据集，用于言语-视觉失配检测，使AI系统能够发展真正的而非表演性的共情能力。数据集的标注源于人本主义方法，即在来访者-咨询师互动中识别言语与视觉情绪错位，为训练和评估AI的共情任务提供框架；附加的参与度评分为研究应用提供行为标注。在IDEFICS、VideoLLAVA等先进视觉-语言模型（VLM）上的实验表明，基于共情与治疗原则的评价指标下，经失配训练的模型在维持治疗参与度、减少夸张语言模式、保持PCT理论忠实性等关键特质上均优于通用模型。",
+    "primary_category": "cs.HC",
+    "update_time": "2025-09-08",
+    "paper_authors": "Sharjeel Tahir, Judith Johnson, Jumana Abu-Khalaf, Syed Afaq Ali Shah",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Sticker-TTS: Learn to Utilize Historical Experience with a Sticker-driven Test-Time Scaling Framework",
+    "paper_title_zh": "Sticker-TTS：利用历史经验的贴纸驱动测试时扩展框架",
+    "paper_id": "2509.05007v2",
+    "paper_abstract": "Large reasoning models (LRMs) have exhibited strong performance on complex reasoning tasks, with further gains achievable through increased computational budgets at inference. However, current test-time scaling methods predominantly rely on redundant sampling, ignoring the historical experience utilization, thereby limiting computational efficiency. To overcome this limitation, we propose Sticker-TTS, a novel test-time scaling framework that coordinates three collaborative LRMs to iteratively explore and refine solutions guided by historical attempts. At the core of our framework are distilled key conditions-termed stickers-which drive the extraction, refinement, and reuse of critical information across multiple rounds of reasoning. To further enhance the efficiency and performance of our framework, we introduce a two-stage optimization strategy that combines imitation learning with self-improvement, enabling progressive refinement. Extensive evaluations on three challenging mathematical reasoning benchmarks, including AIME-24, AIME-25, and OlymMATH, demonstrate that Sticker-TTS consistently surpasses strong baselines, including self-consistency and advanced reinforcement learning approaches, under comparable inference budgets. These results highlight the effectiveness of sticker-guided historical experience utilization. Our code and data are available at https://github.com/RUCAIBox/Sticker-TTS.",
+    "paper_abstract_zh": "大型推理模型（LRM）在复杂推理任务上表现强劲，且可通过增加推理阶段的计算预算进一步提升性能。然而，现有测试时扩展方法主要依赖冗余采样，忽视了对历史经验的利用，从而限制了计算效率。为此，我们提出 Sticker-TTS，一种新颖的测试时扩展框架，通过协调三个协同的 LRM，在历史尝试的引导下迭代探索并精化解题方案。框架核心在于提炼出的关键条件——称为“贴纸”——驱动多轮推理中关键信息的提取、精炼与复用。为进一步提升效率与性能，我们引入两阶段优化策略，融合模仿学习与自我改进，实现渐进式优化。在 AIME-24、AIME-25 与 OlymMATH 三大挑战性数学推理基准上的广泛实验表明，在可比推理预算下，Sticker-TTS 持续优于强基线（包括自洽机制与先进强化学习方法），凸显了贴纸引导的历史经验利用的有效性。代码与数据已开源：https://github.com/RUCAIBox/Sticker-TTS。",
+    "primary_category": "cs.AI",
+    "update_time": "2025-09-08",
+    "paper_authors": "Jie Chen, Jinhao Jiang, Yingqian Min, Zican Dong, Shijie Wang, Wayne Xin Zhao, Ji-Rong Wen",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Empathy Omni: Enabling Empathetic Speech Response Generation through Large Language Models",
+    "paper_title_zh": "Empathy Omni：通过大语言模型实现共情语音回复生成",
+    "paper_id": "2508.18655v2",
+    "paper_abstract": "With the development of speech large language models (speech LLMs), users can now interact directly with assistants via speech. However, most existing models only convert response content into speech without fully capturing the rich emotional cues in user queries, where the same sentence may convey different meanings depending on the expression. Emotional understanding is thus essential for improving human-machine interaction. Most empathetic speech LLMs rely on massive datasets, demanding high computational cost. A key challenge is to build models that generate empathetic responses with limited data and without large-scale training. To this end, we propose Emotion Omni, a model that understands emotional content in user speech and generates empathetic responses. We further developed a data pipeline to construct a 200k emotional dialogue dataset supporting empathetic speech assistants. Experiments show that Emotion Omni achieves comparable instruction-following ability without large-scale pretraining, while surpassing existing models in speech quality (UTMOS:4.41) and empathy (Emotion GPT Score: 3.97). These results confirm its improvements in both speech fidelity and emotional expressiveness. Demos are available at https://w311411.github.io/omni_demo/.",
+    "paper_abstract_zh": "随着语音大语言模型（speech LLM）的发展，用户可直接通过语音与助手交互。然而，现有模型大多仅将回复内容转为语音，未能充分捕捉用户查询中的丰富情感线索——同一句话因表达方式不同而含义迥异。因而，情感理解对提升人机交互至关重要。现有共情语音 LLM 依赖海量数据，计算成本高昂。关键挑战在于如何在数据有限且无需大规模训练的情况下，生成具有共情能力的回复。为此，我们提出 Emotion Omni，该模型可理解用户语音中的情感内容并生成共情回复。我们进一步构建了支持共情语音助手的 20 万条情感对话数据管道。实验表明，Emotion Omni 无需大规模预训练即可实现可比的指令遵循能力，并在语音质量（UTMOS：4.41）与共情度（Emotion GPT 评分：3.97）上超越现有模型，验证了其在语音保真度与情感表达上的双重提升。演示地址：https://w311411.github.io/omni_demo/。",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-08",
+    "paper_authors": "Haoyu Wang, Guangyan Zhang, Jiale Chen, Jingyu Li, Yuehai Wang, Yiwen Guo",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "AURAD: Anatomy-Pathology Unified Radiology Synthesis with Progressive Representations",
+    "paper_title_zh": "AURAD：基于渐进表征的解剖-病理统一放射影像合成",
+    "paper_id": "2509.04819v2",
+    "paper_abstract": "Medical image synthesis has become an essential strategy for augmenting datasets and improving model generalization in data-scarce clinical settings. However, fine-grained and controllable synthesis remains difficult due to limited high-quality annotations and domain shifts across datasets. Existing methods, often designed for natural images or well-defined tumors, struggle to generalize to chest radiographs, where disease patterns are morphologically diverse and tightly intertwined with anatomical structures. To address these challenges, we propose AURAD, a controllable radiology synthesis framework that jointly generates high-fidelity chest X-rays and pseudo semantic masks. Unlike prior approaches that rely on randomly sampled masks-limiting diversity, controllability, and clinical relevance-our method learns to generate masks that capture multi-pathology coexistence and anatomical-pathological consistency. It follows a progressive pipeline: pseudo masks are first generated from clinical prompts conditioned on anatomical structures, and then used to guide image synthesis. We also leverage pretrained expert medical models to filter outputs and ensure clinical plausibility. Beyond visual realism, the synthesized masks also serve as labels for downstream tasks such as detection and segmentation, bridging the gap between generative modeling and real-world clinical applications. Extensive experiments and blinded radiologist evaluations demonstrate the effectiveness and generalizability of our method across tasks and datasets. In particular, 78% of our synthesized images are classified as authentic by board-certified radiologists, and over 40% of predicted segmentation overlays are rated as clinically useful. All code, pre-trained models, and the synthesized dataset will be released upon publication.",
+    "paper_abstract_zh": "医学影像合成已成为数据稀缺临床场景中扩充数据集、提升模型泛化能力的关键策略。然而，由于高质量标注有限且跨数据集存在域偏移，细粒度且可控的合成仍极具挑战。现有方法多面向自然图像或边界清晰的肿瘤设计，难以泛化至胸部X光片——其病灶形态多样，且与解剖结构紧密交织。为此，我们提出AURAD，一种可控的放射影像合成框架，可联合生成高保真胸部X光及伪语义掩膜。与以往依赖随机采样掩膜、导致多样性、可控性及临床相关性受限的方法不同，本框架学习生成能捕捉多病灶共存并保持解剖-病理一致性的掩膜。其流程渐进：首先基于解剖结构由临床提示生成伪掩膜，再以此引导图像合成。我们还利用预训练医学专家模型过滤输出，确保临床合理性。除视觉逼真外，合成掩膜可直接作为下游检测与分割任务的标签，弥合生成建模与真实临床应用之间的鸿沟。大量实验与盲评放射科医师评估表明，本方法跨任务、跨数据集均有效且可泛化。特别地，78% 的合成图像被执业医师认定为真实，超过40% 的预测分割叠加被评为临床可用。所有代码、预训练模型及合成数据集将在论文发表时公开。",
+    "primary_category": "eess.IV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Shuhan Ding, Jingjing Fu, Yu Gu, Naiteek Sangani, Mu Wei, Paul Vozila, Nan Liu, Jiang Bian, Hoifung Poon",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Hyper Diffusion Avatars: Dynamic Human Avatar Generation using Network Weight Space Diffusion",
+    "paper_title_zh": "超扩散化身：利用网络权重空间扩散生成动态人体化身",
+    "paper_id": "2509.04145v2",
+    "paper_abstract": "Creating human avatars is a highly desirable yet challenging task. Recent advancements in radiance field rendering have achieved unprecedented photorealism and real-time performance for personalized dynamic human avatars. However, these approaches are typically limited to person-specific rendering models trained on multi-view video data for a single individual, limiting their ability to generalize across different identities. On the other hand, generative approaches leveraging prior knowledge from pre-trained 2D diffusion models can produce cartoonish, static human avatars, which are animated through simple skeleton-based articulation. Therefore, the avatars generated by these methods suffer from lower rendering quality compared to person-specific rendering methods and fail to capture pose-dependent deformations such as cloth wrinkles. In this paper, we propose a novel approach that unites the strengths of person-specific rendering and diffusion-based generative modeling to enable dynamic human avatar generation with both high photorealism and realistic pose-dependent deformations. Our method follows a two-stage pipeline: first, we optimize a set of person-specific UNets, with each network representing a dynamic human avatar that captures intricate pose-dependent deformations. In the second stage, we train a hyper diffusion model over the optimized network weights. During inference, our method generates network weights for real-time, controllable rendering of dynamic human avatars. Using a large-scale, cross-identity, multi-view video dataset, we demonstrate that our approach outperforms state-of-the-art human avatar generation methods.",
+    "paper_abstract_zh": "创建逼真的人体化身是极具吸引力却充满挑战的任务。近期辐射场渲染技术在个性化动态人体化身上实现了前所未有的真实感与实时性能，但这些方法通常针对单一个体、基于多视角视频训练人物专用渲染模型，难以跨身份泛化。另一方面，借助预训练2D扩散模型先验的生成式方法虽能产出卡通风格静态人体化身，并通过简单骨架驱动动画，但其渲染质量远低于人物专用方法，且无法捕捉姿态相关的细节形变（如布料褶皱）。本文提出一种新颖框架，融合人物专用渲染与扩散生成建模的优势，实现兼具高真实感与姿态相关形变的动态人体化身生成。方法分两阶段：首先优化一组人物专用UNet，每个网络表示一个捕捉精细姿态形变的动态人体化身；第二阶段在已优化网络权重上训练超网络扩散模型。推理时，该方法生成网络权重，实现实时、可控的动态人体化身渲染。基于大规模跨身份多视角视频数据集的实验表明，本方法优于当前最新的人体化身生成技术。",
+    "primary_category": "cs.GR",
+    "update_time": "2025-09-08",
+    "paper_authors": "Dongliang Cao, Guoxing Sun, Marc Habermann, Florian Bernard",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "DCPO: Dynamic Clipping Policy Optimization",
+    "paper_title_zh": "DCPO：动态裁剪策略优化",
+    "paper_id": "2509.02333v2",
+    "paper_abstract": "Reinforcement Learning from Verifiable Rewards (RLVR) has emerged as a promising framework for enhancing the reasoning capabilities of large language models. However, existing approaches such as GRPO often suffer from zero gradients. This problem arises primarily due to fixed clipping bounds for token-level probability ratios and the standardization of identical rewards, which can lead to ineffective gradient updates and underutilization of generated responses. In this work, we propose Dynamic Clipping Policy Optimization(DCPO), which introduces a dynamic clipping strategy that adaptively adjusts clipping bounds based on token-specific prior probabilities to enhance token-level exploration, and a smooth advantage standardization technique that standardizes rewards across cumulative training steps to improve the response-level effective utilization of generated responses. DCPO achieved state-of-the-art performance on four benchmarks based on four different models. In particular, DCPO achieved an Avg@1 of 46.7 under greedy decoding and an Avg@32 of 38.8 under 32 times sampling on the AIME24 benchmark, surpassing DAPO (36.7/31.6), GRPO (36.7/32.1) and GSPO (40.0/34.9) on the Qwen2.5-Math-7B model. On the AIME25 benchmark based on Qwen2.5-14B, DCPO achieves a performance of (23.3/19.0), surpassing GRPO (13.3/10.5), DAPO (20.0/15.3) and GSPO (16.7/9.9). Furthermore, DCPO achieved an average 28% improvement in the nonzero advantage over GRPO in four models, doubled the training efficiency over DAPO, and significantly reduced the token clipping ratio by an order of magnitude compared to both GRPO and DAPO, while achieving superior performance. These results highlight DCPO's effectiveness in leveraging generated data more efficiently for reinforcement learning in large language models.",
+    "paper_abstract_zh": "基于可验证奖励的强化学习（RLVR）已成为提升大语言模型推理能力的有前景框架。然而，现有方法如 GRPO 常遭遇零梯度问题，主要源于对 token 级概率比采用固定裁剪边界以及对相同奖励的标准化，导致梯度更新失效并浪费生成样本。本文提出动态裁剪策略优化（DCPO），通过依据 token 特定先验概率自适应调整裁剪边界的动态裁剪策略，增强 token 级探索；并引入平滑优势标准化技术，在累积训练步间标准化奖励，提升响应级对生成样本的有效利用。DCPO 在四个基准、四种模型上均达 SOTA。尤其在 AIME24 基准上，基于 Qwen2.5-Math-7B 模型，DCPO 在贪婪解码下 Avg@1 为 46.7，32 次采样下 Avg@32 为 38.8，超越 DAPO（36.7/31.6）、GRPO（36.7/32.1）与 GSPO（40.0/34.9）。在 AIME25 基准上，基于 Qwen2.5-14B，DCPO 达（23.3/19.0），优于 GRPO（13.3/10.5）、DAPO（20.0/15.3）与 GSPO（16.7/9.9）。此外，DCPO 在四种模型上平均非零优势较 GRPO 提升 28%，训练效率较 DAPO 翻倍，token 裁剪比例较 GRPO 与 DAPO 降低一个数量级，同时性能更优。结果凸显 DCPO 能更高效地利用生成数据为大语言模型强化学习赋能。",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-08",
+    "paper_authors": "Shihui Yang, Chengfeng Dou, Peidong Guo, Kai Lu, Qiang Ju, Fei Deng, Rihui Xin",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Learning and composing of classical music using restricted Boltzmann machines",
+    "paper_title_zh": "利用受限玻尔兹曼机学习与创作古典音乐",
+    "paper_id": "2509.04899v2",
+    "paper_abstract": "Recently, software has been developed that uses machine learning to mimic the style of a particular composer, such as J. S. Bach. However, since such software often adopts machine learning models with complex structures, it is difficult to analyze how the software understands the characteristics of the composer's music. In this study, we adopted J. S. Bach's music for training of a restricted Boltzmann machine (RBM). Since the structure of RBMs is simple, it allows us to investigate the internal states after learning. We found that the learned RBM is able to compose music.",
+    "paper_abstract_zh": "近来，已有软件利用机器学习模仿特定作曲家（如 J. S. 巴赫）的风格。然而，此类软件通常采用结构复杂的机器学习模型，难以解析其如何理解该作曲家音乐的特征。本研究选用 J. S. 巴赫的作品训练受限玻尔兹曼机（RBM）。由于 RBM 结构简单，可在训练后探究其内部状态。实验表明，训练后的 RBM 能够作曲。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-08",
+    "paper_authors": "Mutsumi Kobayashi, Hiroshi Watanabe",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "ParCzech4Speech: A New Speech Corpus Derived from Czech Parliamentary Data",
+    "paper_title_zh": "ParCzech4Speech：基于捷克议会数据的新语音语料库",
+    "paper_id": "2509.06675v1",
+    "paper_abstract": "We introduce ParCzech4Speech 1.0, a processed version of the ParCzech 4.0 corpus, targeted at speech modeling tasks with the largest variant containing 2,695 hours. We combined the sound recordings of the Czech parliamentary speeches with the official transcripts. The recordings were processed with WhisperX and Wav2Vec 2.0 to extract automated audio-text alignment. Our processing pipeline improves upon the ParCzech 3.0 speech recognition version by extracting more data with higher alignment reliability. The dataset is offered in three flexible variants: (1) sentence-segmented for automatic speech recognition and speech synthesis tasks with clean boundaries, (2) unsegmented preserving original utterance flow across sentences, and (3) a raw-alignment for further custom refinement for other possible tasks. All variants maintain the original metadata and are released under a permissive CC-BY license. The dataset is available in the LINDAT repository, with the sentence-segmented and unsegmented variants additionally available on Hugging Face.",
+    "paper_abstract_zh": "我们推出 ParCzech4Speech 1.0，这是 ParCzech 4.0 语料库的一个加工版本，专为语音建模任务设计，最大版本包含 2,695 小时语音。我们将捷克议会演讲的录音与官方转录文本结合，利用 WhisperX 和 Wav2Vec 2.0 进行自动音文对齐。相比 ParCzech 3.0 的语音识别版，我们的处理流程提取了更多数据，且对齐可靠性更高。数据集提供三种灵活变体：(1) 按句子切分，边界干净，适用于自动语音识别与语音合成；(2) 未切分，保留原始跨句语流；(3) 原始对齐，便于进一步自定义精调。所有变体均保留原始元数据，并以宽松的 CC-BY 许可证发布。数据集已上传至 LINDAT 仓库，其中句子切分与未切分版本同时可在 Hugging Face 获取。",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-08",
+    "paper_authors": "Vladislav Stankov, Matyáš Kopp, Ondřej Bojar",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Mask-GCG: Are All Tokens in Adversarial Suffixes Necessary for Jailbreak Attacks?",
+    "paper_title_zh": "Mask-GCG：对抗后缀中的所有词元对越狱攻击都必要吗？",
+    "paper_id": "2509.06350v1",
+    "paper_abstract": "Jailbreak attacks on Large Language Models (LLMs) have demonstrated various successful methods whereby attackers manipulate models into generating harmful responses that they are designed to avoid. Among these, Greedy Coordinate Gradient (GCG) has emerged as a general and effective approach that optimizes the tokens in a suffix to generate jailbreakable prompts. While several improved variants of GCG have been proposed, they all rely on fixed-length suffixes. However, the potential redundancy within these suffixes remains unexplored. In this work, we propose Mask-GCG, a plug-and-play method that employs learnable token masking to identify impactful tokens within the suffix. Our approach increases the update probability for tokens at high-impact positions while pruning those at low-impact positions. This pruning not only reduces redundancy but also decreases the size of the gradient space, thereby lowering computational overhead and shortening the time required to achieve successful attacks compared to GCG. We evaluate Mask-GCG by applying it to the original GCG and several improved variants. Experimental results show that most tokens in the suffix contribute significantly to attack success, and pruning a minority of low-impact tokens does not affect the loss values or compromise the attack success rate (ASR), thereby revealing token redundancy in LLM prompts. Our findings provide insights for developing efficient and interpretable LLMs from the perspective of jailbreak attacks.",
+    "paper_abstract_zh": "针对大语言模型（LLM）的越狱攻击已出现多种成功方法，攻击者通过操纵提示词诱导模型输出本应拒绝的有害内容。其中，贪婪坐标梯度（GCG）因其通用且有效而成为主流：它优化后缀词元以生成可越狱的提示。尽管已有多种 GCG 改进版，但它们均依赖固定长度后缀，其内部潜在冗余尚未被探索。本文提出 Mask-GCG，一种即插即用的方法，利用可学习的词元掩码机制识别后缀中的关键词元。该方法提高高影响位置词元的更新概率，同时剪除低影响词元。剪枝不仅降低冗余，还缩小梯度空间，减少计算开销，并缩短成功攻击所需时间。我们将 Mask-GCG 应用于原始 GCG 及其多种改进版，实验表明：后缀中多数词元对攻击成功至关重要，仅剪除少量低影响词元不会显著改变损失值或攻击成功率（ASR），从而揭示 LLM 提示中存在词元冗余。我们的发现为从越狱攻击视角开发高效、可解释的大语言模型提供了新见解。",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-08",
+    "paper_authors": "Junjie Mu, Zonghao Ying, Zhekui Fan, Zonglei Jing, Yaoyuan Zhang, Zhengmin Yu, Wenxin Zhang, Quanchen Zou, Xiangzheng Zhang",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "New kinematic map of the Milky Way bulge",
+    "paper_title_zh": "银河系核球的新运动学星图",
+    "paper_id": "2509.06846v1",
+    "paper_abstract": "The kinematics of the Milky Way bulge is known to be complex, reflecting the presence of multiple stellar components with distinct chemical and spatial properties. In particular, the bulge hosts a bar structure exhibiting cylindrical rotation, and a central velocity dispersion peak extending vertically along the Galactic latitude. However, due to severe extinction and crowding, observational constraints near the Galactic plane are sparse, underscoring the need for additional data to improve the completeness and accuracy of existing kinematic maps, and enabling robust comparison with dynamical models. This work aimed to refine the existing analytical models of the Galactic bulge kinematics by improving constraints in the innermost regions. We present updated maps of the mean velocity and velocity dispersion by incorporating new data near the Galactic plane. We combined radial velocity measurements from the GIBS and APOGEE surveys with both previously published and newly acquired MUSE observations. A custom\\ -- developed Python\\ -- based tool, {\\tt PHOTfun}, was used to extract spectra from MUSE datacubes using PSF photometry based on DAOPHOT-II, with an integrated GUI for usability. The method included a dedicated extension, {\\tt PHOTcube}, optimized for IFU datacubes. We applied Markov Chain Monte Carlo techniques to identify and correct for foreground contamination and to derive new analytical fits for the velocity and velocity dispersion distributions. Our analysis included nine new MUSE fields located close to the Galactic plane, bringing the total number of mapped fields to 57 including ~23000 individual RV measured. The updated kinematic maps confirm the cylindrical rotation of the bulge and reveal a more boxy morphology in the velocity dispersion distribution, while preserving a well\\ -- defined central peak.",
+    "paper_abstract_zh": "银河系核球的运动学结构复杂，反映了多种化学和空间属性各异的恒星成分共存。特别是核球内存在呈柱对称旋转的棒结构，并在银纬方向呈现中央速度弥散峰。然而，由于银道面附近严重的消光和恒星密集，观测约束稀缺，亟需更多数据以提升现有运动学星图的完整性与精度，并与动力学模型进行可靠比较。本工作通过改善最内区约束来精炼银河系核球运动学的解析模型。我们整合 GIBS 与 APOGEE 巡天的视向速度测量，以及已发表和新获得的 MUSE 观测，更新平均速度与速度弥散星图。我们开发了基于 Python 的定制工具 {\tt PHOTfun}，利用 DAOPHOT-II 的 PSF 测光从 MUSE 数据立方体提取光谱，并配备集成 GUI 以提升易用性；其扩展模块 {\tt PHOTcube} 专为 IFU 数据立方体优化。采用马尔可夫链蒙特卡洛方法识别并改正前景污染，并对速度与速度弥散分布进行新的解析拟合。分析新增 9 个靠近银道面的 MUSE 视场，使总视场数达 57 个，共测量约 23 000 条视向速度。更新后的运动学星图确认了核球的柱对称旋转，并揭示速度弥散分布呈现更显著的盒状形态，同时保持清晰的中央峰值。",
+    "primary_category": "astro-ph.GA",
+    "update_time": "2025-09-08",
+    "paper_authors": "Carlos Quezada, Manuela Zoccali, Elena Valenti, Alvaro Rojas-Arriagada, Alvio Renzini, Oscar Gonzalez, Alessio Mucciarelli, Maria Rejkuba, Francisco Surot, Alvaro Valenzuela Navarro",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speaker Privacy and Security in the Big Data Era: Protection and Defense against Deepfake",
+    "paper_title_zh": "大数据时代的说话人隐私与安全：深度伪造的防护与防御",
+    "paper_id": "2509.06361v1",
+    "paper_abstract": "In the era of big data, remarkable advancements have been achieved in personalized speech generation techniques that utilize speaker attributes, including voice and speaking style, to generate deepfake speech. This has also amplified global security risks from deepfake speech misuse, resulting in considerable societal costs worldwide. To address the security threats posed by deepfake speech, techniques have been developed focusing on both the protection of voice attributes and the defense against deepfake speech. Among them, the voice anonymization technique has been developed to protect voice attributes from extraction for deepfake generation, while deepfake detection and watermarking have been utilized to defend against the misuse of deepfake speech. This paper provides a short and concise overview of the three techniques, describing the methodologies, advancements, and challenges. A comprehensive version, offering additional discussions, will be published in the near future.",
+    "paper_abstract_zh": "在大数据时代，利用说话人属性（包括嗓音和说话风格）的个性化语音生成技术取得显著进展，也催生了深度伪造语音，进而放大全球安全风险，造成世界范围内的巨大社会成本。为应对深度伪造语音带来的安全威胁，研究聚焦于嗓音属性保护与深度伪造防御两大方向。其中，语音匿名化技术可防止嗓音属性被提取用于伪造，而深度伪造检测与水印技术则用于抵御其滥用。本文简要综述这三类技术，阐述其方法、进展与挑战；更全面的扩展版本将于近期发表。",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-08",
+    "paper_authors": "Liping Chen, Kong Aik Lee, Zhen-Hua Ling, Xin Wang, Rohan Kumar Das, Tomoki Toda, Haizhou Li",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Error Signals for Overcoming the Laser Power Limits of Gravitational-Wave Detection",
+    "paper_title_zh": "突破引力波探测激光功率极限的误差信号",
+    "paper_id": "2509.06840v1",
+    "paper_abstract": "A major barrier to improving the quantum-limited sensitivity of gravitational-wave observatories are the thermal distortions of the test masses which arise at megawatt laser power. Recent advances in a new form of higher-order wavefront correction, in which corrective heating profiles are applied to the test mass surfaces near their edges, have the potential to enable a tenfold reduction of the quantum noise floor of future detectors. However, realizing high levels of quantum noise reduction in practice hinges on identifying measurable error signals to finely control each wavefront actuator, in order to suppress wavefront errors to few-nanometer precision across the full mirror apertures. No direct source of such an error signal exists in LIGO today. We demonstrate that thermally imaging the surface of each test mass can provide these critical error signals. We show that the surface temperature profiles obtained from thermal imaging can be uniquely mapped to a finite element model of the mirror whose complete thermal state is identified, enabling full-aperture wavefront reconstruction and direct error signals for real-time precision wavefront control. This new sensing capability can enable up to a 34% strain sensitivity improvement in LIGO A+ at 95% confidence, increasing the sky-averaged detection range for binary neutron star mergers by 11 Mpc, and will be integral to a next-generation 40-km gravitational-wave observatory in the U.S., Cosmic Explorer.",
+    "paper_abstract_zh": "提高引力波天文台量子极限灵敏度的主要障碍之一，是兆瓦级激光功率下测试质量镜产生的热畸变。一种新型高阶波前校正技术——在镜面边缘附近施加补偿性加热轮廓——有望将未来探测器的量子噪声基底降低十倍。然而，要在实践中实现高水平的量子噪声抑制，必须为每个波前执行器找到可测的误差信号，以便将全口径波前误差控制在数纳米以内。LIGO 目前尚无此类直接误差信号来源。我们证明，对每块测试质量镜表面进行热成像即可提供这些关键误差信号。研究表明，热成像获得的表面温度轮廓可唯一映射到镜体的有限元模型，从而完整识别其热态，实现全口径波前重建，并为实时精密波前控制提供直接误差信号。这一新传感能力可在 95% 置信度下将 LIGO A+ 的应变灵敏度提升 34%，使双中子星并合的天空平均探测距离增加 11 Mpc，并将成为美国下一代 40 km 引力波天文台 Cosmic Explorer 的核心技术。",
+    "primary_category": "astro-ph.IM",
+    "update_time": "2025-09-08",
+    "paper_authors": "Liu Tao, Pooyan Goodarzi, Jonathan W. Richardson",
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Toward Axion Signal Extraction in Semiconductor Spin Qubits Via Spectral Engineering",
+    "paper_title_zh": "基于谱工程的半导体自旋量子比特轴子信号提取之路",
+    "paper_id": "2509.06791v1",
+    "paper_abstract": "Recent advances in quantum sensing and computational technologies indicate the possibility of improving the precision of measurements aimed at detecting cosmological particles and weakly interacting massive particles using various qubit platforms. While recent progress has been made, mitigating environmental noise remains a challenge in extracting particle parameters with high fidelity. Addressing these challenges requires efforts on two levels. At the device level, the qubit and its array acting as a probe, must be isolated from electrical and magnetic noise through optimized device geometry. At the signal-processing level, it is necessary to develop filtering methods targeting specific noise spectra based on different qubit architectures. In this work, we explore the possibility of using semiconductor quantum dot spin qubits as a platform to search for quantum chromodynamics axions and, more broadly, axion like particles (ALPs). Starting by deriving an effective Hamiltonian for electron-axion interactions, we identify an axion-induced effective magnetic field and determine the characteristic axion oscillation frequency. To suppress charge noise in the devices and environmental noise, we first analyze the charge noise spectrum and then develop a dedicated filtering and noise-reduction protocol, paving the way for exploring feasible axion mass ranges. Our preliminary study holds promise for enhancing the screening of various axion signals using quantum technologies. We expect that our analysis and filtering protocol can help advance the use of semiconductor quantum dot spin qubit arrays in axion detection.",
+    "paper_abstract_zh": "量子传感与计算技术的最新进展表明，利用多种量子比特平台有望提高宇宙学粒子及弱相互作用大质量粒子的探测精度。尽管已取得一定进展，环境噪声的抑制仍是高保真提取粒子参数的主要挑战。解决该问题需从两个层面入手：器件层面，需通过优化几何结构使作为探针的量子比特及其阵列与电磁噪声隔离；信号处理层面，需针对不同量子比特架构开发针对特定噪声谱的滤波方法。本文探讨将半导体量子点自旋量子比特作为搜寻量子色动力学轴子及更广泛的类轴子粒子（ALPs）的平台。首先推导电子-轴子相互作用的有效哈密顿量，识别轴子诱导的有效磁场并确定其特征振荡频率。为抑制器件内的电荷噪声及环境噪声，我们先分析电荷噪声谱，再设计专用滤波与降噪协议，为探索可行的轴子质量范围铺平道路。初步研究显示，该方案有望利用量子技术提升各类轴子信号的筛选能力。我们期望这一分析与滤波协议能推动半导体量子点自旋量子比特阵列在轴子探测中的应用。",
+    "primary_category": "quant-ph",
+    "update_time": "2025-09-08",
+    "paper_authors": "Xiangjun Tan, Zhanning Wang",
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Context-Adaptive Hearing Aid Fitting Advisor through Multi-turn Multimodal LLM Conversation",
+    "paper_title_zh": "基于多轮多模态大语言模型对话的情境自适应助听器验配顾问",
+    "paper_id": "2509.06382v1",
+    "paper_abstract": "Traditional hearing aids often rely on static fittings that fail to adapt to their dynamic acoustic environments. We propose CAFA, a Context-Adaptive Fitting Advisor that provides personalized, real-time hearing aid adjustments through a multi-agent Large Language Model (LLM) workflow. CAFA combines live ambient audio, audiograms, and user feedback in a multi-turn conversational system. Ambient sound is classified into conversation, noise, or quiet with 91.2\\% accuracy using a lightweight neural network based on YAMNet embeddings. This system utilizes a modular LLM workflow, comprising context acquisition, subproblem classification, strategy provision, and ethical regulation, and is overseen by an LLM Judge. The workflow translates context and feedback into precise, safe tuning commands. Evaluation confirms that real-time sound classification enhances conversational efficiency. CAFA exemplifies how agentic, multimodal AI can enable intelligent, user-centric assistive technologies.",
+    "paper_abstract_zh": "传统助听器通常依赖静态验配，难以适应动态声学环境。我们提出 CAFA——一种情境自适应验配顾问，通过多智能体大语言模型（LLM）工作流提供个性化、实时的助听器参数调整。CAFA 将实时环境音频、听力图与用户反馈整合到多轮对话系统中。基于 YAMNet 嵌入的轻量级神经网络以 91.2% 的准确率将环境声分类为对话、噪声或安静。该系统采用模块化 LLM 工作流，包括情境获取、子问题分类、策略提供与伦理监管，并由 LLM 法官监督。该工作流将情境与反馈转化为精确、安全的调参指令。评估表明，实时声音分类显著提升了对话效率。CAFA 展示了具身多模态 AI 如何实现以用户为中心的智能化辅助技术。",
+    "primary_category": "cs.HC",
+    "update_time": "2025-09-08",
+    "paper_authors": "Yingke Ding, Zeyu Wang, Xiyuxing Zhang, Hongbin Chen, Zhenan Xu",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "AnalysisGNN: Unified Music Analysis with Graph Neural Networks",
+    "paper_title_zh": "AnalysisGNN：基于图神经网络的一体化音乐分析框架",
+    "paper_id": "2509.06654v1",
+    "paper_abstract": "Recent years have seen a boom in computational approaches to music analysis, yet each one is typically tailored to a specific analytical domain. In this work, we introduce AnalysisGNN, a novel graph neural network framework that leverages a data-shuffling strategy with a custom weighted multi-task loss and logit fusion between task-specific classifiers to integrate heterogeneously annotated symbolic datasets for comprehensive score analysis. We further integrate a Non-Chord-Tone prediction module, which identifies and excludes passing and non-functional notes from all tasks, thereby improving the consistency of label signals. Experimental evaluations demonstrate that AnalysisGNN achieves performance comparable to traditional static-dataset approaches, while showing increased resilience to domain shifts and annotation inconsistencies across multiple heterogeneous corpora.",
+    "paper_abstract_zh": "近年来，计算音乐分析研究激增，但每种方法通常仅针对特定分析领域。本文提出 AnalysisGNN，一种新颖的图神经网络框架，通过数据洗牌策略、自定义加权多任务损失以及任务特定分类器之间的 Logit 融合，整合异构标注的符号数据集，实现全面的乐谱分析。我们进一步引入非和弦音预测模块，识别并剔除所有任务中的经过音与非功能音，从而提升标签信号的一致性。实验表明，AnalysisGNN 在性能上可与传统静态数据集方法媲美，同时对跨多个异构语料库的域偏移与标注不一致表现出更强的鲁棒性。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-08",
+    "paper_authors": "Emmanouil Karystinaios, Johannes Hentschel, Markus Neuwirth, Gerhard Widmer",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "GWTC-4.0: Updating the Gravitational-Wave Transient Catalog with Observations from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run",
+    "paper_title_zh": "GWTC-4.0：利用第四轮 LIGO-Virgo-KAGRA 观测运行前期数据更新引力波瞬变目录",
+    "paper_id": "2508.18082v2",
+    "paper_abstract": "Version 4.0 of the Gravitational-Wave Transient Catalog (GWTC-4.0) adds new candidates detected by the LIGO, Virgo, and KAGRA observatories through the first part of the fourth observing run (O4a: 2023 May 24 15:00:00 to 2024 January 16 16:00:00 UTC) and a preceding engineering run. In this new data, we find 128 new compact binary coalescence candidates that are identified by at least one of our search algorithms with a probability of astrophysical origin $p_{\\rm astro} \\geq 0.5$ and that are not vetoed during event validation. We also provide detailed source property measurements for 86 of these that have a false alarm rate $< 1 \\rm{yr}^{-1}$. Based on the inferred component masses, these new candidates are consistent with signals from binary black holes and neutron star-black hole binaries (GW230518_125908 and GW230529_181500). Median inferred component masses of binary black holes in the catalog now range from $5.79\\,M_\\odot$ (GW230627_015337) to $137\\,M_\\odot$ (GW231123_135430), while GW231123_135430 was probably produced by the most massive binary observed in the catalog. For the first time we have discovered binary black hole signals with network signal-to-noise ratio exceeding 30, GW230814_230901 and GW231226_01520, enabling high-fidelity studies of the waveforms and astrophysical properties of these systems. Combined with the 90 candidates included in GWTC-3.0, the catalog now contains 218 candidates with $p_{\\rm astro} \\geq 0.5$ and not otherwise vetoed, doubling the size of the catalog and further opening our view of the gravitational-wave Universe.",
+    "paper_abstract_zh": "引力波瞬变目录（GWTC）4.0 版新增了 LIGO、Virgo 与 KAGRA 在第四轮观测运行前期（O4a：2023 年 5 月 24 日 15:00:00 至 2024 年 1 月 16 日 16:00:00 UTC）及此前工程运行期间探测到的新候选事件。在新数据中，我们识别出 128 例新的致密双星并合候选，它们至少被一种搜索算法以天体物理起源概率 $p_{\\rm astro} \\geq 0.5$ 给出，且未在事件验证阶段被否决。我们对其中 86 例假警率低于 $1 \\rm{yr}^{-1}$ 的事件给出了详细的源参数测量。根据推断的组件质量，这些新候选与双黑洞及中子星—黑洞双星（GW230518_125908 与 GW230529_181500）信号一致。目录中双黑洞的组件质量中值现介于 $5.79\\,M_\\odot$（GW230627_015337）至 $137\\,M_\\odot$（GW231123_135430），后者可能是目录中观测到的最庞大双黑洞系统。我们首次发现网络信噪比超过 30 的双黑洞信号 GW230814_230901 与 GW231226_01520，使得对这些系统的波形和天体物理性质进行高保真研究成为可能。连同 GWTC-3.0 中的 90 例候选，目录现共收录 218 例 $p_{\\rm astro} \\geq 0.5$ 且未被否决的事件，规模翻倍，进一步拓宽了我们对引力波宇宙的视野。",
+    "primary_category": "gr-qc",
+    "update_time": "2025-09-08",
+    "paper_authors": "The LIGO Scientific Collaboration, the Virgo Collaboration, the KAGRA Collaboration, A. G. Abac, I. Abouelfettouh, F. Acernese, K. Ackley, C. Adamcewicz, S. Adhicary, D. Adhikari, N. Adhikari, R. X. Adhikari, V. K. Adkins, S. Afroz, A. Agapito, D. Agarwal, M. Agathos, N. Aggarwal, S. Aggarwal, O. D. Aguiar, I. -L. Ahrend, L. Aiello, A. Ain, P. Ajith, T. Akutsu, S. Albanesi, W. Ali, S. Al-Kershi, C. Alléné, A. Allocca, S. Al-Shammari, P. A. Altin, S. Alvarez-Lopez, W. Amar, O. Amarasinghe, A. Amato, F. Amicucci, C. Amra, A. Ananyeva, S. B. Anderson, W. G. Anderson, M. Andia, M. Ando, M. Andrés-Carcasona, T. Andrić, J. Anglin, S. Ansoldi, J. M. Antelis, S. Antier, M. Aoumi, E. Z. Appavuravther, S. Appert, S. K. Apple, K. Arai, A. Araya, M. C. Araya, M. Arca Sedda, J. S. Areeda, N. Aritomi, F. Armato, S. Armstrong, N. Arnaud, M. Arogeti, S. M. Aronson, K. G. Arun, G. Ashton, Y. Aso, L. Asprea, M. Assiduo, S. Assis de Souza Melo, S. M. Aston, P. Astone, F. Attadio, F. Aubin, K. AultONeal, G. Avallone, E. A. Avila, S. Babak, C. Badger, S. Bae, S. Bagnasco, L. Baiotti, R. Bajpai, T. Baka, A. M. Baker, K. A. Baker, T. Baker, G. Baldi, N. Baldicchi, M. Ball, G. Ballardin, S. W. Ballmer, S. Banagiri, B. Banerjee, D. Bankar, T. M. Baptiste, P. Baral, M. Baratti, J. C. Barayoga, B. C. Barish, D. Barker, N. Barman, P. Barneo, F. Barone, B. Barr, L. Barsotti, M. Barsuglia, D. Barta, A. M. Bartoletti, M. A. Barton, I. Bartos, A. Basalaev, R. Bassiri, A. Basti, M. Bawaj, P. Baxi, J. C. Bayley, A. C. Baylor, P. A. Baynard II, M. Bazzan, V. M. Bedakihale, F. Beirnaert, M. Bejger, D. Belardinelli, A. S. Bell, D. S. Bellie, L. Bellizzi, W. Benoit, I. Bentara, J. D. Bentley, M. Ben Yaala, S. Bera, F. Bergamin, B. K. Berger, S. Bernuzzi, M. Beroiz, C. P. L. Berry, D. Bersanetti, T. Bertheas, A. Bertolini, J. Betzwieser, D. Beveridge, G. Bevilacqua, N. Bevins, R. Bhandare, R. Bhatt, D. Bhattacharjee, S. Bhattacharyya, S. Bhaumik, V. Biancalana, A. Bianchi, I. A. Bilenko, G. Billingsley, A. Binetti, S. Bini, C. Binu, S. Biot, O. Birnholtz, S. Biscoveanu, A. Bisht, M. Bitossi, M. -A. Bizouard, S. Blaber, J. K. Blackburn, L. A. Blagg, C. D. Blair, D. G. Blair, N. Bode, N. Boettner, G. Boileau, M. Boldrini, G. N. Bolingbroke, A. Bolliand, L. D. Bonavena, R. Bondarescu, F. Bondu, E. Bonilla, M. S. Bonilla, A. Bonino, R. Bonnand, A. Borchers, S. Borhanian, V. Boschi, S. Bose, V. Bossilkov, Y. Bothra, A. Boudon, L. Bourg, M. Boyle, A. Bozzi, C. Bradaschia, P. R. Brady, A. Branch, M. Branchesi, I. Braun, T. Briant, A. Brillet, M. Brinkmann, P. Brockill, E. Brockmueller, A. F. Brooks, B. C. Brown, D. D. Brown, M. L. Brozzetti, S. Brunett, G. Bruno, R. Bruntz, J. Bryant, Y. Bu, F. Bucci, J. Buchanan, O. Bulashenko, T. Bulik, H. J. Bulten, A. Buonanno, K. Burtnyk, R. Buscicchio, D. Buskulic, C. Buy, R. L. Byer, G. S. Cabourn Davies, R. Cabrita, V. Cáceres-Barbosa, L. Cadonati, G. Cagnoli, C. Cahillane, A. Calafat, T. A. Callister, E. Calloni, S. R. Callos, M. Canepa, G. Caneva Santoro, K. C. Cannon, H. Cao, L. A. Capistran, E. Capocasa, E. Capote, G. Capurri, G. Carapella, F. Carbognani, M. Carlassara, J. B. Carlin, T. K. Carlson, M. F. Carney, M. Carpinelli, G. Carrillo, J. J. Carter, G. Carullo, A. Casallas-Lagos, J. Casanueva Diaz, C. Casentini, S. Y. Castro-Lucas, S. Caudill, M. Cavaglià, R. Cavalieri, A. Ceja, G. Cella, P. Cerdá-Durán, E. Cesarini, N. Chabbra, W. Chaibi, A. Chakraborty, P. Chakraborty, S. Chakraborty, S. Chalathadka Subrahmanya, J. C. L. Chan, M. Chan, K. Chang, S. Chao, P. Charlton, E. Chassande-Mottin, C. Chatterjee, Debarati Chatterjee, Deep Chatterjee, M. Chaturvedi, S. Chaty, K. Chatziioannou, A. Chen, A. H. -Y. Chen, D. Chen, H. Chen, H. Y. Chen, S. Chen, Yanbei Chen, Yitian Chen, H. P. Cheng, P. Chessa, H. T. Cheung, S. Y. Cheung, F. Chiadini, G. Chiarini, A. Chiba, A. Chincarini, M. L. Chiofalo, A. Chiummo, C. Chou, S. Choudhary, N. Christensen, S. S. Y. Chua, G. Ciani, P. Ciecielag, M. Cieślar, M. Cifaldi, B. Cirok, F. Clara, J. A. Clark, T. A. Clarke, P. Clearwater, S. Clesse, F. Cleva, E. Coccia, E. Codazzo, P. -F. Cohadon, S. Colace, E. Colangeli, M. Colleoni, C. G. Collette, J. Collins, S. Colloms, A. Colombo, C. M. Compton, G. Connolly, L. Conti, T. R. Corbitt, I. Cordero-Carrión, S. Corezzi, N. J. Cornish, I. Coronado, A. Corsi, R. Cottingham, M. W. Coughlin, A. Couineaux, P. Couvares, D. M. Coward, R. Coyne, A. Cozzumbo, J. D. E. Creighton, T. D. Creighton, P. Cremonese, S. Crook, R. Crouch, J. Csizmazia, J. R. Cudell, T. J. Cullen, A. Cumming, E. Cuoco, M. Cusinato, L. V. Da Conceição, T. Dal Canton, S. Dal Pra, G. Dálya, B. D'Angelo, S. Danilishin, S. D'Antonio, K. Danzmann, K. E. Darroch, L. P. Dartez, R. Das, A. Dasgupta, V. Dattilo, A. Daumas, N. Davari, I. Dave, A. Davenport, M. Davier, T. F. Davies, D. Davis, L. Davis, M. C. Davis, P. Davis, E. J. Daw, M. Dax, J. De Bolle, M. Deenadayalan, J. Degallaix, M. De Laurentis, F. De Lillo, S. Della Torre, W. Del Pozzo, A. Demagny, F. De Marco, G. Demasi, F. De Matteis, N. Demos, T. Dent, A. Depasse, N. DePergola, R. De Pietri, R. De Rosa, C. De Rossi, M. Desai, R. DeSalvo, A. DeSimone, R. De Simone, A. Dhani, R. Diab, M. C. Díaz, M. Di Cesare, G. Dideron, T. Dietrich, L. Di Fiore, C. Di Fronzo, M. Di Giovanni, T. Di Girolamo, D. Diksha, J. Ding, S. Di Pace, I. Di Palma, D. Di Piero, F. Di Renzo, Divyajyoti, A. Dmitriev, J. P. Docherty, Z. Doctor, N. Doerksen, E. Dohmen, A. Doke, A. Domiciano De Souza, L. D'Onofrio, F. Donovan, K. L. Dooley, T. Dooney, S. Doravari, O. Dorosh, W. J. D. Doyle, M. Drago, J. C. Driggers, L. Dunn, U. Dupletsa, P. -A. Duverne, D. D'Urso, P. Dutta Roy, H. Duval, S. E. Dwyer, C. Eassa, M. Ebersold, T. Eckhardt, G. Eddolls, A. Effler, J. Eichholz, H. Einsle, M. Eisenmann, M. Emma, K. Endo, R. Enficiaud, L. Errico, R. Espinosa, M. Esposito, R. C. Essick, H. Estellés, T. Etzel, M. Evans, T. Evstafyeva, B. E. Ewing, J. M. Ezquiaga, F. Fabrizi, V. Fafone, S. Fairhurst, A. M. Farah, B. Farr, W. M. Farr, G. Favaro, M. Favata, M. Fays, M. Fazio, J. Feicht, M. M. Fejer, R. Felicetti, E. Fenyvesi, J. Fernandes, T. Fernandes, D. Fernando, S. Ferraiuolo, T. A. Ferreira, F. Fidecaro, P. Figura, A. Fiori, I. Fiori, M. Fishbach, R. P. Fisher, R. Fittipaldi, V. Fiumara, R. Flaminio, S. M. Fleischer, L. S. Fleming, E. Floden, H. Fong, J. A. Font, F. Fontinele-Nunes, C. Foo, B. Fornal, K. Franceschetti, F. Frappez, S. Frasca, F. Frasconi, J. P. Freed, Z. Frei, A. Freise, O. Freitas, R. Frey, W. Frischhertz, P. Fritschel, V. V. Frolov, G. G. Fronzé, M. Fuentes-Garcia, S. Fujii, T. Fujimori, P. Fulda, M. Fyffe, B. Gadre, J. R. Gair, S. Galaudage, V. Galdi, R. Gamba, A. Gamboa, S. Gamoji, D. Ganapathy, A. Ganguly, B. Garaventa, J. García-Bellido, C. García-Quirós, J. W. Gardner, K. A. Gardner, S. Garg, J. Gargiulo, X. Garrido, A. Garron, F. Garufi, P. A. Garver, C. Gasbarra, B. Gateley, F. Gautier, V. Gayathri, T. Gayer, G. Gemme, A. Gennai, V. Gennari, J. George, R. George, O. Gerberding, L. Gergely, Archisman Ghosh, Sayantan Ghosh, Shaon Ghosh, Shrobana Ghosh, Suprovo Ghosh, Tathagata Ghosh, J. A. Giaime, K. D. Giardina, D. R. Gibson, C. Gier, S. Gkaitatzis, J. Glanzer, F. Glotin, J. Godfrey, R. V. Godley, P. Godwin, A. S. Goettel, E. Goetz, J. Golomb, S. Gomez Lopez, B. Goncharov, G. González, P. Goodarzi, S. Goode, A. W. Goodwin-Jones, M. Gosselin, R. Gouaty, D. W. Gould, K. Govorkova, A. Grado, V. Graham, A. E. Granados, M. Granata, V. Granata, S. Gras, P. Grassia, J. Graves, C. Gray, R. Gray, G. Greco, A. C. Green, L. Green, S. M. Green, S. R. Green, C. Greenberg, A. M. Gretarsson, H. K. Griffin, D. Griffith, H. L. Griggs, G. Grignani, C. Grimaud, H. Grote, S. Grunewald, D. Guerra, D. Guetta, G. M. Guidi, A. R. Guimaraes, H. K. Gulati, F. Gulminelli, H. Guo, W. Guo, Y. Guo, Anuradha Gupta, I. Gupta, N. C. Gupta, S. K. Gupta, V. Gupta, N. Gupte, J. Gurs, N. Gutierrez, N. Guttman, F. Guzman, D. Haba, M. Haberland, S. Haino, E. D. Hall, E. Z. Hamilton, G. Hammond, M. Haney, J. Hanks, C. Hanna, M. D. Hannam, O. A. Hannuksela, A. G. Hanselman, H. Hansen, J. Hanson, S. Hanumasagar, R. Harada, A. R. Hardison, S. Harikumar, K. Haris, I. Harley-Trochimczyk, T. Harmark, J. Harms, G. M. Harry, I. W. Harry, J. Hart, B. Haskell, C. J. Haster, K. Haughian, H. Hayakawa, K. Hayama, M. C. Heintze, J. Heinze, J. Heinzel, H. Heitmann, F. Hellman, A. F. Helmling-Cornell, G. Hemming, O. Henderson-Sapir, M. Hendry, I. S. Heng, M. H. Hennig, C. Henshaw, M. Heurs, A. L. Hewitt, J. Heynen, J. Heyns, S. Higginbotham, S. Hild, S. Hill, Y. Himemoto, N. Hirata, C. Hirose, D. Hofman, B. E. Hogan, N. A. Holland, I. J. Hollows, D. E. Holz, L. Honet, D. J. Horton-Bailey, J. Hough, S. Hourihane, N. T. Howard, E. J. Howell, C. G. Hoy, C. A. Hrishikesh, P. Hsi, H. -F. Hsieh, H. -Y. Hsieh, C. Hsiung, S. -H. Hsu, W. -F. Hsu, Q. Hu, H. Y. Huang, Y. Huang, Y. T. Huang, A. D. Huddart, B. Hughey, V. Hui, S. Husa, R. Huxford, L. Iampieri, G. A. Iandolo, M. Ianni, G. Iannone, J. Iascau, K. Ide, R. Iden, A. Ierardi, S. Ikeda, H. Imafuku, Y. Inoue, G. Iorio, P. Iosif, M. H. Iqbal, J. Irwin, R. Ishikawa, M. Isi, K. S. Isleif, Y. Itoh, M. Iwaya, B. R. Iyer, C. Jacquet, P. -E. Jacquet, T. Jacquot, S. J. Jadhav, S. P. Jadhav, M. Jain, T. Jain, A. L. James, K. Jani, J. Janquart, N. N. Janthalur, S. Jaraba, P. Jaranowski, R. Jaume, W. Javed, A. Jennings, M. Jensen, W. Jia, J. Jiang, H. -B. Jin, G. R. Johns, N. A. Johnson, M. C. Johnston, R. Johnston, N. Johny, D. H. Jones, D. I. Jones, R. Jones, H. E. Jose, P. Joshi, S. K. Joshi, G. Joubert, J. Ju, L. Ju, K. Jung, J. Junker, V. Juste, H. B. Kabagoz, T. Kajita, I. Kaku, V. Kalogera, M. Kalomenopoulos, M. Kamiizumi, N. Kanda, S. Kandhasamy, G. Kang, N. C. Kannachel, J. B. Kanner, S. A. KantiMahanty, S. J. Kapadia, D. P. Kapasi, M. Karthikeyan, M. Kasprzack, H. Kato, T. Kato, E. Katsavounidis, W. Katzman, R. Kaushik, K. Kawabe, R. Kawamoto, D. Keitel, L. J. Kemperman, J. Kennington, F. A. Kerkow, R. Kesharwani, J. S. Key, R. Khadela, S. Khadka, S. S. Khadkikar, F. Y. Khalili, F. Khan, T. Khanam, M. Khursheed, N. M. Khusid, W. Kiendrebeogo, N. Kijbunchoo, C. Kim, J. C. Kim, K. Kim, M. H. Kim, S. Kim, Y. -M. Kim, C. Kimball, K. Kimes, M. Kinnear, J. S. Kissel, S. Klimenko, A. M. Knee, E. J. Knox, N. Knust, K. Kobayashi, S. M. Koehlenbeck, G. Koekoek, K. Kohri, K. Kokeyama, S. Koley, P. Kolitsidou, A. E. Koloniari, K. Komori, A. K. H. Kong, A. Kontos, L. M. Koponen, M. Korobko, X. Kou, A. Koushik, N. Kouvatsos, M. Kovalam, T. Koyama, D. B. Kozak, S. L. Kranzhoff, V. Kringel, N. V. Krishnendu, S. Kroker, A. Królak, K. Kruska, J. Kubisz, G. Kuehn, S. Kulkarni, A. Kulur Ramamohan, Achal Kumar, Anil Kumar, Praveen Kumar, Prayush Kumar, Rahul Kumar, Rakesh Kumar, J. Kume, K. Kuns, N. Kuntimaddi, S. Kuroyanagi, S. Kuwahara, K. Kwak, K. Kwan, S. Kwon, G. Lacaille, D. Laghi, A. H. Laity, E. Lalande, M. Lalleman, P. C. Lalremruati, M. Landry, B. B. Lane, R. N. Lang, J. Lange, R. Langgin, B. Lantz, I. La Rosa, J. Larsen, A. Lartaux-Vollard, P. D. Lasky, J. Lawrence, M. Laxen, C. Lazarte, A. Lazzarini, C. Lazzaro, P. Leaci, L. Leali, Y. K. Lecoeuche, H. M. Lee, H. W. Lee, J. Lee, K. Lee, R. -K. Lee, R. Lee, Sungho Lee, Sunjae Lee, Y. Lee, I. N. Legred, J. Lehmann, L. Lehner, M. Le Jean, A. Lemaître, M. Lenti, M. Leonardi, M. Lequime, N. Leroy, M. Lesovsky, N. Letendre, M. Lethuillier, Y. Levin, K. Leyde, A. K. Y. Li, K. L. Li, T. G. F. Li, X. Li, Y. Li, Z. Li, A. Lihos, E. T. Lin, F. Lin, L. C. -C. Lin, Y. -C. Lin, C. Lindsay, S. D. Linker, A. Liu, G. C. Liu, Jian Liu, F. Llamas Villarreal, J. Llobera-Querol, R. K. L. Lo, J. -P. Locquet, S. C. G. Loggins, M. R. Loizou, L. T. London, A. Longo, D. Lopez, M. Lopez Portilla, M. Lorenzini, A. Lorenzo-Medina, V. Loriette, M. Lormand, G. Losurdo, E. Lotti, T. P. Lott IV, J. D. Lough, H. A. Loughlin, C. O. Lousto, N. Low, N. Lu, L. Lucchesi, H. Lück, D. Lumaca, A. P. Lundgren, A. W. Lussier, R. Macas, M. MacInnis, D. M. Macleod, I. A. O. MacMillan, A. Macquet, K. Maeda, S. Maenaut, S. S. Magare, R. M. Magee, E. Maggio, R. Maggiore, M. Magnozzi, M. Mahesh, M. Maini, S. Majhi, E. Majorana, C. N. Makarem, D. Malakar, J. A. Malaquias-Reis, U. Mali, S. Maliakal, A. Malik, L. Mallick, A. -K. Malz, N. Man, M. Mancarella, V. Mandic, V. Mangano, B. Mannix, G. L. Mansell, M. Manske, M. Mantovani, M. Mapelli, C. Marinelli, F. Marion, A. S. Markosyan, A. Markowitz, E. Maros, S. Marsat, F. Martelli, I. W. Martin, R. M. Martin, B. B. Martinez, D. A. Martinez, M. Martinez, V. Martinez, A. Martini, J. C. Martins, D. V. Martynov, E. J. Marx, L. Massaro, A. Masserot, M. Masso-Reid, S. Mastrogiovanni, T. Matcovich, M. Matiushechkina, L. Maurin, N. Mavalvala, N. Maxwell, G. McCarrol, R. McCarthy, D. E. McClelland, S. McCormick, L. McCuller, S. McEachin, C. McElhenny, G. I. McGhee, J. McGinn, K. B. M. McGowan, J. McIver, A. McLeod, I. McMahon, T. McRae, R. McTeague, D. Meacher, B. N. Meagher, R. Mechum, Q. Meijer, A. Melatos, C. S. Menoni, F. Mera, R. A. Mercer, L. Mereni, K. Merfeld, E. L. Merilh, J. R. Mérou, J. D. Merritt, M. Merzougui, C. Messick, B. Mestichelli, M. Meyer-Conde, F. Meylahn, A. Mhaske, A. Miani, H. Miao, C. Michel, Y. Michimura, H. Middleton, D. P. Mihaylov, A. L. Miller, S. J. Miller, M. Millhouse, E. Milotti, V. Milotti, Y. Minenkov, E. M. Minihan, Ll. M. Mir, L. Mirasola, M. Miravet-Tenés, C. -A. Miritescu, A. Mishra, C. Mishra, T. Mishra, A. L. Mitchell, J. G. Mitchell, S. Mitra, V. P. Mitrofanov, K. Mitsuhashi, R. Mittleman, O. Miyakawa, S. Miyoki, A. Miyoko, G. Mo, L. Mobilia, S. R. P. Mohapatra, S. R. Mohite, M. Molina-Ruiz, M. Mondin, M. Montani, C. J. Moore, D. Moraru, A. More, S. More, C. Moreno, E. A. Moreno, G. Moreno, A. Moreso Serra, S. Morisaki, Y. Moriwaki, G. Morras, A. Moscatello, M. Mould, B. Mours, C. M. Mow-Lowry, L. Muccillo, F. Muciaccia, D. Mukherjee, Samanwaya Mukherjee, Soma Mukherjee, Subroto Mukherjee, Suvodip Mukherjee, N. Mukund, A. Mullavey, H. Mullock, J. Mundi, C. L. Mungioli, M. Murakoshi, P. G. Murray, D. Nabari, S. L. Nadji, A. Nagar, N. Nagarajan, K. Nakagaki, K. Nakamura, H. Nakano, M. Nakano, D. Nanadoumgar-Lacroze, D. Nandi, V. Napolano, P. Narayan, I. Nardecchia, T. Narikawa, H. Narola, L. Naticchioni, R. K. Nayak, L. Negri, A. Nela, C. Nelle, A. Nelson, T. J. N. Nelson, M. Nery, A. Neunzert, S. Ng, L. Nguyen Quynh, S. A. Nichols, A. B. Nielsen, Y. Nishino, A. Nishizawa, S. Nissanke, W. Niu, F. Nocera, J. Noller, M. Norman, C. North, J. Novak, R. Nowicki, J. F. Nuño Siles, L. K. Nuttall, K. Obayashi, J. Oberling, J. O'Dell, E. Oelker, M. Oertel, G. Oganesyan, T. O'Hanlon, M. Ohashi, F. Ohme, R. Oliveri, R. Omer, B. O'Neal, M. Onishi, K. Oohara, B. O'Reilly, M. Orselli, R. O'Shaughnessy, S. O'Shea, S. Oshino, C. Osthelder, I. Ota, D. J. Ottaway, A. Ouzriat, H. Overmier, B. J. Owen, R. Ozaki, A. E. Pace, R. Pagano, M. A. Page, A. Pai, L. Paiella, A. Pal, S. Pal, M. A. Palaia, M. Pálfi, P. P. Palma, C. Palomba, P. Palud, H. Pan, J. Pan, K. C. Pan, P. K. Panda, Shiksha Pandey, Swadha Pandey, P. T. H. Pang, F. Pannarale, K. A. Pannone, B. C. Pant, F. H. Panther, M. Panzeri, F. Paoletti, A. Paolone, A. Papadopoulos, E. E. Papalexakis, L. Papalini, G. Papigkiotis, A. Paquis, A. Parisi, B. -J. Park, J. Park, W. Parker, G. Pascale, D. Pascucci, A. Pasqualetti, R. Passaquieti, L. Passenger, D. Passuello, O. Patane, A. V. Patel, D. Pathak, A. Patra, B. Patricelli, B. G. Patterson, K. Paul, S. Paul, E. Payne, T. Pearce, M. Pedraza, A. Pele, F. E. Peña Arellano, X. Peng, Y. Peng, S. Penn, M. D. Penuliar, A. Perego, Z. Pereira, C. Périgois, G. Perna, A. Perreca, J. Perret, S. Perriès, J. W. Perry, D. Pesios, S. Peters, S. Petracca, C. Petrillo, H. P. Pfeiffer, H. Pham, K. A. Pham, K. S. Phukon, H. Phurailatpam, M. Piarulli, L. Piccari, O. J. Piccinni, M. Pichot, M. Piendibene, F. Piergiovanni, L. Pierini, G. Pierra, V. Pierro, M. Pietrzak, M. Pillas, F. Pilo, L. Pinard, I. M. Pinto, M. Pinto, B. J. Piotrzkowski, M. Pirello, M. D. Pitkin, A. Placidi, E. Placidi, M. L. Planas, W. Plastino, C. Plunkett, R. Poggiani, E. Polini, J. Pomper, L. Pompili, J. Poon, E. Porcelli, E. K. Porter, C. Posnansky, R. Poulton, J. Powell, G. S. Prabhu, M. Pracchia, B. K. Pradhan, T. Pradier, A. K. Prajapati, K. Prasai, R. Prasanna, P. Prasia, G. Pratten, G. Principe, G. A. Prodi, P. Prosperi, P. Prosposito, A. C. Providence, A. Puecher, J. Pullin, P. Puppo, M. Pürrer, H. Qi, J. Qin, G. Quéméner, V. Quetschke, P. J. Quinonez, N. Qutob, R. Rading, I. Rainho, S. Raja, C. Rajan, B. Rajbhandari, K. E. Ramirez, F. A. Ramis Vidal, M. Ramos Arevalo, A. Ramos-Buades, S. Ranjan, K. Ransom, P. Rapagnani, B. Ratto, A. Ravichandran, A. Ray, V. Raymond, M. Razzano, J. Read, T. Regimbau, S. Reid, C. Reissel, D. H. Reitze, A. I. Renzini, B. Revenu, A. Revilla Peña, R. Reyes, L. Ricca, F. Ricci, M. Ricci, A. Ricciardone, J. Rice, J. W. Richardson, M. L. Richardson, A. Rijal, K. Riles, H. K. Riley, S. Rinaldi, J. Rittmeyer, C. Robertson, F. Robinet, M. Robinson, A. Rocchi, L. Rolland, J. G. Rollins, A. E. Romano, R. Romano, A. Romero, I. M. Romero-Shaw, J. H. Romie, S. Ronchini, T. J. Roocke, L. Rosa, T. J. Rosauer, C. A. Rose, D. Rosińska, M. P. Ross, M. Rossello-Sastre, S. Rowan, S. K. Roy, S. Roy, D. Rozza, P. Ruggi, N. Ruhama, E. Ruiz Morales, K. Ruiz-Rocha, S. Sachdev, T. Sadecki, P. Saffarieh, S. Safi-Harb, M. R. Sah, S. Saha, T. Sainrat, S. Sajith Menon, K. Sakai, Y. Sakai, M. Sakellariadou, S. Sakon, O. S. Salafia, F. Salces-Carcoba, L. Salconi, M. Saleem, F. Salemi, M. Sallé, S. U. Salunkhe, S. Salvador, A. Salvarese, A. Samajdar, A. Sanchez, E. J. Sanchez, L. E. Sanchez, N. Sanchis-Gual, J. R. Sanders, E. M. Sänger, F. Santoliquido, F. Sarandrea, T. R. Saravanan, N. Sarin, P. Sarkar, A. Sasli, P. Sassi, B. Sassolas, B. S. Sathyaprakash, R. Sato, S. Sato, Yukino Sato, Yu Sato, O. Sauter, R. L. Savage, T. Sawada, H. L. Sawant, S. Sayah, V. Scacco, D. Schaetzl, M. Scheel, A. Schiebelbein, M. G. Schiworski, P. Schmidt, S. Schmidt, R. Schnabel, M. Schneewind, R. M. S. Schofield, K. Schouteden, B. W. Schulte, B. F. Schutz, E. Schwartz, M. Scialpi, J. Scott, S. M. Scott, R. M. Sedas, T. C. Seetharamu, M. Seglar-Arroyo, Y. Sekiguchi, D. Sellers, N. Sembo, A. S. Sengupta, E. G. Seo, J. W. Seo, V. Sequino, M. Serra, A. Sevrin, T. Shaffer, U. S. Shah, M. A. Shaikh, L. Shao, A. K. Sharma, Preeti Sharma, Prianka Sharma, Ritwik Sharma, S. Sharma Chaudhary, P. Shawhan, N. S. Shcheblanov, E. Sheridan, Z. -H. Shi, M. Shikauchi, R. Shimomura, H. Shinkai, S. Shirke, D. H. Shoemaker, D. M. Shoemaker, R. W. Short, S. ShyamSundar, A. Sider, H. Siegel, D. Sigg, L. Silenzi, L. Silvestri, M. Simmonds, L. P. Singer, Amitesh Singh, Anika Singh, D. Singh, N. Singh, S. Singh, A. M. Sintes, V. Sipala, V. Skliris, B. J. J. Slagmolen, D. A. Slater, T. J. Slaven-Blair, J. Smetana, J. R. Smith, L. Smith, R. J. E. Smith, W. J. Smith, S. Soares de Albuquerque Filho, M. Soares-Santos, K. Somiya, I. Song, S. Soni, V. Sordini, F. Sorrentino, H. Sotani, F. Spada, V. Spagnuolo, A. P. Spencer, P. Spinicelli, A. K. Srivastava, F. Stachurski, C. J. Stark, D. A. Steer, N. Steinle, J. Steinlechner, S. Steinlechner, N. Stergioulas, P. Stevens, M. StPierre, M. D. Strong, A. Strunk, A. L. Stuver, M. Suchenek, S. Sudhagar, Y. Sudo, N. Sueltmann, L. Suleiman, K. D. Sullivan, J. Sun, L. Sun, S. Sunil, J. Suresh, B. J. Sutton, P. J. Sutton, K. Suzuki, M. Suzuki, B. L. Swinkels, A. Syx, M. J. Szczepańczyk, P. Szewczyk, M. Tacca, H. Tagoshi, K. Takada, H. Takahashi, R. Takahashi, A. Takamori, S. Takano, H. Takeda, K. Takeshita, I. Takimoto Schmiegelow, M. Takou-Ayaoh, C. Talbot, M. Tamaki, N. Tamanini, D. Tanabe, K. Tanaka, S. J. Tanaka, S. Tanioka, D. B. Tanner, W. Tanner, L. Tao, R. D. Tapia, E. N. Tapia San Martín, C. Taranto, A. Taruya, J. D. Tasson, J. G. Tau, D. Tellez, R. Tenorio, H. Themann, A. Theodoropoulos, M. P. Thirugnanasambandam, L. M. Thomas, M. Thomas, P. Thomas, J. E. Thompson, S. R. Thondapu, K. A. Thorne, E. Thrane, J. Tissino, A. Tiwari, Pawan Tiwari, Praveer Tiwari, S. Tiwari, V. Tiwari, M. R. Todd, M. Toffano, A. M. Toivonen, K. Toland, A. E. Tolley, T. Tomaru, V. Tommasini, T. Tomura, H. Tong, C. Tong-Yu, A. Torres-Forné, C. I. Torrie, I. Tosta e Melo, E. Tournefier, M. Trad Nery, K. Tran, A. Trapananti, R. Travaglini, F. Travasso, G. Traylor, M. Trevor, M. C. Tringali, A. Tripathee, G. Troian, A. Trovato, L. Trozzo, R. J. Trudeau, T. Tsang, S. Tsuchida, L. Tsukada, K. Turbang, M. Turconi, C. Turski, H. Ubach, N. Uchikata, T. Uchiyama, R. P. Udall, T. Uehara, K. Ueno, V. Undheim, L. E. Uronen, T. Ushiba, M. Vacatello, H. Vahlbruch, N. Vaidya, G. Vajente, A. Vajpeyi, J. Valencia, M. Valentini, S. A. Vallejo-Peña, S. Vallero, V. Valsan, M. van Dael, E. Van den Bossche, J. F. J. van den Brand, C. Van Den Broeck, M. van der Sluys, A. Van de Walle, J. van Dongen, K. Vandra, M. VanDyke, H. van Haevermaet, J. V. van Heijningen, P. Van Hove, J. Vanier, M. VanKeuren, J. Vanosky, N. van Remortel, M. Vardaro, A. F. Vargas, V. Varma, A. N. Vazquez, A. Vecchio, G. Vedovato, J. Veitch, P. J. Veitch, S. Venikoudis, R. C. Venterea, P. Verdier, M. Vereecken, D. Verkindt, B. Verma, Y. Verma, S. M. Vermeulen, F. Vetrano, A. Veutro, A. Viceré, S. Vidyant, A. D. Viets, A. Vijaykumar, A. Vilkha, N. Villanueva Espinosa, V. Villa-Ortega, E. T. Vincent, J. -Y. Vinet, S. Viret, S. Vitale, H. Vocca, D. Voigt, E. R. G. von Reis, J. S. A. von Wrangel, W. E. Vossius, L. Vujeva, S. P. Vyatchanin, J. Wack, L. E. Wade, M. Wade, K. J. Wagner, L. Wallace, E. J. Wang, H. Wang, J. Z. Wang, W. H. Wang, Y. F. Wang, G. Waratkar, J. Warner, M. Was, T. Washimi, N. Y. Washington, D. Watarai, B. Weaver, S. A. Webster, N. L. Weickhardt, M. Weinert, A. J. Weinstein, R. Weiss, L. Wen, K. Wette, J. T. Whelan, B. F. Whiting, C. Whittle, E. G. Wickens, D. Wilken, A. T. Wilkin, B. M. Williams, D. Williams, M. J. Williams, N. S. Williams, J. L. Willis, B. Willke, M. Wils, L. Wilson, C. W. Winborn, J. Winterflood, C. C. Wipf, G. Woan, J. Woehler, N. E. Wolfe, H. T. Wong, I. C. F. Wong, K. Wong, T. Wouters, J. L. Wright, M. Wright, B. Wu, C. Wu, D. S. Wu, H. Wu, K. Wu, Q. Wu, Y. Wu, Z. Wu, E. Wuchner, D. M. Wysocki, V. A. Xu, Y. Xu, N. Yadav, H. Yamamoto, K. Yamamoto, T. S. Yamamoto, T. Yamamoto, R. Yamazaki, T. Yan, K. Z. Yang, Y. Yang, Z. Yarbrough, J. Yebana, S. -W. Yeh, A. B. Yelikar, X. Yin, J. Yokoyama, T. Yokozawa, S. Yuan, H. Yuzurihara, M. Zanolin, M. Zeeshan, T. Zelenova, J. -P. Zendri, M. Zeoli, M. Zerrad, M. Zevin, L. Zhang, N. Zhang, R. Zhang, T. Zhang, C. Zhao, Yue Zhao, Yuhang Zhao, Z. -C. Zhao, Y. Zheng, H. Zhong, H. Zhou, H. O. Zhu, Z. -H. Zhu, A. B. Zimmerman, L. Zimmermann, M. E. Zucker, J. Zweizig",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Continuous Audio Language Models",
+    "paper_title_zh": "连续音频语言模型",
+    "paper_id": "2509.06926v1",
+    "paper_abstract": "Audio Language Models (ALM) have emerged as the dominant paradigm for speech and music generation by representing audio as sequences of discrete tokens. Yet, unlike text tokens, which are invertible, audio tokens are extracted from lossy codecs with a limited bitrate. As a consequence, increasing audio quality requires generating more tokens, which imposes a trade-off between fidelity and computational cost. We address this issue by studying Continuous Audio Language Models (CALM). These models instantiate a large Transformer backbone that produces a contextual embedding at every timestep. This sequential information then conditions an MLP that generates the next continuous frame of an audio VAE through consistency modeling. By avoiding lossy compression, CALM achieves higher quality at lower computational cost than their discrete counterpart. Experiments on speech and music demonstrate improved efficiency and fidelity over state-of-the-art discrete audio language models, facilitating lightweight, high-quality audio generation. Samples are available at https://continuous-audio-language-models.github.io",
+    "paper_abstract_zh": "音频语言模型（ALM）通过将音频表示为离散 token 序列，已成为语音与音乐生成的主流范式。然而，与可逆的文本 token 不同，音频 token 源自有损编解码器，比特率受限。因此，提升音质需要生成更多 token，带来保真度与计算成本之间的权衡。我们提出连续音频语言模型（CALM）以解决该问题。该模型采用大型 Transformer 主干，在每个时间步输出上下文嵌入；随后，该序列信息通过多层感知机（MLP）以一致性建模方式生成音频 VAE 的下一连续帧。通过避免有损压缩，CALM 在更低计算成本下获得比离散模型更高的音质。语音与音乐实验表明，相比最先进的离散音频语言模型，CALM 在效率与保真度上均有提升，实现了轻量级、高质量的音频生成。示例音频见 https://continuous-audio-language-models.github.io。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-08",
+    "paper_authors": "Rouard Simon, Orsini Manu, Roebel Axel, Zeghidour Neil, Défossez Alexandre",
+    "topic": [
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "No Encore: Unlearning as Opt-Out in Music Generation",
+    "paper_title_zh": "不再返场：音乐生成中的“遗忘”作为退出机制",
+    "paper_id": "2509.06277v1",
+    "paper_abstract": "AI music generation is rapidly emerging in the creative industries, enabling intuitive music generation from textual descriptions. However, these systems pose risks in exploitation of copyrighted creations, raising ethical and legal concerns. In this paper, we present preliminary results on the first application of machine unlearning techniques from an ongoing research to prevent inadvertent usage of creative content. Particularly, we explore existing methods in machine unlearning to a pre-trained Text-to-Music (TTM) baseline and analyze their efficacy in unlearning pre-trained datasets without harming model performance. Through our experiments, we provide insights into the challenges of applying unlearning in music generation, offering a foundational analysis for future works on the application of unlearning for music generative models.",
+    "paper_abstract_zh": "AI 音乐生成正在创意产业中迅速崛起，仅凭文本描述即可直观生成音乐。然而，这些系统存在滥用受版权保护作品的风险，引发伦理与法律关切。本文报告了一项正在进行的研究的初步结果，首次将“机器遗忘”技术应用于防止创意内容被无意使用。我们特别将现有机器遗忘方法应用于预训练的文本-音乐（TTM）基线模型，评估其在不损害模型性能的前提下“遗忘”预训练数据集的有效性。实验揭示了在音乐生成任务中应用遗忘技术的挑战，为未来在生成式音乐模型中部署遗忘方法提供了基础性分析。",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-08",
+    "paper_authors": "Jinju Kim, Taehan Kim, Abdul Waheed, Rita Singh",
+    "topic": [
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Scaling Transformer-Based Novel View Synthesis Models with Token Disentanglement and Synthetic Data",
+    "paper_title_zh": "基于 Transformer 的新视角合成模型扩展：令牌解耦与合成数据",
+    "paper_id": "2509.06950v1",
+    "paper_abstract": "Large transformer-based models have made significant progress in generalizable novel view synthesis (NVS) from sparse input views, generating novel viewpoints without the need for test-time optimization. However, these models are constrained by the limited diversity of publicly available scene datasets, making most real-world (in-the-wild) scenes out-of-distribution. To overcome this, we incorporate synthetic training data generated from diffusion models, which improves generalization across unseen domains. While synthetic data offers scalability, we identify artifacts introduced during data generation as a key bottleneck affecting reconstruction quality. To address this, we propose a token disentanglement process within the transformer architecture, enhancing feature separation and ensuring more effective learning. This refinement not only improves reconstruction quality over standard transformers but also enables scalable training with synthetic data. As a result, our method outperforms existing models on both in-dataset and cross-dataset evaluations, achieving state-of-the-art results across multiple benchmarks while significantly reducing computational costs. Project page: https://scaling3dnvs.github.io/",
+    "paper_abstract_zh": "大型 Transformer 模型在稀疏输入视图的可泛化新视角合成（NVS）方面取得显著进展，无需测试时优化即可生成新视点。然而，公开场景数据集的多样性有限，导致大多数真实世界场景成为分布外样本。为此，我们引入由扩散模型生成的合成训练数据，提升对未见域的泛化能力。尽管合成数据带来可扩展性，我们发现数据生成过程引入的伪影是重建质量的关键瓶颈。为此，我们在 Transformer 架构内提出令牌解耦机制，增强特征分离，确保更有效的学习。该改进不仅提升了重建质量，还使合成数据的可扩展训练成为可能。实验表明，我们的方法在数据集内和跨数据集评估中均优于现有模型，在多个基准上达到最新最佳性能，并显著降低计算成本。项目主页：https://scaling3dnvs.github.io/",
+    "primary_category": "cs.GR",
+    "update_time": "2025-09-08",
+    "paper_authors": "Nithin Gopalakrishnan Nair, Srinivas Kaza, Xuan Luo, Vishal M. Patel, Stephen Lombardi, Jungyeon Park",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Interleaving Reasoning for Better Text-to-Image Generation",
+    "paper_title_zh": "交错推理提升文本到图像生成质量",
+    "paper_id": "2509.06945v1",
+    "paper_abstract": "Unified multimodal understanding and generation models recently have achieve significant improvement in image generation capability, yet a large gap remains in instruction following and detail preservation compared to systems that tightly couple comprehension with generation such as GPT-4o. Motivated by recent advances in interleaving reasoning, we explore whether such reasoning can further improve Text-to-Image (T2I) generation. We introduce Interleaving Reasoning Generation (IRG), a framework that alternates between text-based thinking and image synthesis: the model first produces a text-based thinking to guide an initial image, then reflects on the result to refine fine-grained details, visual quality, and aesthetics while preserving semantics. To train IRG effectively, we propose Interleaving Reasoning Generation Learning (IRGL), which targets two sub-goals: (1) strengthening the initial think-and-generate stage to establish core content and base quality, and (2) enabling high-quality textual reflection and faithful implementation of those refinements in a subsequent image. We curate IRGL-300K, a dataset organized into six decomposed learning modes that jointly cover learning text-based thinking, and full thinking-image trajectories. Starting from a unified foundation model that natively emits interleaved text-image outputs, our two-stage training first builds robust thinking and reflection, then efficiently tunes the IRG pipeline in the full thinking-image trajectory data. Extensive experiments show SoTA performance, yielding absolute gains of 5-10 points on GenEval, WISE, TIIF, GenAI-Bench, and OneIG-EN, alongside substantial improvements in visual quality and fine-grained fidelity. The code, model weights and datasets will be released in: https://github.com/Osilly/Interleaving-Reasoning-Generation .",
+    "paper_abstract_zh": "统一的多模态理解与生成模型近期在图像生成能力上取得显著进步，但在指令遵循与细节保持方面，相比 GPT-4o 这类将理解与生成紧密耦合的系统仍有较大差距。受近期“交错推理”进展启发，我们探索该推理范式能否进一步提升文本到图像（T2I）生成。我们提出交错推理生成框架（IRG），在文本思考与图像合成之间交替进行：模型先输出文本思考以指导初始图像，再对结果进行反思，在保持语义的前提下细化细节、视觉质量与美学。为有效训练 IRG，我们设计交错推理生成学习（IRGL），聚焦两个子目标：（1）强化“先思后绘”阶段，确立核心内容与基础质量；（2）实现高质量的文本反思，并忠实将细化意见落实到后续图像。我们构建含 30 万样本的 IRGL-300K 数据集，按六种分解学习模式组织，联合覆盖文本思考学习与完整思考-图像轨迹。以原生输出交错文本-图像的统一基础模型为起点，两阶段训练先建立鲁棒的思考与反思能力，再在完整轨迹数据上高效微调 IRG 管线。大量实验表明，该方法在 GenEval、WISE、TIIF、GenAI-Bench 与 OneIG-EN 上取得绝对 5–10 分的 SOTA 提升，同时视觉质量与细粒度保真度大幅改善。代码、权重与数据集将发布于：https://github.com/Osilly/Interleaving-Reasoning-Generation。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Wenxuan Huang, Shuang Chen, Zheyong Xie, Shaosheng Cao, Shixiang Tang, Yufan Shen, Qingyu Yin, Wenbo Hu, Xiaoman Wang, Yuntian Tang, Junbo Qiao, Yue Guo, Yao Hu, Zhenfei Yin, Philip Torr, Yu Cheng, Wanli Ouyang, Shaohui Lin",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Directly Aligning the Full Diffusion Trajectory with Fine-Grained Human Preference",
+    "paper_title_zh": "直接对齐完整扩散轨迹与细粒度人类偏好",
+    "paper_id": "2509.06942v1",
+    "paper_abstract": "Recent studies have demonstrated the effectiveness of directly aligning diffusion models with human preferences using differentiable reward. However, they exhibit two primary challenges: (1) they rely on multistep denoising with gradient computation for reward scoring, which is computationally expensive, thus restricting optimization to only a few diffusion steps; (2) they often need continuous offline adaptation of reward models in order to achieve desired aesthetic quality, such as photorealism or precise lighting effects. To address the limitation of multistep denoising, we propose Direct-Align, a method that predefines a noise prior to effectively recover original images from any time steps via interpolation, leveraging the equation that diffusion states are interpolations between noise and target images, which effectively avoids over-optimization in late timesteps. Furthermore, we introduce Semantic Relative Preference Optimization (SRPO), in which rewards are formulated as text-conditioned signals. This approach enables online adjustment of rewards in response to positive and negative prompt augmentation, thereby reducing the reliance on offline reward fine-tuning. By fine-tuning the FLUX.1.dev model with optimized denoising and online reward adjustment, we improve its human-evaluated realism and aesthetic quality by over 3x.",
+    "paper_abstract_zh": "近期研究表明，利用可微奖励直接对齐扩散模型与人类偏好效果显著，但仍面临两大挑战：（1）依赖多步去噪并计算奖励梯度，计算开销大，只能优化少数扩散步；（2）为获得真实感或精确光影等美学质量，需持续离线微调奖励模型。针对多步去噪局限，我们提出 Direct-Align，通过预设噪声先验，利用“扩散状态是噪声与目标图像插值”这一性质，从任意时刻插值恢复原图，避免后期时间步过优化。进一步提出语义相对偏好优化（SRPO），将奖励建模为文本条件信号，可在线根据正负提示增广动态调整奖励，减少对离线奖励微调的依赖。通过在 FLUX.1.dev 上结合优化去噪与在线奖励调整微调，人类评估的真实感与美学质量提升逾 3 倍。",
+    "primary_category": "cs.AI",
+    "update_time": "2025-09-08",
+    "paper_authors": "Xiangwei Shen, Zhimin Li, Zhantao Yang, Shiyi Zhang, Yingfang Zhang, Donghao Li, Chunyu Wang, Qinglin Lu, Yansong Tang",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "LLaDA-VLA: Vision Language Diffusion Action Models",
+    "paper_title_zh": "LLaDA-VLA：视觉-语言扩散动作模型",
+    "paper_id": "2509.06932v1",
+    "paper_abstract": "The rapid progress of auto-regressive vision-language models (VLMs) has inspired growing interest in vision-language-action models (VLA) for robotic manipulation. Recently, masked diffusion models, a paradigm distinct from autoregressive models, have begun to demonstrate competitive performance in text generation and multimodal applications, leading to the development of a series of diffusion-based VLMs (d-VLMs). However, leveraging such models for robot policy learning remains largely unexplored. In this work, we present LLaDA-VLA, the first Vision-Language-Diffusion-Action model built upon pretrained d-VLMs for robotic manipulation. To effectively adapt d-VLMs to robotic domain, we introduce two key designs: (1) a localized special-token classification strategy that replaces full-vocabulary classification with special action token classification, reducing adaptation difficulty; (2) a hierarchical action-structured decoding strategy that decodes action sequences hierarchically considering the dependencies within and across actions. Extensive experiments demonstrate that LLaDA-VLA significantly outperforms state-of-the-art VLAs on both simulation and real-world robots.",
+    "paper_abstract_zh": "自回归视觉-语言模型（VLM）的快速发展激发了人们对用于机器人操作的视觉-语言-动作模型（VLA）的浓厚兴趣。近期，与自回归范式不同的掩码扩散模型在文本生成和多模态任务中展现出媲美甚至超越前者的性能，催生了一系列基于扩散的VLM（d-VLM）。然而，将这些模型用于机器人策略学习仍鲜有探索。本文提出LLaDA-VLA，首个基于预训练d-VLM、面向机器人操作的视觉-语言-扩散-动作模型。为有效将d-VLM适配到机器人领域，我们引入两项关键设计：（1）局部特殊令牌分类策略，用特殊动作令牌分类替代全词表分类，降低适配难度；（2）层次化动作结构化解码策略，考虑动作内部及动作间的依赖关系，分层解码动作序列。大量实验表明，LLaDA-VLA在仿真与真实机器人任务上均显著优于现有最优VLA方法。",
+    "primary_category": "cs.RO",
+    "update_time": "2025-09-08",
+    "paper_authors": "Yuqing Wen, Hebei Li, Kefan Gu, Yucheng Zhao, Tiancai Wang, Xiaoyan Sun",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "BIR-Adapter: A Low-Complexity Diffusion Model Adapter for Blind Image Restoration",
+    "paper_title_zh": "BIR-Adapter：一种用于盲图像复原的低复杂度扩散模型适配器",
+    "paper_id": "2509.06904v1",
+    "paper_abstract": "This paper introduces BIR-Adapter, a low-complexity blind image restoration adapter for diffusion models. The BIR-Adapter enables the utilization of the prior of pre-trained large-scale diffusion models on blind image restoration without training any auxiliary feature extractor. We take advantage of the robustness of pretrained models. We extract features from degraded images via the model itself and extend the self-attention mechanism with these degraded features. We introduce a sampling guidance mechanism to reduce hallucinations. We perform experiments on synthetic and real-world degradations and demonstrate that BIR-Adapter achieves competitive or better performance compared to state-of-the-art methods while having significantly lower complexity. Additionally, its adapter-based design enables integration into other diffusion models, enabling broader applications in image restoration tasks. We showcase this by extending a super-resolution-only model to perform better under additional unknown degradations.",
+    "paper_abstract_zh": "本文提出BIR-Adapter，一种低复杂度的盲图像复原适配器，专为扩散模型设计。BIR-Adapter无需训练任何辅助特征提取器，即可利用预训练大规模扩散模型的先验知识实现盲图像复原。我们充分利用预训练模型的鲁棒性，通过模型自身从退化图像中提取特征，并将这些退化特征扩展至自注意力机制中。此外，我们引入采样引导机制以抑制幻觉。在合成与真实退化场景上的实验表明，BIR-Adapter在性能上达到或超越现有最优方法，同时复杂度显著降低。其适配器式设计可无缝集成至其他扩散模型，拓展了图像复原任务的应用范围。我们进一步展示，仅用于超分辨率的模型在接入BIR-Adapter后，也能在未知退化条件下获得更佳表现。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Cem Eteke, Alexander Griessel, Wolfgang Kellerer, Eckehard Steinbach",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "A New Hybrid Model of Generative Adversarial Network and You Only Look Once Algorithm for Automatic License-Plate Recognition",
+    "paper_title_zh": "生成对抗网络与YOLO算法的新型混合模型在自动车牌识别中的应用",
+    "paper_id": "2509.06868v1",
+    "paper_abstract": "Automatic License-Plate Recognition (ALPR) plays a pivotal role in Intelligent Transportation Systems (ITS) as a fundamental element of Smart Cities. However, due to its high variability, ALPR faces challenging issues more efficiently addressed by deep learning techniques. In this paper, a selective Generative Adversarial Network (GAN) is proposed for deblurring in the preprocessing step, coupled with the state-of-the-art You-Only-Look-Once (YOLO)v5 object detection architectures for License-Plate Detection (LPD), and the integrated Character Segmentation (CS) and Character Recognition (CR) steps. The selective preprocessing bypasses unnecessary and sometimes counter-productive input manipulations, while YOLOv5 LPD/CS+CR delivers high accuracy and low computing cost. As a result, YOLOv5 achieves a detection time of 0.026 seconds for both LP and CR detection stages, facilitating real-time applications with exceptionally rapid responsiveness. Moreover, the proposed model achieves accuracy rates of 95\\% and 97\\% in the LPD and CR detection phases, respectively. Furthermore, the inclusion of the Deblur-GAN pre-processor significantly improves detection accuracy by nearly 40\\%, especially when encountering blurred License Plates (LPs).To train and test the learning components, we generated and publicly released our blur and ALPR datasets (using Iranian license plates as a use-case), which are more representative of close-to-real-life ad-hoc situations. The findings demonstrate that employing the state-of-the-art YOLO model results in excellent overall precision and detection time, making it well-suited for portable applications. Additionally, integrating the Deblur-GAN model as a preliminary processing step enhances the overall effectiveness of our comprehensive model, particularly when confronted with blurred scenes captured by the camera as input.",
+    "paper_abstract_zh": "自动车牌识别（ALPR）是智能交通系统（ITS）的核心组成部分，也是智慧城市的基础要素。然而，由于车牌样式高度多变，ALPR 面临诸多挑战，亟需深度学习技术高效解决。本文提出一种选择性生成对抗网络（GAN）用于预处理去模糊，并联合当前最先进的 You-Only-Look-Once（YOLO）v5 目标检测架构完成车牌检测（LPD），同时集成字符分割（CS）与字符识别（CR）。选择性预处理避免了不必要甚至适得其反的输入操作，而 YOLOv5 LPD/CS+CR 在保持高准确率的同时计算开销极低。实验表明，YOLOv5 在车牌与字符识别两阶段的总检测时间仅 0.026 秒，可满足实时应用对极速响应的需求。此外，所提模型在 LPD 与 CR 阶段的准确率分别达到 95% 与 97%。引入 Deblur-GAN 预处理器后，整体检测准确率提升近 40%，尤其对模糊车牌效果显著。为训练与测试学习模块，作者自建并公开了模糊车牌与 ALPR 数据集（以伊朗车牌为例），更贴近真实临时场景。结果表明，采用最新 YOLO 模型可获得卓越的总体精度与检测速度，非常适合便携设备应用；将 Deblur-GAN 作为预处理步骤可进一步提升整体性能，尤其在输入图像因相机拍摄而模糊时。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Behnoud Shafiezadeh, Amir Mashmool, Farshad Eshghi, Manoochehr Kelarestaghi",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "floq: Training Critics via Flow-Matching for Scaling Compute in Value-Based RL",
+    "paper_title_zh": "floq：基于流匹配训练评判器以扩展基于价值的强化学习计算规模",
+    "paper_id": "2509.06863v1",
+    "paper_abstract": "A hallmark of modern large-scale machine learning techniques is the use of training objectives that provide dense supervision to intermediate computations, such as teacher forcing the next token in language models or denoising step-by-step in diffusion models. This enables models to learn complex functions in a generalizable manner. Motivated by this observation, we investigate the benefits of iterative computation for temporal difference (TD) methods in reinforcement learning (RL). Typically they represent value functions in a monolithic fashion, without iterative compute. We introduce floq (flow-matching Q-functions), an approach that parameterizes the Q-function using a velocity field and trains it using techniques from flow-matching, typically used in generative modeling. This velocity field underneath the flow is trained using a TD-learning objective, which bootstraps from values produced by a target velocity field, computed by running multiple steps of numerical integration. Crucially, floq allows for more fine-grained control and scaling of the Q-function capacity than monolithic architectures, by appropriately setting the number of integration steps. Across a suite of challenging offline RL benchmarks and online fine-tuning tasks, floq improves performance by nearly 1.8x. floq scales capacity far better than standard TD-learning architectures, highlighting the potential of iterative computation for value learning.",
+    "paper_abstract_zh": "现代大规模机器学习技术的显著特点之一，是利用能够为中间计算提供密集监督的训练目标，例如语言模型中的教师强制逐词预测或扩散模型中的逐步去噪。这种机制使模型能够以可泛化的方式学习复杂函数。受此启发，我们研究强化学习（RL）中时间差分（TD）方法引入迭代计算的收益。传统 TD 方法通常以整体方式表示价值函数，缺乏迭代计算。本文提出 floq（flow-matching Q-functions），利用速度场参数化 Q 函数，并借鉴生成建模中的流匹配技术进行训练。该速度场通过 TD 学习目标优化，其目标值由运行多步数值积分得到的目标速度场自举产生。关键在于，floq 可通过调节积分步数，对 Q 函数容量进行更细粒度控制与扩展，远胜整体式架构。在一系列具有挑战性的离线 RL 基准与在线微调任务中，floq 将性能提升近 1.8 倍，其容量扩展能力显著优于标准 TD 学习架构，凸显了迭代计算在价值学习中的巨大潜力。",
+    "primary_category": "cs.LG",
+    "update_time": "2025-09-08",
+    "paper_authors": "Bhavya Agrawalla, Michal Nauman, Khush Agarwal, Aviral Kumar",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "UMO: Scaling Multi-Identity Consistency for Image Customization via Matching Reward",
+    "paper_title_zh": "UMO：通过匹配奖励实现多身份一致性的图像定制规模化方法",
+    "paper_id": "2509.06818v1",
+    "paper_abstract": "Recent advancements in image customization exhibit a wide range of application prospects due to stronger customization capabilities. However, since we humans are more sensitive to faces, a significant challenge remains in preserving consistent identity while avoiding identity confusion with multi-reference images, limiting the identity scalability of customization models. To address this, we present UMO, a Unified Multi-identity Optimization framework, designed to maintain high-fidelity identity preservation and alleviate identity confusion with scalability. With \"multi-to-multi matching\" paradigm, UMO reformulates multi-identity generation as a global assignment optimization problem and unleashes multi-identity consistency for existing image customization methods generally through reinforcement learning on diffusion models. To facilitate the training of UMO, we develop a scalable customization dataset with multi-reference images, consisting of both synthesised and real parts. Additionally, we propose a new metric to measure identity confusion. Extensive experiments demonstrate that UMO not only improves identity consistency significantly, but also reduces identity confusion on several image customization methods, setting a new state-of-the-art among open-source methods along the dimension of identity preserving. Code and model: https://github.com/bytedance/UMO",
+    "paper_abstract_zh": "近期图像定制技术的进步因其更强的定制能力而展现出广阔的应用前景。然而，由于人类对人脸更为敏感，如何在多张参考图像下保持身份一致且避免身份混淆，成为限制定制模型身份可扩展性的重大挑战。为此，我们提出统一多身份优化框架 UMO，旨在在高保真身份保持的同时缓解身份混淆，实现规模化。UMO 采用“多对多匹配”范式，将多身份生成重新表述为全局分配优化问题，并通过对扩散模型的强化学习，普遍释放现有图像定制方法的多身份一致性。为训练 UMO，我们构建了一个包含合成与真实部分、可扩展的多参考图像定制数据集；此外，还提出了一种新的身份混淆度量指标。大量实验表明，UMO 不仅显著提升身份一致性，还在多种图像定制方法上降低了身份混淆，在开源方法的身份保持维度上达到新的最先进水平。代码与模型：https://github.com/bytedance/UMO",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Yufeng Cheng, Wenxu Wu, Shaojin Wu, Mengqi Huang, Fei Ding, Qian He",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "CausNVS: Autoregressive Multi-view Diffusion for Flexible 3D Novel View Synthesis",
+    "paper_title_zh": "CausNVS：面向灵活 3D 新视角合成的自回归多视角扩散模型",
+    "paper_id": "2509.06579v1",
+    "paper_abstract": "Multi-view diffusion models have shown promise in 3D novel view synthesis, but most existing methods adopt a non-autoregressive formulation. This limits their applicability in world modeling, as they only support a fixed number of views and suffer from slow inference due to denoising all frames simultaneously. To address these limitations, we propose CausNVS, a multi-view diffusion model in an autoregressive setting, which supports arbitrary input-output view configurations and generates views sequentially. We train CausNVS with causal masking and per-frame noise, using pairwise-relative camera pose encodings (CaPE) for precise camera control. At inference time, we combine a spatially-aware sliding-window with key-value caching and noise conditioning augmentation to mitigate drift. Our experiments demonstrate that CausNVS supports a broad range of camera trajectories, enables flexible autoregressive novel view synthesis, and achieves consistently strong visual quality across diverse settings. Project page: https://kxhit.github.io/CausNVS.html.",
+    "paper_abstract_zh": "多视角扩散模型在 3D 新视角合成中已展现潜力，但现有方法大多采用非自回归形式，限制了其在世界建模中的应用：仅支持固定数量的视角，且因同时对所有帧去噪而推理缓慢。为此，我们提出 CausNVS——一种自回归场景下的多视角扩散模型，可支持任意输入-输出视角配置，并顺序生成视角。我们采用因果掩码与逐帧噪声进行训练，并引入成对相对相机位姿编码（CaPE）以实现精确的相机控制。推理阶段，我们结合空间感知的滑动窗口、键值缓存与噪声条件增强来缓解漂移。实验表明，CausNVS 支持广泛的相机轨迹，实现灵活的自回归新视角合成，并在多种场景下始终保持优异的视觉质量。项目主页：https://kxhit.github.io/CausNVS.html",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Xin Kong, Daniel Watson, Yannick Strümpler, Michael Niemeyer, Federico Tombari",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "From Rigging to Waving: 3D-Guided Diffusion for Natural Animation of Hand-Drawn Characters",
+    "paper_title_zh": "从绑定到飘动：面向手绘角色自然动画的三维引导扩散方法",
+    "paper_id": "2509.06573v1",
+    "paper_abstract": "Hand-drawn character animation is a vibrant field in computer graphics, presenting challenges in achieving geometric consistency while conveying expressive motion. Traditional skeletal animation methods maintain geometric consistency but struggle with complex non-rigid elements like flowing hair and skirts, leading to unnatural deformation. Conversely, video diffusion models synthesize realistic dynamics but often create geometric distortions in stylized drawings due to domain gaps. This work proposes a hybrid animation system that combines skeletal animation and video diffusion. Initially, coarse images are generated from characters retargeted with skeletal animations for geometric guidance. These images are then enhanced in texture and secondary dynamics using video diffusion priors, framing this enhancement as an inpainting task. A domain-adapted diffusion model refines user-masked regions needing improvement, especially for secondary dynamics. To enhance motion realism further, we introduce a Secondary Dynamics Injection (SDI) strategy in the denoising process, incorporating features from a pre-trained diffusion model enriched with human motion priors. Additionally, to tackle unnatural deformations from low-poly single-mesh character modeling, we present a Hair Layering Modeling (HLM) technique that uses segmentation maps to separate hair from the body, allowing for more natural animation of long-haired characters. Extensive experiments show that our system outperforms state-of-the-art methods in both quantitative and qualitative evaluations.",
+    "paper_abstract_zh": "手绘角色动画是计算机图形学中充满活力的研究领域，在保持几何一致性的同时传达富有表现力的动作仍面临挑战。传统骨骼动画方法虽能保持几何一致性，却难以处理头发、裙摆等复杂非刚性元素，导致不自然的形变；而视频扩散模型虽可合成逼真动态，却因域差异在手绘风格图像中常产生几何扭曲。本文提出一种混合动画系统，将骨骼动画与视频扩散相结合：首先利用骨骼重定向生成粗略图像以提供几何引导，再借助视频扩散先验对纹理和次级动态进行增强，并将该增强过程构建为修复任务。通过领域自适应扩散模型对用户标记需改进区域（尤其是次级动态）进行精细化处理。为进一步提升动作真实感，我们在去噪过程中引入“次级动态注入（SDI）”策略，融合预训练且富含人体运动先验的扩散模型特征。此外，针对低面数单网格角色建模带来的不自然形变，提出“头发分层建模（HLM）”技术，利用分割图将头发与身体分离，使长发角色动画更加自然。大量实验表明，本系统在定量与定性评估中均优于现有最先进方法。",
+    "primary_category": "cs.GR",
+    "update_time": "2025-09-08",
+    "paper_authors": "Jie Zhou, Linzi Qu, Miu-Ling Lam, Hongbo Fu",
+    "topic": [
+      "Image Generation",
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Interlayer Coupling and Exciton Dynamics in 2D Hybrid Structures based on an InGaN Quantum Well coupled to a MoSe2 Monolayer",
+    "paper_title_zh": "基于 InGaN 量子阱与 MoSe₂ 单层耦合的二维混合结构中的层间耦合与激子动力学",
+    "paper_id": "2509.06547v1",
+    "paper_abstract": "Hybrid structures incorpora1ng both III-nitride and Transi1on Metal Dichalcogenide (TMD) semiconductors have strong applica1on poten1al for light harves1ng and optoelectronics. Here we have inves1gated the proper1es of hybrid structures based on a MoSe2 monolayer coupled to an InGaN quantum well (QW). The coupling efficiency is controlled by a thin GaN barrier of variable thickness located between them. Time-integrated and 1me-resolved micro-photoluminescence experiments show a quenching of the InGaN QW exciton emission which increases with the decrease of the GaN barrier thickness d: the PL intensity is reduced by a factor 3 for d=1 nm as a consequence of carrier transfer to the MoSe2 monolayer. This interplay between the two semiconductors is confirmed by 1meresolved photoluminescence spectroscopy highligh1ng a clear reduc1on of the QW exciton life1me in the presence of the monolayer. Interes1ngly the coupling between the QW and the TMD monolayer is also demonstrated by measuring op1cally the excitonic transport proper1es in the quantum well: the exciton diffusion length decreases in the presence of the MoSe2 monolayer. The measured dependences as a func1on of temperature highlight the role played by localiza1on effects in the QW. All these results can be well interpreted by a type II band alignment between the InGaN QW and the MoSe2 monolayer and a tunneling process between the two semiconductors.",
+    "paper_abstract_zh": "将 III-族氮化物与过渡金属硫族化合物（TMD）半导体结合的混合结构在光收集与光电器件中具有巨大应用潜力。本文研究了由 MoSe₂ 单层与 InGaN 量子阱（QW）构成的混合结构特性，二者之间通过厚度可调的薄 GaN 势垒控制耦合强度。时间积分与时间分辨微区光致发光实验表明，InGaN QW 的激子发光随 GaN 势垒厚度 d 减小而猝灭：当 d=1 nm 时，光致发光强度因载流子向 MoSe₂ 单层转移而降低 3 倍。时间分辨光致发光谱进一步证实两种半导体间的相互作用，显示 QW 激子寿命在单层存在下显著缩短。更有趣的是，通过光学测量 QW 中的激子输运特性也发现层间耦合：MoSe₂ 单层使激子扩散长度减小。温度依赖测量揭示了 QW 中局域化效应的关键作用。所有结果均可由 InGaN QW 与 MoSe₂ 单层之间的 II 型能带排列及两半导体间的隧穿过程得到很好解释。",
+    "primary_category": "cond-mat.mtrl-sci",
+    "update_time": "2025-09-08",
+    "paper_authors": "D. Chen, D. Lagarde, L. Hemmen, L. Lombez, P. Renucci, M. Mauguet, L. Ren, C. Robert, N. Grandjean, X. Marie",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "On optimal solutions of classical and sliced Wasserstein GANs with non-Gaussian data",
+    "paper_title_zh": "非高斯数据下经典与切片 Wasserstein GAN 的最优解研究",
+    "paper_id": "2509.06505v1",
+    "paper_abstract": "The generative adversarial network (GAN) aims to approximate an unknown distribution via a parameterized neural network (NN). While GANs have been widely applied in reinforcement and semisupervised learning as well as computer vision tasks, selecting their parameters often needs an exhaustive search and only a few selection methods can be proved to be theoretically optimal. One of the most promising GAN variants is the Wasserstein GAN (WGAN). Prior work on optimal parameters for WGAN is limited to the linear-quadratic-Gaussian (LQG) setting, where the NN is linear and the data is Gaussian. In this paper, we focus on the characterization of optimal WGAN parameters beyond the LQG setting. We derive closed-form optimal parameters for one-dimensional WGANs when the NN has non-linear activation functions and the data is non-Gaussian. To extend this to high-dimensional WGANs, we adopt the sliced Wasserstein framework and replace the constraint on marginal distributions of the randomly projected data by a constraint on the joint distribution of the original (unprojected) data. We show that the linear generator can be asymptotically optimal for sliced WGAN with non-Gaussian data. Empirical studies show that our closed-form WGAN parameters have good convergence behavior with data under both Gaussian and Laplace distributions. Also, compared to the r principal component analysis (r-PCA) solution, our proposed solution for sliced WGAN can achieve the same performance while requiring less computational resources.",
+    "paper_abstract_zh": "生成对抗网络（GAN）旨在通过参数化神经网络逼近未知分布。尽管 GAN 已广泛应用于强化学习、半监督学习与计算机视觉任务，但其参数选择往往依赖穷举搜索，且仅有少数方法可被理论证明为最优。最具前景的 GAN 变体之一是 Wasserstein GAN（WGAN）。现有关于 WGAN 最优参数的研究仅限于线性-二次-高斯（LQG）场景，即神经网络为线性且数据服从高斯分布。本文超越 LQG 设定，刻画非高斯数据下 WGAN 的最优参数。当神经网络采用非线性激活函数且数据为一维非高斯分布时，我们推导出 WGAN 最优参数的闭式解。为将结果推广至高维 WGAN，我们引入切片 Wasserstein 框架，用原始（未投影）数据的联合分布约束替代随机投影数据的边际分布约束。我们证明，对于非高斯数据的切片 WGAN，线性生成器在渐近意义下是最优的。实验表明，我们给出的闭式 WGAN 参数在高斯与拉普拉斯分布数据上均表现出良好的收敛性；与 r-PCA 解相比，本文提出的切片 WGAN 方案在性能相当的同时显著降低了计算资源需求。",
+    "primary_category": "cs.LG",
+    "update_time": "2025-09-08",
+    "paper_authors": "Yu-Jui Huang, Hsin-Hua Shen, Yu-Chih Huang, Wan-Yi Lin, Shih-Chun Lin",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "TIDE: Achieving Balanced Subject-Driven Image Generation via Target-Instructed Diffusion Enhancement",
+    "paper_title_zh": "TIDE：通过目标引导扩散增强实现均衡的主体驱动图像生成",
+    "paper_id": "2509.06499v1",
+    "paper_abstract": "Subject-driven image generation (SDIG) aims to manipulate specific subjects within images while adhering to textual instructions, a task crucial for advancing text-to-image diffusion models. SDIG requires reconciling the tension between maintaining subject identity and complying with dynamic edit instructions, a challenge inadequately addressed by existing methods. In this paper, we introduce the Target-Instructed Diffusion Enhancing (TIDE) framework, which resolves this tension through target supervision and preference learning without test-time fine-tuning. TIDE pioneers target-supervised triplet alignment, modelling subject adaptation dynamics using a (reference image, instruction, target images) triplet. This approach leverages the Direct Subject Diffusion (DSD) objective, training the model with paired \"winning\" (balanced preservation-compliance) and \"losing\" (distorted) targets, systematically generated and evaluated via quantitative metrics. This enables implicit reward modelling for optimal preservation-compliance balance. Experimental results on standard benchmarks demonstrate TIDE's superior performance in generating subject-faithful outputs while maintaining instruction compliance, outperforming baseline methods across multiple quantitative metrics. TIDE's versatility is further evidenced by its successful application to diverse tasks, including structural-conditioned generation, image-to-image generation, and text-image interpolation. Our code is available at https://github.com/KomJay520/TIDE.",
+    "paper_abstract_zh": "主体驱动图像生成（SDIG）旨在根据文本指令对图像中的特定主体进行操控，同时保持主体身份，这对文本到图像扩散模型的发展至关重要。SDIG 需在保持主体身份与遵循动态编辑指令之间取得平衡，而现有方法对此兼顾不足。本文提出目标引导扩散增强（TIDE）框架，通过目标监督与偏好学习化解上述张力，无需测试时微调。TIDE 首创目标监督三元组对齐，利用（参考图像、指令、目标图像）三元组建模主体自适应动态。该方法采用直接主体扩散（DSD）目标，借助定量指标系统生成并评估“获胜”（平衡保持-服从）与“失败”（失真）目标对，实现隐式奖励建模，从而获得最优的保持-服从平衡。在标准基准上的实验表明，TIDE 在生成忠实主体且遵循指令的图像方面显著优于基线方法，并在多项量化指标上取得最佳成绩。TIDE 的通用性进一步体现在结构条件生成、图像到图像生成及文本-图像插值等多样任务中的成功应用。代码已开源：https://github.com/KomJay520/TIDE。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Jibai Lin, Bo Ma, Yating Yang, Rong Ma, Turghun Osman, Ahtamjan Ahmat, Rui Dong, Lei Wang, Xi Zhou",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "VQualA 2025 Challenge on Image Super-Resolution Generated Content Quality Assessment: Methods and Results",
+    "paper_title_zh": "VQualA 2025 图像超分辨率生成内容质量评估挑战赛：方法与结果",
+    "paper_id": "2509.06413v1",
+    "paper_abstract": "This paper presents the ISRGC-Q Challenge, built upon the Image Super-Resolution Generated Content Quality Assessment (ISRGen-QA) dataset, and organized as part of the Visual Quality Assessment (VQualA) Competition at the ICCV 2025 Workshops. Unlike existing Super-Resolution Image Quality Assessment (SR-IQA) datasets, ISRGen-QA places a greater emphasis on SR images generated by the latest generative approaches, including Generative Adversarial Networks (GANs) and diffusion models. The primary goal of this challenge is to analyze the unique artifacts introduced by modern super-resolution techniques and to evaluate their perceptual quality effectively. A total of 108 participants registered for the challenge, with 4 teams submitting valid solutions and fact sheets for the final testing phase. These submissions demonstrated state-of-the-art (SOTA) performance on the ISRGen-QA dataset. The project is publicly available at: https://github.com/Lighting-YXLI/ISRGen-QA.",
+    "paper_abstract_zh": "本文介绍了基于图像超分辨率生成内容质量评估（ISRGen-QA）数据集构建的 ISRGC-Q 挑战赛，该赛事作为 ICCV 2025 研讨会视觉质量评估（VQualA）竞赛的一部分举办。与现有的超分辨率图像质量评估（SR-IQA）数据集不同，ISRGen-QA 更加关注由最新生成方法（包括生成对抗网络 GAN 和扩散模型）生成的超分辨率图像。本次挑战赛的主要目标是分析现代超分辨率技术引入的独特伪影，并有效评估其感知质量。共有 108 支队伍注册参赛，其中 4 支队伍在最终测试阶段提交了有效解决方案和事实说明表。这些提交方案在 ISRGen-QA 数据集上展现了最先进的（SOTA）性能。项目已公开，地址：https://github.com/Lighting-YXLI/ISRGen-QA。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Yixiao Li, Xin Li, Chris Wei Zhou, Shuo Xing, Hadi Amirpour, Xiaoshuai Hao, Guanghui Yue, Baoquan Zhao, Weide Liu, Xiaoyuan Yang, Zhengzhong Tu, Xinyu Li, Chuanbiao Song, Chenqi Zhang, Jun Lan, Huijia Zhu, Weiqiang Wang, Xiaoyan Sun, Shishun Tian, Dongyang Yan, Weixia Zhang, Junlin Chen, Wei Sun, Zhihua Wang, Zhuohang Shi, Zhizun Luo, Hang Ouyang, Tianxin Xiao, Fan Yang, Zhaowang Wu, Kaixin Deng",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Deep Reactive Policy: Learning Reactive Manipulator Motion Planning for Dynamic Environments",
+    "paper_title_zh": "深度反应式策略：面向动态环境的反应式机械臂运动规划学习",
+    "paper_id": "2509.06953v1",
+    "paper_abstract": "Generating collision-free motion in dynamic, partially observable environments is a fundamental challenge for robotic manipulators. Classical motion planners can compute globally optimal trajectories but require full environment knowledge and are typically too slow for dynamic scenes. Neural motion policies offer a promising alternative by operating in closed-loop directly on raw sensory inputs but often struggle to generalize in complex or dynamic settings. We propose Deep Reactive Policy (DRP), a visuo-motor neural motion policy designed for reactive motion generation in diverse dynamic environments, operating directly on point cloud sensory input. At its core is IMPACT, a transformer-based neural motion policy pretrained on 10 million generated expert trajectories across diverse simulation scenarios. We further improve IMPACT's static obstacle avoidance through iterative student-teacher finetuning. We additionally enhance the policy's dynamic obstacle avoidance at inference time using DCP-RMP, a locally reactive goal-proposal module. We evaluate DRP on challenging tasks featuring cluttered scenes, dynamic moving obstacles, and goal obstructions. DRP achieves strong generalization, outperforming prior classical and neural methods in success rate across both simulated and real-world settings. Video results and code available at https://deep-reactive-policy.com",
+    "paper_abstract_zh": "在动态、部分可观测环境中生成无碰撞运动是机械臂面临的基础难题。经典运动规划器可计算全局最优轨迹，但需完整环境信息且速度通常难以满足动态场景需求。神经运动策略通过直接对原始传感输入进行闭环控制提供了有前景的替代方案，但在复杂或动态环境中往往泛化能力不足。我们提出深度反应式策略（DRP），一种面向多样化动态环境的视觉-运动神经运动策略，可直接基于点云传感输入进行反应式运动生成。其核心为 IMPACT——一种基于 Transformer 的神经运动策略，已在 1000 万条跨多样仿真场景生成的专家轨迹上预训练。我们进一步通过迭代式师生微调提升 IMPACT 对静态障碍的避让能力，并在推理阶段利用 DCP-RMP（局部反应式目标提议模块）增强策略对动态障碍的避让能力。我们在包含杂乱场景、动态移动障碍及目标受阻等挑战性任务上评估 DRP。DRP 表现出强大的泛化能力，在仿真与真实环境中的成功率均优于现有经典与神经方法。视频结果与代码见：https://deep-reactive-policy.com",
+    "primary_category": "cs.RO",
+    "update_time": "2025-09-08",
+    "paper_authors": "Jiahui Yang, Jason Jingzhou Liu, Yulong Li, Youssef Khaky, Kenneth Shaw, Deepak Pathak",
+    "topic": [
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Video-Based MPAA Rating Prediction: An Attention-Driven Hybrid Architecture Using Contrastive Learning",
+    "paper_title_zh": "基于视频的 MPAA 分级预测：一种利用对比学习的注意力驱动混合架构",
+    "paper_id": "2509.06826v1",
+    "paper_abstract": "The rapid growth of visual content consumption across platforms necessitates automated video classification for age-suitability standards like the MPAA rating system (G, PG, PG-13, R). Traditional methods struggle with large labeled data requirements, poor generalization, and inefficient feature learning. To address these challenges, we employ contrastive learning for improved discrimination and adaptability, exploring three frameworks: Instance Discrimination, Contextual Contrastive Learning, and Multi-View Contrastive Learning. Our hybrid architecture integrates an LRCN (CNN+LSTM) backbone with a Bahdanau attention mechanism, achieving state-of-the-art performance in the Contextual Contrastive Learning framework, with 88% accuracy and an F1 score of 0.8815. By combining CNNs for spatial features, LSTMs for temporal modeling, and attention mechanisms for dynamic frame prioritization, the model excels in fine-grained borderline distinctions, such as differentiating PG-13 and R-rated content. We evaluate the model's performance across various contrastive loss functions, including NT-Xent, NT-logistic, and Margin Triplet, demonstrating the robustness of our proposed architecture. To ensure practical application, the model is deployed as a web application for real-time MPAA rating classification, offering an efficient solution for automated content compliance across streaming platforms.",
+    "paper_abstract_zh": "随着各平台视觉内容消费的快速增长，亟需针对 MPAA 分级标准（G、PG、PG-13、R）的自动化视频分类。传统方法面临大规模标注数据需求高、泛化能力差及特征学习效率低等问题。为此，我们引入对比学习以提升判别力与适应性，并探索三种框架：实例判别、上下文对比学习与多视角对比学习。所提出的混合架构将 LRCN（CNN+LSTM）骨干与 Bahdanau 注意力机制相结合，在上下文对比学习框架下达到 88% 的准确率与 0.8815 的 F1 分数，实现当前最优性能。通过融合 CNN 提取空间特征、LSTM 建模时序信息以及注意力机制动态加权帧级表示，该模型在 PG-13 与 R 级等细微边界区分上表现优异。我们评估了 NT-Xent、NT-logistic 与 Margin Triplet 等多种对比损失函数，验证了所提出架构的鲁棒性。为便于实际应用，模型已部署为 Web 应用，可实时进行 MPAA 分级预测，为流媒体平台提供高效的自动化内容合规解决方案。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Dipta Neogi, Nourash Azmine Chowdhury, Muhammad Rafsan Kabir, Mohammad Ashrafuzzaman Khan",
+    "topic": [
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Zero-shot 3D-Aware Trajectory-Guided image-to-video generation via Test-Time Training",
+    "paper_title_zh": "零样本 3D 感知轨迹引导图像到视频生成：测试时训练方法",
+    "paper_id": "2509.06723v1",
+    "paper_abstract": "Trajectory-Guided image-to-video (I2V) generation aims to synthesize videos that adhere to user-specified motion instructions. Existing methods typically rely on computationally expensive fine-tuning on scarce annotated datasets. Although some zero-shot methods attempt to trajectory control in the latent space, they may yield unrealistic motion by neglecting 3D perspective and creating a misalignment between the manipulated latents and the network's noise predictions. To address these challenges, we introduce Zo3T, a novel zero-shot test-time-training framework for trajectory-guided generation with three core innovations: First, we incorporate a 3D-Aware Kinematic Projection, leveraging inferring scene depth to derive perspective-correct affine transformations for target regions. Second, we introduce Trajectory-Guided Test-Time LoRA, a mechanism that dynamically injects and optimizes ephemeral LoRA adapters into the denoising network alongside the latent state. Driven by a regional feature consistency loss, this co-adaptation effectively enforces motion constraints while allowing the pre-trained model to locally adapt its internal representations to the manipulated latent, thereby ensuring generative fidelity and on-manifold adherence. Finally, we develop Guidance Field Rectification, which refines the denoising evolutionary path by optimizing the conditional guidance field through a one-step lookahead strategy, ensuring efficient generative progression towards the target trajectory. Zo3T significantly enhances 3D realism and motion accuracy in trajectory-controlled I2V generation, demonstrating superior performance over existing training-based and zero-shot approaches.",
+    "paper_abstract_zh": "轨迹引导的图像到视频（I2V）生成旨在按照用户指定的运动指令合成视频。现有方法通常依赖计算成本高昂的微调，且标注数据稀缺。尽管部分零样本方法尝试在潜空间进行轨迹控制，但因忽视 3D 透视，易导致运动不真实，并使被操控的潜变量与网络噪声预测之间出现错位。为此，我们提出 Zo3T——一种新颖的零样本测试时训练框架，包含三项核心创新：首先，引入 3D 感知运动学投影，通过推断场景深度获得透视正确的仿射变换，作用于目标区域；其次，提出轨迹引导的测试时 LoRA，在潜变量状态旁动态注入并优化临时 LoRA 适配器，借助区域特征一致性损失实现协同适应，在强制运动约束的同时让预训练模型局部调整内部表征，确保生成保真与流形一致性；最后，开发引导场修正机制，通过一步前瞻策略优化条件引导场，精炼去噪演化路径，使生成过程高效地朝向目标轨迹推进。Zo3T 在轨迹控制的 I2V 生成中显著提升了 3D 真实感与运动精度，性能优于现有基于训练与零样本的方法。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Ruicheng Zhang, Jun Zhou, Zunnan Xu, Zihao Liu, Jiehui Huang, Mingyang Zhang, Yu Sun, Xiu Li",
+    "topic": [
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "On the Reproducibility of \"FairCLIP: Harnessing Fairness in Vision-Language Learning''",
+    "paper_title_zh": "关于“FairCLIP：在视觉-语言学习中实现公平性”的可复现性研究",
+    "paper_id": "2509.06535v1",
+    "paper_abstract": "We investigated the reproducibility of FairCLIP, proposed by Luo et al. (2024), for improving the group fairness of CLIP (Radford et al., 2021) by minimizing image-text similarity score disparities across sensitive groups using the Sinkhorn distance. The experimental setup of Luo et al. (2024) was reproduced to primarily investigate the research findings for FairCLIP. The model description by Luo et al. (2024) was found to differ from the original implementation. Therefore, a new implementation, A-FairCLIP, is introduced to examine specific design choices. Furthermore, FairCLIP+ is proposed to extend the FairCLIP objective to include multiple attributes. Additionally, the impact of the distance minimization on FairCLIP's fairness and performance was explored. In alignment with the original authors, CLIP was found to be biased towards certain demographics when applied to zero-shot glaucoma classification using medical scans and clinical notes from the Harvard-FairVLMed dataset. However, the experimental results on two datasets do not support their claim that FairCLIP improves the performance and fairness of CLIP. Although the regularization objective reduces Sinkhorn distances, both the official implementation and the aligned implementation, A-FairCLIP, were not found to improve performance nor fairness in zero-shot glaucoma classification.",
+    "paper_abstract_zh": "我们研究了 Luo 等人（2024）提出的 FairCLIP 的可复现性，该方法通过 Sinkhorn 距离最小化敏感群体间的图像-文本相似度差异，以提升 CLIP（Radford 等人，2021）的群体公平性。我们复现了 Luo 等人（2024）的实验设置，主要验证 FairCLIP 的研究结论。发现其模型描述与官方实现存在差异，因此引入新实现 A-FairCLIP 以检验具体设计选择。进一步提出 FairCLIP+，将 FairCLIP 目标扩展至多属性场景。此外，探讨了距离最小化对 FairCLIP 公平性与性能的影响。与原作者一致，我们在 Harvard-FairVLMed 数据集的零样本青光眼分类任务中观察到 CLIP 对某些人口统计特征存在偏见。然而，在两个数据集上的实验结果并不支持 FairCLIP 能提升 CLIP 性能与公平性的主张。尽管正则化目标降低了 Sinkhorn 距离，但官方实现与对齐后的 A-FairCLIP 均未在零样本青光眼分类中改善性能或公平性。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Hua Chang Bakker, Stan Fris, Angela Madelon Bernardy, Stan Deutekom",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Optimal Distortion-Aware Multi-User Power Allocation for Massive MIMO Networks",
+    "paper_title_zh": "面向大规模 MIMO 网络的最优失真感知多用户功率分配",
+    "paper_id": "2509.06491v1",
+    "paper_abstract": "Real-world wireless transmitter front-ends exhibit certain nonlinear behavior, e.g., signal clipping by a Power Amplifier (PA). Although many resource allocation solutions do not consider this for simplicity, it leads to inaccurate results or a reduced number of degrees of freedom, not achieving the global performance. In this work, we propose an optimal PA distortion-aware power allocation strategy in a downlink orthogonal frequency division multiplex (OFDM) based massive multiple-input multiple-output (M-MIMO) system. Assuming a soft-limiter PA model, where the transmission occurs under small-scale independent and identically distributed (i.i.d) Rayleigh fading channel, we derive the wideband signal-to-noise-and-distortion ratio (SNDR) and formulate the power allocation problem. Most interestingly, the distortion introduced by the PA leads to an SNDR-efficient operating point without explicit transmit power constraints. While the optimization problem is non-convex, we decouple it into a non-convex total power allocation problem and a convex power distribution problem among the users (UEs). We propose an alternating optimization algorithm to find the optimum solution. Our simulation results show significant sum-rate gains over existing distortion-neglecting solutions, e.g., a median 4 times increase and a median 50\\% increase for a 64-antenna and 512-antenna base station serving 60 users, respectively.",
+    "paper_abstract_zh": "现实无线发射机前端存在非线性行为，例如功率放大器（PA）对信号的削波。许多资源分配方案为简化模型而忽略该效应，导致结果不准确或自由度降低，无法达到全局最优性能。本文提出一种面向下行 OFDM 大规模 MIMO（M-MIMO）系统的最优 PA 失真感知功率分配策略。在软限幅 PA 模型下，假设小尺度独立同分布瑞利衰落信道，推导宽带信干噪失真比（SNDR）并建立功率分配问题。有趣的是，PA 引入的失真可在无需显式发射功率约束的情况下产生 SNDR 高效工作点。尽管该优化问题非凸，我们将其解耦为非凸的总功率分配子问题与凸的用户间功率分配子问题，并提出交替优化算法求得最优解。仿真结果表明，与忽略失真的现有方案相比，所提方法可获得显著和速率增益：在 64 天线与 512 天线基站服务 60 用户的场景下，中位增益分别提升约 4 倍与 50%。",
+    "primary_category": "eess.SP",
+    "update_time": "2025-09-08",
+    "paper_authors": "Siddarth Marwaha, Pawel Kryszkiewicz, Eduard Jorswieck",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Multi View Slot Attention Using Paraphrased Texts For Face Anti-Spoofing",
+    "paper_title_zh": "基于释义文本的多视角槽位注意力人脸反欺骗方法",
+    "paper_id": "2509.06336v1",
+    "paper_abstract": "Recent face anti-spoofing (FAS) methods have shown remarkable cross-domain performance by employing vision-language models like CLIP. However, existing CLIP-based FAS models do not fully exploit CLIP's patch embedding tokens, failing to detect critical spoofing clues. Moreover, these models rely on a single text prompt per class (e.g., 'live' or 'fake'), which limits generalization. To address these issues, we propose MVP-FAS, a novel framework incorporating two key modules: Multi-View Slot attention (MVS) and Multi-Text Patch Alignment (MTPA). Both modules utilize multiple paraphrased texts to generate generalized features and reduce dependence on domain-specific text. MVS extracts local detailed spatial features and global context from patch embeddings by leveraging diverse texts with multiple perspectives. MTPA aligns patches with multiple text representations to improve semantic robustness. Extensive experiments demonstrate that MVP-FAS achieves superior generalization performance, outperforming previous state-of-the-art methods on cross-domain datasets. Code: https://github.com/Elune001/MVP-FAS.",
+    "paper_abstract_zh": "近期的人脸反欺骗（FAS）方法通过引入 CLIP 等视觉-语言模型，在跨域场景下取得了显著性能。然而，现有基于 CLIP 的 FAS 模型未能充分利用 CLIP 的块嵌入令牌，难以捕捉关键伪造线索；同时，它们仅为每类提供单一文本提示（如“真人”或“伪造”），限制了泛化能力。为此，我们提出 MVP-FAS 框架，包含两大核心模块：多视角槽位注意力（MVS）与多文本块对齐（MTPA）。两模块均借助多条释义文本生成更具泛化性的特征，降低对特定域文本的依赖。MVS 利用多视角文本从块嵌入中提取局部细节空间特征与全局上下文；MTPA 将图像块与多种文本表征对齐，提升语义鲁棒性。大量实验表明，MVP-FAS 在跨域数据集上取得最优泛化性能，超越现有最先进方法。代码：https://github.com/Elune001/MVP-FAS。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-08",
+    "paper_authors": "Jeongmin Yu, Susang Kim, Kisu Lee, Taekyoung Kwon, Won-Yong Shin, Ha Young Kim",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "PLRV-O: Advancing Differentially Private Deep Learning via Privacy Loss Random Variable Optimization",
+    "paper_title_zh": "PLRV-O：基于隐私损失随机变量优化的差分隐私深度学习新方法",
+    "paper_id": "2509.06264v1",
+    "paper_abstract": "Differentially Private Stochastic Gradient Descent (DP-SGD) is a standard method for enforcing privacy in deep learning, typically using the Gaussian mechanism to perturb gradient updates. However, conventional mechanisms such as Gaussian and Laplacian noise are parameterized only by variance or scale. This single degree of freedom ties the magnitude of noise directly to both privacy loss and utility degradation, preventing independent control of these two factors. The problem becomes more pronounced when the number of composition rounds T and batch size B vary across tasks, as these variations induce task-dependent shifts in the privacy-utility trade-off, where small changes in noise parameters can disproportionately affect model accuracy. To address this limitation, we introduce PLRV-O, a framework that defines a broad search space of parameterized DP-SGD noise distributions, where privacy loss moments are tightly characterized yet can be optimized more independently with respect to utility loss. This formulation enables systematic adaptation of noise to task-specific requirements, including (i) model size, (ii) training duration, (iii) batch sampling strategies, and (iv) clipping thresholds under both training and fine-tuning settings. Empirical results demonstrate that PLRV-O substantially improves utility under strict privacy constraints. On CIFAR-10, a fine-tuned ViT achieves 94.03% accuracy at epsilon approximately 0.5, compared to 83.93% with Gaussian noise. On SST-2, RoBERTa-large reaches 92.20% accuracy at epsilon approximately 0.2, versus 50.25% with Gaussian.",
+    "paper_abstract_zh": "差分隐私随机梯度下降（DP-SGD）是深度学习中最常用的隐私保护手段，通常采用高斯机制对梯度更新加噪。然而，高斯、拉普拉斯等传统机制仅由方差或尺度参数控制，单一自由度将噪声幅度同时绑定到隐私损失与效用下降，无法独立调节二者。当训练轮次 T 与批大小 B 随任务变化时，隐私-效用权衡会呈现任务相关偏移，微小噪声参数变动即可对模型精度造成不成比例的影响。为此，我们提出 PLRV-O 框架，构建可参数化的 DP-SGD 噪声分布搜索空间，在精确刻画隐私损失矩的同时，允许更独立地针对效用损失进行优化。该框架可系统地将噪声适配到任务特定需求，包括（i）模型规模、（ii）训练时长、（iii）批采样策略、（iv）裁剪阈值，并同时适用于训练与微调场景。实验表明，PLRV-O 在严格隐私约束下显著提升效用：在 CIFAR-10 上，微调 ViT 在 ε≈0.5 时准确率达 94.03%，而高斯噪声仅 83.93%；在 SST-2 上，RoBERTa-large 在 ε≈0.2 时达 92.20%，远高于高斯机制的 50.25%。",
+    "primary_category": "cs.CR",
+    "update_time": "2025-09-08",
+    "paper_authors": "Qin Yang, Nicholas Stout, Meisam Mohammady, Han Wang, Ayesha Samreen, Christopher J Quinn, Yan Yan, Ashish Kundu, Yuan Hong",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Benchmarking Music Autotagging with MGPHot Expert Annotations vs. Generic Tag Datasets",
+    "paper_title_zh": "基于MGPHot专家标注与通用标签数据集的音乐自动标注基准测试",
+    "paper_id": "2509.06936v1",
+    "paper_abstract": "Music autotagging aims to automatically assign descriptive tags, such as genre, mood, or instrumentation, to audio recordings. Due to its challenges, diversity of semantic descriptions, and practical value in various applications, it has become a common downstream task for evaluating the performance of general-purpose music representations learned from audio data. We introduce a new benchmarking dataset based on the recently published MGPHot dataset, which includes expert musicological annotations, allowing for additional insights and comparisons with results obtained on common generic tag datasets. While MGPHot annotations have been shown to be useful for computational musicology, the original dataset neither includes audio nor provides evaluation setups for its use as a standardized autotagging benchmark. To address this, we provide a curated set of YouTube URLs with retrievable audio, and propose a train/val/test split for standardized evaluation, and precomputed representations for seven state-of-the-art models. Using these resources, we evaluated these models in MGPHot and standard reference tag datasets, highlighting key differences between expert and generic tag annotations. Altogether, our contributions provide a more advanced benchmarking framework for future research in music understanding.",
+    "paper_abstract_zh": "音乐自动标注旨在自动为音频录音分配描述性标签，如流派、情绪或乐器。由于其挑战性、语义描述的多样性以及在多种应用中的实用价值，它已成为评估从音频数据中学得的通用音乐表征性能的常见下游任务。我们基于最新发布的MGPHot数据集引入了一个新的基准数据集，该数据集包含专家音乐学标注，可与在通用标签数据集上获得的结果进行额外洞察与比较。尽管MGPHot标注已被证明对计算音乐学有用，但原始数据集既不包含音频，也未提供将其用作标准化自动标注基准的评估设置。为此，我们提供了一组经过筛选、可获取音频的YouTube URL，提出用于标准化评估的训练/验证/测试划分，以及七种最先进模型的预计算表征。利用这些资源，我们在MGPHot和标准参考标签数据集上评估了这些模型，突出了专家标注与通用标签标注之间的关键差异。总体而言，我们的贡献为未来音乐理解研究提供了更先进的基准框架。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-08",
+    "paper_authors": "Pedro Ramoneda, Pablo Alonso-Jimenez, Sergio Oramas, Xavier Serra, Dmitry Bogdanov",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Integrating Spatial and Semantic Embeddings for Stereo Sound Event Localization in Videos",
+    "paper_title_zh": "融合空间与语义嵌入的视频立体声事件定位",
+    "paper_id": "2509.06598v1",
+    "paper_abstract": "In this study, we address the multimodal task of stereo sound event localization and detection with source distance estimation (3D SELD) in regular video content. 3D SELD is a complex task that combines temporal event classification with spatial localization, requiring reasoning across spatial, temporal, and semantic dimensions. The last is arguably the most challenging to model. Traditional SELD approaches typically rely on multichannel input, limiting their capacity to benefit from large-scale pre-training due to data constraints. To overcome this, we enhance a standard SELD architecture with semantic information by integrating pre-trained, contrastive language-aligned models: CLAP for audio and OWL-ViT for visual inputs. These embeddings are incorporated into a modified Conformer module tailored for multimodal fusion, which we refer to as the Cross-Modal Conformer. We perform an ablation study on the development set of the DCASE2025 Task3 Stereo SELD Dataset to assess the individual contributions of the language-aligned models and benchmark against the DCASE Task 3 baseline systems. Additionally, we detail the curation process of large synthetic audio and audio-visual datasets used for model pre-training. These datasets were further expanded through left-right channel swapping augmentation. Our approach, combining extensive pre-training, model ensembling, and visual post-processing, achieved second rank in the DCASE 2025 Challenge Task 3 (Track B), underscoring the effectiveness of our method. Future work will explore the modality-specific contributions and architectural refinements.",
+    "paper_abstract_zh": "本研究针对常规视频内容中的立体声事件定位与检测并附带声源距离估计（3D SELD）这一多模态任务展开。3D SELD 是一项复杂任务，需同时进行时序事件分类与空间定位，要求跨空间、时序和语义维度进行推理，其中语义维度最具挑战。传统 SELD 方法通常依赖多通道输入，因数据限制难以受益于大规模预训练。为此，我们通过整合预训练的对比语言对齐模型——音频端 CLAP 与视觉端 OWL-ViT——将语义信息引入标准 SELD 架构。这些嵌入被注入一个专为多模态融合改进的 Conformer 模块，我们称之为跨模态 Conformer。我们在 DCASE2025 Task3 立体声 SELD 数据集的开发集上进行消融实验，评估语言对齐模型的单独贡献，并与 DCASE Task 3 基线系统对比。此外，我们详细介绍了用于模型预训练的大型合成音频与视听数据集的构建流程，并通过左右声道互换扩增数据。结合大规模预训练、模型集成与视觉后处理，我们的方法在 DCASE 2025 挑战赛 Task 3（Track B）中获得第二名，验证了方法的有效性。未来工作将探索模态特定贡献与架构细化。",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-08",
+    "paper_authors": "Davide Berghi, Philip J. B. Jackson",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "The First Voice Timbre Attribute Detection Challenge",
+    "paper_title_zh": "首届音色属性检测挑战赛",
+    "paper_id": "2509.06635v1",
+    "paper_abstract": "The first voice timbre attribute detection challenge is featured in a special session at NCMMSC 2025. It focuses on the explainability of voice timbre and compares the intensity of two speech utterances in a specified timbre descriptor dimension. The evaluation was conducted on the VCTK-RVA dataset. Participants developed their systems and submitted their outputs to the organizer, who evaluated the performance and sent feedback to them. Six teams submitted their outputs, with five providing descriptions of their methodologies.",
+    "paper_abstract_zh": "首届音色属性检测挑战赛作为 NCMMSC 2025 的专场活动，聚焦音色的可解释性，要求系统在指定音色描述维度上比较两段语音的强度。评测基于 VCTK-RVA 数据集进行。参赛队伍开发系统并向主办方提交结果，主办方评估后反馈性能。共有六支队伍提交结果，其中五支队伍提供了方法说明。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-08",
+    "paper_authors": "Liping Chen, Jinghao He, Zhengyan Sheng, Kong Aik Lee, Zhen-Hua Ling",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Unveiling the Listener Structure Underlying K-pop's Global Success: A Large-Scale Listening Data Analysis",
+    "paper_title_zh": "揭示 K-pop 全球成功背后的听众结构：基于大规模听歌数据的分析",
+    "paper_id": "2509.06606v1",
+    "paper_abstract": "From the mid-2000s to the 2010s, K-pop moved beyond its status as a regionally popular genre in Asia and established itself as a global music genre with enthusiastic fans around the world. However, little is known about how the vast number of music listeners across the globe have listened to and perceived K-pop. This study addresses this question by analyzing a large-scale listening dataset from Last.fm. An analysis of the distribution of play counts reveals that K-pop experienced a significant increase in plays between 2005 and 2019, largely supported by a small group of heavy listeners. The Gini coefficient in play counts is notably greater than that of existing mainstream genres and other growing niche genres. Furthermore, an analysis based on user-assigned genre tags quantitatively demonstrates that between 2005 and 2010, K-pop shed its status as a local Asian genre and established itself as a distinct music genre in its own right.",
+    "paper_abstract_zh": "从 2000 年代中期到 2010 年代，K-pop 走出亚洲区域流行圈，成为全球范围内拥有狂热粉丝的音乐类型。然而，全球海量听众如何接触与感知 K-pop 仍缺乏研究。本研究利用 Last.fm 的大规模听歌数据回答该问题。播放次数分布分析显示，2005–2019 年间 K-pop 播放量激增，主要由少数重度听众驱动；其播放基尼系数显著高于主流及其他小众成长流派。基于用户自填风格标签的分析进一步定量证明，2005–2010 年间 K-pop 摆脱了“亚洲本土流派”身份，确立为独立的全球音乐类型。",
+    "primary_category": "cs.SI",
+    "update_time": "2025-09-08",
+    "paper_authors": "Ryota Nakamura, Keita Nishimoto, Ichiro Sakata, Kimitaka Asatani",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "FireRedChat: A Pluggable, Full-Duplex Voice Interaction System with Cascaded and Semi-Cascaded Implementations",
+    "paper_title_zh": "FireRedChat：可插拔的全双工语音交互系统及其级联与半级联实现",
+    "paper_id": "2509.06502v1",
+    "paper_abstract": "Full-duplex voice interaction allows users and agents to speak simultaneously with controllable barge-in, enabling lifelike assistants and customer service. Existing solutions are either end-to-end, difficult to design and hard to control, or modular pipelines governed by turn-taking controllers that ease upgrades and per-module optimization; however, prior modular frameworks depend on non-open components and external providers, limiting holistic optimization. In this work, we present a complete, practical full-duplex voice interaction system comprising a turn-taking controller, an interaction module, and a dialogue manager. The controller integrates streaming personalized VAD (pVAD) to suppress false barge-ins from noise and non-primary speakers, precisely timestamp primary-speaker segments, and explicitly enable primary-speaker barge-ins; a semantic end-of-turn detector improves stop decisions. It upgrades heterogeneous half-duplex pipelines, cascaded, semi-cascaded, and speech-to-speech, to full duplex. Using internal models, we implement cascaded and semi-cascaded variants; the semi-cascaded one captures emotional and paralinguistic cues, yields more coherent responses, lowers latency and error propagation, and improves robustness. A dialogue manager extends capabilities via tool invocation and context management. We also propose three system-level metrics, barge-in, end-of-turn detection accuracy, and end-to-end latency, to assess naturalness, control accuracy, and efficiency. Experiments show fewer false interruptions, more accurate semantic ends, and lower latency approaching industrial systems, enabling robust, natural, real-time full-duplex interaction. Demos: https://fireredteam.github.io/demos/firered_chat.",
+    "paper_abstract_zh": "全双工语音交互允许用户与智能体同时说话，并支持可控的打断，从而实现逼真的助手和客服体验。现有方案要么采用端到端架构，难以设计与控制；要么采用模块化流水线，由话轮控制器管理，便于升级和逐模块优化。然而，现有模块化框架依赖非开源组件和外部服务，限制了整体优化。本文提出一套完整、实用的全双工语音交互系统，包含话轮控制器、交互模块和对话管理器。控制器集成流式个性化 VAD（pVAD），抑制噪声和非主要说话人造成的误打断，精确标记主要说话人片段，并显式允许主要说话人打断；语义话轮结束检测器提升停止决策准确性。该控制器可将异构半双工流水线（级联、半级联、语音到语音）升级为全双工。我们利用内部模型实现了级联与半级联两种变体；半级联版本能捕捉情感与副语言线索，生成更连贯的回复，降低延迟与错误传播，并提升鲁棒性。对话管理器通过工具调用与上下文管理扩展系统能力。我们还提出三项系统级指标——打断率、话轮结束检测准确率和端到端延迟——用于评估自然度、控制精度与效率。实验表明，系统误打断更少、语义结束点检测更准确、延迟接近工业级水平，可实现稳健、自然、实时的全双工交互。演示地址：https://fireredteam.github.io/demos/firered_chat。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-08",
+    "paper_authors": "Junjie Chen, Yao Hu, Junjie Li, Kangyue Li, Kun Liu, Wenpeng Li, Xu Li, Ziyuan Li, Feiyu Shen, Xu Tang, Manzhen Wei, Yichen Wu, Fenglong Xie, Kaituo Xu, Kun Xie",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "AudioBoost: Increasing Audiobook Retrievability in Spotify Search with Synthetic Query Generation",
+    "paper_title_zh": "AudioBoost：利用合成查询生成提升 Spotify 搜索中 audiobook 的可检索性",
+    "paper_id": "2509.06452v1",
+    "paper_abstract": "Spotify has recently introduced audiobooks as part of its catalog, complementing its music and podcast offering. Search is often the first entry point for users to access new items, and an important goal for Spotify is to support users in the exploration of the audiobook catalog. More specifically, we would like to enable users without a specific item in mind to broadly search by topic, genre, story tropes, decade, and discover audiobooks, authors and publishers they may like. To do this, we need to 1) inspire users to type more exploratory queries for audiobooks and 2) augment our retrieval systems to better deal with exploratory audiobook queries. This is challenging in a cold-start scenario, where we have a retrievabiliy bias due to the little amount of user interactions with audiobooks compared to previously available items such as music and podcast content. To address this, we propose AudioBoost, a system to boost audiobook retrievability in Spotify's Search via synthetic query generation. AudioBoost leverages Large Language Models (LLMs) to generate synthetic queries conditioned on audiobook metadata. The synthetic queries are indexed both in the Query AutoComplete (QAC) and in the Search Retrieval engine to improve query formulation and retrieval at the same time. We show through offline evaluation that synthetic queries increase retrievability and are of high quality. Moreover, results from an online A/B test show that AudioBoost leads to a +0.7% in audiobook impressions, +1.22% in audiobook clicks, and +1.82% in audiobook exploratory query completions.",
+    "paper_abstract_zh": "Spotify 近期将 audiobook 纳入其目录，与音乐和播客共同构成内容生态。搜索是用户发现新内容的首要入口，Spotify 的目标之一是帮助用户探索 audiobook 目录。具体而言，我们希望让没有明确目标的用户能够通过主题、流派、故事套路、年代等宽泛维度进行探索，并发现可能喜欢的 audiobook、作者与出版商。为此，我们需要：1）激励用户输入更具探索性的 audiobook 查询；2）增强检索系统对探索性查询的处理能力。在冷启动场景下，audiobook 的用户交互量远低于音乐和播客，导致可检索性偏差。为此，我们提出 AudioBoost，通过合成查询生成提升 Spotify 搜索中 audiobook 的可检索性。AudioBoost 利用大语言模型（LLM）基于 audiobook 元数据生成合成查询，并将这些查询同时索引到查询自动补全（QAC）和搜索检索引擎中，同步优化查询表述与召回效果。离线评估表明，合成查询显著提高了可检索性且质量高；在线 A/B 测试显示，AudioBoost 使 audiobook 曝光量提升 +0.7%，点击量提升 +1.22%，探索性查询补全量提升 +1.82%。",
+    "primary_category": "cs.IR",
+    "update_time": "2025-09-08",
+    "paper_authors": "Enrico Palumbo, Gustavo Penha, Alva Liu, Marcus Eltscheminov, Jefferson Carvalho dos Santos, Alice Wang, Hugues Bouchard, Humberto Jesús Corona Pampin, Michelle Tran Luu",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "MeanFlow-Accelerated Multimodal Video-to-Audio Synthesis via One-Step Generation",
+    "paper_title_zh": "MeanFlow 加速多模态视频到音频一步生成合成",
+    "paper_id": "2509.06389v1",
+    "paper_abstract": "A key challenge in synthesizing audios from silent videos is the inherent trade-off between synthesis quality and inference efficiency in existing methods. For instance, flow matching based models rely on modeling instantaneous velocity, inherently require an iterative sampling process, leading to slow inference speeds. To address this efficiency bottleneck, we introduce a MeanFlow-accelerated model that characterizes flow fields using average velocity, enabling one-step generation and thereby significantly accelerating multimodal video-to-audio (VTA) synthesis while preserving audio quality, semantic alignment, and temporal synchronization. Furthermore, a scalar rescaling mechanism is employed to balance conditional and unconditional predictions when classifier-free guidance (CFG) is applied, effectively mitigating CFG-induced distortions in one step generation. Since the audio synthesis network is jointly trained with multimodal conditions, we further evaluate it on text-to-audio (TTA) synthesis task. Experimental results demonstrate that incorporating MeanFlow into the network significantly improves inference speed without compromising perceptual quality on both VTA and TTA synthesis tasks.",
+    "paper_abstract_zh": "从无声视频合成音频的关键挑战在于现有方法在合成质量与推理效率之间存在固有权衡。例如，基于流匹配的模型依赖瞬时速度建模，必须迭代采样，导致推理缓慢。为此，我们提出 MeanFlow 加速模型，用平均速度刻画流场，实现一步生成，在显著加速多模态视频到音频（VTA）合成的同时，保持音质、语义对齐与时序同步。此外，引入标量重缩放机制，在应用无分类器引导（CFG）时平衡条件与无条件预测，有效抑制一步生成中 CFG 带来的失真。由于音频合成网络与多模态条件联合训练，我们进一步在文本到音频（TTA）任务上评估。实验表明，融入 MeanFlow 可在 VTA 与 TTA 两项任务上大幅提升推理速度，且感知质量无损。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-08",
+    "paper_authors": "Xiaoran Yang, Jianxuan Yang, Xinyue Guo, Haoyu Wang, Ningning Pan, Gongping Huang",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  }
+]
