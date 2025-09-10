@@ -1,0 +1,677 @@
+[
+  {
+    "paper_title": "Spectral Masking and Interpolation Attack (SMIA): A Black-box Adversarial Attack against Voice Authentication and Anti-Spoofing Systems",
+    "paper_title_zh": "频谱掩蔽与插值攻击（SMIA）：针对语音认证与反欺骗系统的黑盒对抗攻击",
+    "paper_id": "2509.07677v1",
+    "paper_abstract": "Voice Authentication Systems (VAS) use unique vocal characteristics for verification. They are increasingly integrated into high-security sectors such as banking and healthcare. Despite their improvements using deep learning, they face severe vulnerabilities from sophisticated threats like deepfakes and adversarial attacks. The emergence of realistic voice cloning complicates detection, as systems struggle to distinguish authentic from synthetic audio. While anti-spoofing countermeasures (CMs) exist to mitigate these risks, many rely on static detection models that can be bypassed by novel adversarial methods, leaving a critical security gap. To demonstrate this vulnerability, we propose the Spectral Masking and Interpolation Attack (SMIA), a novel method that strategically manipulates inaudible frequency regions of AI-generated audio. By altering the voice in imperceptible zones to the human ear, SMIA creates adversarial samples that sound authentic while deceiving CMs. We conducted a comprehensive evaluation of our attack against state-of-the-art (SOTA) models across multiple tasks, under simulated real-world conditions. SMIA achieved a strong attack success rate (ASR) of at least 82% against combined VAS/CM systems, at least 97.5% against standalone speaker verification systems, and 100% against countermeasures. These findings conclusively demonstrate that current security postures are insufficient against adaptive adversarial attacks. This work highlights the urgent need for a paradigm shift toward next-generation defenses that employ dynamic, context-aware frameworks capable of evolving with the threat landscape.",
+    "paper_abstract_zh": "语音认证系统（VAS）利用独特的声纹特征进行身份验证，已广泛应用于银行和医疗等高安全领域。尽管深度学习提升了其性能，但仍面临深度伪造与对抗样本等严重威胁。逼真的语音克隆技术使真伪音频难以区分，进一步加剧检测难度。现有反欺骗对策（CM）多依赖静态检测模型，易被新型对抗方法绕过，形成关键安全缺口。为此，我们提出频谱掩蔽与插值攻击（SMIA），通过策略性篡改AI生成音频中人耳不可闻的频带，在保持听觉真实性的同时欺骗CM。在模拟真实场景下，我们对SOTA模型进行了全面评估：SMIA对联合VAS/CM系统的攻击成功率（ASR）至少达82%，对独立说话人验证系统达97.5%，对反欺骗措施达100%。结果明确表明当前安全姿态不足以应对自适应对抗攻击，亟需转向动态、情境感知的新一代防御框架，以随威胁演化而持续进化。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Kamel Kamel, Hridoy Sankar Dutta, Keshav Sood, Sunil Aryal",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Transferable Direct Prompt Injection via Activation-Guided MCMC Sampling",
+    "paper_title_zh": "基于激活引导MCMC采样的可迁移直接提示注入攻击",
+    "paper_id": "2509.07617v1",
+    "paper_abstract": "Direct Prompt Injection (DPI) attacks pose a critical security threat to Large Language Models (LLMs) due to their low barrier of execution and high potential damage. To address the impracticality of existing white-box/gray-box methods and the poor transferability of black-box methods, we propose an activations-guided prompt injection attack framework. We first construct an Energy-based Model (EBM) using activations from a surrogate model to evaluate the quality of adversarial prompts. Guided by the trained EBM, we employ the token-level Markov Chain Monte Carlo (MCMC) sampling to adaptively optimize adversarial prompts, thereby enabling gradient-free black-box attacks. Experimental results demonstrate our superior cross-model transferability, achieving 49.6% attack success rate (ASR) across five mainstream LLMs and 34.6% improvement over human-crafted prompts, and maintaining 36.6% ASR on unseen task scenarios. Interpretability analysis reveals a correlation between activations and attack effectiveness, highlighting the critical role of semantic patterns in transferable vulnerability exploitation.",
+    "paper_abstract_zh": "直接提示注入（DPI）攻击因执行门槛低、潜在危害大，已成为大语言模型（LLM）的关键安全威胁。针对现有白盒/灰盒方法不切实际、黑盒方法迁移性差的问题，我们提出一种激活引导的提示注入攻击框架。首先利用替代模型的隐藏层激活构建能量模型（EBM），评估对抗提示的质量；随后在该EBM指导下，采用令牌级马尔可夫链蒙特卡洛（MCMC）采样自适应优化对抗提示，实现无需梯度的黑盒攻击。实验表明，该方法具备卓越的跨模型迁移性：在五款主流LLM上平均攻击成功率（ASR）达49.6%，较人工构造提示提升34.6%，在未见任务场景中仍保持36.6% ASR。可解释性分析揭示激活与攻击效果的相关性，凸显语义模式在可迁移漏洞利用中的关键作用。",
+    "primary_category": "cs.AI",
+    "update_time": "2025-09-09",
+    "paper_authors": "Minghui Li, Hao Zhang, Yechao Zhang, Wei Wan, Shengshan Hu, pei Xiaobing, Jing Wang",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "TextlessRAG: End-to-End Visual Document RAG by Speech Without Text",
+    "paper_title_zh": "TextlessRAG：无需文本的端到端视觉文档语音问答系统",
+    "paper_id": "2509.07538v1",
+    "paper_abstract": "Document images encapsulate a wealth of knowledge, while the portability of spoken queries enables broader and flexible application scenarios. Yet, no prior work has explored knowledge base question answering over visual document images with queries provided directly in speech. We propose TextlessRAG, the first end-to-end framework for speech-based question answering over large-scale document images. Unlike prior methods, TextlessRAG eliminates ASR, TTS and OCR, directly interpreting speech, retrieving relevant visual knowledge, and generating answers in a fully textless pipeline. To further boost performance, we integrate a layout-aware reranking mechanism to refine retrieval. Experiments demonstrate substantial improvements in both efficiency and accuracy. To advance research in this direction, we also release the first bilingual speech--document RAG dataset, featuring Chinese and English voice queries paired with multimodal document content. Both the dataset and our pipeline will be made available at repository:https://github.com/xiepeijinhit-hue/textlessrag",
+    "paper_abstract_zh": "文档图像蕴含丰富知识，而语音查询的便携性带来更广泛灵活的应用场景。然而，此前尚无研究探索直接以语音查询视觉文档图像的知识库问答。我们提出 TextlessRAG——首个面向大规模文档图像的端到端语音问答框架。与现有方法不同，TextlessRAG 完全摒弃 ASR、TTS 与 OCR，在纯无文本链路中直接理解语音、检索相关视觉知识并生成答案。为进一步提升性能，我们引入布局感知的重排序机制优化检索。实验表明，该方法在效率与准确率上均取得显著提升。为推动该方向研究，我们还发布了首个中英双语语音–文档 RAG 数据集，包含与多模态文档内容配对的中英文语音查询。数据集与代码已开源：https://github.com/xiepeijinhit-hue/textlessrag",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Peijin Xie, Shun Qian, Bingquan Liu, Dexin Wang, Lin Sun, Xiangzheng Zhang",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Understanding Stigmatizing Language Lexicons: A Comparative Analysis in Clinical Contexts",
+    "paper_title_zh": "污名化语言词典解析：临床语境下的对比研究",
+    "paper_id": "2509.07462v1",
+    "paper_abstract": "Stigmatizing language results in healthcare inequities, yet there is no universally accepted or standardized lexicon defining which words, terms, or phrases constitute stigmatizing language in healthcare. We conducted a systematic search of the literature to identify existing stigmatizing language lexicons and then analyzed them comparatively to examine: 1) similarities and discrepancies between these lexicons, and 2) the distribution of positive, negative, or neutral terms based on an established sentiment dataset. Our search identified four lexicons. The analysis results revealed moderate semantic similarity among them, and that most stigmatizing terms are related to judgmental expressions by clinicians to describe perceived negative behaviors. Sentiment analysis showed a predominant proportion of negatively classified terms, though variations exist across lexicons. Our findings underscore the need for a standardized lexicon and highlight challenges in defining stigmatizing language in clinical texts.",
+    "paper_abstract_zh": "污名化语言会导致医疗不公，但目前尚无被广泛接受或标准化的词典来界定哪些词汇、术语或短语在医疗场景中构成污名化语言。我们系统检索文献，识别出现有的污名化语言词典，并对其进行对比分析，以考察：1）各词典之间的共性与差异；2）基于权威情感数据集对其中正面、负面或中性术语的分布情况。检索共获得四部词典。分析结果显示，它们之间语义相似度中等，且大多数污名化术语与临床医生对所谓负面行为的评判性描述相关。情感分析表明，负面分类术语占主导，但不同词典间存在差异。研究结论强调亟需建立标准化词典，并指出在临床文本中界定污名化语言所面临的挑战。",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-09",
+    "paper_authors": "Yiliang Zhou, Di Hu, Tianchu Lyu, Jasmine Dhillon, Alexandra L. Beck, Gelareh Sadigh, Kai Zheng",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Progressive Facial Granularity Aggregation with Bilateral Attribute-based Enhancement for Face-to-Speech Synthesis",
+    "paper_title_zh": "渐进式面部粒度聚合与双边属性增强的人脸到语音合成",
+    "paper_id": "2509.07376v1",
+    "paper_abstract": "For individuals who have experienced traumatic events such as strokes, speech may no longer be a viable means of communication. While text-to-speech (TTS) can be used as a communication aid since it generates synthetic speech, it fails to preserve the user's own voice. As such, face-to-voice (FTV) synthesis, which derives corresponding voices from facial images, provides a promising alternative. However, existing methods rely on pre-trained visual encoders, and finetune them to align with speech embeddings, which strips fine-grained information from facial inputs such as gender or ethnicity, despite their known correlation with vocal traits. Moreover, these pipelines are multi-stage, which requires separate training of multiple components, thus leading to training inefficiency. To address these limitations, we utilize fine-grained facial attribute modeling by decomposing facial images into non-overlapping segments and progressively integrating them into a multi-granular representation. This representation is further refined through multi-task learning of speaker attributes such as gender and ethnicity at both the visual and acoustic domains. Moreover, to improve alignment robustness, we adopt a multi-view training strategy by pairing various visual perspectives of a speaker in terms of different angles and lighting conditions, with identical speech recordings. Extensive subjective and objective evaluations confirm that our approach substantially enhances face-voice congruence and synthesis stability.",
+    "paper_abstract_zh": "对于中风等创伤事件导致无法说话的患者，语音已不再是可行的交流方式。虽然文本到语音（TTS）可作为辅助工具生成合成语音，但无法保留用户自身的声音。因此，从面部图像推导对应声音的人脸到语音（FTV）合成提供了有前景的替代方案。然而，现有方法依赖预训练视觉编码器，并通过微调使其对齐语音嵌入，这会剥离性别、种族等与声音特征已知相关的面部细粒度信息。此外，这些流程为多阶段，需要分别训练多个组件，导致训练效率低下。为克服这些局限，我们利用细粒度面部属性建模，将面部图像分解为互不重叠的片段，并逐步整合为多粒度表征；该表征进一步通过视觉与声学双域的性别、种族等说话人属性多任务学习进行精炼。此外，为提高对齐鲁棒性，我们采用多视角训练策略，将同一说话人在不同角度与光照条件下的多种视觉视角与同一语音录音配对。大量主观与客观评估证实，本方法显著提升了人脸-声音一致性与合成稳定性。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Yejin Jeon, Youngjae Kim, Jihyun Lee, Hyounghun Kim, Gary Geunbae Lee",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "When Fine-Tuning is Not Enough: Lessons from HSAD on Hybrid and Adversarial Audio Spoof Detection",
+    "paper_title_zh": "当微调不再足够：HSAD 在混合与对抗性音频伪造检测中的教训",
+    "paper_id": "2509.07323v1",
+    "paper_abstract": "The rapid advancement of AI has enabled highly realistic speech synthesis and voice cloning, posing serious risks to voice authentication, smart assistants, and telecom security. While most prior work frames spoof detection as a binary task, real-world attacks often involve hybrid utterances that mix genuine and synthetic speech, making detection substantially more challenging. To address this gap, we introduce the Hybrid Spoofed Audio Dataset (HSAD), a benchmark containing 1,248 clean and 41,044 degraded utterances across four classes: human, cloned, zero-shot AI-generated, and hybrid audio. Each sample is annotated with spoofing method, speaker identity, and degradation metadata to enable fine-grained analysis. We evaluate six transformer-based models, including spectrogram encoders (MIT-AST, MattyB95-AST) and self-supervised waveform models (Wav2Vec2, HuBERT). Results reveal critical lessons: pretrained models overgeneralize and collapse under hybrid conditions; spoof-specific fine-tuning improves separability but struggles with unseen compositions; and dataset-specific adaptation on HSAD yields large performance gains (AST greater than 97 percent and F1 score is approximately 99 percent), though residual errors persist for complex hybrids. These findings demonstrate that fine-tuning alone is not sufficient-robust hybrid-aware benchmarks like HSAD are essential to expose calibration failures, model biases, and factors affecting spoof detection in adversarial environments. HSAD thus provides both a dataset and an analytic framework for building resilient and trustworthy voice authentication systems.",
+    "paper_abstract_zh": "AI 的迅猛发展使语音合成与语音克隆达到高度逼真，给语音认证、智能助手与电信安全带来严重风险。尽管先前研究多将伪造检测视为二分类任务，现实攻击往往涉及混合真实与合成语音的混合语句，使检测难度显著增加。为填补这一空白，我们提出混合伪造音频数据集（HSAD），该基准包含 1,248 条干净与 41,044 条降质语句，涵盖人类、克隆、零样本 AI 生成与混合音频四类，每段样本均标注伪造方法、说话人身份与降质元数据，以支持细粒度分析。我们评估了六种基于 Transformer 的模型，包括频谱图编码器（MIT-AST、MattyB95-AST）与自监督波形模型（Wav2Vec2、HuBERT）。结果揭示关键教训：预训练模型在混合条件下过度泛化并崩溃；针对伪造的微调虽提升可分性，但对未见组合仍力不从心；而在 HSAD 上的数据集特定适配带来显著性能提升（AST 准确率超 97%，F1 约 99%），但对复杂混合样本仍存在残余误差。这些发现表明，仅靠微调不足以应对——像 HSAD 这样具备混合感知的鲁棒基准对于暴露校准失效、模型偏差及对抗环境下影响伪造检测的因素至关重要。HSAD 因此为构建弹性且可信赖的语音认证系统提供了数据集与分析框架。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Bin Hu, Kunyang Huang, Daehan Kwak, Meng Xu, Kuan Huang",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speaker Privacy and Security in the Big Data Era: Protection and Defense against Deepfake",
+    "paper_title_zh": "大数据时代的说话人隐私与安全：针对深度伪造的保护与防御",
+    "paper_id": "2509.06361v2",
+    "paper_abstract": "In the era of big data, remarkable advancements have been achieved in personalized speech generation techniques that utilize speaker attributes, including voice and speaking style, to generate deepfake speech. This has also amplified global security risks from deepfake speech misuse, resulting in considerable societal costs worldwide. To address the security threats posed by deepfake speech, techniques have been developed focusing on both the protection of voice attributes and the defense against deepfake speech. Among them, the voice anonymization technique has been developed to protect voice attributes from extraction for deepfake generation, while deepfake detection and watermarking have been utilized to defend against the misuse of deepfake speech. This paper provides a short and concise overview of the three techniques, describing the methodologies, advancements, and challenges. A comprehensive version, offering additional discussions, will be published in the near future.",
+    "paper_abstract_zh": "在大数据时代，利用说话人属性（包括音色与说话风格）的个性化语音生成技术取得了显著进展，能够生成深度伪造语音，但也放大了深度伪造语音滥用所带来的全球安全风险，造成世界范围内的巨大社会成本。为应对深度伪造语音带来的安全威胁，研究者们发展了聚焦于语音属性保护与深度伪造防御的两类技术。其中，语音匿名化技术旨在防止语音属性被提取并用于深度伪造生成；而深度伪造检测与水印技术则用于防御深度伪造语音的滥用。本文简要概述了这三类技术，介绍其方法、进展与挑战。更全面的扩展版本将在近期发表。",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-09",
+    "paper_authors": "Liping Chen, Kong Aik Lee, Zhen-Hua Ling, Xin Wang, Rohan Kumar Das, Tomoki Toda, Haizhou Li",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SaD: A Scenario-Aware Discriminator for Speech Enhancement",
+    "paper_title_zh": "SaD：一种用于语音增强的场景感知判别器",
+    "paper_id": "2509.00405v2",
+    "paper_abstract": "Generative adversarial network-based models have shown remarkable performance in the field of speech enhancement. However, the current optimization strategies for these models predominantly focus on refining the architecture of the generator or enhancing the quality evaluation metrics of the discriminator. This approach often overlooks the rich contextual information inherent in diverse scenarios. In this paper, we propose a scenario-aware discriminator that captures scene-specific features and performs frequency-domain division, thereby enabling a more accurate quality assessment of the enhanced speech generated by the generator. We conducted comprehensive experiments on three representative models using two publicly available datasets. The results demonstrate that our method can effectively adapt to various generator architectures without altering their structure, thereby unlocking further performance gains in speech enhancement across different scenarios.",
+    "paper_abstract_zh": "基于生成对抗网络的模型在语音增强领域表现卓越。然而，现有优化策略主要聚焦于改进生成器结构或提升判别器的质量评估指标，往往忽视了多样化场景中富含的上下文信息。本文提出一种场景感知判别器，能够捕获场景相关特征并进行频域划分，从而对生成器输出的增强语音进行更精准的质量评估。我们在两个公开数据集上对三种代表性模型进行了全面实验，结果表明，该方法无需改动生成器结构即可有效适配不同架构，并在多种场景下进一步提升语音增强性能。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Xihao Yuan, Siqi Liu, Yan Chen, Hang Zhou, Chang Liu, Hanting Chen, Jie Hu",
+    "topic": [
+      "Speech Synthesis",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Trust but Verify! A Survey on Verification Design for Test-time Scaling",
+    "paper_title_zh": "信任但需验证！测试时扩展验证机制设计综述",
+    "paper_id": "2508.16665v3",
+    "paper_abstract": "Test-time scaling (TTS) has emerged as a new frontier for scaling the performance of Large Language Models. In test-time scaling, by using more computational resources during inference, LLMs can improve their reasoning process and task performance. Several approaches have emerged for TTS such as distilling reasoning traces from another model or exploring the vast decoding search space by employing a verifier. The verifiers serve as reward models that help score the candidate outputs from the decoding process to diligently explore the vast solution space and select the best outcome. This paradigm commonly termed has emerged as a superior approach owing to parameter free scaling at inference time and high performance gains. The verifiers could be prompt-based, fine-tuned as a discriminative or generative model to verify process paths, outcomes or both. Despite their widespread adoption, there is no detailed collection, clear categorization and discussion of diverse verification approaches and their training mechanisms. In this survey, we cover the diverse approaches in the literature and present a unified view of verifier training, types and their utility in test-time scaling. Our repository can be found at https://github.com/elixir-research-group/Verifierstesttimescaling.github.io.",
+    "paper_abstract_zh": "测试时扩展（TTS）已成为提升大语言模型性能的新前沿。在推理阶段投入更多算力，LLM 可优化推理过程并提高任务表现。当前 TTS 方法主要包括从其他模型蒸馏推理轨迹，或借助验证器在庞大解码空间中搜索。验证器作为奖励模型，为解码候选输出打分，从而充分探索解空间并选出最优结果。该范式因“推理时无参数扩展”与显著性能提升而备受青睐。验证器既可通过提示构建，也可微调为判别式或生成式模型，用于验证推理路径、最终结果或二者兼而有之。尽管应用广泛，目前尚缺乏对各类验证方法及其训练机制的系统性梳理与讨论。本文综述了相关文献中的多样化方案，统一梳理了验证器的训练方式、类型及其在测试时扩展中的作用。项目仓库见：https://github.com/elixir-research-group/Verifierstesttimescaling.github.io。",
+    "primary_category": "cs.CL",
+    "update_time": "2025-09-09",
+    "paper_authors": "V Venktesh, Mandeep Rathee, Avishek Anand",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Target matching based generative model for speech enhancement",
+    "paper_title_zh": "基于目标匹配的语音增强生成模型",
+    "paper_id": "2509.07521v1",
+    "paper_abstract": "The design of mean and variance schedules for the perturbed signal is a fundamental challenge in generative models. While score-based and Schr\\\"odinger bridge-based models require careful selection of the stochastic differential equation to derive the corresponding schedules, flow-based models address this issue via vector field matching. However, this strategy often leads to hallucination artifacts and inefficient training and inference processes due to the potential inclusion of stochastic components in the vector field. Additionally, the widely adopted diffusion backbone, NCSN++, suffers from high computational complexity. To overcome these limitations, we propose a novel target-based generative framework that enhances both the flexibility of mean/variance schedule design and the efficiency of training and inference processes. Specifically, we eliminate the stochastic components in the training loss by reformulating the generative speech enhancement task as a target signal estimation problem, which therefore leads to more stable and efficient training and inference processes. In addition, we employ a logistic mean schedule and a bridge variance schedule, which yield a more favorable signal-to-noise ratio trajectory compared to several widely used schedules and thus leads to a more efficient perturbation strategy. Furthermore, we propose a new diffusion backbone for audio, which significantly improves the efficiency over NCSN++ by explicitly modeling long-term frame correlations and cross-band dependencies.",
+    "paper_abstract_zh": "在生成模型中，设计扰动信号的均值与方差调度是核心难题。基于分数或薛定谔桥的方法需精心选择随机微分方程以推导相应调度，而基于流的方法通过矢量场匹配缓解该问题，却易引入幻觉伪影，且矢量场可能包含随机分量，导致训练与推理效率低下。此外，广泛采用的扩散骨干网络 NCSN++ 计算复杂度极高。为此，我们提出一种新颖的“基于目标”的生成框架，在提升均值/方差调度灵活性的同时，显著提高训练与推理效率。具体而言，我们将生成式语音增强重新表述为目标信号估计问题，消除训练损失中的随机分量，使训练与推理更稳定高效。同时，采用 Logistic 均值调度与桥方差调度，获得优于常用调度的信噪比轨迹，实现更高效的扰动策略。此外，我们提出一种新的音频扩散骨干网络，通过显式建模长时帧间相关性与跨带依赖，效率显著超越 NCSN++。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Taihui Wang, Rilin Chen, Tong Lei, Andong Li, Jinzheng Zhao, Meng Yu, Dong Yu",
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Affine Modulation-based Audiogram Fusion Network for Joint Noise Reduction and Hearing Loss Compensation",
+    "paper_title_zh": "基于仿射调制的听力图融合网络实现联合降噪与听力损失补偿",
+    "paper_id": "2509.07341v1",
+    "paper_abstract": "Hearing aids (HAs) are widely used to provide personalized speech enhancement (PSE) services, improving the quality of life for individuals with hearing loss. However, HA performance significantly declines in noisy environments as it treats noise reduction (NR) and hearing loss compensation (HLC) as separate tasks. This separation leads to a lack of systematic optimization, overlooking the interactions between these two critical tasks, and increases the system complexity. To address these challenges, we propose a novel audiogram fusion network, named AFN-HearNet, which simultaneously tackles the NR and HLC tasks by fusing cross-domain audiogram and spectrum features. We propose an audiogram-specific encoder that transforms the sparse audiogram profile into a deep representation, addressing the alignment problem of cross-domain features prior to fusion. To incorporate the interactions between NR and HLC tasks, we propose the affine modulation-based audiogram fusion frequency-temporal Conformer that adaptively fuses these two features into a unified deep representation for speech reconstruction. Furthermore, we introduce a voice activity detection auxiliary training task to embed speech and non-speech patterns into the unified deep representation implicitly. We conduct comprehensive experiments across multiple datasets to validate the effectiveness of each proposed module. The results indicate that the AFN-HearNet significantly outperforms state-of-the-art in-context fusion joint models regarding key metrics such as HASQI and PESQ, achieving a considerable trade-off between performance and efficiency. The source code and data will be released at https://github.com/deepnetni/AFN-HearNet.",
+    "paper_abstract_zh": "助听器（HA）被广泛用于提供个性化语音增强（PSE）服务，以改善听损患者的生活质量。然而，在嘈杂环境中，HA 性能显著下降，因为它将降噪（NR）与听力损失补偿（HLC）视为两个独立任务。这种分离导致缺乏系统性优化，忽视了两大关键任务之间的交互，并增加了系统复杂度。为此，我们提出一种新颖的听力图融合网络 AFN-HearNet，通过融合跨域听力图与频谱特征，同时完成 NR 与 HLC 任务。我们设计了听力图专用编码器，将稀疏的听力图映射为深度表征，解决跨域特征对齐问题。为引入 NR 与 HLC 任务间的交互，我们提出基于仿射调制的听力图融合时频 Conformer，自适应地将两类特征融合为统一的深度表征以重建语音。此外，我们引入语音活动检测辅助训练任务，将语音与非语音模式隐式嵌入统一表征。在多数据集上的综合实验验证了各模块的有效性，结果表明 AFN-HearNet 在 HASQI、PESQ 等关键指标上显著优于现有上下文融合联合模型，实现了性能与效率的良好平衡。源代码与数据将发布于 https://github.com/deepnetni/AFN-HearNet。",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-09",
+    "paper_authors": "Ye Ni, Ruiyu Liang, Xiaoshuai Hao, Jiaming Cheng, Qingyun Wang, Chengwei Huang, Cairong Zou, Wei Zhou, Weiping Ding, Björn W. Schuller",
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Spectral and Rhythm Feature Performance Evaluation for Category and Class Level Audio Classification with Deep Convolutional Neural Networks",
+    "paper_title_zh": "深度卷积神经网络中频谱与节奏特征在类别与细类音频分类中的性能评估",
+    "paper_id": "2509.07756v1",
+    "paper_abstract": "Next to decision tree and k-nearest neighbours algorithms deep convolutional neural networks (CNNs) are widely used to classify audio data in many domains like music, speech or environmental sounds. To train a specific CNN various spectral and rhythm features like mel-scaled spectrograms, mel-frequency cepstral coefficients (MFCC), cyclic tempograms, short-time Fourier transform (STFT) chromagrams, constant-Q transform (CQT) chromagrams and chroma energy normalized statistics (CENS) chromagrams can be used as digital image input data for the neural network. The performance of these spectral and rhythm features for audio category level as well as audio class level classification is investigated in detail with a deep CNN and the ESC-50 dataset with 2,000 labeled environmental audio recordings using an end-to-end deep learning pipeline. The evaluated metrics accuracy, precision, recall and F1 score for multiclass classification clearly show that the mel-scaled spectrograms and the mel-frequency cepstral coefficients (MFCC) perform significantly better then the other spectral and rhythm features investigated in this research for audio classification tasks using deep CNNs.",
+    "paper_abstract_zh": "除决策树与 k 近邻算法外，深度卷积神经网络（CNN）被广泛用于音乐、语音及环境声等领域的音频分类。为训练特定 CNN，可将多种频谱与节奏特征（如梅尔刻度谱图、梅尔频率倒谱系数 MFCC、循环节拍图、短时傅里叶变换色度图、常数 Q 变换色度图及 CENS 色度图）作为数字图像输入网络。本文利用端到端深度学习流程，在包含 2 000 条标注环境音频的 ESC-50 数据集上，系统评估这些频谱与节奏特征在音频“类别级”与“细类级”分类中的性能。多类分类的准确率、精确率、召回率与 F1 分数表明，梅尔刻度谱图与 MFCC 显著优于本研究考察的其他频谱与节奏特征，是深度 CNN 音频分类任务的最佳选择。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Friedrich Wolf-Monheim",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Exploring System Adaptations For Minimum Latency Real-Time Piano Transcription",
+    "paper_title_zh": "面向最低延迟实时钢琴转录的系统适配探索",
+    "paper_id": "2509.07586v1",
+    "paper_abstract": "Advances in neural network design and the availability of large-scale labeled datasets have driven major improvements in piano transcription. Existing approaches target either offline applications, with no restrictions on computational demands, or online transcription, with delays of 128-320 ms. However, most real-time musical applications require latencies below 30 ms. In this work, we investigate whether and how the current state-of-the-art online transcription model can be adapted for real-time piano transcription. Specifically, we eliminate all non-causal processing, and reduce computational load through shared computations across core model components and variations in model size. Additionally, we explore different pre- and postprocessing strategies, and related label encoding schemes, and discuss their suitability for real-time transcription. Evaluating the adaptions on the MAESTRO dataset, we find a drop in transcription accuracy due to strictly causal processing as well as a tradeoff between the preprocessing latency and prediction accuracy. We release our system as a baseline to support researchers in designing models towards minimum latency real-time transcription.",
+    "paper_abstract_zh": "神经网络设计的进步与大规模标注数据集的可用性，推动了钢琴转录技术的显著提升。现有方法要么面向离线场景，对计算量无限制；要么面向在线转录，延迟在128–320 ms之间。然而，大多数实时音乐应用要求延迟低于30 ms。本文研究当前最先进的在线转录模型能否、以及如何适配到实时钢琴转录。具体而言，我们去除所有非因果处理，通过在核心模型组件间共享计算以及调整模型规模来降低计算负载；同时探索不同的前/后处理策略与相关标签编码方案，并讨论其对实时转录的适用性。在MAESTRO数据集上的评估表明，严格因果处理会导致转录准确率下降，且预处理延迟与预测准确率之间存在权衡。我们将系统开源作为基线，以支持研究者设计面向最低延迟实时转录的模型。",
+    "primary_category": "eess.AS",
+    "update_time": "2025-09-09",
+    "paper_authors": "Patricia Hu, Silvan David Peter, Jan Schlüter, Gerhard Widmer",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "BeatFM: Improving Beat Tracking with Pre-trained Music Foundation Model",
+    "paper_title_zh": "BeatFM：利用预训练音乐基础模型改进节拍跟踪",
+    "paper_id": "2508.09790v2",
+    "paper_abstract": "Beat tracking is a widely researched topic in music information retrieval. However, current beat tracking methods face challenges due to the scarcity of labeled data, which limits their ability to generalize across diverse musical styles and accurately capture complex rhythmic structures. To overcome these challenges, we propose a novel beat tracking paradigm BeatFM, which introduces a pre-trained music foundation model and leverages its rich semantic knowledge to improve beat tracking performance. Pre-training on diverse music datasets endows music foundation models with a robust understanding of music, thereby effectively addressing these challenges. To further adapt it for beat tracking, we design a plug-and-play multi-dimensional semantic aggregation module, which is composed of three parallel sub-modules, each focusing on semantic aggregation in the temporal, frequency, and channel domains, respectively. Extensive experiments demonstrate that our method achieves state-of-the-art performance in beat and downbeat tracking across multiple benchmark datasets.",
+    "paper_abstract_zh": "节拍跟踪是音乐信息检索领域广受关注的研究方向。然而，现有方法因标注数据稀缺，难以在不同音乐风格间泛化，也难以精准捕捉复杂节奏结构。为此，我们提出一种新的节拍跟踪范式BeatFM，引入预训练音乐基础模型，利用其丰富的语义知识提升节拍跟踪性能。该模型在多样化音乐数据集上预训练，具备鲁棒的音乐理解能力，从而有效应对上述挑战。为进一步适配节拍跟踪任务，我们设计了一个即插即用的多维语义聚合模块，由三个并行子模块组成，分别聚焦时域、频域和通道域的语义聚合。大量实验表明，我们的方法在多个基准数据集上实现了节拍与下拍跟踪的最新最佳性能。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Ganghui Ru, Jieying Wang, Jiahao Zhao, Yulun Wu, Yi Yu, Nannan Jiang, Wei Wang, Wei Li",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "HingeNet: A Harmonic-Aware Fine-Tuning Approach for Beat Tracking",
+    "paper_title_zh": "HingeNet：面向节拍跟踪的谐波感知微调方法",
+    "paper_id": "2508.09788v2",
+    "paper_abstract": "Fine-tuning pre-trained foundation models has made significant progress in music information retrieval. However, applying these models to beat tracking tasks remains unexplored as the limited annotated data renders conventional fine-tuning methods ineffective. To address this challenge, we propose HingeNet, a novel and general parameter-efficient fine-tuning method specifically designed for beat tracking tasks. HingeNet is a lightweight and separable network, visually resembling a hinge, designed to tightly interface with pre-trained foundation models by using their intermediate feature representations as input. This unique architecture grants HingeNet broad generalizability, enabling effective integration with various pre-trained foundation models. Furthermore, considering the significance of harmonics in beat tracking, we introduce harmonic-aware mechanism during the fine-tuning process to better capture and emphasize the harmonic structures in musical signals. Experiments on benchmark datasets demonstrate that HingeNet achieves state-of-the-art performance in beat and downbeat tracking",
+    "paper_abstract_zh": "对预训练基础模型进行微调已在音乐信息检索领域取得显著进展，但将其应用于节拍跟踪任务仍属空白——有限的标注数据使传统微调失效。为此，我们提出 HingeNet，一种专为节拍跟踪设计的新型通用参数高效微调方法。HingeNet 是一个轻量且可分离的“铰链”状网络，通过将预训练模型的中间特征作为输入，与其紧密耦合。该独特结构赋予 HingeNet 广泛通用性，可无缝集成多种预训练基础模型。此外，鉴于谐波对节拍跟踪的重要性，我们在微调中引入谐波感知机制，以更好地捕捉并强化音乐信号中的谐波结构。在基准数据集上的实验表明，HingeNet 在节拍与下拍跟踪任务中均达到最先进性能。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Ganghui Ru, Jieying Wang, Jiahao Zhao, Yulun Wu, Yi Yu, Nannan Jiang, Wei Wang, Wei Li",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Continuous Audio Language Models",
+    "paper_title_zh": "连续音频语言模型",
+    "paper_id": "2509.06926v2",
+    "paper_abstract": "Audio Language Models (ALM) have emerged as the dominant paradigm for speech and music generation by representing audio as sequences of discrete tokens. Yet, unlike text tokens, which are invertible, audio tokens are extracted from lossy codecs with a limited bitrate. As a consequence, increasing audio quality requires generating more tokens, which imposes a trade-off between fidelity and computational cost. We address this issue by studying Continuous Audio Language Models (CALM). These models instantiate a large Transformer backbone that produces a contextual embedding at every timestep. This sequential information then conditions an MLP that generates the next continuous frame of an audio VAE through consistency modeling. By avoiding lossy compression, CALM achieves higher quality at lower computational cost than their discrete counterpart. Experiments on speech and music demonstrate improved efficiency and fidelity over state-of-the-art discrete audio language models, facilitating lightweight, high-quality audio generation. Samples are available at hf.co/spaces/kyutai/calm-samples",
+    "paper_abstract_zh": "音频语言模型（ALM）通过将音频表示为离散 token 序列，已成为语音与音乐生成的主流范式。然而，与可逆的文本 token 不同，音频 token 源自有损编解码器，比特率受限；提升音质需生成更多 token，导致保真度与计算成本之间的权衡。为此，我们研究连续音频语言模型（CALM）。该模型以大型 Transformer 为主干，在每个时间步输出上下文嵌入，再通过 MLP 对音频 VAE 的下一连续帧进行一致性建模。避开有损压缩后，CALM 在更低计算成本下获得更高音质。语音与音乐实验表明，其效率与保真度均优于现有最佳离散音频语言模型，实现轻量级高质量音频生成。示例见 hf.co/spaces/kyutai/calm-samples。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Simon Rouard, Manu Orsini, Axel Roebel, Neil Zeghidour, Alexandre Défossez",
+    "topic": [
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Feature Space Analysis by Guided Diffusion Model",
+    "paper_title_zh": "基于引导扩散模型的特征空间分析",
+    "paper_id": "2509.07936v1",
+    "paper_abstract": "One of the key issues in Deep Neural Networks (DNNs) is the black-box nature of their internal feature extraction process. Targeting vision-related domains, this paper focuses on analysing the feature space of a DNN by proposing a decoder that can generate images whose features are guaranteed to closely match a user-specified feature. Owing to this guarantee that is missed in past studies, our decoder allows us to evidence which of various attributes in an image are encoded into a feature by the DNN, by generating images whose features are in proximity to that feature. Our decoder is implemented as a guided diffusion model that guides the reverse image generation of a pre-trained diffusion model to minimise the Euclidean distance between the feature of a clean image estimated at each step and the user-specified feature. One practical advantage of our decoder is that it can analyse feature spaces of different DNNs with no additional training and run on a single COTS GPU. The experimental results targeting CLIP's image encoder, ResNet-50 and vision transformer demonstrate that images generated by our decoder have features remarkably similar to the user-specified ones and reveal valuable insights into these DNNs' feature spaces.",
+    "paper_abstract_zh": "深度神经网络（DNN）的一个核心问题是其内部特征提取过程的黑箱特性。本文聚焦视觉相关领域，提出一种解码器，可生成与用户指定特征在特征空间中高度匹配的图像，从而对DNN的特征空间进行分析。与以往研究不同，该解码器能严格保证生成图像的特征与目标特征接近，因此可通过生成邻近特征图像，揭示DNN将图像哪些属性编码进该特征。解码器以引导扩散模型实现，在每一步反向去噪过程中，引导预训练扩散模型最小化干净图像特征与用户指定特征的欧氏距离。其实用优势在于：无需额外训练即可分析不同DNN的特征空间，且仅需一块商用GPU即可运行。针对CLIP图像编码器、ResNet-50和Vision Transformer的实验表明，解码器生成的图像特征与用户指定特征高度一致，并揭示了这些网络特征空间的宝贵洞见。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Kimiaki Shirahama, Miki Yanobu, Kaduki Yamashita, Miho Ohsaki",
+    "topic": [
+      "Image Generation",
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "ScoreHOI: Physically Plausible Reconstruction of Human-Object Interaction via Score-Guided Diffusion",
+    "paper_title_zh": "ScoreHOI：基于分数引导扩散的物理合理人-物交互重建",
+    "paper_id": "2509.07920v1",
+    "paper_abstract": "Joint reconstruction of human-object interaction marks a significant milestone in comprehending the intricate interrelations between humans and their surrounding environment. Nevertheless, previous optimization methods often struggle to achieve physically plausible reconstruction results due to the lack of prior knowledge about human-object interactions. In this paper, we introduce ScoreHOI, an effective diffusion-based optimizer that introduces diffusion priors for the precise recovery of human-object interactions. By harnessing the controllability within score-guided sampling, the diffusion model can reconstruct a conditional distribution of human and object pose given the image observation and object feature. During inference, the ScoreHOI effectively improves the reconstruction results by guiding the denoising process with specific physical constraints. Furthermore, we propose a contact-driven iterative refinement approach to enhance the contact plausibility and improve the reconstruction accuracy. Extensive evaluations on standard benchmarks demonstrate ScoreHOI's superior performance over state-of-the-art methods, highlighting its ability to achieve a precise and robust improvement in joint human-object interaction reconstruction.",
+    "paper_abstract_zh": "联合重建人-物交互是理解人类与周围环境复杂关系的重要里程碑。然而，以往优化方法因缺乏人-物交互先验知识，难以获得物理合理的重建结果。本文提出ScoreHOI，一种基于扩散模型的有效优化器，通过引入扩散先验实现人-物交互的精确恢复。利用分数引导采样中的可控性，扩散模型可在给定图像观测与物体特征的条件下，重建人体与物体姿态的条件分布。推理阶段，ScoreHOI通过特定物理约束引导去噪过程，显著提升重建质量。此外，我们提出一种基于接触的迭代精修策略，增强接触合理性并进一步提高重建精度。在标准基准上的大量评估表明，ScoreHOI优于现有最佳方法，展现出在联合人-物交互重建中精确且稳健的提升能力。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Ao Li, Jinpeng Liu, Yixuan Zhu, Yansong Tang",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Certainty-Guided Reasoning in Large Language Models: A Dynamic Thinking Budget Approach",
+    "paper_title_zh": "大语言模型中的确定性引导推理：一种动态思维预算方法",
+    "paper_id": "2509.07820v1",
+    "paper_abstract": "The rise of large reasoning language models (LRLMs) has unlocked new potential for solving complex tasks. These models operate with a thinking budget, that is, a predefined number of reasoning tokens used to arrive at a solution. We propose a novel approach, inspired by the generator/discriminator framework in generative adversarial networks, in which a critic model periodically probes its own reasoning to assess whether it has reached a confident conclusion. If not, reasoning continues until a target certainty threshold is met. This mechanism adaptively balances efficiency and reliability by allowing early termination when confidence is high, while encouraging further reasoning when uncertainty persists. Through experiments on the AIME2024 and AIME2025 datasets, we show that Certainty-Guided Reasoning (CGR) improves baseline accuracy while reducing token usage. Importantly, extended multi-seed evaluations over 64 runs demonstrate that CGR is stable, reducing variance across seeds and improving exam-like performance under penalty-based grading. Additionally, our token savings analysis shows that CGR can eliminate millions of tokens in aggregate, with tunable trade-offs between certainty thresholds and efficiency. Together, these findings highlight certainty as a powerful signal for reasoning sufficiency. By integrating confidence into the reasoning process, CGR makes large reasoning language models more adaptive, trustworthy, and resource efficient, paving the way for practical deployment in domains where both accuracy and computational cost matter.",
+    "paper_abstract_zh": "大型推理语言模型（LRLM）的兴起为复杂任务求解开辟了新前景。这类模型在“思维预算”——即预先设定的推理 token 数量——内完成求解。受生成对抗网络中生成器/判别器框架启发，我们提出一种新方法：让评论模型周期性地探查自身推理过程，评估是否已得出可信结论；若未达置信阈值，则继续推理。该机制在置信度高时提前终止以提升效率，在不确定时继续推理以保证可靠性，实现自适应权衡。在 AIME2024 与 AIME2025 数据集上的实验表明，确定性引导推理（CGR）在提升基线准确率的同时显著减少 token 消耗。更重要的是，64 组随机种子的扩展评估显示 CGR 稳定性强，降低种子间方差，并在带惩罚的考试式评分下提升表现。此外，token 节省分析表明 CGR 可累计节省数百万 token，且可通过调节确定性阈值在效率与精度间灵活权衡。综上，确定性成为判断推理充分性的强信号；将其融入推理过程，使大推理模型更自适应、可信且资源高效，为同时关注准确率与计算成本的实际部署铺平道路。",
+    "primary_category": "cs.AI",
+    "update_time": "2025-09-09",
+    "paper_authors": "João Paulo Nogueira, Wentao Sun, Alonso Silva, Laith Zumot",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "A Generalisable Generative Model for Multi-Detector Calorimeter Simulation",
+    "paper_title_zh": "一种可泛化的多探测器量能器模拟生成模型",
+    "paper_id": "2509.07700v1",
+    "paper_abstract": "Collider experiments, such as those at the Large Hadron Collider, use the Geant4 toolkit to simulate particle-detector interactions with high accuracy. However, these experiments increasingly require larger amounts of simulated data, leading to huge computing cost. Generative machine learning methods could offer much faster calorimeter shower simulations by directly emulating detector responses. In this work, we present CaloDiT-2, a diffusion model which uses transformer blocks. As is the case for other models explored for this task, it can be applied to specific geometries, however its true strength lies in its generalisation capabilities. Our approach allows pre-training on multiple detectors and rapid adaptation to new ones, which we demonstrate on the LEMURS dataset. It reduces the effort required to develop accurate models for novel detectors or detectors which are under development and have geometries that are changed frequently, requiring up to 25x less data and 20x less training time. To the best of our knowledge, this is the first pre-trained model to be published that allows adaptation in the context of particle shower simulations, with the model also included in the Geant4 toolkit. We also present results on benchmarks on Dataset-2 from the community-hosted CaloChallenge, showing that our models provide one of the best tradeoffs between accuracy and speed from the published models. Our contributions include a mechanism for the creation of detector-agnostic data representations, architectural modifications suitable for the data modality, a pre-training and adaptation strategy, and publicly released datasets and pre-trained models for broad use.",
+    "paper_abstract_zh": "大型强子对撞机等对撞机实验依赖 Geant4 工具包高精度模拟粒子与探测器相互作用，但日益增长的模拟数据需求带来巨大计算开销。生成式机器学习方法可通过直接仿真探测器响应，显著加速量能器簇射模拟。本文提出 CaloDiT-2——一种基于 Transformer 模块的扩散模型。与其他仅限特定几何的模型不同，其真正优势在于泛化能力：可先在多种探测器上预训练，再快速适配新探测器。我们在 LEMURS 数据集上验证，该策略最多可减少 25 倍训练数据与 20 倍训练时间，显著降低为新型或频繁改几何的探测器开发精确模型的成本。据我们所知，这是首个在粒子簇射模拟领域支持预训练-适配的公开模型，并已集成至 Geant4 工具包。此外，在 CaloChallenge 社区 Dataset-2 基准测试中，我们的模型在已发表方案中实现了精度与速度的最佳权衡。贡献包括：与探测器无关的数据表示构建机制、适配数据模态的架构改进、预训练与适配策略，以及公开发布的数据集和预训练模型，供社区广泛使用。",
+    "primary_category": "physics.ins-det",
+    "update_time": "2025-09-09",
+    "paper_authors": "Piyush Raikwar, Anna Zaborowska, Peter McKeown, Renato Cardoso, Mikolaj Piorczynski, Kyongmin Yeo",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Semantic Watermarking Reinvented: Enhancing Robustness and Generation Quality with Fourier Integrity",
+    "paper_title_zh": "语义水印再创新：利用傅里叶完整性增强鲁棒性与生成质量",
+    "paper_id": "2509.07647v1",
+    "paper_abstract": "Semantic watermarking techniques for latent diffusion models (LDMs) are robust against regeneration attacks, but often suffer from detection performance degradation due to the loss of frequency integrity. To tackle this problem, we propose a novel embedding method called Hermitian Symmetric Fourier Watermarking (SFW), which maintains frequency integrity by enforcing Hermitian symmetry. Additionally, we introduce a center-aware embedding strategy that reduces the vulnerability of semantic watermarking due to cropping attacks by ensuring robust information retention. To validate our approach, we apply these techniques to existing semantic watermarking schemes, enhancing their frequency-domain structures for better robustness and retrieval accuracy. Extensive experiments demonstrate that our methods achieve state-of-the-art verification and identification performance, surpassing previous approaches across various attack scenarios. Ablation studies confirm the impact of SFW on detection capabilities, the effectiveness of the center-aware embedding against cropping, and how message capacity influences identification accuracy. Notably, our method achieves the highest detection accuracy while maintaining superior image fidelity, as evidenced by FID and CLIP scores. Conclusively, our proposed SFW is shown to be an effective framework for balancing robustness and image fidelity, addressing the inherent trade-offs in semantic watermarking. Code available at https://github.com/thomas11809/SFWMark",
+    "paper_abstract_zh": "针对潜在扩散模型（LDM）的语义水印技术虽能抵御重生成攻击，却因频域完整性缺失导致检测性能下降。为此，我们提出一种名为 Hermitian 对称傅里叶水印（SFW）的新型嵌入方法，通过强制 Hermitian 对称保持频域完整性。此外，我们引入“中心感知”嵌入策略，确保关键信息在裁剪攻击下仍被保留，从而降低语义水印的脆弱性。为验证方法有效性，我们将上述技术应用于现有语义水印方案，增强其频域结构以提升鲁棒性与检索精度。大量实验表明，该方法在多种攻击场景下均取得最先进的验证与识别性能，超越已有方案。消融实验证实 SFW 对检测能力的提升、中心感知嵌入对裁剪攻击的抵御效果，以及消息容量对识别准确率的影响。值得注意的是，该方法在保持卓越图像保真度（FID 与 CLIP 评分）的同时实现了最高检测准确率。综上，SFW 为平衡语义水印鲁棒性与图像保真度提供了有效框架，缓解了其固有权衡。代码已开源：https://github.com/thomas11809/SFWMark",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Sung Ju Lee, Nam Ik Cho",
+    "topic": [
+      "Image Generation",
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "AgentX: Towards Orchestrating Robust Agentic Workflow Patterns with FaaS-hosted MCP Services",
+    "paper_title_zh": "AgentX：基于 FaaS 托管 MCP 服务编排鲁棒智能体工作流模式",
+    "paper_id": "2509.07595v1",
+    "paper_abstract": "Generative Artificial Intelligence (GenAI) has rapidly transformed various fields including code generation, text summarization, image generation and so on. Agentic AI is a recent evolution that further advances this by coupling the decision making and generative capabilities of LLMs with actions that can be performed using tools. While seemingly powerful, Agentic systems often struggle when faced with numerous tools, complex multi-step tasks,and long-context management to track history and avoid hallucinations. Workflow patterns such as Chain-of-Thought (CoT) and ReAct help address this. Here, we define a novel agentic workflow pattern, AgentX, composed of stage designer, planner, and executor agents that is competitive or better than the state-of-the-art agentic patterns. We also leverage Model Context Protocol (MCP) tools, and propose two alternative approaches for deploying MCP servers as cloud Functions as a Service (FaaS). We empirically evaluate the success rate, latency and cost for AgentX and two contemporary agentic patterns, ReAct and Magentic One, using these the FaaS and local MCP server alternatives for three practical applications. This highlights the opportunities and challenges of designing and deploying agentic workflows.",
+    "paper_abstract_zh": "生成式人工智能（GenAI）已迅速改变代码生成、文本摘要、图像生成等诸多领域。智能体 AI 通过将大模型的决策与生成能力同工具执行动作相结合，进一步推动了这一进程。然而，面对大量工具、复杂多步任务以及长上下文管理（需追踪历史并避免幻觉）时，智能体系统往往表现不佳。链式思维（CoT）与 ReAct 等工作流模式可部分缓解该问题。本文提出一种新颖的智能体工作流模式 AgentX，由阶段设计师、规划器与执行器三类智能体组成，在多项任务上达到或超越现有最佳模式。我们同时利用模型上下文协议（MCP）工具，并提出两种将 MCP 服务器部署为云函数即服务（FaaS）的替代方案。针对三项实际应用，我们分别采用 FaaS 与本地 MCP 服务器两种部署方式，对 AgentX 及现有 ReAct、Magentic One 两种智能体模式的成功率、延迟与成本进行实证评估，揭示了设计与部署智能体工作流所面临的机遇与挑战。",
+    "primary_category": "cs.DC",
+    "update_time": "2025-09-09",
+    "paper_authors": "Shiva Sai Krishna Anand Tokal, Vaibhav Jha, Anand Eswaran, Praveen Jayachandran, Yogesh Simmhan",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "PanoLAM: Large Avatar Model for Gaussian Full-Head Synthesis from One-shot Unposed Image",
+    "paper_title_zh": "PanoLAM：从单张无姿态图像合成高斯全头模型的大型化身模型",
+    "paper_id": "2509.07552v1",
+    "paper_abstract": "We present a feed-forward framework for Gaussian full-head synthesis from a single unposed image. Unlike previous work that relies on time-consuming GAN inversion and test-time optimization, our framework can reconstruct the Gaussian full-head model given a single unposed image in a single forward pass. This enables fast reconstruction and rendering during inference. To mitigate the lack of large-scale 3D head assets, we propose a large-scale synthetic dataset from trained 3D GANs and train our framework using only synthetic data. For efficient high-fidelity generation, we introduce a coarse-to-fine Gaussian head generation pipeline, where sparse points from the FLAME model interact with the image features by transformer blocks for feature extraction and coarse shape reconstruction, which are then densified for high-fidelity reconstruction. To fully leverage the prior knowledge residing in pretrained 3D GANs for effective reconstruction, we propose a dual-branch framework that effectively aggregates the structured spherical triplane feature and unstructured point-based features for more effective Gaussian head reconstruction. Experimental results show the effectiveness of our framework towards existing work.",
+    "paper_abstract_zh": "我们提出了一种前馈框架，可从单张无姿态图像合成高斯全头模型。与以往依赖耗时的GAN反演和测试时优化的方法不同，本框架仅需一次前向传播即可根据单张无姿态图像重建高斯全头模型，从而在推理阶段实现快速重建与渲染。为缓解大规模3D头部资产匮乏的问题，我们利用已训练的3D GAN构建了一个大规模合成数据集，并仅用合成数据训练框架。为实现高效高保真生成，我们设计了由粗到精的高斯头部生成管线：先以FLAME模型的稀疏点与图像特征通过Transformer块交互，完成特征提取与粗略形状重建，再对点云进行加密以实现高保真重建。为充分利用预训练3D GAN中的先验知识以实现有效重建，我们提出双分支框架，将结构化球面三平面特征与非结构化基于点的特征有效融合，提升高斯头部重建效果。实验结果表明，本框架相较现有方法具有显著优势。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Peng Li, Yisheng He, Yingdong Hu, Yuan Dong, Weihao Yuan, Yuan Liu, Zilong Dong, Yike Guo",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Universal Few-Shot Spatial Control for Diffusion Models",
+    "paper_title_zh": "扩散模型的通用小样本空间控制",
+    "paper_id": "2509.07530v1",
+    "paper_abstract": "Spatial conditioning in pretrained text-to-image diffusion models has significantly improved fine-grained control over the structure of generated images. However, existing control adapters exhibit limited adaptability and incur high training costs when encountering novel spatial control conditions that differ substantially from the training tasks. To address this limitation, we propose Universal Few-Shot Control (UFC), a versatile few-shot control adapter capable of generalizing to novel spatial conditions. Given a few image-condition pairs of an unseen task and a query condition, UFC leverages the analogy between query and support conditions to construct task-specific control features, instantiated by a matching mechanism and an update on a small set of task-specific parameters. Experiments on six novel spatial control tasks show that UFC, fine-tuned with only 30 annotated examples of novel tasks, achieves fine-grained control consistent with the spatial conditions. Notably, when fine-tuned with 0.1% of the full training data, UFC achieves competitive performance with the fully supervised baselines in various control tasks. We also show that UFC is applicable agnostically to various diffusion backbones and demonstrate its effectiveness on both UNet and DiT architectures. Code is available at https://github.com/kietngt00/UFC.",
+    "paper_abstract_zh": "在预训练文本到图像扩散模型中引入空间条件，显著提升了生成图像结构的细粒度控制能力。然而，当遇到与训练任务差异较大的新空间控制条件时，现有控制适配器适应性有限，且需高昂的训练成本。为此，我们提出通用小样本控制（UFC），一种可泛化到新空间条件的通用小样本控制适配器。给定未知任务的少量图像-条件对及一个查询条件，UFC通过查询条件与支持条件之间的类比，构建任务相关的控制特征，具体通过匹配机制与对少量任务特定参数的更新实现。在六项新空间控制任务上的实验表明，UFC仅使用30个新任务标注样本进行微调，即可实现与空间条件一致的细粒度控制。值得注意的是，仅用0.1%的完整训练数据微调，UFC在多种控制任务上即可与全监督基线媲美。我们还验证了UFC可无缝应用于不同扩散骨干网络，并在UNet与DiT架构上均展现了其有效性。代码已开源：https://github.com/kietngt00/UFC。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Kiet T. Nguyen, Chanhuyk Lee, Donggyun Kim, Dong Hoon Lee, Seunghoon Hong",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "LINR Bridge: Vector Graphic Animation via Neural Implicits and Video Diffusion Priors",
+    "paper_title_zh": "LINR Bridge：基于神经隐式表示与视频扩散先验的矢量图形动画",
+    "paper_id": "2509.07484v1",
+    "paper_abstract": "Vector graphics, known for their scalability and user-friendliness, provide a unique approach to visual content compared to traditional pixel-based images. Animation of these graphics, driven by the motion of their elements, offers enhanced comprehensibility and controllability but often requires substantial manual effort. To automate this process, we propose a novel method that integrates implicit neural representations with text-to-video diffusion models for vector graphic animation. Our approach employs layered implicit neural representations to reconstruct vector graphics, preserving their inherent properties such as infinite resolution and precise color and shape constraints, which effectively bridges the large domain gap between vector graphics and diffusion models. The neural representations are then optimized using video score distillation sampling, which leverages motion priors from pretrained text-to-video diffusion models. Finally, the vector graphics are warped to match the representations resulting in smooth animation. Experimental results validate the effectiveness of our method in generating vivid and natural vector graphic animations, demonstrating significant improvement over existing techniques that suffer from limitations in flexibility and animation quality.",
+    "paper_abstract_zh": "矢量图形因其可无限缩放且易于编辑，与传统像素图像相比提供了独特的视觉内容表达方式。通过元素运动驱动的矢量动画不仅更易理解、可控，却常需大量手工操作。为自动化该过程，我们提出一种将隐式神经表示与文本到视频扩散模型融合的新方法，实现矢量图形动画。该方法采用分层隐式神经表示重建矢量图形，保留其无限分辨率、精确颜色与形状约束等固有属性，有效弥合矢量图形与扩散模型之间的巨大域差。随后，利用预训练文本到视频扩散模型的运动先验，通过视频分数蒸馏采样优化神经表示；最后将矢量图形变形以匹配优化后的表示，生成流畅动画。实验结果验证本方法可生成生动自然的矢量动画，在灵活性与动画质量上显著优于现有技术。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Wenshuo Gao, Xicheng Lan, Luyao Zhang, Shuai Yang",
+    "topic": [
+      "Image Generation",
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "ANYPORTAL: Zero-Shot Consistent Video Background Replacement",
+    "paper_title_zh": "ANYPORTAL：零样本一致的视频背景替换",
+    "paper_id": "2509.07472v1",
+    "paper_abstract": "Despite the rapid advancements in video generation technology, creating high-quality videos that precisely align with user intentions remains a significant challenge. Existing methods often fail to achieve fine-grained control over video details, limiting their practical applicability. We introduce ANYPORTAL, a novel zero-shot framework for video background replacement that leverages pre-trained diffusion models. Our framework collaboratively integrates the temporal prior of video diffusion models with the relighting capabilities of image diffusion models in a zero-shot setting. To address the critical challenge of foreground consistency, we propose a Refinement Projection Algorithm, which enables pixel-level detail manipulation to ensure precise foreground preservation. ANYPORTAL is training-free and overcomes the challenges of achieving foreground consistency and temporally coherent relighting. Experimental results demonstrate that ANYPORTAL achieves high-quality results on consumer-grade GPUs, offering a practical and efficient solution for video content creation and editing.",
+    "paper_abstract_zh": "尽管视频生成技术迅猛发展，生成高质量且精准符合用户意图的视频仍是重大挑战。现有方法难以对视频细节进行细粒度控制，限制了实际应用。我们提出 ANYPORTAL，一种基于预训练扩散模型的零样本视频背景替换框架。该框架在无训练条件下协同整合视频扩散模型的时间先验与图像扩散模型的重打光能力。为解决前景一致性的关键难题，我们设计了一种细化投影算法，实现像素级细节操控，确保前景精确保留。ANYPORTAL 无需训练，即可克服前景一致性与时间连贯重光照的挑战。实验表明，ANYPORTAL 在消费级 GPU 上即可产出高质量结果，为视频内容创作与编辑提供实用高效的解决方案。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Wenshuo Gao, Xicheng Lan, Shuai Yang",
+    "topic": [
+      "Image Generation",
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "DepthVision: Robust Vision-Language Understanding through GAN-Based LiDAR-to-RGB Synthesis",
+    "paper_title_zh": "DepthVision：通过基于GAN的LiDAR-to-RGB合成实现鲁棒的视觉-语言理解",
+    "paper_id": "2509.07463v1",
+    "paper_abstract": "Ensuring reliable robot operation when visual input is degraded or insufficient remains a central challenge in robotics. This letter introduces DepthVision, a framework for multimodal scene understanding designed to address this problem. Unlike existing Vision-Language Models (VLMs), which use only camera-based visual input alongside language, DepthVision synthesizes RGB images from sparse LiDAR point clouds using a conditional generative adversarial network (GAN) with an integrated refiner network. These synthetic views are then combined with real RGB data using a Luminance-Aware Modality Adaptation (LAMA), which blends the two types of data dynamically based on ambient lighting conditions. This approach compensates for sensor degradation, such as darkness or motion blur, without requiring any fine-tuning of downstream vision-language models. We evaluate DepthVision on real and simulated datasets across various models and tasks, with particular attention to safety-critical tasks. The results demonstrate that our approach improves performance in low-light conditions, achieving substantial gains over RGB-only baselines while preserving compatibility with frozen VLMs. This work highlights the potential of LiDAR-guided RGB synthesis for achieving robust robot operation in real-world environments.",
+    "paper_abstract_zh": "在视觉输入退化或不足的情况下确保机器人可靠运行，仍是机器人学的核心挑战。本文提出DepthVision，一种面向多模态场景理解的框架，专门解决该问题。与仅依赖相机视觉输入的现有视觉-语言模型（VLM）不同，DepthVision利用条件生成对抗网络（GAN）并集成精炼网络，将稀疏LiDAR点云合成为RGB图像。随后，通过亮度感知模态自适应（LAMA）将合成视图与真实RGB数据动态融合，依据环境光照条件实时调整两种数据的权重。该方法无需对下游视觉-语言模型进行任何微调，即可补偿黑暗或运动模糊等传感器退化。我们在真实与仿真数据集上，对多种模型和任务进行评估，特别关注安全关键任务。实验结果表明，该方法在低光照条件下显著提升性能，相比仅使用RGB的基线取得大幅增益，同时保持与冻结VLM的兼容性。本研究凸显了LiDAR引导的RGB合成在实现真实环境鲁棒机器人操作中的潜力。",
+    "primary_category": "cs.RO",
+    "update_time": "2025-09-09",
+    "paper_authors": "Sven Kirchner, Nils Purschke, Ross Greer, Alois C. Knoll",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "DreamLifting: A Plug-in Module Lifting MV Diffusion Models for 3D Asset Generation",
+    "paper_title_zh": "DreamLifting：将多视角扩散模型提升为3D资产生成的即插即用模块",
+    "paper_id": "2509.07435v1",
+    "paper_abstract": "The labor- and experience-intensive creation of 3D assets with physically based rendering (PBR) materials demands an autonomous 3D asset creation pipeline. However, most existing 3D generation methods focus on geometry modeling, either baking textures into simple vertex colors or leaving texture synthesis to post-processing with image diffusion models. To achieve end-to-end PBR-ready 3D asset generation, we present Lightweight Gaussian Asset Adapter (LGAA), a novel framework that unifies the modeling of geometry and PBR materials by exploiting multi-view (MV) diffusion priors from a novel perspective. The LGAA features a modular design with three components. Specifically, the LGAA Wrapper reuses and adapts network layers from MV diffusion models, which encapsulate knowledge acquired from billions of images, enabling better convergence in a data-efficient manner. To incorporate multiple diffusion priors for geometry and PBR synthesis, the LGAA Switcher aligns multiple LGAA Wrapper layers encapsulating different knowledge. Then, a tamed variational autoencoder (VAE), termed LGAA Decoder, is designed to predict 2D Gaussian Splatting (2DGS) with PBR channels. Finally, we introduce a dedicated post-processing procedure to effectively extract high-quality, relightable mesh assets from the resulting 2DGS. Extensive quantitative and qualitative experiments demonstrate the superior performance of LGAA with both text-and image-conditioned MV diffusion models. Additionally, the modular design enables flexible incorporation of multiple diffusion priors, and the knowledge-preserving scheme leads to efficient convergence trained on merely 69k multi-view instances. Our code, pre-trained weights, and the dataset used will be publicly available via our project page: https://zx-yin.github.io/dreamlifting/.",
+    "paper_abstract_zh": "创建带有基于物理渲染（PBR）材质的3D资产既费力又依赖经验，亟需一条自动化的3D资产生成管线。然而，现有3D生成方法多聚焦于几何建模，要么将纹理烘焙为简单顶点色，要么在后续步骤中借助图像扩散模型合成纹理。为实现端到端、可直接用于PBR的3D资产生成，我们提出轻量级高斯资产适配器（LGAA），该框架从新视角出发，统一几何与PBR材质的建模，充分利用多视角（MV）扩散先验。LGAA采用模块化设计，包含三大组件：LGAA Wrapper复用并适配MV扩散模型的网络层，这些层凝练了数十亿图像所学知识，使网络在数据高效的前提下更快收敛；LGAA Switcher对齐封装不同知识的多个Wrapper层，以融合几何与PBR合成的多重扩散先验；随后，驯服式变分自编码器（VAE）——LGAA Decoder——预测带PBR通道的2D高斯溅射（2DGS）。最后，我们引入专用后处理流程，从所得2DGS中提取高质量、可重打光的网格资产。大量定量与定性实验表明，LGAA在文本与图像条件的多视角扩散模型上均表现优异。模块化设计可灵活整合多种扩散先验，知识保持策略使其仅在约6.9万组多视角数据上即可高效收敛。代码、预训练权重及所用数据集将在项目主页公开：https://zx-yin.github.io/dreamlifting/。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Ze-Xin Yin, Jiaxiong Qiu, Liu Liu, Xinjie Wang, Wei Sui, Zhizhong Su, Jian Yang, Jin Xie",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Knowledge Distillation Driven Semantic NOMA for Image Transmission with Diffusion Model",
+    "paper_title_zh": "知识蒸馏驱动的语义NOMA：基于扩散模型的图像传输",
+    "paper_id": "2509.07363v1",
+    "paper_abstract": "As a promising 6G enabler beyond conventional bit-level transmission, semantic communication can considerably reduce required bandwidth resources, while its combination with multiple access requires further exploration. This paper proposes a knowledge distillation-driven and diffusion-enhanced (KDD) semantic non-orthogonal multiple access (NOMA), named KDD-SemNOMA, for multi-user uplink wireless image transmission. Specifically, to ensure robust feature transmission across diverse transmission conditions, we firstly develop a ConvNeXt-based deep joint source and channel coding architecture with enhanced adaptive feature module. This module incorporates signal-to-noise ratio and channel state information to dynamically adapt to additive white Gaussian noise and Rayleigh fading channels. Furthermore, to improve image restoration quality without inference overhead, we introduce a two-stage knowledge distillation strategy, i.e., a teacher model, trained on interference-free orthogonal transmission, guides a student model via feature affinity distillation and cross-head prediction distillation. Moreover, a diffusion model-based refinement stage leverages generative priors to transform initial SemNOMA outputs into high-fidelity images with enhanced perceptual quality. Extensive experiments on CIFAR-10 and FFHQ-256 datasets demonstrate superior performance over state-of-the-art methods, delivering satisfactory reconstruction performance even at extremely poor channel conditions. These results highlight the advantages in both pixel-level accuracy and perceptual metrics, effectively mitigating interference and enabling high-quality image recovery.",
+    "paper_abstract_zh": "作为超越传统比特级传输的6G使能技术，语义通信可显著降低所需带宽资源，但其与多址接入的结合仍需深入探索。本文提出一种知识蒸馏驱动、扩散增强的语义非正交多址（KDD-SemNOMA），用于多用户上行无线图像传输。具体而言，为确保在不同传输条件下实现鲁棒的特征传输，我们首先构建基于ConvNeXt的深度信源-信道联合编码架构，并引入增强的自适应特征模块；该模块融合信噪比与信道状态信息，动态适应加性白高斯噪声与瑞利衰落信道。进一步，为在零推理开销前提下提升图像恢复质量，我们设计两阶段知识蒸馏策略：以无干扰正交传输训练的教师模型为基准，通过特征亲和蒸馏与跨头预测蒸馏指导学生模型。此外，基于扩散模型的精修阶段利用生成式先验，将初始SemNOMA输出转化为高保真、感知质量增强的图像。在CIFAR-10与FFHQ-256数据集上的大量实验表明，该方法优于现有最先进方案，即使在极端恶劣信道条件下也能提供令人满意的重建性能，在像素级精度与感知指标上均显著降低干扰，实现高质量图像恢复。",
+    "primary_category": "cs.IT",
+    "update_time": "2025-09-09",
+    "paper_authors": "Qifei Wang, Zhen Gao, Zhijin Qin, Xiaodong Xu, Meixia Tao",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Data-knowledge fusion driven frequency security assessment: A robust framework for renewable-dominated power grids",
+    "paper_title_zh": "数据-知识融合驱动的频率安全评估：面向可再生能源主导电网的鲁棒框架",
+    "paper_id": "2509.07320v1",
+    "paper_abstract": "Frequency security is critical for power grids, as deviations can trigger widespread outages and result in substantial economic losses. However, modern renewable-dominated power grids face an increased risk of insecurity due to low inertia and nonlinear frequency responses. To mitigate these risks, robust pre-fault frequency security assessment (FSA) is critical, which enables grid operators to implement preventive control strategies. We propose a data-knowledge fusion framework to achieve intelligent FSA in actual power grids. First, we classify FSA domain knowledge into two distinct categories: (1) physics-guided knowledge directs the neural network pre-training process, ensuring that the fusion model's predictions consistent with frequency response mechanisms, and (2) physics-constrained knowledge establishes quantitative relationship on predictions, which forces them within theoretical ranges defined by domain knowledge. Furthermore, we develop a dual-channel neural network architecture to simultaneously capture both local and global characteristics of the power system. Finally, we introduce a data-knowledge fusion training algorithm that integrates guided learning with constrained network architecture to enhance model reliability and generalization. Case studies on China's Yunnan Provincial Power Grid validate the superior performance of our framework: it reduces average prediction error to 1.26% (a 49.2% reduction over data-driven methods), and maintains 97.60% accuracy in untrained scenarios (3.85% higher than data-driven methods), therefore satisfies the accuracy, reliability, and generalization requirements for actual power grids. The proposed methodology establishes a new paradigm for enhancing robustness of FSA in power grids, with potential application to cross-domain security assessment.",
+    "paper_abstract_zh": "频率安全对电网至关重要，偏差可能引发大范围停电并造成巨大经济损失。然而，现代可再生能源主导的电网因惯量降低和频率响应非线性而面临更高的不安全风险。为降低这些风险，亟需鲁棒的故障前频率安全评估（FSA），使电网调度员能够实施预防性控制策略。本文提出一种数据-知识融合框架，实现实际电网的智能FSA。首先，将FSA领域知识划分为两类：（1）物理引导知识指导神经网络预训练，确保融合模型预测与频率响应机理一致；（2）物理约束知识在预测结果上建立定量关系，强制其处于领域知识定义的理论范围内。进一步，我们设计双通道神经网络架构，同步捕捉电力系统的局部与全局特征。最后，提出数据-知识融合训练算法，将引导学习与约束网络架构相结合，提升模型可靠性与泛化能力。在中国云南电网的案例研究表明，该框架性能卓越：平均预测误差降至1.26%，较纯数据驱动方法降低49.2%；在未训练场景下保持97.60%的准确率，比数据驱动方法高3.85%，满足实际电网对精度、可靠性与泛化的要求。所提方法为增强电网FSA鲁棒性建立了新范式，并具备跨领域安全评估的应用潜力。",
+    "primary_category": "eess.SY",
+    "update_time": "2025-09-09",
+    "paper_authors": "Yurun Zhang, Wei Yao, Yutian Lan, Hang Shuai, Shanyang Wei, Wei Gan, Chao Duan, Jinyu Wen, Shijie Cheng",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Interleaving Reasoning for Better Text-to-Image Generation",
+    "paper_title_zh": "交错推理提升文本到图像生成",
+    "paper_id": "2509.06945v2",
+    "paper_abstract": "Unified multimodal understanding and generation models recently have achieve significant improvement in image generation capability, yet a large gap remains in instruction following and detail preservation compared to systems that tightly couple comprehension with generation such as GPT-4o. Motivated by recent advances in interleaving reasoning, we explore whether such reasoning can further improve Text-to-Image (T2I) generation. We introduce Interleaving Reasoning Generation (IRG), a framework that alternates between text-based thinking and image synthesis: the model first produces a text-based thinking to guide an initial image, then reflects on the result to refine fine-grained details, visual quality, and aesthetics while preserving semantics. To train IRG effectively, we propose Interleaving Reasoning Generation Learning (IRGL), which targets two sub-goals: (1) strengthening the initial think-and-generate stage to establish core content and base quality, and (2) enabling high-quality textual reflection and faithful implementation of those refinements in a subsequent image. We curate IRGL-300K, a dataset organized into six decomposed learning modes that jointly cover learning text-based thinking, and full thinking-image trajectories. Starting from a unified foundation model that natively emits interleaved text-image outputs, our two-stage training first builds robust thinking and reflection, then efficiently tunes the IRG pipeline in the full thinking-image trajectory data. Extensive experiments show SoTA performance, yielding absolute gains of 5-10 points on GenEval, WISE, TIIF, GenAI-Bench, and OneIG-EN, alongside substantial improvements in visual quality and fine-grained fidelity. The code, model weights and datasets will be released in: https://github.com/Osilly/Interleaving-Reasoning-Generation .",
+    "paper_abstract_zh": "统一的多模态理解与生成模型近期在图像生成能力上取得显著进步，但在指令遵循与细节保持方面，与 GPT-4o 等将理解与生成紧密耦合的系统相比仍有较大差距。受近期“交错推理”进展的启发，我们探索该推理范式能否进一步提升文本到图像（T2I）生成。我们提出 Interleaving Reasoning Generation（IRG）框架，在文本思考与图像合成之间交替进行：模型先输出一段文本思考以指导初始图像生成，再对结果进行反思，在保持语义的前提下细化细节、视觉质量与美学。为有效训练 IRG，我们设计 Interleaving Reasoning Generation Learning（IRGL），聚焦两个子目标：（1）强化“先思后生成”的初始阶段，确立核心内容与基础质量；（2）实现高质量的文本反思，并忠实于这些反思在后续图像中落地。我们构建 IRGL-300K 数据集，按六种分解学习模式组织，共同覆盖文本思考学习与完整的思考-图像轨迹。从一个原生输出交错文本-图像的统一基础模型出发，我们的两阶段训练先建立鲁棒的思考与反思能力，再在完整轨迹数据上高效微调 IRG 流水线。大量实验表明，该方法在 GenEval、WISE、TIIF、GenAI-Bench 与 OneIG-EN 上取得绝对 5–10 分的 SOTA 提升，同时在视觉质量与细粒度保真度上大幅改进。代码、模型权重与数据集将发布于：https://github.com/Osilly/Interleaving-Reasoning-Generation。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Wenxuan Huang, Shuang Chen, Zheyong Xie, Shaosheng Cao, Shixiang Tang, Yufan Shen, Qingyu Yin, Wenbo Hu, Xiaoman Wang, Yuntian Tang, Junbo Qiao, Yue Guo, Yao Hu, Zhenfei Yin, Philip Torr, Yu Cheng, Wanli Ouyang, Shaohui Lin",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Directly Aligning the Full Diffusion Trajectory with Fine-Grained Human Preference",
+    "paper_title_zh": "直接对齐完整扩散轨迹与细粒度人类偏好",
+    "paper_id": "2509.06942v2",
+    "paper_abstract": "Recent studies have demonstrated the effectiveness of directly aligning diffusion models with human preferences using differentiable reward. However, they exhibit two primary challenges: (1) they rely on multistep denoising with gradient computation for reward scoring, which is computationally expensive, thus restricting optimization to only a few diffusion steps; (2) they often need continuous offline adaptation of reward models in order to achieve desired aesthetic quality, such as photorealism or precise lighting effects. To address the limitation of multistep denoising, we propose Direct-Align, a method that predefines a noise prior to effectively recover original images from any time steps via interpolation, leveraging the equation that diffusion states are interpolations between noise and target images, which effectively avoids over-optimization in late timesteps. Furthermore, we introduce Semantic Relative Preference Optimization (SRPO), in which rewards are formulated as text-conditioned signals. This approach enables online adjustment of rewards in response to positive and negative prompt augmentation, thereby reducing the reliance on offline reward fine-tuning. By fine-tuning the FLUX model with optimized denoising and online reward adjustment, we improve its human-evaluated realism and aesthetic quality by over 3x.",
+    "paper_abstract_zh": "近期研究表明，利用可微奖励直接对齐扩散模型与人类偏好效果显著，但仍面临两大挑战：（1）依赖多步去噪与梯度计算进行奖励打分，计算开销大，只能优化少数扩散步；（2）为获得真实感或精确光影等美学质量，需持续离线微调奖励模型。针对多步去噪的局限，我们提出 Direct-Align：通过预设噪声先验，利用“扩散状态是噪声与目标图像的插值”这一性质，可从任意时刻插值恢复原图，避免后期时间步的过优化。进一步，我们提出语义相对偏好优化（SRPO），将奖励建模为文本条件信号，可在线根据正负提示增广动态调整奖励，减少对离线奖励微调的依赖。通过在 FLUX 模型上联合优化去噪与在线奖励调整，人类评估的真实感与美学质量提升超过 3 倍。",
+    "primary_category": "cs.AI",
+    "update_time": "2025-09-09",
+    "paper_authors": "Xiangwei Shen, Zhimin Li, Zhantao Yang, Shiyi Zhang, Yingfang Zhang, Donghao Li, Chunyu Wang, Qinglin Lu, Yansong Tang",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "BranchGRPO: Stable and Efficient GRPO with Structured Branching in Diffusion Models",
+    "paper_title_zh": "BranchGRPO：在扩散模型中通过结构化分支实现稳定高效的GRPO",
+    "paper_id": "2509.06040v2",
+    "paper_abstract": "Recent advancements in aligning image and video generative models via GRPO have achieved remarkable gains in enhancing human preference alignment. However, these methods still face high computational costs from on-policy rollouts and excessive SDE sampling steps, as well as training instability due to sparse rewards. In this paper, we propose BranchGRPO, a novel method that introduces a branch sampling policy updating the SDE sampling process. By sharing computation across common prefixes and pruning low-reward paths and redundant depths, BranchGRPO substantially lowers the per-update compute cost while maintaining or improving exploration diversity. This work makes three main contributions: (1) a branch sampling scheme that reduces rollout and training cost; (2) a tree-based advantage estimator incorporating dense process-level rewards; and (3) pruning strategies exploiting path and depth redundancy to accelerate convergence and boost performance. Experiments on image and video preference alignment show that BranchGRPO improves alignment scores by 16% over strong baselines, while cutting training time by 50%.",
+    "paper_abstract_zh": "近期，通过GRPO对齐图像与视频生成模型的工作在提升人类偏好对齐方面取得了显著进展。然而，这些方法仍面临高昂计算成本：需进行大量在线策略 rollout 与 SDE 采样步，且因稀疏奖励导致训练不稳定。本文提出 BranchGRPO，一种引入分支采样策略并更新 SDE 采样过程的新方法。通过在公共前缀上共享计算、剪除低奖励路径与冗余深度，BranchGRPO 在保持甚至提升探索多样性的同时，大幅降低了每次更新的计算开销。本文主要贡献有三：（1）提出分支采样方案，减少 rollout 与训练成本；（2）设计基于树结构的优势估计器，融合稠密的过程级奖励；（3）利用路径与深度冗余的剪枝策略加速收敛并提升性能。在图像与视频偏好对齐实验上，BranchGRPO 相比强基线提升对齐分数 16%，并将训练时间缩短 50%。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Yuming Li, Yikai Wang, Yuying Zhu, Zhongyu Zhao, Ming Lu, Qi She, Shanghang Zhang",
+    "topic": [
+      "Image Generation",
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Missing Fine Details in Images: Last Seen in High Frequencies",
+    "paper_title_zh": "图像缺失的精细细节：最后出现在高频中",
+    "paper_id": "2509.05441v2",
+    "paper_abstract": "Latent generative models have shown remarkable progress in high-fidelity image synthesis, typically using a two-stage training process that involves compressing images into latent embeddings via learned tokenizers in the first stage. The quality of generation strongly depends on how expressive and well-optimized these latent embeddings are. While various methods have been proposed to learn effective latent representations, generated images often lack realism, particularly in textured regions with sharp transitions, due to loss of fine details governed by high frequencies. We conduct a detailed frequency decomposition of existing state-of-the-art (SOTA) latent tokenizers and show that conventional objectives inherently prioritize low-frequency reconstruction, often at the expense of high-frequency fidelity. Our analysis reveals these latent tokenizers exhibit a bias toward low-frequency information during optimization, leading to over-smoothed outputs and visual artifacts that diminish perceptual quality. To address this, we propose a wavelet-based, frequency-aware variational autoencoder (FA-VAE) framework that explicitly decouples the optimization of low- and high-frequency components. This decoupling enables improved reconstruction of fine textures while preserving global structure. Moreover, we integrate our frequency-preserving latent embeddings into a SOTA latent diffusion model, resulting in sharper and more realistic image generation. Our approach bridges the fidelity gap in current latent tokenizers and emphasizes the importance of frequency-aware optimization for realistic image synthesis, with broader implications for applications in content creation, neural rendering, and medical imaging.",
+    "paper_abstract_zh": "潜在生成模型在高保真图像合成方面取得显著进展，通常采用两阶段训练：第一阶段通过可学习的 tokenizer 将图像压缩为潜在嵌入。生成质量高度依赖这些潜在嵌入的表达力与优化程度。尽管已有多种方法学习有效的潜在表示，生成图像仍常缺乏真实感，尤其在具有锐利过渡的纹理区域，原因是高频控制的精细细节丢失。本文对现有最先进（SOTA）潜在 tokenizer 进行详细频率分解，发现传统目标函数天生优先重建低频，常以牺牲高频保真为代价。分析表明，这些潜在 tokenizer 在优化过程中对低频信息存在偏差，导致输出过度平滑并出现视觉伪影，降低感知质量。为此，我们提出基于小波、频率感知的变分自编码器（FA-VAE）框架，显式解耦低频与高频分量的优化。该解耦在保持全局结构的同时，显著提升了精细纹理的重建能力。此外，我们将保留频率的潜在嵌入集成至 SOTA 潜在扩散模型，实现更清晰、更真实的图像生成。本研究弥合了当前潜在 tokenizer 的保真差距，强调了频率感知优化对真实图像合成的重要性，并对内容创作、神经渲染与医学成像等应用具有广泛启示。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Tejaswini Medi, Hsien-Yi Wang, Arianna Rampini, Margret Keuper",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "PromptEnhancer: A Simple Approach to Enhance Text-to-Image Models via Chain-of-Thought Prompt Rewriting",
+    "paper_title_zh": "PromptEnhancer：通过思维链提示重写增强文本到图像模型的简单方法",
+    "paper_id": "2509.04545v2",
+    "paper_abstract": "Recent advancements in text-to-image (T2I) diffusion models have demonstrated remarkable capabilities in generating high-fidelity images. However, these models often struggle to faithfully render complex user prompts, particularly in aspects like attribute binding, negation, and compositional relationships. This leads to a significant mismatch between user intent and the generated output. To address this challenge, we introduce PromptEnhancer, a novel and universal prompt rewriting framework that enhances any pretrained T2I model without requiring modifications to its weights. Unlike prior methods that rely on model-specific fine-tuning or implicit reward signals like image-reward scores, our framework decouples the rewriter from the generator. We achieve this by training a Chain-of-Thought (CoT) rewriter through reinforcement learning, guided by a dedicated reward model we term the AlignEvaluator. The AlignEvaluator is trained to provide explicit and fine-grained feedback based on a systematic taxonomy of 24 key points, which are derived from a comprehensive analysis of common T2I failure modes. By optimizing the CoT rewriter to maximize the reward from our AlignEvaluator, our framework learns to generate prompts that are more precisely interpreted by T2I models. Extensive experiments on the HunyuanImage 2.1 model demonstrate that PromptEnhancer significantly improves image-text alignment across a wide range of semantic and compositional challenges. Furthermore, we introduce a new, high-quality human preference benchmark to facilitate future research in this direction.",
+    "paper_abstract_zh": "近年来，文本到图像（T2I）扩散模型在生成高保真图像方面表现出卓越能力。然而，这些模型在忠实呈现复杂用户提示方面仍面临挑战，特别是在属性绑定、否定和组合关系等方面，导致用户意图与生成结果之间存在显著差距。为此，我们提出PromptEnhancer——一种新颖且通用的提示重写框架，可在无需修改预训练T2I模型权重的情况下增强其性能。与以往依赖模型特定微调或图像奖励分数等隐式奖励信号的方法不同，本框架将重写器与生成器解耦。我们通过强化学习训练一个思维链（CoT）重写器，并以我们提出的AlignEvaluator专用奖励模型为指导。AlignEvaluator基于对常见T2I失败模式的系统分析，提炼出24个关键点进行显式且细粒度的反馈训练。通过优化CoT重写器以最大化AlignEvaluator的奖励，框架学会生成更易于T2I模型精确解读的提示。在HunyuanImage 2.1模型上的大量实验表明，PromptEnhancer在广泛的语义和组合挑战中显著提升了图文对齐效果。此外，我们引入了一个全新的高质量人类偏好基准，以促进该领域未来的研究。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Linqing Wang, Ximing Xing, Yiji Cheng, Zhiyuan Zhao, Jiale Tao, Qixun Wang, Ruihuang Li, Xin Li, Mingrui Wu, Xinchi Deng, Chunyu Wang, Qinglin Lu",
+    "topic": [
+      "Image Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Coefficients-Preserving Sampling for Reinforcement Learning with Flow Matching",
+    "paper_title_zh": "面向强化学习的流匹配保系数采样方法",
+    "paper_id": "2509.05952v2",
+    "paper_abstract": "Reinforcement Learning (RL) has recently emerged as a powerful technique for improving image and video generation in Diffusion and Flow Matching models, specifically for enhancing output quality and alignment with prompts. A critical step for applying online RL methods on Flow Matching is the introduction of stochasticity into the deterministic framework, commonly realized by Stochastic Differential Equation (SDE). Our investigation reveals a significant drawback to this approach: SDE-based sampling introduces pronounced noise artifacts in the generated images, which we found to be detrimental to the reward learning process. A rigorous theoretical analysis traces the origin of this noise to an excess of stochasticity injected during inference. To address this, we draw inspiration from Denoising Diffusion Implicit Models (DDIM) to reformulate the sampling process. Our proposed method, Coefficients-Preserving Sampling (CPS), eliminates these noise artifacts. This leads to more accurate reward modeling, ultimately enabling faster and more stable convergence for reinforcement learning-based optimizers like Flow-GRPO and Dance-GRPO. Code will be released at https://github.com/IamCreateAI/FlowCPS",
+    "paper_abstract_zh": "强化学习（RL）近来已成为提升扩散模型和流匹配模型图像与视频生成质量、增强提示对齐度的强大技术。在流匹配模型上应用在线RL方法的关键一步，是向确定性框架引入随机性，通常通过随机微分方程（SDE）实现。我们的研究发现，该做法存在显著缺陷：基于SDE的采样会在生成图像中引入明显噪声伪影，严重阻碍奖励学习过程。严格的理论分析表明，这些噪声源于推理阶段注入的过量随机性。受去噪扩散隐式模型（DDIM）启发，我们重新设计采样流程，提出保系数采样（CPS）方法，彻底消除噪声伪影。这使得奖励建模更加准确，最终让基于强化学习的优化器（如Flow-GRPO和Dance-GRPO）实现更快、更稳定的收敛。代码将发布于：https://github.com/IamCreateAI/FlowCPS",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Feng Wang, Zihao Yu",
+    "topic": [
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Attention of a Kiss: Exploring Attention Maps in Video Diffusion for XAIxArts",
+    "paper_title_zh": "吻之注意力：探索视频扩散模型中的注意力图以服务于XAIxArts",
+    "paper_id": "2509.05323v2",
+    "paper_abstract": "This paper presents an artistic and technical investigation into the attention mechanisms of video diffusion transformers. Inspired by early video artists who manipulated analog video signals to create new visual aesthetics, this study proposes a method for extracting and visualizing cross-attention maps in generative video models. Built on the open-source Wan model, our tool provides an interpretable window into the temporal and spatial behavior of attention in text-to-video generation. Through exploratory probes and an artistic case study, we examine the potential of attention maps as both analytical tools and raw artistic material. This work contributes to the growing field of Explainable AI for the Arts (XAIxArts), inviting artists to reclaim the inner workings of AI as a creative medium.",
+    "paper_abstract_zh": "本文从艺术与技术双重视角，对视频扩散Transformer中的注意力机制展开研究。受早期录像艺术家通过操控模拟视频信号创造新视觉美学的启发，我们提出一种提取并可视化生成式视频模型交叉注意力图的方法。基于开源Wan模型，该工具为文本到视频生成中的时空注意力行为提供了可解释的窗口。通过探索性探针与艺术案例研究，我们考察注意力图作为分析工具与原始艺术素材的潜力。本研究助力“面向艺术的可解释AI”（XAIxArts）这一新兴领域，邀请艺术家将AI内部机制重新 reclaim 为创作媒介。",
+    "primary_category": "cs.AI",
+    "update_time": "2025-09-09",
+    "paper_authors": "Adam Cole, Mick Grierson",
+    "topic": [
+      "Video Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "CAViAR: Critic-Augmented Video Agentic Reasoning",
+    "paper_title_zh": "CAViAR：引入评论家的视频智能体推理",
+    "paper_id": "2509.07680v1",
+    "paper_abstract": "Video understanding has seen significant progress in recent years, with models' performance on perception from short clips continuing to rise. Yet, multiple recent benchmarks, such as LVBench, Neptune, and ActivityNet-RTL, show performance wanes for tasks requiring complex reasoning on videos as queries grow more complex and videos grow longer. In this work, we ask: can existing perception capabilities be leveraged to successfully perform more complex video reasoning? In particular, we develop a large language model agent given access to video modules as subagents or tools. Rather than following a fixed procedure to solve queries as in previous work such as Visual Programming, ViperGPT, and MoReVQA, the agent uses the results of each call to a module to determine subsequent steps. Inspired by work in the textual reasoning domain, we introduce a critic to distinguish between instances of successful and unsuccessful sequences from the agent. We show that the combination of our agent and critic achieve strong performance on the previously-mentioned datasets.",
+    "paper_abstract_zh": "近年来，视频理解取得显著进展，模型在短视频感知任务上的性能持续攀升。然而，LVBench、Neptune与ActivityNet-RTL等多项最新基准表明，当查询变得更复杂、视频变得更长时，需要复杂推理的任务性能显著下降。本文探讨：能否利用现有感知能力来完成更复杂的视频推理？为此，我们构建了一个可调用视频模块作为子智能体或工具的大语言模型智能体。与Visual Programming、ViperGPT、MoReVQA等先前工作采用固定流程不同，该智能体根据每次模块调用的结果动态决定后续步骤。受文本推理领域研究启发，我们引入一名“评论家”来区分智能体成功与失败的序列实例。实验表明，我们的智能体与评论家组合在上述数据集上取得了强劲表现。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Sachit Menon, Ahmet Iscen, Arsha Nagrani, Tobias Weyand, Carl Vondrick, Cordelia Schmid",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Bias in Gender Bias Benchmarks: How Spurious Features Distort Evaluation",
+    "paper_title_zh": "性别偏见基准中的偏差：虚假特征如何扭曲评估",
+    "paper_id": "2509.07596v1",
+    "paper_abstract": "Gender bias in vision-language foundation models (VLMs) raises concerns about their safe deployment and is typically evaluated using benchmarks with gender annotations on real-world images. However, as these benchmarks often contain spurious correlations between gender and non-gender features, such as objects and backgrounds, we identify a critical oversight in gender bias evaluation: Do spurious features distort gender bias evaluation? To address this question, we systematically perturb non-gender features across four widely used benchmarks (COCO-gender, FACET, MIAP, and PHASE) and various VLMs to quantify their impact on bias evaluation. Our findings reveal that even minimal perturbations, such as masking just 10% of objects or weakly blurring backgrounds, can dramatically alter bias scores, shifting metrics by up to 175% in generative VLMs and 43% in CLIP variants. This suggests that current bias evaluations often reflect model responses to spurious features rather than gender bias, undermining their reliability. Since creating spurious feature-free benchmarks is fundamentally challenging, we recommend reporting bias metrics alongside feature-sensitivity measurements to enable a more reliable bias assessment.",
+    "paper_abstract_zh": "视觉-语言基础模型（VLMs）中的性别偏见引发了对其安全部署的担忧，通常通过在真实世界图像上标注性别的基准进行评估。然而，这些基准往往存在性别与非性别特征（如物体和背景）之间的虚假关联。我们指出性别偏见评估中的一个关键疏漏：虚假特征是否会扭曲性别偏见评估？为回答该问题，我们系统性地扰动四个广泛使用的基准（COCO-gender、FACET、MIAP 和 PHASE）及各种 VLM 中的非性别特征，量化其对偏见评估的影响。结果表明，即使是最小扰动（如仅遮挡 10% 的物体或轻微模糊背景）也能剧烈改变偏见得分，使生成式 VLM 的指标波动高达 175%，CLIP 变体达 43%。这意味着当前偏见评估往往反映的是模型对虚假特征的反应，而非真实的性别偏见，从而削弱了其可靠性。由于构建无虚假特征基准本质上极具挑战，我们建议将偏见指标与特征敏感性测量一同报告，以实现更可靠的偏见评估。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Yusuke Hirota, Ryo Hachiuma, Boyi Li, Ximing Lu, Michael Ross Boone, Boris Ivanovic, Yejin Choi, Marco Pavone, Yu-Chiang Frank Wang, Noa Garcia, Yuta Nakashima, Chao-Han Huck Yang",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+    "paper_title_zh": "看得更多，说得更多：轻量级语言专家即动态视频令牌压缩器",
+    "paper_id": "2509.00969v2",
+    "paper_abstract": "Recent advancements in large video-language models have revolutionized video understanding tasks. However, their efficiency is significantly constrained by processing high volumes of visual tokens. Existing token compression strategies apply a fixed compression ratio, ignoring the variability in semantic density among different video clips. Consequently, this lead to inadequate representation of information-rich clips due to insufficient tokens and unnecessary computation on static or content-poor ones. To address this, we propose LangDC, a Language-aware Dynamic Token Compressor. LangDC leverages a lightweight language model to describe video clips, converting them into soft caption tokens as visual representations. Trained with our proposed semantic density-aware supervision, LangDC aims to 1) cover key visual cues necessary for downstream task reasoning and 2) dynamically adjust compression ratios based on scene richness, reflected by descriptions length. Our design mimics how humans dynamically express what they see: complex scenes (seeing more) elicit more detailed language to convey nuances (saying more), whereas simpler scenes are described with fewer words. Experimental results show that our method reduces FLOPs by 49% compared to VideoGPT+ while maintaining competitive performance. Furthermore, qualitative results demonstrate our approach adaptively adjusts the token compression ratio based on video segment richness.",
+    "paper_abstract_zh": "近期大型视频-语言模型的进展革新了视频理解任务，但其效率受限于需处理海量视觉令牌。现有令牌压缩策略采用固定压缩率，忽视不同视频片段语义密度的差异，导致信息丰富片段因令牌不足而表征不充分，静态或内容贫乏片段却浪费计算。为此，我们提出 LangDC——一种语言感知的动态令牌压缩器。LangDC 利用轻量级语言模型描述视频片段，将其转换为软标题令牌作为视觉表征。通过我们提出的语义密度感知监督训练，LangDC 旨在 1）覆盖下游任务推理所需的关键视觉线索；2）根据场景丰富度（以描述长度衡量）动态调整压缩率。该设计模仿人类动态表达所见：复杂场景（看得更多）触发更详尽的语言以传达细节（说得更多），而简单场景则用更少词汇描述。实验表明，与 VideoGPT+ 相比，我们的方法在保持竞争力的同时减少 49% FLOPs；定性结果亦显示，本方法能根据视频片段丰富度自适应调整令牌压缩率。",
+    "primary_category": "cs.CV",
+    "update_time": "2025-09-09",
+    "paper_authors": "Xiangchen Wang, Jinrui Zhang, Teng Wang, Haigang Zhang, Feng Zheng",
+    "topic": [
+      "Multimodal Generation"
+    ],
+    "category": [
+      "Image"
+    ]
+  },
+  {
+    "paper_title": "Neural Proxies for Sound Synthesizers: Learning Perceptually Informed Preset Representations",
+    "paper_title_zh": "声音合成器的神经代理：学习感知驱动的预设表征",
+    "paper_id": "2509.07635v1",
+    "paper_abstract": "Deep learning appears as an appealing solution for Automatic Synthesizer Programming (ASP), which aims to assist musicians and sound designers in programming sound synthesizers. However, integrating software synthesizers into training pipelines is challenging due to their potential non-differentiability. This work tackles this challenge by introducing a method to approximate arbitrary synthesizers. Specifically, we train a neural network to map synthesizer presets onto an audio embedding space derived from a pretrained model. This facilitates the definition of a neural proxy that produces compact yet effective representations, thereby enabling the integration of audio embedding loss into neural-based ASP systems for black-box synthesizers. We evaluate the representations derived by various pretrained audio models in the context of neural-based nASP and assess the effectiveness of several neural network architectures, including feedforward, recurrent, and transformer-based models, in defining neural proxies. We evaluate the proposed method using both synthetic and hand-crafted presets from three popular software synthesizers and assess its performance in a synthesizer sound matching downstream task. While the benefits of the learned representation are nuanced by resource requirements, encouraging results were obtained for all synthesizers, paving the way for future research into the application of synthesizer proxies for neural-based ASP systems.",
+    "paper_abstract_zh": "深度学习被视为自动合成器编程（ASP）的一种诱人方案，旨在帮助音乐家和声音设计师为声音合成器编程。然而，由于软件合成器可能存在不可微性，将其集成到训练流程中颇具挑战。本文通过引入一种近似任意合成器的方法来解决这一难题。具体而言，我们训练一个神经网络，将合成器预设映射到由预训练模型得到的音频嵌入空间。由此定义的“神经代理”能够生成紧凑而有效的表征，从而将音频嵌入损失集成到基于神经网络的ASP系统中，适用于黑盒合成器。我们在神经ASP框架下评估了多种预训练音频模型所导出的表征，并比较了前馈、循环和Transformer等多种神经网络架构在构建神经代理时的有效性。实验使用三款流行软件合成器的合成预设与手工预设，并在合成器音色匹配下游任务中评估性能。尽管学习表征的优势受资源需求影响而表现不一，所有合成器均取得了令人鼓舞的结果，为将合成器代理应用于神经ASP系统的未来研究铺平了道路。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Paolo Combes, Stefan Weinzierl, Klaus Obermayer",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Competitive Audio-Language Models with Data-Efficient Single-Stage Training on Public Data",
+    "paper_title_zh": "以数据高效的单阶段公开数据训练打造竞争性音频-语言模型",
+    "paper_id": "2509.07526v1",
+    "paper_abstract": "Large language models (LLMs) have transformed NLP, yet their integration with audio remains underexplored -- despite audio's centrality to human communication. We introduce Falcon3-Audio, a family of Audio-Language Models (ALMs) built on instruction-tuned LLMs and Whisper encoders. Using a remarkably small amount of public audio data -- less than 30K hours (5K unique) -- Falcon3-Audio-7B matches the best reported performance among open-weight models on the MMAU benchmark, with a score of 64.14, matching R1-AQA, while distinguishing itself through superior data and parameter efficiency, single-stage training, and transparency. Notably, our smallest 1B model remains competitive with larger open models ranging from 2B to 13B parameters. Through extensive ablations, we find that common complexities -- such as curriculum learning, multiple audio encoders, and intricate cross-attention connectors -- are not required for strong performance, even compared to models trained on over 500K hours of data.",
+    "paper_abstract_zh": "大语言模型（LLM）已革新自然语言处理，但其与音频的融合仍待深入探索——尽管音频是人类交流的核心。我们提出Falcon3-Audio，一系列基于指令微调LLM与Whisper编码器的音频-语言模型（ALM）。仅使用不到3万小时公开音频数据（其中5千小时为唯一音频），Falcon3-Audio-7B在MMAU基准上取得64.14分，与最佳开源权重模型R1-AQA持平，同时在数据与参数效率、单阶段训练及透明度方面优势明显。值得注意的是，我们最小的1B模型仍能与2B至13B参数范围的更大开源模型竞争。大量消融实验表明，课程学习、多音频编码器及复杂交叉注意力连接器等常见复杂设计并非获得强劲性能所必需，即便与使用逾50万小时数据训练的模型相比亦然。",
+    "primary_category": "cs.SD",
+    "update_time": "2025-09-09",
+    "paper_authors": "Gokul Karthik Kumar, Rishabh Saraf, Ludovick Lepauloux, Abdul Muneer, Billel Mokeddem, Hakim Hacid",
+    "topic": [],
+    "category": [
+      "Other"
+    ]
+  }
+]
