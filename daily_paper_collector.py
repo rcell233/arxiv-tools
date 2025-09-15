@@ -174,12 +174,39 @@ class DailyPaperCollector:
         return ", ".join(authors)
     
     def parse_papers_from_html(self, html_content: str, global_date: str) -> List[Dict]:
-        """从HTML中解析论文信息"""
+        """从HTML中解析论文信息，只解析New submissions部分"""
         soup = BeautifulSoup(html_content, 'html.parser')
         papers = []
         
-        # 查找所有论文条目
-        paper_items = soup.find_all('dt')
+        # 查找 "New submissions" 部分
+        new_submissions_section = None
+        
+        # 查找包含 "New submissions" 文本的 h3 标签
+        h3_tags = soup.find_all('h3')
+        for h3 in h3_tags:
+            if 'New submissions' in h3.get_text():
+                new_submissions_section = h3
+                break
+        
+        if not new_submissions_section:
+            logging.warning("Could not find 'New submissions' section")
+            return papers
+        
+        # 找到 New submissions 部分后的所有 dt 元素
+        # 查找该 h3 标签后的所有 dt 元素，直到遇到下一个 h3 标签
+        paper_items = []
+        current_element = new_submissions_section.next_sibling
+        
+        while current_element:
+            if current_element.name == 'h3':
+                # 遇到下一个 h3 标签，停止查找
+                break
+            elif current_element.name == 'dt':
+                # 找到 dt 元素，添加到列表中
+                paper_items.append(current_element)
+            current_element = current_element.next_sibling
+        
+        logging.info(f"Found {len(paper_items)} papers in 'New submissions' section")
         
         for dt in paper_items:
             try:

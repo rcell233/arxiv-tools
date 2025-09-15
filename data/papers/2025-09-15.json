@@ -1,180 +1,208 @@
 [
   {
     "paper_title": "Spectral Bottleneck in Deep Neural Networks: Noise is All You Need",
-    "paper_title_zh": "",
+    "paper_title_zh": "深度神经网络中的频谱瓶颈：噪声即所需",
     "paper_id": "2509.09719",
     "paper_abstract": "Deep neural networks are known to exhibit a spectral learning bias, wherein low-frequency components are learned early in training, while high-frequency modes emerge more gradually in later epochs. However, when the target signal lacks low-frequency components and is dominated by broadband high frequencies, training suffers from a 'spectral bottleneck', and the model fails to reconstruct the entire signal, including the frequency components that lie within the network's representational capacity. We examine such a scenario in the context of implicit neural representations (INRs) with sinusoidal representation networks (SIRENs), focusing on the challenge of fitting high-frequency-dominant signals that are susceptible to spectral bottleneck. To effectively fit any target signal irrespective of it's frequency content, we propose a generalized target-aware 'weight perturbation scheme' (WINNER - weight initialization with noise for neural representations) for network initialization. The scheme perturbs uniformly initialized weights with Gaussian noise, where the noise scales are adaptively determined by the spectral centroid of the target signal. We show that the noise scales can provide control over the spectra of network activations and the eigenbasis of the empirical neural tangent kernel. This method not only addresses the spectral bottleneck but also yields faster convergence and with improved representation accuracy, outperforming state-of-the-art approaches in audio fitting and achieving notable gains in image fitting and denoising tasks. Beyond signal reconstruction, our approach opens new directions for adaptive weight initialization strategies in computer vision and scientific machine learning.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "深度神经网络已知存在频谱学习偏差，即低频分量在训练早期被学习，而高频模式在后期逐渐显现。然而，当目标信号缺乏低频分量且以宽带高频为主时，训练会遭遇'频谱瓶颈'，模型无法重建整个信号，包括那些处于网络表示能力范围内的频率分量。我们在正弦表示网络（SIRENs）的隐式神经表示（INRs）背景下研究了这种情况，重点关注对频谱瓶颈敏感的高频主导信号的拟合挑战。为有效拟合任何目标信号（无论其频率内容如何），我们提出了一种广义的目标感知'权重扰动方案'（WINNER - 基于噪声的神经表示权重初始化），用于网络初始化。该方案用高斯噪声扰动均匀初始化的权重，其中噪声尺度由目标信号的频谱质心自适应确定。我们表明，噪声尺度可以控制网络激活的频谱和经验神经切线核的特征基。该方法不仅解决了频谱瓶颈问题，还实现了更快的收敛和更高的表示精度，在音频拟合任务中超越了现有最优方法，并在图像拟合和去噪任务中取得了显著提升。除了信号重建，我们的方法为计算机视觉和科学机器学习中的自适应权重初始化策略开辟了新方向。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Hemanth Chandravamsi, Dhanush V. Shenoy, Itay Zinn, Shimon Pisnoy, Steven H. Frankel",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Codec"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "The MSP-Podcast Corpus",
-    "paper_title_zh": "",
+    "paper_title_zh": "MSP播客语料库",
     "paper_id": "2509.09791",
     "paper_abstract": "The availability of large, high-quality emotional speech databases is essential for advancing speech emotion recognition (SER) in real-world scenarios. However, many existing databases face limitations in size, emotional balance, and speaker diversity. This study describes the MSP-Podcast corpus, summarizing our ten-year effort. The corpus consists of over 400 hours of diverse audio samples from various audio-sharing websites, all of which have Common Licenses that permit the distribution of the corpus. We annotate the corpus with rich emotional labels, including primary (single dominant emotion) and secondary (multiple emotions perceived in the audio) emotional categories, as well as emotional attributes for valence, arousal, and dominance. At least five raters annotate these emotional labels. The corpus also has speaker identification for most samples, and human transcriptions of the lexical content of the sentences for the entire corpus. The data collection protocol includes a machine learning-driven pipeline for selecting emotionally diverse recordings, ensuring a balanced and varied representation of emotions across speakers and environments. The resulting database provides a comprehensive, high-quality resource, better suited for advancing SER systems in practical, real-world scenarios.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "大规模、高质量情感语音数据库的可用性对于推动现实场景中的语音情感识别（SER）至关重要。然而，许多现有数据库在规模、情感平衡和说话人多样性方面存在局限。本研究描述了MSP播客语料库，总结了我们十年的努力成果。该语料库包含来自多个音频共享网站的超过400小时多样化音频样本，所有样本均采用允许语料库分发的通用许可协议。我们为语料库标注了丰富的情感标签，包括主要（单一主导情感）和次要（音频中感知到的多种情感）情感类别，以及效价、唤醒度和支配度的情感属性。至少五名评分者对这些情感标签进行了标注。语料库还为大多数样本提供了说话人识别信息，并为整个语料库的句子词汇内容提供了人工转录文本。数据收集协议包括一个机器学习驱动的流程，用于选择情感多样化的录音，确保在不同说话人和环境中实现平衡且多样化的情感表征。最终形成的数据库提供了一个全面、高质量的资源，更适合推动实际现实场景中的SER系统发展。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Carlos Busso, Reza Lotfian, Kusha Sridhar, Ali N. Salman, Wei-Cheng Lin, Lucas Goncalves, Srinivas Parthasarathy, Abinay Reddy Naini, Seong-Gyun Leem, Luz Martinez-Lucas, Huang-Cheng Chou, Pravin Mote",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Acoustic Scene Classification Using CNN-GRU Model Without Knowledge Distillation",
-    "paper_title_zh": "",
+    "paper_title_zh": "不使用知识蒸馏的CNN-GRU模型在声学场景分类中的应用",
     "paper_id": "2509.09931",
     "paper_abstract": "In this technical report, we present the SNTL-NTU team's Task 1 submission for the Low-Complexity Acoustic Scenes and Events (DCASE) 2025 challenge. This submission departs from the typical application of knowledge distillation from a teacher to a student model, aiming to achieve high performance with limited complexity. The proposed model is based on a CNN-GRU model and is trained solely using the TAU Urban Acoustic Scene 2022 Mobile development dataset, without utilizing any external datasets, except for MicIRP, which is used for device impulse response (DIR) augmentation. The proposed model has a memory usage of 114.2KB and requires 10.9M muliply-and-accumulate (MAC) operations. Using the development dataset, the proposed model achieved an accuracy of 60.25%.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本技术报告介绍了SNTL-NTU团队为2025年低复杂度声学场景与事件（DCASE）挑战赛任务1提交的方案。该方案不同于典型的从教师模型到学生模型的知识蒸馏应用，旨在以有限的复杂度实现高性能。所提出的模型基于CNN-GRU结构，仅使用TAU Urban Acoustic Scene 2022 Mobile开发数据集进行训练，未使用任何外部数据集（除MicIRP用于设备脉冲响应（DIR）增强外）。该模型内存使用量为114.2KB，需要10.9M乘加运算（MAC）。在开发数据集上，该模型达到了60.25%的准确率。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Ee-Leng Tan, Jun Wei Yeow, Santi Peksi, Haowen Li, Ziyi Yang, Woon-Seng Gan",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "Effective Modeling of Critical Contextual Information for TDNN-based Speaker Verification",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于TDNN的说话人验证中关键上下文信息的有效建模",
     "paper_id": "2509.09932",
     "paper_abstract": "Today, Time Delay Neural Network (TDNN) has become the mainstream architecture for speaker verification task, in which the ECAPA-TDNN is one of the state-of-the-art models. The current works that focus on improving TDNN primarily address the limitations of TDNN in modeling global information and bridge the gap between TDNN and 2-Dimensional convolutions. However, the hierarchical convolutional structure in the SE-Res2Block proposed by ECAPA-TDNN cannot make full use of the contextual information, resulting in the weak ability of ECAPA-TDNN to model effective context dependencies. To this end, three improved architectures based on ECAPA-TDNN are proposed to fully and effectively extract multi-scale features with context dependence and then aggregate these features. The experimental results on VoxCeleb and CN-Celeb verify the effectiveness of the three proposed architectures. One of these architectures achieves nearly a 23% lower Equal Error Rate compared to that of ECAPA-TDNN on VoxCeleb1-O dataset, demonstrating the competitive performance achievable among the current TDNN architectures under the comparable parameter count.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "当前，时间延迟神经网络（TDNN）已成为说话人验证任务的主流架构，其中ECAPA-TDNN是最先进的模型之一。现有改进TDNN的研究主要着眼于解决其在建模全局信息方面的局限性，并缩小TDNN与二维卷积之间的差距。然而，ECAPA-TDNN提出的SE-Res2Block中的分层卷积结构未能充分利用上下文信息，导致ECAPA-TDNN建模有效上下文依赖的能力较弱。为此，本文提出了三种基于ECAPA-TDNN的改进架构，以充分有效地提取具有上下文依赖的多尺度特征并聚合这些特征。在VoxCeleb和CN-Celeb上的实验结果验证了所提三种架构的有效性。其中一种架构在VoxCeleb1-O数据集上实现了比ECAPA-TDNN低近23%的等错误率，证明了在参数量相当的情况下，当前TDNN架构可实现具有竞争力的性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Shilong Weng, Liu Yang, Ji Mao",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Whisper Has an Internal Word Aligner",
-    "paper_title_zh": "",
+    "paper_title_zh": "Whisper拥有内部词对齐器",
     "paper_id": "2509.09987",
     "paper_abstract": "There is an increasing interest in obtaining accurate word-level timestamps from strong automatic speech recognizers, in particular Whisper. Existing approaches either require additional training or are simply not competitive. The evaluation in prior work is also relatively loose, typically using a tolerance of more than 200 ms. In this work, we discover attention heads in Whisper that capture accurate word alignments and are distinctively different from those that do not. Moreover, we find that using characters produces finer and more accurate alignments than using wordpieces. Based on these findings, we propose an unsupervised approach to extracting word alignments by filtering attention heads while teacher forcing Whisper with characters. Our approach not only does not require training but also produces word alignments that are more accurate than prior work under a stricter tolerance between 20 ms and 100 ms.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "从强大的自动语音识别系统（特别是Whisper）中获取精确的词级时间戳的兴趣日益增长。现有方法要么需要额外训练，要么竞争力不足。先前工作的评估也相对宽松，通常使用超过200毫秒的容差。在本研究中，我们发现Whisper中的某些注意力头能够捕获精确的词对齐，并且与那些不能捕获的注意力头有明显区别。此外，我们发现使用字符比使用词片段能产生更精细和更精确的对齐。基于这些发现，我们提出了一种无监督的方法，通过在使用字符进行教师强制解码时过滤注意力头来提取词对齐。我们的方法不仅不需要训练，而且在20毫秒到100毫秒的更严格容差下，产生的词对齐比先前工作更准确。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Computation and Language (cs.CL)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Sung-Lin Yeh, Yen Meng, Hao Tang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Unified Learnable 2D Convolutional Feature Extraction for ASR",
-    "paper_title_zh": "",
+    "paper_title_zh": "统一可学习的二维卷积特征提取方法在自动语音识别中的应用",
     "paper_id": "2509.10031",
     "paper_abstract": "Neural front-ends represent a promising approach to feature extraction for automatic speech recognition (ASR) systems as they enable to learn specifically tailored features for different tasks. Yet, many of the existing techniques remain heavily influenced by classical methods. While this inductive bias may ease the system design, our work aims to develop a more generic front-end for feature extraction. Furthermore, we seek to unify the front-end architecture contrasting with existing approaches that apply a composition of several layer topologies originating from different sources. The experiments systematically show how to reduce the influence of existing techniques to achieve a generic front-end. The resulting 2D convolutional front-end is parameter-efficient and suitable for a scenario with limited computational resources unlike large models pre-trained on unlabeled audio. The results demonstrate that this generic unified approach is not only feasible but also matches the performance of existing supervised learnable feature extractors.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "神经前端为自动语音识别（ASR）系统的特征提取提供了一种有前景的方法，因为它能够学习针对不同任务专门定制的特征。然而，现有技术中的许多方法仍然深受传统方法的影啊。虽然这种归纳偏置可能简化系统设计，但我们的工作旨在开发一种更通用的特征提取前端。此外，我们寻求统一前端架构，与现有采用源自不同来源的多层拓扑组合的方法形成对比。实验系统地展示了如何减少现有技术的影响以实现通用前端。所得到的二维卷积前端参数高效，适用于计算资源有限的场景，不同于在未标记音频上预训练的大型模型。结果表明，这种通用的统一方法不仅可行，而且与现有监督可学习特征提取器的性能相匹配。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Machine Learning (cs.LG)",
       "Audio and Speech Processing (eess.AS)",
-      "Computation and Language (cs.CL)"
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Peter Vieting, Benedikt Hilmes, Ralf Schlüter, Hermann Ney",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Towards Data Drift Monitoring for Speech Deepfake Detection in the context of MLOps",
-    "paper_title_zh": "",
+    "paper_title_zh": "面向MLOps场景下语音深度伪造检测的数据漂移监控研究",
     "paper_id": "2509.10086",
     "paper_abstract": "When being delivered in applications or services on the cloud, static speech deepfake detectors that are not updated will become vulnerable to newly created speech deepfake attacks. From the perspective of machine learning operations (MLOps), this paper tries to answer whether we can monitor new and unseen speech deepfake data that drifts away from a seen reference data set. We further ask, if drift is detected, whether we can fine-tune the detector using similarly drifted data, reduce the drift, and improve the detection performance. On a toy dataset and the large-scale MLAAD dataset, we show that the drift caused by new text-to-speech (TTS) attacks can be monitored using distances between the distributions of the new data and reference data. Furthermore, we demonstrate that fine-tuning the detector using data generated by the new TTS deepfakes can reduce the drift and the detection error rates.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "当静态语音深度伪造检测器部署在云端应用或服务中且不再更新时，将容易受到新型语音深度伪造攻击的威胁。本文从机器学习运维（MLOps）的角度出发，探讨了两个关键问题：能否监控到与已知参考数据集发生漂移的新未见语音深度伪造数据；若检测到漂移，能否使用类似漂移数据进行检测器微调，从而减少漂移并提升检测性能。通过在玩具数据集和大规模MLAAD数据集上的实验，我们证明使用新数据与参考数据分布之间的距离可以有效监控由新型文本转语音（TTS）攻击引起的漂移。此外，实验表明使用新型TTS深度伪造生成的数据进行微调可有效降低漂移程度和检测错误率。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Xin Wang, Wanying Ge, Junichi Yamagishi",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Error Analysis in a Modular Meeting Transcription System",
-    "paper_title_zh": "",
+    "paper_title_zh": "模块化会议转录系统中的错误分析",
     "paper_id": "2509.10143",
     "paper_abstract": "Meeting transcription is a field of high relevance and remarkable progress in recent years. Still, challenges remain that limit its performance. In this work, we extend a previously proposed framework for analyzing leakage in speech separation with proper sensitivity to temporal locality. We show that there is significant leakage to the cross channel in areas where only the primary speaker is active. At the same time, the results demonstrate that this does not affect the final performance much as these leaked parts are largely ignored by the voice activity detection (VAD). Furthermore, different segmentations are compared showing that advanced diarization approaches are able to reduce the gap to oracle segmentation by a third compared to a simple energy-based VAD. We additionally reveal what factors contribute to the remaining difference. The results represent state-of-the-art performance on LibriCSS among systems that train the recognition module on LibriSpeech data only.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "会议转录是一个近年来具有高度相关性和显著进展的领域。然而，仍然存在限制其性能的挑战。在这项工作中，我们扩展了先前提出的分析语音分离中泄漏问题的框架，并对其时间局部性进行了适当的敏感性分析。我们表明，在只有主要说话人活动的区域，存在显著的跨通道泄漏。同时，结果表明这并不会对最终性能产生太大影响，因为这些泄漏部分在很大程度上被语音活动检测（VAD）忽略了。此外，通过比较不同的分割方法，我们发现先进的说话人日志化方法能够将基于简单能量的VAD与理想分割之间的差距减少三分之一。我们还揭示了导致剩余差异的因素。这些结果代表了在仅使用LibriSpeech数据训练识别模块的系统中，LibriCSS上的最先进性能。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Machine Learning (cs.LG)",
       "Audio and Speech Processing (eess.AS)",
-      "Computation and Language (cs.CL)"
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Peter Vieting, Simon Berger, Thilo von Neumann, Christoph Boeddeker, Ralf Schlüter, Reinhold Haeb-Umbach",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Low-latency Assistive Audio Enhancement for Neurodivergent People",
-    "paper_title_zh": "",
+    "paper_title_zh": "面向神经多样性人群的低延迟辅助音频增强技术",
     "paper_id": "2509.10202",
     "paper_abstract": "Neurodivergent people frequently experience decreased sound tolerance, with estimates suggesting it affects 50-70% of this population. This heightened sensitivity can provoke reactions ranging from mild discomfort to severe distress, highlighting the critical need for assistive audio enhancement technologies In this paper, we propose several assistive audio enhancement algorithms designed to selectively filter distressing sounds. To address this, we curated a list of potential trigger sounds by analyzing neurodivergent-focused communities on platforms such as Reddit. Using this list, a dataset of trigger sound samples was compiled from publicly available sources, including FSD50K and ESC50. These samples were then used to train and evaluate various Digital Signal Processing (DSP) and Machine Learning (ML) audio enhancement algorithms. Among the approaches explored, Dynamic Range Compression (DRC) proved the most effective, successfully attenuating trigger sounds and reducing auditory distress for neurodivergent listeners.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "神经多样性人群普遍存在声音耐受度降低的问题，估计约50-70%的该人群受此影响。这种高度敏感可能引发从轻度不适到严重痛苦的反应，凸显了辅助音频增强技术的迫切需求。本文提出了多种辅助音频增强算法，旨在选择性过滤令人痛苦的声音。为此，我们通过分析Reddit等平台上以神经多样性群体为主的社区，整理出潜在触发声音清单。利用该清单，我们从FSD50K和ESC50等公开资源中汇编了触发声音样本数据集，并利用这些样本训练和评估了多种数字信号处理（DSP）与机器学习（ML）音频增强算法。在探索的方法中，动态范围压缩（DRC）被证明最为有效，能成功衰减触发声音并减轻神经多样性听众的听觉痛苦。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Alexander Popescu, Rosie Frost, Milos Cernak",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "TalkPlayData 2: An Agentic Synthetic Data Pipeline for Multimodal Conversational Music Recommendation",
-    "paper_title_zh": "",
-    "paper_id": "2509.09685",
-    "paper_abstract": "We present TalkPlayData 2, a synthetic dataset for multimodal conversational music recommendation generated by an agentic data pipeline. In TalkPlayData 2 pipeline, multiple large language model (LLM) agents are created under various roles with specialized prompts and access to different parts of information, and the chat data is acquired by logging the conversation between the Listener LLM and the Recsys LLM. To cover various conversation scenarios, for each conversation, the Listener LLM is conditioned on a finetuned conversation goal. Finally, all the LLMs are multimodal with audio and images, allowing a simulation of multimodal recommendation and conversation. In the LLM-as-a-judge and subjective evaluation experiments, TalkPlayData 2 achieved the proposed goal in various aspects related to training a generative recommendation model for music. TalkPlayData 2 and its generation code are open-sourced at this https URL.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Sound (cs.SD)",
-      "Artificial Intelligence (cs.AI)",
-      "Audio and Speech Processing (eess.AS)",
-      "Multimedia (cs.MM)",
-      "Information Retrieval (cs.IR)"
+    "topic": [
+      "Speech Enhancement",
+      "Audio Classification"
     ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Keunwoo Choi, Seungheon Doh, Juhan Nam",
-    "topic": [],
-    "category": []
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "VStyle: A Benchmark for Voice Style Adaptation with Spoken Instructions",
-    "paper_title_zh": "",
+    "paper_title_zh": "VStyle：基于语音指令的语音风格适应基准",
     "paper_id": "2509.09716",
     "paper_abstract": "Spoken language models (SLMs) have emerged as a unified paradigm for speech understanding and generation, enabling natural human machine interaction. However, while most progress has focused on semantic accuracy and instruction following, the ability of SLMs to adapt their speaking style based on spoken instructions has received limited attention. We introduce Voice Style Adaptation (VSA), a new task that examines whether SLMs can modify their speaking style, such as timbre, prosody, or persona following natural language spoken commands. To study this task, we present VStyle, a bilingual (Chinese & English) benchmark covering four categories of speech generation: acoustic attributes, natural language instruction, role play, and implicit empathy. We also introduce the Large Audio Language Model as a Judge (LALM as a Judge) framework, which progressively evaluates outputs along textual faithfulness, style adherence, and naturalness, ensuring reproducible and objective assessment. Experiments on commercial systems and open source SLMs demonstrate that current models face clear limitations in controllable style adaptation, highlighting both the novelty and challenge of this task. By releasing VStyle and its evaluation toolkit, we aim to provide the community with a foundation for advancing human centered spoken interaction. The dataset and code are publicly available at \\href{this https URL}{project's homepage}.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "语音语言模型（SLMs）已成为语音理解与生成的统一范式，实现了自然的人机交互。然而，尽管大多数进展集中在语义准确性和指令遵循上，但SLMs根据语音指令适应其说话风格的能力却未得到充分关注。我们引入了语音风格适应（VSA）这一新任务，旨在研究SLMs是否能够根据自然语言语音命令修改其说话风格，如音色、韵律或人物角色。为了研究此任务，我们提出了VStyle，一个双语（中文和英文）基准，涵盖语音生成的四个类别：声学属性、自然语言指令、角色扮演和隐性共情。我们还引入了大型音频语言模型作为评判（LALM as a Judge）框架，该框架逐步评估输出的文本忠实度、风格遵循度和自然度，确保可重复和客观的评估。对商业系统和开源SLMs的实验表明，当前模型在可控风格适应方面存在明显局限性，凸显了该任务的新颖性和挑战性。通过发布VStyle及其评估工具包，我们旨在为社区推进以人为中心的语音交互提供基础。数据集和代码公开于项目主页。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
-      "Audio and Speech Processing (eess.AS)",
-      "Computation and Language (cs.CL)"
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Jun Zhan, Mingyang Han, Yuxuan Xie, Chen Wang, Dong Zhang, Kexin Huang, Haoxiang Shi, DongXiao Wang, Tengtao Song, Qinyuan Cheng, Shimin Li, Jun Song, Xipeng Qiu, Bo Zheng",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Testing chatbots on the creation of encoders for audio conditioned image generation",
-    "paper_title_zh": "",
+    "paper_title_zh": "测试聊天机器人在创建用于音频条件图像生成的编码器方面的能力",
     "paper_id": "2509.09717",
     "paper_abstract": "On one hand, recent advances in chatbots has led to a rising popularity in using these models for coding tasks. On the other hand, modern generative image models primarily rely on text encoders to translate semantic concepts into visual representations, even when there is clear evidence that audio can be employed as input as well. Given the previous, in this work, we explore whether state-of-the-art conversational agents can design effective audio encoders to replace the CLIP text encoder from Stable Diffusion 1.5, enabling image synthesis directly from sound. We prompted five publicly available chatbots to propose neural architectures to work as these audio encoders, with a set of well-explained shared conditions. Each valid suggested encoder was trained on over two million context related audio-image-text observations, and evaluated on held-out validation and test sets using various metrics, together with a qualitative analysis of their generated images. Although almost all chatbots generated valid model designs, none achieved satisfactory results, indicating that their audio embeddings failed to align reliably with those of the original text encoder. Among the proposals, the Gemini audio encoder showed the best quantitative metrics, while the Grok audio encoder produced more coherent images (particularly, when paired with the text encoder). Our findings reveal a shared architectural bias across chatbots and underscore the remaining coding gap that needs to be bridged in future versions of these models. We also created a public demo so everyone could study and try out these audio encoders. Finally, we propose research questions that should be tackled in the future, and encourage other researchers to perform more focused and highly specialized tasks like this one, so the respective chatbots cannot make use of well-known solutions and their creativity/reasoning is fully tested.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "一方面，聊天机器人的最新进展使得这些模型在编码任务中的应用日益普及。另一方面，现代生成式图像模型主要依赖文本编码器将语义概念转化为视觉表示，尽管有明确证据表明音频同样可以作为输入。基于此，本研究探索了最先进的对话代理是否能设计出有效的音频编码器，以取代Stable Diffusion 1.5中的CLIP文本编码器，从而实现直接从声音合成图像。我们提示五个公开可用的聊天机器人提出神经网络架构作为这些音频编码器，并设定了一组详细解释的共享条件。每个有效的建议编码器都在超过两百万条上下文相关的音频-图像-文本观测数据上进行了训练，并使用多种指标在保留的验证集和测试集上进行了评估，同时对其生成的图像进行了定性分析。尽管几乎所有聊天机器人都生成了有效的模型设计，但没有一个取得令人满意的结果，表明它们的音频嵌入未能可靠地与原始文本编码器的嵌入对齐。在提议的方案中，Gemini音频编码器显示出最佳的定量指标，而Grok音频编码器产生了更连贯的图像（尤其是在与文本编码器配对时）。我们的发现揭示了聊天机器人之间共有的架构偏见，并强调了这些模型未来版本需要弥合的编码差距。我们还创建了一个公开演示，以便每个人都能研究和尝试这些音频编码器。最后，我们提出了未来需要解决的研究问题，并鼓励其他研究人员执行更多像这样专注且高度专业化的任务，以便相应的聊天机器人无法利用已知的解决方案，从而充分测试其创造力和推理能力。",
     "subjects": [
       "Sound (cs.SD)",
       "Machine Learning (cs.LG)",
@@ -182,174 +210,80 @@
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Jorge E. León, Miguel Carrasco",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Image Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
   },
   {
     "paper_title": "AI-enabled tuberculosis screening in a high-burden setting using cough sound analysis and speech foundation models",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于人工智能的高负担环境下结核病筛查：咳嗽声音分析与语音基础模型的应用",
     "paper_id": "2509.09746",
     "paper_abstract": "Background\nArtificial intelligence (AI) can detect disease-related acoustic patterns in cough sounds, offering a scalable approach to tuberculosis (TB) screening in high-burden, low-resource settings. Previous studies have been limited by small datasets, under-representation of symptomatic non-TB patients, reliance on simple models, and recordings collected under idealised conditions.\nMethods\nWe enrolled 512 participants at two hospitals in Zambia, grouped as bacteriologically confirmed TB (TB+), symptomatic patients with other respiratory diseases (OR), and healthy controls (HC). Usable cough recordings plus demographic and clinical data were obtained from 500 participants. Deep learning classifiers based on speech foundation models were trained on cough recordings. The best-performing model, trained on 3-second segments, was further evaluated with demographic and clinical features.\nFindings\nThe best audio-only classifier achieved an AUROC of 85.2% for distinguishing TB+ from all others (TB+/Rest) and 80.1% for TB+ versus OR. Adding demographic and clinical features improved performance to 92.1% (TB+/Rest) and 84.2% (TB+/OR). At a threshold of 0.38, the multimodal model reached 90.3% sensitivity and 73.1% specificity for TB+/Rest, and 80.6% and 73.1% for TB+/OR.\nInterpretation\nCough analysis using speech foundation models, especially when combined with demographic and clinical data, showed strong potential as a TB triage tool, meeting WHO target product profile benchmarks. The model was robust to confounding factors including background noise, recording time, and device variability, indicating detection of genuine disease-related acoustic patterns. Further validation across diverse regions and case definitions, including subclinical TB, is required before clinical use.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "背景\n人工智能（AI）能够检测咳嗽声音中与疾病相关的声学模式，为高负担、低资源环境下的结核病（TB）筛查提供可扩展的解决方案。以往的研究受限于数据集规模小、症状性非结核患者代表性不足、依赖简单模型以及在理想化条件下收集录音等问题。\n方法\n我们在赞比亚的两家医院招募了512名参与者，分为细菌学确诊结核病组（TB+）、其他呼吸道疾病症状患者组（OR）和健康对照组（HC）。从500名参与者中获取了可用的咳嗽录音以及人口统计学和临床数据。基于语音基础模型的深度学习分类器在咳嗽录音上进行了训练。表现最佳的模型（基于3秒片段训练）进一步结合人口统计学和临床特征进行了评估。\n结果\n最佳纯音频分类器在区分TB+与所有其他组（TB+/其余）时达到85.2%的AUROC，在TB+与OR对比中达到80.1%。加入人口统计学和临床特征后，性能提升至92.1%（TB+/其余）和84.2%（TB+/OR）。在0.38阈值下，多模态模型对TB+/其余组的敏感性和特异性分别为90.3%和73.1%，对TB+/OR组分别为80.6%和73.1%。\n结论\n使用语音基础模型的咳嗽分析，尤其是结合人口统计学和临床数据时，显示出作为结核病分诊工具的强大潜力，符合世界卫生组织目标产品特性基准。该模型对背景噪声、录音时间和设备变异性等混杂因素具有鲁棒性，表明能够检测到真正的疾病相关声学模式。在临床使用前，需要在不同地区和病例定义（包括亚临床结核病）中进行进一步验证。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Ning Ma, Bahman Mirheidari, Guy J. Brown, Minyoi M. Maimbolwa, Nsala Sanjase, Solomon Chifwamba, Seke Muzazu, Monde Muyoyeta, Mary Kagujje",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "DiTReducio: A Training-Free Acceleration for DiT-Based TTS via Progressive Calibration",
-    "paper_title_zh": "",
+    "paper_title_zh": "DiTReducio：基于渐进式校准的DiT语音合成无训练加速方法",
     "paper_id": "2509.09748",
     "paper_abstract": "While Diffusion Transformers (DiT) have advanced non-autoregressive (NAR) speech synthesis, their high computational demands remain an limitation. Existing DiT-based text-to-speech (TTS) model acceleration approaches mainly focus on reducing sampling steps through distillation techniques, yet they remain constrained by training costs. We introduce DiTReducio, a training-free acceleration framework that compresses computations in DiT-based TTS models via progressive calibration. We propose two compression methods, Temporal Skipping and Branch Skipping, to eliminate redundant computations during inference. Moreover, based on two characteristic attention patterns identified within DiT layers, we devise a pattern-guided strategy to selectively apply the compression methods. Our method allows flexible modulation between generation quality and computational efficiency through adjustable compression thresholds. Experimental evaluations conducted on F5-TTS and MegaTTS 3 demonstrate that DiTReducio achieves a 75.4% reduction in FLOPs and improves the Real-Time Factor (RTF) by 37.1%, while preserving generation quality.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "尽管扩散变换器（DiT）推动了非自回归（NAR）语音合成的发展，但其高计算需求仍是一个限制因素。现有的基于DiT的文本转语音（TTS）模型加速方法主要侧重于通过蒸馏技术减少采样步数，但仍受限于训练成本。我们提出了DiTReducio，一种无需训练的加速框架，通过渐进式校准压缩基于DiT的TTS模型的计算量。我们提出了两种压缩方法：时间跳跃（Temporal Skipping）和分支跳跃（Branch Skipping），以消除推理过程中的冗余计算。此外，基于在DiT层中识别出的两种特征性注意力模式，我们设计了一种模式引导策略来选择性地应用压缩方法。我们的方法通过可调节的压缩阈值，实现了生成质量与计算效率之间的灵活调控。在F5-TTS和MegaTTS 3上进行的实验评估表明，DiTReducio在保持生成质量的同时，实现了FLOPs减少75.4%，并将实时因子（RTF）提高了37.1%。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Yanru Huo, Ziyue Jiang, Zuoli Tang, Qingyang Hong, Zhou Zhao",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Combining Textual and Spectral Features for Robust Classification of Pilot Communications",
-    "paper_title_zh": "",
+    "paper_title_zh": "结合文本与频谱特征实现飞行员通信的鲁棒分类",
     "paper_id": "2509.09752",
     "paper_abstract": "Accurate estimation of aircraft operations, such as takeoffs and landings, is critical for effective airport management, yet remains challenging, especially at non-towered facilities lacking dedicated surveillance infrastructure. This paper presents a novel dual pipeline machine learning framework that classifies pilot radio communications using both textual and spectral features. Audio data collected from a non-towered U.S. airport was annotated by certified pilots with operational intent labels and preprocessed through automatic speech recognition and Mel-spectrogram extraction. We evaluate a wide range of traditional classifiers and deep learning models, including ensemble methods, LSTM, and CNN across both pipelines. To our knowledge, this is the first system to classify operational aircraft intent using a dual-pipeline ML framework on real-world air traffic audio. Our results demonstrate that spectral features combined with deep architectures consistently yield superior classification performance, with F1-scores exceeding 91%. Data augmentation further improves robustness to real-world audio variability. The proposed approach is scalable, cost-effective, and deployable without additional infrastructure, offering a practical solution for air traffic monitoring at general aviation airports.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "准确估计飞机操作（如起飞和着陆）对于机场高效管理至关重要，但在缺乏专用监视基础设施的无塔台设施中尤其具有挑战性。本文提出了一种新颖的双管道机器学习框架，通过结合文本和频谱特征对飞行员无线电通信进行分类。从美国一个无塔台机场收集的音频数据由认证飞行员标注操作意图标签，并通过自动语音识别和梅尔频谱图提取进行预处理。我们评估了包括集成方法、LSTM和CNN在内的多种传统分类器和深度学习模型在两个管道中的表现。据我们所知，这是首个在真实空中交通音频上使用双管道机器学习框架对飞机操作意图进行分类的系统。我们的结果表明，频谱特征与深度架构相结合始终能产生优异的分类性能，F1分数超过91%。数据增强进一步提高了对真实音频变化的鲁棒性。所提出的方法具有可扩展性、成本效益且无需额外基础设施即可部署，为通用航空机场的空中交通监控提供了实用解决方案。",
     "subjects": [
       "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
-      "Computers and Society (cs.CY)"
+      "Computers and Society (cs.CY)",
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Abdullah All Tanvir, Chenyu Huang, Moe Alahmad, Chuyang Yang, Xin Zhong",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "CoDiCodec: Unifying Continuous and Discrete Compressed Representations of Audio",
-    "paper_title_zh": "",
-    "paper_id": "2509.09836",
-    "paper_abstract": "Efficiently representing audio signals in a compressed latent space is critical for latent generative modelling. However, existing autoencoders often force a choice between continuous embeddings and discrete tokens. Furthermore, achieving high compression ratios while maintaining audio fidelity remains a challenge. We introduce CoDiCodec, a novel audio autoencoder that overcomes these limitations by both efficiently encoding global features via summary embeddings, and by producing both compressed continuous embeddings at ~ 11 Hz and discrete tokens at a rate of 2.38 kbps from the same trained model, offering unprecedented flexibility for different downstream generative tasks. This is achieved through Finite Scalar Quantization (FSQ) and a novel FSQ-dropout technique, and does not require additional loss terms beyond the single consistency loss used for end-to-end training. CoDiCodec supports both autoregressive decoding and a novel parallel decoding strategy, with the latter achieving superior audio quality and faster decoding. CoDiCodec outperforms existing continuous and discrete autoencoders at similar bitrates in terms of reconstruction audio quality. Our work enables a unified approach to audio compression, bridging the gap between continuous and discrete generative modelling paradigms.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Sound (cs.SD)",
-      "Machine Learning (cs.LG)",
-      "Artificial Intelligence (cs.AI)",
-      "Audio and Speech Processing (eess.AS)"
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
     ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Marco Pasini, Stefan Lattner, George Fazekas",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "Prominence-aware automatic speech recognition for conversational speech",
-    "paper_title_zh": "",
-    "paper_id": "2509.10116",
-    "paper_abstract": "This paper investigates prominence-aware automatic speech recognition (ASR) by combining prominence detection and speech recognition for conversational Austrian German. First, prominence detectors were developed by fine-tuning wav2vec2 models to classify word-level prominence. The detector was then used to automatically annotate prosodic prominence in a large corpus. Based on those annotations, we trained novel prominence-aware ASR systems that simultaneously transcribe words and their prominence levels. The integration of prominence information did not change performance compared to our baseline ASR system, while reaching a prominence detection accuracy of 85.53% for utterances where the recognized word sequence was correct. This paper shows that transformer-based models can effectively encode prosodic information and represents a novel contribution to prosody-enhanced ASR, with potential applications for linguistic research and prosody-informed dialogue systems.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Computation and Language (cs.CL)",
-      "Audio and Speech Processing (eess.AS)"
-    ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Julian Linke, Barbara Schuppler",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "Enhancing Speech Large Language Models with Prompt-Aware Mixture of Audio Encoders",
-    "paper_title_zh": "",
-    "paper_id": "2502.15178",
-    "paper_abstract": "Connecting audio encoders with large language models (LLMs) allows the LLM to perform various audio understanding tasks, such as automatic speech recognition (ASR) and audio captioning (AC). Most research focuses on training an adapter layer to generate a unified audio feature for the LLM. However, different tasks may require distinct features that emphasize either semantic or acoustic aspects, making task-specific audio features more desirable. In this paper, we propose Prompt-aware Mixture (PaM) to enhance the Speech LLM that uses multiple audio encoders. Our approach involves using different experts to extract different features based on the prompt that indicates different tasks. Experiments demonstrate that with PaM, only one Speech LLM surpasses the best performances achieved by all single-encoder Speech LLMs on ASR, Speaker Number Verification, and AC tasks. PaM also outperforms other feature fusion baselines, such as concatenation and averaging. Our code would be available at: this https URL",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
-    ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Weiqiao Shan, Yuang Li, Yuhao Zhang, Yingfeng Luo, Chen Xu, Xiaofeng Zhao, Long Meng, Yunfei Lu, Min Zhang, Hao Yang, Tong Xiao, Jingbo Zhu",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "Diffusion Buffer: Online Diffusion-based Speech Enhancement with Sub-Second Latency",
-    "paper_title_zh": "",
-    "paper_id": "2506.02908",
-    "paper_abstract": "Diffusion models are a class of generative models that have been recently used for speech enhancement with remarkable success but are computationally expensive at inference time. Therefore, these models are impractical for processing streaming data in real-time. In this work, we adapt a sliding window diffusion framework to the speech enhancement task. Our approach progressively corrupts speech signals through time, assigning more noise to frames close to the present in a buffer. This approach outputs denoised frames with a delay proportional to the chosen buffer size, enabling a trade-off between performance and latency. Empirical results demonstrate that our method outperforms standard diffusion models and runs efficiently on a GPU, achieving an input-output latency in the order of 0.3 to 1 seconds. This marks the first practical diffusion-based solution for online speech enhancement.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Audio and Speech Processing (eess.AS)",
-      "Machine Learning (cs.LG)"
-    ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Bunlong Lay, Rostislav Makarov, Timo Gerkmann",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "IS${}^3$ : Generic Impulsive--Stationary Sound Separation in Acoustic Scenes using Deep Filtering",
-    "paper_title_zh": "",
-    "paper_id": "2509.02622",
-    "paper_abstract": "We are interested in audio systems capable of performing a differentiated processing of stationary backgrounds and isolated acoustic events within an acoustic scene, whether for applying specific processing methods to each part or for focusing solely on one while ignoring the other. Such systems have applications in real-world scenarios, including robust adaptive audio rendering systems (e.g., EQ or compression), plosive attenuation in voice mixing, noise suppression or reduction, robust acoustic event classification or even bioacoustics. To this end, we introduce IS${}^3$, a neural network designed for Impulsive--Stationary Sound Separation, that isolates impulsive acoustic events from the stationary background using a deep filtering approach, that can act as a pre-processing stage for the above-mentioned tasks. To ensure optimal training, we propose a sophisticated data generation pipeline that curates and adapts existing datasets for this task. We demonstrate that a learning-based approach, build on a relatively lightweight neural architecture and trained with well-designed and varied data, is successful in this previously unaddressed task, outperforming the Harmonic--Percussive Sound Separation masking method, adapted from music signal processing research, and wavelet filtering on objective separation metrics.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Sound (cs.SD)",
-      "Artificial Intelligence (cs.AI)",
-      "Audio and Speech Processing (eess.AS)",
-      "Signal Processing (eess.SP)"
-    ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Clémentine Berger, Paraskevas Stamatiadis, Roland Badeau, Slim Essid",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "Out-Of-Distribution Detection for Audio-visual Generalized Zero-Shot Learning: A General Framework",
-    "paper_title_zh": "",
-    "paper_id": "2408.01284",
-    "paper_abstract": "Generalized Zero-Shot Learning (GZSL) is a challenging task requiring accurate classification of both seen and unseen classes. Within this domain, Audio-visual GZSL emerges as an extremely exciting yet difficult task, given the inclusion of both visual and acoustic features as multi-modal inputs. Existing efforts in this field mostly utilize either embedding-based or generative-based methods. However, generative training is difficult and unstable, while embedding-based methods often encounter domain shift problem. Thus, we find it promising to integrate both methods into a unified framework to leverage their advantages while mitigating their respective disadvantages. Our study introduces a general framework employing out-of-distribution (OOD) detection, aiming to harness the strengths of both approaches. We first employ generative adversarial networks to synthesize unseen features, enabling the training of an OOD detector alongside classifiers for seen and unseen classes. This detector determines whether a test feature belongs to seen or unseen classes, followed by classification utilizing separate classifiers for each feature type. We test our framework on three popular audio-visual datasets and observe a significant improvement comparing to existing state-of-the-art works. Codes can be found in this https URL.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
-      "Multimedia (cs.MM)",
-      "Image and Video Processing (eess.IV)",
-      "Computer Vision and Pattern Recognition (cs.CV)"
-    ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Liuyuan Wen",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "Towards Reliable Audio Deepfake Attribution and Model Recognition: A Multi-Level Autoencoder-Based Framework",
-    "paper_title_zh": "",
-    "paper_id": "2508.02521",
-    "paper_abstract": "The proliferation of audio deepfakes poses a growing threat to trust in digital communications. While detection methods have advanced, attributing audio deepfakes to their source models remains an underexplored yet crucial challenge. In this paper we introduce LAVA (Layered Architecture for Voice Attribution), a hierarchical framework for audio deepfake detection and model recognition that leverages attention-enhanced latent representations extracted by a convolutional autoencoder trained solely on fake audio. Two specialized classifiers operate on these features: Audio Deepfake Attribution (ADA), which identifies the generation technology, and Audio Deepfake Model Recognition (ADMR), which recognize the specific generative model instance. To improve robustness under open-set conditions, we incorporate confidence-based rejection thresholds. Experiments on ASVspoof2021, FakeOrReal, and CodecFake show strong performance: the ADA classifier achieves F1-scores over 95% across all datasets, and the ADMR module reaches 96.31% macro F1 across six classes. Additional tests on unseen attacks from ASVpoof2019 LA and error propagation analysis confirm LAVA's robustness and reliability. The framework advances the field by introducing a supervised approach to deepfake attribution and model recognition under open-set conditions, validated on public benchmarks and accompanied by publicly released models and code. Models and code are available at this https URL.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
-      "Computer Vision and Pattern Recognition (cs.CV)"
-    ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Andrea Di Pierno, Luca Guarnera, Dario Allegra, Sebastiano Battiato",
-    "topic": [],
-    "category": []
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "SoilSound: Smartphone-based Soil Moisture Estimation",
-    "paper_title_zh": "",
+    "paper_title_zh": "SoilSound：基于智能手机的土壤湿度估算",
     "paper_id": "2509.09823",
     "paper_abstract": "Soil moisture monitoring is essential for agriculture and environmental management, yet existing methods require either invasive probes disturbing the soil or specialized equipment, limiting access to the public. We present SoilSound, an ubiquitous accessible smartphone-based acoustic sensing system that can measure soil moisture without disturbing the soil. We leverage the built-in speaker and microphone to perform a vertical scan mechanism to accurately measure moisture without any calibration. Unlike existing work that use transmissive properties, we propose an alternate model for acoustic reflections in soil based on the surface roughness effect to enable moisture sensing without disturbing the soil. The system works by sending acoustic chirps towards the soil and recording the reflections during a vertical scan, which are then processed and fed to a convolutional neural network for on-device soil moisture estimation with negligible computational, memory, or power overhead. We evaluated the system by training with curated soils in boxes in the lab and testing in the outdoor fields and show that SoilSound achieves a mean absolute error (MAE) of 2.39% across 10 different locations. Overall, the evaluation shows that SoilSound can accurately track soil moisture levels ranging from 15.9% to 34.0% across multiple soil types, environments, and users; without requiring any calibration or disturbing the soil, enabling widespread moisture monitoring for home gardeners, urban farmers, citizen scientists, and agricultural communities in resource-limited settings.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "土壤湿度监测对农业和环境管理至关重要，然而现有方法需要侵入式探头干扰土壤或专用设备，限制了公众的使用。我们提出了SoilSound，一种基于智能手机的普适可访问声学传感系统，能够在不干扰土壤的情况下测量土壤湿度。我们利用内置扬声器和麦克风执行垂直扫描机制，无需任何校准即可精确测量湿度。与利用透射特性的现有工作不同，我们提出了一种基于表面粗糙度效应的土壤声学反射替代模型，实现了在不干扰土壤的情况下的湿度传感。该系统通过向土壤发送声学啁啾信号并在垂直扫描过程中记录反射信号，随后对这些信号进行处理并输入卷积神经网络，在设备上进行土壤湿度估算，其计算、内存或功耗开销可忽略不计。我们通过在实验室盒装定制土壤中进行训练并在户外田野进行测试来评估该系统，结果表明SoilSound在10个不同地点的平均绝对误差（MAE）为2.39%。总体评估显示，SoilSound能够在多种土壤类型、环境和用户条件下，准确追踪15.9%至34.0%的土壤湿度水平；无需任何校准或干扰土壤，为家庭园丁、都市农民、公民科学家以及资源有限地区的农业社区实现了广泛的湿度监测。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -359,82 +293,93 @@
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Yixuan Gao, Tanvir Ahmed, Shuang He, Zhongqi Cheng, Rajalakshmi Nandakumar",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "CoDiCodec: Unifying Continuous and Discrete Compressed Representations of Audio",
+    "paper_title_zh": "CoDiCodec：统一音频的连续与离散压缩表示",
+    "paper_id": "2509.09836",
+    "paper_abstract": "Efficiently representing audio signals in a compressed latent space is critical for latent generative modelling. However, existing autoencoders often force a choice between continuous embeddings and discrete tokens. Furthermore, achieving high compression ratios while maintaining audio fidelity remains a challenge. We introduce CoDiCodec, a novel audio autoencoder that overcomes these limitations by both efficiently encoding global features via summary embeddings, and by producing both compressed continuous embeddings at ~ 11 Hz and discrete tokens at a rate of 2.38 kbps from the same trained model, offering unprecedented flexibility for different downstream generative tasks. This is achieved through Finite Scalar Quantization (FSQ) and a novel FSQ-dropout technique, and does not require additional loss terms beyond the single consistency loss used for end-to-end training. CoDiCodec supports both autoregressive decoding and a novel parallel decoding strategy, with the latter achieving superior audio quality and faster decoding. CoDiCodec outperforms existing continuous and discrete autoencoders at similar bitrates in terms of reconstruction audio quality. Our work enables a unified approach to audio compression, bridging the gap between continuous and discrete generative modelling paradigms.",
+    "paper_abstract_zh": "在压缩潜在空间中高效表示音频信号对于潜在生成建模至关重要。然而，现有的自编码器往往需要在连续嵌入和离散标记之间做出选择。此外，在保持音频保真度的同时实现高压缩比仍然是一个挑战。我们提出了CoDiCodec，这是一种新颖的音频自编码器，它通过总结嵌入高效编码全局特征，并在同一训练模型中同时产生约11 Hz的压缩连续嵌入和2.38 kbps速率的离散标记，从而克服了这些限制，为不同的下游生成任务提供了前所未有的灵活性。这是通过有限标量量化（FSQ）和一种新颖的FSQ-dropout技术实现的，并且除了用于端到端训练的单一一致性损失外，不需要额外的损失项。CoDiCodec支持自回归解码和一种新颖的并行解码策略，后者实现了更优的音频质量和更快的解码速度。在相似比特率下，CoDiCodec在重建音频质量方面优于现有的连续和离散自编码器。我们的工作为音频压缩提供了一种统一的方法，弥合了连续和离散生成建模范式之间的差距。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-09-15",
+    "paper_authors": "Marco Pasini, Stefan Lattner, George Fazekas",
+    "topic": [
+      "Audio Codec",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "Prototypical Contrastive Learning For Improved Few-Shot Audio Classification",
-    "paper_title_zh": "",
+    "paper_title_zh": "原型对比学习改进小样本音频分类",
     "paper_id": "2509.10074",
     "paper_abstract": "Few-shot learning has emerged as a powerful paradigm for training models with limited labeled data, addressing challenges in scenarios where large-scale annotation is impractical. While extensive research has been conducted in the image domain, few-shot learning in audio classification remains relatively underexplored. In this work, we investigate the effect of integrating supervised contrastive loss into prototypical few shot training for audio classification. In detail, we demonstrate that angular loss further improves the performance compared to the standard contrastive loss. Our method leverages SpecAugment followed by a self-attention mechanism to encapsulate diverse information of augmented input versions into one unified embedding. We evaluate our approach on MetaAudio, a benchmark including five datasets with predefined splits, standardized preprocessing, and a comprehensive set of few-shot learning models for comparison. The proposed approach achieves state-of-the-art performance in a 5-way, 5-shot setting.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "小样本学习已成为在有限标注数据下训练模型的强大范式，解决了大规模标注不切实际场景中的挑战。尽管在图像领域已进行了广泛研究，但音频分类中的小样本学习仍然相对未被充分探索。在本工作中，我们研究了将监督对比损失集成到原型小样本音频分类训练中的效果。具体而言，我们证明与标准对比损失相比，角度损失进一步提高了性能。我们的方法利用SpecAugment后接自注意力机制，将增强输入版本的不同信息封装到一个统一的嵌入表示中。我们在MetaAudio基准上评估了我们的方法，该基准包含五个具有预定义分割、标准化预处理和全面小样本学习模型比较的数据集。所提出的方法在5-way 5-shot设置下实现了最先进的性能。",
     "subjects": [
       "Sound (cs.SD)",
       "Machine Learning (cs.LG)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Christos Sgouropoulos, Christos Nikou, Stefanos Vlachos, Vasileios Theiou, Christos Foukanelis, Theodoros Giannakopoulos",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "Data-independent Beamforming for End-to-end Multichannel Multi-speaker ASR",
-    "paper_title_zh": "",
+    "paper_title_zh": "用于端到端多通道多说话人自动语音识别的数据无关波束成形方法",
     "paper_id": "2509.10234",
     "paper_abstract": "Automatic speech recognition (ASR) in multichannel, multi-speaker scenarios remains challenging due to ambient noise, reverberation and overlapping speakers. In this paper, we propose a beamforming approach that processes specific angular sectors based on their spherical polar coordinates before applying an end-to-end multichannel, multi-speaker ASR system. This method is data-independent and training-free. We demonstrate that using a group of beamformed signals improves ASR performance compared to using the same number of raw microphone signals. Moreover, increasing the number of signals used for beamforming further enhances recognition accuracy, leading to a more efficient use of multichannel signals while reducing the overall input load for the ASR system. We conduct experiments on the AMI meeting corpus, where the proposed method reduces word error rate by up to 11% and improves speaker counting accuracy by up to 27% relative compared to a multichannel ASR baseline system that does not exploit beamforming.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "在多通道、多说话人场景下的自动语音识别（ASR）由于环境噪声、混响和说话人重叠等问题仍然具有挑战性。本文提出了一种波束成形方法，该方法在应用端到端多通道多说话人ASR系统之前，基于球面极坐标处理特定的角度扇区。这种方法与数据无关且无需训练。我们证明，与使用相同数量的原始麦克风信号相比，使用一组波束成形信号可以提高ASR性能。此外，增加用于波束成形的信号数量可以进一步提高识别准确率，从而更有效地利用多通道信号，同时减少ASR系统的整体输入负载。我们在AMI会议语料库上进行了实验，结果表明，与未利用波束成形的多通道ASR基线系统相比，所提出的方法将词错误率相对降低了高达11%，并将说话人计数准确率相对提高了高达27%。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Can Cui, Paul Magron, Mostafa Sadeghi, Emmanuel Vincent",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Improving Audio Event Recognition with Consistency Regularization",
-    "paper_title_zh": "",
+    "paper_title_zh": "利用一致性正则化改进音频事件识别",
     "paper_id": "2509.10391",
     "paper_abstract": "Consistency regularization (CR), which enforces agreement between model predictions on augmented views, has found recent benefits in automatic speech recognition [1]. In this paper, we propose the use of consistency regularization for audio event recognition, and demonstrate its effectiveness on AudioSet. With extensive ablation studies for both small ($\\sim$20k) and large ($\\sim$1.8M) supervised training sets, we show that CR brings consistent improvement over supervised baselines which already heavily utilize data augmentation, and CR using stronger augmentation and multiple augmentations leads to additional gain for the small training set. Furthermore, we extend the use of CR into the semi-supervised setup with 20K labeled samples and 1.8M unlabeled samples, and obtain performance improvement over our best model trained on the small set.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "一致性正则化（CR）通过强制模型在增强视图上的预测保持一致，最近在自动语音识别领域显示出优势[1]。本文提出将一致性正则化应用于音频事件识别，并在AudioSet数据集上验证了其有效性。通过对小型（约20k）和大型（约1.8M）监督训练集的广泛消融研究，我们发现即使基线模型已经大量使用数据增强，CR仍能带来一致的性能提升，且使用更强增强和多重增强的CR能为小型训练集带来额外增益。此外，我们将CR扩展到半监督设置中（使用2万标注样本和180万未标注样本），相比在小型集上训练的最佳模型获得了性能提升。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-09-15",
     "paper_authors": "Shanmuka Sadhu, Weiran Wang",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "Finite Scalar Quantization Enables Redundant and Transmission-Robust Neural Audio Compression at Low Bit-rates",
-    "paper_title_zh": "",
-    "paper_id": "2509.09550",
-    "paper_abstract": "Neural Audio Codecs (NACs) have become increasingly adopted in speech processing tasks due to their excellent rate-distortion performance and compatibility with Large Language Models (LLMs) as discrete feature representations for audio generation. While most existing codecs rely on Residual Vector Quantization (RVQ), Finite Scalar Quantization (FSQ) has recently emerged as a compelling alternative that simplifies training and natively supports single codebooks. We introduce NeuCodec, an FSQ-based NAC, and show that FSQ encodes baked-in redundancy which produces an encoding which is robust when transmitted through noisy channels. First, through an encoder distillation experiment, we show that two different encoders can learn to encode identical audio into vastly different code sequences whilst maintaining comparable reconstruction quality with the same quantizer and decoder. Second, we demonstrate that FSQ has vastly superior bit-level perturbation robustness by comparing the performance of RVQ and FSQ codecs when simulating the transmission of code sequences through a noisy channel.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Sound (cs.SD)",
-      "Machine Learning (cs.LG)"
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
     ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Harry Julian, Rachel Beeson, Lohith Konathala, Johanna Ulin, Jiameng Gao",
-    "topic": [],
-    "category": []
-  },
-  {
-    "paper_title": "DiFlow-TTS: Discrete Flow Matching with Factorized Speech Tokens for Low-Latency Zero-Shot Text-To-Speech",
-    "paper_title_zh": "",
-    "paper_id": "2509.09631",
-    "paper_abstract": "Zero-shot Text-to-Speech (TTS) aims to synthesize high-quality speech that mimics the voice of an unseen speaker using only a short reference sample, requiring not only speaker adaptation but also accurate modeling of prosodic attributes. Recent approaches based on language models, diffusion, and flow matching have shown promising results in zero-shot TTS, but still suffer from slow inference and repetition artifacts. Discrete codec representations have been widely adopted for speech synthesis, and recent works have begun to explore diffusion models in purely discrete settings, suggesting the potential of discrete generative modeling for speech synthesis. However, existing flow-matching methods typically embed these discrete tokens into a continuous space and apply continuous flow matching, which may not fully leverage the advantages of discrete representations. To address these challenges, we introduce DiFlow-TTS, which, to the best of our knowledge, is the first model to explore purely Discrete Flow Matching for speech synthesis. DiFlow-TTS explicitly models factorized speech attributes within a compact and unified architecture. It leverages in-context learning by conditioning on textual content, along with prosodic and acoustic attributes extracted from a reference speech, enabling effective attribute cloning in a zero-shot setting. In addition, the model employs a factorized flow prediction mechanism with distinct heads for prosody and acoustic details, allowing it to learn aspect-specific distributions. Experimental results demonstrate that DiFlow-TTS achieves promising performance in several key metrics, including naturalness, prosody, preservation of speaker style, and energy control. It also maintains a compact model size and achieves low-latency inference, generating speech up to 25.8 times faster than the latest existing baselines.",
-    "paper_abstract_zh": "",
-    "subjects": [
-      "Sound (cs.SD)",
-      "Computation and Language (cs.CL)",
-      "Computer Vision and Pattern Recognition (cs.CV)"
-    ],
-    "update_time": "2025-09-15",
-    "paper_authors": "Ngoc-Son Nguyen, Hieu-Nghia Huynh-Nguyen, Thanh V. T. Tran, Truong-Son Hy, Van Nguyen",
-    "topic": [],
-    "category": []
+    "category": [
+      "Other"
+    ]
   }
 ]

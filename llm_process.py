@@ -13,7 +13,7 @@ from datetime import datetime
 # OpenRouter API配置
 API_KEY = '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'
 BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = "moonshotai/kimi-k2:free"
+MODEL = "deepseek/deepseek-chat-v3.1:free"
 
 def load_config(config_path: str = "config.yaml") -> Dict[str, List[str]]:
     """加载配置文件中的topic、category候选列表和白名单subjects"""
@@ -107,7 +107,8 @@ def process_paper_complete(paper: Dict[str, Any], config: Dict[str, List[str]]) 
             }
         ],
         "temperature": 0.3,
-        "max_tokens": 1000
+        "max_tokens": 1000,
+        "reasoning": {"enabled": False}
     }
     
     # 添加重试机制
