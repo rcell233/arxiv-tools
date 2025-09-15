@@ -666,7 +666,7 @@
 
             populateFilters() {
                 // 按照指定顺序排列类别，而不是字母顺序
-                const categoryOrder = ['Music', 'Speech', 'Other', 'Image'];
+                const categoryOrder = ['Music', 'Speech', 'Other', 'Image&Video'];
                 const sortedCategories = [];
                 
                 // 先添加按顺序的类别
@@ -761,12 +761,12 @@
             }
 
             groupPapersByCategory(papers) {
-                const categoryOrder = ['music', 'speech', 'other', 'image'];
+                const categoryOrder = ['Music', 'Speech', 'Other', 'Image&Video'];
                 const categoryNames = {
-                    'music': '音乐处理 Music Processing', 
-                    'speech': '语音处理 Speech Processing',
-                    'other': '其他音频论文 Others',
-                    'image': '图像处理 Image Processing'
+                    'Music': '音乐处理 Music Processing', 
+                    'Speech': '语音处理 Speech Processing',
+                    'Other': '其他音频论文 Others',
+                    'Image&Video': '图像与视频处理 Image & Video Processing'
                 };
                 
                 // 先按照原来的方式排序
@@ -795,7 +795,7 @@
             }
 
             sortPapersByCategory(papers) {
-                const categoryOrder = ['music', 'speech', 'other', 'image'];
+                const categoryOrder = ['Music', 'Speech', 'Other', 'Image&Video'];
                 
                 return papers.sort((a, b) => {
                     const priorityA = this.getCategoryPriority(a);
@@ -806,7 +806,7 @@
             }
 
             getPaperMainCategory(paper) {
-                const categoryOrder = ['music', 'speech', 'other', 'image'];
+                const categoryOrder = ['Music', 'Speech', 'Other', 'Image&Video'];
                 
                 if (!paper.category || paper.category.length === 0) {
                     return 'uncategorized';
@@ -823,7 +823,7 @@
             }
 
             getCategoryPriority(paper) {
-                const categoryOrder = ['music', 'speech', 'other', 'image'];
+                const categoryOrder = ['Music', 'Speech', 'Other', 'Image&Video'];
                 const mainCategory = this.getPaperMainCategory(paper);
                 const index = categoryOrder.indexOf(mainCategory);
                 return index !== -1 ? index : categoryOrder.length;
@@ -834,10 +834,10 @@
                 header.className = 'category-header';
                 
                 const categoryNames = {
-                    'music': '音乐处理 Music Processing', 
-                    'speech': '语音处理 Speech Processing',
-                    'other': '其他音频论文 Others',
-                    'image': '图像处理 Image Processing',
+                    'Music': '音乐处理 Music Processing', 
+                    'Speech': '语音处理 Speech Processing',
+                    'Other': '其他音频论文 Others',
+                    'Image&Video': '图像与视频处理 Image & Video Processing',
                     'uncategorized': '未分类 Uncategorized'
                 };
                 
@@ -891,7 +891,7 @@
                             </div>
                             
                             <div class="paper-tags">
-                                <span class="tag primary">${paper.primary_category}</span>
+                                ${paper.subjects && paper.subjects.length > 0 ? `<span class="tag primary">${paper.subjects[0]}</span>` : ''}
                                 ${paper.category ? paper.category.map(cat => `<span class="tag category">${cat}</span>`).join('') : ''}
                                 ${paper.topic ? paper.topic.map(topic => `<span class="tag topic">${topic}</span>`).join('') : ''}
                             </div>
@@ -932,7 +932,7 @@
                         </div>
                         
                         <div class="paper-tags">
-                            <span class="tag primary">${paper.primary_category}</span>
+                            ${paper.subjects && paper.subjects.length > 0 ? `<span class="tag primary">${paper.subjects[0]}</span>` : ''}
                             ${paper.category ? paper.category.map(cat => `<span class="tag category">${cat}</span>`).join('') : ''}
                             ${paper.topic ? paper.topic.map(topic => `<span class="tag topic">${topic}</span>`).join('') : ''}
                         </div>
