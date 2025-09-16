@@ -1,0 +1,344 @@
+[
+  {
+    "paper_title": "Sound Matching an Analogue Levelling Amplifier Using the Newton-Raphson Method",
+    "paper_title_zh": "使用牛顿-拉弗森方法进行模拟电平放大器的声音匹配",
+    "paper_id": "2509.10706",
+    "paper_abstract": "Automatic differentiation through digital signal processing algorithms for virtual analogue modelling has recently gained popularity. These algorithms are typically more computationally efficient than black-box neural networks that rely on dense matrix multiplications. Due to their differentiable nature, they can be integrated with neural networks and jointly trained using gradient descent algorithms, resulting in more efficient systems. Furthermore, signal processing algorithms have significantly fewer parameters than neural networks, allowing the application of the Newton-Raphson method. This method offers faster and more robust convergence than gradient descent at the cost of quadratic storage. This paper presents a method to emulate analogue levelling amplifiers using a feed-forward digital compressor with parameters optimised via the Newton-Raphson method. We demonstrate that a digital compressor can successfully approximate the behaviour of our target unit, the Teletronix LA-2A. Different strategies for computing the Hessian matrix are benchmarked. We leverage parallel algorithms for recursive filters to achieve efficient training on modern GPUs. The resulting model is made into a VST plugin and is open-sourced at this https URL.",
+    "paper_abstract_zh": "近年来，通过数字信号处理算法进行虚拟模拟建模的自动微分技术日益受到关注。这些算法通常比依赖密集矩阵乘法的黑盒神经网络具有更高的计算效率。由于其可微分特性，它们可以与神经网络集成，并使用梯度下降算法进行联合训练，从而形成更高效的系统。此外，信号处理算法的参数数量显著少于神经网络，这使得牛顿-拉弗森方法的应用成为可能。该方法以二次存储为代价，提供了比梯度下降更快、更稳健的收敛性。本文提出了一种使用前馈数字压缩器来模拟模拟电平放大器的方法，其参数通过牛顿-拉弗森方法进行优化。我们证明了数字压缩器能够成功近似目标设备Teletronix LA-2A的行为。文中对计算海森矩阵的不同策略进行了基准测试。我们利用递归滤波器的并行算法在现代GPU上实现高效训练。最终模型被制作成VST插件，并在此https URL开源。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Systems and Control (eess.SY)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Chin-Yun Yu, György Fazekas",
+    "topic": [
+      "Audio Codec",
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Local Density-Based Anomaly Score Normalization for Domain Generalization",
+    "paper_title_zh": "面向领域泛化的局部密度异常分数归一化方法",
+    "paper_id": "2509.10951",
+    "paper_abstract": "State-of-the-art anomalous sound detection (ASD) systems in domain-shifted conditions rely on projecting audio signals into an embedding space and using distance-based outlier detection to compute anomaly scores. One of the major difficulties to overcome is the so-called domain mismatch between the anomaly score distributions of a source domain and a target domain that differ acoustically and in terms of the amount of training data provided. A decision threshold that is optimal for one domain may be highly sub-optimal for the other domain and vice versa. This significantly degrades the performance when only using a single decision threshold, as is required when generalizing to multiple data domains that are possibly unseen during training while still using the same trained ASD system as in the source domain. To reduce this mismatch between the domains, we propose a simple local-density-based anomaly score normalization scheme. In experiments conducted on several ASD datasets, we show that the proposed normalization scheme consistently improves performance for various types of embedding-based ASD systems and yields better results than existing anomaly score normalization approaches.",
+    "paper_abstract_zh": "在领域偏移条件下，最先进的异常声音检测（ASD）系统依赖于将音频信号投影到嵌入空间，并使用基于距离的离群点检测来计算异常分数。需要克服的主要困难之一是源领域和目标领域之间异常分数分布的所谓领域不匹配问题，这些领域在声学特性和提供的训练数据量上存在差异。对一个领域最优的决策阈值可能对另一个领域高度次优，反之亦然。当仅使用单一决策阈值时（这是在泛化到训练期间可能未见过的多个数据领域时所必需的，同时仍使用与源领域相同的训练好的ASD系统），这会显著降低性能。为了减少领域间的这种不匹配，我们提出了一种简单的基于局部密度的异常分数归一化方案。在多个ASD数据集上进行的实验中，我们表明所提出的归一化方案持续改善了各种基于嵌入的ASD系统的性能，并产生了比现有异常分数归一化方法更好的结果。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Kevin Wilkinghoff, Haici Yang, Janek Ebbers, François G. Germain, Gordon Wichern, Jonathan Le Roux",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Length-Aware Rotary Position Embedding for Text-Speech Alignment",
+    "paper_title_zh": "面向文本-语音对齐的长度感知旋转位置编码",
+    "paper_id": "2509.11084",
+    "paper_abstract": "Many recent text-to-speech (TTS) systems are built on transformer architectures and employ cross-attention mechanisms for text-speech alignment. Within these systems, rotary position embedding (RoPE) is commonly used to encode positional information in text and speech representations. In this work, we introduce length-aware RoPE (LARoPE), a simple yet effective extension of RoPE that improves text-speech alignment. Unlike RoPE, which relies on absolute indices, LARoPE computes relative distances between query and key positions using length-normalized indices. Experimental results show that LARoPE consistently outperforms RoPE, offering faster loss convergence, more accurate text-speech alignment, and higher overall TTS quality. Furthermore, LARoPE demonstrates greater resilience to variations in utterance duration and maintains stable performance in extended speech generation up to 30 seconds, whereas RoPE suffers from notable degradation. Notably, our method achieves a state-of-the-art word error rate on a standard zero-shot TTS benchmark.",
+    "paper_abstract_zh": "近年来许多文本转语音（TTS）系统基于Transformer架构构建，并采用交叉注意力机制实现文本-语音对齐。在这些系统中，旋转位置编码（RoPE）通常用于编码文本和语音表示中的位置信息。本研究提出了长度感知RoPE（LARoPE），这是RoPE的一种简单而有效的扩展，能够改善文本-语音对齐。与依赖绝对索引的RoPE不同，LARoPE使用长度归一化索引计算查询与键位置之间的相对距离。实验结果表明，LARoPE始终优于RoPE，具有更快的损失收敛速度、更精确的文本-语音对齐效果以及更高的整体TTS质量。此外，LARoPE对语音时长的变化表现出更强的鲁棒性，并在长达30秒的长语音生成中保持稳定性能，而RoPE则出现显著性能下降。值得注意的是，我们的方法在标准零样本TTS基准测试中实现了最先进的词错误率。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Hyeongju Kim, Juheon Lee, Jinhyeok Yang, Jacob Morton",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "EEND-SAA: Enrollment-Less Main Speaker Voice Activity Detection Using Self-Attention Attractors",
+    "paper_title_zh": "EEND-SAA：基于自注意力吸引器的无注册主说话人语音活动检测",
+    "paper_id": "2509.11957",
+    "paper_abstract": "Voice activity detection (VAD) is essential in speech-based systems, but traditional methods detect only speech presence without identifying speakers. Target-speaker VAD (TS-VAD) extends this by detecting the speech of a known speaker using a short enrollment utterance, but this assumption fails in open-domain scenarios such as meetings or customer service calls, where the main speaker is unknown. We propose EEND-SAA, an enrollment-less, streaming-compatible framework for main-speaker VAD, which identifies the primary speaker without prior knowledge. Unlike TS-VAD, our method determines the main speaker as the one who talks more steadily and clearly, based on speech continuity and volume. We build our model on EEND using two self-attention attractors in a Transformer and apply causal masking for real-time use. Experiments on multi-speaker LibriSpeech mixtures show that EEND-SAA reduces main-speaker DER from 6.63% to 3.61% and improves F1 from 0.9667 to 0.9818 over the SA-EEND baseline, achieving state-of-the-art performance under conditions involving speaker overlap and noise.",
+    "paper_abstract_zh": "语音活动检测（VAD）在语音系统中至关重要，但传统方法仅检测语音存在而不识别说话人。目标说话人VAD（TS-VAD）通过使用简短注册语句检测已知说话人的语音扩展了此功能，但该假设在会议或客服电话等开放域场景中失效，因为主说话人未知。我们提出EEND-SAA，一种无注册、兼容流式处理的主说话人VAD框架，无需先验知识即可识别主要说话人。与TS-VAD不同，我们的方法基于语音连续性和音量，将说话更稳定清晰者确定为主说话人。我们在EEND基础上构建模型，在Transformer中使用两个自注意力吸引器，并应用因果掩码实现实时使用。在多说话人LibriSpeech混合数据集上的实验表明，EEND-SAA将主说话人DER从6.63%降至3.61%，F1分数从0.9667提升至0.9818，优于SA-EEND基线，在说话人重叠和噪声条件下实现了最先进的性能。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Wen-Yung Wu, Pei-Chin Hsieh, Tai-Shih Chi",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Combining Audio and Non-Audio Inputs in Evolved Neural Networks for Ovenbird",
+    "paper_title_zh": "结合音频与非音频输入的进化神经网络在灶莺识别中的应用",
+    "paper_id": "2509.10566",
+    "paper_abstract": "In the last several years the use of neural networks as tools to automate species classification from digital data has increased. This has been due in part to the high classification accuracy of image classification through Convolutional Neural Networks (CNN). In the case of audio data CNN based recognizers are used to automate the classification of species in audio recordings by using information from sound visualization (i.e., spectrograms). It is common for these recognizers to use the spectrogram as their sole input. However, researchers have other non-audio data, such as habitat preferences of a species, phenology, and range information, available that could improve species classification. In this paper we present how a single-species recognizer neural network's accuracy can be improved by using non-audio data as inputs in addition to spectrogram information. We also analyze if the improvements are merely a result of having a neural network with a higher number of parameters instead of combining the two inputs. We find that networks that use the two different inputs have a higher classification accuracy than networks of similar size that use only one of the inputs.",
+    "paper_abstract_zh": "近年来，神经网络作为从数字数据自动化分类物种的工具使用日益增多。这部分归因于卷积神经网络（CNN）在图像分类中实现的高精度。对于音频数据，基于CNN的识别器通过利用声音可视化信息（即频谱图）来自动化录音中的物种分类。这些识别器通常仅使用频谱图作为唯一输入。然而，研究人员还拥有其他非音频数据，如物种的栖息地偏好、物候学和分布范围信息，这些信息可能改善物种分类。本文展示了如何通过额外使用非音频数据作为输入，结合频谱图信息，来提高单物种识别神经网络的准确性。我们还分析了这种改进是否仅仅源于神经网络参数数量的增加，而非两种输入的结合。研究发现，使用两种不同输入的网络比仅使用一种输入的类似规模网络具有更高的分类准确率。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Sergio Poo Hernandez, Vadim Bulitko, Erin Bayne",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Emoanti: audio anti-deepfake with refined emotion-guided representations",
+    "paper_title_zh": "Emoanti：基于精细化情感引导表示的音频反深度伪造系统",
+    "paper_id": "2509.10781",
+    "paper_abstract": "Audio deepfake is so sophisticated that the lack of effective detection methods is fatal. While most detection systems primarily rely on low-level acoustic features or pretrained speech representations, they frequently neglect high-level emotional cues, which can offer complementary and potentially anti-deepfake information to enhance generalization. In this work, we propose a novel audio anti-deepfake system that utilizes emotional features (EmoAnti) by exploiting a pretrained Wav2Vec2 (W2V2) model fine-tuned on emotion recognition tasks, which derives emotion-guided representations, then designing a dedicated feature extractor based on convolutional layers with residual connections to effectively capture and refine emotional characteristics from the transformer layers outputs. Experimental results show that our proposed architecture achieves state-of-the-art performance on both the ASVspoof2019LA and ASVspoof2021LA benchmarks, and demonstrates strong generalization on the ASVspoof2021DF dataset. Our proposed approach's code is available at Anonymous GitHub1.",
+    "paper_abstract_zh": "音频深度伪造技术如此精密，以至于缺乏有效的检测方法是致命的。虽然大多数检测系统主要依赖于低层级声学特征或预训练语音表示，但它们常常忽略了高层级的情感线索，这些线索能够提供互补且具有潜在反伪造能力的信息以增强泛化性。在本研究中，我们提出了一种新颖的音频反深度伪造系统（EmoAnti），该系统通过利用在情感识别任务上微调的预训练Wav2Vec2（W2V2）模型来提取情感引导表示，然后设计了一个基于带有残差连接的卷积层的专用特征提取器，以有效捕获并精炼来自Transformer层输出的情感特征。实验结果表明，我们提出的架构在ASVspoof2019LA和ASVspoof2021LA基准测试上均达到了最先进的性能，并在ASVspoof2021DF数据集上展现出强大的泛化能力。我们提出的方法的代码可在匿名GitHub1上获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Xiaokang Li, Yicheng Gong, Dinghao Zou, Xin Cao, Sunbowen Lee",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "STASE: A spatialized text-to-audio synthesis engine for music generation",
+    "paper_title_zh": "STASE：一个用于音乐生成的空间化文本-音频合成引擎",
+    "paper_id": "2509.11124",
+    "paper_abstract": "While many text-to-audio systems produce monophonic or fixed-stereo outputs, generating audio with user-defined spatial properties remains a challenge. Existing deep learning-based spatialization methods often rely on latent-space manipulations, which can limit direct control over psychoacoustic parameters critical to spatial perception. To address this, we introduce STASE, a system that leverages a Large Language Model (LLM) as an agent to interpret spatial cues from text. A key feature of STASE is the decoupling of semantic interpretation from a separate, physics-based spatial rendering engine, which facilitates interpretable and user-controllable spatial reasoning. The LLM processes prompts through two main pathways: (i) Description Prompts, for direct mapping of explicit spatial information (e.g., \"place the lead guitar at 45° azimuth, 10 m distance\"), and (ii) Abstract Prompts, where a Retrieval-Augmented Generation (RAG) module retrieves relevant spatial templates to inform the rendering. This paper details the STASE workflow, discusses implementation considerations, and highlights current challenges in evaluating generative spatial audio.",
+    "paper_abstract_zh": "尽管许多文本-音频系统产生单声道或固定立体声输出，但生成具有用户定义空间属性的音频仍然是一个挑战。现有的基于深度学习的空间化方法通常依赖于潜在空间操作，这可能会限制对空间感知至关重要的心理声学参数的直接控制。为了解决这个问题，我们引入了STASE，该系统利用大型语言模型（LLM）作为代理来从文本中解释空间线索。STASE的一个关键特征是将语义解释与独立的、基于物理的空间渲染引擎解耦，这有助于实现可解释和用户可控的空间推理。LLM通过两个主要路径处理提示：（i）描述提示，用于直接映射显式空间信息（例如，“将主音吉他放置在45°方位角，10米距离处”）；（ii）抽象提示，其中检索增强生成（RAG）模块检索相关的空间模板以指导渲染。本文详细介绍了STASE的工作流程，讨论了实施考虑因素，并强调了当前在评估生成空间音频方面面临的挑战。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Tutti Chi, Letian Gao, Yixiao Zhang",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "ENJ: Optimizing Noise with Genetic Algorithms to Jailbreak LSMs",
+    "paper_title_zh": "ENJ：利用遗传算法优化噪声以越狱大型语音模型",
+    "paper_id": "2509.11128",
+    "paper_abstract": "The widespread application of Large Speech Models (LSMs) has made their security risks increasingly prominent. Traditional speech adversarial attack methods face challenges in balancing effectiveness and stealth. This paper proposes Evolutionary Noise Jailbreak (ENJ), which utilizes a genetic algorithm to transform environmental noise from a passive interference into an actively optimizable attack carrier for jailbreaking LSMs. Through operations such as population initialization, crossover fusion, and probabilistic mutation, this method iteratively evolves a series of audio samples that fuse malicious instructions with background noise. These samples sound like harmless noise to humans but can induce the model to parse and execute harmful commands. Extensive experiments on multiple mainstream speech models show that ENJ's attack effectiveness is significantly superior to existing baseline methods. This research reveals the dual role of noise in speech security and provides new critical insights for model security defense in complex acoustic environments.",
+    "paper_abstract_zh": "大型语音模型（LSMs）的广泛应用使其安全风险日益凸显。传统的语音对抗攻击方法在有效性和隐蔽性之间难以平衡。本文提出进化噪声越狱（ENJ）方法，利用遗传算法将环境噪声从被动干扰转变为可主动优化的攻击载体，用于越狱LSMs。通过种群初始化、交叉融合和概率变异等操作，该方法迭代进化出一系列融合恶意指令与背景噪声的音频样本。这些样本对人类听来如同无害噪声，却能诱导模型解析并执行有害指令。在多个主流语音模型上的大量实验表明，ENJ的攻击效果显著优于现有基线方法。本研究揭示了噪声在语音安全中的双重角色，并为复杂声学环境下的模型安全防御提供了新的关键见解。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Yibo Zhang, Liang Lin",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "An Entropy-Guided Curriculum Learning Strategy for Data-Efficient Acoustic Scene Classification under Domain Shift",
+    "paper_title_zh": "一种面向领域偏移下数据高效声学场景分类的熵引导课程学习策略",
+    "paper_id": "2509.11168",
+    "paper_abstract": "Acoustic Scene Classification (ASC) faces challenges in generalizing across recording devices, particularly when labeled data is limited. The DCASE 2024 Challenge Task 1 highlights this issue by requiring models to learn from small labeled subsets recorded on a few devices. These models need to then generalize to recordings from previously unseen devices under strict complexity constraints. While techniques such as data augmentation and the use of pre-trained models are well-established for improving model generalization, optimizing the training strategy represents a complementary yet less-explored path that introduces no additional architectural complexity or inference overhead. Among various training strategies, curriculum learning offers a promising paradigm by structuring the learning process from easier to harder examples. In this work, we propose an entropy-guided curriculum learning strategy to address the domain shift problem in data-efficient ASC. Specifically, we quantify the uncertainty of device domain predictions for each training sample by computing the Shannon entropy of the device posterior probabilities estimated by an auxiliary domain classifier. Using entropy as a proxy for domain invariance, the curriculum begins with high-entropy samples and gradually incorporates low-entropy, domain-specific ones to facilitate the learning of generalizable representations. Experimental results on multiple DCASE 2024 ASC baselines demonstrate that our strategy effectively mitigates domain shift, particularly under limited labeled data conditions. Our strategy is architecture-agnostic and introduces no additional inference cost, making it easily integrable into existing ASC baselines and offering a practical solution to domain shift.",
+    "paper_abstract_zh": "声学场景分类（ASC）在面对不同录音设备时存在泛化挑战，尤其是在标注数据有限的情况下。DCASE 2024挑战赛任务1突显了这一问题，要求模型从少量设备录制的小规模标注子集中学习，然后在严格的复杂度约束下泛化到未见过的设备录音。虽然数据增强和使用预训练模型等技术已广泛应用于提升模型泛化能力，但优化训练策略代表了一条互补且探索较少的路径，它不会引入额外的架构复杂性或推理开销。在各种训练策略中，课程学习通过从易到难组织学习过程提供了一个有前景的范式。在本工作中，我们提出了一种熵引导的课程学习策略来解决数据高效ASC中的领域偏移问题。具体而言，我们通过计算辅助领域分类器估计的设备后验概率的香农熵来量化每个训练样本的设备领域预测不确定性。使用熵作为领域不变性的代理，课程从高熵样本开始，逐步加入低熵的领域特定样本，以促进学习可泛化的表示。在多个DCASE 2024 ASC基线上的实验结果表明，我们的策略有效缓解了领域偏移，特别是在有限标注数据条件下。我们的策略与架构无关且不引入额外推理成本，使其易于集成到现有ASC基线中，并为领域偏移提供了实用解决方案。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Peihong Zhang, Yuxuan Liu, Zhixin Li, Rui Sang, Yiqiang Cai, Yizhou Tan, Shengchen Li",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "WeaveMuse: An Open Agentic System for Multimodal Music Understanding and Generation",
+    "paper_title_zh": "WeaveMuse：一种用于多模态音乐理解与生成的开源智能体系统",
+    "paper_id": "2509.11183",
+    "paper_abstract": "Agentic AI has been standardized in industry as a practical paradigm for coordinating specialized models and tools to solve complex multimodal tasks. In this work, we present WeaveMuse, a multi-agent system for music understanding, symbolic composition, and audio synthesis. Each specialist agent interprets user requests, derives machine-actionable requirements (modalities, formats, constraints), and validates its own outputs, while a manager agent selects and sequences tools, mediates user interaction, and maintains state across turns. The system is extendable and deployable either locally, using quantization and inference strategies to fit diverse hardware budgets, or via the HFApi to preserve free community access to open models. Beyond out-of-the-box use, the system emphasizes controllability and adaptation through constraint schemas, structured decoding, policy-based inference, and parameter-efficient adapters or distilled variants that tailor models to MIR tasks. A central design goal is to facilitate intermodal interaction across text, symbolic notation and visualization, and audio, enabling analysis-synthesis-render loops and addressing cross-format constraints. The framework aims to democratize, implement, and make accessible MIR tools by supporting interchangeable open-source models of various sizes, flexible memory management, and reproducible deployment paths.",
+    "paper_abstract_zh": "智能体AI已在工业中被标准化为一种实用范式，用于协调专用模型和工具以解决复杂的多模态任务。本研究提出了WeaveMuse，一个用于音乐理解、符号化作曲和音频合成的多智能体系统。每个专业智能体负责解释用户请求、推导机器可执行的需求（模态、格式、约束）并验证自身输出，而管理智能体则负责选择和排序工具、协调用户交互以及维护跨轮次的状态。该系统具有可扩展性，可通过量化和推理策略适应不同硬件预算在本地部署，或通过HFApi保持社区对开放模型的免费访问。除开箱即用外，系统还通过约束模式、结构化解码、基于策略的推理以及参数高效适配器或蒸馏变体来强调可控性和适应性，从而将模型定制用于音乐信息检索（MIR）任务。核心设计目标是促进跨文本、符号化记谱与可视化以及音频的模态间交互，实现分析-合成-渲染循环并处理跨格式约束。该框架通过支持可互换的各种规模开源模型、灵活的内存管理和可复现的部署路径，旨在普及、实现并让MIR工具更易获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Emmanouil Karystinaios",
+    "topic": [
+      "Music Information Retrieval",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Revisiting Meter Tracking in Carnatic Music using Deep Learning Approaches",
+    "paper_title_zh": "使用深度学习方法重新审视卡纳提克音乐中的节拍追踪",
+    "paper_id": "2509.11241",
+    "paper_abstract": "Beat and downbeat tracking, jointly referred to as Meter Tracking, is a fundamental task in Music Information Retrieval (MIR). Deep learning models have far surpassed traditional signal processing and classical machine learning approaches in this domain, particularly for Western (Eurogenetic) genres, where large annotated datasets are widely available. These systems, however, perform less reliably on underrepresented musical traditions. Carnatic music, a rich tradition from the Indian subcontinent, is renowned for its rhythmic intricacy and unique metrical structures (tālas). The most notable prior work on meter tracking in this context employed probabilistic Dynamic Bayesian Networks (DBNs). The performance of state-of-the-art (SOTA) deep learning models on Carnatic music, however, remains largely unexplored.\nIn this study, we evaluate two models for meter tracking in Carnatic music: the Temporal Convolutional Network (TCN), a lightweight architecture that has been successfully adapted for Latin rhythms, and Beat This!, a transformer-based model designed for broad stylistic coverage without the need for post-processing. Replicating the experimental setup of the DBN baseline on the Carnatic Music Rhythm (CMR$_f$) dataset, we systematically assess the performance of these models in a directly comparable setting. We further investigate adaptation strategies, including fine-tuning the models on Carnatic data and the use of musically informed parameters. Results show that while off-the-shelf models do not always outperform the DBN, their performance improves substantially with transfer learning, matching or surpassing the baseline. These findings indicate that SOTA deep learning models can be effectively adapted to underrepresented traditions, paving the way for more inclusive and broadly applicable meter tracking systems.",
+    "paper_abstract_zh": "节拍与强拍追踪（统称为节拍追踪）是音乐信息检索（MIR）中的一项基础任务。深度学习模型在该领域已远超传统信号处理和经典机器学习方法，特别是在拥有大量标注数据的西方（欧洲源流）音乐类型中表现突出。然而，这些系统在代表性不足的音乐传统中表现可靠性较低。卡纳提克音乐——源自印度次大陆的一种丰富传统——以其复杂的节奏性和独特的节拍结构（tālas）而闻名。此前该领域最显著的研究采用了概率动态贝叶斯网络（DBN）。然而，最先进的深度学习模型在卡纳提克音乐上的性能仍 largely 未经探索。\n本研究评估了两种用于卡纳提克音乐节拍追踪的模型：时序卷积网络（TCN）（一种已成功应用于拉丁节奏的轻量架构）和 Beat This!（一种基于Transformer的模型，设计用于广泛的风格覆盖且无需后处理）。通过在卡纳提克音乐节奏数据集（CMR$_f$）上复制DBN基线的实验设置，我们在直接可比的设置中系统评估了这些模型的性能。我们进一步研究了适应策略，包括对卡纳提克数据进行微调以及使用音乐知识驱动的参数。结果表明，虽然现成模型并不总是优于DBN，但通过迁移学习，其性能得到显著提升，达到或超过了基线水平。这些发现表明，最先进的深度学习模型可以有效地适应代表性不足的音乐传统，为更具包容性和广泛适用性的节拍追踪系统铺平道路。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Satyajeet Prabhu",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "FuseCodec: Semantic-Contextual Fusion and Supervision for Neural Codecs",
+    "paper_title_zh": "FuseCodec：面向神经编解码器的语义-上下文融合与监督方法",
+    "paper_id": "2509.11425",
+    "paper_abstract": "Speech tokenization enables discrete representation and facilitates speech language modeling. However, existing neural codecs capture low-level acoustic features, overlooking the semantic and contextual cues inherent to human speech. While recent efforts introduced semantic representations from self-supervised speech models or incorporated contextual representations from pre-trained language models, challenges remain in aligning and unifying the semantic and contextual representations. We introduce FuseCodec, which unifies acoustic, semantic, and contextual representations through strong cross-modal alignment and globally informed supervision. We propose three complementary techniques: (i) Latent Representation Fusion, integrating semantic and contextual features directly into the encoder latent space for robust and unified representation learning; (ii) Global Semantic-Contextual Supervision, supervising discrete tokens with globally pooled and broadcasted representations to enhance temporal consistency and cross-modal alignment; and (iii) Temporally Aligned Contextual Supervision, strengthening alignment by dynamically matching contextual and speech tokens within a local window for fine-grained token-level supervision. We further introduce FuseCodec-TTS, demonstrating our methodology's applicability to zero-shot speech synthesis. Empirically, FuseCodec achieves state-of-the-art performance in LibriSpeech, surpassing EnCodec, SpeechTokenizer, and DAC in transcription accuracy, perceptual quality, intelligibility, and speaker similarity. Results highlight the effectiveness of contextually and semantically guided tokenization for speech tokenization and downstream tasks. Code and pretrained models are available at this https URL.",
+    "paper_abstract_zh": "语音标记化能够实现离散表示并促进语音语言建模。然而，现有的神经编解码器仅捕获低层次声学特征，忽略了人类语音固有的语义和上下文线索。尽管近期研究引入了自监督语音模型的语义表示或融合了预训练语言模型的上下文表示，但在对齐和统一语义与上下文表示方面仍存在挑战。我们提出了FuseCodec，通过强跨模态对齐和全局感知监督，统一了声学、语义和上下文表示。我们提出三种互补技术：（i）潜在表示融合：将语义和上下文特征直接集成到编码器潜在空间中，实现鲁棒且统一的表示学习；（ii）全局语义-上下文监督：通过全局池化和广播表示对离散标记进行监督，以增强时间一致性和跨模态对齐；（iii）时间对齐上下文监督：通过在局部窗口内动态匹配上下文与语音标记，强化细粒度标记级对齐。我们进一步推出FuseCodec-TTS，证明了该方法在零样本语音合成中的适用性。实验表明，FuseCodec在LibriSpeech上实现了最先进的性能，在转录准确率、感知质量、清晰度和说话人相似度上均超越EnCodec、SpeechTokenizer和DAC。结果凸显了基于上下文和语义引导的标记化方法在语音标记化及下游任务中的有效性。代码和预训练模型可通过此https URL获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Md Mubtasim Ahasan, Rafat Hasan Khan, Tasnim Mohiuddin, Aman Chadha, Tariq Iqbal, M Ashraful Amin, Amin Ahsan Ali, Md Mofijul Islam, A K M Mahbubur Rahman",
+    "topic": [
+      "Audio Codec",
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Acoustic Overspecification in Electronic Dance Music Taxonomy",
+    "paper_title_zh": "电子舞曲分类学中的声学过细化问题",
+    "paper_id": "2509.11474",
+    "paper_abstract": "Electronic Dance Music (EDM) classification typically relies on industry-defined taxonomies with numerous subgenres, yet the acoustic basis for these distinctions remains unclear. Current approaches use supervised learning with prescribed genre labels, assuming their validity without systematic evaluation. In this paper, we propose an unsupervised approach to discover the natural acoustic structure of EDM independent of commercial labels. Our method combines novel tempogram-based features capturing EDM's layered rhythmic patterns with multi-criteria feature selection. To validate that our findings reflect genuine acoustic structure rather than methodological artifacts, we compare our results against state-of-the-art pre-trained audio embeddings (MERT and CLAP). Both our feature space and embedding representations converge to 19-23 natural acoustic families compared to the prescribed 35, providing consistent evidence of significant overspecification in current EDM taxonomy by approximately one-third.",
+    "paper_abstract_zh": "电子舞曲（EDM）分类通常依赖于行业定义的包含大量子流派的分类体系，然而这些区分背后的声学基础仍不明确。当前方法采用带有预设流派标签的监督学习，未经系统评估即假定其有效性。本文提出一种无监督方法，用于发现独立于商业标签的EDM自然声学结构。我们的方法结合了新颖的基于tempogram的特征（捕捉EDM分层节奏模式）与多准则特征选择技术。为验证所得结果反映的是真实声学结构而非方法学伪影，我们将结果与最先进的预训练音频嵌入模型（MERT和CLAP）进行对比。我们的特征空间与嵌入表示均收敛到19-23个自然声学家族，而预设分类体系包含35个类别，一致证明当前EDM分类体系存在约三分之一的显著过细化现象。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Information Retrieval (cs.IR)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Weilun Xu, Tianhao Dai, Oscar Goudet, Xiaoxuan Wang",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Scaling to Multimodal and Multichannel Heart Sound Classification: Fine-Tuning Wav2Vec 2.0 with Synthetic and Augmented Biosignals",
+    "paper_title_zh": "扩展到多模态和多通道心音分类：利用合成和增强生物信号微调Wav2Vec 2.0",
+    "paper_id": "2509.11606",
+    "paper_abstract": "Cardiovascular diseases (CVDs) are the leading cause of death worldwide, accounting for approximately 17.9 million deaths each year. Early detection is critical, creating a demand for accurate and inexpensive pre-screening methods. Deep learning has recently been applied to classify abnormal heart sounds indicative of CVDs using synchronised phonocardiogram (PCG) and electrocardiogram (ECG) signals, as well as multichannel PCG (mPCG). However, state-of-the-art architectures remain underutilised due to the limited availability of synchronised and multichannel datasets. Augmented datasets and pre-trained models provide a pathway to overcome these limitations, enabling transformer-based architectures to be trained effectively. This work combines traditional signal processing with denoising diffusion models, WaveGrad and DiffWave, to create an augmented dataset to fine-tune a Wav2Vec 2.0-based classifier on multimodal and multichannel heart sound datasets. The approach achieves state-of-the-art performance. On the Computing in Cardiology (CinC) 2016 dataset of single channel PCG, accuracy, unweighted average recall (UAR), sensitivity, specificity and Matthew's correlation coefficient (MCC) reach 92.48\\%, 93.05\\%, 93.63\\%, 92.48\\%, 94.93\\% and 0.8283, respectively. Using the synchronised PCG and ECG signals of the training-a dataset from CinC, 93.14\\%, 92.21\\%, 94.35\\%, 90.10\\%, 95.12\\% and 0.8380 are achieved for accuracy, UAR, sensitivity, specificity and MCC, respectively. Using a wearable vest dataset consisting of mPCG data, the model achieves 77.13\\% accuracy, 74.25\\% UAR, 86.47\\% sensitivity, 62.04\\% specificity, and 0.5082 MCC. These results demonstrate the effectiveness of transformer-based models for CVD detection when supported by augmented datasets, highlighting their potential to advance multimodal and multichannel heart sound classification.",
+    "paper_abstract_zh": "心血管疾病（CVDs）是全球主要死因，每年导致约1790万人死亡。早期检测至关重要，这催生了对准确且廉价预筛查方法的需求。深度学习最近被应用于使用同步的心音图（PCG）和心电图（ECG）信号以及多通道PCG（mPCG）来分类指示CVDs的异常心音。然而，由于同步和多通道数据集的可用性有限，最先进的架构仍未得到充分利用。增强数据集和预训练模型为克服这些限制提供了途径，使得基于Transformer的架构能够有效训练。这项工作将传统信号处理与去噪扩散模型WaveGrad和DiffWave相结合，创建了一个增强数据集，用于在多模态和多通道心音数据集上微调基于Wav2Vec 2.0的分类器。该方法实现了最先进的性能。在计算心脏病学（CinC）2016单通道PCG数据集上，准确率、未加权平均召回率（UAR）、敏感性、特异性、F1分数和马修斯相关系数（MCC）分别达到92.48%、93.05%、93.63%、92.48%、94.93%和0.8283。使用CinC训练-a数据集的同步PCG和ECG信号，准确率、UAR、敏感性、特异性、F1分数和MCC分别达到93.14%、92.21%、94.35%、90.10%、95.12%和0.8380。在使用包含mPCG数据的可穿戴背心数据集上，模型实现了77.13%的准确率、74.25%的UAR、86.47%的敏感性、62.04%的特异性和0.5082的MCC。这些结果证明了在增强数据集支持下，基于Transformer的模型在CVD检测方面的有效性，突显了它们在推进多模态和多通道心音分类方面的潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Milan Marocchi, Matthew Fynn, Kayapanda Mandana, Yue Rong",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Neural Audio Codecs for Prompt-Driven Universal Source Separation",
+    "paper_title_zh": "基于提示驱动的通用源分离的神经音频编解码器",
+    "paper_id": "2509.11717",
+    "paper_abstract": "Text-guided source separation supports flexible audio editing across media and assistive applications, but existing models like AudioSep are too compute-heavy for edge deployment. Neural audio codec (NAC) models such as CodecFormer and SDCodec are compute-efficient but limited to fixed-class separation. We introduce CodecSep, the first NAC-based model for on-device universal, text-driven separation. CodecSep combines DAC compression with a Transformer masker modulated by CLAP-derived FiLM parameters. Across six open-domain benchmarks under matched training/prompt protocols, \\textbf{CodecSep} surpasses \\textbf{AudioSep} in separation fidelity (SI-SDR) while remaining competitive in perceptual quality (ViSQOL) and matching or exceeding fixed-stem baselines (TDANet, CodecFormer, SDCodec). In code-stream deployments, it needs just 1.35~GMACs end-to-end -- approximately $54\\times$ less compute ($25\\times$ architecture-only) than spectrogram-domain separators like AudioSep -- while remaining fully bitstream-compatible.",
+    "paper_abstract_zh": "文本引导的源分离支持跨媒体和辅助应用中的灵活音频编辑，但现有模型（如AudioSep）计算量过大，难以在边缘设备上部署。神经音频编解码器（NAC）模型（如CodecFormer和SDCodec）计算效率高，但仅限于固定类别的分离。我们推出了CodecSep，这是首个基于NAC的模型，用于设备端通用、文本驱动的分离。CodecSep将DAC压缩与由CLAP衍生的FiLM参数调制的Transformer掩码器相结合。在匹配的训练/提示协议下，跨越六个开放领域基准测试，CodecSep在分离保真度（SI-SDR）方面超越了AudioSep，同时在感知质量（ViSQOL）上保持竞争力，并匹配或超过了固定音干基线（TDANet、CodecFormer、SDCodec）。在码流部署中，它仅需1.35 GMACs的端到端计算量——比频谱域分离器（如AudioSep）减少约54倍（仅架构部分减少25倍）——同时保持完全比特流兼容。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Adhiraj Banerjee, Vipul Arora",
+    "topic": [
+      "Audio Codec",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "PoolingVQ: A VQVAE Variant for Reducing Audio Redundancy and Boosting Multi-Modal Fusion in Music Emotion Analysis",
+    "paper_title_zh": "PoolingVQ：一种通过减少音频冗余并提升多模态融合效果的音乐情感分析VQVAE变体",
+    "paper_id": "2509.11976",
+    "paper_abstract": "Multimodal music emotion analysis leverages audio and MIDI modalities to enhance performance. While mainstream approaches focus on complex feature extraction networks, we posit that shortening the length of audio sequence features to mitigate redundancy, especially in contrast to MIDI's compact representation, may effectively boost task performance. To achieve this, we developed PoolingVQ by combining Vector Quantized Variational Autoencoder (VQVAE) with spatial pooling, which directly compresses audio feature sequences through local aggregation to reduce redundancy, then devised a two-stage co-attention approach to fuse audio and MIDI information. Experimental results on the public datasets EMOPIA and VGMIDI demonstrate that our multimodal framework achieves state-of-the-art overall performance, with PoolingVQ yielding some improvement.",
+    "paper_abstract_zh": "多模态音乐情感分析利用音频和MIDI模态来提升性能。尽管主流方法侧重于复杂的特征提取网络，但我们认为通过缩短音频序列特征的长度以减少冗余（尤其是与MIDI的紧凑表示形成对比），可能有效提升任务性能。为实现这一目标，我们通过将向量量化变分自编码器（VQVAE）与空间池化相结合，开发了PoolingVQ方法。该方法通过局部聚合直接压缩音频特征序列以减少冗余，随后设计了一种两阶段协同注意力机制来融合音频和MIDI信息。在公开数据集EMOPIA和VGMIDI上的实验结果表明，我们的多模态框架实现了最先进的整体性能，且PoolingVQ带来了一定的改进。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Dinghao Zou, Yicheng Gong, Xiaokang Li, Xin Cao, Sunbowen Lee",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Improving Out-of-Domain Audio Deepfake Detection via Layer Selection and Fusion of SSL-Based Countermeasures",
+    "paper_title_zh": "通过层级选择与基于SSL的对抗措施融合改进域外音频深度伪造检测",
+    "paper_id": "2509.12003",
+    "paper_abstract": "Audio deepfake detection systems based on frozen pre-trained self-supervised learning (SSL) encoders show a high level of performance when combined with layer-weighted pooling methods, such as multi-head factorized attentive pooling (MHFA). However, they still struggle to generalize to out-of-domain (OOD) conditions. We tackle this problem by studying the behavior of six different pre-trained SSLs, on four different test corpora. We perform a layer-by-layer analysis to determine which layers contribute most. Next, we study the pooling head, comparing a strategy based on a single layer with automatic selection via MHFA. We observed that selecting the best layer gave very good results, while reducing system parameters by up to 80%. A wide variation in performance as a function of test corpus and SSL model is also observed, showing that the pre-training strategy of the encoder plays a role. Finally, score-level fusion of several encoders improved generalization to OOD attacks.",
+    "paper_abstract_zh": "基于冻结预训练自监督学习（SSL）编码器的音频深度伪造检测系统，在与多层加权池化方法（如多头因子化注意力池化MHFA）结合时表现出高性能。然而，这些系统在泛化到域外（OOD）条件时仍存在困难。我们通过研究六种不同预训练SSL模型在四个不同测试语料库上的行为来解决这个问题。我们进行了逐层分析以确定哪些层贡献最大。接着，我们研究了池化头策略，比较了基于单层与通过MHFA自动选择的方法。我们观察到选择最佳层能带来非常好的结果，同时将系统参数减少高达80%。我们还观察到性能随测试语料库和SSL模型的不同而有很大差异，这表明编码器的预训练策略起着重要作用。最后，多个编码器的分数级融合改善了对OOD攻击的泛化能力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-09-16",
+    "paper_authors": "Pierre Serrano, Raphaël Duroselle, Florian Angulo, Jean-François Bonastre, Olivier Boeffard",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]

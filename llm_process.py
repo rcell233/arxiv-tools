@@ -11,7 +11,7 @@ from typing import Dict, Any, List, Optional
 from datetime import datetime
 
 # OpenRouter API配置
-API_KEY = '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'
+API_KEY = value = os.environ["API_KEY"]
 BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "deepseek/deepseek-chat-v3.1:free"
 
