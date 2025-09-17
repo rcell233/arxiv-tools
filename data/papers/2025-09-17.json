@@ -4,7 +4,7 @@
     "paper_title_zh": "基于多模态嵌入的目标说话人增强",
     "paper_id": "2509.12583",
     "paper_abstract": "Target Speaker Extraction (TSE) is a critical challenge in cocktail party scenarios. While leveraging multiple modalities, such as voice, lip, face, and expression embeddings, can enhance performance, real-world applications often suffer from intermittent modality dropout. This paper presents a comprehensive study on the interactions and robustness of various multimodal fusion strategies under varying degrees of modality dropout. We build upon a state-of-the-art audio-visual speech enhancement system and integrate four distinct speaker identity cues: lip embeddings for synchronized contextual information, a voice speaker embedding extracted via cross-attention for acoustic consistency, a static face embedding for speaker identity, and a novel dynamic expression embedding for frame-wise emotional features. We systematically evaluate different combinations of these modalities under two key training regimes: zero dropout and 80% modality dropout. Extensive experiments demonstrate that while a full multimodal ensemble achieves optimal performance under ideal (zero dropout) conditions, its effectiveness diminishes significantly when test-time dropout occurs without prior exposure during training. Crucially, we show that training with a high (80%) modality dropout rate dramatically enhances model robustness, enabling the system to maintain superior performance even under severe test-time missing modalities. Our findings highlight that voice embeddings exhibit consistent robustness, while the proposed expression embedding provides valuable complementary information. This work underscores the importance of training strategies that account for real-world imperfection, moving beyond pure performance maximization to achieve practical reliability in multimodal speech enhancement systems.",
-    "paper_abstract_zh": "目标说话人提取（TSE）是鸡尾酒会场景中的一个关键挑战。虽然利用多模态（如语音、唇形、面部和表情嵌入）可以提升性能，但实际应用常常面临间歇性模态丢失的问题。本文全面研究了在不同程度模态丢失下各种多模态融合策略的交互作用和鲁棒性。我们基于最先进的视听语音增强系统，整合了四种不同的说话人身份线索：提供同步上下文信息的唇形嵌入、通过交叉注意力提取的声学一致性语音说话人嵌入、用于说话人识别的静态面部嵌入，以及新颖的动态表情嵌入以提供帧级情感特征。我们在两种关键训练机制下系统评估了这些模态的不同组合：零丢失和80%模态丢失。大量实验表明，虽然在理想（零丢失）条件下完整的多模态集成能达到最佳性能，但当测试时出现模态丢失且训练期间未接触此类情况时，其有效性会显著下降。关键的是，我们发现使用高（80%）模态丢失率进行训练能大幅增强模型鲁棒性，使系统即使在严重测试时模态缺失的情况下也能保持优异性能。我们的研究结果强调，语音嵌入展现出持续稳定的鲁棒性，而提出的表情嵌入则提供了有价值的互补信息。这项工作凸显了考虑现实世界不完美性的训练策略的重要性，超越纯性能最大化，以实现多模态语音增强系统的实际可靠性。",
+    "paper_abstract_zh": "目标说话人提取（TSE）是鸡尾酒会场景中的一个关键挑战。虽然利用多种模态（如语音、唇形、面部和表情嵌入）可以提升性能，但实际应用常常遭受间歇性模态丢失的问题。本文对各种多模态融合策略在不同程度模态丢失下的交互作用和鲁棒性进行了全面研究。我们基于一个先进的视听语音增强系统，整合了四种不同的说话人身份线索：用于同步上下文信息的唇形嵌入、通过交叉注意力提取的用于声学一致性的语音说话人嵌入、用于说话人身份的静态面部嵌入，以及一种新颖的用于逐帧情感特征的动态表情嵌入。我们在两种关键训练机制下系统地评估了这些模态的不同组合：零丢失和80%模态丢失。大量实验表明，虽然在理想（零丢失）条件下，完整的多模态集成能实现最佳性能，但当测试时出现丢失且训练期间未接触过此情况时，其有效性会显著下降。关键的是，我们发现使用高（80%）模态丢失率进行训练能显著增强模型的鲁棒性，使系统即使在测试时面临严重的模态缺失情况下也能保持优越性能。我们的研究结果强调，语音嵌入展现出持续的鲁棒性，而所提出的表情嵌入则提供了有价值的补充信息。这项工作强调了考虑现实世界不完美性的训练策略的重要性，超越了纯粹的性能最大化，以实现多模态语音增强系统的实际可靠性。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -24,7 +24,7 @@
     "paper_title_zh": "探究多阶段分数融合在防欺骗说话人验证中的潜力",
     "paper_id": "2509.12668",
     "paper_abstract": "Despite improvements in automatic speaker verification (ASV), vulnerability against spoofing attacks remains a major concern. In this study, we investigate the integration of ASV and countermeasure (CM) subsystems into a modular spoof-aware speaker verification (SASV) framework. Unlike conventional single-stage score-level fusion methods, we explore the potential of a multi-stage approach that utilizes the ASV and CM systems in multiple stages. By leveraging ECAPA-TDNN (ASV) and AASIST (CM) subsystems, we consider support vector machine and logistic regression classifiers to achieve SASV. In the second stage, we integrate their outputs with the original score to revise fusion back-end classifiers. Additionally, we incorporate another auxiliary score from RawGAT (CM) to further enhance our SASV framework. Our approach yields an equal error rate (EER) of 1.30% on the evaluation dataset of the SASV2022 challenge, representing a 24% relative improvement over the baseline system.",
-    "paper_abstract_zh": "尽管自动说话人验证（ASV）技术有所改进，但其对欺骗攻击的脆弱性仍然是一个主要问题。本研究探讨了将ASV与反欺骗（CM）子系统集成到模块化防欺骗说话人验证（SASV）框架中的方法。不同于传统的单阶段分数级融合方法，我们探索了一种多阶段方法的潜力，该方法在多个阶段利用ASV和CM系统。通过采用ECAPA-TDNN（ASV）和AASIST（CM）子系统，我们考虑使用支持向量机和逻辑回归分类器来实现SASV。在第二阶段，我们将它们的输出与原始分数整合，以改进融合后端分类器。此外，我们还引入了来自RawGAT（CM）的另一个辅助分数，以进一步增强我们的SASV框架。我们的方法在SASV2022挑战赛的评估数据集上实现了1.30%的等错误率（EER），相对于基线系统提升了24%的相对改进。",
+    "paper_abstract_zh": "尽管自动说话人验证（ASV）技术有所改进，但其对欺骗攻击的脆弱性仍然是一个主要问题。本研究探讨了将ASV和反欺骗（CM）子系统集成到模块化的防欺骗说话人验证（SASV）框架中的方法。与传统的单阶段分数级融合方法不同，我们探索了一种多阶段方法的潜力，该方法在多个阶段利用ASV和CM系统。通过采用ECAPA-TDNN（ASV）和AASIST（CM）子系统，我们考虑使用支持向量机和逻辑回归分类器来实现SASV。在第二阶段，我们将它们的输出与原始分数整合，以改进融合后端分类器。此外，我们还引入了来自RawGAT（CM）的另一个辅助分数，以进一步增强我们的SASV框架。我们的方法在SASV2022挑战赛的评估数据集上实现了1.30%的等错误率（EER），相对于基线系统提高了24%的相对性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -40,10 +40,10 @@
   },
   {
     "paper_title": "MSR-Codec: A Low-Bitrate Multi-Stream Residual Codec for High-Fidelity Speech Generation with Information Disentanglement",
-    "paper_title_zh": "MSR编解码器：基于信息解缠的低比特率多流残差编解码器用于高保真语音生成",
+    "paper_title_zh": "MSR-Codec：一种基于多流残差分离信息的低比特率高保真语音生成编解码器",
     "paper_id": "2509.13068",
     "paper_abstract": "Audio codecs are a critical component of modern speech generation systems. This paper introduces a low-bitrate, multi-scale residual codec that encodes speech into four distinct streams: semantic, timbre, prosody, and residual. This architecture achieves high-fidelity speech reconstruction at competitive low bitrates while demonstrating an inherent ability for information disentanglement. We construct a two-stage language model for text-to-speech (TTS) synthesis using this codec, which, despite its lightweight design and minimal data requirements, achieves a state-of-the-art Word Error Rate (WER) and superior speaker similarity compared to several larger models. Furthermore, the codec's design proves highly effective for voice conversion, enabling independent manipulation of speaker timbre and prosody.",
-    "paper_abstract_zh": "音频编解码器是现代语音生成系统的关键组成部分。本文介绍了一种低比特率、多尺度残差编解码器，可将语音编码为四个独立的流：语义、音色、韵律和残差。该架构在竞争性低比特率下实现了高保真语音重建，同时展现出内在的信息解缠能力。我们使用该编解码器构建了一个用于文本转语音（TTS）合成的两阶段语言模型，尽管采用轻量级设计且数据需求最小，但与多个大型模型相比，仍实现了最先进的词错误率（WER）和卓越的说话人相似度。此外，该编解码器的设计被证明在语音转换方面非常有效，能够实现对说话人音色和韵律的独立操控。",
+    "paper_abstract_zh": "音频编解码器是现代语音生成系统的关键组成部分。本文介绍了一种低比特率、多尺度残差编解码器，它将语音编码为四个不同的流：语义、音色、韵律和残差。该架构在竞争性低比特率下实现了高保真语音重建，同时展现出固有的信息分离能力。我们使用该编解码器构建了一个用于文本转语音（TTS）合成的两阶段语言模型，尽管设计轻量且数据需求最小，但与多个大型模型相比，该模型实现了最先进的词错误率（WER）和卓越的说话人相似性。此外，该编解码器的设计被证明在语音转换方面非常有效，能够独立操纵说话人音色和韵律。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -59,10 +59,10 @@
   },
   {
     "paper_title": "Token-based Attractors and Cross-attention in Spoof Diarization",
-    "paper_title_zh": "基于令牌的吸引子与交叉注意力在伪造语音分段中的应用",
+    "paper_title_zh": "基于令牌的吸引子和交叉注意力在伪造语音分段中的应用",
     "paper_id": "2509.13085",
     "paper_abstract": "Spoof diarization identifies ``what spoofed when\" in a given speech by temporally locating spoofed regions and determining their manipulation techniques. As a first step toward this task, prior work proposed a two-branch model for localization and spoof type clustering, which laid the foundation for spoof diarization. However, its simple structure limits the ability to capture complex spoofing patterns and lacks explicit reference points for distinguishing between bona fide and various spoofing types. To address these limitations, our approach introduces learnable tokens where each token represents acoustic features of bona fide and spoofed speech. These attractors interact with frame-level embeddings to extract discriminative representations, improving separation between genuine and generated speech. Vast experiments on PartialSpoof dataset consistently demonstrate that our approach outperforms existing methods in bona fide detection and spoofing method clustering.",
-    "paper_abstract_zh": "伪造语音分段任务通过时序定位伪造区域并确定其 manipulation 技术，以识别给定语音中「何时伪造了何种内容」。作为该任务的初步探索，先前研究提出了一个用于定位和伪造类型聚类的双分支模型，为伪造语音分段奠定了基础。然而，其简单结构限制了捕捉复杂伪造模式的能力，且缺乏明确参考点来区分真实语音与各类伪造类型。针对这些局限性，我们的方法引入了可学习令牌，其中每个令牌代表真实语音与伪造语音的声学特征。这些吸引子与帧级嵌入交互以提取判别性表征，提升真实语音与生成语音的分离能力。在 PartialSpoof 数据集上的大量实验一致表明，我们的方法在真实语音检测和伪造方法聚类方面优于现有方法。",
+    "paper_abstract_zh": "伪造语音分段任务旨在通过时间定位伪造区域并确定其操纵技术，来识别给定语音中'何时何物被伪造'。作为该任务的初步探索，先前研究提出了一个用于定位和伪造类型聚类的双分支模型，为伪造语音分段奠定了基础。然而，其简单结构限制了捕捉复杂伪造模式的能力，并且缺乏明确参考点来区分真实语音与各类伪造类型。为解决这些局限性，我们的方法引入了可学习令牌，其中每个令牌代表真实语音和伪造语音的声学特征。这些吸引子与帧级嵌入交互以提取判别性表征，改善真实语音与生成语音之间的分离效果。在PartialSpoof数据集上的大量实验一致表明，我们的方法在真实语音检测和伪造方法聚类方面优于现有方法。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -78,10 +78,10 @@
   },
   {
     "paper_title": "Importance-Weighted Domain Adaptation for Sound Source Tracking",
-    "paper_title_zh": "基于重要性加权的领域自适应方法在声源跟踪中的应用",
+    "paper_title_zh": "重要性加权域自适应在声源跟踪中的应用",
     "paper_id": "2509.13215",
     "paper_abstract": "In recent years, deep learning has significantly advanced sound source localization (SSL). However, training such models requires large labeled datasets, and real recordings are costly to annotate in particular if sources move. While synthetic data using simulated room impulse responses (RIRs) and noise offers a practical alternative, models trained on synthetic data suffer from domain shift in real environments. Unsupervised domain adaptation (UDA) can address this by aligning synthetic and real domains without relying on labels from the latter. The few existing UDA approaches however focus on static SSL and do not account for the problem of sound source tracking (SST), which presents two specific domain adaptation challenges. First, variable-length input sequences create mismatches in feature dimensionality across domains. Second, the angular coverages of the synthetic and the real data may not be well aligned either due to partial domain overlap or due to batch size constraints, which we refer to as directional diversity mismatch. To address these, we propose a novel UDA approach tailored for SST based on two key features. We employ the final hidden state of a recurrent neural network as a fixed-dimensional feature representation to handle variable-length sequences. Further, we use importance-weighted adversarial training to tackle directional diversity mismatch by prioritizing synthetic samples similar to the real domain. Experimental results demonstrate that our approach successfully adapts synthetic-trained models to real environments, improving SST performance.",
-    "paper_abstract_zh": "近年来，深度学习显著推动了声源定位（SSL）的发展。然而，训练此类模型需要大量标注数据集，而对真实录音进行标注成本高昂，特别是在声源移动的情况下。虽然使用模拟房间脉冲响应（RIRs）和噪声的合成数据提供了实用替代方案，但在合成数据上训练的模型在真实环境中存在领域偏移问题。无监督领域自适应（UDA）可以通过对齐合成域和真实域来解决这一问题，且无需依赖真实域的标签。然而，现有的少数UDA方法主要关注静态SSL，并未考虑声源跟踪（SST）问题，后者带来两个特定的领域自适应挑战：首先，可变长度输入序列导致跨领域特征维度不匹配；其次，由于部分领域重叠或批量大小限制，合成数据与真实数据的角度覆盖范围可能未对齐，我们称之为方向多样性失配。为解决这些问题，我们提出了一种基于两个关键特征的新型UDA方法：使用循环神经网络的最终隐藏状态作为固定维度特征表示以处理可变长度序列；通过重要性加权的对抗训练，优先处理与真实域相似的合成样本以解决方向多样性失配。实验结果表明，我们的方法成功将合成数据训练的模型适配到真实环境，提升了SST性能。",
+    "paper_abstract_zh": "近年来，深度学习显著推动了声源定位（SSL）的发展。然而，训练此类模型需要大量标注数据集，而真实录音的标注成本高昂，尤其是在声源移动的情况下。虽然使用模拟房间脉冲响应（RIR）和噪声的合成数据提供了一种实用替代方案，但在合成数据上训练的模型在真实环境中会遭受域偏移问题。无监督域自适应（UDA）可以通过对齐合成域和真实域来解决这一问题，且无需依赖真实域的标签。然而，现有的少数UDA方法主要关注静态SSL，并未考虑声源跟踪（SST）问题，后者带来了两个特定的域自适应挑战。首先，可变长度输入序列导致跨域特征维度不匹配；其次，合成数据与真实数据的角度覆盖范围可能由于部分域重叠或批量大小限制而未对齐，我们称之为方向多样性失配。为解决这些问题，我们提出了一种基于两个关键特征的新型UDA方法，专为SST设计。我们采用循环神经网络的最终隐藏状态作为固定维度特征表示来处理可变长度序列；此外，通过重要性加权对抗训练，优先处理与真实域相似的合成样本以解决方向多样性失配问题。实验结果表明，我们的方法成功将基于合成数据训练的模型适配至真实环境，提升了SST性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -99,7 +99,7 @@
     "paper_title_zh": "一种用于求解最长填充公共子序列问题的自适应CMSA方法及其在音频查询中的应用",
     "paper_id": "2509.12261",
     "paper_abstract": "This paper addresses the Longest Filled Common Subsequence (LFCS) problem, a challenging NP-hard problem with applications in bioinformatics, including gene mutation prediction and genomic data reconstruction. Existing approaches, including exact, metaheuristic, and approximation algorithms, have primarily been evaluated on small-sized instances, which offer limited insights into their scalability. In this work, we introduce a new benchmark dataset with significantly larger instances and demonstrate that existing datasets lack the discriminative power needed to meaningfully assess algorithm performance at scale. To solve large instances efficiently, we utilize an adaptive Construct, Merge, Solve, Adapt (CMSA) framework that iteratively generates promising subproblems via component-based construction and refines them using feedback from prior iterations. Subproblems are solved using an external black-box solver. Extensive experiments on both standard and newly introduced benchmarks show that the proposed adaptive CMSA achieves state-of-the-art performance, outperforming five leading methods. Notably, on 1,510 problem instances with known optimal solutions, our approach solves 1,486 of them -- achieving over 99.9% optimal solution quality and demonstrating exceptional scalability. We additionally propose a novel application of LFCS for song identification from degraded audio excerpts as an engineering contribution, using real-world energy-profile instances from popular music. Finally, we conducted an empirical explainability analysis to identify critical feature combinations influencing algorithm performance, i.e., the key problem features contributing to success or failure of the approaches across different instance types are revealed.",
-    "paper_abstract_zh": "本文研究了最长填充公共子序列（LFCS）问题，这是一个具有挑战性的NP难问题，在生物信息学中具有应用，包括基因突变预测和基因组数据重建。现有方法（包括精确算法、元启发式算法和近似算法）主要在小规模实例上进行评估，对其可扩展性的洞察有限。在这项工作中，我们引入了一个规模显著更大的新基准数据集，并证明现有数据集缺乏有效评估算法大规模性能所需的区分能力。为高效求解大规模实例，我们采用了一种自适应构造-合并-求解-调整（CMSA）框架，该框架通过基于组件的构造迭代生成有前景的子问题，并利用先前迭代的反馈对其进行优化。子问题使用外部黑盒求解器解决。在标准和新引入的基准上的大量实验表明，所提出的自适应CMSA实现了最先进的性能，优于五种领先方法。值得注意的是，在1510个已知最优解的问题实例上，我们的方法解决了其中1486个——达到了超过99.9%的最优解质量，并展示了卓越的可扩展性。作为工程贡献，我们还提出了LFCS在从 degraded 音频片段中进行歌曲识别的新应用，使用了来自流行音乐的真实世界能量谱实例。最后，我们进行了可解释性实证分析，以识别影响算法性能的关键特征组合，即揭示了在不同实例类型中导致方法成功或失败的关键问题特征。",
+    "paper_abstract_zh": "本文研究了最长填充公共子序列（LFCS）问题，这是一个具有挑战性的NP难问题，在生物信息学中具有应用，包括基因突变预测和基因组数据重建。现有方法（包括精确算法、元启发式算法和近似算法）主要在小规模实例上进行评估，对其可扩展性的洞察有限。在这项工作中，我们引入了一个包含显著更大实例的新基准数据集，并证明现有数据集缺乏有效评估算法大规模性能所需的区分能力。为高效求解大规模实例，我们采用了一种自适应的构造-合并-求解-调整（CMSA）框架，该框架通过基于组件的构造迭代生成有前景的子问题，并利用先前迭代的反馈进行优化。子问题使用外部黑盒求解器解决。在标准和新引入的基准上的大量实验表明，所提出的自适应CMSA实现了最先进的性能，优于五种领先方法。值得注意的是，在已知最优解的1,510个问题实例中，我们的方法解决了其中1,486个——达到了超过99.9%的最优解质量，并展示了卓越的可扩展性。作为工程贡献，我们还提出了LFCS在从 degraded 音频片段中进行歌曲识别的新应用，使用了来自流行音乐的真实世界能量谱实例。最后，我们进行了实证可解释性分析，以识别影响算法性能的关键特征组合，即揭示了在不同实例类型中导致方法成功或失败的关键问题特征。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -119,12 +119,12 @@
     "paper_title_zh": "符号钢琴音乐续写的传统方法",
     "paper_id": "2509.12267",
     "paper_abstract": "We present a traditional approach to symbolic piano music continuation for the MIREX 2025 Symbolic Music Generation challenge. While computational music generation has recently focused on developing large foundation models with sophisticated architectural modifications, we argue that simpler approaches remain more effective for constrained, single-instrument tasks. We thus return to a simple, unaugmented next-token-prediction objective on tokenized raw MIDI, aiming to outperform large foundation models by using better data and better fundamentals. We release model weights and code at this https URL.",
-    "paper_abstract_zh": "我们提出了一种针对MIREX 2025符号音乐生成挑战的符号钢琴音乐续写的传统方法。尽管近年来计算音乐生成领域主要关注开发具有复杂架构改进的大型基础模型，但我们认为对于受约束的单乐器任务而言，更简单的方法仍然更为有效。因此，我们回归到基于标记化原始MIDI的简单、未经增强的下一个标记预测目标，旨在通过使用更好的数据和更扎实的基础来超越大型基础模型。我们在此https URL发布了模型权重和代码。",
+    "paper_abstract_zh": "我们为MIREX 2025符号音乐生成挑战赛提出了一种符号钢琴音乐续写的传统方法。尽管近期计算音乐生成领域主要关注开发具有复杂架构修改的大型基础模型，但我们认为对于受约束的单乐器任务，更简单的方法仍然更为有效。因此，我们回归到一个简单的、未经增强的基于标记化原始MIDI的下一个标记预测目标，旨在通过使用更好的数据和更扎实的基础来超越大型基础模型。我们在此https URL发布了模型权重和代码。",
     "subjects": [
-      "Multimedia (cs.MM)",
+      "Machine Learning (cs.LG)",
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Machine Learning (cs.LG)"
+      "Multimedia (cs.MM)"
     ],
     "update_time": "2025-09-17",
     "paper_authors": "Christian Zhou-Zheng, John Backsund, Dun Li Chan, Alex Coventry, Avid Eslami, Jyotin Goel, Xingwen Han, Danysh Soomro, Galen Wei",
@@ -141,7 +141,7 @@
     "paper_title_zh": "Omni-CLST：面向音频问答的错误感知课程学习与引导式选择性思维链方法",
     "paper_id": "2509.12275",
     "paper_abstract": "We propose Omni-CLST, an error-aware Curriculum Learning framework with guided Selective Chain-of-Thought for audio question answering. The framework efficiently leverages existing high-quality dataset through two key strategies: an error-aware curriculum that organizes samples by difficulty, and a guided thought dropout mechanism that focuses reasoning on challenging cases. Integrated with GRPO training, these strategies enable the model to learn more effectively from informative samples. Experiments on MMAU-mini and MMAR demonstrate that Omni-CLST achieves competitive accuracy (73.80% on MMAU-mini) and establishes a new state of the art (64.30% on MMAR), highlighting its robustness and generalization capability in multimodal audio-language understanding.",
-    "paper_abstract_zh": "我们提出了Omni-CLST，一种面向音频问答的错误感知课程学习框架，采用引导式选择性思维链。该框架通过两个关键策略高效利用现有高质量数据集：一是按难度组织样本的错误感知课程，二是专注于挑战性案例推理的引导式思维丢弃机制。结合GRPO训练，这些策略使模型能够更有效地从信息丰富的样本中学习。在MMAU-mini和MMAR数据集上的实验表明，Omni-CLST实现了具有竞争力的准确率（在MMAU-mini上达到73.80%），并创造了新的最先进水平（在MMAR上达到64.30%），突显了其在多模态音频-语言理解方面的鲁棒性和泛化能力。",
+    "paper_abstract_zh": "我们提出了Omni-CLST，一种面向音频问答的错误感知课程学习框架，结合了引导式选择性思维链技术。该框架通过两大核心策略高效利用现有高质量数据集：一是根据难度组织样本的错误感知课程设计，二是专注于复杂案例推理的引导式思维丢弃机制。结合GRPO训练方法，这些策略使模型能够更有效地从信息丰富的样本中学习。在MMAU-mini和MMAR数据集上的实验表明，Omni-CLST取得了具有竞争力的准确率（在MMAU-mini上达到73.80%），并创造了新的最优性能记录（在MMAR上达到64.30%），凸显了其在多模态音频-语言理解任务中的鲁棒性和泛化能力。",
     "subjects": [
       "Artificial Intelligence (cs.AI)",
       "Sound (cs.SD)",
@@ -162,7 +162,7 @@
     "paper_title_zh": "相似多于相异：基于标注者建模的跨语料库语音情感识别",
     "paper_id": "2509.12295",
     "paper_abstract": "Speech emotion recognition systems often predict a consensus value generated from the ratings of multiple annotators. However, these models have limited ability to predict the annotation of any one person. Alternatively, models can learn to predict the annotations of all annotators. Adapting such models to new annotators is difficult as new annotators must individually provide sufficient labeled training data. We propose to leverage inter-annotator similarity by using a model pre-trained on a large annotator population to identify a similar, previously seen annotator. Given a new, previously unseen, annotator and limited enrollment data, we can make predictions for a similar annotator, enabling off-the-shelf annotation of unseen data in target datasets, providing a mechanism for extremely low-cost personalization. We demonstrate our approach significantly outperforms other off-the-shelf approaches, paving the way for lightweight emotion adaptation, practical for real-world deployment.",
-    "paper_abstract_zh": "语音情感识别系统通常预测由多个标注者评分生成的共识值。然而，这些模型在预测任何单个标注者的标注方面能力有限。作为替代方案，模型可以学习预测所有标注者的标注。但将这些模型适配到新标注者十分困难，因为新标注者必须单独提供足够的带标签训练数据。我们提出通过利用标注者间相似性，使用在大规模标注者群体上预训练的模型来识别相似的、先前见过的标注者。给定一个新的、先前未见过的标注者及有限的注册数据，我们可以为相似标注者进行预测，从而实现对目标数据集中未见数据的即用型标注，为极低成本的个性化提供了机制。我们证明该方法显著优于其他即用型方法，为轻量级情感适配铺平了道路，使其具备实际部署的可行性。",
+    "paper_abstract_zh": "语音情感识别系统通常预测由多位标注者评分生成的共识值。然而，这些模型在预测个体标注结果方面能力有限。作为替代方案，模型可以学习预测所有标注者的注释。但将此类模型适配到新标注者时存在困难，因为新标注者必须单独提供足够的标注训练数据。我们提出通过利用标注者间相似性，使用在大规模标注群体上预训练的模型来识别相似的已见标注者。给定一个新的未见标注者及有限的注册数据，我们可以为相似标注者进行预测，从而实现对目标数据集中未见数据的即用标注，为极低成本的个性化提供了机制。我们证明该方法显著优于其他即用方法，为轻量级情感适配铺平了道路，具有实际部署的可行性。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Sound (cs.SD)",
@@ -182,10 +182,10 @@
     "paper_title_zh": "FunAudio-ASR技术报告",
     "paper_id": "2509.12508",
     "paper_abstract": "In recent years, automatic speech recognition (ASR) has witnessed transformative advancements driven by three complementary paradigms: data scaling, model size scaling, and deep integration with large language models (LLMs). However, LLMs are prone to hallucination, which can significantly degrade user experience in real-world ASR applications. In this paper, we present FunAudio-ASR, a large-scale, LLM-based ASR system that synergistically combines massive data, large model capacity, LLM integration, and reinforcement learning to achieve state-of-the-art performance across diverse and complex speech recognition scenarios. Moreover, FunAudio-ASR is specifically optimized for practical deployment, with enhancements in streaming capability, noise robustness, code-switching, hotword customization, and satisfying other real-world application requirements. Experimental results show that while most LLM-based ASR systems achieve strong performance on open-source benchmarks, they often underperform on real industry evaluation sets. Thanks to production-oriented optimizations, FunAudio-ASR achieves SOTA performance on real application datasets, demonstrating its effectiveness and robustness in practical settings.",
-    "paper_abstract_zh": "近年来，自动语音识别（ASR）在三个互补范式的推动下取得了变革性进展：数据规模化、模型规模扩展以及与大型语言模型（LLMs）的深度融合。然而，LLMs容易产生幻觉问题，这会显著降低实际ASR应用中的用户体验。本文提出了FunAudio-ASR，一个基于LLM的大规模ASR系统，它协同结合了海量数据、大模型容量、LLM集成和强化学习，在各种复杂语音识别场景中实现了最先进的性能。此外，FunAudio-ASR针对实际部署进行了专门优化，在流式处理能力、噪声鲁棒性、语码转换、热词定制以及满足其他实际应用需求方面进行了增强。实验结果表明，虽然大多数基于LLM的ASR系统在开源基准测试上表现强劲，但在实际工业评估集上往往表现不佳。得益于面向生产的优化，FunAudio-ASR在实际应用数据集上实现了SOTA性能，证明了其在实际场景中的有效性和鲁棒性。",
+    "paper_abstract_zh": "近年来，自动语音识别（ASR）在三个互补范式的推动下取得了变革性进展：数据规模化、模型规模扩展以及与大型语言模型（LLMs）的深度融合。然而，LLMs容易产生幻觉问题，这会显著降低实际ASR应用中的用户体验。本文提出了FunAudio-ASR，一个基于LLM的大规模ASR系统，它协同结合了海量数据、大模型容量、LLM集成和强化学习，在各种复杂语音识别场景中实现了最先进的性能。此外，FunAudio-ASR针对实际部署进行了专门优化，在流式处理能力、噪声鲁棒性、语码转换、热词定制以及满足其他实际应用需求方面进行了增强。实验结果表明，虽然大多数基于LLM的ASR系统在开源基准测试中表现出色，但在实际工业评估集上往往表现不佳。得益于面向生产的优化，FunAudio-ASR在实际应用数据集上实现了SOTA性能，证明了其在实际场景中的有效性和鲁棒性。",
     "subjects": [
-      "Artificial Intelligence (cs.AI)",
       "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
       "Audio and Speech Processing (eess.AS)",
       "Computation and Language (cs.CL)"
     ],
@@ -203,7 +203,7 @@
     "paper_title_zh": "PAC：基于发音感知上下文化大语言模型的自动语音识别",
     "paper_id": "2509.12647",
     "paper_abstract": "This paper presents a Pronunciation-Aware Contextualized (PAC) framework to address two key challenges in Large Language Model (LLM)-based Automatic Speech Recognition (ASR) systems: effective pronunciation modeling and robust homophone discrimination. Both are essential for raw or long-tail word recognition. The proposed approach adopts a two-stage learning paradigm. First, we introduce a pronunciation-guided context learning method. It employs an interleaved grapheme-phoneme context modeling strategy that incorporates grapheme-only distractors, encouraging the model to leverage phonemic cues for accurate recognition. Then, we propose a pronunciation-discriminative reinforcement learning method with perturbed label sampling to further enhance the modelś ability to distinguish contextualized homophones. Experimental results on the public English Librispeech and Mandarin AISHELL-1 datasets indicate that PAC: (1) reduces relative Word Error Rate (WER) by 30.2% and 53.8% compared to pre-trained LLM-based ASR models, and (2) achieves 31.8% and 60.5% relative reductions in biased WER for long-tail words compared to strong baselines, respectively.",
-    "paper_abstract_zh": "本文提出了一种发音感知上下文化（PAC）框架，以解决基于大语言模型（LLM）的自动语音识别（ASR）系统中的两个关键挑战：有效的发音建模和鲁棒的同音词区分。这两者对于原始词或长尾词的识别至关重要。所提出的方法采用了两阶段学习范式。首先，我们引入了一种发音引导的上下文学习方法。它采用交错的字素-音素上下文建模策略，结合仅含字素的干扰项，鼓励模型利用音素线索进行准确识别。然后，我们提出了一种带有扰动标签采样的发音判别强化学习方法，以进一步增强模型区分上下文化同音词的能力。在公开的英语Librispeech和中文AISHELL-1数据集上的实验结果表明，PAC：（1）与基于预训练LLM的ASR模型相比，相对词错误率（WER）降低了30.2%和53.8%；（2）与强基线相比，长尾词的偏置WER分别实现了31.8%和60.5%的相对降低。",
+    "paper_abstract_zh": "本文提出了一种发音感知上下文化（PAC）框架，以解决基于大语言模型（LLM）的自动语音识别（ASR）系统中的两个关键挑战：有效的发音建模和鲁棒的同音词区分。这两者对于原始词或长尾词的识别都至关重要。所提出的方法采用了两阶段学习范式。首先，我们引入了一种发音引导的上下文学习方法。它采用了一种交错的字素-音素上下文建模策略，该策略结合了纯字素干扰项，鼓励模型利用音素线索进行准确识别。然后，我们提出了一种带有扰动标签采样的发音判别性强化学习方法，以进一步增强模型区分上下文化同音词的能力。在公开的英语Librispeech和中文AISHELL-1数据集上的实验结果表明，PAC：（1）与基于预训练LLM的ASR模型相比，相对词错误率（WER）分别降低了30.2%和53.8%；（2）与强基线相比，对于长尾词的偏置WER分别实现了31.8%和60.5%的相对降低。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Audio and Speech Processing (eess.AS)"
@@ -222,7 +222,7 @@
     "paper_title_zh": "CCF AATC 2025：语音修复挑战赛",
     "paper_id": "2509.12974",
     "paper_abstract": "Real-world speech communication is often hampered by a variety of distortions that degrade quality and intelligibility. While many speech enhancement algorithms target specific degradations like noise or reverberation, they often fall short in realistic scenarios where multiple distortions co-exist and interact. To spur research in this area, we introduce the Speech Restoration Challenge as part of the China Computer Federation (CCF) Advanced Audio Technology Competition (AATC) 2025. This challenge focuses on restoring speech signals affected by a composite of three degradation types: (1) complex acoustic degradations including non-stationary noise and reverberation; (2) signal-chain artifacts such as those from MP3 compression; and (3) secondary artifacts introduced by other pre-processing enhancement models. We describe the challenge's background, the design of the task, the comprehensive dataset creation methodology, and the detailed evaluation protocol, which assesses both objective performance and model complexity. Homepage: this https URL.",
-    "paper_abstract_zh": "现实世界中的语音通信常常受到多种失真的干扰，导致语音质量和可懂度下降。尽管许多语音增强算法针对特定的失真（如噪声或混响）进行了优化，但在多种失真并存并相互作用的真实场景中，它们往往表现不佳。为了推动该领域的研究，我们作为中国计算机学会（CCF）高级音频技术竞赛（AATC）2025的一部分，推出了语音修复挑战赛。本次挑战赛专注于恢复受三种失真类型复合影响的语音信号：（1）复杂的声学失真，包括非平稳噪声和混响；（2）信号链伪影，例如来自MP3压缩的伪影；（3）由其他预处理增强模型引入的次级伪影。我们描述了挑战赛的背景、任务设计、全面的数据集创建方法以及详细的评估协议，该协议同时评估客观性能和模型复杂度。主页：此HTTPS URL。",
+    "paper_abstract_zh": "现实世界中的语音通信常常受到多种失真因素的干扰，导致语音质量和可懂度下降。尽管许多语音增强算法针对特定类型的失真（如噪声或混响）进行了优化，但在多种失真并存并相互作用的真实场景中，这些算法往往表现不佳。为了推动该领域的研究，我们作为中国计算机学会（CCF）高级音频技术竞赛（AATC）2025的一部分，推出了语音修复挑战赛。本次挑战赛专注于恢复受三种失真类型复合影响的语音信号：（1）复杂的声学失真，包括非平稳噪声和混响；（2）信号链伪影，如MP3压缩产生的伪影；（3）其他预处理增强模型引入的次级伪影。我们详细介绍了挑战赛的背景、任务设计、综合数据集的构建方法以及评估协议，该协议同时评估客观性能和模型复杂度。主页：此HTTPS URL。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -238,10 +238,10 @@
   },
   {
     "paper_title": "Osu2MIR: Beat Tracking Dataset Derived From Osu! Data",
-    "paper_title_zh": "Osu2MIR：源自Osu!数据的节拍追踪数据集",
+    "paper_title_zh": "Osu2MIR：基于Osu!数据的节拍追踪数据集",
     "paper_id": "2509.12667",
     "paper_abstract": "In this work, we explore the use of Osu!, a community-based rhythm game, as an alternative source of beat and downbeat annotations. Osu! beatmaps are created and refined by a large, diverse community and span underrepresented genres such as anime, Vocaloid, and video game music. We introduce a pipeline for extracting annotations from Osu! beatmaps and partition them into meaningful subsets. Through manual analysis, we find that beatmaps with a single timing point or widely spaced multiple timing points (>=5 seconds apart) provide reliable annotations, while closely spaced timing points (<5 seconds apart) often require additional curation. We also observe high consistency across multiple annotations of the same song. This study demonstrates the potential of Osu! data as a scalable, diverse, and community-driven resource for MIR research. We release our pipeline and a high-quality subset osu2beat2025 to support further exploration: this https URL.",
-    "paper_abstract_zh": "本研究探索了使用基于社区的节奏游戏Osu!作为节拍和下拍标注的替代来源。Osu!谱面由庞大而多样化的社区创建和完善，涵盖了代表性不足的音乐类型，如动漫、Vocaloid和视频游戏音乐。我们引入了一个从Osu!谱面提取标注并将其划分为有意义子集的流程。通过人工分析，我们发现具有单一时间点或间隔较宽的多时间点（≥5秒）的谱面能提供可靠的标注，而时间点间隔较近（<5秒）的谱面通常需要额外的整理。我们还观察到同一歌曲的多个标注之间具有高度一致性。本研究证明了Osu!数据作为音乐信息检索研究中可扩展、多样化且社区驱动资源的潜力。我们发布了处理流程和一个高质量子集osu2beat2025以支持进一步探索：此HTTPS URL。",
+    "paper_abstract_zh": "本研究探索了使用基于社区的节奏游戏Osu!作为节拍和强拍标注的替代数据来源。Osu!谱面由庞大而多样化的社区创建和完善，涵盖了动漫、Vocaloid和游戏音乐等代表性不足的音乐流派。我们提出了一个从Osu!谱面提取标注信息并将其划分为有意义子集的流程。通过人工分析发现，具有单一时间点或间隔较大（≥5秒）多重时间点的谱面能提供可靠标注，而紧密间隔的时间点（<5秒）通常需要额外人工校验。我们还观察到同一歌曲的多重标注具有高度一致性。本研究证明了Osu!数据作为可扩展、多样化且社区驱动的音乐信息检索研究资源的潜力。我们发布了数据处理流程和高质量子集osu2beat2025以支持进一步探索：此https URL。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -256,10 +256,10 @@
   },
   {
     "paper_title": "Timbre-Adaptive Transcription: A Lightweight Architecture with Associative Memory for Dynamic Instrument Separation",
-    "paper_title_zh": "音色自适应转录：一种具有联想记忆的轻量级架构，用于动态乐器分离",
+    "paper_title_zh": "音色自适应转录：一种具有联想记忆的轻量级架构用于动态乐器分离",
     "paper_id": "2509.12712",
     "paper_abstract": "Existing multi-timbre transcription models struggle with generalization beyond pre-trained instruments and rigid source-count constraints. We address these limitations with a lightweight deep clustering solution featuring: 1) a timbre-agnostic backbone achieving state-of-the-art performance with only half the parameters of comparable models, and 2) a novel associative memory mechanism that mimics human auditory cognition to dynamically encode unseen timbres via attention-based clustering. Our biologically-inspired framework enables adaptive polyphonic separation with minimal training data (12.5 minutes), supported by a new synthetic dataset method offering cost-effective, high-precision multi-timbre generation. Experiments show the timbre-agnostic transcription model outperforms existing models on public benchmarks, while the separation module demonstrates promising timbre discrimination. This work provides an efficient framework for timbre-related music transcription and explores new directions for timbre-aware separation through cognitive-inspired architectures.",
-    "paper_abstract_zh": "现有的多音色转录模型在泛化预训练乐器之外和严格的声源数量限制方面存在困难。我们通过一种轻量级的深度聚类解决方案解决了这些局限性，该方案具有：1）一个音色无关的主干网络，仅使用可比模型一半的参数即可实现最先进的性能；2）一种新颖的联想记忆机制，模拟人类听觉认知，通过基于注意力的聚类动态编码未见过的音色。我们受生物学启发的框架能够以最少的训练数据（12.5分钟）实现自适应复音分离，并得到一种新的合成数据集方法的支持，该方法提供了成本效益高、高精度的多音色生成。实验表明，音色无关的转录模型在公共基准测试中优于现有模型，而分离模块展示了有前景的音色辨别能力。这项工作为音色相关的音乐转录提供了一个高效的框架，并通过认知启发架构探索了音色感知分离的新方向。",
+    "paper_abstract_zh": "现有的多音色转录模型在泛化预训练乐器之外和严格的声源数量限制方面存在困难。我们通过一种轻量级深度聚类解决方案解决了这些局限性，其特点包括：1）一个音色无关的主干网络，仅使用同类模型一半的参数即可实现最先进的性能；2）一种新颖的联想记忆机制，模拟人类听觉认知，通过基于注意力的聚类动态编码未见过的音色。我们的受生物学启发的框架能够以最少的训练数据（12.5分钟）实现自适应复音分离，并得到一种新的合成数据集方法的支持，该方法提供了成本效益高、高精度的多音色生成。实验表明，音色无关转录模型在公共基准测试中优于现有模型，而分离模块展示了有前景的音色辨别能力。这项工作为音色相关的音乐转录提供了一个高效的框架，并通过认知启发架构探索了音色感知分离的新方向。",
     "subjects": [
       "Sound (cs.SD)",
       "Information Retrieval (cs.IR)"
@@ -276,10 +276,10 @@
   },
   {
     "paper_title": "Beyond Bars: Distribution of Edit Operations in Historical Prints",
-    "paper_title_zh": "超越小节：历史印刷乐谱中编辑操作的分布研究",
+    "paper_title_zh": "超越小节线：历史印刷乐谱中编辑操作的分布研究",
     "paper_id": "2509.12786",
     "paper_abstract": "In this paper, we present a method for conducting comparative corpus studies in musicology that reduces the time-consuming digitization process. Instead of encoding whole corpora of musical sources, we suggest sampling bars from these sources. We address the challenge of selecting representative samples and evaluate three different sampling methods. We used Beethoven's Bagatelles Op. 33 as a case study to find the method that works best in finding samples representative with respect to differences. We believe that this approach offers significant value to musicological research by enabling large-scale analyses and thereby statistically sound results. Moreover, we believe our work to be a valuable step toward understanding nineteenth-century editorial practices and enriching the field of scholarly editing of historical musical works.",
-    "paper_abstract_zh": "本文提出了一种在音乐学中进行比较语料库研究的方法，该方法减少了耗时的数字化过程。我们建议从音乐源中采样小节，而非对整个语料库进行编码。我们解决了选择代表性样本的挑战，并评估了三种不同的采样方法。以贝多芬的《小品曲 Op.33》作为案例研究，我们找到了在寻找差异代表性样本方面效果最佳的方法。我们相信这种方法通过支持大规模分析从而产生统计上可靠的结果，为音乐学研究提供了重要价值。此外，我们认为我们的工作是理解19世纪编辑实践和丰富历史音乐作品学术编辑领域的重要一步。",
+    "paper_abstract_zh": "本文提出了一种用于音乐学比较语料库研究的方法，该方法减少了耗时的数字化过程。我们建议从音乐源中抽样提取小节，而非对整个语料库进行编码。我们解决了选择代表性样本的挑战，并评估了三种不同的抽样方法。以贝多芬《小品曲Op.33》作为案例研究，我们找到了在识别差异代表性样本方面表现最佳的方法。我们相信这种方法通过支持大规模分析从而获得统计上可靠的结果，为音乐学研究提供了重要价值。此外，我们认为这项工作是理解19世纪编辑实践、丰富历史音乐作品学术编辑领域的重要一步。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -294,10 +294,10 @@
   },
   {
     "paper_title": "A Lightweight Pipeline for Noisy Speech Voice Cloning and Accurate Lip Sync Synthesis",
-    "paper_title_zh": "面向噪声语音克隆与精确唇形同步合成的轻量级流程",
+    "paper_title_zh": "一种用于噪声环境下语音克隆与精确唇形同步合成的轻量级流程",
     "paper_id": "2509.12831",
     "paper_abstract": "Recent developments in voice cloning and talking head generation demonstrate impressive capabilities in synthesizing natural speech and realistic lip synchronization. Current methods typically require and are trained on large scale datasets and computationally intensive processes using clean studio recorded inputs that is infeasible in noisy or low resource environments. In this paper, we introduce a new modular pipeline comprising Tortoise text to speech. It is a transformer based latent diffusion model that can perform high fidelity zero shot voice cloning given only a few training samples. We use a lightweight generative adversarial network architecture for robust real time lip synchronization. The solution will contribute to many essential tasks concerning less reliance on massive pre training generation of emotionally expressive speech and lip synchronization in noisy and unconstrained scenarios. The modular structure of the pipeline allows an easy extension for future multi modal and text guided voice modulation and it could be used in real world systems.",
-    "paper_abstract_zh": "近年来，语音克隆和说话头生成技术的发展在合成自然语音和逼真唇形同步方面展现出令人印象深刻的能力。当前方法通常需要依赖大规模数据集进行训练，并采用计算密集型流程处理洁净录音室输入，这在噪声环境或资源受限场景中难以实现。本文提出了一种新的模块化流程，包含基于Transformer的潜在扩散模型Tortoise文本转语音系统，该模型仅需少量训练样本即可实现高保真零样本语音克隆。我们采用轻量级生成对抗网络架构实现鲁棒的实时唇形同步。该解决方案将有助于减少对大规模预训练的依赖，在噪声和无约束场景下生成情感丰富的语音并实现精准唇形同步。流程的模块化结构便于未来扩展至多模态和文本引导的语音调制任务，并可用于实际系统。",
+    "paper_abstract_zh": "近年来，语音克隆和说话头生成技术的发展在合成自然语音和逼真唇形同步方面展现出令人印象深刻的能力。当前方法通常需要依赖大规模数据集，并基于洁净录音室输入进行计算密集型训练，这在噪声环境或资源受限场景中难以实现。本文提出了一种新的模块化流程，包含基于Transformer的潜在扩散模型Tortoise文本转语音系统，该模型仅需少量训练样本即可实现高保真零样本语音克隆。我们采用轻量级生成对抗网络架构实现鲁棒的实时唇形同步。该解决方案将有助于减少对大规模预训练的依赖，在噪声和无约束场景中生成情感丰富的语音和唇形同步，满足许多关键任务需求。流程的模块化结构便于未来扩展至多模态和文本引导的语音调制，并可用于实际系统。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -317,7 +317,7 @@
     "paper_title_zh": "通过领域自适应预训练的属性感知表示改进异常声音检测",
     "paper_id": "2509.12845",
     "paper_abstract": "Anomalous Sound Detection (ASD) is often formulated as a machine attribute classification task, a strategy necessitated by the common scenario where only normal data is available for training. However, the exhaustive collection of machine attribute labels is laborious and impractical. To address the challenge of missing attribute labels, this paper proposes an agglomerative hierarchical clustering method for the assignment of pseudo-attribute labels using representations derived from a domain-adaptive pre-trained model, which are expected to capture machine attribute characteristics. We then apply model adaptation to this pre-trained model through supervised fine-tuning for machine attribute classification, resulting in a new state-of-the-art performance. Evaluation on the Detection and Classification of Acoustic Scenes and Events (DCASE) 2025 Challenge dataset demonstrates that our proposed approach yields significant performance gains, ultimately outperforming our previous top-ranking system in the challenge.",
-    "paper_abstract_zh": "异常声音检测（ASD）通常被构建为机器属性分类任务，这一策略的必要性源于通常只有正常数据可用于训练的常见场景。然而，详尽收集机器属性标签既费力又不切实际。为了解决属性标签缺失的挑战，本文提出了一种凝聚层次聚类方法，用于使用从领域自适应预训练模型获得的表示来分配伪属性标签，这些表示预期能够捕捉机器属性特征。随后，我们通过监督式微调对该预训练模型进行机器属性分类的模型适应，从而实现了新的最先进性能。在检测与分类声学场景和事件（DCASE）2025挑战数据集上的评估表明，我们提出的方法带来了显著的性能提升，最终超越了我们在该挑战中先前排名第一的系统。",
+    "paper_abstract_zh": "异常声音检测（ASD）通常被表述为机器属性分类任务，这一策略的必要性源于通常只有正常数据可用于训练的常见场景。然而，详尽收集机器属性标签既费力又不切实际。为了解决属性标签缺失的挑战，本文提出了一种凝聚层次聚类方法，用于使用从领域自适应预训练模型获得的表示来分配伪属性标签，这些表示预计能够捕捉机器属性特征。随后，我们通过监督式微调对该预训练模型进行机器属性分类的模型适应，从而实现了新的最先进性能。在检测和分类声学场景与事件（DCASE）2025挑战数据集上的评估表明，我们提出的方法带来了显著的性能提升，最终超越了我们在该挑战中先前排名第一的系统。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -334,10 +334,10 @@
   },
   {
     "paper_title": "GLAD: Global-Local Aware Dynamic Mixture-of-Experts for Multi-Talker ASR",
-    "paper_title_zh": "GLAD：面向多说话人语音识别的全局-局部感知动态混合专家模型",
+    "paper_title_zh": "GLAD：面向多说话人语音识别的全局-局部感知动态专家混合模型",
     "paper_id": "2509.13093",
     "paper_abstract": "End-to-end multi-talker automatic speech recognition (MTASR) faces significant challenges in accurately transcribing overlapping speech, especially under high-overlap conditions. To address these challenges, we proposed Global-Local Aware Dynamic (GLAD) Mixture-of-Experts, which dynamically fuse speaker-aware global information and fine-grained local features to guide expert selection. This mechanism enables speaker-specific routing by leveraging both global context and local acoustic cues. Experiments on LibriSpeechMix show that GLAD outperforms existing MTASR approaches, particularly in challenging multi-talker scenarios. To our best knowledge, this is the first work to apply Mixture-of-Experts (MoE) to end-to-end MTASR with a global-local fusion strategy. Our code and train dataset can be found at this https URL.",
-    "paper_abstract_zh": "端到端多说话人自动语音识别（MTASR）在准确转录重叠语音方面面临重大挑战，尤其是在高重叠度条件下。为解决这些挑战，我们提出了全局-局部感知动态（GLAD）混合专家模型，该模型动态融合说话人感知的全局信息和细粒度局部特征来指导专家选择。该机制通过同时利用全局上下文和局部声学线索实现说话人特定的路由选择。在LibriSpeechMix数据集上的实验表明，GLAD优于现有的MTASR方法，特别是在具有挑战性的多说话人场景中。据我们所知，这是首个将混合专家（MoE）模型与全局-局部融合策略相结合应用于端到端MTASR的工作。我们的代码和训练数据集可通过此https URL获取。",
+    "paper_abstract_zh": "端到端多说话人自动语音识别（MTASR）在准确转录重叠语音方面面临重大挑战，尤其是在高重叠条件下。为解决这些挑战，我们提出了全局-局部感知动态（GLAD）专家混合模型，该模型动态融合说话人感知的全局信息和细粒度局部特征来指导专家选择。该机制通过利用全局上下文和局部声学线索实现说话人特定的路由。在LibriSpeechMix数据集上的实验表明，GLAD优于现有的MTASR方法，尤其在具有挑战性的多说话人场景中。据我们所知，这是首个将专家混合模型（MoE）与全局-局部融合策略相结合应用于端到端MTASR的工作。我们的代码和训练数据集可通过此https URL获取。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -345,7 +345,7 @@
     "paper_authors": "Yujie Guo, Jiaming Zhou, Yuhang Jia, Shiwan Zhao, Yong Qin",
     "topic": [
       "Speech Recognition",
-      "Audio Representation Learning"
+      "Speech Enhancement"
     ],
     "category": [
       "Speech"
@@ -356,7 +356,7 @@
     "paper_title_zh": "UTI-LLM：基于多模态大语言模型的个性化发音-言语治疗辅助系统",
     "paper_id": "2509.13145",
     "paper_abstract": "Speech therapy plays a critical role in training speech disorders caused by neurological impairments such as stroke. However, traditional manual and computer-assisted systems are limited in real-time accessibility and articulatory motion feedback, constraining their practical utility. Recent advances in multimodal large language models (MLLMs) have demonstrated significant potential in healthcare, particularly through their ability to integrate multimodal data for adaptive assessment and therapeutic feedback. Nevertheless, challenges including insufficient acquisition and fusion of articulatory information, inadequate parsing of articulatory organ motion trajectories, and the scarcity of high-quality domain-specific datasets hinder the application of MLLMs in speech therapy. To address these limitations, we propose an MLLM-based speech rehabilitation assistance system that synergistically leverages ultrasound tongue imaging and speech signals to deliver precise, interactive articulatory feedback. We construct a high-quality domain-specific dataset comprising UTI-speech dialogue pairs. This dataset facilitates fine-tuning to enhance the model's clinical adaptability. Building on this dataset, our methods achieves spatiotemporal fusion training strategy of ultrasound videos and speech signals, enabling fine-grained articulatory impairment analysis and ultimately generating actionable feedback.",
-    "paper_abstract_zh": "言语治疗在训练由中风等神经损伤引起的言语障碍方面发挥着关键作用。然而，传统的手工和计算机辅助系统在实时可访问性和发音运动反馈方面存在局限，制约了其实用性。近年来，多模态大语言模型（MLLMs）在医疗保健领域展现出巨大潜力，特别是其能够整合多模态数据以进行自适应评估和治疗反馈。然而，发音信息采集与融合不足、发音器官运动轨迹解析不充分以及高质量领域特定数据集的稀缺，阻碍了MLLMs在言语治疗中的应用。为解决这些局限，我们提出了一种基于MLLM的言语康复辅助系统，该系统协同利用超声舌成像和语音信号，以提供精确、交互式的发音反馈。我们构建了一个高质量的领域特定数据集，包含UTI-语音对话对。该数据集有助于通过微调提升模型的临床适应性。基于此数据集，我们的方法实现了超声视频和语音信号的时空融合训练策略，从而能够进行细粒度的发音障碍分析，并最终生成可操作的反馈。",
+    "paper_abstract_zh": "言语治疗在训练由中风等神经损伤引起的言语障碍方面发挥着关键作用。然而，传统的手动和计算机辅助系统在实时可访问性和发音运动反馈方面存在局限，制约了其实用性。多模态大语言模型（MLLMs）的最新进展在医疗保健领域展现出巨大潜力，特别是其能够整合多模态数据进行自适应评估和治疗反馈。然而，发音信息采集与融合不足、发音器官运动轨迹解析不充分，以及高质量领域特定数据集的稀缺，阻碍了MLLMs在言语治疗中的应用。为解决这些局限，我们提出了一种基于MLLM的言语康复辅助系统，该系统协同利用超声舌成像和语音信号，以提供精确、交互式的发音反馈。我们构建了一个高质量的领域特定数据集，包含UTI-语音对话对。该数据集有助于通过微调提升模型的临床适应性。基于此数据集，我们的方法实现了超声视频和语音信号的时空融合训练策略，能够进行细粒度的发音障碍分析，并最终生成可操作的反馈。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -364,7 +364,7 @@
     "paper_authors": "Yudong Yang, Xiaokang Liu, Shaofeng zhao, Rongfeng Su, Nan Yan, Lan Wang",
     "topic": [
       "Speech Recognition",
-      "Audio Classification"
+      "Audio Representation Learning"
     ],
     "category": [
       "Speech"
@@ -372,10 +372,10 @@
   },
   {
     "paper_title": "Can Large Audio Language Models Understand Audio Well? Speech, Scene and Events Understanding Benchmark for LALMs",
-    "paper_title_zh": "大型音频语言模型能否良好理解音频？面向LALM的语音、场景和事件理解基准",
+    "paper_title_zh": "大型音频语言模型能否良好理解音频？面向LALM的语音、场景和事件理解基准测试",
     "paper_id": "2509.13148",
     "paper_abstract": "Recently, Large Audio Language Models (LALMs) have progressed rapidly, demonstrating their strong efficacy in universal audio understanding through cross-modal integration. To evaluate the LALM's audio understanding performance, researchers have proposed different benchmarks. However, key aspects for real-world interactions are underexplored in existing benchmarks, i.e., audio signals typically contain both speech and non-speech components, and energy levels of these components can vary significantly across different scenarios. Moreover, most benchmarks do not consider the joint understanding of speech, scene, and events within the same audio clip. In this work, we introduce SSEU-Bench, the first versatile audio understanding benchmark that explicitly accounts for energy differences between speech and non-speech audio, with both independent and joint understanding settings for speech, scene, and events. Furthermore, we demonstrate that some LALMs tend to underperform on certain tasks in a joint understanding setting. To address this issue, we introduce Chain-of-Thought, which effectively improves the LALM's joint audio understanding performance by decomposing complex tasks into simpler reasoning steps",
-    "paper_abstract_zh": "近年来，大型音频语言模型（LALM）发展迅速，通过跨模态整合展现了其在通用音频理解方面的强大效能。为评估LALM的音频理解性能，研究人员提出了不同的基准测试。然而，现有基准测试对现实世界交互的关键方面探索不足：音频信号通常同时包含语音和非语音成分，且这些成分的能量水平在不同场景下可能存在显著差异。此外，大多数基准测试未考虑对同一音频片段中语音、场景和事件的联合理解。本研究推出了SSEU-Bench——首个明确考虑语音与非语音音频能量差异的多功能音频理解基准，包含语音、场景和事件的独立理解与联合理解设置。进一步地，我们发现某些LALM在联合理解设置下特定任务表现不佳。为解决该问题，我们引入了思维链（Chain-of-Thought）方法，通过将复杂任务分解为简单推理步骤，有效提升了LALM的联合音频理解性能。",
+    "paper_abstract_zh": "近年来，大型音频语言模型（LALM）发展迅速，通过跨模态整合展现出强大的通用音频理解能力。为评估LALM的音频理解性能，研究者提出了多种基准测试。然而，现有基准测试对现实交互中的关键方面探索不足：音频信号通常同时包含语音和非语音成分，且这些成分的能量水平在不同场景中可能存在显著差异。此外，大多数基准测试未考虑对同一音频片段中语音、场景和事件的联合理解。本研究推出SSEU-Bench——首个充分考虑语音与非语音音频能量差异的多功能音频理解基准，包含语音、场景和事件的独立理解与联合理解设置。进一步地，我们发现某些LALM在联合理解设置中对特定任务表现不佳。为解决该问题，我们引入思维链（Chain-of-Thought）方法，通过将复杂任务分解为简单推理步骤，有效提升了LALM的联合音频理解性能。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -383,7 +383,7 @@
     "paper_authors": "Han Yin, Jung-Woo Choi",
     "topic": [
       "Audio Classification",
-      "Other"
+      "Speech Recognition"
     ],
     "category": [
       "Speech"
@@ -391,10 +391,10 @@
   },
   {
     "paper_title": "Contrastive timbre representations for musical instrument and synthesizer retrieval",
-    "paper_title_zh": "用于乐器与合成器检索的对比音色表示方法",
+    "paper_title_zh": "对比音色表示在乐器与合成器检索中的应用",
     "paper_id": "2509.13285",
     "paper_abstract": "Efficiently retrieving specific instrument timbres from audio mixtures remains a challenge in digital music production. This paper introduces a contrastive learning framework for musical instrument retrieval, enabling direct querying of instrument databases using a single model for both single- and multi-instrument sounds. We propose techniques to generate realistic positive/negative pairs of sounds for virtual musical instruments, such as samplers and synthesizers, addressing limitations in common audio data augmentation methods.\nThe first experiment focuses on instrument retrieval from a dataset of 3,884 instruments, using single-instrument audio as input. Contrastive approaches are competitive with previous works based on classification pre-training. The second experiment considers multi-instrument retrieval with a mixture of instruments as audio input. In this case, the proposed contrastive framework outperforms related works, achieving 81.7\\% top-1 and 95.7\\% top-5 accuracies for three-instrument mixtures.",
-    "paper_abstract_zh": "在数字音乐制作中，从音频混合信号中高效检索特定乐器音色仍然是一个挑战。本文提出了一种用于乐器检索的对比学习框架，能够使用单一模型直接查询乐器数据库，同时适用于单乐器声音和多乐器声音。我们提出了为虚拟乐器（如采样器和合成器）生成真实正/负声音样本对的技术，解决了常见音频数据增强方法的局限性。\n第一个实验专注于从3,884种乐器数据集中进行乐器检索，使用单乐器音频作为输入。对比学习方法与基于分类预训练的先前工作相比具有竞争力。第二个实验考虑以混合乐器音频作为输入的多乐器检索场景。在这种情况下，所提出的对比框架优于相关研究工作，在三乐器混合检索中达到了81.7%的top-1准确率和95.7%的top-5准确率。",
+    "paper_abstract_zh": "在数字音乐制作中，从音频混合片段中高效检索特定乐器音色仍然是一个挑战。本文提出了一种用于乐器检索的对比学习框架，能够使用单一模型直接查询乐器数据库，同时适用于单乐器音和多乐器混合音。我们提出了为虚拟乐器（如采样器和合成器）生成真实正负声音样本对的技术，解决了常见音频数据增强方法的局限性。\n第一个实验专注于从包含3,884种乐器的数据集中进行乐器检索，使用单乐器音频作为输入。对比学习方法与基于分类预训练的先前工作相比具有竞争力。第二个实验考虑以混合乐器音频作为输入的多乐器检索。在这种情况下，所提出的对比框架优于相关研究工作，在三乐器混合检索中实现了81.7%的top-1准确率和95.7%的top-5准确率。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -403,7 +403,8 @@
     "paper_authors": "Gwendal Le Vaillant, Yannick Molle",
     "topic": [
       "Audio Representation Learning",
-      "Music Information Retrieval"
+      "Music Information Retrieval",
+      "Audio Classification"
     ],
     "category": [
       "Music"

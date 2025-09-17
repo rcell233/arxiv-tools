@@ -71,7 +71,7 @@ def daily_task():
     # 任务执行步骤
     steps = [
         ("python daily_paper_collector.py", "收集每日论文"),
-        ("python translate_batch.py", "批量翻译论文"),
+        ("python llm_process.py", "批量翻译论文"),
         ("git add -A", "添加所有变更到暂存区"),
         ("git commit -m 'Auto update: daily papers and translations'", "提交变更"),
         ("git push", "推送到远程仓库")
@@ -107,7 +107,7 @@ def main():
     # 设置定时任务 - 北京时间10:00和14:00对应的UTC时间
     # 北京时间比UTC快8小时，所以北京时间10:00 = UTC 02:00，北京时间14:00 = UTC 06:00
     schedule.every().day.at("02:00").do(daily_task)  # UTC 02:00 = 北京时间 10:00
-    schedule.every().day.at("06:00").do(daily_task)  # UTC 06:00 = 北京时间 14:00
+    schedule.every().day.at("07:21").do(daily_task)  # UTC 06:00 = 北京时间 14:00
     
     # 显示下次执行时间
     next_run = schedule.next_run()
