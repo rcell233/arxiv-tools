@@ -4,7 +4,7 @@
     "paper_title_zh": "TICL：基于文本嵌入KNN的语音上下文学习解锁大型多模态模型的语音识别能力",
     "paper_id": "2509.13395",
     "paper_abstract": "Speech foundation models have recently demonstrated the ability to perform Speech In-Context Learning (SICL). Selecting effective in-context examples is crucial for SICL performance, yet selection methodologies remain underexplored. In this work, we propose Text-Embedding KNN for SICL (TICL), a simple pipeline that uses semantic context to enhance off-the-shelf large multimodal models' speech recognition ability without fine-tuning. Across challenging automatic speech recognition tasks, including accented English, multilingual speech, and children's speech, our method enables models to surpass zero-shot performance with up to 84.7% relative WER reduction. We conduct ablation studies to show the robustness and efficiency of our method.",
-    "paper_abstract_zh": "语音基础模型最近展示了执行语音上下文学习（SICL）的能力。选择有效的上下文示例对SICL性能至关重要，但选择方法仍未得到充分探索。在这项工作中，我们提出了用于SICL的文本嵌入KNN（TICL），这是一个简单的流程，利用语义上下文来增强现成大型多模态模型的语音识别能力，而无需进行微调。在具有挑战性的自动语音识别任务中，包括口音英语、多语言语音和儿童语音，我们的方法使模型能够超越零样本性能，相对词错误率降低高达84.7%。我们进行了消融研究，以展示我们方法的鲁棒性和效率。",
+    "paper_abstract_zh": "语音基础模型最近展示了执行语音上下文学习（SICL）的能力。选择有效的上下文示例对SICL性能至关重要，但选择方法仍未被充分探索。在这项工作中，我们提出了用于SICL的文本嵌入KNN（TICL），这是一种简单的流程，利用语义上下文来增强现成大型多模态模型的语音识别能力，而无需进行微调。在具有挑战性的自动语音识别任务中，包括口音英语、多语言语音和儿童语音，我们的方法使模型能够超越零样本性能，相对词错误率降低高达84.7%。我们进行了消融研究，以展示我们方法的鲁棒性和效率。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Artificial Intelligence (cs.AI)",
@@ -24,10 +24,10 @@
   },
   {
     "paper_title": "Enhancing Speaker-Independent Dysarthric Speech Severity Classification with DSSCNet and Cross-Corpus Adaptation",
-    "paper_title_zh": "利用DSSCNet与跨语料库自适应增强说话人无关的构音障碍语音严重程度分类",
+    "paper_title_zh": "使用DSSCNet与跨语料库自适应增强说话人无关的构音障碍语音严重程度分类",
     "paper_id": "2509.13442",
     "paper_abstract": "Dysarthric speech severity classification is crucial for objective clinical assessment and progress monitoring in individuals with motor speech disorders. Although prior methods have addressed this task, achieving robust generalization in speaker-independent (SID) scenarios remains challenging. This work introduces DSSCNet, a novel deep neural architecture that combines Convolutional, Squeeze-Excitation (SE), and Residual network, helping it extract discriminative representations of dysarthric speech from mel spectrograms. The addition of SE block selectively focuses on the important features of the dysarthric speech, thereby minimizing loss and enhancing overall model performance. We also propose a cross-corpus fine-tuning framework for severity classification, adapted from detection-based transfer learning approaches. DSSCNet is evaluated on two benchmark dysarthric speech corpora: TORGO and UA-Speech under speaker-independent evaluation protocols: One-Speaker-Per-Severity (OSPS) and Leave-One-Speaker-Out (LOSO) protocols. DSSCNet achieves accuracies of 56.84% and 62.62% under OSPS and 63.47% and 64.18% under LOSO setting on TORGO and UA-Speech respectively outperforming existing state-of-the-art methods. Upon fine-tuning, the performance improves substantially, with DSSCNet achieving up to 75.80% accuracy on TORGO and 68.25% on UA-Speech in OSPS, and up to 77.76% and 79.44%, respectively, in LOSO. These results demonstrate the effectiveness and generalizability of DSSCNet for fine-grained severity classification across diverse dysarthric speech datasets.",
-    "paper_abstract_zh": "构音障碍语音严重程度分类对于运动性言语障碍患者的客观临床评估和进展监测至关重要。尽管已有方法尝试解决这一任务，但在说话人无关（SID）场景中实现鲁棒泛化仍具挑战性。本研究提出了DSSCNet——一种新颖的深度神经网络架构，它结合了卷积网络、挤压激励（SE）模块和残差网络，能够从梅尔频谱图中提取构音障碍语音的判别性表征。SE模块的加入选择性聚焦于构音障碍语音的重要特征，从而最小化损失并提升模型整体性能。我们还提出了一个基于检测式迁移学习方法改进的跨语料库微调框架，用于严重程度分类。DSSCNet在两个基准构音障碍语音语料库（TORGO和UA-Speech）上采用说话人无关评估协议（每严重程度一名说话人OSPS和留一说话人LOSO协议）进行评估。在OSPS设置下，DSSCNet在TORGO和UA-Speech上分别达到56.84%和62.62%的准确率；在LOSO设置下分别达到63.47%和64.18%，优于现有最先进方法。经过微调后，性能显著提升：在OSPS协议下，DSSCNet在TORGO和UA-Speech上的准确率最高分别达到75.80%和68.25%；在LOSO协议下最高分别达到77.76%和79.44%。这些结果证明了DSSCNet在不同构音障碍语音数据集上进行细粒度严重程度分类的有效性和泛化能力。",
+    "paper_abstract_zh": "构音障碍语音严重程度分类对于运动性言语障碍患者的客观临床评估和进展监测至关重要。尽管现有方法已涉及此任务，但在说话人无关（SID）场景中实现鲁棒泛化仍具挑战性。本研究提出了DSSCNet——一种新颖的深度神经网络架构，结合了卷积、挤压激励（SE）和残差网络，能够从梅尔频谱图中提取构音障碍语音的判别性表征。SE模块的加入选择性聚焦于构音障碍语音的重要特征，从而最小化损失并提升模型整体性能。我们还提出了一个基于检测式迁移学习方法改进的跨语料库微调框架用于严重程度分类。DSSCNet在两个基准构音障碍语音语料库（TORGO和UA-Speech）上采用说话人无关评估协议（每严重程度一名说话人OSPS和留一说话人交叉验证LOSO）进行评估。在TORGO和UA-Speech上，DSSCNet于OSPS协议下分别达到56.84%和62.62%的准确率，在LOSO设置下分别达到63.47%和64.18%，优于现有最先进方法。经过微调后性能显著提升，DSSCNet在OSPS协议下于TORGO和UA-Speech分别达到75.80%和68.25%的准确率，在LOSO协议下分别达到77.76%和79.44%。这些结果证明了DSSCNet在不同构音障碍语音数据集中进行细粒度严重程度分类的有效性和泛化能力。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Sound (cs.SD)"
@@ -44,10 +44,10 @@
   },
   {
     "paper_title": "Assessing Data Replication in Symbolic Music via Adapted Structural Similarity Index Measure",
-    "paper_title_zh": "通过改进的结构相似性指数度量评估符号音乐中的数据复制",
+    "paper_title_zh": "通过改进的结构相似性指标评估符号音乐中的数据复现",
     "paper_id": "2509.13658",
     "paper_abstract": "AI-generated music may inadvertently replicate samples from the training data, raising concerns of plagiarism. Similarity measures can quantify such replication, thereby offering supervision and guidance for music generation models. Existing similarity measure methods for symbolic music mainly target melody repetition, leaving a gap in assessing complex music with rich textures and expressive performance characteristics. To address this gap, we introduce SSIMuse, the first adaptation of the Structural Similarity Index Measure (SSIM) from images to symbolic music. Specifically, we represent symbolic music as image-like piano rolls in binary and velocity-based forms. Build upon these representations, we reinterprete and suitably modify the SSIM components in the musical context to develop two variants, i.e., SSIMuse-B and SSIMuse-V, for evaluating data replication in composition and dynamic performance, respectively. Controlled experiments on synthetic samples from multiple datasets show that SSIMuse can reliably detect exact replication at a granularity of at least one bar. SSIMuse enables open evaluation of replication in music generation and draws attention to its broader ethical, social, legal, and economic implications. The code is available at this https URL.",
-    "paper_abstract_zh": "AI生成的音乐可能会无意中复制训练数据中的样本，从而引发抄袭担忧。相似性度量可以量化此类复制行为，从而为音乐生成模型提供监督和指导。现有的符号音乐相似性度量方法主要针对旋律重复，在评估具有丰富织体和表现力性能特征的复杂音乐方面存在空白。为解决这一问题，我们引入了SSIMuse，这是首个将结构相似性指数度量（SSIM）从图像领域适配到符号音乐的方法。具体而言，我们将符号音乐表示为类似图像的钢琴卷帘，包括二进制形式和力度值形式。基于这些表示，我们重新诠释并适当修改了SSIM组件在音乐语境中的含义，开发了两种变体：SSIMuse-B和SSIMuse-V，分别用于评估作曲和动态演奏中的数据复制。在多个数据集的合成样本上进行的受控实验表明，SSIMuse能够以至少一个小节的粒度可靠地检测精确复制。SSIMuse实现了音乐生成中复制行为的开放评估，并引起了对其更广泛的伦理、社会、法律和经济影响的关注。代码可通过此https URL获取。",
+    "paper_abstract_zh": "AI生成的音乐可能会无意中复现训练数据中的样本，引发抄袭担忧。相似性度量可以量化此类复现行为，从而为音乐生成模型提供监督和指导。现有的符号音乐相似性度量方法主要针对旋律重复，在评估具有丰富织体和表现力性能特征的复杂音乐方面存在空白。为解决这一问题，我们引入了SSIMuse——首个将结构相似性指标（SSIM）从图像领域适配到符号音乐的方法。具体而言，我们将符号音乐表示为类似图像的钢琴卷帘，包括二进制形式和力度值形式。基于这些表征，我们重新诠释并适当修改了SSIM在音乐语境中的组件，开发了两种变体：SSIMuse-B和SSIMuse-V，分别用于评估作曲和动态演奏中的数据复现。在多个数据集合成样本上的受控实验表明，SSIMuse能够以至少一个小节的粒度可靠检测精确复现。SSIMuse实现了音乐生成中复现行为的开放评估，并引起人们对其更广泛的伦理、社会、法律和经济影响的关注。代码可通过此https URL获取。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -63,10 +63,10 @@
   },
   {
     "paper_title": "A Distilled Low-Latency Neural Vocoder with Explicit Amplitude and Phase Prediction",
-    "paper_title_zh": "具有显式幅度和相位预测的蒸馏式低延迟神经声码器",
+    "paper_title_zh": "具有显式幅度和相位预测的蒸馏低延迟神经声码器",
     "paper_id": "2509.13667",
     "paper_abstract": "The majority of mainstream neural vocoders primarily focus on speech quality and generation speed, while overlooking latency, which is a critical factor in real-time applications. Excessive latency leads to noticeable delays in user interaction, severely degrading the user experience and rendering such systems impractical for real-time use. Therefore, this paper proposes DLL-APNet, a Distilled Low-Latency neural vocoder which first predicts the Amplitude and Phase spectra explicitly from input mel spectrogram and then reconstructs the speech waveform via inverse short-time Fourier transform (iSTFT). The DLL-APNet vocoder leverages causal convolutions to constrain the utilization of information to current and historical contexts, effectively minimizing latency. To mitigate speech quality degradation caused by causal constraints, a knowledge distillation strategy is proposed, where a pre-trained non-causal teacher vocoder guides intermediate feature generation of the causal student DLL-APNet vocoder. Experimental results demonstrate that the proposed DLL-APNet vocoder produces higher-quality speech than other causal vocoders, while requiring fewer computational resources. Furthermore, the proposed DLL-APNet vocoder achieves speech quality on par with mainstream non-causal neural vocoders, validating its ability to deliver both high perceptual quality and low latency.",
-    "paper_abstract_zh": "主流神经声码器大多主要关注语音质量和生成速度，而忽略了延迟这一实时应用中的关键因素。过高的延迟会导致用户交互中出现明显延迟，严重降低用户体验，使此类系统无法实际应用于实时场景。因此，本文提出了DLL-APNet，一种蒸馏式低延迟神经声码器，它首先从输入的梅尔频谱图中显式预测幅度谱和相位谱，然后通过逆短时傅里叶变换（iSTFT）重建语音波形。DLL-APNet声码器利用因果卷积将信息利用限制在当前和历史上下文中，有效最小化延迟。为减轻因果约束导致的语音质量下降，提出了一种知识蒸馏策略，其中预训练的非因果教师声码器指导因果学生DLL-APNet声码器的中间特征生成。实验结果表明，所提出的DLL-APNet声码器比其他因果声码器产生更高质量的语音，同时需要更少的计算资源。此外，该声码器实现了与主流非因果神经声码器相当的语音质量，验证了其同时提供高感知质量和低延迟的能力。",
+    "paper_abstract_zh": "主流神经声码器大多主要关注语音质量和生成速度，而忽视了延迟这一实时应用中的关键因素。过高的延迟会导致用户交互中出现明显延迟，严重降低用户体验，使此类系统无法实际应用于实时场景。因此，本文提出了DLL-APNet，一种蒸馏低延迟神经声码器，它首先从输入的梅尔频谱图中显式预测幅度和相位谱，然后通过逆短时傅里叶变换（iSTFT）重建语音波形。DLL-APNet声码器利用因果卷积来限制信息使用仅限于当前和历史上下文，从而有效最小化延迟。为减轻因果约束导致的语音质量下降，提出了一种知识蒸馏策略，其中预训练的非因果教师声码器指导因果学生DLL-APNet声码器的中间特征生成。实验结果表明，所提出的DLL-APNet声码器比其他因果声码器产生更高质量的语音，同时需要更少的计算资源。此外，该声码器实现了与主流非因果神经声码器相当的语音质量，验证了其同时提供高感知质量和低延迟的能力。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -82,17 +82,18 @@
   },
   {
     "paper_title": "A High-Quality and Low-Complexity Streamable Neural Speech Codec with Knowledge Distillation",
-    "paper_title_zh": "一种基于知识蒸馏的高质量低复杂度可流式传输神经语音编解码器",
+    "paper_title_zh": "基于知识蒸馏的高质量低复杂度可流式神经语音编解码器",
     "paper_id": "2509.13670",
     "paper_abstract": "While many current neural speech codecs achieve impressive reconstructed speech quality, they often neglect latency and complexity considerations, limiting their practical deployment in downstream tasks such as real-time speech communication and efficient speech compression. In our previous work, we proposed StreamCodec, which enables streamable speech coding by leveraging model causalization and a scalar-vector-combined quantization strategy, but its reconstructed quality and complexity still have room for improvement. Therefore, this paper proposes an improved iteration of StreamCodec, named StreamCodec2. The StreamCodec2 supports streamable and lightweight speech coding by adopting a fully causal architecture and reducing the convolutional channels. To compensate for the speech quality degradation caused by model causalization and pruning, we introduce a non-causal, high-complexity teacher codec to guide the training of StreamCodec2 through knowledge distillation. Experimental results demonstrate that our proposed StreamCodec2, trained with the knowledge distillation strategy, can achieve high-quality speech reconstruction while maintaining low latency (only 20 ms), low computational complexity (only 910 MFLOPs), and low model complexity (only 5.4 M parameters).",
-    "paper_abstract_zh": "尽管当前许多神经语音编解码器能够实现令人印象深刻的重建语音质量，但它们往往忽略了延迟和复杂性的考量，这限制了它们在下游任务中的实际部署，如实时语音通信和高效语音压缩。在我们先前的工作中，我们提出了StreamCodec，它通过利用模型因果化和标量-向量结合的量化策略实现了可流式传输的语音编码，但其重建质量和复杂性仍有改进空间。因此，本文提出了StreamCodec的改进版本，命名为StreamCodec2。StreamCodec2采用完全因果架构并减少卷积通道，支持可流式传输和轻量级语音编码。为了补偿由模型因果化和剪枝引起的语音质量下降，我们引入了一个非因果、高复杂度的教师编解码器，通过知识蒸馏来指导StreamCodec2的训练。实验结果表明，我们提出的StreamCodec2，通过知识蒸馏策略训练，能够实现高质量的语音重建，同时保持低延迟（仅20毫秒）、低计算复杂度（仅910 MFLOPs）和低模型复杂度（仅5.4 M参数）。",
+    "paper_abstract_zh": "尽管当前许多神经语音编解码器能够实现令人印象深刻的重建语音质量，但它们往往忽略了延迟和复杂度的考量，限制了其在下游任务中的实际部署，如实时语音通信和高效语音压缩。在我们先前的工作中，我们提出了StreamCodec，它通过利用模型因果化和标量-向量结合的量化策略实现了可流式语音编码，但其重建质量和复杂度仍有改进空间。因此，本文提出了StreamCodec的改进版本，命名为StreamCodec2。StreamCodec2采用完全因果架构并减少卷积通道，支持可流式和轻量级语音编码。为了补偿由模型因果化和剪枝引起的语音质量下降，我们引入了一个非因果、高复杂度的教师编解码器，通过知识蒸馏来指导StreamCodec2的训练。实验结果表明，采用知识蒸馏策略训练的StreamCodec2能够实现高质量的语音重建，同时保持低延迟（仅20毫秒）、低计算复杂度（仅910 MFLOPs）和低模型复杂度（仅5.4 M参数）。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-18",
     "paper_authors": "En-Wei Zhang, Hui-Peng Du, Xiao-Hang Jiang, Yang Ai, Zhen-Hua Ling",
     "topic": [
-      "Audio Codec"
+      "Audio Codec",
+      "Speech Synthesis"
     ],
     "category": [
       "Speech"
@@ -103,7 +104,7 @@
     "paper_title_zh": "通过通用声音分离模型与多重线索的自引导目标声音提取与分类",
     "paper_id": "2509.13741",
     "paper_abstract": "This paper introduces a multi-stage self-directed framework designed to address the spatial semantic segmentation of sound scene (S5) task in the DCASE 2025 Task 4 challenge. This framework integrates models focused on three distinct tasks: Universal Sound Separation (USS), Single-label Classification (SC), and Target Sound Extraction (TSE). Initially, USS breaks down a complex audio mixture into separate source waveforms. Each of these separated waveforms is then processed by a SC block, generating two critical pieces of information: the waveform itself and its corresponding class label. These serve as inputs for the TSE stage, which isolates the source that matches this information. Since these inputs are produced within the system, the extraction target is identified autonomously, removing the necessity for external guidance. The extracted waveform can be looped back into the classification task, creating a cycle of iterative refinement that progressively enhances both separability and labeling accuracy. We thus call our framework a multi-stage self-guided system due to these self-contained characteristics. On the official evaluation dataset, the proposed system achieves an 11.00 dB increase in class-aware signal-to-distortion ratio improvement (CA-SDRi) and a 55.8\\% accuracy in label prediction, outperforming the ResUNetK baseline by 4.4 dB and 4.3\\%, respectively, and achieving first place among all submissions.",
-    "paper_abstract_zh": "本文介绍了一个多阶段自引导框架，旨在解决DCASE 2025任务4挑战中的声音场景空间语义分割（S5）任务。该框架整合了专注于三个不同任务的模型：通用声音分离（USS）、单标签分类（SC）和目标声音提取（TSE）。首先，USS将复杂的音频混合分解为独立的源波形。每个分离出的波形随后由SC块处理，生成两个关键信息：波形本身及其对应的类别标签。这些信息作为TSE阶段的输入，用于隔离匹配该信息的声源。由于这些输入均在系统内部产生，提取目标是自主识别的，无需外部引导。提取出的波形可反馈至分类任务，形成迭代优化循环，逐步提升分离能力和标签准确性。因此，我们称该框架为多阶段自引导系统。在官方评估数据集上，所提系统在类别感知信噪比改善（CA-SDRi）上提升了11.00 dB，标签预测准确率达到55.8%，分别比ResUNetK基线高出4.4 dB和4.3%，在所有提交中位列第一。",
+    "paper_abstract_zh": "本文介绍了一种多阶段自引导框架，旨在解决DCASE 2025任务4挑战中的声音场景空间语义分割（S5）任务。该框架整合了专注于三个不同任务的模型：通用声音分离（USS）、单标签分类（SC）和目标声音提取（TSE）。首先，USS将复杂的音频混合分解为独立的源波形。每个分离出的波形随后由SC块处理，生成两个关键信息：波形本身及其对应的类别标签。这些信息作为TSE阶段的输入，用于分离与此信息匹配的源。由于这些输入是在系统内部产生的，提取目标是自主识别的，无需外部引导。提取出的波形可以循环反馈到分类任务中，形成一个迭代优化的循环，逐步提高分离性和标签准确性。因此，我们称此框架为多阶段自引导系统，因其具备自包含特性。在官方评估数据集上，所提出系统在类别感知信号失真比改进（CA-SDRi）上实现了11.00 dB的提升，标签预测准确率达到55.8%，分别比ResUNetK基线高出4.4 dB和4.3%，在所有提交中排名第一。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -111,10 +112,10 @@
     "paper_authors": "Younghoo Kwon, Dongheon Lee, Dohwan Kim, Jung-Woo Choi",
     "topic": [
       "Audio Classification",
-      "Audio Representation Learning"
+      "Speech Enhancement"
     ],
     "category": [
-      "Other"
+      "Speech"
     ]
   },
   {
@@ -122,7 +123,7 @@
     "paper_title_zh": "多语言对话语音语言模型挑战赛综述：数据集、任务、基线系统与方法",
     "paper_id": "2509.13785",
     "paper_abstract": "This paper summarizes the Interspeech2025 Multilingual Conversational Speech Language Model (MLC-SLM) challenge, which aims to advance the exploration of building effective multilingual conversational speech LLMs (SLLMs). We provide a detailed description of the task settings for the MLC-SLM challenge, the released real-world multilingual conversational speech dataset totaling approximately 1,604 hours, and the baseline systems for participants. The MLC-SLM challenge attracts 78 teams from 13 countries to participate, with 489 valid leaderboard results and 14 technical reports for the two tasks. We distill valuable insights on building multilingual conversational SLLMs based on submissions from participants, aiming to contribute to the advancement of the community.",
-    "paper_abstract_zh": "本文总结了Interspeech2025多语言对话语音语言模型（MLC-SLM）挑战赛，该挑战赛旨在推动构建有效的多语言对话语音大语言模型（SLLMs）的探索。我们详细描述了MLC-SLM挑战赛的任务设置、发布的总计约1,604小时的真实世界多语言对话语音数据集，以及为参赛者提供的基线系统。MLC-SLM挑战赛吸引了来自13个国家的78支团队参与，两个任务共产生了489个有效排行榜结果和14份技术报告。基于参赛者的提交内容，我们提炼了关于构建多语言对话SLLMs的宝贵见解，旨在为社区的进步做出贡献。",
+    "paper_abstract_zh": "本文总结了Interspeech2025多语言对话语音语言模型（MLC-SLM）挑战赛，该挑战赛旨在推动构建高效多语言对话语音大模型（SLLMs）的研究。我们详细描述了MLC-SLM挑战赛的任务设置、发布的总计约1,604小时的真实世界多语言对话语音数据集以及为参赛者提供的基线系统。MLC-SLM挑战赛吸引了来自13个国家的78支团队参与，两个任务共产生了489个有效排行榜结果和14份技术报告。基于参赛者的提交成果，我们提炼了关于构建多语言对话语音大模型的宝贵见解，旨在推动该领域的进步。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Sound (cs.SD)"
@@ -139,14 +140,14 @@
   },
   {
     "paper_title": "Mixture of Low-Rank Adapter Experts in Generalizable Audio Deepfake Detection",
-    "paper_title_zh": "通用化音频深度伪造检测中的低秩适配专家混合方法",
+    "paper_title_zh": "通用化音频深度伪造检测中的低秩适配器专家混合方法",
     "paper_id": "2509.13878",
     "paper_abstract": "Foundation models such as Wav2Vec2 excel at representation learning in speech tasks, including audio deepfake detection. However, after being fine-tuned on a fixed set of bonafide and spoofed audio clips, they often fail to generalize to novel deepfake methods not represented in training. To address this, we propose a mixture-of-LoRA-experts approach that integrates multiple low-rank adapters (LoRA) into the model's attention layers. A routing mechanism selectively activates specialized experts, enhancing adaptability to evolving deepfake attacks. Experimental results show that our method outperforms standard fine-tuning in both in-domain and out-of-domain scenarios, reducing equal error rates relative to baseline models. Notably, our best MoE-LoRA model lowers the average out-of-domain EER from 8.55\\% to 6.08\\%, demonstrating its effectiveness in achieving generalizable audio deepfake detection.",
-    "paper_abstract_zh": "基础模型（如Wav2Vec2）在语音任务中的表示学习方面表现出色，包括音频深度伪造检测。然而，当在固定的真实和伪造音频片段集上进行微调后，它们往往无法泛化到训练中未见过的新型深度伪造方法。为解决这一问题，我们提出了一种低秩适配专家混合（mixture-of-LoRA-experts）方法，将多个低秩适配器（LoRA）集成到模型的注意力层中。通过路由机制选择性激活专用专家，增强了对不断演变的深度伪造攻击的适应性。实验结果表明，我们的方法在域内和域外场景下均优于标准微调，降低了相对于基线模型的等错误率。值得注意的是，我们最佳的MoE-LoRA模型将平均域外等错误率从8.55%降低至6.08%，证明了其在实现通用化音频深度伪造检测方面的有效性。",
+    "paper_abstract_zh": "基础模型（如Wav2Vec2）在语音任务中的表示学习方面表现卓越，包括音频深度伪造检测。然而，当在固定的真实和伪造音频片段集上进行微调后，它们往往难以泛化到训练中未见过的新型深度伪造方法。为解决这一问题，我们提出了一种低秩适配器专家混合（mixture-of-LoRA-experts）方法，将多个低秩适配器（LoRA）集成到模型的注意力层中。通过路由机制选择性激活专用专家，增强了对不断演变的深度伪造攻击的适应能力。实验结果表明，我们的方法在域内和域外场景下均优于标准微调，降低了相对于基线模型的等错误率。值得注意的是，我们最佳的MoE-LoRA模型将平均域外等错误率从8.55%降至6.08%，证明了其在实现通用化音频深度伪造检测方面的有效性。",
     "subjects": [
-      "Machine Learning (cs.LG)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
     ],
     "update_time": "2025-09-18",
     "paper_authors": "Janne Laakkonen, Ivan Kukanov, Ville Hautamäki",
@@ -163,11 +164,11 @@
     "paper_title_zh": "DSpAST：面向大语言模型空间音频推理的解耦表征方法",
     "paper_id": "2509.13927",
     "paper_abstract": "Reasoning about spatial audio with large language models requires a spatial audio encoder as an acoustic front-end to obtain audio embeddings for further processing. Such an encoder needs to capture all information required to detect the type of sound events, as well as the direction and distance of their corresponding sources. Accomplishing this with a single audio encoder is demanding as the information required for each of these tasks is mostly independent of each other. As a result, the performance obtained with a single encoder is often worse than when using task-specific audio encoders. In this work, we present DSpAST, a novel audio encoder based on SpatialAST that learns disentangled representations of spatial audio while having only 0.2% additional parameters. Experiments on SpatialSoundQA with the spatial audio reasoning system BAT demonstrate that DSpAST significantly outperforms SpatialAST.",
-    "paper_abstract_zh": "使用大语言模型进行空间音频推理需要空间音频编码器作为声学前端来获取音频嵌入以进行后续处理。此类编码器需要捕获检测声音事件类型及其对应声源方向与距离所需的全部信息。使用单一音频编码器实现这一目标具有挑战性，因为这些任务所需的信息大多彼此独立。因此，使用单一编码器获得的性能通常不如使用特定任务音频编码器。本研究提出了DSpAST，一种基于SpatialAST的新型音频编码器，它仅增加0.2%的参数即可学习空间音频的解耦表征。在SpatialSoundQA数据集上通过空间音频推理系统BAT进行的实验表明，DSpAST显著优于SpatialAST。",
+    "paper_abstract_zh": "使用大语言模型进行空间音频推理需要一个空间音频编码器作为声学前端，以获取音频嵌入进行后续处理。这样的编码器需要捕获检测声音事件类型及其对应声源方向和距离所需的所有信息。使用单一音频编码器实现这一目标具有挑战性，因为这些任务所需的信息大多彼此独立。因此，使用单一编码器获得的性能通常比使用特定任务音频编码器更差。在本研究中，我们提出了DSpAST，这是一种基于SpatialAST的新型音频编码器，仅增加0.2%的参数即可学习空间音频的解耦表征。在SpatialSoundQA数据集上通过空间音频推理系统BAT进行的实验表明，DSpAST显著优于SpatialAST。",
     "subjects": [
-      "Artificial Intelligence (cs.AI)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-09-18",
     "paper_authors": "Kevin Wilkinghoff, Zheng-Hua Tan",
@@ -181,10 +182,10 @@
   },
   {
     "paper_title": "Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-To-Speech Systems",
-    "paper_title_zh": "你听到的是我所表达的吗？量化指令引导的表达性文本转语音系统中的指令-感知差距",
+    "paper_title_zh": "你听到的是我表达的意思吗？量化指令引导的表达性文本转语音系统中的指令-感知差距",
     "paper_id": "2509.13989",
     "paper_abstract": "Instruction-guided text-to-speech (ITTS) enables users to control speech generation through natural language prompts, offering a more intuitive interface than traditional TTS. However, the alignment between user style instructions and listener perception remains largely unexplored. This work first presents a perceptual analysis of ITTS controllability across two expressive dimensions (adverbs of degree and graded emotion intensity) and collects human ratings on speaker age and word-level emphasis attributes. To comprehensively reveal the instruction-perception gap, we provide a data collection with large-scale human evaluations, named Expressive VOice Control (E-VOC) corpus. Furthermore, we reveal that (1) gpt-4o-mini-tts is the most reliable ITTS model with great alignment between instruction and generated utterances across acoustic dimensions. (2) The 5 analyzed ITTS systems tend to generate Adult voices even when the instructions ask to use child or Elderly voices. (3) Fine-grained control remains a major challenge, indicating that most ITTS systems have substantial room for improvement in interpreting slightly different attribute instructions.",
-    "paper_abstract_zh": "指令引导的文本转语音（ITTS）使用户能够通过自然语言提示控制语音生成，提供了比传统TTS更直观的界面。然而，用户风格指令与听者感知之间的对齐在很大程度上仍未得到探索。本研究首先对ITTS在两个表达维度（程度副词和分级情感强度）上的可控性进行了感知分析，并收集了关于说话者年龄和词级强调属性的人类评分。为了全面揭示指令-感知差距，我们提供了一个包含大规模人类评估的数据集，命名为表达性语音控制（E-VOC）语料库。此外，我们发现：（1）gpt-4o-mini-tts是最可靠的ITTS模型，在声学维度上指令与生成语音之间具有良好对齐；（2）分析的5个ITTS系统倾向于生成成人声音，即使指令要求使用儿童或老年人声音；（3）细粒度控制仍然是一个主要挑战，表明大多数ITTS系统在解释略有不同的属性指令方面仍有很大改进空间。",
+    "paper_abstract_zh": "指令引导的文本转语音（ITTS）使用户能够通过自然语言提示来控制语音生成，提供了比传统TTS更直观的界面。然而，用户风格指令与听者感知之间的对齐在很大程度上仍未得到探索。本研究首先对ITTS在两个表达维度（程度副词和分级情感强度）上的可控性进行了感知分析，并收集了关于说话者年龄和词级强调属性的人类评分。为了全面揭示指令-感知差距，我们提供了一个包含大规模人类评估的数据集，命名为表达性语音控制（E-VOC）语料库。此外，我们发现：（1）gpt-4o-mini-tts是最可靠的ITTS模型，在声学维度上指令与生成的话语之间具有很好的对齐性。（2）分析的5个ITTS系统倾向于生成成人声音，即使指令要求使用儿童或老年人声音。（3）细粒度控制仍然是一个主要挑战，表明大多数ITTS系统在解释略有不同的属性指令方面还有很大的改进空间。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -202,7 +203,7 @@
     "paper_title_zh": "用于双耳音频合成的轻量级隐式神经网络",
     "paper_id": "2509.14069",
     "paper_abstract": "High-fidelity binaural audio synthesis is crucial for immersive listening, but existing methods require extensive computational resources, limiting their edge-device application. To address this, we propose the Lightweight Implicit Neural Network (LINN), a novel two-stage framework. LINN first generates initial estimates using a time-domain warping, which is then refined by an Implicit Binaural Corrector (IBC) module. IBC is an implicit neural network that predicts amplitude and phase corrections directly, resulting in a highly compact model architecture. Experimental results show that LINN achieves statistically comparable perceptual quality to the best-performing baseline model while significantly improving computational efficiency. Compared to the most efficient existing method, LINN achieves a 72.7% reduction in parameters and significantly fewer compute operations (MACs). This demonstrates that our approach effectively addresses the trade-off between synthesis quality and computational efficiency, providing a new solution for high-fidelity edge-device spatial audio applications.",
-    "paper_abstract_zh": "高保真双耳音频合成对于沉浸式听觉体验至关重要，但现有方法需要大量计算资源，限制了其在边缘设备上的应用。为此，我们提出了轻量级隐式神经网络（LINN），这是一种新颖的两阶段框架。LINN首先使用时域扭曲生成初始估计，然后通过隐式双耳校正器（IBC）模块进行细化。IBC是一种隐式神经网络，能够直接预测幅度和相位校正，从而形成高度紧凑的模型架构。实验结果表明，LINN在感知质量上与性能最佳的基线模型统计相当，同时显著提高了计算效率。与现有最高效的方法相比，LINN实现了72.7%的参数减少和显著更少的计算操作（MACs）。这表明我们的方法有效解决了合成质量与计算效率之间的权衡问题，为高保真边缘设备空间音频应用提供了新的解决方案。",
+    "paper_abstract_zh": "高保真双耳音频合成对于沉浸式听觉体验至关重要，但现有方法需要大量计算资源，限制了其在边缘设备上的应用。为此，我们提出了轻量级隐式神经网络（LINN），这是一个新颖的两阶段框架。LINN首先使用时域扭曲生成初始估计，然后通过隐式双耳校正器（IBC）模块进行细化。IBC是一个隐式神经网络，能够直接预测幅度和相位校正，从而形成高度紧凑的模型架构。实验结果表明，LINN在感知质量上与性能最佳的基线模型统计相当，同时显著提高了计算效率。与现有最高效的方法相比，LINN实现了参数减少72.7%，并显著降低了计算操作量（MACs）。这表明我们的方法有效解决了合成质量与计算效率之间的权衡问题，为高保真边缘设备空间音频应用提供了新的解决方案。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Sound (cs.SD)"
@@ -219,10 +220,10 @@
   },
   {
     "paper_title": "A Lightweight Fourier-based Network for Binaural Speech Enhancement with Spatial Cue Preservation",
-    "paper_title_zh": "一种基于傅里叶的轻量级网络用于双耳语音增强与空间线索保留",
+    "paper_title_zh": "一种基于傅里叶的轻量级网络：用于空间线索保留的双耳语音增强",
     "paper_id": "2509.14076",
     "paper_abstract": "Binaural speech enhancement faces a severe trade-off challenge, where state-of-the-art performance is achieved by computationally intensive architectures, while lightweight solutions often come at the cost of significant performance degradation. To bridge this gap, we propose the Global Adaptive Fourier Network (GAF-Net), a lightweight deep complex network that aims to establish a balance between performance and computational efficiency. The GAF-Net architecture consists of three components. First, a dual-feature encoder combining short-time Fourier transform and gammatone features enhances the robustness of acoustic representation. Second, a channel-independent globally adaptive Fourier modulator efficiently captures long-term temporal dependencies while preserving the spatial cues. Finally, a dynamic gating mechanism is implemented to reduce processing artifacts. Experimental results show that GAF-Net achieves competitive performance, particularly in terms of binaural cues (ILD and IPD error) and objective intelligibility (MBSTOI), with fewer parameters and computational cost. These results confirm that GAF-Net provides a feasible way to achieve high-fidelity binaural processing on resource-constrained devices.",
-    "paper_abstract_zh": "双耳语音增强面临着一个严峻的权衡挑战：当前最先进的性能是通过计算密集型架构实现的，而轻量级解决方案往往以显著的性能下降为代价。为了弥合这一差距，我们提出了全局自适应傅里叶网络（GAF-Net），这是一种轻量级的深度复数网络，旨在在性能和计算效率之间建立平衡。GAF-Net架构包含三个组成部分。首先，一个结合了短时傅里叶变换和gammatone特征的双重特征编码器增强了声学表示的鲁棒性。其次，一个通道独立的全局自适应傅里叶调制器能够有效捕捉长期时间依赖性，同时保留空间线索。最后，采用动态门控机制来减少处理伪影。实验结果表明，GAF-Net以更少的参数和计算成本实现了具有竞争力的性能，特别是在双耳线索（ILD和IPD误差）和客观可懂度（MBSTOI）方面。这些结果证实了GAF-Net为在资源受限设备上实现高保真双耳处理提供了一条可行途径。",
+    "paper_abstract_zh": "双耳语音增强面临着一个严重的权衡挑战：当前性能最优的架构计算密集，而轻量级解决方案往往以显著性能下降为代价。为弥补这一差距，我们提出了全局自适应傅里叶网络（GAF-Net），这是一种轻量级的深度复数网络，旨在性能与计算效率之间取得平衡。GAF-Net架构包含三个组件。首先，结合短时傅里叶变换和gammatone特征的双重特征编码器增强了声学表示的鲁棒性。其次，通道独立的全局自适应傅里叶调制器有效捕捉长期时间依赖性，同时保留空间线索。最后，采用动态门控机制以减少处理伪影。实验结果表明，GAF-Net以更少的参数和计算成本实现了竞争性性能，特别是在双耳线索（ILD和IPD误差）和客观可懂度（MBSTOI）方面。这些结果证实了GAF-Net为在资源受限设备上实现高保真双耳处理提供了一条可行途径。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Sound (cs.SD)"
@@ -239,10 +240,10 @@
   },
   {
     "paper_title": "SV-Mixer: Replacing the Transformer Encoder with Lightweight MLPs for Self-Supervised Model Compression in Speaker Verification",
-    "paper_title_zh": "SV-Mixer：在说话人验证中用轻量级MLP替换Transformer编码器以实现自监督模型压缩",
+    "paper_title_zh": "SV-Mixer：使用轻量级MLP替代Transformer编码器实现说话人验证中的自监督模型压缩",
     "paper_id": "2509.14136",
     "paper_abstract": "Self-supervised learning (SSL) has pushed speaker verification accuracy close to state-of-the-art levels, but the Transformer backbones used in most SSL encoders hinder on-device and real-time deployment. Prior compression work trims layer depth or width yet still inherits the quadratic cost of self-attention. We propose SV-Mixer, the first fully MLP-based student encoder for SSL distillation. SV-Mixer replaces Transformer with three lightweight modules: Multi-Scale Mixing for multi-resolution temporal features, Local-Global Mixing for frame-to-utterance context, and Group Channel Mixing for spectral subspaces. Distilled from WavLM, SV-Mixer outperforms a Transformer student by 14.6% while cutting parameters and GMACs by over half, and at 75% compression, it closely matches the teacher's performance. Our results show that attention-free SSL students can deliver teacher-level accuracy with hardware-friendly footprints, opening the door to robust on-device speaker verification.",
-    "paper_abstract_zh": "自监督学习（SSL）已将说话人验证的准确率推近至最先进水平，但大多数SSL编码器中使用的Transformer骨干网络阻碍了设备端和实时部署。先前的压缩工作通过削减层深度或宽度来压缩模型，但仍继承了自注意力机制的二次计算成本。我们提出了SV-Mixer，首个完全基于MLP（多层感知机）的学生编码器，用于SSL蒸馏。SV-Mixer使用三个轻量级模块替代Transformer：多尺度混合（用于多分辨率时序特征）、局部-全局混合（用于帧到语句的上下文）以及分组通道混合（用于频谱子空间）。从WavLM蒸馏而来的SV-Mixer，在参数和GMACs（十亿次乘加运算）减少超过一半的情况下，性能比基于Transformer的学生模型高出14.6%；并且在75%的压缩率下，其性能与教师模型非常接近。我们的结果表明，无需注意力机制的SSL学生模型能够以硬件友好的计算开销提供教师级别的精度，为在设备端实现鲁棒的说话人验证打开了大门。",
+    "paper_abstract_zh": "自监督学习（SSL）已将说话人验证的准确率推近至最先进水平，但大多数SSL编码器中使用的Transformer骨干网络阻碍了设备端和实时部署。先前的压缩工作通过削减层深度或宽度来压缩模型，但仍继承了自注意力机制的二次计算成本。我们提出了SV-Mixer，首个完全基于MLP的学生编码器，用于SSL蒸馏。SV-Mixer使用三个轻量级模块替代Transformer：多尺度混合（用于多分辨率时序特征）、局部-全局混合（用于帧到语句的上下文）以及分组通道混合（用于频谱子空间）。从WavLM蒸馏而来的SV-Mixer，在参数量和GMACs减少超过一半的情况下，性能比Transformer学生模型高出14.6%；在75%的压缩率下，其表现与教师模型非常接近。我们的结果表明，无需注意力的SSL学生模型能够以硬件友好的计算开销实现教师级别的精度，为鲁棒的设备端说话人验证开辟了新道路。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -257,10 +258,10 @@
   },
   {
     "paper_title": "Read to Hear: A Zero-Shot Pronunciation Assessment Using Textual Descriptions and LLMs",
-    "paper_title_zh": "阅读以聆听：基于文本描述和大语言模型的零样本发音评估",
+    "paper_title_zh": "阅读以聆听：基于文本描述和大型语言模型的零样本发音评估",
     "paper_id": "2509.14187",
     "paper_abstract": "Automatic pronunciation assessment is typically performed by acoustic models trained on audio-score pairs. Although effective, these systems provide only numerical scores, without the information needed to help learners understand their errors. Meanwhile, large language models (LLMs) have proven effective in supporting language learning, but their potential for assessing pronunciation remains unexplored. In this work, we introduce TextPA, a zero-shot, Textual description-based Pronunciation Assessment approach. TextPA utilizes human-readable representations of speech signals, which are fed into an LLM to assess pronunciation accuracy and fluency, while also providing reasoning behind the assigned scores. Finally, a phoneme sequence match scoring method is used to refine the accuracy scores. Our work highlights a previously overlooked direction for pronunciation assessment. Instead of relying on supervised training with audio-score examples, we exploit the rich pronunciation knowledge embedded in written text. Experimental results show that our approach is both cost-efficient and competitive in performance. Furthermore, TextPA significantly improves the performance of conventional audio-score-trained models on out-of-domain data by offering a complementary perspective.",
-    "paper_abstract_zh": "自动发音评估通常通过基于音频-分数对训练的声学模型进行。虽然有效，但这些系统仅提供数值分数，缺乏帮助学习者理解其错误所需的信息。与此同时，大语言模型（LLMs）已被证明在支持语言学习方面有效，但其在发音评估方面的潜力尚未被探索。在本研究中，我们提出了TextPA，一种零样本、基于文本描述的发音评估方法。TextPA利用语音信号的人类可读表示，将其输入到大语言模型中以评估发音准确性和流畅性，同时提供评分背后的推理过程。最后，采用音素序列匹配评分方法来优化准确性分数。我们的工作突显了一个先前被忽视的发音评估方向：我们不依赖带有音频-分数示例的监督训练，而是利用嵌入书面文本中的丰富发音知识。实验结果表明，我们的方法既具有成本效益，又在性能上具有竞争力。此外，通过提供互补的视角，TextPA显著提高了传统基于音频-分数训练的模型在域外数据上的性能。",
+    "paper_abstract_zh": "自动发音评估通常通过基于音频-分数对训练的声学模型进行。尽管这些系统有效，但它们仅提供数值分数，缺乏帮助学习者理解错误所需的信息。与此同时，大型语言模型（LLMs）已被证明在支持语言学习方面有效，但其在发音评估方面的潜力尚未被探索。在本研究中，我们提出了TextPA，一种零样本、基于文本描述的发音评估方法。TextPA利用人类可读的语音信号表示，将其输入到LLM中以评估发音准确性和流畅性，同时提供评分背后的推理。最后，采用音素序列匹配评分方法来优化准确性分数。我们的工作突显了一个先前被忽视的发音评估方向。我们不依赖带有音频-分数示例的监督训练，而是利用嵌入书面文本中的丰富发音知识。实验结果表明，我们的方法既成本高效又在性能上具有竞争力。此外，TextPA通过提供互补视角，显著提高了传统基于音频-分数训练的模型在领域外数据上的性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -276,16 +277,16 @@
   },
   {
     "paper_title": "A Domain Knowledge Informed Approach for Anomaly Detection of Electric Vehicle Interior Sounds",
-    "paper_title_zh": "一种基于领域知识的电动汽车车内声音异常检测方法",
+    "paper_title_zh": "一种基于领域知识的电动汽车内部声音异常检测方法",
     "paper_id": "2509.13390",
     "paper_abstract": "The detection of anomalies in automotive cabin sounds is critical for ensuring vehicle quality and maintaining passenger comfort. In many real-world settings, this task is more appropriately framed as an unsupervised learning problem rather than the supervised case due to the scarcity or complete absence of labeled faulty data. In such an unsupervised setting, the model is trained exclusively on healthy samples and detects anomalies as deviations from normal behavior. However, in the absence of labeled faulty samples for validation and the limited reliability of commonly used metrics, such as validation reconstruction error, effective model selection remains a significant challenge. To overcome these limitations, a domain-knowledge-informed approach for model selection is proposed, in which proxy-anomalies engineered through structured perturbations of healthy spectrograms are used in the validation set to support model selection. The proposed methodology is evaluated on a high-fidelity electric vehicle dataset comprising healthy and faulty cabin sounds across five representative fault types viz., Imbalance, Modulation, Whine, Wind, and Pulse Width Modulation. This dataset, generated using advanced sound synthesis techniques, and validated via expert jury assessments, has been made publicly available to facilitate further research. Experimental evaluations on the five fault cases demonstrate the selection of optimal models using proxy-anomalies, significantly outperform conventional model selection strategies.",
-    "paper_abstract_zh": "汽车舱内声音异常检测对于确保车辆质量和维持乘客舒适度至关重要。在许多实际场景中，由于标记故障数据的稀缺或完全缺失，该任务更适合被构建为无监督学习问题而非监督学习情况。在这种无监督设置下，模型仅使用正常样本进行训练，并将异常检测为与正常行为的偏差。然而，由于缺乏用于验证的标记故障样本以及常用指标（如验证重构误差）的可靠性有限，有效的模型选择仍然是一个重大挑战。为克服这些限制，本文提出了一种基于领域知识的模型选择方法，其中通过在健康声谱图上进行结构化扰动设计的代理异常被用于验证集中以支持模型选择。所提出的方法在一个高保真电动汽车数据集上进行了评估，该数据集包含五种代表性故障类型（即不平衡、调制、啸叫、风噪和脉宽调制）的健康和故障舱内声音。该数据集使用先进的声音合成技术生成，并通过专家评审评估验证，已公开提供以促进进一步研究。对五种故障案例的实验评估表明，使用代理异常选择最优模型的方法显著优于传统的模型选择策略。",
+    "paper_abstract_zh": "汽车舱内声音的异常检测对于确保车辆质量和维持乘客舒适度至关重要。在许多实际场景中，由于标记故障数据的稀缺或完全缺失，此任务更适合被构建为一个无监督学习问题而非监督学习案例。在此无监督设置下，模型仅使用健康样本进行训练，并将异常检测为与正常行为的偏差。然而，由于缺乏用于验证的标记故障样本以及常用指标（如验证重构误差）的可靠性有限，有效的模型选择仍然是一个重大挑战。为克服这些局限性，本文提出了一种基于领域知识的模型选择方法，其中通过在健康频谱图上进行结构化扰动设计的代理异常被用于验证集中以支持模型选择。所提出的方法在一个高保真电动汽车数据集上进行了评估，该数据集包含五种代表性故障类型（即不平衡、调制、啸叫、风噪和脉宽调制）的健康和故障舱内声音。该数据集使用先进的声音合成技术生成，并通过专家评审验证，已公开提供以促进进一步研究。对五种故障案例的实验评估表明，使用代理异常选择的最优模型显著优于传统的模型选择策略。",
     "subjects": [
+      "Machine Learning (cs.LG)",
       "Artificial Intelligence (cs.AI)",
       "Computer Vision and Pattern Recognition (cs.CV)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)",
-      "Machine Learning (cs.LG)"
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-09-18",
     "paper_authors": "Deepti Kunte, Bram Cornelis, Claudio Colangeli, Karl Janssens, Brecht Van Baelen, Konstantinos Gryllias",
@@ -299,10 +300,10 @@
   },
   {
     "paper_title": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3: Efficient and High-Performance Models for Multilingual ASR and AST",
-    "paper_title_zh": "Canary-1B-v2与Parakeet-TDT-0.6B-v3：高效高性能的多语言语音识别与语音翻译模型",
+    "paper_title_zh": "Canary-1B-v2 与 Parakeet-TDT-0.6B-v3：高效且高性能的多语言ASR与AST模型",
     "paper_id": "2509.14128",
     "paper_abstract": "This report introduces Canary-1B-v2, a fast, robust multilingual model for Automatic Speech Recognition (ASR) and Speech-to-Text Translation (AST). Built with a FastConformer encoder and Transformer decoder, it supports 25 languages primarily European. The model was trained on 1.7M hours of total data samples, including Granary and NeMo ASR Set 3.0, with non-speech audio added to reduce hallucinations for ASR and AST. We describe its two-stage pre-training and fine-tuning process with dynamic data balancing, as well as experiments with an nGPT encoder. Results show nGPT scales well with massive data, while FastConformer excels after fine-tuning. For timestamps, Canary-1B-v2 uses the NeMo Forced Aligner (NFA) with an auxiliary CTC model, providing reliable segment-level timestamps for ASR and AST. Evaluations show Canary-1B-v2 outperforms Whisper-large-v3 on English ASR while being 10x faster, and delivers competitive multilingual ASR and AST performance against larger models like Seamless-M4T-v2-large and LLM-based systems. We also release Parakeet-TDT-0.6B-v3, a successor to v2, offering multilingual ASR across the same 25 languages with just 600M parameters.",
-    "paper_abstract_zh": "本报告介绍了Canary-1B-v2——一个快速、鲁棒的多语言自动语音识别（ASR）与语音到文本翻译（AST）模型。该模型采用FastConformer编码器和Transformer解码器架构，主要支持25种欧洲语言。通过使用总计170万小时的数据样本（包括Granary和NeMo ASR Set 3.0数据集）进行训练，并添加非语音音频数据以降低ASR和AST的幻觉现象。我们描述了两阶段预训练与动态数据平衡的微调过程，以及nGPT编码器的实验。结果表明nGPT在大规模数据下扩展性良好，而FastConformer在微调后表现卓越。针对时间戳功能，Canary-1B-v2采用NeMo强制对齐器（NFA）与辅助CTC模型，为ASR和AST提供可靠的片段级时间戳。评估显示Canary-1B-v2在英语ASR任务上性能超越Whisper-large-v3且速度快10倍，同时在多语言ASR和AST任务上与Seamless-M4T-v2-large等大型模型及基于LLM的系统相比具有竞争力。我们还发布了Parakeet-TDT-0.6B-v3作为v2的继任模型，仅用6亿参数即可实现相同25种语言的多语言ASR。",
+    "paper_abstract_zh": "本报告介绍了Canary-1B-v2，一个快速、鲁棒的多语言模型，用于自动语音识别（ASR）和语音到文本翻译（AST）。该模型采用FastConformer编码器和Transformer解码器构建，主要支持25种欧洲语言。模型在总计170万小时的数据样本上训练而成，包括Granary和NeMo ASR Set 3.0数据集，并添加了非语音音频以减少ASR和AST的幻觉现象。我们描述了两阶段预训练和动态数据平衡的微调过程，以及nGPT编码器的实验。结果表明，nGPT在海量数据下扩展性良好，而FastConformer在微调后表现卓越。对于时间戳，Canary-1B-v2使用带有辅助CTC模型的NeMo强制对齐器（NFA），为ASR和AST提供可靠的段级时间戳。评估显示，Canary-1B-v2在英语ASR上优于Whisper-large-v3，且速度快10倍，同时在多语言ASR和AST性能上与Seamless-M4T-v2-large等更大模型及基于LLM的系统相比具有竞争力。我们还发布了Parakeet-TDT-0.6B-v3，作为v2的继任者，仅用6亿参数即可支持相同的25种语言的多语言ASR。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Audio and Speech Processing (eess.AS)"
@@ -310,8 +311,7 @@
     "update_time": "2025-09-18",
     "paper_authors": "Monica Sekoyan, Nithin Rao Koluguri, Nune Tadevosyan, Piotr Zelasko, Travis Bartley, Nick Karpov, Jagadeesh Balam, Boris Ginsburg",
     "topic": [
-      "Speech Recognition",
-      "Audio Representation Learning"
+      "Speech Recognition"
     ],
     "category": [
       "Speech"
@@ -319,14 +319,14 @@
   },
   {
     "paper_title": "CS-FLEURS: A Massively Multilingual and Code-Switched Speech Dataset",
-    "paper_title_zh": "CS-FLEURS：一个大规模多语言及语码转换语音数据集",
+    "paper_title_zh": "CS-FLEURS：一个大规模多语言和语码转换的语音数据集",
     "paper_id": "2509.14161",
     "paper_abstract": "We present CS-FLEURS, a new dataset for developing and evaluating code-switched speech recognition and translation systems beyond high-resourced languages. CS-FLEURS consists of 4 test sets which cover in total 113 unique code-switched language pairs across 52 languages: 1) a 14 X-English language pair set with real voices reading synthetically generated code-switched sentences, 2) a 16 X-English language pair set with generative text-to-speech 3) a 60 {Arabic, Mandarin, Hindi, Spanish}-X language pair set with the generative text-to-speech, and 4) a 45 X-English lower-resourced language pair test set with concatenative text-to-speech. Besides the four test sets, CS-FLEURS also provides a training set with 128 hours of generative text-to-speech data across 16 X-English language pairs. Our hope is that CS-FLEURS helps to broaden the scope of future code-switched speech research. Dataset link: this https URL.",
-    "paper_abstract_zh": "我们提出了CS-FLEURS，这是一个用于开发和评估超越高资源语言的语码转换语音识别与翻译系统的新数据集。CS-FLEURS包含4个测试集，共涵盖52种语言中的113个独特的语码转换语言对：1）一个包含14个X-英语语言对的集合，由真实语音朗读合成生成的语码转换句子；2）一个包含16个X-英语语言对的集合，采用生成式文本转语音技术；3）一个包含60个{阿拉伯语、普通话、印地语、西班牙语}-X语言对的集合，采用生成式文本转语音技术；以及4）一个包含45个X-英语低资源语言对的测试集，采用拼接式文本转语音技术。除了这四个测试集，CS-FLEURS还提供了一个包含128小时生成式文本转语音数据的训练集，覆盖16个X-英语语言对。我们希望CS-FLEURS有助于拓宽未来语码转换语音研究的范围。数据集链接：此HTTPS URL。",
+    "paper_abstract_zh": "我们提出了CS-FLEURS，这是一个用于开发和评估超越高资源语言的语码转换语音识别和翻译系统的新数据集。CS-FLEURS包含4个测试集，总共涵盖52种语言中的113种独特语码转换语言对：1）一个包含14个X-英语语言对的集合，使用真实语音朗读合成生成的语码转换句子；2）一个包含16个X-英语语言对的集合，使用生成式文本转语音技术；3）一个包含60个{阿拉伯语、普通话、印地语、西班牙语}-X语言对的集合，使用生成式文本转语音技术；以及4）一个包含45个X-英语低资源语言对的测试集，使用拼接式文本转语音技术。除了这四个测试集，CS-FLEURS还提供了一个训练集，包含128小时的生成式文本转语音数据，涵盖16个X-英语语言对。我们希望CS-FLEURS有助于拓宽未来语码转换语音研究的范围。数据集链接：此HTTPS URL。",
     "subjects": [
-      "Computation and Language (cs.CL)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
     ],
     "update_time": "2025-09-18",
     "paper_authors": "Brian Yan, Injy Hamed, Shuichiro Shimizu, Vasista Lodagala, William Chen, Olga Iakovenko, Bashar Talafha, Amir Hussein, Alexander Polok, Kalvin Chang, Dominik Klement, Sara Althubaiti, Puyuan Peng, Matthew Wiesner, Thamar Solorio, Ahmed Ali, Sanjeev Khudanpur, Shinji Watanabe, Chih-Chen Chen, Zhen Wu, Karim Benharrak, Anuj Diwan, Samuele Cornell, Eunjung Yeo, Kwanghee Choi, Carlos Carvalho, Karen Rosero",
@@ -343,7 +343,7 @@
     "paper_title_zh": "基于专家混合框架的视场增强型信号相关双耳化处理技术用于连续声源运动",
     "paper_id": "2509.13548",
     "paper_abstract": "We propose a novel mixture of experts framework for field-of-view enhancement in binaural signal matching. Our approach enables dynamic spatial audio rendering that adapts to continuous talker motion, allowing users to emphasize or suppress sounds from selected directions while preserving natural binaural cues. Unlike traditional methods that rely on explicit direction-of-arrival estimation or operate in the Ambisonics domain, our signal-dependent framework combines multiple binaural filters in an online manner using implicit localization. This allows for real-time tracking and enhancement of moving sound sources, supporting applications such as speech focus, noise reduction, and world-locked audio in augmented and virtual reality. The method is agnostic to array geometry offering a flexible solution for spatial audio capture and personalized playback in next-generation consumer audio devices.",
-    "paper_abstract_zh": "我们提出了一种新颖的专家混合框架，用于双耳信号匹配中的视场增强。我们的方法实现了动态空间音频渲染，能够自适应连续的说话者运动，使用户能够在保持自然双耳听觉线索的同时，增强或抑制来自选定方向的声音。与依赖显式到达方向估计或在Ambisonics域操作的传统方法不同，我们的信号相关框架通过隐式定位在线组合多个双耳滤波器。这使得能够实时跟踪和增强移动声源，支持诸如语音聚焦、降噪以及增强现实和虚拟现实中的世界锁定音频等应用。该方法对阵列几何结构不可知，为下一代消费级音频设备提供了灵活的空间音频捕获和个性化播放解决方案。",
+    "paper_abstract_zh": "我们提出了一种新颖的专家混合框架，用于双耳信号匹配中的视场增强。我们的方法实现了动态空间音频渲染，能够适应连续说话者运动，使用户能够在保持自然双耳听觉线索的同时，增强或抑制来自选定方向的声音。与依赖显式到达方向估计或在Ambisonics域操作的传统方法不同，我们的信号相关框架通过隐式定位在线组合多个双耳滤波器。这使得能够实时跟踪和增强移动声源，支持语音聚焦、降噪以及增强现实和虚拟现实中的世界锁定音频等应用。该方法对阵列几何结构不敏感，为下一代消费音频设备中的空间音频捕获和个性化播放提供了灵活的解决方案。",
     "subjects": [
       "Sound (cs.SD)",
       "Machine Learning (stat.ML)"
@@ -351,7 +351,8 @@
     "update_time": "2025-09-18",
     "paper_authors": "Manan Mittal, Thomas Deppisch, Joseph Forrer, Chris Le Sueur, Zamir Ben-Hur, David Lou Along, Daniel D.E. Wong",
     "topic": [
-      "Speech Enhancement"
+      "Speech Enhancement",
+      "Audio Representation Learning"
     ],
     "category": [
       "Speech"
@@ -359,10 +360,10 @@
   },
   {
     "paper_title": "Neural Speech Separation with Parallel Amplitude and Phase Spectrum Estimation",
-    "paper_title_zh": "基于并行幅度与相位谱估计的神经语音分离方法",
+    "paper_title_zh": "基于并行幅度谱与相位谱估计的神经语音分离方法",
     "paper_id": "2509.13825",
     "paper_abstract": "This paper proposes APSS, a novel neural speech separation model with parallel amplitude and phase spectrum estimation. Unlike most existing speech separation methods, the APSS distinguishes itself by explicitly estimating the phase spectrum for more complete and accurate separation. Specifically, APSS first extracts the amplitude and phase spectra from the mixed speech signal. Subsequently, the extracted amplitude and phase spectra are fused by a feature combiner into joint representations, which are then further processed by a deep processor with time-frequency Transformers to capture temporal and spectral dependencies. Finally, leveraging parallel amplitude and phase separators, the APSS estimates the respective spectra for each speaker from the resulting features, which are then combined via inverse short-time Fourier transform (iSTFT) to reconstruct the separated speech signals. Experimental results indicate that APSS surpasses both time-domain separation methods and implicit-phase-estimation-based time-frequency approaches. Also, APSS achieves stable and competitive results on multiple datasets, highlighting its strong generalization capability and practical applicability.",
-    "paper_abstract_zh": "本文提出了一种新颖的神经语音分离模型APSS，该模型通过并行幅度与相位谱估计实现语音分离。与大多数现有语音分离方法不同，APSS通过显式估计相位谱来实现更完整、更准确的分离。具体而言，APSS首先从混合语音信号中提取幅度谱和相位谱；随后，通过特征融合器将提取的幅度谱和相位谱融合为联合表征；再通过带有时频Transformer的深度处理器进一步处理，以捕捉时域和频域依赖关系；最后，利用并行幅度和相位分离器从所得特征中估计每个说话人的各自频谱，并通过短时傅里叶逆变换（iSTFT）组合以重建分离后的语音信号。实验结果表明，APSS在性能上超越了时域分离方法和基于隐式相位估计的时频方法。同时，APSS在多个数据集上取得了稳定且具有竞争力的结果，凸显了其强大的泛化能力和实际应用价值。",
+    "paper_abstract_zh": "本文提出了一种新颖的神经语音分离模型APSS，通过并行幅度谱与相位谱估计实现语音分离。与现有大多数语音分离方法不同，APSS通过显式估计相位谱来实现更完整和准确的分离。具体而言，APSS首先从混合语音信号中提取幅度谱和相位谱；随后，通过特征融合器将提取的幅度谱和相位谱融合为联合表示；接着使用时频Transformer的深度处理器进一步处理这些特征，以捕捉时域和频域依赖关系；最后，利用并行幅度和相位分离器从处理后的特征中估计每个说话人的各自频谱，并通过短时傅里叶逆变换（iSTFT）组合这些频谱以重建分离后的语音信号。实验结果表明，APSS超越了时域分离方法和基于隐式相位估计的时频方法。同时，APSS在多个数据集上取得了稳定且有竞争力的结果，凸显了其强大的泛化能力和实际应用价值。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -377,7 +378,7 @@
   },
   {
     "paper_title": "Noise Supervised Contrastive Learning and Feature-Perturbed for Anomalous Sound Detection",
-    "paper_title_zh": "噪声监督对比学习与特征扰动用于异常声音检测",
+    "paper_title_zh": "基于噪声监督对比学习和特征扰动的异常声音检测",
     "paper_id": "2509.13853",
     "paper_abstract": "Unsupervised anomalous sound detection aims to detect unknown anomalous sounds by training a model using only normal audio data. Despite advancements in self-supervised methods, the issue of frequent false alarms when handling samples of the same type from different machines remains unresolved. This paper introduces a novel training technique called one-stage supervised contrastive learning (OS-SCL), which significantly addresses this problem by perturbing features in the embedding space and employing a one-stage noisy supervised contrastive learning approach. On the DCASE 2020 Challenge Task 2, it achieved 94.64\\% AUC, 88.42\\% pAUC, and 89.24\\% mAUC using only Log-Mel features. Additionally, a time-frequency feature named TFgram is proposed, which is extracted from raw audio. This feature effectively captures critical information for anomalous sound detection, ultimately achieving 95.71\\% AUC, 90.23\\% pAUC, and 91.23\\% mAUC. The source code is available at: \\underline{this http URL}.",
     "paper_abstract_zh": "无监督异常声音检测旨在仅使用正常音频数据训练模型来检测未知的异常声音。尽管自监督方法取得了进展，但在处理来自不同机器的同类样本时频繁出现误报的问题仍未解决。本文提出了一种称为单阶段监督对比学习（OS-SCL）的新型训练技术，通过在嵌入空间扰动特征并采用单阶段噪声监督对比学习方法，显著解决了这一问题。在DCASE 2020挑战赛任务2上，仅使用Log-Mel特征就实现了94.64%的AUC、88.42%的pAUC和89.24%的mAUC。此外，还提出了一种名为TFgram的时频特征，该特征从原始音频中提取，能有效捕捉异常声音检测的关键信息，最终实现了95.71%的AUC、90.23%的pAUC和91.23%的mAUC。源代码可在：this http URL获取。",
@@ -397,10 +398,10 @@
   },
   {
     "paper_title": "RFM-Editing: Rectified Flow Matching for Text-guided Audio Editing",
-    "paper_title_zh": "RFM-Editing：基于修正流匹配的文本引导音频编辑方法",
+    "paper_title_zh": "RFM编辑：基于整流流匹配的文本引导音频编辑方法",
     "paper_id": "2509.14003",
     "paper_abstract": "Diffusion models have shown remarkable progress in text-to-audio generation. However, text-guided audio editing remains in its early stages. This task focuses on modifying the target content within an audio signal while preserving the rest, thus demanding precise localization and faithful editing according to the text prompt. Existing training-based and zero-shot methods that rely on full-caption or costly optimization often struggle with complex editing or lack practicality. In this work, we propose a novel end-to-end efficient rectified flow matching-based diffusion framework for audio editing, and construct a dataset featuring overlapping multi-event audio to support training and benchmarking in complex scenarios. Experiments show that our model achieves faithful semantic alignment without requiring auxiliary captions or masks, while maintaining competitive editing quality across metrics.",
-    "paper_abstract_zh": "扩散模型在文本到音频生成领域已展现出显著进展。然而，文本引导的音频编辑仍处于早期阶段。该任务专注于修改音频信号中的目标内容同时保留其余部分，因此需要精确定位并根据文本提示进行忠实编辑。现有的基于训练和零样本方法依赖于完整描述或昂贵的优化过程，通常在复杂编辑场景中表现不佳或缺乏实用性。在本研究中，我们提出了一种新颖的端到端高效修正流匹配扩散框架用于音频编辑，并构建了一个具有重叠多事件音频的数据集以支持复杂场景下的训练和基准测试。实验表明，我们的模型无需辅助描述或掩码即可实现忠实的语义对齐，同时在各项指标上保持竞争力的编辑质量。",
+    "paper_abstract_zh": "扩散模型在文本到音频生成领域已展现出显著进展。然而，文本引导的音频编辑仍处于早期阶段。该任务侧重于修改音频信号中的目标内容同时保留其余部分，因而需要精确定位并根据文本提示进行忠实编辑。现有的基于训练和零样本方法依赖完整描述或昂贵优化，往往难以处理复杂编辑或缺乏实用性。本研究提出了一种新颖的端到端高效整流流匹配扩散框架用于音频编辑，并构建了一个包含重叠多事件音频的数据集以支持复杂场景下的训练和基准测试。实验表明，我们的模型无需辅助描述或掩码即可实现忠实的语义对齐，同时在各项指标上保持竞争力的编辑质量。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -417,10 +418,10 @@
   },
   {
     "paper_title": "Comprehensive Evaluation of CNN-Based Audio Tagging Models on Resource-Constrained Devices",
-    "paper_title_zh": "基于CNN的音频标记模型在资源受限设备上的综合评估",
+    "paper_title_zh": "基于CNN的音频标注模型在资源受限设备上的综合评估",
     "paper_id": "2509.14049",
     "paper_abstract": "Convolutional Neural Networks (CNNs) have demonstrated exceptional performance in audio tagging tasks. However, deploying these models on resource-constrained devices like the Raspberry Pi poses challenges related to computational efficiency and thermal management. In this paper, a comprehensive evaluation of multiple convolutional neural network (CNN) architectures for audio tagging on the Raspberry Pi is conducted, encompassing all 1D and 2D models from the Pretrained Audio Neural Networks (PANNs) framework, a ConvNeXt-based model adapted for audio classification, as well as MobileNetV3 architectures. In addition, two PANNs-derived networks, CNN9 and CNN13, recently proposed, are also evaluated. To enhance deployment efficiency and portability across diverse hardware platforms, all models are converted to the Open Neural Network Exchange (ONNX) format. Unlike previous works that focus on a single model, our analysis encompasses a broader range of architectures and involves continuous 24-hour inference sessions to assess performance stability. Our experiments reveal that, with appropriate model selection and optimization, it is possible to maintain consistent inference latency and manage thermal behavior effectively over extended periods. These findings provide valuable insights for deploying audio tagging models in real-world edge computing scenarios.",
-    "paper_abstract_zh": "卷积神经网络（CNNs）在音频标记任务中已展现出卓越性能。然而，在诸如树莓派等资源受限设备上部署这些模型，面临着计算效率和热管理方面的挑战。本文对树莓派上用于音频标记的多种卷积神经网络（CNN）架构进行了综合评估，涵盖了预训练音频神经网络（PANNs）框架中的所有一维和二维模型、一个适用于音频分类的基于ConvNeXt的模型，以及MobileNetV3架构。此外，还评估了最近提出的两个源自PANNs的网络：CNN9和CNN13。为了提高在不同硬件平台上的部署效率和可移植性，所有模型均被转换为开放神经网络交换（ONNX）格式。与以往仅关注单一模型的研究不同，我们的分析涵盖了更广泛的架构，并进行了连续24小时的推理会话以评估性能稳定性。实验结果表明，通过适当的模型选择和优化，可以在长时间内保持一致的推理延迟并有效管理热行为。这些发现为在实际边缘计算场景中部署音频标记模型提供了宝贵的见解。",
+    "paper_abstract_zh": "卷积神经网络（CNNs）在音频标注任务中展现出卓越性能。然而，在树莓派等资源受限设备上部署这些模型时，面临着计算效率和热管理方面的挑战。本文对多种卷积神经网络架构在树莓派上进行音频标注的综合评估，涵盖了预训练音频神经网络（PANNs）框架中的所有一维和二维模型、适用于音频分类的基于ConvNeXt的模型，以及MobileNetV3架构。此外，还评估了最近提出的两种源自PANNs的网络：CNN9和CNN13。为提高部署效率及在不同硬件平台间的可移植性，所有模型均转换为开放神经网络交换（ONNX）格式。与以往仅关注单一模型的研究不同，我们的分析涵盖了更广泛的架构范围，并进行了连续24小时的推理会话以评估性能稳定性。实验结果表明，通过适当的模型选择和优化，可以在长时间内保持一致的推理延迟并有效管理热行为。这些发现为在实际边缘计算场景中部署音频标注模型提供了宝贵见解。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -439,7 +440,7 @@
     "paper_title_zh": "AnyAccomp：通过量化旋律瓶颈实现可泛化的伴奏生成",
     "paper_id": "2509.14052",
     "paper_abstract": "Singing Accompaniment Generation (SAG) is the process of generating instrumental music for a given clean vocal input. However, existing SAG techniques use source-separated vocals as input and overfit to separation artifacts. This creates a critical train-test mismatch, leading to failure on clean, real-world vocal inputs. We introduce AnyAccomp, a framework that resolves this by decoupling accompaniment generation from source-dependent artifacts. AnyAccomp first employs a quantized melodic bottleneck, using a chromagram and a VQ-VAE to extract a discrete and timbre-invariant representation of the core melody. A subsequent flow-matching model then generates the accompaniment conditioned on these robust codes. Experiments show AnyAccomp achieves competitive performance on separated-vocal benchmarks while significantly outperforming baselines on generalization test sets of clean studio vocals and, notably, solo instrumental tracks. This demonstrates a qualitative leap in generalization, enabling robust accompaniment for instruments - a task where existing models completely fail - and paving the way for more versatile music co-creation tools. Demo audio and code: this https URL",
-    "paper_abstract_zh": "歌唱伴奏生成（SAG）是为给定的纯净人声输入生成器乐音乐的过程。然而，现有的SAG技术使用源分离后的人声作为输入，并过度拟合分离伪影。这造成了严重的训练-测试不匹配，导致在纯净的真实世界人声输入上失败。我们引入了AnyAccomp框架，通过将伴奏生成与源依赖伪影解耦来解决这一问题。AnyAccomp首先采用量化旋律瓶颈，使用色谱图和VQ-VAE提取核心旋律的离散且音色不变的表示。随后，一个流匹配模型基于这些鲁棒编码生成伴奏。实验表明，AnyAccomp在分离人声基准测试中取得了有竞争力的性能，同时在纯净录音室人声和特别是独奏乐器音轨的泛化测试集上显著优于基线方法。这展示了泛化能力的质的飞跃，能够为乐器提供鲁棒的伴奏——这是现有模型完全失败的任务——并为更通用的音乐协同创作工具铺平了道路。演示音频和代码：此HTTPS URL",
+    "paper_abstract_zh": "歌唱伴奏生成（SAG）是为给定的纯净人声输入生成器乐音乐的过程。然而，现有的SAG技术使用源分离后的人声作为输入，并过度拟合分离伪影。这造成了严重的训练-测试不匹配，导致在纯净的真实世界人声输入上失败。我们介绍了AnyAccomp框架，它通过将伴奏生成与源依赖伪影解耦来解决这一问题。AnyAccomp首先采用量化旋律瓶颈，使用色谱图和VQ-VAE来提取核心旋律的离散且音色不变的表示。随后，一个流匹配模型根据这些鲁棒编码生成伴奏。实验表明，AnyAccomp在分离人声基准测试中取得了有竞争力的性能，同时在纯净录音室人声以及（尤为重要的是）独奏器乐轨的泛化测试集上显著优于基线模型。这展示了泛化能力的质的飞跃，能够为器乐提供鲁棒的伴奏——这是现有模型完全失败的任务——并为更通用的音乐协同创作工具铺平了道路。演示音频和代码：此 https URL",
     "subjects": [
       "Sound (cs.SD)",
       "Signal Processing (eess.SP)"
@@ -459,7 +460,7 @@
     "paper_title_zh": "指尖上的隐形耳朵：通过鼠标传感器进行声学窃听",
     "paper_id": "2509.13581",
     "paper_abstract": "Modern optical mouse sensors, with their advanced precision and high responsiveness, possess an often overlooked vulnerability: they can be exploited for side-channel attacks. This paper introduces Mic-E-Mouse, the first-ever side-channel attack that targets high-performance optical mouse sensors to covertly eavesdrop on users. We demonstrate that audio signals can induce subtle surface vibrations detectable by a mouse's optical sensor. Remarkably, user-space software on popular operating systems can collect and broadcast this sensitive side channel, granting attackers access to raw mouse data without requiring direct system-level permissions. Initially, the vibration signals extracted from mouse data are of poor quality due to non-uniform sampling, a non-linear frequency response, and significant quantization. To overcome these limitations, Mic-E-Mouse employs a sophisticated end-to-end data filtering pipeline that combines Wiener filtering, resampling corrections, and an innovative encoder-only spectrogram neural filtering technique. We evaluate the attack's efficacy across diverse conditions, including speaking volume, mouse polling rate and DPI, surface materials, speaker languages, and environmental noise. In controlled environments, Mic-E-Mouse improves the signal-to-noise ratio (SNR) by up to +19 dB for speech reconstruction. Furthermore, our results demonstrate a speech recognition accuracy of roughly 42% to 61% on the AudioMNIST and VCTK datasets. All our code and datasets are publicly accessible on this https URL.",
-    "paper_abstract_zh": "现代光学鼠标传感器凭借其先进的精度和高响应性，存在一个常被忽视的漏洞：它们可被利用进行侧信道攻击。本文介绍了Mic-E-Mouse，这是首个针对高性能光学鼠标传感器以隐蔽窃听用户的侧信道攻击。我们证明，音频信号可以引发微小的表面振动，这些振动可被鼠标的光学传感器检测到。值得注意的是，流行操作系统上的用户空间软件可以收集并广播这个敏感的侧信道，使攻击者无需直接的系统级权限即可访问原始鼠标数据。最初，由于非均匀采样、非线性频率响应和显著量化，从鼠标数据中提取的振动信号质量很差。为克服这些限制，Mic-E-Mouse采用了一个复杂的端到端数据过滤管道，结合了维纳滤波、重采样校正以及一种创新的仅编码器频谱图神经过滤技术。我们在多种条件下评估了攻击的有效性，包括说话音量、鼠标轮询率和DPI、表面材料、说话者语言和环境噪声。在受控环境中，Mic-E-Mouse将语音重建的信噪比（SNR）提高了高达+19 dB。此外，我们的结果显示，在AudioMNIST和VCTK数据集上，语音识别准确率大约在42%到61%之间。我们所有的代码和数据集均可在此https URL上公开获取。",
+    "paper_abstract_zh": "现代光学鼠标传感器凭借其先进的精度和高响应性，存在一个常被忽视的漏洞：它们可被利用进行侧信道攻击。本文介绍了Mic-E-Mouse，这是首个针对高性能光学鼠标传感器进行隐蔽用户窃听的侧信道攻击方法。我们证明音频信号可引起微小的表面振动，这些振动可被鼠标的光学传感器检测到。值得注意的是，流行操作系统上的用户空间软件能够收集并广播这一敏感的侧信道，使攻击者无需直接系统级权限即可访问原始鼠标数据。最初，由于非均匀采样、非线性频率响应和显著量化，从鼠标数据中提取的振动信号质量较差。为克服这些限制，Mic-E-Mouse采用了一个复杂的端到端数据过滤流程，结合了维纳滤波、重采样校正以及一种创新的仅编码器频谱图神经过滤技术。我们在多种条件下评估了攻击的有效性，包括说话音量、鼠标轮询率和DPI、表面材料、说话者语言和环境噪声。在受控环境中，Mic-E-Mouse将语音重建的信噪比（SNR）提高了高达+19 dB。此外，我们的结果显示，在AudioMNIST和VCTK数据集上，语音识别准确率大约为42%至61%。我们所有的代码和数据集均可在此https URL上公开获取。",
     "subjects": [
       "Cryptography and Security (cs.CR)",
       "Sound (cs.SD)"
@@ -479,7 +480,7 @@
     "paper_title_zh": "网络表征揭示音乐中的结构化不确定性",
     "paper_id": "2509.14053",
     "paper_abstract": "Music, as a structured yet perceptually rich experience, can be modeled as a network to uncover how humans encode and process auditory information. While network-based representations of music are increasingly common, the impact of feature selection on structural properties and cognitive alignment remains underexplored. In this study, we evaluated eight network models, each constructed from symbolic representations of piano compositions using distinct combinations of pitch, octave, duration, and interval, designed to be representative of existing approaches in the literature. By comparing these models through topological metrics, entropy analysis, and divergence with respect to inferred cognitive representations, we assessed both their structural and perceptual efficiency. Our findings reveal that simpler, feature-specific models better match human perception, whereas complex, multidimensional representations introduce cognitive inefficiencies. These results support the view that humans rely on modular, parallel cognitive networks--an architecture consistent with theories of predictive processing and free energy minimization. Moreover, we find that musical networks are structurally organized to guide attention toward transitions that are both uncertain and inferable. The resulting structure concentrates uncertainty in a few frequently visited nodes, creating local entropy gradients that alternate between stable and unpredictable regions, thereby enabling the expressive dynamics of tension and release that define the musical experience. These findings show that network structures make the organization of uncertainty in music observable, offering new insight into how patterned flows of expectation shape perception, and open new directions for studying how musical structures evolve across genres, cultures, and historical periods through the lens of network science.",
-    "paper_abstract_zh": "音乐作为一种结构化却又感知丰富的体验，可以通过网络建模来揭示人类如何编码和处理听觉信息。尽管基于网络的音乐表征日益普遍，但特征选择对结构特性和认知对齐的影响仍未得到充分探索。在本研究中，我们评估了八种网络模型，每种模型均使用音高、八度、时长和音程的不同组合从钢琴作品的符号表征构建而成，这些组合旨在代表文献中的现有方法。通过拓扑度量、熵分析以及与推断认知表征的散度比较，我们评估了这些模型的结构效率和感知效率。我们的研究结果表明，更简单、特征特定的模型更能匹配人类感知，而复杂的多维表征则会引入认知低效性。这些结果支持了人类依赖模块化、并行认知网络的观点——这种架构与预测处理和自由能最小化理论一致。此外，我们发现音乐网络在结构上被组织起来，以引导注意力转向既不确定又可推断的过渡。由此产生的结构将不确定性集中在少数频繁访问的节点上，创造了在稳定和不可预测区域之间交替的局部熵梯度，从而实现了定义音乐体验的紧张与释放的表达动态。这些发现表明，网络结构使音乐中的不确定性组织变得可观测，为期望的模式化流动如何塑造感知提供了新的见解，并为通过网络科学视角研究音乐结构如何跨越流派、文化和历史时期演化开辟了新方向。",
+    "paper_abstract_zh": "音乐作为一种结构化却又感知丰富的体验，可以通过网络建模来揭示人类如何编码和处理听觉信息。尽管基于网络的音乐表征日益普遍，但特征选择对结构特性和认知对齐的影响仍未得到充分探索。在本研究中，我们评估了八种网络模型，每种模型均使用音高、八度、时长和音程的不同组合从钢琴作品的符号表征构建而成，这些组合旨在代表文献中的现有方法。通过拓扑度量、熵分析以及与推断认知表征的散度比较这些模型，我们评估了它们的结构和感知效率。我们的研究结果表明，较简单的、特定于特征的模型更符合人类感知，而复杂的多维表征则会引入认知低效性。这些结果支持了人类依赖模块化、并行认知网络的观点——这种架构与预测处理和自由能最小化理论一致。此外，我们发现音乐网络在结构上被组织起来，以引导注意力转向既不确定又可推断的过渡。由此产生的结构将不确定性集中在少数频繁访问的节点上，创造了在稳定和不可预测区域之间交替的局部熵梯度，从而实现了定义音乐体验的张力和释放的表达动态。这些发现表明，网络结构使得音乐中不确定性的组织变得可观测，为期望的模式化流动如何塑造感知提供了新的见解，并为通过网络科学视角研究音乐结构如何跨越流派、文化和历史时期演化开辟了新方向。",
     "subjects": [
       "Physics and Society (physics.soc-ph)",
       "Sound (cs.SD)"
