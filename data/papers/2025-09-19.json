@@ -721,18 +721,24 @@
   },
   {
     "paper_title": "Back to Ear: Perceptually Driven High Fidelity Music Reconstruction",
-    "paper_title_zh": "",
+    "paper_title_zh": "回归听觉：感知驱动的高保真音乐重建",
     "paper_id": "2509.14912",
     "paper_abstract": "Variational Autoencoders (VAEs) are essential for large-scale audio tasks like diffusion-based generation. However, existing open-source models often neglect auditory perceptual aspects during training, leading to weaknesses in phase accuracy and stereophonic spatial representation. To address these challenges, we propose {\\epsilon}ar-VAE, an open-source music signal reconstruction model that rethinks and optimizes the VAE training paradigm. Our contributions are threefold: (i) A K-weighting perceptual filter applied prior to loss calculation to align the objective with auditory perception. (ii) Two novel phase losses: a Correlation Loss for stereo coherence, and a Phase Loss using its derivatives--Instantaneous Frequency and Group Delay--for precision. (iii) A new spectral supervision paradigm where magnitude is supervised by all four Mid/Side/Left/Right components, while phase is supervised only by the LR components. Experiments show {\\epsilon}ar-VAE at 44.1kHz substantially outperforms leading open-source models across diverse metrics, showing particular strength in reconstructing high-frequency harmonics and the spatial characteristics.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "变分自编码器（VAEs）在基于扩散的大规模音频生成任务中至关重要。然而，现有的开源模型在训练过程中往往忽视听觉感知方面，导致在相位精度和立体声空间表征方面存在缺陷。为解决这些挑战，我们提出了{\\epsilon}ar-VAE——一个重新思考并优化VAE训练范式的开源音乐信号重建模型。我们的贡献包含三方面：（i）在损失计算前应用K加权感知滤波器，使目标函数与听觉感知对齐；（ii）两种新颖的相位损失：用于立体声相干性的相关损失，以及使用其导数（瞬时频率和群延迟）的相位损失以提高精度；（iii）新的频谱监督范式，其中幅度由Mid/Side/Left/Right四个分量共同监督，而相位仅由LR分量监督。实验表明，44.1kHz的{\\epsilon}ar-VAE在多项指标上显著优于主流开源模型，尤其在重建高频谐波和空间特征方面表现出突出优势。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-09-19",
     "paper_authors": "Kangdi Wang, Zhiyue Wu, Dinghao Zhou, Rui Lin, Junyu Dai, Tao Jiang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation",
+      "Audio Codec"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "FCPE: A Fast Context-based Pitch Estimation Model",
