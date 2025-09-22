@@ -89,6 +89,7 @@ def process_paper_complete(paper: Dict[str, Any], config: Dict[str, List[str]]) 
   "topic": ["选择的topic1", "选择的topic2"],
   "category": ["选择的category"]
 }}
+请勿返回特殊字符，保证JSON格式标准可解析
 """
 
     headers = {
