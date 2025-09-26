@@ -1,10 +1,10 @@
 [
   {
     "paper_title": "Data-Efficient ASR Personalization for Non-Normative Speech Using an Uncertainty-Based Phoneme Difficulty Score for Guided Sampling",
-    "paper_title_zh": "基于不确定性音素难度评分的数据高效ASR个性化方法用于非标准语音的引导采样",
+    "paper_title_zh": "基于不确定性音素难度评分引导采样的数据高效非标准语音ASR个性化方法",
     "paper_id": "2509.20396",
     "paper_abstract": "Automatic speech recognition (ASR) systems struggle with non-normative speech from individuals with impairments caused by conditions like cerebral palsy or structural anomalies. The high acoustic variability and scarcity of training data severely degrade model performance. This work introduces a data-efficient personalization method that quantifies phoneme-level uncertainty to guide fine-tuning. We leverage Monte Carlo Dropout to estimate which phonemes a model finds most difficult and use these estimates for a targeted oversampling strategy. We validate our method on English and German datasets. Crucially, we demonstrate that our model-derived uncertainty strongly correlates with phonemes identified as challenging in an expert clinical logopedic report, marking, to our knowledge, the first work to successfully align model uncertainty with expert assessment of speech difficulty. Our results show that this clinically-validated, uncertainty-guided sampling significantly improves ASR accuracy, delivering a practical framework for personalized and inclusive ASR.",
-    "paper_abstract_zh": "自动语音识别（ASR）系统在处理因脑瘫或结构异常等病症导致言语障碍个体的非标准语音时面临困难。高声学变异性和训练数据稀缺严重降低了模型性能。本研究提出一种数据高效的个性化方法，通过量化音素级不确定性来指导微调过程。我们利用蒙特卡洛Dropout技术估计模型认为最困难的音素，并基于这些估计实施针对性过采样策略。我们在英语和德语数据集上验证了该方法。关键的是，我们证明了模型推导的不确定性与专家临床语言病理学报告中认定的困难音素存在强相关性——据我们所知，这是首个成功将模型不确定性与专家言语难度评估对齐的研究。结果表明，这种经临床验证的不确定性引导采样策略显著提升了ASR准确率，为个性化和包容性ASR提供了实用框架。",
+    "paper_abstract_zh": "自动语音识别（ASR）系统在处理因脑瘫或结构异常等病症导致言语障碍个体的非标准语音时面临困难。高度的声学变异性和训练数据的稀缺性严重降低了模型性能。本研究提出了一种数据高效的个性化方法，通过量化音素级不确定性来指导微调过程。我们利用蒙特卡洛Dropout技术来估计模型认为最困难的音素，并将这些估计用于针对性的过采样策略。我们在英语和德语数据集上验证了该方法。关键的是，我们证明了模型推导出的不确定性与专家临床言语病理学报告中确定的困难音素高度相关，据我们所知，这是首个成功将模型不确定性与专家言语难度评估对齐的工作。结果表明，这种经过临床验证的不确定性引导采样策略显著提高了ASR准确率，为个性化和包容性ASR提供了实用框架。",
     "subjects": [
       "Artificial Intelligence (cs.AI)",
       "Sound (cs.SD)",
@@ -13,8 +13,7 @@
     "update_time": "2025-09-26",
     "paper_authors": "Niclas Pokel, Pehuén Moure, Roman Boehringer, Yingqiang Gao",
     "topic": [
-      "Speech Recognition",
-      "Audio Representation Learning"
+      "Speech Recognition"
     ],
     "category": [
       "Speech"
@@ -22,10 +21,10 @@
   },
   {
     "paper_title": "Variational Low-Rank Adaptation for Personalized Impaired Speech Recognition",
-    "paper_title_zh": "基于变分低秩自适应的个性化语音障碍识别方法",
+    "paper_title_zh": "基于变分低秩自适应的个性化障碍语音识别方法",
     "paper_id": "2509.20397",
     "paper_abstract": "Speech impairments resulting from congenital disorders, such as cerebral palsy, down syndrome, or apert syndrome, as well as acquired brain injuries due to stroke, traumatic accidents, or tumors, present major challenges to automatic speech recognition (ASR) systems. Despite recent advancements, state-of-the-art ASR models like Whisper still struggle with non-normative speech due to limited training data availability and high acoustic variability. Moreover, collecting and annotating non-normative speech is burdensome: speaking is effortful for many affected individuals, while laborious annotation often requires caregivers familiar with the speaker. This work introduces a novel ASR personalization method based on Bayesian Low-rank Adaptation for data-efficient fine-tuning. We validate our method on the English UA-Speech dataset and a newly collected German speech dataset, BF-Sprache, from a child with structural speech impairment. The dataset and approach are designed to reflect the challenges of low-resource settings that include individuals with speech impairments. Our method significantly improves ASR accuracy for impaired speech while maintaining data and annotation efficiency, offering a practical path toward inclusive ASR.",
-    "paper_abstract_zh": "由脑瘫、唐氏综合征或Apert综合征等先天性疾病，以及中风、创伤性事故或肿瘤导致的获得性脑损伤所引起的语音障碍，对自动语音识别（ASR）系统构成了重大挑战。尽管近年来取得了进展，但由于训练数据有限和声学变异性高，像Whisper这样的最先进ASR模型在处理非规范性语音时仍然困难重重。此外，收集和标注非规范性语音是一项繁重的任务：对许多受影响个体来说，说话本身就很费力，而繁琐的标注通常需要熟悉说话者的护理人员参与。本研究提出了一种基于贝叶斯低秩自适应的新型ASR个性化方法，用于数据高效微调。我们在英语UA-Speech数据集和新收集的德语语音数据集BF-Sprache（来自一名有结构性语音障碍的儿童）上验证了我们的方法。该数据集和方法旨在反映包含语音障碍个体的低资源环境所面临的挑战。我们的方法显著提高了对障碍语音的ASR准确性，同时保持了数据和标注效率，为包容性ASR提供了一条实用路径。",
+    "paper_abstract_zh": "由脑性瘫痪、唐氏综合征或阿佩尔综合征等先天性疾病，以及中风、创伤性事故或肿瘤导致的获得性脑损伤所引起的言语障碍，对自动语音识别（ASR）系统构成了重大挑战。尽管近期取得了进展，但由于训练数据有限且声学变异性高，像Whisper这样的最先进ASR模型在处理非标准语音时仍然困难重重。此外，收集和标注非标准语音是一项繁重的任务：对许多受影响者来说，说话本身就很费力，而费力的标注通常需要熟悉说话者的护理人员参与。本研究提出了一种基于贝叶斯低秩自适应的新型ASR个性化方法，用于数据高效微调。我们在英语UA-Speech数据集和新收集的德语语音数据集BF-Sprache（来自一名有结构性言语障碍的儿童）上验证了我们的方法。该数据集和方法旨在反映包含言语障碍个体的低资源设置所面临的挑战。我们的方法显著提高了障碍语音的ASR准确率，同时保持了数据和标注效率，为包容性ASR提供了一条实用路径。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Artificial Intelligence (cs.AI)"
@@ -45,7 +44,7 @@
     "paper_title_zh": "Phoenix-VAD：面向全双工语音交互的流式语义端点检测",
     "paper_id": "2509.20410",
     "paper_abstract": "Spoken dialogue models have significantly advanced intelligent human\\textendash computer interaction, yet they lack a plug\\textendash and\\textendash play full\\textendash duplex prediction module for semantic endpoint detection, hindering seamless audio interactions. In this paper, we introduce Phoenix\\textendashVAD, an LLM\\textendash based model that enables streaming semantic endpoint detection. Specifically, Phoenix\\textendash VAD leverages the semantic comprehension capability of the LLM and a sliding window training strategy to achieve reliable semantic endpoint detection while supporting streaming inference. Experiments on both semantically complete and incomplete speech scenarios indicate that Phoenix\\textendash VAD achieves excellent and competitive performance. Furthermore, this design enables the full\\textendash duplex prediction module to be optimized independently of the dialogue model, providing more reliable and flexible support for next\\textendash generation human\\textendash computer interaction.",
-    "paper_abstract_zh": "语音对话模型显著推进了智能人机交互的发展，但它们缺乏即插即用的全双工语义端点检测预测模块，阻碍了无缝音频交互的实现。本文提出Phoenix-VAD，一种基于大语言模型（LLM）的流式语义端点检测模型。具体而言，Phoenix-VAD利用LLM的语义理解能力和滑动窗口训练策略，在支持流式推理的同时实现可靠的语义端点检测。在语义完整和不完整语音场景下的实验表明，Phoenix-VAD取得了优异且具有竞争力的性能。此外，该设计使全双工预测模块能够独立于对话模型进行优化，为下一代人机交互提供更可靠灵活的支持。",
+    "paper_abstract_zh": "语音对话模型显著推动了智能人机交互的发展，但它们缺乏即插即用的全双工预测模块来进行语义端点检测，阻碍了无缝音频交互的实现。本文介绍了Phoenix-VAD，一种基于大语言模型（LLM）的流式语义端点检测模型。具体而言，Phoenix-VAD利用LLM的语义理解能力和滑动窗口训练策略，在支持流式推理的同时实现可靠的语义端点检测。在语义完整和不完整语音场景下的实验表明，Phoenix-VAD取得了优异且具有竞争力的性能。此外，该设计使全双工预测模块能够独立于对话模型进行优化，为下一代人机交互提供更可靠和灵活的支持。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -61,10 +60,10 @@
   },
   {
     "paper_title": "Objective Evaluation of Prosody and Intelligibility in Speech Synthesis via Conditional Prediction of Discrete Tokens",
-    "paper_title_zh": "基于离散令牌条件预测的语音合成韵律与清晰度客观评估",
+    "paper_title_zh": "基于离散标记条件预测的语音合成韵律与可懂度客观评估",
     "paper_id": "2509.20485",
     "paper_abstract": "Objective evaluation of synthesized speech is critical for advancing speech generation systems, yet existing metrics for intelligibility and prosody remain limited in scope and weakly correlated with human perception. Word Error Rate (WER) provides only a coarse text-based measure of intelligibility, while F0-RMSE and related pitch-based metrics offer a narrow, reference-dependent view of prosody. To address these limitations, we propose TTScore, a targeted and reference-free evaluation framework based on conditional prediction of discrete speech tokens. TTScore employs two sequence-to-sequence predictors conditioned on input text: TTScore-int, which measures intelligibility through content tokens, and TTScore-pro, which evaluates prosody through prosody tokens. For each synthesized utterance, the predictors compute the likelihood of the corresponding token sequences, yielding interpretable scores that capture alignment with intended linguistic content and prosodic structure. Experiments on the SOMOS, VoiceMOS, and TTSArena benchmarks demonstrate that TTScore-int and TTScore-pro provide reliable, aspect-specific evaluation and achieve stronger correlations with human judgments of overall quality than existing intelligibility and prosody-focused metrics.",
-    "paper_abstract_zh": "合成语音的客观评估对推进语音生成系统至关重要，然而现有的清晰度和韵律评估指标在范围上仍有限制，且与人类感知相关性较弱。词错误率（WER）仅提供基于文本的粗略清晰度度量，而F0-RMSE及相关基音频律指标则提供了一种狭窄的、依赖参考的韵律视角。为解决这些局限性，我们提出TTScore——一种基于离散语音令牌条件预测的针对性且无需参考的评估框架。TTScore采用两个基于输入文本的序列到序列预测器：TTScore-int通过内容令牌测量清晰度，TTScore-pro通过韵律令牌评估韵律。对于每个合成语音，预测器计算相应令牌序列的似然概率，产生可解释的分数，这些分数捕捉了与预期语言内容和韵律结构的一致性。在SOMOS、VoiceMOS和TTSArena基准测试上的实验表明，TTScore-int和TTScore-pro提供了可靠的、面向特定方面的评估，并在整体质量的人类判断相关性上优于现有的清晰度和韵律聚焦指标。",
+    "paper_abstract_zh": "合成语音的客观评估对于推进语音生成系统至关重要，然而现有的可懂度和韵律评估指标在范围上仍然有限，且与人类感知相关性较弱。词错误率（WER）仅提供基于文本的粗粒度可懂度测量，而F0-RMSE及相关基音频谱指标则提供了狭隘的、依赖参考的韵律视图。为解决这些局限性，我们提出了TTScore，一个基于离散语音标记条件预测的针对性且无需参考的评估框架。TTScore采用两个基于输入文本的序列到序列预测器：TTScore-int通过内容标记测量可懂度，TTScore-pro通过韵律标记评估韵律。对于每个合成语音，预测器计算相应标记序列的似然概率，产生可解释的分数，捕捉与预期语言内容和韵律结构的一致性。在SOMOS、VoiceMOS和TTSArena基准测试上的实验表明，TTScore-int和TTScore-pro提供了可靠的、面向特定方面的评估，并在整体质量的人类判断相关性上优于现有的可懂度和韵律聚焦指标。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Sound (cs.SD)",
@@ -85,7 +84,7 @@
     "paper_title_zh": "实时视听目标语音增强系统",
     "paper_id": "2509.20741",
     "paper_abstract": "We present a live demonstration for RAVEN, a real-time audio-visual speech enhancement system designed to run entirely on a CPU. In single-channel, audio-only settings, speech enhancement is traditionally approached as the task of extracting clean speech from environmental noise. More recent work has explored the use of visual cues, such as lip movements, to improve robustness, particularly in the presence of interfering speakers. However, to our knowledge, no prior work has demonstrated an interactive system for real-time audio-visual speech enhancement operating on CPU hardware. RAVEN fills this gap by using pretrained visual embeddings from an audio-visual speech recognition model to encode lip movement information. The system generalizes across environmental noise, interfering speakers, transient sounds, and even singing voices. In this demonstration, attendees will be able to experience live audio-visual target speech enhancement using a microphone and webcam setup, with clean speech playback through headphones.",
-    "paper_abstract_zh": "我们展示了RAVEN系统的实时演示，这是一个完全在CPU上运行的实时视听语音增强系统。在单通道纯音频设置中，语音增强传统上被视为从环境噪声中提取清晰语音的任务。最近的研究探索了使用视觉线索（如唇部运动）来提高鲁棒性，特别是在存在干扰说话者的情况下。然而，据我们所知，此前尚无研究展示在CPU硬件上运行的交互式实时视听语音增强系统。RAVEN通过使用来自视听语音识别模型的预训练视觉嵌入来编码唇部运动信息，从而填补了这一空白。该系统能够泛化处理环境噪声、干扰说话者、瞬态声音甚至歌唱声音。在此演示中，与会者将能够通过麦克风和网络摄像头设置体验实时视听目标语音增强，并通过耳机收听清晰的语音回放。",
+    "paper_abstract_zh": "我们展示了RAVEN的实时演示，这是一个设计为完全在CPU上运行的实时视听语音增强系统。在单通道纯音频设置中，语音增强传统上被视为从环境噪声中提取清晰语音的任务。最近的研究探索了使用视觉线索（如唇部运动）来提高鲁棒性，特别是在存在干扰说话者的情况下。然而，据我们所知，尚无先前研究展示在CPU硬件上运行的交互式实时视听语音增强系统。RAVEN通过使用来自视听语音识别模型的预训练视觉嵌入来编码唇部运动信息，从而填补了这一空白。该系统能够泛化处理环境噪声、干扰说话者、瞬态声音甚至歌唱声音。在此演示中，参与者将能够通过麦克风和网络摄像头设置体验实时视听目标语音增强，并通过耳机播放清晰语音。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Emerging Technologies (cs.ET)",
@@ -103,10 +102,10 @@
   },
   {
     "paper_title": "SPADE: Structured Pruning and Adaptive Distillation for Efficient LLM-TTS",
-    "paper_title_zh": "SPADE：面向高效大语言模型语音合成的结构化剪枝与自适应蒸馏",
+    "paper_title_zh": "SPADE：面向高效大语言模型文本转语音的结构化剪枝与自适应蒸馏",
     "paper_id": "2509.20802",
     "paper_abstract": "The goal of this paper is to introduce SPADE, a framework for Structured Pruning and Adaptive Distillation for Efficient Large Language Model-based text-to-speech (LLM-TTS). Recent LLM-TTS systems achieve strong controllability and zero-shot generalization, but their large parameter counts and high latency limit real-world deployment. SPADE addresses this by combining (i) a pruning step guided by a word-error-rate-based layer importance index to remove non-essential Transformer layers, with (ii) multi-level knowledge distillation to restore autoregressive coherence. On zero-shot benchmarks, SPADE preserves near-parity perceptual quality while halving Transformer depth, reducing VRAM usage by up to 20%, and achieving up to 1.7x faster real-time factor with less than 5% of the original training data. These results show that compact LLM-TTS models can maintain naturalness and speaker similarity while enabling practical real-time speech generation. Audio samples are available at this https URL.",
-    "paper_abstract_zh": "本文旨在介绍SPADE框架，这是一种面向高效大语言模型语音合成（LLM-TTS）的结构化剪枝与自适应蒸馏方法。当前LLM-TTS系统虽具备强可控性和零样本泛化能力，但其参数量大、延迟高的问题限制了实际部署。SPADE通过结合（i）基于词错误率的层级重要性指标指导的剪枝步骤以移除非必要的Transformer层，以及（ii）多层级知识蒸馏以恢复自回归一致性来解决这一问题。在零样本基准测试中，SPADE在将Transformer深度减半的同时保持了近乎对等的感知质量，显存使用量降低达20%，实时因子提升达1.7倍，且仅需不到原始训练数据量的5%。这些结果表明紧凑型LLM-TTS模型能够在保持自然度和说话人相似性的同时实现实用的实时语音生成。音频样本请访问此https URL。",
+    "paper_abstract_zh": "本文旨在介绍SPADE框架，该框架通过结构化剪枝和自适应蒸馏实现高效的大语言模型文本转语音（LLM-TTS）。近期的大语言模型TTS系统虽具备强大的可控性和零样本泛化能力，但其参数量庞大且延迟较高，限制了实际部署。SPADE通过结合以下两方面解决该问题：（i）基于词错误率的层重要性指标指导剪枝步骤，移除非必需的Transformer层；（ii）多层级知识蒸馏以恢复自回归一致性。在零样本基准测试中，SPADE在将Transformer深度减半的同时保持了近乎等同的感知质量，显存使用量降低达20%，实时因子提升至1.7倍，且仅需不到原始训练数据5%的量。这些结果表明紧凑的LLM-TTS模型可在保持自然度和说话人相似性的同时实现实用实时语音生成。音频样本请访问此https URL。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -122,10 +121,10 @@
   },
   {
     "paper_title": "PAS-SE: Personalized Auxiliary-Sensor Speech Enhancement for Voice Pickup in Hearables",
-    "paper_title_zh": "PAS-SE：面向可听设备语音拾取的个性化辅助传感器语音增强",
+    "paper_title_zh": "PAS-SE：面向可听设备语音拾取的个性化辅助传感器语音增强方法",
     "paper_id": "2509.20875",
     "paper_abstract": "Speech enhancement for voice pickup in hearables aims to improve the user's voice by suppressing noise and interfering talkers, while maintaining own-voice quality. For single-channel methods, it is particularly challenging to distinguish the target from interfering talkers without additional context. In this paper, we compare two strategies to resolve this ambiguity: personalized speech enhancement (PSE), which uses enrollment utterances to represent the target, and auxiliary-sensor speech enhancement (AS-SE), which uses in-ear microphones as additional input. We evaluate the strategies on two public datasets, employing different auxiliary sensor arrays, to investigate their cross-dataset generalization. We propose training-time augmentations to facilitate cross-dataset generalization of AS-SE systems. We also show that combining PSE and AS-SE (PAS-SE) provides complementary performance benefits, especially when enrollment speech is recorded with the in-ear microphone. We further demonstrate that PAS-SE personalized with noisy in-ear enrollments maintains performance benefits over the AS-SE system.",
-    "paper_abstract_zh": "可听设备中语音拾取的语音增强旨在通过抑制噪声和干扰说话者来改善用户语音，同时保持自身语音质量。对于单通道方法，在没有额外上下文的情况下区分目标说话者和干扰说话者尤其具有挑战性。本文比较了两种解决这种歧义的策略：个性化语音增强（PSE），使用注册语句来表示目标；以及辅助传感器语音增强（AS-SE），使用耳内麦克风作为额外输入。我们在两个公共数据集上评估这些策略，采用不同的辅助传感器阵列，以研究它们的跨数据集泛化能力。我们提出了训练时增强方法以促进AS-SE系统的跨数据集泛化。我们还表明，结合PSE和AS-SE（PAS-SE）能提供互补的性能优势，特别是当注册语音是用耳内麦克风录制时。我们进一步证明，使用带噪声的耳内注册进行个性化的PAS-SE保持了相对于AS-SE系统的性能优势。",
+    "paper_abstract_zh": "可听设备语音拾取中的语音增强旨在通过抑制噪声和干扰说话者来改善用户语音，同时保持自身语音质量。对于单通道方法，在没有额外上下文的情况下区分目标说话者和干扰说话者尤其具有挑战性。本文比较了两种解决这一歧义性的策略：个性化语音增强（PSE）（使用注册语音片段表示目标）和辅助传感器语音增强（AS-SE）（使用耳内麦克风作为额外输入）。我们在两个公共数据集上评估这些策略，采用不同的辅助传感器阵列，以研究其跨数据集泛化能力。我们提出训练时增强方法以促进AS-SE系统的跨数据集泛化。我们还表明，结合PSE和AS-SE（PAS-SE）能够提供互补的性能优势，特别是当注册语音通过耳内麦克风录制时。我们进一步证明，使用含噪耳内注册语音进行个性化的PAS-SE仍能保持优于AS-SE系统的性能优势。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -140,10 +139,10 @@
   },
   {
     "paper_title": "TF-Restormer: Complex Spectral Prediction for Speech Restoration",
-    "paper_title_zh": "TF-Restormer：用于语音修复的复数谱预测",
+    "paper_title_zh": "TF-Restormer：用于语音修复的复频谱预测",
     "paper_id": "2509.21003",
     "paper_abstract": "Speech restoration in real-world conditions is challenging due to compounded distortions such as clipping, band-pass filtering, digital artifacts, noise, and reverberation, and low sampling rates. Existing systems, including vocoder-based approaches, often sacrifice signal fidelity, while diffusion models remain impractical for streaming. Moreover, most assume a fixed target sampling rate, requiring external resampling that leads to redundant computations. We present TF-Restormer, an encoder-decoder architecture that concentrates analysis on input-bandwidth with a time-frequency dual-path encoder and reconstructs missing high-frequency bands through a light decoder with frequency extension queries. It enables efficient and universal restoration across arbitrary input-output rates without redundant resampling. To support adversarial training across diverse rates, we introduce a shared sampling-frequency-independent (SFI) STFT discriminator. TF-Restormer further supports streaming with a causal time module, and improves robustness under extreme degradations by injecting spectral inductive bias into the frequency module. Finally, we propose a scaled log-spectral loss that stabilizes optimization under severe conditions while emphasizing well-predicted spectral details. As a single model across sampling rates, TF-Restormer consistently outperforms prior systems, achieving balanced gains in signal fidelity and perceptual quality, while its streaming mode maintains competitive effectiveness for real-time application. Code and demos are available at this https URL.",
-    "paper_abstract_zh": "现实条件下的语音修复由于存在诸如削波、带通滤波、数字伪影、噪声和混响等复合失真以及低采样率而具有挑战性。现有系统，包括基于声码器的方法，常常牺牲信号保真度，而扩散模型仍不适用于流式处理。此外，大多数系统假设固定的目标采样率，需要外部重采样，导致冗余计算。我们提出了TF-Restormer，一种编码器-解码器架构，它通过时频双路径编码器将分析集中在输入带宽上，并通过带有频率扩展查询的轻量解码器重建缺失的高频带。它能够在任意输入输出速率下实现高效且通用的修复，无需冗余重采样。为了支持跨不同速率的对抗训练，我们引入了一种共享的与采样频率无关（SFI）的STFT判别器。TF-Restormer进一步通过因果时间模块支持流式处理，并通过将频谱归纳偏置注入频率模块来提高在极端退化条件下的鲁棒性。最后，我们提出了一种缩放对数谱损失，它在严重条件下稳定优化，同时强调预测良好的频谱细节。作为一个跨采样速率的单一模型，TF-Restormer始终优于先前的系统，在信号保真度和感知质量方面实现了平衡的增益，而其流式模式在实时应用中保持了竞争优势。代码和演示可在此https URL获取。",
+    "paper_abstract_zh": "现实条件下的语音修复因存在多种复合失真（如削波、带通滤波、数字伪影、噪声和混响）以及低采样率而极具挑战性。现有系统（包括基于声码器的方法）常常牺牲信号保真度，而扩散模型仍不适用于流式处理。此外，大多数系统假设固定目标采样率，需要外部重采样从而导致冗余计算。我们提出了TF-Restormer，一种编码器-解码器架构：通过时频双路径编码器集中分析输入带宽，并通过带有频率扩展查询的轻量解码器重建缺失的高频带。它能够在不进行冗余重采样的前提下，实现跨任意输入输出采样率的高效通用修复。为支持跨不同采样率的对抗训练，我们引入了共享的与采样频率无关（SFI）的STFT判别器。TF-Restormer进一步通过因果时间模块支持流式处理，并通过向频率模块注入频谱归纳偏置来提升极端退化条件下的鲁棒性。最后，我们提出了一种缩放对数谱损失，可在强调良好预测频谱细节的同时，稳定严重失真条件下的优化过程。作为一个支持跨采样率的单一模型，TF-Restormer始终优于先前系统，在信号保真度和感知质量上实现了平衡提升，其流式模式也为实时应用保持了竞争优势。代码和演示可见此https URL。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -158,10 +157,10 @@
   },
   {
     "paper_title": "Measuring Audio's Impact on Correctness: Audio-Contribution-Aware Post-Training of Large Audio Language Models",
-    "paper_title_zh": "衡量音频对正确性的影响：基于音频贡献感知的大型音频语言模型训练后优化",
+    "paper_title_zh": "测量音频对正确性的影响：基于音频贡献感知的大型音频语言模型后训练",
     "paper_id": "2509.21060",
     "paper_abstract": "Large Audio Language Models (LALMs) represent an important frontier in multimodal AI, addressing diverse audio tasks. Recently, post-training of LALMs has received increasing attention due to significant performance improvements over foundation models. While single-stage post-training such as reinforcement learning (RL) has demonstrated promising results, multi-stage approaches such as supervised fine-tuning (SFT) followed by RL remain suboptimal. The allocation of data across multiple training stages to maximize LALM capabilities has not been fully explored, and large-scale, high-quality datasets for such research are also lacking. To address these problems, we firstly present AudioMCQ, a comprehensive audio multiple-choice question dataset comprising 571k samples with two kinds of chain-of-thought annotations. Secondly, we investigate the prevalent zero audio-contribution phenomenon in LALMs, where models derive correct answers solely from textual information without processing audio content. We propose Audio-Contribution Filtering to partition data into weak and strong audio-contribution subsets. Based on these insights, we develop two effective post-training paradigms: Weak-to-Strong (SFT on weak audio-contribution data followed by RL on strong audio-contribution data) and Mixed-to-Strong (SFT on mixed audio-contribution data followed by RL on strong audio-contribution data). We achieve first place in the DCASE 2025 Audio-Question-Answering challenge by using AudioMCQ. Additionally, leveraging our dataset with different training strategies, we achieve 78.2\\% on MMAU-test-mini, 75.6\\% on MMAU, 67.1\\% on MMAR, and 70.7\\% on MMSU, establishing new state-of-the-art performance across these benchmarks.",
-    "paper_abstract_zh": "大型音频语言模型（LALMs）代表了多模态人工智能的一个重要前沿，致力于解决多样化的音频任务。近年来，LALMs的训练后优化因其相对于基础模型的显著性能提升而受到越来越多的关注。虽然强化学习（RL）等单阶段训练后优化已显示出有希望的结果，但监督微调（SFT）后接RL等多阶段方法仍然不够理想。跨多个训练阶段分配数据以最大化LALM能力的问题尚未得到充分探索，且此类研究也缺乏大规模、高质量的数据集。为解决这些问题，我们首先提出了AudioMCQ，一个全面的音频多选题数据集，包含57.1万个样本，并带有两种思维链注释。其次，我们研究了LALMs中普遍存在的零音频贡献现象，即模型仅从文本信息中推导出正确答案，而未处理音频内容。我们提出了音频贡献过滤方法，将数据划分为弱音频贡献和强音频贡献子集。基于这些见解，我们开发了两种有效的训练后范式：弱到强（先在弱音频贡献数据上进行SFT，再在强音频贡献数据上进行RL）和混合到强（先在混合音频贡献数据上进行SFT，再在强音频贡献数据上进行RL）。通过使用AudioMCQ，我们在DCASE 2025音频问答挑战赛中获得了第一名。此外，利用我们的数据集和不同的训练策略，我们在MMAU-test-mini上达到了78.2%，在MMAU上达到75.6%，在MMAR上达到67.1%，在MMSU上达到70.7%，在这些基准测试中创造了新的最先进性能。",
+    "paper_abstract_zh": "大型音频语言模型（LALMs）代表了多模态人工智能的重要前沿，能够处理多样化的音频任务。近年来，LALMs的后训练因相比基础模型带来显著性能提升而受到越来越多关注。虽然单阶段后训练（如强化学习RL）已展现出有希望的结果，但多阶段方法（如监督微调SFT后接RL）仍然不够优化。跨多个训练阶段的数据分配以最大化LALM能力尚未得到充分探索，并且此类研究也缺乏大规模、高质量的数据集。为解决这些问题，我们首先提出了AudioMCQ，一个全面的音频多项选择题数据集，包含571k个样本，并带有两种思维链注释。其次，我们研究了LALMs中普遍存在的零音频贡献现象，即模型仅从文本信息推导出正确答案而未处理音频内容。我们提出了音频贡献过滤方法，将数据划分为弱音频贡献和强音频贡献子集。基于这些见解，我们开发了两种有效的后训练范式：弱到强（在弱音频贡献数据上进行SFT，随后在强音频贡献数据上进行RL）和混合到强（在混合音频贡献数据上进行SFT，随后在强音频贡献数据上进行RL）。通过使用AudioMCQ，我们在DCASE 2025音频问答挑战赛中获得了第一名。此外，利用我们的数据集与不同训练策略，我们在MMAU-test-mini上达到78.2%，在MMAU上达到75.6%，在MMAR上达到67.1%，在MMSU上达到70.7%，在这些基准测试中确立了新的最先进性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -172,7 +171,7 @@
       "Audio Classification"
     ],
     "category": [
-      "Other"
+      "Speech"
     ]
   },
   {
@@ -180,7 +179,7 @@
     "paper_title_zh": "现代语音增强系统是否易受对抗性攻击？",
     "paper_id": "2509.21087",
     "paper_abstract": "Machine learning approaches for speech enhancement are becoming increasingly expressive, enabling ever more powerful modifications of input signals. In this paper, we demonstrate that this expressiveness introduces a vulnerability: advanced speech enhancement models can be susceptible to adversarial attacks. Specifically, we show that adversarial noise, carefully crafted and psychoacoustically masked by the original input, can be injected such that the enhanced speech output conveys an entirely different semantic meaning. We experimentally verify that contemporary predictive speech enhancement models can indeed be manipulated in this way. Furthermore, we highlight that diffusion models with stochastic samplers exhibit inherent robustness to such adversarial attacks by design.",
-    "paper_abstract_zh": "语音增强的机器学习方法正变得越来越具有表现力，使得对输入信号进行更强大的修改成为可能。在本文中，我们证明这种表现力引入了一个脆弱性：先进的语音增强模型可能容易受到对抗性攻击。具体而言，我们展示了经过精心设计并通过原始输入进行心理声学掩蔽的对抗性噪声可以被注入，使得增强后的语音输出传达完全不同的语义含义。我们通过实验验证了当代预测性语音增强模型确实可以以这种方式被操纵。此外，我们强调，采用随机采样器的扩散模型在设计上对此类对抗性攻击具有固有的鲁棒性。",
+    "paper_abstract_zh": "用于语音增强的机器学习方法正变得越来越具有表现力，使得对输入信号进行更强大的修改成为可能。在本文中，我们证明这种表现力引入了一个脆弱性：先进的语音增强模型可能容易受到对抗性攻击。具体而言，我们展示了可以注入经过精心设计并由原始输入进行心理声学掩蔽的对抗性噪声，使得增强后的语音输出传达完全不同的语义含义。我们通过实验验证了当代预测性语音增强模型确实可以以这种方式被操纵。此外，我们强调，采用随机采样器的扩散模型在设计上对此类对抗性攻击具有固有的鲁棒性。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Sound (cs.SD)",
@@ -200,7 +199,7 @@
     "paper_title_zh": "混合实值与复值神经网络：面向低复杂度相位感知的语音增强方案",
     "paper_id": "2509.21185",
     "paper_abstract": "In this paper, we propose hybrid real- and complex-valued neural networks for speech enhancement. Real- or complex-valued models are either inefficient or present high complexity. We devise a straightforward design method for extending a real-valued network into its hybrid counterpart. Based on speech intelligibility and quality metrics, we compare the real, complex, and hybrid versions of a convolutional and a convolutional-recurrent architecture. The hybrid network consistently outperforms its counterparts with the same number of parameters. Additionally, the hybrid models' complexity in terms of multiply-accumulate operations is substantially lower than that of their counterparts.",
-    "paper_abstract_zh": "本文提出了一种用于语音增强的混合实值与复值神经网络。纯实值或纯复值模型要么效率低下，要么计算复杂度高。我们设计了一种直观的方法，可将实值网络扩展为其混合版本。基于语音清晰度和质量指标，我们比较了卷积架构和卷积-循环架构的实值、复值及混合版本。在参数量相同的情况下，混合网络始终优于其他版本。此外，混合模型在乘累加运算方面的计算复杂度显著低于对应模型。",
+    "paper_abstract_zh": "本文提出了一种混合实值与复值神经网络用于语音增强。纯实值或纯复值模型要么效率低下，要么复杂度较高。我们设计了一种直观的方法，将实值网络扩展为混合架构。基于语音清晰度和质量指标，我们比较了卷积架构和卷积-循环架构的实值、复值和混合版本。在参数量相同的情况下，混合网络始终优于其他版本。此外，混合模型在乘累加操作方面的复杂度显著低于对应模型。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -218,7 +217,7 @@
     "paper_title_zh": "MeanSE：基于均值流的高效生成式语音增强方法",
     "paper_id": "2509.21214",
     "paper_abstract": "Speech enhancement (SE) improves degraded speech's quality, with generative models like flow matching gaining attention for their outstanding perceptual quality. However, the flow-based model requires multiple numbers of function evaluations (NFEs) to achieve stable and satisfactory performance, leading to high computational load and poor 1-NFE performance. In this paper, we propose MeanSE, an efficient generative speech enhancement model using mean flows, which models the average velocity field to achieve high-quality 1-NFE enhancement. Experimental results demonstrate that our proposed MeanSE significantly outperforms the flow matching baseline with a single NFE, exhibiting extremely better out-of-domain generalization capabilities.",
-    "paper_abstract_zh": "语音增强（SE）旨在提升受损语音的质量，其中基于流匹配的生成模型因其出色的感知质量而受到关注。然而，基于流的模型需要多次函数评估（NFE）才能实现稳定且令人满意的性能，导致计算负载高且单次NFE性能较差。本文提出MeanSE，一种使用均值流的高效生成式语音增强模型，该方法通过对平均速度场建模来实现高质量的单次NFE增强。实验结果表明，所提出的MeanSE在单次NFE条件下显著优于流匹配基线，并展现出极佳的超域泛化能力。",
+    "paper_abstract_zh": "语音增强（SE）旨在提升受损语音的质量，其中基于流匹配的生成模型因其出色的感知质量而受到关注。然而，基于流的模型需要多次函数评估（NFE）才能实现稳定且令人满意的性能，这导致计算负载高且单次NFE性能较差。本文提出MeanSE，一种使用均值流的高效生成式语音增强模型，该方法通过对平均速度场建模来实现高质量的单次NFE增强。实验结果表明，我们提出的MeanSE在单次NFE条件下显著优于流匹配基线，并展现出极其优异的域外泛化能力。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -236,11 +235,11 @@
     "paper_title_zh": "语音深度伪造检测器为何无法泛化：开放世界中检测的局限性",
     "paper_id": "2509.20405",
     "paper_abstract": "Speech deepfake detectors are often evaluated on clean, benchmark-style conditions, but deployment occurs in an open world of shifting devices, sampling rates, codecs, environments, and attack families. This creates a ``coverage debt\" for AI-based detectors: every new condition multiplies with existing ones, producing data blind spots that grow faster than data can be collected. Because attackers can target these uncovered regions, worst-case performance (not average benchmark scores) determines security. To demonstrate the impact of the coverage debt problem, we analyze results from a recent cross-testing framework. Grouping performance by bona fide domain and spoof release year, two patterns emerge: newer synthesizers erase the legacy artifacts detectors rely on, and conversational speech domains (teleconferencing, interviews, social media) are consistently the hardest to secure. These findings show that detection alone should not be relied upon for high-stakes decisions. Detectors should be treated as auxiliary signals within layered defenses that include provenance, personhood credentials, and policy safeguards.",
-    "paper_abstract_zh": "语音深度伪造检测器通常在洁净的基准测试条件下进行评估，但实际部署却处于一个设备、采样率、编解码器、环境和攻击家族不断变化的开放世界。这为基于人工智能的检测器带来了‘覆盖债务’问题：每个新条件都会与现有条件相乘，产生数据盲点，其增长速度远超数据收集能力。由于攻击者可以针对这些未覆盖区域，最坏情况下的性能（而非平均基准分数）决定了安全性。为证明覆盖债务问题的影响，我们分析了近期跨测试框架的结果。通过按真实领域和伪造发布年份分组性能，出现了两种模式：较新的合成器消除了检测器依赖的传统伪影，而会话语音领域（电话会议、访谈、社交媒体）始终是最难保障安全的。这些发现表明，高风险决策不应仅依赖检测技术。检测器应被视为分层防御体系中的辅助信号，该体系还应包括来源验证、身份凭证和政策保障措施。",
+    "paper_abstract_zh": "语音深度伪造检测器通常在干净的基准测试条件下进行评估，但实际部署却处于一个设备、采样率、编解码器、环境和攻击家族不断变化的开放世界中。这为基于人工智能的检测器带来了“覆盖债务”问题：每个新条件都会与现有条件相乘，产生数据盲点，其增长速度远快于数据收集速度。由于攻击者可以针对这些未覆盖区域，最坏情况下的性能（而非平均基准分数）决定了安全性。为展示覆盖债务问题的影响，我们分析了近期交叉测试框架的结果。通过按真实领域和伪造发布年份分组性能，出现了两种模式：较新的合成器消除了检测器所依赖的传统伪影，而会话语音领域（电话会议、访谈、社交媒体）始终是最难保障安全的。这些发现表明，高风险决策不应仅仅依赖检测。检测器应被视为分层防御体系中的辅助信号，该体系还包括来源验证、身份凭证和政策保障措施。",
     "subjects": [
+      "Cryptography and Security (cs.CR)",
       "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
-      "Cryptography and Security (cs.CR)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-26",
     "paper_authors": "Visar Berisha, Prad Kadambi, Isabella Lenz",
@@ -257,10 +256,10 @@
     "paper_title_zh": "为日语口语评估构建定制化语音识别器",
     "paper_id": "2509.20655",
     "paper_abstract": "This paper presents methods for building speech recognizers tailored for Japanese speaking assessment tasks. Specifically, we build a speech recognizer that outputs phonemic labels with accent markers. Although Japanese is resource-rich, there is only a small amount of data for training models to produce accurate phonemic transcriptions that include accent marks. We propose two methods to mitigate data sparsity. First, a multitask training scheme introduces auxiliary loss functions to estimate orthographic text labels and pitch patterns of the input signal, so that utterances with only orthographic annotations can be leveraged in training. The second fuses two estimators, one over phonetic alphabet strings, and the other over text token sequences. To combine these estimates we develop an algorithm based on the finite-state transducer framework. Our results indicate that the use of multitask learning and fusion is effective for building an accurate phonemic recognizer. We show that this approach is advantageous compared to the use of generic multilingual recognizers. The relative advantages of the proposed methods were also compared. Our proposed methods reduced the average of mora-label error rates from 12.3% to 7.1% over the CSJ core evaluation sets.",
-    "paper_abstract_zh": "本文提出了为日语口语评估任务构建定制化语音识别器的方法。具体而言，我们构建了一个能够输出带音调标记的音位标签的语音识别器。尽管日语资源丰富，但可用于训练模型以生成包含音调标记的精确音位转录的数据量很小。我们提出了两种方法来缓解数据稀疏性问题。首先，采用多任务训练方案引入辅助损失函数来估计输入信号的 orthographic 文本标签和音高模式，从而在训练中能够利用仅具有 orthographic 标注的语音数据。第二种方法融合了两个估计器，一个基于音标字符串，另一个基于文本 token 序列。为了结合这些估计，我们开发了一种基于有限状态转录器框架的算法。我们的结果表明，使用多任务学习和融合对于构建精确的音位识别器是有效的。我们证明了这种方法相比于使用通用多语言识别器更具优势。我们还比较了所提出方法的相对优势。在 CSJ 核心评估集上，我们提出的方法将平均莫拉标签错误率从 12.3% 降低到了 7.1%。",
+    "paper_abstract_zh": "本文提出了为日语口语评估任务构建定制化语音识别器的方法。具体而言，我们构建了一个能够输出带重音标记的音素标签的语音识别器。尽管日语资源丰富，但可用于训练模型以生成包含重音标记的精确音素转录的数据量较小。我们提出了两种方法来缓解数据稀疏问题。首先，采用多任务训练方案，引入辅助损失函数来估计输入信号的 orthographic 文本标签和音高模式，从而在训练中能够利用仅具有 orthographic 标注的话语。第二种方法融合了两个估计器，一个基于音素字母串，另一个基于文本标记序列。为了结合这些估计，我们开发了一种基于有限状态转换器（FST）框架的算法。我们的结果表明，使用多任务学习和融合对于构建精确的音素识别器是有效的。我们证明这种方法相较于使用通用的多语言识别器更具优势。我们还比较了所提出方法的相对优势。在 CSJ 核心评估集上，我们提出的方法将平均莫拉标签错误率从 12.3% 降低到了 7.1%。",
     "subjects": [
-      "Sound (cs.SD)",
       "Computation and Language (cs.CL)",
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-26",
@@ -274,13 +273,13 @@
   },
   {
     "paper_title": "MI-Fuse: Label Fusion for Unsupervised Domain Adaptation with Closed-Source Large-Audio Language Model",
-    "paper_title_zh": "MI-Fuse：基于闭源大型音频语言模型的无监督领域自适应标签融合方法",
+    "paper_title_zh": "MI-Fuse：基于闭源大规模音频语言模型的领域自适应标签融合方法",
     "paper_id": "2509.20706",
     "paper_abstract": "Large audio-language models (LALMs) show strong zero-shot ability on speech tasks, suggesting promise for speech emotion recognition (SER). However, SER in real-world deployments often fails under domain mismatch, where source data are unavailable and powerful LALMs are accessible only through an API. We ask: given only unlabeled target-domain audio and an API-only LALM, can a student model be adapted to outperform the LALM in the target domain? To this end, we propose MI-Fuse, a denoised label fusion framework that supplements the LALM with a source-domain trained SER classifier as an auxiliary teacher. The framework draws multiple stochastic predictions from both teachers, weights their mean distributions by mutual-information-based uncertainty, and stabilizes training with an exponential moving average teacher. Experiments across three public emotion datasets and six cross-domain transfers show consistent gains, with the student surpassing the LALM and outperforming the strongest baseline by 3.9%. This approach strengthens emotion-aware speech systems without sharing source data, enabling realistic adaptation.",
-    "paper_abstract_zh": "大型音频语言模型（LALMs）在语音任务上展现出强大的零样本能力，为语音情感识别（SER）提供了潜力。然而，在实际部署中，SER常因领域不匹配而失效，此时源数据不可用且强大的LALMs仅能通过API访问。我们提出：仅给定未标注的目标领域音频和仅API访问的LALM，能否使学生模型在目标领域超越LALM？为此，我们提出MI-Fuse——一种去噪标签融合框架，通过引入源领域训练的SER分类器作为辅助教师来增强LALM。该框架从两个教师模型中提取多重随机预测，基于互信息的不确定性加权其平均分布，并通过指数移动平均教师稳定训练过程。在三个公开情感数据集和六次跨领域迁移实验中的结果表明，该方法持续提升性能，学生模型最终超越LALM并以3.9%的优势击败最强基线。该方法无需共享源数据即可增强情感感知语音系统，实现实用化自适应。",
+    "paper_abstract_zh": "大规模音频语言模型（LALMs）在语音任务上展现出强大的零样本能力，为语音情感识别（SER）带来了潜力。然而，在实际部署中，SER常因领域不匹配而失效，此时源数据不可用且强大的LALMs仅能通过API访问。我们提出：在仅有未标注目标领域音频和API访问权限的LALMs条件下，能否通过学生模型自适应在目标领域超越LALMs？为此，我们提出MI-Fuse——一种去噪标签融合框架，通过将源领域训练的SER分类器作为辅助教师来增强LALMs。该框架从两个教师模型中获取多重随机预测，基于互信息加权的平均分布计算不确定性，并通过指数移动平均教师稳定训练过程。在三个公开情感数据集和六种跨领域迁移实验中的结果表明，该方法持续提升性能，学生模型以3.9%的优势超越LALMs及最强基线。该方法无需共享源数据即可增强情感感知语音系统，实现了现实场景下的自适应。",
     "subjects": [
-      "Sound (cs.SD)",
       "Computation and Language (cs.CL)",
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-09-26",
@@ -295,10 +294,10 @@
   },
   {
     "paper_title": "SingVERSE: A Diverse, Real-World Benchmark for Singing Voice Enhancement",
-    "paper_title_zh": "SingVERSE：一个多样化的真实世界歌声增强基准",
+    "paper_title_zh": "SingVERSE：一个多样化的真实世界歌唱声音增强基准",
     "paper_id": "2509.20969",
     "paper_abstract": "This paper presents a benchmark for singing voice enhancement. The development of singing voice enhancement is limited by the lack of realistic evaluation data. To address this gap, this paper introduces SingVERSE, the first real-world benchmark for singing voice enhancement, covering diverse acoustic scenarios and providing paired, studio-quality clean references. Leveraging SingVERSE, we conduct a comprehensive evaluation of state-of-the-art models and uncover a consistent trade-off between perceptual quality and intelligibility. Finally, we show that training on in-domain singing data substantially improves enhancement performance without degrading speech capabilities, establishing a simple yet effective path forward. This work offers the community a foundational benchmark together with critical insights to guide future advances in this underexplored domain. Demopage: this https URL",
-    "paper_abstract_zh": "本文提出了一个歌声增强的基准。歌声增强的发展因缺乏真实评估数据而受限。为填补这一空白，本文介绍了SingVERSE，这是首个真实世界的歌声增强基准，涵盖了多样化的声学场景，并提供了配对的、录音室品质的干净参考。利用SingVERSE，我们对最先进的模型进行了全面评估，并揭示了感知质量与清晰度之间一贯存在的权衡。最后，我们表明，在领域内的歌唱数据上进行训练可显著提升增强性能，且不会降低语音处理能力，从而确立了一条简单而有效的前进路径。这项工作为社区提供了一个基础基准以及关键见解，以指导这一未充分探索领域的未来进展。演示页面：此HTTPS URL",
+    "paper_abstract_zh": "本文提出了一个歌唱声音增强的基准。歌唱声音增强的发展因缺乏真实的评估数据而受到限制。为弥补这一空白，本文介绍了SingVERSE，这是首个真实世界的歌唱声音增强基准，涵盖了多样的声学场景，并提供了配对的、录音室品质的干净参考。利用SingVERSE，我们对最先进的模型进行了全面评估，并揭示了感知质量与清晰度之间始终存在的权衡。最后，我们表明，在领域内的歌唱数据上进行训练可以显著提高增强性能，而不会降低语音处理能力，从而确立了一条简单而有效的前进路径。这项工作为社区提供了一个基础基准以及关键见解，以指导这个未充分探索领域的未来进展。演示页面：此 https URL",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -315,10 +314,10 @@
   },
   {
     "paper_title": "QAMO: Quality-aware Multi-centroid One-class Learning For Speech Deepfake Detection",
-    "paper_title_zh": "QAMO：面向语音深度伪造检测的质量感知多质心单类学习",
+    "paper_title_zh": "QAMO：基于质量感知的多质心单类学习用于语音深度伪造检测",
     "paper_id": "2509.20679",
     "paper_abstract": "Recent work shows that one-class learning can detect unseen deepfake attacks by modeling a compact distribution of bona fide speech around a single centroid. However, the single-centroid assumption can oversimplify the bona fide speech representation and overlook useful cues, such as speech quality, which reflects the naturalness of the speech. Speech quality can be easily obtained using existing speech quality assessment models that estimate it through Mean Opinion Score. In this paper, we propose QAMO: Quality-Aware Multi-Centroid One-Class Learning for speech deepfake detection. QAMO extends conventional one-class learning by introducing multiple quality-aware centroids. In QAMO, each centroid is optimized to represent a distinct speech quality subspaces, enabling better modeling of intra-class variability in bona fide speech. In addition, QAMO supports a multi-centroid ensemble scoring strategy, which improves decision thresholding and reduces the need for quality labels during inference. With two centroids to represent high- and low-quality speech, our proposed QAMO achieves an equal error rate of 5.09% in In-the-Wild dataset, outperforming previous one-class and quality-aware systems.",
-    "paper_abstract_zh": "近期研究表明，单类学习可以通过在单一质心周围建模真实语音的紧凑分布来检测未知的深度伪造攻击。然而，单质心假设可能过度简化真实语音的表征，并忽略诸如语音质量等有用线索，这些线索反映了语音的自然度。使用现有的语音质量评估模型（通过平均意见得分进行估计）可以轻松获得语音质量。本文提出QAMO：面向语音深度伪造检测的质量感知多质心单类学习。QAMO通过引入多个质量感知质心扩展了传统的单类学习。在QAMO中，每个质心被优化以代表不同的语音质量子空间，从而更好地建模真实语音的类内变异性。此外，QAMO支持多质心集成评分策略，改进了决策阈值设置，并减少推理过程中对质量标签的需求。通过使用两个质心分别代表高质量和低质量语音，我们提出的QAMO在In-the-Wild数据集中实现了5.09%的等错误率，优于之前的单类和质量感知系统。",
+    "paper_abstract_zh": "近期研究表明，单类学习可以通过围绕单一质心对真实语音的紧凑分布进行建模，从而检测未知的深度伪造攻击。然而，单质心假设可能过度简化真实语音的表征，并忽略诸如反映语音自然度的语音质量等有用线索。利用现有的语音质量评估模型（通过平均意见得分进行估计），可以轻松获取语音质量。本文提出QAMO：一种用于语音深度伪造检测的质量感知多质心单类学习方法。QAMO通过引入多个质量感知质心扩展了传统单类学习。在QAMO中，每个质心被优化以代表不同的语音质量子空间，从而更好地建模真实语音的类内变异性。此外，QAMO支持多质心集成评分策略，该策略改进了决策阈值设定，并减少了推理过程中对质量标签的需求。通过使用两个质心分别代表高质量和低质量语音，我们提出的QAMO在In-the-Wild数据集中实现了5.09%的等错误率，性能优于先前的单类和质量感知系统。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -327,7 +326,7 @@
     "paper_authors": "Duc-Tuan Truong, Tianchi Liu, Ruijie Tao, Junjie Li, Kong Aik Lee, Eng Siong Chng",
     "topic": [
       "Audio Classification",
-      "Speech Enhancement"
+      "Audio Representation Learning"
     ],
     "category": [
       "Speech"
@@ -338,7 +337,7 @@
     "paper_title_zh": "解决语音深度伪造检测中数据增强训练的梯度不对齐问题",
     "paper_id": "2509.20682",
     "paper_abstract": "In speech deepfake detection (SDD), data augmentation (DA) is commonly used to improve model generalization across varied speech conditions and spoofing attacks. However, during training, the backpropagated gradients from original and augmented inputs may misalign, which can result in conflicting parameter updates. These conflicts could hinder convergence and push the model toward suboptimal solutions, thereby reducing the benefits of DA. To investigate and address this issue, we design a dual-path data-augmented (DPDA) training framework with gradient alignment for SDD. In our framework, each training utterance is processed through two input paths: one using the original speech and the other with its augmented version. This design allows us to compare and align their backpropagated gradient directions to reduce optimization conflicts. Our analysis shows that approximately 25% of training iterations exhibit gradient conflicts between the original inputs and their augmented counterparts when using RawBoost augmentation. By resolving these conflicts with gradient alignment, our method accelerates convergence by reducing the number of training epochs and achieves up to an 18.69% relative reduction in Equal Error Rate on the In-the-Wild dataset compared to the baseline.",
-    "paper_abstract_zh": "在语音深度伪造检测（SDD）中，数据增强（DA）通常被用于提升模型在不同语音条件和欺骗攻击下的泛化能力。然而，在训练过程中，原始输入和增强输入的反向传播梯度可能出现不对齐，这可能导致参数更新冲突。这些冲突可能阻碍收敛，并将模型推向次优解，从而降低数据增强的效益。为了研究和解决这一问题，我们设计了一个带有梯度对齐的双路径数据增强（DPDA）训练框架用于SDD。在我们的框架中，每个训练话语通过两个输入路径处理：一个使用原始语音，另一个使用其增强版本。这种设计使我们能够比较并对齐它们的反向传播梯度方向，以减少优化冲突。我们的分析表明，在使用RawBoost增强时，大约25%的训练迭代存在原始输入与其增强对应项之间的梯度冲突。通过梯度对齐解决这些冲突，我们的方法减少了训练周期数，加速了收敛，并在In-the-Wild数据集上实现了相比基线高达18.69%的相对等错误率降低。",
+    "paper_abstract_zh": "在语音深度伪造检测（SDD）中，数据增强（DA）通常被用于提升模型在不同语音条件和欺骗攻击下的泛化能力。然而，在训练过程中，原始输入和增强输入的反向传播梯度可能出现不对齐，这可能导致参数更新冲突。这些冲突可能阻碍收敛并将模型推向次优解，从而降低DA的效益。为研究和解决此问题，我们设计了一个带有梯度对齐的双路径数据增强（DPDA）训练框架用于SDD。在我们的框架中，每个训练语句通过两个输入路径处理：一个使用原始语音，另一个使用其增强版本。这种设计使我们能够比较并对齐它们的反向传播梯度方向以减少优化冲突。我们的分析表明，在使用RawBoost增强时，约25%的训练迭代存在原始输入与其增强对应项之间的梯度冲突。通过梯度对齐解决这些冲突，我们的方法减少了训练周期数从而加速收敛，并在In-the-Wild数据集上相比基线实现了高达18.69%的相对等错误率降低。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -346,7 +345,8 @@
     "update_time": "2025-09-26",
     "paper_authors": "Duc-Tuan Truong, Tianchi Liu, Junjie Li, Ruijie Tao, Kong Aik Lee, Eng Siong Chng",
     "topic": [
-      "Audio Classification"
+      "Audio Classification",
+      "Speech Enhancement"
     ],
     "category": [
       "Speech"
@@ -354,10 +354,10 @@
   },
   {
     "paper_title": "AIBA: Attention-based Instrument Band Alignment for Text-to-Audio Diffusion",
-    "paper_title_zh": "AIBA：基于注意力机制的乐器频带对齐用于文本到音频扩散模型",
+    "paper_title_zh": "AIBA：基于注意力的乐器频带对齐用于文本到音频扩散",
     "paper_id": "2509.20891",
     "paper_abstract": "We present AIBA (Attention-In-Band Alignment), a lightweight, training-free pipeline to quantify where text-to-audio diffusion models attend on the time-frequency (T-F) plane. AIBA (i) hooks cross-attention at inference to record attention probabilities without modifying weights; (ii) projects them to fixed-size mel grids that are directly comparable to audio energy; and (iii) scores agreement with instrument-band ground truth via interpretable metrics (T-F IoU/AP, frequency-profile correlation, and a pointing game). On Slakh2100 with an AudioLDM2 backbone, AIBA reveals consistent instrument-dependent trends (e.g., bass favoring low bands) and achieves high precision with moderate recall.",
-    "paper_abstract_zh": "我们提出了AIBA（注意力频带对齐），一种轻量级、无需训练的方法流程，用于量化文本到音频扩散模型在时频（T-F）平面上的注意力分布。AIBA（i）在推理过程中钩取交叉注意力机制，记录注意力概率而不修改权重；（ii）将其投影到固定大小的梅尔网格上，使其可直接与音频能量进行比较；（iii）通过可解释的指标（时频交并比/平均精度、频率轮廓相关性及指向游戏）评估其与乐器频带真实值的一致性。在基于AudioLDM2骨干网络的Slakh2100数据集上，AIBA揭示了与乐器相关的稳定趋势（例如低音乐器偏好低频带），并以中等召回率实现了高精度。",
+    "paper_abstract_zh": "我们提出了AIBA（注意力频带内对齐），一种轻量级、无需训练的流程，用于量化文本到音频扩散模型在时频（T-F）平面上的注意力分布。AIBA（i）在推理时钩取交叉注意力以记录注意力概率，无需修改权重；（ii）将其投影到固定大小的梅尔网格上，可直接与音频能量进行比较；（iii）通过可解释的指标（T-F IoU/AP、频率轮廓相关性及指向游戏）评分与乐器频带真实值的一致性。在基于AudioLDM2骨干网的Slakh2100数据集上，AIBA揭示了一致的乐器依赖性趋势（例如低音偏好低频带），并以中等召回率实现了高精度。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -373,10 +373,10 @@
   },
   {
     "paper_title": "i-LAVA: Insights on Low Latency Voice-2-Voice Architecture for Agents",
-    "paper_title_zh": "i-LAVA：面向智能体的低延迟语音到语音架构研究",
+    "paper_title_zh": "i-LAVA：关于面向智能体的低延迟语音到语音架构的见解",
     "paper_id": "2509.20971",
     "paper_abstract": "We experiment with a low-latency, end-to-end voice-to-voice communication model to optimize it for real-time conversational applications. By analyzing components essential to voice to voice (V-2-V) system viz. automatic speech recognition (ASR), text-to-speech (TTS), and dialog management, our work analyzes how to reduce processing time while maintaining high-quality interactions to identify the levers for optimizing V-2-V system. Our work identifies that TTS component which generates life-like voice, full of emotions including natural pauses and exclamations has highest impact on Real time factor (RTF). The experimented V-2-V architecture utilizes CSM1b has the capability to understand tone as well as context of conversation by ingesting both audio and text of prior exchanges to generate contextually accurate speech. We explored optimization of Residual Vector Quantization (RVQ) iterations by the TTS decoder which come at a cost of decrease in the quality of voice generated. Our experimental evaluations also demonstrate that for V-2-V implementations based on CSM most important optimizations can be brought by reducing the number of RVQ Iterations along with the codebooks used in Mimi.",
-    "paper_abstract_zh": "我们实验了一种低延迟、端到端的语音到语音通信模型，以优化其实时对话应用性能。通过分析语音到语音（V-2-V）系统的关键组件——自动语音识别（ASR）、文本到语音（TTS）和对话管理，本研究探讨如何在保持高质量交互的同时减少处理时间，并确定优化V-2-V系统的关键杠杆。研究发现，TTS组件对实时因子（RTF）影响最大，该组件需生成充满情感、包含自然停顿和感叹的逼真语音。实验采用的V-2-V架构利用CSM1b模型，能够通过分析先前交流的音频和文本来理解对话语气和上下文，从而生成符合语境的准确语音。我们探索了通过减少TTS解码器的残差向量量化（RVQ）迭代次数来优化系统，但这会牺牲生成语音的质量。实验评估还表明，对于基于CSM的V-2-V实现，最重要的优化手段是减少RVQ迭代次数以及Mimi中使用的码本数量。",
+    "paper_abstract_zh": "我们实验了一种低延迟、端到端的语音到语音通信模型，以优化其实时对话应用性能。通过分析语音到语音（V-2-V）系统的关键组件，即自动语音识别（ASR）、文本到语音（TTS）和对话管理，我们的工作研究了如何在保持高质量交互的同时减少处理时间，以确定优化V-2-V系统的关键杠杆。我们的研究发现，TTS组件对实时因子（RTF）影响最大，该组件生成充满情感（包括自然停顿和感叹）的逼真语音。实验的V-2-V架构利用CSM1b，能够通过摄入先前交换的音频和文本来理解对话的语气和上下文，从而生成上下文准确的语音。我们探索了通过TTS解码器优化残差向量量化（RVQ）迭代的方法，但这会以降低生成语音质量为代价。我们的实验评估还表明，对于基于CSM的V-2-V实现，最重要的优化可以通过减少RVQ迭代次数以及Mimi中使用的码本来实现。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -396,7 +396,7 @@
     "paper_title_zh": "SupCLAP：通过支持向量正则化控制音频-文本对比学习中的优化轨迹漂移",
     "paper_id": "2509.21033",
     "paper_abstract": "Contrastive language-audio pretraining, which aims to unify multimodal representations in a shared embedding space, serves as a cornerstone for building a wide range of applications, from cross-modal retrieval to cutting-edge multimodal large language models. However, we find that the perpendicular component of the pushing force from negative samples in contrastive learning is a double-edged sword: it contains rich supplementary information from negative samples, yet its unconstrained nature causes optimization trajectory drift and training instability. To address this, we propose Support Vector Regularization (SVR), a method that introduces an auxiliary support vector to control this perpendicular component, aiming to harness its rich information while mitigating the associated trajectory drift. The efficacy of SVR is critically governed by its semantic radius, for which we explore two unsupervised modeling strategies: direct parameterization and an adaptive radius predictor module enhanced with constraints to improve its predicting accuracy. Extensive experimental results demonstrate that our method surpasses widely used baselines like InfoNCE and SigLIP loss across classification, monolingual retrieval, and multilingual retrieval on standard audio-text datasets. Both the theoretical analysis and the experimental results on optimizing trajectory drift validate the correctness and effectiveness of our SVR method.",
-    "paper_abstract_zh": "对比语言-音频预训练旨在将多模态表示统一到共享嵌入空间中，是构建从跨模态检索到前沿多模态大语言模型等广泛应用的基础。然而，我们发现对比学习中负样本产生的推力的垂直分量是一把双刃剑：它包含来自负样本的丰富补充信息，但其无约束特性会导致优化轨迹漂移和训练不稳定性。为解决此问题，我们提出了支持向量正则化（SVR）方法，通过引入辅助支持向量来控制该垂直分量，旨在利用其丰富信息的同时减轻相关的轨迹漂移。SVR的有效性关键由其语义半径决定，为此我们探索了两种无监督建模策略：直接参数化以及通过约束增强的自适应半径预测器模块以提高预测准确性。大量实验结果表明，我们的方法在标准音频-文本数据集上的分类、单语检索和多语检索任务中均优于广泛使用的基线方法（如InfoNCE和SigLIP损失）。优化轨迹漂移的理论分析和实验结果均验证了我们SVR方法的正确性和有效性。",
+    "paper_abstract_zh": "对比语言-音频预训练旨在将多模态表示统一到共享嵌入空间中，是构建从跨模态检索到前沿多模态大语言模型等广泛应用的基础。然而，我们发现对比学习中负样本产生的推力的垂直分量是一把双刃剑：它包含负样本提供的丰富补充信息，但其无约束特性会导致优化轨迹漂移和训练不稳定。为解决此问题，我们提出了支持向量正则化（SVR）方法，通过引入辅助支持向量来控制该垂直分量，旨在利用其丰富信息的同时减轻相关的轨迹漂移。SVR的有效性关键受其语义半径调控，为此我们探索了两种无监督建模策略：直接参数化法，以及通过约束增强预测精度的自适应半径预测模块。大量实验结果表明，我们的方法在标准音频-文本数据集上的分类、单语检索和多语检索任务中，均优于广泛使用的InfoNCE和SigLIP损失等基线方法。对优化轨迹漂移的理论分析和实验结果共同验证了SVR方法的正确性与有效性。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -413,10 +413,10 @@
   },
   {
     "paper_title": "UniSS: Unified Expressive Speech-to-Speech Translation with Your Voice",
-    "paper_title_zh": "UniSS：基于您声音的统一表达性语音到语音翻译",
+    "paper_title_zh": "UniSS：基于您声音的统一化表达性语音到语音翻译",
     "paper_id": "2509.21144",
     "paper_abstract": "The ultimate goal of expressive speech-to-speech translation (S2ST) is to accurately translate spoken content while preserving the speaker identity and emotional style. However, progress in this field is largely hindered by three key challenges: the scarcity of paired speech data that retains expressive styles, the complexity of multi-stage processing pipelines, and the limited transfer of translation capabilities from large language models (LLMs). In this work, we address these challenges by introducing UniSS, a novel single-stage framework for expressive S2ST. Our approach features carefully designed speech semantic and style modeling, enabling seamless integration with existing text-based LLM frameworks to develop a unified text-speech language model. To transfer translation capabilities from text to speech, we propose a cross-modal chain-of-thought prompting process that progressively aligns audio semantics with text and ensures style preservation in the decoded results. Furthermore, we construct and release a large-scale, high-quality expressive S2ST dataset, UniST, comprising 44.8k hours of data. Experimental results show that UniSS significantly outperforms previous methods in translation fidelity and speech quality while preserving voice, emotion, and duration consistency. Our work establishes a simpler and more effective paradigm for building the next generation of expressive S2ST systems. Audio samples are available at this https URL.",
-    "paper_abstract_zh": "表达性语音到语音翻译（S2ST）的终极目标是准确翻译口语内容，同时保持说话人身份和情感风格。然而，该领域的进展主要受到三个关键挑战的阻碍：保留表达风格的配对语音数据稀缺、多阶段处理流程的复杂性，以及大型语言模型（LLM）翻译能力迁移的有限性。在本工作中，我们通过引入UniSS这一新颖的单阶段表达性S2ST框架来解决这些挑战。我们的方法采用精心设计的语音语义和风格建模，能够与现有基于文本的LLM框架无缝集成，从而开发出统一的文本-语音语言模型。为了将翻译能力从文本迁移到语音，我们提出了一种跨模态思维链提示过程，逐步将音频语义与文本对齐，并确保解码结果中的风格保留。此外，我们构建并发布了一个大规模高质量的表达式S2ST数据集UniST，包含44.8千小时的数据。实验结果表明，UniSS在翻译保真度和语音质量方面显著优于先前的方法，同时保持了声音、情感和时长的一致性。我们的工作为构建下一代表达性S2ST系统建立了一个更简单有效的范式。音频样本可在该https URL获取。",
+    "paper_abstract_zh": "表达性语音到语音翻译（S2ST）的终极目标是准确翻译口语内容，同时保持说话人身份和情感风格。然而，该领域的发展主要受到三个关键挑战的阻碍：保留表达风格的配对语音数据稀缺、多阶段处理流程的复杂性，以及大型语言模型（LLM）翻译能力有限的问题。在本研究中，我们通过引入UniSS这一新颖的单阶段表达性S2ST框架来解决这些挑战。我们的方法采用精心设计的语音语义和风格建模，能够与现有基于文本的LLM框架无缝集成，从而开发出统一的文本-语音语言模型。为了将翻译能力从文本迁移到语音，我们提出了一种跨模态思维链提示过程，逐步对齐音频语义与文本，并确保解码结果中的风格保持。此外，我们构建并发布了一个大规模高质量的表达式S2ST数据集UniST，包含44.8千小时的数据。实验结果表明，UniSS在翻译保真度和语音质量方面显著优于先前的方法，同时保持了声音、情感和时长的一致性。我们的工作为构建下一代表达性S2ST系统建立了一个更简单有效的范式。音频样本可在该https网址获取。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -433,10 +433,10 @@
   },
   {
     "paper_title": "Investigating Modality Contribution in Audio LLMs for Music",
-    "paper_title_zh": "探究音频大语言模型在音乐中的模态贡献",
+    "paper_title_zh": "探究音频大语言模型中多模态贡献对音乐的理解",
     "paper_id": "2509.20641",
     "paper_abstract": "Audio Large Language Models (Audio LLMs) enable human-like conversation about music, yet it is unclear if they are truly listening to the audio or just using textual reasoning, as recent benchmarks suggest. This paper investigates this issue by quantifying the contribution of each modality to a model's output. We adapt the MM-SHAP framework, a performance-agnostic score based on Shapley values that quantifies the relative contribution of each modality to a model's prediction. We evaluate two models on the MuChoMusic benchmark and find that the model with higher accuracy relies more on text to answer questions, but further inspection shows that even if the overall audio contribution is low, models can successfully localize key sound events, suggesting that audio is not entirely ignored. Our study is the first application of MM-SHAP to Audio LLMs and we hope it will serve as a foundational step for future research in explainable AI and audio.",
-    "paper_abstract_zh": "音频大语言模型（Audio LLMs）能够实现关于音乐的人类对话式交互，但近期基准测试表明，尚不清楚它们是否真正在聆听音频，还是仅仅依赖于文本推理。本文通过量化每种模态对模型输出的贡献来研究这一问题。我们采用了MM-SHAP框架，这是一种基于Shapley值的与性能无关的评分方法，用于量化每种模态对模型预测的相对贡献。我们在MuChoMusic基准上评估了两个模型，发现准确率较高的模型更依赖文本来回答问题，但进一步检查表明，即使整体音频贡献较低，模型仍能成功定位关键声音事件，这表明音频并未被完全忽略。我们的研究是MM-SHAP在音频大语言模型中的首次应用，希望它能作为未来可解释人工智能和音频研究的基础步骤。",
+    "paper_abstract_zh": "音频大语言模型（Audio LLMs）能够实现关于音乐的人类对话式交互，但近期基准测试表明，尚不清楚它们是否真正在聆听音频还是仅依赖文本推理。本文通过量化每种模态对模型输出的贡献来研究这一问题。我们采用了基于沙普利值的性能无关评分框架MM-SHAP，用于量化每种模态对模型预测的相对贡献。我们在MuChoMusic基准上评估了两个模型，发现准确率较高的模型更依赖文本来回答问题，但进一步检查表明，即使整体音频贡献较低，模型仍能成功定位关键声音事件，这表明音频并未被完全忽略。本研究是MM-SHAP在音频大语言模型中的首次应用，我们希望它能作为可解释人工智能和音频领域未来研究的基础步骤。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Sound (cs.SD)"
@@ -453,10 +453,10 @@
   },
   {
     "paper_title": "AuthGlass: Enhancing Voice Authentication on Smart Glasses via Air-Bone Acoustic Features",
-    "paper_title_zh": "AuthGlass：通过气导和骨导声学特征增强智能眼镜上的语音认证",
+    "paper_title_zh": "AuthGlass：通过空气-骨骼声学特征增强智能眼镜上的语音认证",
     "paper_id": "2509.20799",
     "paper_abstract": "With the rapid advancement of smart glasses, voice interaction has become widely deployed due to its naturalness and convenience. However, its practicality is often undermined by the vulnerability to spoofing attacks and interference from surrounding sounds, making seamless voice authentication crucial for smart glasses usage. To address this challenge, we propose AuthGlass, a voice authentication approach that leverages both air- and bone-conducted speech features to enhance accuracy and liveness detection. Aiming to gain comprehensive knowledge on speech-related acoustic and vibration features, we built a smart glasses prototype with redundant synchronized microphones: 14 air-conductive microphones and 2 bone-conductive units. In a study with 42 participants, we validated that combining sound-field and vibration features significantly improves authentication robustness and attack resistance. Furthermore, experiments demonstrated that AuthGlass maintains competitive accuracy even under various practical scenarios, highlighting its applicability and scalability for real-world deployment.",
-    "paper_abstract_zh": "随着智能眼镜的快速发展，语音交互因其自然性和便利性而得到广泛应用。然而，其实用性常因易受欺骗攻击和周围声音干扰而受到影响，这使得无缝语音认证对智能眼镜的使用至关重要。为应对这一挑战，我们提出了AuthGlass，一种利用气导和骨导语音特征来提高准确性和活体检测能力的语音认证方法。为了全面了解与语音相关的声学和振动特征，我们构建了一个具有冗余同步麦克风的智能眼镜原型：14个气导麦克风和2个骨导单元。在一项有42名参与者参与的研究中，我们验证了结合声场和振动特征能显著提升认证的鲁棒性和抗攻击能力。此外，实验表明，AuthGlass即使在各种实际场景下也能保持竞争力的准确性，突显了其在实际部署中的适用性和可扩展性。",
+    "paper_abstract_zh": "随着智能眼镜的快速发展，语音交互因其自然性和便利性而得到广泛应用。然而，其实用性常因易受欺骗攻击和周围声音干扰而受到影响，使得无缝语音认证对智能眼镜使用至关重要。为解决这一挑战，我们提出了AuthGlass，一种利用空气传导和骨骼传导语音特征来提高准确性和活体检测能力的语音认证方法。为全面了解与语音相关的声学和振动特征，我们构建了一个具有冗余同步麦克风的智能眼镜原型：14个空气传导麦克风和2个骨骼传导单元。在一项有42名参与者参与的研究中，我们验证了结合声场和振动特征能显著提升认证的鲁棒性和抗攻击能力。此外，实验表明AuthGlass在各种实际场景下仍保持竞争力的准确性，突出了其在实际部署中的适用性和可扩展性。",
     "subjects": [
       "Human-Computer Interaction (cs.HC)",
       "Sound (cs.SD)"
@@ -465,7 +465,7 @@
     "paper_authors": "Weiye Xu, Zhang Jiang, Siqi Zheng, Xiyuxing Zhang, Yankai Zhao, Changhao Zhang, Jian Liu, Weiqiang Wang, Yuntao Wang",
     "topic": [
       "Speech Recognition",
-      "Audio Classification"
+      "Speech Enhancement"
     ],
     "category": [
       "Speech"
