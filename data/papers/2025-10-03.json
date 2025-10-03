@@ -1,10 +1,10 @@
 [
   {
     "paper_title": "Joint Optimization of Speaker and Spoof Detectors for Spoofing-Robust Automatic Speaker Verification",
-    "paper_title_zh": "说话人和伪造检测器的联合优化用于抗伪造自动说话人验证",
+    "paper_title_zh": "面向抗欺骗自动说话人验证的说话人与欺骗检测器联合优化",
     "paper_id": "2510.01818",
     "paper_abstract": "Spoofing-robust speaker verification (SASV) combines the tasks of speaker and spoof detection to authenticate speakers under adversarial settings. Many SASV systems rely on fusion of speaker and spoof cues at embedding, score or decision levels, based on independently trained subsystems. In this study, we respect similar modularity of the two subsystems, by integrating their outputs using trainable back-end classifiers. In particular, we explore various approaches for directly optimizing the back-end for the recently-proposed SASV performance metric (a-DCF) as a training objective. Our experiments on the ASVspoof 5 dataset demonstrate two important findings: (i) nonlinear score fusion consistently improves a-DCF over linear fusion, and (ii) the combination of weighted cosine scoring for speaker detection with SSL-AASIST for spoof detection achieves state-of-the-art performance, reducing min a-DCF to 0.196 and SPF-EER to 7.6%. These contributions highlight the importance of modular design, calibrated integration, and task-aligned optimization for advancing robust and interpretable SASV systems.",
-    "paper_abstract_zh": "抗伪造说话人验证（SASV）结合了说话人检测和伪造检测的任务，旨在对抗性环境下验证说话人身份。许多SASV系统依赖于在嵌入层、分数层或决策层融合说话人和伪造线索，这些子系统通常是独立训练的。本研究通过使用可训练的后端分类器整合两个子系统的输出，保持了类似的模块化结构。特别地，我们探索了多种方法直接优化后端，以最近提出的SASV性能指标（a-DCF）作为训练目标。在ASVspoof 5数据集上的实验证明了两个重要发现：（i）非线性分数融合始终比线性融合在a-DCF上表现更好；（ii）结合加权余弦评分的说话人检测与SSL-AASIST的伪造检测实现了最先进的性能，将最小a-DCF降低至0.196，SPF-EER降低至7.6%。这些贡献凸显了模块化设计、校准集成和任务对齐优化对于推进鲁棒且可解释的SASV系统的重要性。",
+    "paper_abstract_zh": "抗欺骗说话人验证（SASV）结合了说话人检测与欺骗检测任务，旨在对抗性环境下实现说话人身份认证。许多SASV系统基于独立训练的子系统，在嵌入层、分数层或决策层融合说话人与欺骗线索。本研究保留两个子系统的模块化特性，通过可训练的后端分类器整合其输出。我们重点探索了直接优化后端分类器的方法，以最新提出的SASV性能指标（a-DCF）作为训练目标。在ASVspoof 5数据集上的实验表明：（i）非线性分数融合始终比线性融合更能改善a-DCF；（ii）采用加权余弦评分的说话人检测与SSL-AASIST欺骗检测组合实现了最先进性能，将最小a-DCF降至0.196，SPF-EER降至7.6%。这些成果凸显了模块化设计、校准集成和任务对齐优化对推进鲁棒可解释SASV系统的重要性。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -23,10 +23,10 @@
     "paper_title_zh": "SLAP：通过自然语言监督学习说话人和健康相关表征",
     "paper_id": "2510.01860",
     "paper_abstract": "Speech encodes paralinguistic information such as demographics, voice quality, and health. Yet no audio foundation model supports zero-shot or out-of-distribution (OOD) generalization to these tasks. We introduce SLAP (Speaker contrastive Language-Audio Pretraining), the first model aligning speech with natural language descriptions of speaker and health metadata through contrastive learning. SLAP combines a Vision Transformer audio encoder with text encoders, trained on more than 3400 hours across 9 datasets with diverse speaker annotations. We evaluated on 38 binary classification tasks spanning demographics, voice characteristics, and clinical assessments across 14 datasets in 7 languages. SLAP achieves 62.9% average F1 in zero-shot evaluation, a 48% relative improvement over CLAP (42.4%), while demonstrating strong OOD generalization to unseen languages and clinical populations. When fine-tuned with linear probing, SLAP reaches 69.3% F1 overall and achieves best-in-class performance on health tasks (57.9% F1), surpassing larger foundation models.",
-    "paper_abstract_zh": "语音编码了副语言信息，如人口统计特征、音质和健康状况。然而，目前尚无音频基础模型支持对这些任务的零样本或分布外（OOD）泛化。我们提出了SLAP（说话人对比语言-音频预训练），这是首个通过对比学习将语音与说话人及健康元数据的自然语言描述对齐的模型。SLAP结合了视觉Transformer音频编码器和文本编码器，在9个数据集超过3400小时的语音数据上进行训练，并包含多样化的说话人标注。我们在38个二分类任务上进行了评估，这些任务涵盖人口统计、声音特征和临床评估，涉及14个数据集和7种语言。SLAP在零样本评估中实现了62.9%的平均F1分数，相对于CLAP（42.4%）有48%的相对提升，同时在未见过的语言和临床人群上表现出强大的OOD泛化能力。通过线性探测微调后，SLAP整体达到69.3%的F1分数，并在健康相关任务上（57.9% F1）实现了同类最佳性能，超越了更大的基础模型。",
+    "paper_abstract_zh": "语音编码了副语言信息，如人口统计特征、音质和健康状况。然而，目前尚无音频基础模型支持对这些任务的零样本或分布外（OOD）泛化。我们提出了SLAP（说话人对比语言-音频预训练），首个通过对比学习将语音与说话人及健康元数据的自然语言描述对齐的模型。SLAP结合了视觉Transformer音频编码器和文本编码器，在9个数据集超过3400小时的语音数据上训练，涵盖多样化的说话人标注。我们在38个二分类任务上进行了评估，这些任务涉及14个数据集中的7种语言，涵盖人口统计、声音特征和临床评估。SLAP在零样本评估中实现了62.9%的平均F1分数，相比CLAP（42.4%）相对提升了48%，同时在未见过的语言和临床人群上展现出强大的OOD泛化能力。通过线性探测微调后，SLAP整体达到69.3%的F1分数，并在健康任务上（57.9% F1）实现了同类最佳性能，超越了更大的基础模型。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Angelika Ando, Auguste Crabeil, Adrien Lesage, Rachid Riad",
@@ -43,7 +43,7 @@
     "paper_title_zh": "基于变分自编码器的听力设备声学环境聚类方法",
     "paper_id": "2510.01940",
     "paper_abstract": "Particularly in hearing devices, the environmental context is taken into account for audio processing, often through classification. Traditional acoustic environment classification relies on classical algorithms, which are unable to extract meaningful representations of high-dimensionality data, or on supervised learning, being limited by the availability of labels. Knowing that human-imposed labels do not always reflect the true structure of acoustic scenes, we explore the (unsupervised) clustering of acoustic environments using variational autoencoders (VAEs), presenting a structured latent space suitable for the task. We propose a VAE model for categorical latent clustering employing a Gumbel-Softmax reparameterization with a time-context windowing scheme, tailored for real-world hearing device scenarios. Additionally, general adaptations on VAE architectures for audio clustering are also proposed. The approaches are validated through the clustering of spoken digits, a simpler task where labels are meaningful, and urban soundscapes, which recordings present strong overlap in time and frequency. While all variational methods succeeded when clustering spoken digits, only the proposed model achieved effective clustering performance on urban acoustic scenes, given its categorical nature.",
-    "paper_abstract_zh": "尤其在听力设备中，音频处理通常会通过分类来考虑环境上下文。传统的声学环境分类依赖于经典算法（无法提取高维数据的有意义表示）或监督学习（受限于标签可用性）。鉴于人为标注的标签并不总能反映声学场景的真实结构，我们探索使用变分自编码器（VAEs）进行（无监督的）声学环境聚类，并构建了适用于该任务的结构化潜在空间。我们提出了一种采用Gumbel-Softmax重参数化和时间上下文窗口方案的分类潜在聚类VAE模型，专为现实世界听力设备场景设计。此外，还提出了适用于音频聚类的VAE架构通用适配方案。这些方法通过口语数字聚类（标签具有明确意义的简单任务）和城市声景聚类（录音在时间和频率上存在高度重叠）进行了验证。虽然所有变分方法在口语数字聚类中均获成功，但只有所提出的模型凭借其分类特性，在城市声学场景聚类中实现了有效性能。",
+    "paper_abstract_zh": "特别是在听力设备中，音频处理通常会通过分类来考虑环境上下文。传统的声学环境分类依赖于经典算法（无法提取高维数据的有意义表示）或监督学习（受限于标签可用性）。由于人为设定的标签并不总能反映声学场景的真实结构，我们探索使用变分自编码器（VAEs）对声学环境进行（无监督）聚类，并构建了适合该任务的结构化潜在空间。我们提出了一种采用Gumbel-Softmax重参数化和时间上下文窗口方案的分类潜在聚类VAE模型，专为真实世界听力设备场景设计。此外，还提出了针对音频聚类的VAE架构通用改进方案。这些方法通过口语数字聚类（标签具有明确意义的简单任务）和城市声景聚类（录音在时间和频率上存在高度重叠）进行了验证。虽然所有变分方法在口语数字聚类中都取得成功，但只有提出的模型凭借其分类特性，在城市声学场景聚类中实现了有效性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -59,13 +59,13 @@
   },
   {
     "paper_title": "Do Bias Benchmarks Generalise? Evidence from Voice-based Evaluation of Gender Bias in SpeechLLMs",
-    "paper_title_zh": "偏见基准测试能否泛化？基于语音的语音大语言模型性别偏见评估证据",
+    "paper_title_zh": "偏见基准测试具有普适性吗？基于语音的SpeechLLMs性别偏见评估证据",
     "paper_id": "2510.01254",
     "paper_abstract": "Recent work in benchmarking bias and fairness in speech large language models (SpeechLLMs) has relied heavily on multiple-choice question answering (MCQA) formats. The model is tasked to choose between stereotypical, anti-stereotypical, or neutral/irrelevant answers given an input speech prompt and an optional text prompt. Such MCQA benchmarks implicitly assume that model performance is consistent across other MCQA tasks, voices, and other task formats such as more realistic, long-form evaluations. In this paper, we probe that assumption.\nWe fine-tune three SpeechLLMs using LoRA adapters to induce specific MCQA behaviours: preference for stereotypical, anti-stereotypical, or neutral/uncertain answers. We then evaluate whether these behaviours generalise to another, distinct MCQA benchmark, and more critically to long-form, creative generation tasks. Our results show that performance on MCQA bias benchmarks fails to reliably predict performances across other MCQA benchmarks, and more importantly across long-form tasks. We conclude that current MCQA bias benchmarks show limited evidence of cross-task generalisation in the speech domain, and also propose an evaluation suite for measuring behaviour transferability in future models and benchmarks.",
-    "paper_abstract_zh": "近期关于语音大语言模型（SpeechLLMs）偏见与公平性的基准测试研究主要依赖于多项选择题问答（MCQA）格式。该任务要求模型在给定输入语音提示和可选文本提示的情况下，在刻板印象、反刻板印象或中性/无关答案之间进行选择。此类MCQA基准测试隐含假设模型在其他MCQA任务、不同声音以及其他任务格式（如更现实的长文本评估）中表现一致。本文对此假设进行了验证。我们使用LoRA适配器对三种SpeechLLMs进行微调以诱导特定MCQA行为：偏好刻板印象、反刻板印象或中性/不确定答案。随后评估这些行为是否能够泛化至另一个独立的MCQA基准测试，并关键地评估其是否适用于长文本创造性生成任务。结果表明，MCQA偏见基准测试的表现无法可靠预测其他MCQA基准测试的表现，更重要的是无法预测长文本任务的表现。我们得出结论：当前MCQA偏见基准测试在语音领域显示出有限的跨任务泛化证据，同时提出了一个评估套件用于衡量未来模型和基准测试中的行为可转移性。",
+    "paper_abstract_zh": "近期关于语音大语言模型（SpeechLLMs）偏见与公平性的基准测试研究严重依赖多项选择题问答（MCQA）形式。该模型需要在给定语音提示和可选文本提示的情况下，在刻板印象、反刻板印象或中性/无关答案之间进行选择。此类MCQA基准测试隐含假设模型在其他MCQA任务、不同声音以及更现实的长篇评估等其他任务格式中表现一致。本文对此假设进行了探究。我们使用LoRA适配器对三种SpeechLLMs进行微调以诱导特定MCQA行为：偏好刻板印象、反刻板印象或中性/不确定答案。随后评估这些行为是否能够泛化至另一个不同的MCQA基准测试，并关键地评估其是否适用于长篇创意生成任务。结果表明，MCQA偏见基准测试的表现无法可靠预测其他MCQA基准测试的表现，更重要的是无法预测跨长篇任务的表现。我们得出结论：当前MCQA偏见基准测试在语音领域显示出的跨任务泛化证据有限，同时提出了一个评估套件用于衡量未来模型和基准测试中的行为可迁移性。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
       "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
       "Computation and Language (cs.CL)",
       "Sound (cs.SD)"
     ],
@@ -81,15 +81,15 @@
   },
   {
     "paper_title": "Ovi: Twin Backbone Cross-Modal Fusion for Audio-Video Generation",
-    "paper_title_zh": "Ovi：基于双主干跨模态融合的音频-视频生成方法",
+    "paper_title_zh": "Ovi：基于双主干跨模态融合的音视频生成方法",
     "paper_id": "2510.01284",
     "paper_abstract": "Audio-video generation has often relied on complex multi-stage architectures or sequential synthesis of sound and visuals. We introduce Ovi, a unified paradigm for audio-video generation that models the two modalities as a single generative process. By using blockwise cross-modal fusion of twin-DiT modules, Ovi achieves natural synchronization and removes the need for separate pipelines or post hoc alignment. To facilitate fine-grained multimodal fusion modeling, we initialize an audio tower with an architecture identical to that of a strong pretrained video model. Trained from scratch on hundreds of thousands of hours of raw audio, the audio tower learns to generate realistic sound effects, as well as speech that conveys rich speaker identity and emotion. Fusion is obtained by jointly training the identical video and audio towers via blockwise exchange of timing (via scaled-RoPE embeddings) and semantics (through bidirectional cross-attention) on a vast video corpus. Our model enables cinematic storytelling with natural speech and accurate, context-matched sound effects, producing movie-grade video clips. All the demos, code and model weights are published at this https URL",
-    "paper_abstract_zh": "音频-视频生成通常依赖于复杂的多阶段架构或声音与视觉的顺序合成。我们提出了Ovi，一种统一的音频-视频生成范式，将两种模态建模为单一生成过程。通过使用双DiT模块的块级跨模态融合，Ovi实现了自然同步，并消除了独立流程或事后对齐的需求。为促进细粒度多模态融合建模，我们采用与强大预训练视频模型相同架构初始化音频塔。通过在数十万小时原始音频上从头训练，音频塔学会生成逼真的音效以及传达丰富说话人身份和情感的语音。融合是通过在庞大视频语料库上联合训练相同的视频和音频塔实现的，通过块级交换时序信息（通过缩放RoPE嵌入）和语义信息（通过双向交叉注意力）来完成。我们的模型能够实现带有自然语音和准确、上下文匹配音效的电影级叙事，生成电影品质的视频片段。所有演示、代码和模型权重均已在此https网址发布。",
+    "paper_abstract_zh": "音视频生成通常依赖于复杂的多阶段架构或声音与视觉的顺序合成。我们提出了Ovi，一种统一的音视频生成范式，将两种模态建模为单一生成过程。通过使用双DiT模块的块级跨模态融合，Ovi实现了自然同步，并消除了独立流程或事后对齐的需求。为促进细粒度多模态融合建模，我们采用与强预训练视频模型相同架构初始化音频塔。通过在数十万小时原始音频上从头训练，音频塔学会了生成逼真的音效以及传达丰富说话人身份和情感的语音。融合是通过在庞大视频语料库上联合训练相同的视频和音频塔实现的，采用块级交换时序信息（通过缩放RoPE嵌入）和语义信息（通过双向交叉注意力）。我们的模型能够实现带有自然语音和准确、上下文匹配音效的电影级叙事，生成电影品质的视频片段。所有演示、代码和模型权重均已在此https URL发布。",
     "subjects": [
-      "Multimedia (cs.MM)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)",
-      "Computer Vision and Pattern Recognition (cs.CV)"
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Chetwin Low, Weimin Wang, Calder Katyal",
@@ -103,20 +103,20 @@
   },
   {
     "paper_title": "RealClass: A Framework for Classroom Speech Simulation with Public Datasets and Game Engines",
-    "paper_title_zh": "RealClass：基于公共数据集和游戏引擎的课堂语音模拟框架",
+    "paper_title_zh": "RealClass：基于公共数据集与游戏引擎的课堂语音模拟框架",
     "paper_id": "2510.01462",
     "paper_abstract": "The scarcity of large-scale classroom speech data has hindered the development of AI-driven speech models for education. Classroom datasets remain limited and not publicly available, and the absence of dedicated classroom noise or Room Impulse Response (RIR) corpora prevents the use of standard data augmentation techniques.\nIn this paper, we introduce a scalable methodology for synthesizing classroom noise and RIRs using game engines, a versatile framework that can extend to other domains beyond the classroom. Building on this methodology, we present RealClass, a dataset that combines a synthesized classroom noise corpus with a classroom speech dataset compiled from publicly available corpora. The speech data pairs a children's speech corpus with instructional speech extracted from YouTube videos to approximate real classroom interactions in clean conditions. Experiments on clean and noisy speech show that RealClass closely approximates real classroom speech, making it a valuable asset in the absence of abundant real classroom speech.",
-    "paper_abstract_zh": "大规模课堂语音数据的稀缺阻碍了教育领域人工智能语音模型的发展。课堂数据集仍然有限且未公开可用，缺乏专用的课堂噪声或房间脉冲响应（RIR）语料库也阻碍了标准数据增强技术的应用。本文提出了一种利用游戏引擎合成课堂噪声和RIR的可扩展方法，该多功能框架可扩展至课堂以外的其他领域。基于此方法，我们推出了RealClass数据集，该数据集结合了合成的课堂噪声语料库与从公开可用语料库汇编的课堂语音数据。语音数据将儿童语音语料库与从YouTube视频提取的教学语音配对，以在纯净条件下模拟真实课堂互动。在纯净和嘈杂语音上的实验表明，RealClass高度逼近真实课堂语音，使其在缺乏大量真实课堂语音的情况下成为宝贵资源。",
+    "paper_abstract_zh": "大规模课堂语音数据的稀缺性阻碍了教育领域人工智能语音模型的发展。现有课堂数据集规模有限且未公开，同时缺乏专用的课堂噪声或房间脉冲响应（RIR）语料库，导致无法使用标准数据增强技术。本文提出了一种利用游戏引擎合成课堂噪声和RIR的可扩展方法，该通用框架可扩展至课堂以外的其他领域。基于此方法，我们推出了RealClass数据集，该数据集结合了合成的课堂噪声语料库与从公开可用语料库汇编的课堂语音数据。语音数据将儿童语音语料库与从YouTube视频提取的教学语音配对，以模拟纯净环境下的真实课堂互动。在纯净和噪声语音上的实验表明，RealClass高度逼近真实课堂语音，在缺乏真实课堂语音数据的情况下具有重要价值。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
-      "Sound (cs.SD)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Ahmed Adel Attia, Jing Liu, Carol Espy Wilson",
     "topic": [
       "Speech Enhancement",
-      "Speech Recognition"
+      "Audio Classification"
     ],
     "category": [
       "Speech"
@@ -127,12 +127,12 @@
     "paper_title_zh": "TalkPlay-Tools：基于LLM工具调用的对话式音乐推荐系统",
     "paper_id": "2510.01698",
     "paper_abstract": "While the recent developments in large language models (LLMs) have successfully enabled generative recommenders with natural language interactions, their recommendation behavior is limited, leaving other simpler yet crucial components such as metadata or attribute filtering underutilized in the system. We propose an LLM-based music recommendation system with tool calling to serve as a unified retrieval-reranking pipeline. Our system positions an LLM as an end-to-end recommendation system that interprets user intent, plans tool invocations, and orchestrates specialized components: boolean filters (SQL), sparse retrieval (BM25), dense retrieval (embedding similarity), and generative retrieval (semantic IDs). Through tool planning, the system predicts which types of tools to use, their execution order, and the arguments needed to find music matching user preferences, supporting diverse modalities while seamlessly integrating multiple database filtering methods. We demonstrate that this unified tool-calling framework achieves competitive performance across diverse recommendation scenarios by selectively employing appropriate retrieval methods based on user queries, envisioning a new paradigm for conversational music recommendation systems.",
-    "paper_abstract_zh": "尽管大型语言模型（LLM）的最新发展已成功实现了支持自然语言交互的生成式推荐系统，但其推荐行为仍存在局限性，导致系统中其他更简单但关键的组件（如元数据或属性过滤）未能得到充分利用。我们提出了一种基于LLM的音乐推荐系统，通过工具调用构建统一的检索-重排序流程。该系统将LLM定位为端到端推荐系统，能够解析用户意图、规划工具调用并协调专用组件：布尔过滤器（SQL）、稀疏检索（BM25）、密集检索（嵌入相似性）和生成式检索（语义ID）。通过工具规划，系统预测应使用的工具类型、执行顺序以及匹配用户偏好音乐所需的参数，支持多样化模态的同时无缝集成多种数据库过滤方法。我们证明，这种统一的工具调用框架通过根据用户查询选择性采用适当的检索方法，在不同推荐场景中均实现了竞争优势，为对话式音乐推荐系统开创了新的范式。",
+    "paper_abstract_zh": "尽管大语言模型（LLMs）的最新发展已成功实现了支持自然语言交互的生成式推荐系统，但其推荐行为仍存在局限性，导致系统中其他更简单但关键的组件（如元数据或属性过滤）未能得到充分利用。我们提出了一种基于LLM的音乐推荐系统，通过工具调用构建统一的检索-重排序流程。该系统将LLM定位为端到端推荐系统，能够解析用户意图、规划工具调用流程并协调专用组件：布尔过滤器（SQL）、稀疏检索（BM25）、密集检索（嵌入相似度）和生成式检索（语义ID）。通过工具规划，系统预测应使用的工具类型、执行顺序及所需参数，以寻找符合用户偏好的音乐，支持多样化模态的同时无缝集成多种数据库过滤方法。我们证明，这种统一的工具调用框架通过根据用户查询选择性采用适当的检索方法，在不同推荐场景中均能实现竞争优势，为对话式音乐推荐系统开创了新的范式。",
     "subjects": [
-      "Multimedia (cs.MM)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)",
-      "Information Retrieval (cs.IR)"
+      "Multimedia (cs.MM)",
+      "Information Retrieval (cs.IR)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Seungheon Doh, Keunwoo Choi, Juhan Nam",
@@ -145,14 +145,14 @@
   },
   {
     "paper_title": "Emotional Text-To-Speech Based on Mutual-Information-Guided Emotion-Timbre Disentanglement",
-    "paper_title_zh": "基于互信息引导的情感-音色解耦的情感文本转语音",
+    "paper_title_zh": "基于互信息引导的情感与音色解耦的情感文本转语音",
     "paper_id": "2510.01722",
     "paper_abstract": "Current emotional Text-To-Speech (TTS) and style transfer methods rely on reference encoders to control global style or emotion vectors, but do not capture nuanced acoustic details of the reference speech. To this end, we propose a novel emotional TTS method that enables fine-grained phoneme-level emotion embedding prediction while disentangling intrinsic attributes of the reference speech. The proposed method employs a style disentanglement method to guide two feature extractors, reducing mutual information between timbre and emotion features, and effectively separating distinct style components from the reference speech. Experimental results demonstrate that our method outperforms baseline TTS systems in generating natural and emotionally rich speech. This work highlights the potential of disentangled and fine-grained representations in advancing the quality and flexibility of emotional TTS systems.",
-    "paper_abstract_zh": "当前的情感文本转语音（TTS）和风格迁移方法依赖于参考编码器来控制全局风格或情感向量，但未能捕捉参考语音的细微声学细节。为此，我们提出了一种新颖的情感TTS方法，能够在解耦参考语音内在属性的同时实现细粒度音素级情感嵌入预测。该方法采用风格解耦技术引导两个特征提取器，降低音色与情感特征之间的互信息，并有效分离参考语音中的不同风格成分。实验结果表明，我们的方法在生成自然且情感丰富的语音方面优于基线TTS系统。这项工作凸显了解耦和细粒度表征在提升情感TTS系统质量与灵活性方面的潜力。",
+    "paper_abstract_zh": "当前的情感文本转语音（TTS）和风格迁移方法依赖于参考编码器来控制全局风格或情感向量，但未能捕捉参考语音的细微声学细节。为此，我们提出了一种新颖的情感TTS方法，能够在解耦参考语音内在属性的同时实现细粒度音素级情感嵌入预测。该方法采用风格解耦技术引导两个特征提取器，降低音色与情感特征之间的互信息，并有效分离参考语音中的不同风格成分。实验结果表明，我们的方法在生成自然且情感丰富的语音方面优于基线TTS系统。这项工作突显了解耦和细粒度表征在提升情感TTS系统质量与灵活性方面的潜力。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
-      "Sound (cs.SD)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Jianing Yang, Sheng Li, Takahiro Shinozaki, Yuki Saito, Hiroshi Saruwatari",
@@ -166,20 +166,20 @@
   },
   {
     "paper_title": "SingMOS-Pro: An Comprehensive Benchmark for Singing Quality Assessment",
-    "paper_title_zh": "SingMOS-Pro：一个用于歌唱质量评估的综合性基准",
+    "paper_title_zh": "SingMOS-Pro：歌唱质量评估的综合基准",
     "paper_id": "2510.01812",
     "paper_abstract": "Singing voice generation progresses rapidly, yet evaluating singing quality remains a critical challenge. Human subjective assessment, typically in the form of listening tests, is costly and time consuming, while existing objective metrics capture only limited perceptual aspects. In this work, we introduce SingMOS-Pro, a dataset for automatic singing quality assessment. Building on our preview version SingMOS, which provides only overall ratings, SingMOS-Pro expands annotations of the additional part to include lyrics, melody, and overall quality, offering broader coverage and greater diversity. The dataset contains 7,981 singing clips generated by 41 models across 12 datasets, spanning from early systems to recent advances. Each clip receives at least five ratings from professional annotators, ensuring reliability and consistency. Furthermore, we explore how to effectively utilize MOS data annotated under different standards and benchmark several widely used evaluation methods from related tasks on SingMOS-Pro, establishing strong baselines and practical references for future research. The dataset can be accessed at this https URL.",
-    "paper_abstract_zh": "歌唱声音生成技术发展迅速，但评估歌唱质量仍是一个关键挑战。人类主观评估通常以听力测试的形式进行，成本高昂且耗时，而现有的客观指标仅能捕捉有限的感知方面。在这项工作中，我们引入了SingMOS-Pro，一个用于自动歌唱质量评估的数据集。在我们仅提供整体评分的预览版SingMOS基础上，SingMOS-Pro扩展了附加部分的标注，包括歌词、旋律和整体质量，提供了更广泛的覆盖范围和更大的多样性。该数据集包含来自12个数据集的41个模型生成的7,981个歌唱片段，涵盖了从早期系统到最新进展。每个片段至少获得专业标注员的五次评分，确保了可靠性和一致性。此外，我们探讨了如何有效利用在不同标准下标注的MOS数据，并在SingMOS-Pro上对几种广泛使用的评估方法进行了基准测试，为未来研究建立了强大的基线和实用参考。数据集可通过此https URL访问。",
+    "paper_abstract_zh": "歌唱声音生成技术进展迅速，但评估歌唱质量仍是一个关键挑战。人类主观评估通常以听力测试形式进行，成本高且耗时，而现有客观指标仅能捕捉有限的感知方面。在本工作中，我们引入了SingMOS-Pro，一个用于自动歌唱质量评估的数据集。基于我们仅提供整体评分的预览版SingMOS，SingMOS-Pro扩展了附加部分的标注，包括歌词、旋律和整体质量，提供了更广泛的覆盖和更大的多样性。该数据集包含来自12个数据集的41个模型生成的7,981个歌唱片段，涵盖从早期系统到最新进展。每个片段获得至少五位专业标注员的评分，确保可靠性和一致性。此外，我们探索了如何有效利用不同标准标注的MOS数据，并在SingMOS-Pro上对几种广泛使用的评估方法进行了基准测试，为未来研究建立了强大的基线和实用参考。数据集可通过此https URL访问。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
-      "Sound (cs.SD)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Yuxun Tang, Lan Liu, Wenhao Feng, Yiwen Zhao, Jionghao Han, Yifeng Yu, Jiatong Shi, Qin Jin",
     "topic": [
       "Music Information Retrieval",
-      "Audio Classification"
+      "Speech Synthesis"
     ],
     "category": [
       "Music"
@@ -187,14 +187,14 @@
   },
   {
     "paper_title": "HRTFformer: A Spatially-Aware Transformer for Personalized HRTF Upsampling in Immersive Audio Rendering",
-    "paper_title_zh": "HRTFformer：一种空间感知Transformer，用于沉浸式音频渲染中的个性化HRTF上采样",
+    "paper_title_zh": "HRTFformer：一种用于沉浸式音频渲染中个性化HRTF上采样的空间感知Transformer模型",
     "paper_id": "2510.01891",
     "paper_abstract": "Personalized Head-Related Transfer Functions (HRTFs) are starting to be introduced in many commercial immersive audio applications and are crucial for realistic spatial audio rendering. However, one of the main hesitations regarding their introduction is that creating personalized HRTFs is impractical at scale due to the complexities of the HRTF measurement process. To mitigate this drawback, HRTF spatial upsampling has been proposed with the aim of reducing measurements required. While prior work has seen success with different machine learning (ML) approaches, these models often struggle with long-range spatial consistency and generalization at high upsampling factors. In this paper, we propose a novel transformer-based architecture for HRTF upsampling, leveraging the attention mechanism to better capture spatial correlations across the HRTF sphere. Working in the spherical harmonic (SH) domain, our model learns to reconstruct high-resolution HRTFs from sparse input measurements with significantly improved accuracy. To enhance spatial coherence, we introduce a neighbor dissimilarity loss that promotes magnitude smoothness, yielding more realistic upsampling. We evaluate our method using both perceptual localization models and objective spectral distortion metrics. Experiments show that our model surpasses leading methods by a substantial margin in generating realistic, high-fidelity HRTFs.",
-    "paper_abstract_zh": "个性化头相关传递函数（HRTF）正开始被引入许多商业沉浸式音频应用中，并对实现逼真的空间音频渲染至关重要。然而，引入HRTF的主要顾虑之一在于，由于HRTF测量过程的复杂性，大规模创建个性化HRTF是不切实际的。为了缓解这一缺点，HRTF空间上采样被提出，旨在减少所需的测量次数。尽管先前的研究已通过不同的机器学习（ML）方法取得成功，但这些模型在高上采样因子下常常难以保持长距离空间一致性和泛化能力。本文提出了一种新颖的基于Transformer的HRTF上采样架构，利用注意力机制更好地捕捉HRTF球面上的空间相关性。在球谐（SH）域中工作，我们的模型学习从稀疏输入测量中重建高分辨率HRTF，并显著提高了准确性。为了增强空间一致性，我们引入了一种邻居差异损失，以促进幅度平滑性，从而产生更真实的上采样结果。我们使用感知定位模型和客观频谱失真指标评估了我们的方法。实验表明，我们的模型在生成逼真、高保真HRTF方面大幅超越了领先方法。",
+    "paper_abstract_zh": "个性化头相关传输函数（HRTF）正开始被引入许多商业沉浸式音频应用中，并对实现逼真的空间音频渲染至关重要。然而，推广该技术的主要顾虑之一在于，由于HRTF测量过程的复杂性，大规模创建个性化HRTF在实践中难以实现。为缓解这一缺点，HRTF空间上采样技术被提出，旨在减少所需测量次数。尽管先前研究已通过不同机器学习（ML）方法取得成功，但这些模型在高上采样因子下常面临长程空间一致性和泛化能力不足的问题。本文提出一种基于Transformer的新型架构用于HRTF上采样，利用注意力机制更好地捕捉HRTF球面上的空间相关性。在球谐（SH）域中工作，我们的模型学习从稀疏输入测量中重建高分辨率HRTF，并显著提高了精度。为增强空间一致性，我们引入了邻居差异损失函数以促进幅度平滑性，从而产生更真实的上采样结果。我们通过感知定位模型和客观频谱失真指标评估所提方法。实验表明，我们的模型在生成逼真高保真HRTF方面大幅领先现有主流方法。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
-      "Sound (cs.SD)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Xuyi Hu, Jian Li, Shaojie Zhang, Stefan Goetz, Lorenzo Picinali, Ozgur B. Akan, Aidan O. T. Hogg",
@@ -210,10 +210,10 @@
     "paper_title_zh": "MelCap：一种用于高保真音频压缩的统一单码本神经编解码器",
     "paper_id": "2510.01903",
     "paper_abstract": "Neural audio codecs have recently emerged as powerful tools for high-quality and low-bitrate audio compression, leveraging deep generative models to learn latent representations of audio signals. However, existing approaches either rely on a single quantizer that only processes speech domain, or on multiple quantizers that are not well suited for downstream tasks. To address this issue, we propose MelCap, a unified \"one-codebook-for-all\" neural codec that effectively handles speech, music, and general sound. By decomposing audio reconstruction into two stages, our method preserves more acoustic details than previous single-codebook approaches, while achieving performance comparable to mainstream multi-codebook methods. In the first stage, audio is transformed into mel-spectrograms, which are compressed and quantized into compact single tokens using a 2D tokenizer. A perceptual loss is further applied to mitigate the over-smoothing artifacts observed in spectrogram reconstruction. In the second stage, a Vocoder recovers waveforms from the mel discrete tokens in a single forward pass, enabling real-time decoding. Both objective and subjective evaluations demonstrate that MelCap achieves quality on comparable to state-of-the-art multi-codebook codecs, while retaining the computational simplicity of a single-codebook design, thereby providing an effective representation for downstream tasks.",
-    "paper_abstract_zh": "神经音频编解码器近年来已成为高质量和低比特率音频压缩的强大工具，它利用深度生成模型来学习音频信号的潜在表示。然而，现有方法要么依赖于仅处理语音领域的单一量化器，要么依赖于不太适合下游任务的多量化器。为了解决这个问题，我们提出了MelCap，一种统一的“一体适用”神经编解码器，能有效处理语音、音乐和一般声音。通过将音频重建分解为两个阶段，我们的方法比以前的单码本方法保留了更多的声学细节，同时实现了与主流多码本方法相当的性能。在第一阶段，音频被转换为梅尔频谱图，使用二维标记器将其压缩并量化为紧凑的单一标记。进一步应用感知损失来减轻频谱图重建中观察到的过度平滑伪影。在第二阶段，声码器通过单次前向传播从梅尔离散标记中恢复波形，实现实时解码。客观和主观评估均表明，MelCap实现了与最先进的多码本编解码器相当的质量，同时保留了单码本设计的计算简单性，从而为下游任务提供了有效的表示。",
+    "paper_abstract_zh": "神经音频编解码器近年来已成为高质量和低比特率音频压缩的强大工具，它利用深度生成模型来学习音频信号的潜在表示。然而，现有方法要么依赖于仅处理语音领域的单一量化器，要么依赖于不太适合下游任务的多量化器。为了解决这个问题，我们提出了MelCap，一种统一的“一码本通用”神经编解码器，能够有效处理语音、音乐和一般声音。通过将音频重建分解为两个阶段，我们的方法比以前的单码本方法保留了更多的声学细节，同时实现了与主流多码本方法相当的性能。在第一阶段，音频被转换为梅尔频谱图，并使用二维标记器将其压缩和量化为紧凑的单一标记。进一步应用感知损失来减轻频谱图重建中观察到的过度平滑伪影。在第二阶段，声码器通过单次前向传播从梅尔离散标记中恢复波形，从而实现实时解码。客观和主观评估均表明，MelCap在质量上可与最先进的多码本编解码器相媲美，同时保留了单码本设计的计算简单性，从而为下游任务提供了有效的表示。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Jingyi Li, Zhiyuan Zhao, Yunfei Liu, Lijian Lin, Ye Zhu, Jiahao Wu, Qiuqiang Kong, Yu Li",
@@ -230,11 +230,11 @@
     "paper_title_zh": "探索混合Mamba-U-Net中分辨率共享注意力机制以提升跨语料库语音增强性能",
     "paper_id": "2510.01958",
     "paper_abstract": "Recent advances in speech enhancement have shown that models combining Mamba and attention mechanisms yield superior cross-corpus generalization performance. At the same time, integrating Mamba in a U-Net structure has yielded state-of-the-art enhancement performance, while reducing both model size and computational complexity. Inspired by these insights, we propose RWSA-MambaUNet, a novel and efficient hybrid model combining Mamba and multi-head attention in a U-Net structure for improved cross-corpus performance. Resolution-wise shared attention (RWSA) refers to layerwise attention-sharing across corresponding time- and frequency resolutions. Our best-performing RWSA-MambaUNet model achieves state-of-the-art generalization performance on two out-of-domain test sets. Notably, our smallest model surpasses all baselines on the out-of-domain DNS 2020 test set in terms of PESQ, SSNR, and ESTOI, and on the out-of-domain EARS-WHAM_v2 test set in terms of SSNR, ESTOI, and SI-SDR, while using less than half the model parameters and a fraction of the FLOPs.",
-    "paper_abstract_zh": "语音增强领域的最新进展表明，结合Mamba与注意力机制的模型在跨语料库泛化性能方面表现优异。同时，将Mamba集成到U-Net结构中不仅实现了最先进的增强性能，还降低了模型规模和计算复杂度。受这些发现启发，我们提出RWSA-MambaUNet——一种在U-Net结构中融合Mamba与多头注意力的新型高效混合模型，旨在提升跨语料库性能。分辨率共享注意力（RWSA）指在对应时间和频率分辨率层之间共享注意力权重。我们性能最佳的RWSA-MambaUNet模型在两个域外测试集上实现了最先进的泛化性能。值得注意的是，我们最小的模型在域外DNS 2020测试集的PESQ、SSNR和ESTOI指标上，以及在域外EARS-WHAM_v2测试集的SSNR、ESTOI和SI-SDR指标上均超越所有基线模型，且使用的模型参数不足基线一半，计算量（FLOPs）仅为基数的零头。",
+    "paper_abstract_zh": "语音增强领域的最新进展表明，结合Mamba和注意力机制的模型在跨语料库泛化性能方面表现优异。同时，将Mamba集成到U-Net结构中不仅实现了最先进的增强性能，还减少了模型大小和计算复杂度。受这些见解启发，我们提出RWSA-MambaUNet——一种在U-Net结构中结合Mamba和多头注意力的新颖高效混合模型，旨在提升跨语料库性能。分辨率共享注意力（RWSA）指的是在对应时间和频率分辨率层之间共享注意力机制。我们性能最佳的RWSA-MambaUNet模型在两个域外测试集上实现了最先进的泛化性能。值得注意的是，我们最小的模型在域外DNS 2020测试集的PESQ、SSNR和ESTOI指标上，以及在域外EARS-WHAM_v2测试集的SSNR、ESTOI和SI-SDR指标上均超越了所有基线模型，同时使用的模型参数不足基线的一半，计算量（FLOPs）也大幅减少。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
-      "Sound (cs.SD)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Nikolai Lund Kühne, Jesper Jensen, Jan Østergaard, Zheng-Hua Tan",
@@ -247,14 +247,14 @@
   },
   {
     "paper_title": "Multi-bit Audio Watermarking",
-    "paper_title_zh": "多位音频水印技术",
+    "paper_title_zh": "多比特音频水印",
     "paper_id": "2510.01968",
     "paper_abstract": "We present Timbru, a post-hoc audio watermarking model that achieves state-of-the-art robustness and imperceptibility trade-offs without training an embedder-detector model. Given any 44.1 kHz stereo music snippet, our method performs per-audio gradient optimization to add imperceptible perturbations in the latent space of a pretrained audio VAE, guided by a combined message and perceptual loss. The watermark can then be extracted using a pretrained CLAP model. We evaluate 16-bit watermarking on MUSDB18-HQ against AudioSeal, WavMark, and SilentCipher across common filtering, noise, compression, resampling, cropping, and regeneration attacks. Our approach attains the best average bit error rates, while preserving perceptual quality, demonstrating an efficient, dataset-free path to imperceptible audio watermarking.",
-    "paper_abstract_zh": "我们提出了Timbru，一种后处理音频水印模型，无需训练嵌入-检测器模型即可实现最先进的鲁棒性与不可感知性平衡。针对任何44.1 kHz立体声音乐片段，我们的方法通过每段音频的梯度优化，在预训练音频变分自编码器的潜在空间中添加不可感知的扰动，并以组合消息与感知损失为指导。随后可使用预训练的CLAP模型提取水印。我们在MUSDB18-HQ数据集上对16位水印进行了评估，对比AudioSeal、WavMark和SilentCipher等方案，测试了常见的滤波、噪声、压缩、重采样、裁剪和再生攻击。我们的方法在保持感知质量的同时实现了最佳平均误码率，展示了一条高效、无需数据集的不可感知音频水印技术路径。",
+    "paper_abstract_zh": "我们提出了Timbru，一种后处理音频水印模型，无需训练嵌入-检测器模型即可实现最先进的鲁棒性与不可感知性权衡。给定任何44.1 kHz立体声音乐片段，我们的方法在预训练音频VAE的潜在空间中执行逐音频梯度优化，通过结合消息和感知损失的指导添加不可感知的扰动。随后可使用预训练的CLAP模型提取水印。我们在MUSDB18-HQ数据集上评估了16位水印性能，与AudioSeal、WavMark和SilentCipher进行了对比测试，涵盖常见的滤波、噪声、压缩、重采样、裁剪和再生攻击。我们的方法在保持感知质量的同时获得了最佳的平均误码率，展示了一条高效、无需数据集的不可感知音频水印实现路径。",
     "subjects": [
-      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Machine Learning (cs.LG)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Luca A. Lanzendörfer, Kyle Fearne, Florian Grötschla, Roger Wattenhofer",
@@ -271,11 +271,11 @@
     "paper_title_zh": "流式RAG：通过流式工具使用实现即时准确的语音对话系统",
     "paper_id": "2510.02044",
     "paper_abstract": "End-to-end speech-in speech-out dialogue systems are emerging as a powerful alternative to traditional ASR-LLM-TTS pipelines, generating more natural, expressive responses with significantly lower latency. However, these systems remain prone to hallucinations due to limited factual grounding. While text-based dialogue systems address this challenge by integrating tools such as web search and knowledge graph APIs, we introduce the first approach to extend tool use directly into speech-in speech-out systems. A key challenge is that tool integration substantially increases response latency, disrupting conversational flow. To mitigate this, we propose Streaming Retrieval-Augmented Generation (Streaming RAG), a novel framework that reduces user-perceived latency by predicting tool queries in parallel with user speech, even before the user finishes speaking. Specifically, we develop a post-training pipeline that teaches the model when to issue tool calls during ongoing speech and how to generate spoken summaries that fuse audio queries with retrieved text results, thereby improving both accuracy and responsiveness. To evaluate our approach, we construct AudioCRAG, a benchmark created by converting queries from the publicly available CRAG dataset into speech form. Experimental results demonstrate that our streaming RAG approach increases QA accuracy by up to 200% relative (from 11.1% to 34.2% absolute) and further enhances user experience by reducing tool use latency by 20%. Importantly, our streaming RAG approach is modality-agnostic and can be applied equally to typed input, paving the way for more agentic, real-time AI assistants.",
-    "paper_abstract_zh": "端到端语音输入输出对话系统正成为传统ASR-LLM-TTS流水线的强大替代方案，能够以显著更低的延迟生成更自然、更具表现力的响应。然而，由于事实基础有限，这些系统仍然容易出现幻觉问题。虽然基于文本的对话系统通过集成网络搜索和知识图谱API等工具来应对这一挑战，但我们首次提出了将工具使用直接扩展到语音输入输出系统中的方法。关键挑战在于工具集成会大幅增加响应延迟，破坏对话流畅性。为解决这个问题，我们提出了流式检索增强生成（Streaming RAG），这是一个新颖框架，通过在与用户语音并行的过程中预测工具查询（甚至在用户说完之前）来降低用户感知的延迟。具体而言，我们开发了一个后训练流程，教导模型在持续语音过程中何时调用工具，以及如何生成融合音频查询与检索文本结果的语音摘要，从而同时提高准确性和响应速度。为评估我们的方法，我们构建了AudioCRAG基准测试，通过将公开CRAG数据集中的查询转换为语音形式创建。实验结果表明，我们的流式RAG方法将问答准确率相对提高了高达200%（绝对从11.1%提升至34.2%），并通过降低20%的工具使用延迟进一步提升了用户体验。重要的是，我们的流式RAG方法与模态无关，可同等应用于键入输入，为更具自主性的实时AI助手铺平了道路。",
+    "paper_abstract_zh": "端到端的语音输入输出对话系统正在成为传统ASR-LLM-TTS流水线的强大替代方案，能够以显著更低的延迟生成更自然、更具表现力的响应。然而，由于事实基础有限，这些系统仍然容易产生幻觉。虽然基于文本的对话系统通过集成网络搜索和知识图谱API等工具来解决这一挑战，但我们首次提出了将工具使用直接扩展到语音输入输出系统中的方法。一个关键挑战是工具集成会大幅增加响应延迟，破坏对话流畅性。为了缓解这一问题，我们提出了流式检索增强生成（Streaming RAG），这是一个新颖的框架，通过在与用户语音并行的同时预测工具查询（甚至在用户说完之前）来减少用户感知的延迟。具体而言，我们开发了一个后训练流程，教导模型在持续语音过程中何时发出工具调用，以及如何生成融合音频查询与检索文本结果的语音摘要，从而提高准确性和响应性。为了评估我们的方法，我们构建了AudioCRAG基准测试，这是通过将公开可用的CRAG数据集中的查询转换为语音形式而创建的。实验结果表明，我们的流式RAG方法将问答准确率相对提高了高达200%（绝对从11.1%提高到34.2%），并通过减少20%的工具使用延迟进一步提升了用户体验。重要的是，我们的流式RAG方法是模态无关的，可以同样应用于键入输入，为更具代理性、实时的AI助手铺平了道路。",
     "subjects": [
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Computation and Language (cs.CL)",
-      "Sound (cs.SD)"
+      "Computation and Language (cs.CL)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Siddhant Arora, Haidar Khan, Kai Sun, Xin Luna Dong, Sajal Choudhary, Seungwhan Moon, Xinyuan Zhang, Adithya Sagar, Surya Teja Appini, Kaushik Patnaik, Sanat Sharma, Shinji Watanabe, Anuj Kumar, Ahmed Aly, Yue Liu, Florian Metze, Zhaojiang Lin",
@@ -292,11 +292,11 @@
     "paper_title_zh": "流式全双工端到端口语对话系统中的思维链推理",
     "paper_id": "2510.02066",
     "paper_abstract": "Most end-to-end (E2E) spoken dialogue systems (SDS) rely on voice activity detection (VAD) for turn-taking, but VAD fails to distinguish between pauses and turn completions. Duplex SDS models address this by predicting output continuously, including silence tokens, thus removing the need for explicit VAD. However, they often have complex dual-channel architecture and lag behind cascaded models in semantic reasoning. To overcome these challenges, we propose SCoT: a Streaming Chain-of-Thought (CoT) framework for Duplex SDS, alternating between processing fixed-duration user input and generating responses in a blockwise manner. Using frame-level alignments, we create intermediate targets-aligned user transcripts and system responses for each block. Experiments show that our approach produces more coherent and interpretable responses than existing duplex methods while supporting lower-latency and overlapping interactions compared to turn-by-turn systems.",
-    "paper_abstract_zh": "大多数端到端（E2E）口语对话系统（SDS）依赖语音活动检测（VAD）进行话轮转换，但VAD无法区分停顿和话轮完成。全双工SDS模型通过持续预测输出（包括静音标记）来解决这一问题，从而消除了对显式VAD的需求。然而，这些模型通常具有复杂的双通道架构，并且在语义推理方面落后于级联模型。为克服这些挑战，我们提出了SCoT：一种用于全双工SDS的流式思维链（CoT）框架，以分块方式交替处理固定时长的用户输入并生成响应。通过帧级对齐，我们为每个块创建中间目标——对齐的用户转录和系统响应。实验表明，与现有全双工方法相比，我们的方法能产生更连贯和可解释的响应，同时相比逐话轮系统支持更低延迟和重叠交互。",
+    "paper_abstract_zh": "大多数端到端（E2E）口语对话系统（SDS）依赖语音活动检测（VAD）进行话轮转换，但VAD无法区分停顿和话轮结束。全双工SDS模型通过持续预测输出（包括静音标记）来解决这一问题，从而消除了对显式VAD的需求。然而，这些模型通常具有复杂的双通道架构，并且在语义推理方面落后于级联模型。为了克服这些挑战，我们提出了SCoT：一种用于全双工SDS的流式思维链（CoT）框架，该框架交替处理固定时长的用户输入并以分块方式生成响应。通过使用帧级对齐，我们为每个块创建中间目标——对齐的用户转录文本和系统响应。实验表明，与现有全双工方法相比，我们的方法能产生更连贯和可解释的响应，同时相比逐话轮系统支持更低延迟和重叠交互。",
     "subjects": [
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Computation and Language (cs.CL)",
-      "Sound (cs.SD)"
+      "Computation and Language (cs.CL)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Siddhant Arora, Jinchuan Tian, Hayato Futami, Jiatong Shi, Yosuke Kashiwagi, Emiru Tsunoo, Shinji Watanabe",
@@ -309,14 +309,14 @@
   },
   {
     "paper_title": "SoundReactor: Frame-level Online Video-to-Audio Generation",
-    "paper_title_zh": "SoundReactor：帧级在线视频到音频生成模型",
+    "paper_title_zh": "SoundReactor：帧级在线视频到音频生成",
     "paper_id": "2510.02110",
     "paper_abstract": "Prevailing Video-to-Audio (V2A) generation models operate offline, assuming an entire video sequence or chunks of frames are available beforehand. This critically limits their use in interactive applications such as live content creation and emerging generative world models. To address this gap, we introduce the novel task of frame-level online V2A generation, where a model autoregressively generates audio from video without access to future video frames. Furthermore, we propose SoundReactor, which, to the best of our knowledge, is the first simple yet effective framework explicitly tailored for this task. Our design enforces end-to-end causality and targets low per-frame latency with audio-visual synchronization. Our model's backbone is a decoder-only causal transformer over continuous audio latents. For vision conditioning, it leverages grid (patch) features extracted from the smallest variant of the DINOv2 vision encoder, which are aggregated into a single token per frame to maintain end-to-end causality and efficiency. The model is trained through a diffusion pre-training followed by consistency fine-tuning to accelerate the diffusion head decoding. On a benchmark of diverse gameplay videos from AAA titles, our model successfully generates semantically and temporally aligned, high-quality full-band stereo audio, validated by both objective and human evaluations. Furthermore, our model achieves low per-frame waveform-level latency (26.3ms with the head NFE=1, 31.5ms with NFE=4) on 30FPS, 480p videos using a single H100. Demo samples are available at this https URL.",
-    "paper_abstract_zh": "主流的视频到音频（V2A）生成模型采用离线操作方式，假设整个视频序列或帧块事先全部可用。这严重限制了它们在交互式应用中的使用，例如实时内容创作和新兴的生成式世界模型。为弥补这一空白，我们引入了帧级在线V2A生成的新任务，其中模型以自回归方式从视频生成音频，而无需访问未来的视频帧。此外，我们提出了SoundReactor，据我们所知，这是首个简单而有效的、明确为此任务量身定制的框架。我们的设计强制执行端到端因果性，并以视听同步为目标实现低每帧延迟。我们模型的核心是一个基于连续音频潜在向量的仅解码器因果Transformer。对于视觉条件输入，它利用了从DINOv2视觉编码器最小变体中提取的网格（补丁）特征，这些特征被聚合为每帧单个令牌，以保持端到端因果性和效率。该模型通过扩散预训练和一致性微调进行训练，以加速扩散头解码。在基于AAA级游戏多样化视频的基准测试中，我们的模型成功生成了语义和时间对齐的高质量全频段立体声音频，并通过客观和人工评估得到了验证。此外，我们的模型在使用单个H100处理30FPS、480p视频时，实现了低每帧波形级延迟（NFE=1时为26.3毫秒，NFE=4时为31.5毫秒）。演示样本请访问此https URL。",
+    "paper_abstract_zh": "主流的视频到音频（V2A）生成模型采用离线方式运行，假设整个视频序列或帧块事先可用。这严重限制了它们在交互式应用中的使用，例如实时内容创作和新兴的生成世界模型。为弥补这一空白，我们引入了帧级在线V2A生成的新任务，其中模型自回归地从视频生成音频，而无需访问未来的视频帧。此外，我们提出了SoundReactor，据我们所知，这是首个专门为此任务设计的简单而有效的框架。我们的设计强制执行端到端因果性，并以视听同步为目标实现低每帧延迟。我们模型的主干是一个基于连续音频潜在表示的仅解码器因果变换器。对于视觉条件化，它利用了从DINOv2视觉编码器最小变体中提取的网格（补丁）特征，这些特征被聚合为每帧单个标记以保持端到端因果性和效率。该模型通过扩散预训练和一致性微调进行训练，以加速扩散头解码。在基于AAA级游戏多样化视频的基准测试中，我们的模型成功生成了语义和时间对齐的高质量全带宽立体声音频，并通过客观和人类评估验证。此外，我们的模型在使用单个H100处理30FPS、480p视频时实现了低每帧波形级延迟（NFE=1时为26.3毫秒，NFE=4时为31.5毫秒）。演示样本可在该https URL获取。",
     "subjects": [
-      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Machine Learning (cs.LG)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Koichi Saito, Julian Tanke, Christian Simon, Masato Ishii, Kazuki Shimada, Zachary Novack, Zhi Zhong, Akio Hayakawa, Takashi Shibuya, Yuki Mitsufuji",
@@ -330,14 +330,14 @@
   },
   {
     "paper_title": "Go witheFlow: Real-time Emotion Driven Audio Effects Modulation",
-    "paper_title_zh": "随感而流：基于实时情感驱动的音频效果调制系统",
+    "paper_title_zh": "随情而动：基于实时情感驱动的音频效果调制系统",
     "paper_id": "2510.02171",
     "paper_abstract": "Music performance is a distinctly human activity, intrinsically linked to the performer's ability to convey, evoke, or express emotion. Machines cannot perform music in the human sense; they can produce, reproduce, execute, or synthesize music, but they lack the capacity for affective or emotional experience. As such, music performance is an ideal candidate through which to explore aspects of collaboration between humans and machines. In this paper, we introduce the witheFlow system, designed to enhance real-time music performance by automatically modulating audio effects based on features extracted from both biosignals and the audio itself. The system, currently in a proof-of-concept phase, is designed to be lightweight, able to run locally on a laptop, and is open-source given the availability of a compatible Digital Audio Workstation and sensors.",
-    "paper_abstract_zh": "音乐表演是一项独特的人类活动，其本质与表演者传递、唤起或表达情感的能力密切相关。机器无法以人类的方式表演音乐；它们可以生成、复制、执行或合成音乐，但缺乏情感体验的能力。因此，音乐表演是探索人机协作层面的理想载体。本文介绍了witheFlow系统，该系统通过从生物信号和音频本身提取特征来自动调制音频效果，从而增强实时音乐表演。该系统目前处于概念验证阶段，设计轻量化，可在笔记本电脑上本地运行，并且在具备兼容数字音频工作站和传感器的条件下开源提供。",
+    "paper_abstract_zh": "音乐表演是一项独特的人类活动，其本质与表演者传达、唤起或表达情感的能力密切相关。机器无法以人类的方式表演音乐；它们可以生成、复制、执行或合成音乐，但缺乏情感体验的能力。因此，音乐表演是探索人机协作方面的理想载体。本文介绍了witheFlow系统，该系统通过基于从生物信号和音频本身提取的特征自动调制音频效果，旨在增强实时音乐表演。该系统目前处于概念验证阶段，设计为轻量级，能够在笔记本电脑上本地运行，并且在具备兼容的数字音频工作站和传感器的情况下是开源的。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
-      "Sound (cs.SD)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Edmund Dervakos, Spyridon Kantarelis, Vassilis Lyberatos, Jason Liartis, Giorgos Stamou",
@@ -354,12 +354,12 @@
     "paper_title_zh": "EvolveCaptions：通过实时协作字幕赋能听障用户",
     "paper_id": "2510.02181",
     "paper_abstract": "Automatic Speech Recognition (ASR) systems often fail to accurately transcribe speech from Deaf and Hard of Hearing (DHH) individuals, especially during real-time conversations. Existing personalization approaches typically require extensive pre-recorded data and place the burden of adaptation on the DHH speaker. We present EvolveCaptions, a real-time, collaborative ASR adaptation system that supports in-situ personalization with minimal effort. Hearing participants correct ASR errors during live conversations. Based on these corrections, the system generates short, phonetically targeted prompts for the DHH speaker to record, which are then used to fine-tune the ASR model. In a study with 12 DHH and six hearing participants, EvolveCaptions reduced Word Error Rate (WER) across all DHH users within one hour of use, using only five minutes of recording time on average. Participants described the system as intuitive, low-effort, and well-integrated into communication. These findings demonstrate the promise of collaborative, real-time ASR adaptation for more equitable communication.",
-    "paper_abstract_zh": "自动语音识别（ASR）系统通常难以准确转录聋哑及听障人士（DHH）的语音，尤其是在实时对话场景中。现有的个性化方法通常需要大量预录音数据，并将适应负担放在DHH说话者身上。我们提出了EvolveCaptions，一个实时协作的ASR自适应系统，以最小成本支持原位个性化。听力正常的参与者在实时对话过程中纠正ASR错误。基于这些纠正，系统生成简短、有针对性的语音提示供DHH说话者录制，随后用于微调ASR模型。在一项涉及12名DHH和6名听力正常参与者的研究中，EvolveCaptions在使用一小时内将所有DHH用户的词错误率（WER）降低，平均仅需五分钟录音时间。参与者评价该系统直观、低负担且能良好融入通信过程。这些发现证明了协作式实时ASR自适应在实现更公平通信方面的潜力。",
+    "paper_abstract_zh": "自动语音识别（ASR）系统往往难以准确转录聋哑及听障人士（DHH）的语音，尤其是在实时对话场景中。现有的个性化方法通常需要大量预录制数据，并将适应负担放在DHH说话者身上。我们提出了EvolveCaptions，一个实时协作的ASR自适应系统，以最小成本支持现场个性化。听力正常的参与者在实时对话中纠正ASR错误。基于这些纠正，系统生成简短、有针对性的语音提示供DHH说话者录制，随后用于微调ASR模型。在包含12名DHH和6名听力正常参与者的研究中，EvolveCaptions在一小时使用时间内平均仅需五分钟录音，就降低了所有DHH用户的词错误率（WER）。参与者评价该系统直观、低负担且能良好融入沟通场景。这些发现证明了协作式实时ASR自适应在促进更公平沟通方面的潜力。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
       "Artificial Intelligence (cs.AI)",
-      "Sound (cs.SD)",
-      "Human-Computer Interaction (cs.HC)"
+      "Audio and Speech Processing (eess.AS)",
+      "Human-Computer Interaction (cs.HC)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Liang-Yuan Wu, Dhruv Jain",
@@ -373,14 +373,14 @@
   },
   {
     "paper_title": "High-Fidelity Speech Enhancement via Discrete Audio Tokens",
-    "paper_title_zh": "基于离散音频标记的高保真语音增强",
+    "paper_title_zh": "基于离散音频标记的高保真语音增强方法",
     "paper_id": "2510.02187",
     "paper_abstract": "Recent autoregressive transformer-based speech enhancement (SE) methods have shown promising results by leveraging advanced semantic understanding and contextual modeling of speech. However, these approaches often rely on complex multi-stage pipelines and low sampling rate codecs, limiting them to narrow and task-specific speech enhancement. In this work, we introduce DAC-SE1, a simplified language model-based SE framework leveraging discrete high-resolution audio representations; DAC-SE1 preserves fine-grained acoustic details while maintaining semantic coherence. Our experiments show that DAC-SE1 surpasses state-of-the-art autoregressive SE methods on both objective perceptual metrics and in a MUSHRA human evaluation. We release our codebase and model checkpoints to support further research in scalable, unified, and high-quality speech enhancement.",
-    "paper_abstract_zh": "近年来，基于自回归变换器的语音增强方法通过利用先进的语义理解和上下文建模能力，已显示出有前景的结果。然而，这些方法通常依赖于复杂的多阶段处理流程和低采样率编解码器，使其局限于狭窄且任务特定的语音增强应用。在本研究中，我们提出了DAC-SE1，这是一个简化的基于语言模型的语音增强框架，它利用离散高分辨率音频表示；DAC-SE1在保持语义连贯性的同时，保留了细粒度的声学细节。实验结果表明，DAC-SE1在客观感知指标和MUSHRA人类评估中均优于当前最先进的自回归语音增强方法。我们公开了代码库和模型检查点，以支持可扩展、统一和高质量语音增强的进一步研究。",
+    "paper_abstract_zh": "近年来基于自回归变换器的语音增强方法通过利用先进的语义理解和语音上下文建模展现了有前景的结果。然而这些方法通常依赖于复杂的多阶段流程和低采样率编解码器使其局限于狭窄且任务特定的语音增强场景。本研究提出了DAC-SE1这是一个基于简化语言模型的语音增强框架利用离散高分辨率音频表示既保留了细粒度的声学细节又保持了语义连贯性。实验表明DAC-SE1在客观感知指标和MUSHRA人工评估中均超越了最先进的自回归语音增强方法。我们公开了代码库和模型检查点以支持可扩展统一和高质量语音增强的进一步研究。",
     "subjects": [
-      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Machine Learning (cs.LG)"
     ],
     "update_time": "2025-10-03",
     "paper_authors": "Luca A. Lanzendörfer, Frédéric Berdoz, Antonis Asonitis, Roger Wattenhofer",
@@ -397,7 +397,7 @@
     "paper_title_zh": "超越边界的偏见：AI生成音乐中的全球不平等",
     "paper_id": "2510.01963",
     "paper_abstract": "While recent years have seen remarkable progress in music generation models, research on their biases across countries, languages, cultures, and musical genres remains underexplored. This gap is compounded by the lack of datasets and benchmarks that capture the global diversity of music. To address these challenges, we introduce GlobalDISCO, a large-scale dataset consisting of 73k music tracks generated by state-of-the-art commercial generative music models, along with paired links to 93k reference tracks in LAION-DISCO-12M. The dataset spans 147 languages and includes musical style prompts extracted from MusicBrainz and Wikipedia. The dataset is globally balanced, representing musical styles from artists across 79 countries and five continents. Our evaluation reveals large disparities in music quality and alignment with reference music between high-resource and low-resource regions. Furthermore, we find marked differences in model performance between mainstream and geographically niche genres, including cases where models generate music for regional genres that more closely align with the distribution of mainstream styles.",
-    "paper_abstract_zh": "尽管近年来音乐生成模型取得了显著进展，但关于其在不同国家、语言、文化和音乐流派中的偏见研究仍然不足。这一空白由于缺乏捕捉全球音乐多样性的数据集和基准而进一步加剧。为应对这些挑战，我们引入了GlobalDISCO，这是一个大规模数据集，包含由最先进的商业生成音乐模型生成的73,000首音乐曲目，以及与LAION-DISCO-12M中93,000首参考曲目的配对链接。该数据集涵盖147种语言，并包含从MusicBrainz和Wikipedia提取的音乐风格提示。数据集在全球范围内平衡，代表了来自79个国家和五大洲艺术家的音乐风格。我们的评估揭示了高资源地区和低资源地区之间在音乐质量及与参考音乐对齐方面存在巨大差距。此外，我们发现模型在主流和地理利基流派之间的表现存在显著差异，包括模型为地区流派生成的音乐更接近主流风格分布的情况。",
+    "paper_abstract_zh": "尽管近年来音乐生成模型取得了显著进展，但关于它们在不同国家、语言、文化和音乐流派中的偏见研究仍然不足。这一空白因缺乏捕捉全球音乐多样性的数据集和基准而加剧。为应对这些挑战，我们引入了GlobalDISCO，这是一个大规模数据集，包含由最先进的商业生成音乐模型生成的73,000首音乐曲目，以及与LAION-DISCO-12M中93,000首参考曲目的配对链接。该数据集涵盖147种语言，并包含从MusicBrainz和Wikipedia提取的音乐风格提示。数据集在全球范围内平衡，代表了来自79个国家和五大洲艺术家的音乐风格。我们的评估揭示了高资源地区和低资源地区之间在音乐质量及与参考音乐对齐方面存在巨大差异。此外，我们发现模型在主流通俗流派和地理利基流派之间的表现存在显著差异，包括模型为地区流派生成的音乐更接近主流通俗风格分布的情况。",
     "subjects": [
       "Sound (cs.SD)",
       "Machine Learning (cs.LG)"
@@ -414,10 +414,10 @@
   },
   {
     "paper_title": "Mirage Fools the Ear, Mute Hides the Truth: Precise Targeted Adversarial Attacks on Polyphonic Sound Event Detection Systems",
-    "paper_title_zh": "幻听愚弄听觉，静默隐藏真相：针对复调声音事件检测系统的精确目标对抗攻击",
+    "paper_title_zh": "幻听愚耳，静默藏真：针对复调声音事件检测系统的精确目标对抗攻击",
     "paper_id": "2510.02158",
     "paper_abstract": "Sound Event Detection (SED) systems are increasingly deployed in safety-critical applications such as industrial monitoring and audio surveillance. However, their robustness against adversarial attacks has not been well explored. Existing audio adversarial attacks targeting SED systems, which incorporate both detection and localization capabilities, often lack effectiveness due to SED's strong contextual dependencies or lack precision by focusing solely on misclassifying the target region as the target event, inadvertently affecting non-target regions. To address these challenges, we propose the Mirage and Mute Attack (M2A) framework, which is designed for targeted adversarial attacks on polyphonic SED systems. In our optimization process, we impose specific constraints on the non-target output, which we refer to as preservation loss, ensuring that our attack does not alter the model outputs for non-target region, thus achieving precise attacks. Furthermore, we introduce a novel evaluation metric Editing Precison (EP) that balances effectiveness and precision, enabling our method to simultaneously enhance both. Comprehensive experiments show that M2A achieves 94.56% and 99.11% EP on two state-of-the-art SED models, demonstrating that the framework is sufficiently effective while significantly enhancing attack precision.",
-    "paper_abstract_zh": "声音事件检测（SED）系统日益部署于工业监控和音频监控等安全关键应用中。然而，其对抗攻击的鲁棒性尚未得到充分探索。现有针对SED系统（兼具检测与定位能力）的音频对抗攻击，由于SED强烈的上下文依赖性而缺乏有效性，或因仅关注将目标区域误分类为目标事件而缺乏精确性，无意中影响了非目标区域。为解决这些挑战，我们提出了幻听与静默攻击（M2A）框架，专为复调SED系统的目标对抗攻击设计。在优化过程中，我们对非目标输出施加特定约束（称为保留损失），确保攻击不改变非目标区域的模型输出，从而实现精确攻击。此外，我们引入了一种新颖的评估指标——编辑精确度（EP），平衡有效性与精确性，使我们的方法能同时提升两者。综合实验表明，M2A在两个最先进的SED模型上分别实现了94.56%和99.11%的EP值，证明该框架在显著提升攻击精确性的同时具有充分有效性。",
+    "paper_abstract_zh": "声音事件检测（SED）系统日益广泛应用于工业监控和音频监控等安全关键领域。然而，其对抗攻击的鲁棒性尚未得到充分研究。现有针对SED系统（兼具检测与定位能力）的音频对抗攻击方法，或因SED强上下文依赖性而效果不足，或因仅关注将目标区域误分类为目标事件而缺乏精确性，意外影响非目标区域。为解决这些挑战，我们提出了幻听与静默攻击（M2A）框架，专为复调SED系统的目标对抗攻击设计。在优化过程中，我们对非目标输出施加特定约束（称为保留损失），确保攻击不会改变模型对非目标区域的输出，从而实现精确攻击。此外，我们提出了新颖的评估指标——编辑精确度（EP），平衡有效性与精确性，使我们的方法能同时提升两者。综合实验表明，M2A在两个最先进SED模型上分别达到94.56%和99.11%的EP值，证明该框架在显著提升攻击精确性的同时具有充分有效性。",
     "subjects": [
       "Cryptography and Security (cs.CR)",
       "Sound (cs.SD)"
