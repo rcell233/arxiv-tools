@@ -1,0 +1,390 @@
+[
+  {
+    "paper_title": "WaveSP-Net: Learnable Wavelet-Domain Sparse Prompt Tuning for Speech Deepfake Detection",
+    "paper_title_zh": "",
+    "paper_id": "2510.05305",
+    "paper_abstract": "Modern front-end design for speech deepfake detection relies on full fine-tuning of large pre-trained models like XLSR. However, this approach is not parameter-efficient and may lead to suboptimal generalization to realistic, in-the-wild data types. To address these limitations, we introduce a new family of parameter-efficient front-ends that fuse prompt-tuning with classical signal processing transforms. These include FourierPT-XLSR, which uses the Fourier Transform, and two variants based on the Wavelet Transform: WSPT-XLSR and Partial-WSPT-XLSR. We further propose WaveSP-Net, a novel architecture combining a Partial-WSPT-XLSR front-end and a bidirectional Mamba-based back-end. This design injects multi-resolution features into the prompt embeddings, which enhances the localization of subtle synthetic artifacts without altering the frozen XLSR parameters. Experimental results demonstrate that WaveSP-Net outperforms several state-of-the-art models on two new and challenging benchmarks, Deepfake-Eval-2024 and SpoofCeleb, with low trainable parameters and notable performance gains. The code and models are available at this https URL.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Xi Xuan, Xuechen Liu, Wenxin Zhang, Yi-Cheng Lin, Xiaojian Lin, Tomi Kinnunen",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "AQA-TTRL: Self-Adaptation in Audio Question Answering with Test-Time Reinforcement Learning",
+    "paper_title_zh": "",
+    "paper_id": "2510.05478",
+    "paper_abstract": "Large Audio Language Models (LALMs) demonstrate impressive general audio understanding, but once deployed, they are static and fail to improve with new real-world audio data. As traditional supervised fine-tuning is costly, we introduce a novel framework for test-time audio understanding, AQA-TTRL, where an LALM evolves on-the-fly using only unlabeled test data. It first generates pseudo-labels from the prediction via majority voting, then optimizes the model via reinforcement learning. To handle the inherent noise in these self-generated labels, we introduce a confidence-based weighting method to adjust training signals. Furthermore, a multiple-attempt sampling operation mitigates advantage collapse and stabilizes training. On the MMAU (test-mini/test), MMAR, and MMSU benchmarks, AQA-TTRL achieves significant average improvements of 4.42% for the Qwen2.5-Omni 7B model and 11.04% for the 3B model. Notably, the adapted 3B model consistently outperforms the direct inference of the unadapted 7B model, highlighting the effectiveness of previously unexplored test-time adaptations in audio understanding.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Haoyu Zhang, Jiaxian Guo, Yusuke Iwasawa, Yutaka Matsuo",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Teaching Machines to Speak Using Articulatory Control",
+    "paper_title_zh": "",
+    "paper_id": "2510.05619",
+    "paper_abstract": "Current speech production systems predominantly rely on large transformer models that operate as black boxes, providing little interpretability or grounding in the physical mechanisms of human speech. We address this limitation by proposing a new framework: speech generation through explicit articulatory control. This reframes speech as a motor control task similar to robotic manipulation. Our approach uses reinforcement learning to train a policy that directly controls the movements of vocal tract articulators, such as the tongue, lips, and jaw, to produce syllable-level speech. Specifically, we employ the Proximal Policy Optimization algorithm to learn optimal articulatory movements based on acoustic feedback provided by our audio perceiver, Sylber. The resulting articulatory trajectories are decoded into audio using SPARC, a pre-trained articulatory-to-speech decoder. We train this framework on six target syllables, and it demonstrates successful convergence, with similarity scores between the policy-generated audio and the target syllables exceeding 0.85. Accurate human transcription of the audio for syllables such as \"please\", \"loot\", and \"cat\" demonstrates the intelligibility of this framework.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Akshay Anand, Chenxu Guo, Cheol Jun Cho, Jiachen Lian, Gopala Anumanchipalli",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Investigation of perception inconsistency in speaker embedding for asynchronous voice anonymization",
+    "paper_title_zh": "",
+    "paper_id": "2510.05718",
+    "paper_abstract": "Given the speech generation framework that represents the speaker attribute with an embedding vector, asynchronous voice anonymization can be achieved by modifying the speaker embedding derived from the original speech. However, the inconsistency between machine and human perceptions of the speaker attribute within the speaker embedding remains unexplored, limiting its performance in asynchronous voice anonymization. To this end, this study investigates this inconsistency via modifications to speaker embedding in the speech generation process. Experiments conducted on the FACodec and Diff-HierVC speech generation models discover a subspace whose removal alters machine perception while preserving its human perception of the speaker attribute in the generated speech. With these findings, an asynchronous voice anonymization is developed, achieving 100% human perception preservation rate while obscuring the machine perception. Audio samples can be found in this https URL.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Rui Wang, Liping Chen, Kong Aik Lee, Zhengpeng Zha, Zhenhua Ling",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Neural Forward Filtering for Speaker-Image Separation",
+    "paper_title_zh": "",
+    "paper_id": "2510.05757",
+    "paper_abstract": "We address monaural multi-speaker-image separation in reverberant conditions, aiming at separating mixed speakers but preserving the reverberation of each speaker. A straightforward approach for this task is to directly train end-to-end DNN systems to predict the reverberant speech of each speaker based on the input mixture. Although effective, this approach does not explicitly exploit the physical constraint that reverberant speech can be reproduced by convolving the direct-path signal with a linear filter. To address this, we propose CxNet, a two-DNN system with a neural forward filtering module in between. The first DNN is trained to jointly predict the direct-path signal and reverberant speech. Based on the direct-path estimate, the neural forward filtering module estimates the linear filter, and the estimated filter is then convolved with the direct-path estimate to obtain another estimate of reverberant speech, which is utilized as a discriminative feature to help the second DNN better estimate the reverberant speech. By explicitly modeling the linear filter, CxNet could leverage the physical constraint between the direct-path signal and reverberant speech to capture crucial information about reverberation tails. Evaluation results on the SMS-WSJ dataset show the effectiveness of the proposed algorithms.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Jingqi Sun, Shulin He, Ruizhe Pang, Zhong-Qiu Wang",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Revisiting MFCCs: Evidence for Spectral-Prosodic Coupling",
+    "paper_title_zh": "",
+    "paper_id": "2510.05922",
+    "paper_abstract": "Mel-frequency cepstral coefficients (MFCCs) are an important feature in speech processing. A deeper understanding of their properties can contribute to the work that is being done with both classical and deep learning models. This study challenges the long-held assumption that MFCCs lack relevant temporal information by investigating their relationship with speech prosody. Using a null hypothesis significance testing framework, a systematic assessment is made about the statistical independence between MFCCs and the three prosodic features: energy, fundamental frequency (F0), and voicing. The results demonstrate that it is statistically implausible that the MFCCs are independent of any of these three prosodic features. This finding suggests that MFCCs inherently carry valuable prosodic information, which can inform the design of future models in speech analysis and recognition.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Vitor Magno de O. S. Bezerra, Gabriel F. A. Bastos, Jugurta Montalvão",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Revisiting Modeling and Evaluation Approaches in Speech Emotion Recognition: Considering Subjectivity of Annotators and Ambiguity of Emotions",
+    "paper_title_zh": "",
+    "paper_id": "2510.05934",
+    "paper_abstract": "Over the past two decades, speech emotion recognition (SER) has received growing attention. To train SER systems, researchers collect emotional speech databases annotated by crowdsourced or in-house raters who select emotions from predefined categories. However, disagreements among raters are common. Conventional methods treat these disagreements as noise, aggregating labels into a single consensus target. While this simplifies SER as a single-label task, it ignores the inherent subjectivity of human emotion perception. This dissertation challenges such assumptions and asks: (1) Should minority emotional ratings be discarded? (2) Should SER systems learn from only a few individuals' perceptions? (3) Should SER systems predict only one emotion per sample?\nPsychological studies show that emotion perception is subjective and ambiguous, with overlapping emotional boundaries. We propose new modeling and evaluation perspectives: (1) Retain all emotional ratings and represent them with soft-label distributions. Models trained on individual annotator ratings and jointly optimized with standard SER systems improve performance on consensus-labeled tests. (2) Redefine SER evaluation by including all emotional data and allowing co-occurring emotions (e.g., sad and angry). We propose an ``all-inclusive rule'' that aggregates all ratings to maximize diversity in label representation. Experiments on four English emotion databases show superior performance over majority and plurality labeling. (3) Construct a penalization matrix to discourage unlikely emotion combinations during training. Integrating it into loss functions further improves performance. Overall, embracing minority ratings, multiple annotators, and multi-emotion predictions yields more robust and human-aligned SER systems.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Huang-Cheng Chou, Chi-Chun Lee",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "TokenChain: A Discrete Speech Chain via Semantic Token Modeling",
+    "paper_title_zh": "",
+    "paper_id": "2510.06201",
+    "paper_abstract": "Machine Speech Chain, simulating the human perception-production loop, proves effective in jointly improving ASR and TTS. We propose TokenChain, a fully discrete speech chain coupling semantic-token ASR with a two-stage TTS: an autoregressive text-to-semantic model co-trained with ASR and a masked-generative semantic-to-acoustic model for synthesis only. End-to-end feedback across the text interface is enabled with straight-through argmax/Gumbel-Softmax and balanced with supervised ASR via dynamic weight averaging. Ablations examine optimal temperature schedules for in- and cross-domain transfer. Evaluation reveals TokenChain surpasses baseline accuracy 2-6 epochs earlier and yields 5-13% lower equal-epoch error with stable T2S on LibriSpeech, and reduces relative ASR WER by 56% and T2S WER by 31% on TED-LIUM with minimal forgetting, showing that chain learning remains effective with token interfaces and models.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Mingxuan Wang, Satoshi Nakamura",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Advancing Automated Spatio-Semantic Analysis in Picture Description Using Language Models",
+    "paper_title_zh": "",
+    "paper_id": "2510.05128",
+    "paper_abstract": "Current methods for automated assessment of cognitive-linguistic impairment via picture description often neglect the visual narrative path - the sequence and locations of elements a speaker described in the picture. Analyses of spatio-semantic features capture this path using content information units (CIUs), but manual tagging or dictionary-based mapping is labor-intensive. This study proposes a BERT-based pipeline, fine tuned with binary cross-entropy and pairwise ranking loss, for automated CIU extraction and ordering from the Cookie Theft picture description. Evaluated by 5-fold cross-validation, it achieves 93% median precision, 96% median recall in CIU detection, and 24% sequence error rates. The proposed method extracts features that exhibit strong Pearson correlations with ground truth, surpassing the dictionary-based baseline in external validation. These features also perform comparably to those derived from manual annotations in evaluating group differences via ANCOVA. The pipeline is shown to effectively characterize visual narrative paths for cognitive impairment assessment, with the implementation and models open-sourced to public.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Si-Ioi Ng, Pranav S. Ambadi, Kimberly D. Mueller, Julie Liss, Visar Berisha",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Sci-Phi: A Large Language Model Spatial Audio Descriptor",
+    "paper_title_zh": "",
+    "paper_id": "2510.05542",
+    "paper_abstract": "Acoustic scene perception involves describing the type of sounds, their timing, their direction and distance, as well as their loudness and reverberation. While audio language models excel in sound recognition, single-channel input fundamentally limits spatial understanding. This work presents Sci-Phi, a spatial audio large language model with dual spatial and spectral encoders that estimates a complete parameter set for all sound sources and the surrounding environment. Learning from over 4,000 hours of synthetic first-order Ambisonics recordings including metadata, Sci-Phi enumerates and describes up to four directional sound sources in one pass, alongside non-directional background sounds and room characteristics. We evaluate the model with a permutation-invariant protocol and 15 metrics covering content, location, timing, loudness, and reverberation, and analyze its robustness across source counts, signal-to-noise ratios, reverberation levels, and challenging mixtures of acoustically, spatially, or temporally similar sources. Notably, Sci-Phi generalizes to real room impulse responses with only minor performance degradation. Overall, this work establishes the first audio LLM capable of full spatial-scene description, with strong potential for real-world deployment. Demo: this https URL",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Xilin Jiang, Hannes Gamper, Sebastian Braun",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Transcribing Rhythmic Patterns of the Guitar Track in Polyphonic Music",
+    "paper_title_zh": "",
+    "paper_id": "2510.05756",
+    "paper_abstract": "Whereas chord transcription has received considerable attention during the past couple of decades, far less work has been devoted to transcribing and encoding the rhythmic patterns that occur in a song. The topic is especially relevant for instruments such as the rhythm guitar, which is typically played by strumming rhythmic patterns that repeat and vary over time. However, in many cases one cannot objectively define a single \"right\" rhythmic pattern for a given song section. To create a dataset with well-defined ground-truth labels, we asked expert musicians to transcribe the rhythmic patterns in 410 popular songs and record cover versions where the guitar tracks followed those transcriptions. To transcribe the strums and their corresponding rhythmic patterns, we propose a three-step framework. Firstly, we perform approximate stem separation to extract the guitar part from the polyphonic mixture. Secondly, we detect individual strums within the separated guitar audio, using a pre-trained foundation model (MERT) as a backbone. Finally, we carry out a pattern-decoding process in which the transcribed sequence of guitar strums is represented by patterns drawn from an expert-curated vocabulary. We show that it is possible to transcribe the rhythmic patterns of the guitar track in polyphonic music with quite high accuracy, producing a representation that is human-readable and includes automatically detected bar lines and time signature markers. We perform ablation studies and error analysis and propose a set of evaluation metrics to assess the accuracy and readability of the predicted rhythmic pattern sequence.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Aleksandr Lukoianov, Anssi Klapuri",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "StereoSync: Spatially-Aware Stereo Audio Generation from Video",
+    "paper_title_zh": "",
+    "paper_id": "2510.05828",
+    "paper_abstract": "Although audio generation has been widely studied over recent years, video-aligned audio generation still remains a relatively unexplored frontier. To address this gap, we introduce StereoSync, a novel and efficient model designed to generate audio that is both temporally synchronized with a reference video and spatially aligned with its visual context. Moreover, StereoSync also achieves efficiency by leveraging pretrained foundation models, reducing the need for extensive training while maintaining high-quality synthesis. Unlike existing methods that primarily focus on temporal synchronization, StereoSync introduces a significant advancement by incorporating spatial awareness into video-aligned audio generation. Indeed, given an input video, our approach extracts spatial cues from depth maps and bounding boxes, using them as cross-attention conditioning in a diffusion-based audio generation model. Such an approach allows StereoSync to go beyond simple synchronization, producing stereo audio that dynamically adapts to the spatial structure and movement of a video scene. We evaluate StereoSync on Walking The Maps, a curated dataset comprising videos from video games that feature animated characters walking through diverse environments. Experimental results demonstrate the ability of StereoSync to achieve both temporal and spatial alignment, advancing the state of the art in video-to-audio generation and resulting in a significantly more immersive and realistic audio experience.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Multimedia (cs.MM)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Christian Marinoni, Riccardo Fosco Gramaccioni, Kazuki Shimada, Takashi Shibuya, Yuki Mitsufuji, Danilo Comminiello",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "FoleyGRAM: Video-to-Audio Generation with GRAM-Aligned Multimodal Encoders",
+    "paper_title_zh": "",
+    "paper_id": "2510.05829",
+    "paper_abstract": "In this work, we present FoleyGRAM, a novel approach to video-to-audio generation that emphasizes semantic conditioning through the use of aligned multimodal encoders. Building on prior advancements in video-to-audio generation, FoleyGRAM leverages the Gramian Representation Alignment Measure (GRAM) to align embeddings across video, text, and audio modalities, enabling precise semantic control over the audio generation process. The core of FoleyGRAM is a diffusion-based audio synthesis model conditioned on GRAM-aligned embeddings and waveform envelopes, ensuring both semantic richness and temporal alignment with the corresponding input video. We evaluate FoleyGRAM on the Greatest Hits dataset, a standard benchmark for video-to-audio models. Our experiments demonstrate that aligning multimodal encoders using GRAM enhances the system's ability to semantically align generated audio with video content, advancing the state of the art in video-to-audio synthesis.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Multimedia (cs.MM)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Riccardo Fosco Gramaccioni, Christian Marinoni, Eleonora Grassucci, Giordano Cicchetti, Aurelio Uncini, Danilo Comminiello",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Segment-Factorized Full-Song Generation on Symbolic Piano Music",
+    "paper_title_zh": "",
+    "paper_id": "2510.05881",
+    "paper_abstract": "We propose the Segmented Full-Song Model (SFS) for symbolic full-song generation. The model accepts a user-provided song structure and an optional short seed segment that anchors the main idea around which the song is developed. By factorizing a song into segments and generating each one through selective attention to related segments, the model achieves higher quality and efficiency compared to prior work. To demonstrate its suitability for human-AI interaction, we further wrap SFS into a web application that enables users to iteratively co-create music on a piano roll with customizable structures and flexible ordering.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)",
+      "Multimedia (cs.MM)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Ping-Yi Chen, Chih-Pin Tan, Yi-Hsuan Yang",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "ECTSpeech: Enhancing Efficient Speech Synthesis via Easy Consistency Tuning",
+    "paper_title_zh": "",
+    "paper_id": "2510.05984",
+    "paper_abstract": "Diffusion models have demonstrated remarkable performance in speech synthesis, but typically require multi-step sampling, resulting in low inference efficiency. Recent studies address this issue by distilling diffusion models into consistency models, enabling efficient one-step generation. However, these approaches introduce additional training costs and rely heavily on the performance of pre-trained teacher models. In this paper, we propose ECTSpeech, a simple and effective one-step speech synthesis framework that, for the first time, incorporates the Easy Consistency Tuning (ECT) strategy into speech synthesis. By progressively tightening consistency constraints on a pre-trained diffusion model, ECTSpeech achieves high-quality one-step generation while significantly reducing training complexity. In addition, we design a multi-scale gate module (MSGate) to enhance the denoiser's ability to fuse features at different scales. Experimental results on the LJSpeech dataset demonstrate that ECTSpeech achieves audio quality comparable to state-of-the-art methods under single-step sampling, while substantially reducing the model's training cost and complexity.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Tao Zhu, Yinfeng Yu, Liejun Wang, Fuchun Sun, Wendong Zheng",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Latent Speech-Text Transformer",
+    "paper_title_zh": "",
+    "paper_id": "2510.06195",
+    "paper_abstract": "Auto-regressive speech-text models are typically pre-trained on a large number of interleaved sequences of text tokens and raw speech encoded as speech tokens using vector quantization. These models have demonstrated state-of-the-art performance in speech-to-speech understanding and generation benchmarks, together with promising scaling laws, primarily enabled by the representational alignment between text and speech. Nevertheless, they suffer from shortcomings, partly owing to the disproportionately longer sequences of speech tokens in contrast to textual tokens. This results in a large compute imbalance between modalities during pre-training as well as during inference, and a potential hindrance to effectively aligning speech and text, ultimately translating to several orders of magnitude slower scaling laws. We introduce the Latent Speech-Text Transformer (LST), which makes pre-training speech-text models more data-efficient by dynamically and inexpensively aggregating speech tokens into latent speech patches. These patches serve as higher-level units that can either align with corresponding textual units to aid capability transfer or even encapsulate common speech sequences like silences to be more compute-efficient. We show that LST outperforms vanilla approaches on speech-to-speech as well as text-to-text benchmarks in both data- and compute-controlled settings, the former indicating more effective representational alignment and the latter indicating steeper scaling laws for speech-text models. On HellaSwag story completion, LST achieves 6.5% absolute gain in speech accuracy under compute-controlled training and 5.3% under data-controlled training, while also improving text performance. We will release our models, code, and the evaluation data to facilitate further research.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Yen-Ju Lu, Yashesh Gaur, Wei Zhou, Benjamin Muller, Jesus Villalba, Najim Dehak, Luke Zettlemoyer, Gargi Ghosh, Mike Lewis, Srinivasan Iyer, Duc Le",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Modulation Discovery with Differentiable Digital Signal Processing",
+    "paper_title_zh": "",
+    "paper_id": "2510.06204",
+    "paper_abstract": "Modulations are a critical part of sound design and music production, enabling the creation of complex and evolving audio. Modern synthesizers provide envelopes, low frequency oscillators (LFOs), and more parameter automation tools that allow users to modulate the output with ease. However, determining the modulation signals used to create a sound is difficult, and existing sound-matching / parameter estimation systems are often uninterpretable black boxes or predict high-dimensional framewise parameter values without considering the shape, structure, and routing of the underlying modulation curves. We propose a neural sound-matching approach that leverages modulation extraction, constrained control signal parameterizations, and differentiable digital signal processing (DDSP) to discover the modulations present in a sound. We demonstrate the effectiveness of our approach on highly modulated synthetic and real audio samples, its applicability to different DDSP synth architectures, and investigate the trade-off it incurs between interpretability and sound-matching accuracy. We make our code and audio samples available and provide the trained DDSP synths in a VST plugin.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Christopher Mitcheltree, Hao Hao Tan, Joshua D. Reiss",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Provable Speech Attributes Conversion via Latent Independence",
+    "paper_title_zh": "",
+    "paper_id": "2510.05191",
+    "paper_abstract": "While signal conversion and disentangled representation learning have shown promise for manipulating data attributes across domains such as audio, image, and multimodal generation, existing approaches, especially for speech style conversion, are largely empirical and lack rigorous theoretical foundations to guarantee reliable and interpretable control. In this work, we propose a general framework for speech attribute conversion, accompanied by theoretical analysis and guarantees under reasonable assumptions. Our framework builds on a non-probabilistic autoencoder architecture with an independence constraint between the predicted latent variable and the target controllable variable. This design ensures a consistent signal transformation, conditioned on an observed style variable, while preserving the original content and modifying the desired attribute. We further demonstrate the versatility of our method by evaluating it on speech styles, including speaker identity and emotion. Quantitative evaluations confirm the effectiveness and generality of the proposed approach.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Jonathan Svirsky, Ofir Lindenbaum, Uri Shaham",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "AUREXA-SE: Audio-Visual Unified Representation Exchange Architecture with Cross-Attention and Squeezeformer for Speech Enhancement",
+    "paper_title_zh": "",
+    "paper_id": "2510.05295",
+    "paper_abstract": "In this paper, we propose AUREXA-SE (Audio-Visual Unified Representation Exchange Architecture with Cross-Attention and Squeezeformer for Speech Enhancement), a progressive bimodal framework tailored for audio-visual speech enhancement (AVSE). AUREXA-SE jointly leverages raw audio waveforms and visual cues by employing a U-Net-based 1D convolutional encoder for audio and a Swin Transformer V2 for efficient and expressive visual feature extraction. Central to the architecture is a novel bidirectional cross-attention mechanism, which facilitates deep contextual fusion between modalities, enabling rich and complementary representation learning. To capture temporal dependencies within the fused embeddings, a stack of lightweight Squeezeformer blocks combining convolutional and attention modules is introduced. The enhanced embeddings are then decoded via a U-Net-style decoder for direct waveform reconstruction, ensuring perceptually consistent and intelligible speech output. Experimental evaluations demonstrate the effectiveness of AUREXA-SE, achieving significant performance improvements over noisy baselines, with STOI of 0.516, PESQ of 1.323, and SI-SDR of -4.322 dB. The source code of AUREXA-SE is available at this https URL.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "M. Sajid, Deepanshu Gupta, Yash Modi, Sanskriti Jain, Harshith Jai Surya Ganji, A. Rahaman, Harshvardhan Choudhary, Nasir Saleem, Amir Hussain, M. Tanveer",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Sparse deepfake detection promotes better disentanglement",
+    "paper_title_zh": "",
+    "paper_id": "2510.05696",
+    "paper_abstract": "Due to the rapid progress of speech synthesis, deepfake detection has become a major concern in the speech processing community. Because it is a critical task, systems must not only be efficient and robust, but also provide interpretable explanations. Among the different approaches for explainability, we focus on the interpretation of latent representations. In such paper, we focus on the last layer of embeddings of AASIST, a deepfake detection architecture. We use a TopK activation inspired by SAEs on this layer to obtain sparse representations which are used in the decision process. We demonstrate that sparse deepfake detection can improve detection performance, with an EER of 23.36% on ASVSpoof5 test set, with 95% of sparsity. We then show that these representations provide better disentanglement, using completeness and modularity metrics based on mutual information. Notably, some attacks are directly encoded in the latent space.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Antoine Teissier, Marie Tahon, Nicolas Dugué, Aghilas Sini",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "MSF-SER: Enriching Acoustic Modeling with Multi-Granularity Semantics for Speech Emotion Recognition",
+    "paper_title_zh": "",
+    "paper_id": "2510.05749",
+    "paper_abstract": "Continuous dimensional speech emotion recognition captures affective variation along valence, arousal, and dominance, providing finer-grained representations than categorical approaches. Yet most multimodal methods rely solely on global transcripts, leading to two limitations: (1) all words are treated equally, overlooking that emphasis on different parts of a sentence can shift emotional meaning; (2) only surface lexical content is represented, lacking higher-level interpretive cues. To overcome these issues, we propose MSF-SER (Multi-granularity Semantic Fusion for Speech Emotion Recognition), which augments acoustic features with three complementary levels of textual semantics--Local Emphasized Semantics (LES), Global Semantics (GS), and Extended Semantics (ES). These are integrated via an intra-modal gated fusion and a cross-modal FiLM-modulated lightweight Mixture-of-Experts (FM-MOE). Experiments on MSP-Podcast and IEMOCAP show that MSF-SER consistently improves dimensional prediction, demonstrating the effectiveness of enriched semantic fusion for SER.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Haoxun Li, Yuqing Sun, Hanlei Shi, Yu Liu, Leyuan Qu, Taihao Li",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "EMORL-TTS: Reinforcement Learning for Fine-Grained Emotion Control in LLM-based TTS",
+    "paper_title_zh": "",
+    "paper_id": "2510.05758",
+    "paper_abstract": "Recent LLM-based TTS systems achieve strong quality and zero-shot ability, but lack fine-grained emotional control due to their reliance on discrete speech tokens. Existing approaches either limit emotions to categorical labels or cannot generalize to LLM-based architectures. We propose EMORL-TTS (Fine-grained Emotion-controllable TTS with Reinforcement Learning), a framework that unifies global intensity control in the VAD space with local emphasis regulation. Our method combines supervised fine-tuning with reinforcement learning guided by task-specific rewards for emotion category, intensity, and emphasis. Moreover, we further investigate how emphasis placement modulates fine-grained emotion intensity. Experiments show that EMORL-TTS improves emotion accuracy, intensity differentiation, and emphasis clarity, while preserving synthesis quality comparable to strong LLM-based baselines.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Haoxun Li, Yu Liu, Yuqing Sun, Hanlei Shi, Leyuan Qu, Taihao Li",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "LARA-Gen: Enabling Continuous Emotion Control for Music Generation Models via Latent Affective Representation Alignment",
+    "paper_title_zh": "",
+    "paper_id": "2510.05875",
+    "paper_abstract": "Recent advances in text-to-music models have enabled coherent music generation from text prompts, yet fine-grained emotional control remains unresolved. We introduce LARA-Gen, a framework for continuous emotion control that aligns the internal hidden states with an external music understanding model through Latent Affective Representation Alignment (LARA), enabling effective training. In addition, we design an emotion control module based on a continuous valence-arousal space, disentangling emotional attributes from textual content and bypassing the bottlenecks of text-based prompting. Furthermore, we establish a benchmark with a curated test set and a robust Emotion Predictor, facilitating objective evaluation of emotional controllability in music generation. Extensive experiments demonstrate that LARA-Gen achieves continuous, fine-grained control of emotion and significantly outperforms baselines in both emotion adherence and music quality. Generated samples are available at this https URL.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Jiahao Mei, Xuenan Xu, Zeyu Xie, Zihao Zheng, Ye Tao, Yue Ding, Mengyue Wu",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "EmoHRNet: High-Resolution Neural Network Based Speech Emotion Recognition",
+    "paper_title_zh": "",
+    "paper_id": "2510.06072",
+    "paper_abstract": "Speech emotion recognition (SER) is pivotal for enhancing human-machine interactions. This paper introduces \"EmoHRNet\", a novel adaptation of High-Resolution Networks (HRNet) tailored for SER. The HRNet structure is designed to maintain high-resolution representations from the initial to the final layers. By transforming audio samples into spectrograms, EmoHRNet leverages the HRNet architecture to extract high-level features. EmoHRNet's unique architecture maintains high-resolution representations throughout, capturing both granular and overarching emotional cues from speech signals. The model outperforms leading models, achieving accuracies of 92.45% on RAVDESS, 80.06% on IEMOCAP, and 92.77% on EMOVO. Thus, we show that EmoHRNet sets a new benchmark in the SER domain.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Akshay Muppidi, Martin Radfar",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Data-efficient Targeted Token-level Preference Optimization for LLM-based Text-to-Speech",
+    "paper_title_zh": "",
+    "paper_id": "2510.05799",
+    "paper_abstract": "Aligning text-to-speech (TTS) system outputs with human feedback through preference optimization has been shown to effectively improve the robustness and naturalness of language model-based TTS models. Current approaches primarily require paired desirable and undesirable samples at the utterance level. However, such pairs are often limited in TTS output data, and utterance-level formulation prevents fine-grained token-level optimization needed for accurate pronunciation alignment. In this study, we propose TKTO that eliminates the need for paired data, enabling a more data-efficient training paradigm, and directly targets token-level units, automatically providing fine-grained alignment signals without token-level annotations. TKTO improves the challenging Japanese TTS accuracy by 39% and reduces CER by 54%, automatically assigning 12.8 times stronger reward to targeted tokens.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-08",
+    "paper_authors": "Rikuto Kotoge, Yuichi Sasaki",
+    "topic": [],
+    "category": []
+  }
+]
