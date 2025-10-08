@@ -106,10 +106,10 @@
     "paper_abstract": "Machine Speech Chain, simulating the human perception-production loop, proves effective in jointly improving ASR and TTS. We propose TokenChain, a fully discrete speech chain coupling semantic-token ASR with a two-stage TTS: an autoregressive text-to-semantic model co-trained with ASR and a masked-generative semantic-to-acoustic model for synthesis only. End-to-end feedback across the text interface is enabled with straight-through argmax/Gumbel-Softmax and balanced with supervised ASR via dynamic weight averaging. Ablations examine optimal temperature schedules for in- and cross-domain transfer. Evaluation reveals TokenChain surpasses baseline accuracy 2-6 epochs earlier and yields 5-13% lower equal-epoch error with stable T2S on LibriSpeech, and reduces relative ASR WER by 56% and T2S WER by 31% on TED-LIUM with minimal forgetting, showing that chain learning remains effective with token interfaces and models.",
     "paper_abstract_zh": "",
     "subjects": [
-      "Sound (cs.SD)",
-      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)",
       "Artificial Intelligence (cs.AI)",
-      "Audio and Speech Processing (eess.AS)"
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-08",
     "paper_authors": "Mingxuan Wang, Satoshi Nakamura",
@@ -171,11 +171,11 @@
     "paper_abstract": "Although audio generation has been widely studied over recent years, video-aligned audio generation still remains a relatively unexplored frontier. To address this gap, we introduce StereoSync, a novel and efficient model designed to generate audio that is both temporally synchronized with a reference video and spatially aligned with its visual context. Moreover, StereoSync also achieves efficiency by leveraging pretrained foundation models, reducing the need for extensive training while maintaining high-quality synthesis. Unlike existing methods that primarily focus on temporal synchronization, StereoSync introduces a significant advancement by incorporating spatial awareness into video-aligned audio generation. Indeed, given an input video, our approach extracts spatial cues from depth maps and bounding boxes, using them as cross-attention conditioning in a diffusion-based audio generation model. Such an approach allows StereoSync to go beyond simple synchronization, producing stereo audio that dynamically adapts to the spatial structure and movement of a video scene. We evaluate StereoSync on Walking The Maps, a curated dataset comprising videos from video games that feature animated characters walking through diverse environments. Experimental results demonstrate the ability of StereoSync to achieve both temporal and spatial alignment, advancing the state of the art in video-to-audio generation and resulting in a significantly more immersive and realistic audio experience.",
     "paper_abstract_zh": "",
     "subjects": [
-      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
       "Machine Learning (cs.LG)",
       "Multimedia (cs.MM)",
-      "Computer Vision and Pattern Recognition (cs.CV)",
-      "Audio and Speech Processing (eess.AS)"
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-08",
     "paper_authors": "Christian Marinoni, Riccardo Fosco Gramaccioni, Kazuki Shimada, Takashi Shibuya, Yuki Mitsufuji, Danilo Comminiello",
@@ -189,11 +189,11 @@
     "paper_abstract": "In this work, we present FoleyGRAM, a novel approach to video-to-audio generation that emphasizes semantic conditioning through the use of aligned multimodal encoders. Building on prior advancements in video-to-audio generation, FoleyGRAM leverages the Gramian Representation Alignment Measure (GRAM) to align embeddings across video, text, and audio modalities, enabling precise semantic control over the audio generation process. The core of FoleyGRAM is a diffusion-based audio synthesis model conditioned on GRAM-aligned embeddings and waveform envelopes, ensuring both semantic richness and temporal alignment with the corresponding input video. We evaluate FoleyGRAM on the Greatest Hits dataset, a standard benchmark for video-to-audio models. Our experiments demonstrate that aligning multimodal encoders using GRAM enhances the system's ability to semantically align generated audio with video content, advancing the state of the art in video-to-audio synthesis.",
     "paper_abstract_zh": "",
     "subjects": [
-      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
       "Machine Learning (cs.LG)",
       "Multimedia (cs.MM)",
-      "Computer Vision and Pattern Recognition (cs.CV)",
-      "Audio and Speech Processing (eess.AS)"
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-08",
     "paper_authors": "Riccardo Fosco Gramaccioni, Christian Marinoni, Eleonora Grassucci, Giordano Cicchetti, Aurelio Uncini, Danilo Comminiello",
@@ -207,11 +207,11 @@
     "paper_abstract": "We propose the Segmented Full-Song Model (SFS) for symbolic full-song generation. The model accepts a user-provided song structure and an optional short seed segment that anchors the main idea around which the song is developed. By factorizing a song into segments and generating each one through selective attention to related segments, the model achieves higher quality and efficiency compared to prior work. To demonstrate its suitability for human-AI interaction, we further wrap SFS into a web application that enables users to iteratively co-create music on a piano roll with customizable structures and flexible ordering.",
     "paper_abstract_zh": "",
     "subjects": [
-      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
       "Machine Learning (cs.LG)",
       "Artificial Intelligence (cs.AI)",
       "Multimedia (cs.MM)",
-      "Audio and Speech Processing (eess.AS)"
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-08",
     "paper_authors": "Ping-Yi Chen, Chih-Pin Tan, Yi-Hsuan Yang",
