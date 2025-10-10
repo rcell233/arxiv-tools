@@ -1,13 +1,13 @@
 [
   {
     "paper_title": "Moises-Light: Resource-efficient Band-split U-Net For Music Source Separation",
-    "paper_title_zh": "Moises-Light: 面向音乐源分离的资源高效型子带分割U-Net架构",
+    "paper_title_zh": "Moises-Light: 用于音乐源分离的资源高效型带分割U-Net",
     "paper_id": "2510.06785",
     "paper_abstract": "In recent years, significant advances have been made in music source separation, with model architectures such as dual-path modeling, band-split modules, or transformer layers achieving comparably good results. However, these models often contain a significant number of parameters, posing challenges to devices with limited computational resources in terms of training and practical application. While some lightweight models have been introduced, they generally perform worse compared to their larger counterparts. In this paper, we take inspiration from these recent advances to improve a lightweight model. We demonstrate that with careful design, a lightweight model can achieve comparable SDRs to models with up to 13 times more parameters. Our proposed model, Moises-Light, achieves competitive results in separating four musical stems on the MUSDB-HQ benchmark dataset. The proposed model also demonstrates competitive scalability when using MoisesDB as additional training data.",
-    "paper_abstract_zh": "近年来，音乐源分离领域取得了显著进展，诸如双路径建模、子带分割模块或变换器层等模型架构均取得了相当不错的效果。然而，这些模型通常参数量巨大，对计算资源有限的设备在训练和实际应用中都构成了挑战。尽管已有一些轻量级模型被提出，但它们通常性能逊于大型模型。本文中，我们借鉴这些最新进展来改进一个轻量级模型。我们证明，通过精心设计，轻量级模型可以达到与参数量多达13倍的模型相媲美的SDR（信噪比）指标。我们提出的模型Moises-Light在MUSDB-HQ基准数据集上分离四种音乐音轨时表现出色。该模型在使用MoisesDB作为额外训练数据时，也展现了优异的可扩展性。",
+    "paper_abstract_zh": "近年来，音乐源分离领域取得了显著进展，采用诸如双路径建模、带分割模块或变换器层等模型架构取得了相当好的效果。然而，这些模型通常包含大量参数，对计算资源有限的设备在训练和实际应用方面构成了挑战。尽管已经引入了一些轻量级模型，但它们通常性能较差。在本文中，我们借鉴这些最新进展来改进一个轻量级模型。我们证明，通过精心设计，轻量级模型可以实现与参数量多达13倍的模型相当的信噪比(SDR)。我们提出的模型Moises-Light，在MUSDB-HQ基准数据集上分离四种音乐音轨时表现出色。所提出的模型在使用MoisesDB作为额外训练数据时也显示出良好的可扩展性。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-09",
     "paper_authors": "Yun-Ning, Hung, Igor Pereira, Filip Korzeniowski",
@@ -24,15 +24,14 @@
     "paper_title_zh": "迈向负责任的文本到语音评估",
     "paper_id": "2510.06927",
     "paper_abstract": "Recent advances in text-to-speech (TTS) technology have enabled systems to produce human-indistinguishable speech, bringing benefits across accessibility, content creation, and human-computer interaction. However, current evaluation practices are increasingly inadequate for capturing the full range of capabilities, limitations, and societal implications. This position paper introduces the concept of Responsible Evaluation and argues that it is essential and urgent for the next phase of TTS development, structured through three progressive levels: (1) ensuring the faithful and accurate reflection of a model's true capabilities, with more robust, discriminative, and comprehensive objective and subjective scoring methodologies; (2) enabling comparability, standardization, and transferability through standardized benchmarks, transparent reporting, and transferable evaluation metrics; and (3) assessing and mitigating ethical risks associated with forgery, misuse, privacy violations, and security vulnerabilities. Through this concept, we critically examine current evaluation practices, identify systemic shortcomings, and propose actionable recommendations. We hope this concept of Responsible Evaluation will foster more trustworthy and reliable TTS technology and guide its development toward ethically sound and societally beneficial applications.",
-    "paper_abstract_zh": "近年来，文本到语音（TTS）技术的进步使得系统能够产生与人声无异的语音，为无障碍访问、内容创作和人机交互等领域带来了诸多益处。然而，当前的评估方法越来越难以全面捕捉其能力范围、局限性及社会影响。本立场文件引入了‘负责任评估’（Responsible Evaluation）这一概念，并论证了其在TTS技术下一阶段发展中的必要性和紧迫性，具体通过三个递进层面展开：（1）确保真实且准确地反映模型的真实能力，采用更鲁棒、更具区分性及更全面的主客观评分方法；（2）通过标准化基准、透明化报告和可迁移的评估指标，实现可比性、标准化和可迁移性；（3）评估和减轻与伪造、滥用、隐私侵犯和安全漏洞相关的伦理风险。通过这一概念，我们批判性地审视了当前的评估实践，指出了系统性缺陷，并提出了可行的建议。我们希望‘负责任评估’这一概念能够促进更可信、更可靠的TTS技术，并引导其朝着符合伦理且有益于社会的方向发展。",
+    "paper_abstract_zh": "近年来，文本到语音（TTS）技术的进步使得系统能够产生与人类语音难以区分的声音，这为无障碍访问、内容创作和人机交互等领域带来了诸多益处。然而，当前的评估实践日益不足以全面捕捉TTS技术的全部能力、局限性和社会影响。本文提出了'负责任评估'（Responsible Evaluation）这一概念，并论证其在TTS下一阶段发展中既至关重要又紧迫，具体通过三个递进的层面构建：(1) 确保真实、准确地反映模型的实际能力，采用更健壮、更具区分性以及更全面的主客观评分方法；(2) 通过标准化基准、透明报告和可迁移的评估指标，实现可比性、标准化和可移植性；(3) 评估和减轻与伪造、滥用、隐私侵犯和安全漏洞相关的伦理风险。通过这一概念，我们批判性地审视了当前评估实践，识别出系统性缺陷，并提出可行的建议。我们希望'负责任评估'这一概念能促进更值得信赖和可靠的TTS技术，并引导其朝着符合伦理和有益于社会的方向发展。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-09",
     "paper_authors": "Yifan Yang, Hui Wang, Bing Han, Shujie Liu, Jinyu Li, Yong Qin, Xie Chen",
     "topic": [
-      "Speech Synthesis",
-      "Other"
+      "Speech Synthesis"
     ],
     "category": [
       "Speech"
@@ -40,13 +39,13 @@
   },
   {
     "paper_title": "Comparison of Speech Tasks in Human Expert and Machine Detection of Parkinson's Disease",
-    "paper_title_zh": "帕金森病患者语音任务的人类专家与机器检测对比",
+    "paper_title_zh": "帕金森病的人类专家与机器语音检测任务比较",
     "paper_id": "2510.07299",
     "paper_abstract": "The speech of people with Parkinson's Disease (PD) has been shown to hold important clues about the presence and progression of the disease. We investigate the factors based on which humans experts make judgments of the presence of disease in speech samples over five different speech tasks: phonations, sentence repetition, reading, recall, and picture description. We make comparisons by conducting listening tests to determine clinicians accuracy at recognizing signs of PD from audio alone, and we conduct experiments with a machine learning system for detection based on Whisper. Across tasks, Whisper performs on par or better than human experts when only audio is available, especially on challenging but important subgroups of the data: younger patients, mild cases, and female patients. Whisper's ability to recognize acoustic cues in difficult cases complements the multimodal and contextual strengths of human experts.",
-    "paper_abstract_zh": "帕金森病(PD)患者的语音已被证明蕴含了关于疾病存在和进展的重要线索。我们研究了人类专家在五种不同语音任务(发声、句子重复、阅读、回忆和图片描述)上判断疾病存在的依据。通过进行听力测试,我们比较了临床医生仅通过音频识别PD迹象的准确性,同时我们也使用基于Whisper的机器学习系统进行了实验检测。在各种任务中,当仅使用音频时,Whisper的表现与人类专家相当或更优,特别是在数据中具有挑战性但重要的子群体上:年轻患者、轻度病例和女性患者。Whisper在识别困难案例中的声学线索的能力,补充了人类专家的多模态和情境优势。",
+    "paper_abstract_zh": "帕金森病（PD）患者的语音已被证明包含关于疾病存在和进展的重要线索。我们研究了人类专家在五种不同的语音任务（发声、句子重复、阅读、回忆和图片描述）中判断疾病存在的依据。通过进行听力测试，我们确定了临床医生仅通过音频识别PD特征的准确性，同时我们基于Whisper进行了机器学习系统的检测实验。在所有任务中，当仅使用音频时，Whisper的表现与人类专家相当或更优，特别是在数据中具有挑战性但重要的子群体上：年轻患者、轻度病例和女性患者。Whisper在识别困难案例中的声学线索能力方面，补充了人类专家的多模态和情境优势。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-09",
     "paper_authors": "Peter Plantinga, Roozbeh Sattari, Karine Marcotte, Carla Di Gironimo, Madeleine Sharp, Liziane Bouvier, Maiya Geddes, Ingrid Verduyckt, Étienne de Villers-Sidani, Mirco Ravanelli, Denise Klein",
@@ -60,13 +59,13 @@
   },
   {
     "paper_title": "BACHI: Boundary-Aware Symbolic Chord Recognition Through Masked Iterative Decoding on Pop and Classical Music",
-    "paper_title_zh": "BACHI: 基于边界感知与掩码迭代解码的流行和古典音乐和弦识别",
+    "paper_title_zh": "BACHI：基于边界感知的符号和弦识别在流行和古典音乐中的掩码迭代解码方法",
     "paper_id": "2510.06528",
     "paper_abstract": "Automatic chord recognition (ACR) via deep learning models has gradually achieved promising recognition accuracy, yet two key challenges remain. First, prior work has primarily focused on audio-domain ACR, while symbolic music (e.g., score) ACR has received limited attention due to data scarcity. Second, existing methods still overlook strategies that are aligned with human music analytical practices. To address these challenges, we make two contributions: (1) we introduce POP909-CL, an enhanced version of POP909 dataset with tempo-aligned content and human-corrected labels of chords, beats, keys, and time signatures; and (2) We propose BACHI, a symbolic chord recognition model that decomposes the task into different decision steps, namely boundary detection and iterative ranking of chord root, quality, and bass (inversion). This mechanism mirrors the human ear-training practices. Experiments demonstrate that BACHI achieves state-of-the-art chord recognition performance on both classical and pop music benchmarks, with ablation studies validating the effectiveness of each module.",
-    "paper_abstract_zh": "深度学习模型的自动和弦识别（ACR）已逐步实现了显著的识别准确率，但仍面临两个关键挑战。首先，以往的研究主要关注音频领域的ACR，而符号音乐（如乐谱）的ACR由于数据稀缺而受到较少关注。其次，现有方法仍缺乏与人类音乐分析实践相一致的策略。针对这些问题，我们做出两项贡献：（1）我们引入了POP909-CL，这是一个增强版的POP909数据集，包含节拍对齐的内容以及人工校对的和弦、节拍、调性和拍号的标签；（2）我们提出了BACHI，一种符号和弦识别模型，将任务分解为不同的决策步骤，包括边界检测以及和弦根音、品质和低音（转位）的迭代排序。这一机制模拟了人类的听觉训练实践。实验表明，BACHI在古典和流行音乐基准测试中均达到了最先进的和弦识别性能，并通过消融研究验证了各模块的有效性。",
+    "paper_abstract_zh": "深度学习模型的自动和弦识别（ACR）已逐渐实现了可喜的识别准确度，但仍存在两个关键挑战。首先，先前的研究主要关注音频领域的ACR，而符号音乐（如乐谱）的ACR由于数据稀缺而受到有限关注。其次，现有方法仍缺乏与人类音乐分析实践相一致的策略。为解决这些问题，我们做出两项贡献：（1）我们引入了POP909-CL，这是POP909数据集的一个增强版本，具备节拍对齐的内容和经过人工校正的和弦、节拍、调号以及拍号标签；（2）我们提出BACHI，这是一种符号和弦识别模型，它将任务分解为不同的决策步骤，即边界检测以及和弦根音、品质和低音（转位）的迭代排序。这一机制模拟了人类的听觉训练实践。实验表明，BACHI在古典和流行音乐基准测试中都达到了最先进的水平和弦识别性能，且消融研究验证了每个模块的有效性。",
     "subjects": [
-      "Machine Learning (cs.LG)",
       "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)",
       "Sound (cs.SD)"
     ],
     "update_time": "2025-10-09",
@@ -81,14 +80,14 @@
   },
   {
     "paper_title": "Benchmarking Fake Voice Detection in the Fake Voice Generation Arms Race",
-    "paper_title_zh": "Benchmarking Fake Voice Detection in the Fake Voice Generation Arms Race",
+    "paper_title_zh": "基准测试假语音检测：假语音生成军备竞赛",
     "paper_id": "2510.06544",
     "paper_abstract": "As advances in synthetic voice generation accelerate, an increasing variety of fake voice generators have emerged, producing audio that is often indistinguishable from real human speech. This evolution poses new and serious threats across sectors where audio recordings serve as critical evidence. Although fake voice detectors are also advancing, the arms race between fake voice generation and detection has become more intense and complex. In this work, we present the first large-scale, cross-domain evaluation of fake voice detectors, benchmarking 8 state-of-the-art models against datasets synthesized by 20 different fake voice generation systems. To the best of our knowledge, this is the most comprehensive cross-domain assessment conducted to date. Our study reveals substantial security vulnerabilities in current fake voice detection systems, underscoring critical gaps in their real-world robustness. To advance the field, we propose a unified and effective metric that consolidates the diverse and often inconsistent evaluation criteria previously used across different studies. This metric enables standardized, straightforward comparisons of the robustness of fake voice detectors. We conclude by offering actionable recommendations for building more resilient fake voice detection technologies, with the broader goal of reinforcing the foundations of AI security and trustworthiness.",
-    "paper_abstract_zh": "随着合成语音生成技术的飞速发展，各种伪造语音生成器层出不穷，其生成的音频往往与真人语音难以区分。这一演变对依赖录音作为关键证据的各行各业构成了新的严重威胁。尽管伪造语音检测器也在进步，但伪造语音生成与检测之间的军备竞赛正变得更加激烈和复杂。本研究首次对伪造语音检测器进行了大规模、跨领域的评估，基准测试了8种最先进的模型，并使用了由20种不同伪造语音生成系统合成的数据集进行测试。据我们所知，这是迄今为止最全面的跨领域评估。我们的研究揭示了当前伪造语音检测系统存在重大的安全漏洞，突显了其在实际应用中的鲁棒性存在严重不足。为推进该领域发展，我们提出了一个统一且有效的度量标准，以整合以往研究中多样且常不一致的评估标准。该度量使得不同伪造语音检测器的鲁棒性能够进行标准化、直观的比较。最后，我们为构建更具韧性的伪造语音检测技术提出了可行建议，其更广泛的目标是增强人工智能安全性和可信赖性的基础。",
+    "paper_abstract_zh": "随着合成语音生成技术的飞速发展，各种假语音生成器层出不穷，其生成的音频往往与真人语音难以区分。这一演变对依赖录音作为关键证据的各行业构成了新的严重威胁。尽管假语音检测器也在进步，但假语音生成与检测之间的军备竞赛变得更加激烈和复杂。本研究中，我们首次进行了大规模、跨领域的假语音检测器评估，基准测试了8种最先进的模型，这些模型针对由20种不同假语音生成系统合成的数据集进行了测试。据我们所知，这是迄今为止最全面的跨领域评估。我们的研究揭示了当前假语音检测系统存在重大的安全漏洞，突显了其在实际应用中的鲁棒性存在关键缺陷。为了推动领域发展，我们提出了一个统一且有效的度量标准，以整合以往研究中多样化且往往不一致的评估标准。该度量支持对假语音检测器鲁棒性进行标准化、直接的比较。最后，我们提出了构建更具弹性的假语音检测技术的可行建议，总体目标是加强人工智能安全性和可信度的基础。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)",
-      "Cryptography and Security (cs.CR)"
+      "Cryptography and Security (cs.CR)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-09",
     "paper_authors": "Xutao Mao, Ke Li, Cameron Baird, Ezra Xuanru Tao, Dan Lin",
@@ -102,19 +101,19 @@
   },
   {
     "paper_title": "Pitch Estimation With Mean Averaging Smoothed Product Spectrum And Musical Consonance Evaluation Using MASP",
-    "paper_title_zh": "基于均值平滑频谱积与音乐协和性评估的音高估计方法",
+    "paper_title_zh": "使用平均平滑积谱与音乐协和性评估的音高估计方法",
     "paper_id": "2510.06625",
     "paper_abstract": "This study introduces Mean Averaging Smoothed Product (MASP) Spectrum, which is a modified version of the Harmonic Product Spectrum, designed to enhance pitch estimation for many algorithm-wise deceptive frequency spectra that still lead clear pitches, for both harmonic and inharmonic cases. By introducing a global mean based smoothing for spectrum, the MASP algorithm diminishes the unwanted sensitivity of HPS for spectra with missing partials. The method exhibited robust pitch estimations consistent with perceptual expectations. Motivated upon the strong correlation between consonance and periodicity, the same algorithm is extended and, with the proposition of a harmonicity measure (H), used to evaluate musical consonance for two and three tones; yielding consonance hierarchies that align with perception and practice of music theory. These findings suggest that perception of pitch and consonance may share a similar underlying mechanism that depend on spectrum.",
-    "paper_abstract_zh": "本研究引入了均值平滑频谱积（MASP）方法，作为谐波积谱（Harmonic Product Spectrum）的改进版本，旨在增强对许多在算法上具有欺骗性但仍能产生清晰音高的频谱的音高估计，适用于谐波和非谐波情况。通过引入基于全局均值的频谱平滑，MASP算法减少了HPS对缺失分音的频谱的过度敏感性。该方法展现出与感知预期一致的高效音高估计性能。基于协和性与周期性之间的强相关性，同一算法被扩展并引入一个谐和度测量（H），用于评估双音和三音的协和性；由此产生的协和性层级与音乐理论实践和感知相符。这些发现表明，音高和协和性的感知可能共享一个基于频谱的相似底层机制。",
+    "paper_abstract_zh": "本研究引入了平均平滑积谱（MASP），它是谐波积谱的一种改进版本，旨在增强对许多算法上具有欺骗性但实际产生清晰音高的频率谱的音高估计，适用于谐波和非谐波情况。通过引入基于全局平均的频谱平滑，MASP算法减少了谐波积谱对缺失部分谐波谱的过度敏感性。该方法展现了与感知预期一致的稳健音高估计。基于协和性与周期性之间的强相关性，同一算法被扩展，并提出了一个谐和度测量（H），用于评估两音和三音的协和性；得出与音乐理论实践和感知一致的协和性层级。这些发现表明，音高和协和性的感知可能共享一个基于频谱的相似底层机制。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-09",
     "paper_authors": "Murat Yasar Baskin",
     "topic": [
-      "Music Information Retrieval",
-      "Audio Representation Learning"
+      "Audio Representation Learning",
+      "Music Information Retrieval"
     ],
     "category": [
       "Music"
@@ -122,10 +121,10 @@
   },
   {
     "paper_title": "Utilizing Information Theoretic Approach to Study Cochlear Neural Degeneration",
-    "paper_title_zh": "利用信息论方法研究耳蜗神经退行性病变",
+    "paper_title_zh": "利用信息论方法研究耳蜗神经变性",
     "paper_id": "2510.06671",
     "paper_abstract": "Hidden hearing loss, or cochlear neural degeneration (CND), disrupts suprathreshold auditory coding without affecting clinical thresholds, making it difficult to diagnose. We present an information-theoretic framework to evaluate speech stimuli that maximally reveal CND by quantifying mutual information (MI) loss between inner hair cell (IHC) receptor potentials and auditory nerve fiber (ANF) responses and acoustic input and ANF responses. Using a phenomenological auditory model, we simulated responses to 50 CVC words under clean, time-compressed, reverberant, and combined conditions across different presentation levels, with systematically varied survival of low-, medium-, and high-spontaneous-rate fibers. MI was computed channel-wise between IHC and ANF responses and integrated across characteristic frequencies. Information loss was defined relative to a normal-hearing baseline. Results demonstrate progressive MI loss with increasing CND, most pronounced for time-compressed speech, while reverberation produced comparatively smaller effects. These findings identify rapid, temporally dense speech as optimal probes for CND, informing the design of objective clinical diagnostics while revealing problems associated with reverberation as a probe.",
-    "paper_abstract_zh": "隐性听力损失，或称为耳蜗神经退行性病变（CND），会破坏阈上听觉编码而不影响临床阈值，因此难以诊断。我们提出了一种信息论框架，通过量化内毛细胞（IHC）受体电位与听觉神经纤维（ANF）响应之间以及声学输入与ANF响应之间的互信息（MI）损失，来评估最能揭示CND的语音刺激。使用现象学听觉模型，我们模拟了50个CVC单词在不同呈现水平下对清洁、时间压缩、混响及混合条件的响应，并系统性地改变了低、中、高自发放电率纤维的存活率。MI在IHC和ANF响应之间按通道计算，并跨特征频率积分。信息损失相对于正常听力基线定义。结果显示，随着CND的加重，MI逐渐减少，其中时间压缩语音的影响最为显著，而混响的影响相对较小。这些发现表明，快速且时间密集的语音是检测CND的最佳探针，为客观临床诊断的设计提供了信息，同时揭示了使用混响作为探针的相关问题。",
+    "paper_abstract_zh": "隐性听力损失，或称耳蜗神经变性（CND），会破坏超阈值听觉编码而不影响临床阈值，因此难以诊断。我们提出了一个信息论框架，通过量化内毛细胞（IHC）受体电位与听觉神经纤维（ANF）响应之间以及声学输入与ANF响应之间的互信息（MI）损失，来评估最能揭示CND的语音刺激。使用现象学听觉模型，我们模拟了50个CVC词在清洁、时间压缩、混响及混合条件下的响应，跨不同呈现水平，系统性地改变了低、中、高自发放电率纤维的存活率。MI在IHC和ANF响应之间按通道计算，并在特征频率上整合。信息损失相对于正常听力基线定义。结果显示随着CND加重，MI逐渐损失，在时间压缩语音中最为显著，而混响的影响相对较小。这些发现表明，快速且时间密集的语音是CND的最佳探测手段，为客观临床诊断设计提供信息，同时揭示了使用混响作为探测手段的相关问题。",
     "subjects": [
       "Neurons and Cognition (q-bio.NC)",
       "Information Theory (cs.IT)",
@@ -143,10 +142,10 @@
   },
   {
     "paper_title": "Learning to Rewrite Prompts for Bootstrapping LLMs on Downstream Tasks",
-    "paper_title_zh": "利用提示重写引导大语言模型在下游任务上的自举学习",
+    "paper_title_zh": "通过改写提示来引导大型语言模型处理下游任务",
     "paper_id": "2510.06695",
     "paper_abstract": "In recent years, the growing interest in Large Language Models (LLMs) has significantly advanced prompt engineering, transitioning from manual design to model-based optimization. Prompts for LLMs generally comprise two components: the \\textit{instruction}, which defines the task or objective, and the \\textit{input}, which is tailored to the instruction type. In natural language generation (NLG) tasks such as machine translation, the \\textit{input} component is particularly critical, while the \\textit{instruction} component tends to be concise. Existing prompt engineering methods primarily focus on optimizing the \\textit{instruction} component for general tasks, often requiring large-parameter LLMs as auxiliary tools. However, these approaches exhibit limited applicability for tasks like machine translation, where the \\textit{input} component plays a more pivotal role. To address this limitation, this paper introduces a novel prompt optimization method specifically designed for machine translation tasks. The proposed approach employs a small-parameter model trained using a back-translation-based strategy, significantly reducing training overhead for single-task optimization while delivering highly effective performance. With certain adaptations, this method can also be extended to other downstream tasks.",
-    "paper_abstract_zh": "近年来，随着对大型语言模型（LLMs）的兴趣日益增长，提示工程已从手动设计发展到基于模型的优化。LLMs的提示通常包含两个部分：定义任务或目标的\\textit{指令}，以及根据指令类型定制的\\textit{输入}。在自然语言生成（NLG）任务（如机器翻译）中，\\textit{输入}部分尤其关键，而\\textit{指令}部分则往往较为简洁。现有的提示工程方法主要专注于优化通用任务的\\textit{指令}部分，通常需要大参数量的LLMs作为辅助工具。然而，这些方法在机器翻译等任务中适用性有限，因为在这些任务中，\\textit{输入}部分发挥着更为关键的作用。为克服这一局限，本文提出了一种专门针对机器翻译任务的提示优化方法。所提出的方法采用一种基于反向翻译策略训练的小参数模型，显著降低了单任务优化的训练开销，同时提供了高效性能。经适当调整，该方法也可扩展至其他下游任务。",
+    "paper_abstract_zh": "近年来，随着对大型语言模型（LLMs）兴趣的日益增长，提示工程显著发展，从手动设计转向基于模型的优化。LLMs的提示通常包含两个部分：定义任务或目标的\\textit{指令}，以及根据指令类型定制的\\textit{输入}。在自然语言生成（如机器翻译）等任务中，\\textit{输入}部分尤为重要，而\\textit{指令}部分则趋于简洁。现有的提示工程方法主要专注于为通用任务优化\\textit{指令}部分，通常需要大参数量的LLMs作为辅助工具。然而，这些方法在机器翻译等任务中适用性有限，因为\\textit{输入}部分在此起更关键作用。为解决这一局限，本文提出了一种专门针对机器翻译任务的提示优化方法。所提出的方法采用基于反向翻译策略训练的小参数模型，显著降低了单任务优化的训练开销，同时提供高效性能。经适当调整，此方法还可扩展到其他下游任务。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Artificial Intelligence (cs.AI)",
@@ -167,7 +166,7 @@
     "paper_title_zh": "XLSR-Kanformer: 一种用于合成语音检测的KAN集成模型",
     "paper_id": "2510.06706",
     "paper_abstract": "Recent advancements in speech synthesis technologies have led to increasingly sophisticated spoofing attacks, posing significant challenges for automatic speaker verification systems. While systems based on self-supervised learning (SSL) models, particularly the XLSR-Conformer architecture, have demonstrated remarkable performance in synthetic speech detection, there remains room for architectural improvements. In this paper, we propose a novel approach that replaces the traditional Multi-Layer Perceptron (MLP) in the XLSR-Conformer model with a Kolmogorov-Arnold Network (KAN), a powerful universal approximator based on the Kolmogorov-Arnold representation theorem. Our experimental results on ASVspoof2021 demonstrate that the integration of KAN to XLSR-Conformer model can improve the performance by 60.55% relatively in Equal Error Rate (EER) LA and DF sets, further achieving 0.70% EER on the 21LA set. Besides, the proposed replacement is also robust to various SSL architectures. These findings suggest that incorporating KAN into SSL-based models is a promising direction for advances in synthetic speech detection.",
-    "paper_abstract_zh": "近年来，语音合成技术的进步导致欺骗攻击日益复杂，对自动说话人验证系统构成了重大挑战。虽然基于自监督学习（SSL）模型的系统，特别是XLSR-Conformer架构，在合成语音检测方面表现出色，但仍有架构改进的空间。在本文中，我们提出了一种新方法，用Kolmogorov-Arnold网络（KAN）替代了XLSR-Conformer模型中的传统多层感知机（MLP），KAN是一种基于Kolmogorov-Arnold表示定理的强大通用逼近器。我们在ASVspoof2021数据集上的实验结果表明，将KAN集成到XLSR-Conformer模型可以将性能相对提升60.55%（在LA和DF集上的等错误率），并在21LA集上进一步实现0.70%的等错误率。此外，所提出的替换对各种SSL架构也具有鲁棒性。这些发现表明，将KAN整合到基于SSL的模型中是合成语音检测领域一个有前景的研究方向。",
+    "paper_abstract_zh": "近年来，语音合成技术的进步导致了日益复杂的欺骗攻击，给自动说话人验证系统带来了重大挑战。虽然基于自监督学习（SSL）模型的系统，特别是XLSR-Conformer架构，在合成语音检测方面表现出了卓越的性能，但仍有架构改进的空间。在本文中，我们提出了一种新颖的方法，用Kolmogorov-Arnold网络（KAN）取代了XLSR-Conformer模型中的传统多层感知机（MLP），KAN是一种基于Kolmogorov-Arnold表示定理的强大的通用逼近器。我们在ASVspoof2021数据集上的实验结果表明，将KAN集成到XLSR-Conformer模型中可以将等错误率（EER）在LA和DF数据集上相对提高60.55%，在21LA数据集上进一步达到0.70%的EER。此外，所提出的替换对各种SSL架构也具有鲁棒性。这些发现表明，将KAN整合到基于SSL的模型中是合成语音检测领域一个具有前景的研究方向。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Computation and Language (cs.CL)",
@@ -176,8 +175,8 @@
     "update_time": "2025-10-09",
     "paper_authors": "Phuong Tuan Dat, Tran Huy Dat",
     "topic": [
-      "Speech Synthesis",
-      "Audio Representation Learning"
+      "Audio Representation Learning",
+      "Speech Synthesis"
     ],
     "category": [
       "Speech"
@@ -185,10 +184,10 @@
   },
   {
     "paper_title": "SHANKS: Simultaneous Hearing and Thinking for Spoken Language Models",
-    "paper_title_zh": "SHANKS：支持同时听取与思考的口语语言模型",
+    "paper_title_zh": "SHANKS：同时聆听与思考的口语语言模型",
     "paper_id": "2510.06917",
     "paper_abstract": "Current large language models (LLMs) and spoken language models (SLMs) begin thinking and taking actions only after the user has finished their turn. This prevents the model from interacting during the user's turn and can lead to high response latency while it waits to think. Consequently, thinking after receiving the full input is not suitable for speech-to-speech interaction, where real-time, low-latency exchange is important. We address this by noting that humans naturally \"think while listening.\" In this paper, we propose SHANKS, a general inference framework that enables SLMs to generate unspoken chain-of-thought reasoning while listening to the user input. SHANKS streams the input speech in fixed-duration chunks and, as soon as a chunk is received, generates unspoken reasoning based on all previous speech and reasoning, while the user continues speaking. SHANKS uses this unspoken reasoning to decide whether to interrupt the user and to make tool calls to complete the task. We demonstrate that SHANKS enhances real-time user-SLM interaction in two scenarios: (1) when the user is presenting a step-by-step solution to a math problem, SHANKS can listen, reason, and interrupt when the user makes a mistake, achieving 37.1% higher interruption accuracy than a baseline that interrupts without thinking; and (2) in a tool-augmented dialogue, SHANKS can complete 56.9% of the tool calls before the user finishes their turn. Overall, SHANKS moves toward models that keep thinking throughout the conversation, not only after a turn ends. Animated illustrations of Shanks can be found at this https URL",
-    "paper_abstract_zh": "当前的大型语言模型(LLMs)和口语语言模型(SLMs)只能在用户完成发言后才开始思考并采取行动。这导致模型无法在用户发言时进行交互，并且由于需要等待完整的输入，会产生较高的响应延迟。然而，这种等待输入完毕后再思考的方式并不适合需要实时交互的语音交互场景，因为后者重视低延迟。我们注意到，人类天生就能在'听的同时思考'。在本文中，我们提出了SHANKS，这是一个通用的推理框架，它使SLMs能够在听取用户输入的同时生成未说出口的思维链推理。SHANKS将输入语音流式传输为固定时长的数据块，并在接收到每个数据块后，立即基于先前的语音和推理生成未说出口的推理，而用户仍在继续讲话。SHANKS利用这种未说出口的推理来决定是否打断用户，并进行工具调用来完成任务。我们证明，SHANKS在两种场景中增强了实时人机交互：(1)当用户正在逐步解决数学问题时，SHANKS能够听取、推理并在用户犯错时打断，其打断准确率比未经思考就打断的基线方法高37.1%；(2)在工具增强的对话中，SHANKS能在用户完成发言前完成56.9%的工具调用。总之，SHANKS推动了模型在整个对话过程中持续思考，而不仅仅是在发言结束后。动态示意图请参见此https URL。",
+    "paper_abstract_zh": "当前的大型语言模型（LLMs）和口语语言模型（SLMs）仅在用户完成发言后才开始思考和采取行动。这阻碍了模型在用户发言过程中进行交互，并可能导致高延迟，因为它必须等待思考。然而，人类在对话中自然具备'边听边思考'的能力。为了解决这一问题，我们提出了SHANKS，一个通用的推理框架，使SLMs能够在听取用户输入的同时生成未说出口的思维链条推理。SHANKS将输入语音流式处理为固定时长的片段，一旦接收到片段，便基于先前的语音和推理生成未说出的推理，同时用户继续发言。SHANKS利用这种未说出的推理来决定是否打断用户或调用工具完成任务。我们证明，SHANKS在两种场景中增强了实时人机交互：(1)当用户逐步解决数学问题时，SHANKS能够倾听、推理并在用户出错时打断，其打断准确率比无思考打断的基线方法高37.1%；(2)在工具增强的对话中，SHANKS能在用户完成发言前完成56.9%的工具调用。总体而言，SHANKS推动模型在整个对话过程中持续思考，而非仅在发言结束后。动画演示请访问：此https URL。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Audio and Speech Processing (eess.AS)"
@@ -197,7 +196,7 @@
     "paper_authors": "Cheng-Han Chiang, Xiaofei Wang, Linjie Li, Chung-Ching Lin, Kevin Lin, Shujie Liu, Zhendong Wang, Zhengyuan Yang, Hung-yi Lee, Lijuan Wang",
     "topic": [
       "Speech Recognition",
-      "Speech Synthesis"
+      "Other"
     ],
     "category": [
       "Speech"
@@ -205,15 +204,15 @@
   },
   {
     "paper_title": "Open ASR Leaderboard: Towards Reproducible and Transparent Multilingual and Long-Form Speech Recognition Evaluation",
-    "paper_title_zh": "开放自动语音识别排行榜：迈向可复现和透明的多语言与长语音识别评测",
+    "paper_title_zh": "开放ASR排行榜：面向可复现和透明的多语言及长语音识别评估",
     "paper_id": "2510.06961",
     "paper_abstract": "Despite rapid progress, ASR evaluation remains saturated with short-form English, and efficiency is rarely reported. We present the Open ASR Leaderboard, a fully reproducible benchmark and interactive leaderboard comparing 60+ open-source and proprietary systems across 11 datasets, including dedicated multilingual and long-form tracks. We standardize text normalization and report both word error rate (WER) and inverse real-time factor (RTFx), enabling fair accuracy-efficiency comparisons. For English transcription, Conformer encoders paired with LLM decoders achieve the best average WER but are slower, while CTC and TDT decoders deliver much better RTFx, making them attractive for long-form and offline use. Whisper-derived encoders fine-tuned for English improve accuracy but often trade off multilingual coverage. All code and dataset loaders are open-sourced to support transparent, extensible evaluation.",
-    "paper_abstract_zh": "尽管进展迅速，语音识别（ASR）的评估仍以短格式英语为主，且效率很少被报告。我们推出了开放ASR排行榜，这是一个完全可复现的基准测试和互动排行榜，比较了来自11个数据集的60多个开源和专有系统，包括专门的多语言和长音频轨道。我们标准化了文本归一化并报告了词错误率（WER）和逆实时因子（RTFx），以实现公平的准确性与效率比较。对于英语转录，使用Conformer编码器与大型语言模型（LLM）解码器配对实现了最佳的平均WER，但速度较慢；而CTC和TDT解码器提供了好得多的RTFx，使其在长音频和离线使用中更具吸引力。针对英语微调的Whisper派生编码器提高了准确性，但往往牺牲了多语言覆盖。所有代码和数据集加载器均已开源，以支持透明和可扩展的评估。",
+    "paper_abstract_zh": "尽管进展迅速，语音识别（ASR）评估仍然以短格式英语为主，且效率很少被报告。我们推出开放ASR排行榜，这是一个完全可复现的基准测试和交互式排行榜，比较了11个数据集上的60多个开源和专有系统，包括专门的多语言和长格式轨道。我们标准化了文本归一化，并报告了词错率（WER）和逆实时因子（RTFx），从而实现公平的准确性与效率比较。对于英语转录，使用LLM解码器的Conformer编码器实现了最佳的平均WER，但速度较慢；而CTC和TDT解码器提供了更好的RTFx，使其在长格式和离线应用中更具吸引力。针对英语精调的Whisper编码器提高了准确性，但常常牺牲多语言覆盖范围。所有代码和数据集加载器均已开源，以支持透明和可扩展的评估。",
     "subjects": [
-      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
       "Artificial Intelligence (cs.AI)",
-      "Computation and Language (cs.CL)"
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-09",
     "paper_authors": "Vaibhav Srivastav, Steven Zheng, Eric Bezzam, Eustache Le Bihan, Nithin Koluguri, Piotr Żelasko, Somshubra Majumdar, Adel Moumen, Sanchit Gandhi",
@@ -226,10 +225,10 @@
   },
   {
     "paper_title": "Making Machines Sound Sarcastic: LLM-Enhanced and Retrieval-Guided Sarcastic Speech Synthesis",
-    "paper_title_zh": "让机器说话带讽刺：LLM增强与检索引导的讽刺语音合成",
+    "paper_title_zh": "使机器听起来带有讽刺：基于LLM增强和检索引导的讽刺语音合成",
     "paper_id": "2510.07096",
     "paper_abstract": "Sarcasm is a subtle form of non-literal language that poses significant challenges for speech synthesis due to its reliance on nuanced semantic, contextual, and prosodic cues. While existing speech synthesis research has focused primarily on broad emotional categories, sarcasm remains largely unexplored. In this paper, we propose a Large Language Model (LLM)-enhanced Retrieval-Augmented framework for sarcasm-aware speech synthesis. Our approach combines (1) semantic embeddings from a LoRA-fine-tuned LLaMA 3, which capture pragmatic incongruity and discourse-level cues of sarcasm, and (2) prosodic exemplars retrieved via a Retrieval Augmented Generation (RAG) module, which provide expressive reference patterns of sarcastic delivery. Integrated within a VITS backbone, this dual conditioning enables more natural and contextually appropriate sarcastic speech. Experiments demonstrate that our method outperforms baselines in both objective measures and subjective evaluations, yielding improvements in speech naturalness, sarcastic expressivity, and downstream sarcasm detection.",
-    "paper_abstract_zh": "讽刺是一种微妙且非字面意义的语言形式，由于其依赖于细微的语义、上下文和韵律线索，对语音合成提出了重大挑战。虽然现有的语音合成研究主要关注广泛的情感类别，但讽刺在很大程度上仍未被探索。本文提出了一种基于大型语言模型（LLM）增强的检索增强框架，用于实现讽刺感知的语音合成。我们的方法结合了：（1）来自经过LoRa微调的LLaMA 3的语义嵌入，它能捕捉讽刺的语用不一致性和话语级线索；（2）通过检索增强生成（RAG）模块检索的韵律范例，它提供了讽刺性表达的表达性参考模式。在VITS主干网络中，这种双重条件化实现了更自然和语境恰当的讽刺语音。实验表明，我们的方法在客观指标和主观评估中均优于基线，在语音自然性、讽刺表现力和下游讽刺检测方面均有提升。",
+    "paper_abstract_zh": "讽刺是一种非字面语言的微妙形式，由于其依赖于细微的语义、语境和韵律线索，对语音合成构成了重大挑战。虽然现有的语音合成研究主要关注广泛情感类别，但讽刺在很大程度上仍未被探索。在本文中，我们提出了一种基于大型语言模型（LLM）增强的检索增强框架，用于具有讽刺意识的语音合成。我们的方法结合了（1）来自LoRA微调的LLaMA 3的语义嵌入，这些嵌入捕捉了讽刺的语用不一致性和话语级线索，以及（2）通过检索增强生成（RAG）模块检索的韵律范例，这些范例提供了讽刺表达的富有表现力的参考模式。集成在VITS主干中，这种双重条件使得讽刺语音更加自然且语境适当。实验证明，我们的方法在客观指标和主观评估中都优于基线，提高了语音自然度、讽刺表现力和下游讽刺检测能力。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Computation and Language (cs.CL)",
@@ -239,7 +238,7 @@
     "paper_authors": "Zhu Li, Yuqing Zhang, Xiyuan Gao, Shekhar Nayak, Matt Coler",
     "topic": [
       "Speech Synthesis",
-      "Speech Recognition"
+      "Audio Representation Learning"
     ],
     "category": [
       "Speech"
@@ -247,24 +246,24 @@
   },
   {
     "paper_title": "AudioMarathon: A Comprehensive Benchmark for Long-Context Audio Understanding and Efficiency in Audio LLMs",
-    "paper_title_zh": "AudioMarathon: 针对长上下文音频理解与效率的综合基准测试",
+    "paper_title_zh": "AudioMarathon：一个用于长上下文音频理解与效率评估的综合基准",
     "paper_id": "2510.07293",
     "paper_abstract": "Processing long-form audio is a major challenge for Large Audio Language models (LALMs). These models struggle with the quadratic cost of attention ($O(N^2)$) and with modeling long-range temporal dependencies. Existing audio benchmarks are built mostly from short clips and do not evaluate models in realistic long context settings. To address this gap, we introduce AudioMarathon, a benchmark designed to evaluate both understanding and inference efficiency on long-form audio. AudioMarathon provides a diverse set of tasks built upon three pillars: long-context audio inputs with durations ranging from 90.0 to 300.0 seconds, which correspond to encoded sequences of 2,250 to 7,500 audio tokens, respectively, full domain coverage across speech, sound, and music, and complex reasoning that requires multi-hop inference. We evaluate state-of-the-art LALMs and observe clear performance drops as audio length grows. We also study acceleration techniques and analyze the trade-offs of token pruning and KV cache eviction. The results show large gaps across current LALMs and highlight the need for better temporal reasoning and memory-efficient architectures. We believe AudioMarathon will drive the audio and multimodal research community to develop more advanced audio understanding models capable of solving complex audio tasks.",
-    "paper_abstract_zh": "处理长音频是大语言音频模型（LALMs）面临的主要挑战。这些模型在处理注意力机制的平方成本（$O(N^2)$）和建模长程时间依赖关系方面存在困难。现有的音频基准测试大多基于短片段构建，无法在真实的长上下文场景中评估模型。为解决这一问题，我们推出了AudioMarathon基准测试，旨在评估长音频的理解能力与推理效率。AudioMarathon提供多样化的任务，其构建基于三大支柱：长上下文音频输入（时长从90.0秒到300.0秒，分别对应2,250至7,500个编码后的音频标记）、全领域覆盖（包括语音、声音和音乐）以及需要多跳推理的复杂推理。我们评估了当前最先进的LALMs，并观察到随着音频长度增加，性能明显下降。我们还研究了加速技术，并分析了标记修剪和KV缓存驱逐的权衡。结果显示当前LALMs之间存在巨大差距，并凸显了改进时间推理和内存高效架构的必要性。我们相信AudioMarathon将推动音频和多模态研究社区开发更先进的音频理解模型，以解决复杂音频任务。",
+    "paper_abstract_zh": "处理长格式音频是大音频语言模型（LALMs）面临的主要挑战。这些模型在处理注意力机制的平方成本（$O(N^2)$）和建模长程时间依赖方面存在困难。现有的音频基准大多基于短片段构建，无法在真实的长上下文场景中评估模型。为填补这一空白，我们推出了AudioMarathon，这是一个旨在评估长音频理解能力和推理效率的基准。AudioMarathon提供多样化的任务集，基于三大支柱：长上下文音频输入（时长90.0至300.0秒，对应编码后序列为2,250至7,500个音频令牌）、全领域覆盖（包括语音、声音和音乐）以及需要多跳推理的复杂推理。我们评估了当前最先进的LALMs，并观察到随着音频长度增加，性能明显下降。我们还研究了加速技术，并分析了令牌修剪和KV缓存驱逐的权衡。结果显示当前LALMs之间存在巨大差距，并突显了改进时间推理和内存高效架构的必要性。我们相信AudioMarathon将推动音频与多模态研究社区开发更先进的音频理解模型，以解决复杂音频任务。",
     "subjects": [
-      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
       "Artificial Intelligence (cs.AI)",
-      "Computation and Language (cs.CL)"
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-09",
     "paper_authors": "Peize He, Zichen Wen, Yubo Wang, Yuxuan Wang, Xiaoqian Liu, Jiajie Huang, Zehui Lei, Zhuangcheng Gu, Xiangqi Jin, Jiabing Yang, Kai Li, Zhifei Liu, Weijia Li, Cunxiang Wang, Conghui He, Linfeng Zhang",
     "topic": [
       "Audio Representation Learning",
-      "Audio Classification"
+      "Speech Recognition"
     ],
     "category": [
-      "Other"
+      "Speech"
     ]
   }
 ]

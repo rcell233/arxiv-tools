@@ -13,7 +13,7 @@ from datetime import datetime
 # OpenRouter API配置
 API_KEY = value = os.environ["API_KEY"]
 BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = "deepseek/deepseek-chat-v3.1:free"
+MODEL = "z-ai/glm-4.5-air:free"
 
 def load_config(config_path: str = "config.yaml") -> Dict[str, List[str]]:
     """加载配置文件中的topic、category候选列表和白名单subjects"""
@@ -115,71 +115,72 @@ def process_paper_complete(paper: Dict[str, Any], config: Dict[str, List[str]]) 
     # 添加重试机制
     max_retries = 3
     for attempt in range(max_retries):
-        # try:
-        response = requests.post(BASE_URL, headers=headers, json=data, timeout=60)
-        response.raise_for_status()
-        
-        result = response.json()
-        content = result['choices'][0]['message']['content']
-        
-        # 尝试解析JSON响应
         try:
-            # 提取JSON部分（可能包含在代码块中）
-            if '```json' in content:
-                json_start = content.find('```json') + 7
-                json_end = content.find('```', json_start)
-                json_content = content[json_start:json_end].strip()
-            elif '{' in content and '}' in content:
-                json_start = content.find('{')
-                json_end = content.rfind('}') + 1
-                json_content = content[json_start:json_end]
-            else:
-                json_content = content
+            response = requests.post(BASE_URL, headers=headers, json=data, timeout=60)
+            response.raise_for_status()
             
-            result_data = json.loads(json_content)
+            result = response.json()
+            print(result)
+            content = result['choices'][0]['message']['content']
             
-            # 提取翻译结果
-            paper_title_zh = result_data.get("paper_title_zh", "")
-            paper_abstract_zh = result_data.get("paper_abstract_zh", "")
-            
-            # 验证分类结果
-            topic = result_data.get("topic", [])
-            category = result_data.get("category", [])
-            
-            # 确保topic和category是列表
-            if not isinstance(topic, list):
-                topic = [topic] if topic else []
-            if not isinstance(category, list):
-                category = [category] if category else []
-            
-            # 验证topic是否在候选列表中
-            valid_topics = []
-            for t in topic:
-                if t in config['all_topic']:
-                    valid_topics.append(t)
+            # 尝试解析JSON响应
+            try:
+                # 提取JSON部分（可能包含在代码块中）
+                if '```json' in content:
+                    json_start = content.find('```json') + 7
+                    json_end = content.find('```', json_start)
+                    json_content = content[json_start:json_end].strip()
+                elif '{' in content and '}' in content:
+                    json_start = content.find('{')
+                    json_end = content.rfind('}') + 1
+                    json_content = content[json_start:json_end]
                 else:
-                    print(f"警告：topic '{t}' 不在候选列表中")
-            
-            # 验证category是否在候选列表中
-            valid_categories = []
-            for c in category:
-                if c in config['all_category']:
-                    valid_categories.append(c)
-                else:
-                    print(f"警告：category '{c}' 不在候选列表中")
-            
-            return {
-                "paper_title_zh": paper_title_zh,
-                "paper_abstract_zh": paper_abstract_zh,
-                "topic": valid_topics,
-                "category": valid_categories
-            }
-            
-        except json.JSONDecodeError as e:
-            print(f"JSON解析错误 (尝试 {attempt+1}/{max_retries}): {e}")
-            if attempt == max_retries - 1:
-                print(f"原始响应: {content}")
-                return {"paper_title_zh": "", "paper_abstract_zh": "", "topic": [], "category": []}
+                    json_content = content
+                
+                result_data = json.loads(json_content)
+                
+                # 提取翻译结果
+                paper_title_zh = result_data.get("paper_title_zh", "")
+                paper_abstract_zh = result_data.get("paper_abstract_zh", "")
+                
+                # 验证分类结果
+                topic = result_data.get("topic", [])
+                category = result_data.get("category", [])
+                
+                # 确保topic和category是列表
+                if not isinstance(topic, list):
+                    topic = [topic] if topic else []
+                if not isinstance(category, list):
+                    category = [category] if category else []
+                
+                # 验证topic是否在候选列表中
+                valid_topics = []
+                for t in topic:
+                    if t in config['all_topic']:
+                        valid_topics.append(t)
+                    else:
+                        print(f"警告：topic '{t}' 不在候选列表中")
+                
+                # 验证category是否在候选列表中
+                valid_categories = []
+                for c in category:
+                    if c in config['all_category']:
+                        valid_categories.append(c)
+                    else:
+                        print(f"警告：category '{c}' 不在候选列表中")
+                
+                return {
+                    "paper_title_zh": paper_title_zh,
+                    "paper_abstract_zh": paper_abstract_zh,
+                    "topic": valid_topics,
+                    "category": valid_categories
+                }
+                
+            except json.JSONDecodeError as e:
+                print(f"JSON解析错误 (尝试 {attempt+1}/{max_retries}): {e}")
+                if attempt == max_retries - 1:
+                    print(f"原始响应: {content}")
+                    return {"paper_title_zh": "", "paper_abstract_zh": "", "topic": [], "category": []}
                 
         # except requests.exceptions.RequestException as e:
         #     print(f"API请求错误 (尝试 {attempt+1}/{max_retries}): {e}")
@@ -189,10 +190,10 @@ def process_paper_complete(paper: Dict[str, Any], config: Dict[str, List[str]]) 
         #         time.sleep(wait_time)
         #     elif attempt == max_retries - 1:
         #         return {"paper_title_zh": "", "paper_abstract_zh": "", "topic": [], "category": []}
-        # except Exception as e:
-        #     print(f"未知错误 (尝试 {attempt+1}/{max_retries}): {e}")
-        #     if attempt == max_retries - 1:
-        #         return {"paper_title_zh": "", "paper_abstract_zh": "", "topic": [], "category": []}
+        except Exception as e:
+            print(f"未知错误 (尝试 {attempt+1}/{max_retries}): {e}")
+            if attempt == max_retries - 1:
+                return {"paper_title_zh": "", "paper_abstract_zh": "", "topic": [], "category": []}
     
     return {"paper_title_zh": "", "paper_abstract_zh": "", "topic": [], "category": []}
 
