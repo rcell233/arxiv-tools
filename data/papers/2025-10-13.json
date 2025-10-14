@@ -67,10 +67,10 @@
   },
   {
     "paper_title": "Look before Transcription: End-to-End SlideASR with Visually-Anchored Policy Optimization",
-    "paper_title_zh": "",
+    "paper_title_zh": "转录前先观察：基于视觉锚定策略优化的端到端SlideASR",
     "paper_id": "2510.08618",
     "paper_abstract": "Automatic speech recognition (ASR) systems often struggle with domain-specific terminology, especially in specialized settings such as academic lectures. To address this, we define the SlideASR task, which leverages the rich visual information from presentation slides to improve transcription accuracy. Existing pipeline methods for this task tend to be complex and underperform. Although omni-modal large language models (OLLMs) provide a promising end-to-end framework, they frequently fail in practice by degenerating into simple optical character recognition (OCR) systems. To overcome this, we propose Visually-Anchored Policy Optimization (VAPO), a novel post-training method designed to control the model's reasoning process. Drawing on the Chain-of-Thought reasoning paradigm, VAPO enforces a structured \"Look before Transcription\" procedure using a <think><answer> format. Specifically, the model first performs OCR on the slide content within the think step, then generates the transcription by referencing this recognized visual information in the answer step. This reasoning process is optimized via reinforcement learning with four distinct rewards targeting format compliance, OCR accuracy, ASR quality, and visual anchoring consistency. To support further research, we construct SlideASR-Bench, a new entity-rich benchmark consisting of a synthetic dataset for training and testing, and a challenging real-world set for evaluation. Extensive experiments demonstrate that VAPO significantly improves recognition of domain-specific terms, establishing an effective end-to-end paradigm for SlideASR.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "自动语音识别(ASR)系统通常难以处理领域特定术语，特别是在学术讲座等专业场景中。为此，我们定义了SlideASR任务，该任务利用演示幻灯片的丰富视觉信息来提高转录准确性。该任务的现有流水线方法往往复杂且性能不佳。尽管多模态大语言模型(OLLMs)提供了一个有前途的端到端框架，但它们在实践中经常退化为简单的光学字符识别(OCR)系统。为克服这一问题，我们提出了视觉锚定策略优化(VAPO)，这是一种新颖的后训练方法，旨在控制模型的推理过程。借鉴思维链(Chain-of-Thought)推理范式，VAPO使用格式强制执行结构化的\"转录前先观察\"程序。具体而言，模型在思考步骤中对幻灯片内容执行OCR，然后在回答步骤中通过引用此识别的视觉信息生成转录。通过针对格式合规性、OCR准确性、ASR质量和视觉锚定一致性四个不同奖励的强化学习来优化此推理过程。为支持进一步研究，我们构建了SlideASR-Bench，这是一个包含用于训练和测试的合成数据集以及用于评估的具有挑战性的真实世界数据集的新实体丰富基准。大量实验证明，VAPO显著提高了领域特定术语的识别率，为SlideASR建立了有效的端到端范式。",
     "subjects": [
       "Computer Vision and Pattern Recognition (cs.CV)",
       "Audio and Speech Processing (eess.AS)",
@@ -78,8 +78,13 @@
     ],
     "update_time": "2025-10-13",
     "paper_authors": "Rui Hu, Delai Qiu, Yining Wang, Shengping Liu, Jitao Sang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Impact of HRTF individualisation and head movements in a real/virtual localisation task",
