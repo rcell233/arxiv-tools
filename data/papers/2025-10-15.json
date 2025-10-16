@@ -139,10 +139,10 @@
   },
   {
     "paper_title": "SeeingSounds: Learning Audio-to-Visual Alignment via Text",
-    "paper_title_zh": "",
+    "paper_title_zh": "SeeingSounds: 通过文本学习音频到视觉的 alignment",
     "paper_id": "2510.11738",
     "paper_abstract": "We introduce SeeingSounds, a lightweight and modular framework for audio-to-image generation that leverages the interplay between audio, language, and vision-without requiring any paired audio-visual data or training on visual generative models. Rather than treating audio as a substitute for text or relying solely on audio-to-text mappings, our method performs dual alignment: audio is projected into a semantic language space via a frozen language encoder, and, contextually grounded into the visual domain using a vision-language model. This approach, inspired by cognitive neuroscience, reflects the natural cross-modal associations observed in human perception. The model operates on frozen diffusion backbones and trains only lightweight adapters, enabling efficient and scalable learning. Moreover, it supports fine-grained and interpretable control through procedural text prompt generation, where audio transformations (e.g., volume or pitch shifts) translate into descriptive prompts (e.g., \"a distant thunder\") that guide visual outputs. Extensive experiments across standard benchmarks confirm that SeeingSounds outperforms existing methods in both zero-shot and supervised settings, establishing a new state of the art in controllable audio-to-visual generation.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们介绍了 SeeingSounds，这是一个轻量级且模块化的音频到图像生成框架，它利用了音频、语言和视觉之间的相互作用，而无需任何成对的音频视觉数据或对视觉生成模型的训练。我们的方法不将音频视为文本的替代品或仅依赖音频到文本的映射，而是执行双重对齐：音频通过冻结的语言编码器投影到语义语言空间中，并使用视觉语言模型上下文地嵌入到视觉领域。这种方法受到认知神经科学的启发，反映了人类感知中观察到的自然跨模态关联。该模型在冻结的扩散主干上运行，仅训练轻量级适配器，实现高效和可扩展的学习。此外，它通过程序文本提示生成支持细粒度和可解释的控制，其中音频转换（如音量或音高变化）转换为描述性提示（如\"远处的雷声\"），从而指导视觉输出。在标准基准上的广泛实验证实，SeeingSounds 在零样本和监督设置下都优于现有方法，确立了可控音频到视觉生成的新技术水平。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -151,8 +151,13 @@
     ],
     "update_time": "2025-10-15",
     "paper_authors": "Simone Carnemolla, Matteo Pennisi, Chiara Russo, Simone Palazzo, Daniela Giordano, Concetto Spampinato",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Image Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
   },
   {
     "paper_title": "Audio-Guided Visual Perception for Audio-Visual Navigation",

@@ -141,10 +141,10 @@
   },
   {
     "paper_title": "ProGress: Structured Music Generation via Graph Diffusion and Hierarchical Music Analysis",
-    "paper_title_zh": "",
+    "paper_title_zh": "ProGress：基于图扩散和层次音乐分析的结构化音乐生成",
     "paper_id": "2510.10249",
     "paper_abstract": "Artificial Intelligence (AI) for music generation is undergoing rapid developments, with recent symbolic models leveraging sophisticated deep learning and diffusion model algorithms. One drawback with existing models is that they lack structural cohesion, particularly on harmonic-melodic structure. Furthermore, such existing models are largely \"black-box\" in nature and are not musically interpretable. This paper addresses these limitations via a novel generative music framework that incorporates concepts of Schenkerian analysis (SchA) in concert with a diffusion modeling framework. This framework, which we call ProGress (Prolongation-enhanced DiGress), adapts state-of-the-art deep models for discrete diffusion (in particular, the DiGress model of Vignac et al., 2023) for interpretable and structured music generation. Concretely, our contributions include 1) novel adaptations of the DiGress model for music generation, 2) a novel SchA-inspired phrase fusion methodology, and 3) a framework allowing users to control various aspects of the generation process to create coherent musical compositions. Results from human experiments suggest superior performance to existing state-of-the-art methods.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "人工智能在音乐生成领域正经历快速发展，最近的符号模型利用了复杂的深度学习和扩散模型算法。现有模型的一个缺点是它们缺乏结构性凝聚力，特别是在和声-旋律结构方面。此外，这些现有模型本质上是'黑盒'，且缺乏音乐可解释性。本文通过一种新颖的生成音乐框架解决了这些局限性，该框架结合了申克分析(SchA)的概念和扩散建模框架。我们将此框架命名为ProGress（延长增强型DiGress），它适配了最先进的离散深度模型（特别是Vignac等人2023年的DiGress模型），用于可解释和结构化的音乐生成。具体而言，我们的贡献包括：1) 对DiGress模型进行新颖的适配以用于音乐生成；2) 一种新颖的受SchA启发的乐句融合方法；3) 一个允许用户控制生成过程各个方面以创建连贯音乐作品的框架。人类实验结果表明，该方法优于现有的最先进方法。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Audio and Speech Processing (eess.AS)",
@@ -152,8 +152,13 @@
     ],
     "update_time": "2025-10-14",
     "paper_authors": "Stephen Ni-Hahn, Chao Péter Yang, Mingchen Ma, Cynthia Rudin, Simon Mak, Yue Jiang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Bhasha-Rupantarika: Algorithm-Hardware Co-design approach for Multilingual Neural Machine Translation",
