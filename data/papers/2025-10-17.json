@@ -1,14 +1,14 @@
 [
   {
     "paper_title": "Switchboard-Affect: Emotion Perception Labels from Conversational Speech",
-    "paper_title_zh": "Switchboard-Affect：来自对话语音的情感感知标签",
+    "paper_title_zh": "Switchboard-Affect: 来自对话语音的情感感知标签",
     "paper_id": "2510.13906",
     "paper_abstract": "Understanding the nuances of speech emotion dataset curation and labeling is essential for assessing speech emotion recognition (SER) model potential in real-world applications. Most training and evaluation datasets contain acted or pseudo-acted speech (e.g., podcast speech) in which emotion expressions may be exaggerated or otherwise intentionally modified. Furthermore, datasets labeled based on crowd perception often lack transparency regarding the guidelines given to annotators. These factors make it difficult to understand model performance and pinpoint necessary areas for improvement. To address this gap, we identified the Switchboard corpus as a promising source of naturalistic conversational speech, and we trained a crowd to label the dataset for categorical emotions (anger, contempt, disgust, fear, sadness, surprise, happiness, tenderness, calmness, and neutral) and dimensional attributes (activation, valence, and dominance). We refer to this label set as Switchboard-Affect (SWB-Affect). In this work, we present our approach in detail, including the definitions provided to annotators and an analysis of the lexical and paralinguistic cues that may have played a role in their perception. In addition, we evaluate state-of-the-art SER models, and we find variable performance across the emotion categories with especially poor generalization for anger. These findings underscore the importance of evaluation with datasets that capture natural affective variations in speech. We release the labels for SWB-Affect to enable further analysis in this domain.",
-    "paper_abstract_zh": "理解语音情感数据集构建和标注的细微差别对于评估语音情感识别(SER)模型在现实世界应用中的潜力至关重要。大多数训练和评估数据集包含表演或伪表演语音(例如播客语音)，其中情感表达可能被夸大或以其他方式有意修改。此外，基于群体感知标注的数据集通常缺乏提供给标注者的指导方针的透明度。这些因素使得难以理解模型性能并确定必要的改进领域。为了解决这一差距，我们确定了Switchboard语料库作为自然对话语音的有前途来源，并训练了一组人员对数据集进行分类情感(愤怒、蔑视、厌恶、恐惧、悲伤、惊讶、幸福、温柔、平静和中性)和维度属性(激活度、效价和支配性)的标注。我们将此标签集称为Switchboard-Affect (SWB-Affect)。在这项工作中，我们详细介绍了我们的方法，包括提供给标注者的定义以及对可能影响其感知的词汇和副语言线索的分析。此外，我们评估了最先进的SER模型，发现不同情感类别之间的性能存在差异，特别是愤怒情感的泛化能力较差。这些发现强调了使用能够捕捉语音中自然情感变化的数据集进行评估的重要性。我们发布了SWB-Affect的标签，以促进该领域的进一步分析。",
+    "paper_abstract_zh": "理解语音情感数据集构建和标注的细微差别对于评估语音情感识别(SER)模型在实际应用中的潜力至关重要。大多数训练和评估数据集包含表演或伪表演语音(如播客语音)，其中情感表达可能被夸大或以其他方式有意修改。此外，基于群体感知标注的数据集通常缺乏提供给标注者的指导方针的透明度。这些因素使得难以理解模型性能并确定必要的改进领域。为了解决这一差距，我们确定了Switchboard语料库作为自然对话语音的有前途来源，并训练了一组人群为数据集标注分类情感(愤怒、轻蔑、厌恶、恐惧、悲伤、惊讶、幸福、温柔、平静和中性)和维度属性(激活度、效价和支配性)。我们将此标签集称为Switchboard-Affect (SWB-Affect)。在这项工作中，我们详细介绍了我们的方法，包括提供给标注者的定义以及可能影响其感知的词汇和副语言线索的分析。此外，我们评估了最先进的SER模型，发现不同情感类别的性能存在差异，特别是愤怒情感的泛化能力较差。这些发现强调了使用能够捕捉语音中自然情感变化的数据集进行评估的重要性。我们发布了SWB-Affect的标签，以促进该领域的进一步分析。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
-      "Machine Learning (cs.LG)",
-      "Sound (cs.SD)"
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
     ],
     "update_time": "2025-10-17",
     "paper_authors": "Amrit Romana, Jaya Narain, Tien Dung Tran, Andrea Davis, Jason Fong, Ramya Rasipuram, Vikramjit Mitra",
@@ -25,7 +25,7 @@
     "paper_title_zh": "面向多通道神经说话人分离的空间感知自监督模型",
     "paper_id": "2510.14551",
     "paper_abstract": "Self-supervised models such as WavLM have demonstrated strong performance for neural speaker diarization. However, these models are typically pre-trained on single-channel recordings, limiting their effectiveness in multi-channel scenarios. Existing diarization systems built on these models often rely on DOVER-Lap to combine outputs from individual channels. Although effective, this approach incurs substantial computational overhead and fails to fully exploit spatial information. In this work, building on DiariZen, a pipeline that combines WavLM-based local endto-end neural diarization with speaker embedding clustering, we introduce a lightweight approach to make pre-trained WavLM spatially aware by inserting channel communication modules into the early layers. Our method is agnostic to both the number of microphone channels and array topologies, ensuring broad applicability. We further propose to fuse multi-channel speaker embeddings by leveraging spatial attention weights. Evaluations on five public datasets show consistent improvements over single-channel baselines and demonstrate superior performance and efficiency compared with DOVER-Lap. Our source code is publicly available at this https URL.",
-    "paper_abstract_zh": "像WavLM这样的自监督模型在神经说话人分离任务中表现出强大的性能。然而，这些模型通常在单通道录音上进行预训练，限制了它们在多通道场景中的有效性。基于这些模型构建的现有分离系统通常依赖于DOVER-Lap来合并各个通道的输出。尽管这种方法有效，但它会带来大量的计算开销，并且无法充分利用空间信息。在这项工作中，我们在DiariZen（一个结合了基于WavLM的局部端到端神经说话人分离与说话人嵌入聚类的流水线）的基础上，提出了一种轻量级方法，通过在早期层中插入通道通信模块，使预训练的WavLM具备空间感知能力。我们的方法对麦克风通道数量和阵列拓扑结构均无要求，确保了广泛的适用性。我们进一步提出利用空间注意力权重来融合多通道说话人嵌入。在五个公共数据集上的评估结果表明，该方法相比单通道基线取得了持续改进，并且与DOVER-Lap相比展现出更优的性能和效率。我们的源代码已在提供的URL上公开。",
+    "paper_abstract_zh": "像WavLM这样的自监督模型在神经说话人分离任务上表现出强大的性能。然而，这些模型通常是在单通道录音上进行预训练的，限制了它们在多通道场景中的有效性。基于这些模型现有的分离系统通常依赖DOVER-Lap来合并各个通道的输出。尽管这种方法有效，但它带来了大量的计算开销，并且未能充分利用空间信息。在这项工作中，我们在DiariZen的基础上进行扩展，DiariZen是一个结合了基于WavLM的局部端到端神经说话人分离和说话人嵌入聚类的流程。我们引入了一种轻量级方法，通过在早期层中插入通道通信模块，使预训练的WavLM具备空间感知能力。我们的方法对麦克风通道数量和阵列拓扑结构都保持不变，确保了广泛的适用性。我们进一步提出利用空间注意力权重来融合多通道说话人嵌入。在五个公共数据集上的评估显示，相比单通道基线方法取得了持续改进，并且与DOVER-Lap相比表现出更优越的性能和效率。我们的源代码已在提供的URL上公开。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -44,17 +44,17 @@
     "paper_title_zh": "音乐协和性：关于人类和其他动物听觉粗糙感感知与偏好的理论与证据综述",
     "paper_id": "2510.14159",
     "paper_abstract": "The origins of consonance in human music has long been contested, and today there are three primary hypotheses: aversion to roughness, preference for harmonicity, and learned preferences from cultural exposure. While the evidence is currently insufficient to disentangle the contributions of these hypotheses, I propose several reasons why roughness is an especially promising area for future study. The aim of this review is to summarize and critically evaluate roughness theory and models, experimental data, to highlight areas that deserve further research. I identify 2 key areas: There are fundamental issues with the definition and interpretation of results due to tautology in the definition of roughness, and the lack of independence in empirical measurements. Despite extensive model development, there are many duplications and models have issues with data quality and overfitting. Future theory development should aim for model simplicity, and extra assumptions, features and parameters should be evaluated systematically. Model evaluation should aim to maximise the breadth of stimuli that are predicted.",
-    "paper_abstract_zh": "人类音乐中协和性的起源一直存在争议，目前主要有三种假说：对粗糙感的厌恶、对和谐性的偏好以及文化习得偏好。尽管现有证据尚不足以厘清这些假说的贡献，但我提出了一些理由，说明粗糙感是未来研究特别有前景的领域。本综述旨在总结和批判性地评估粗糙感理论与模型、实验数据，并指出值得进一步研究的领域。我确定了两个关键问题：由于粗糙感定义中的循环论证和实证测量的缺乏独立性，导致定义和结果解释存在根本性问题；尽管模型开发广泛，但存在大量重复，且模型在数据质量和过拟合方面存在问题。未来的理论发展应追求模型简洁性，并系统评估额外的假设、特征和参数。模型评估应旨在最大化预测刺激的广度。",
+    "paper_abstract_zh": "人类音乐中协和性的起源一直存在争议，目前主要有三种假说：对粗糙感的厌恶、对和谐性的偏好以及文化接触形成的习得偏好。尽管现有证据尚不足以厘清这些假说的贡献，但我提出了几个原因，说明粗糙感是未来研究特别有前景的领域。本综述旨在总结和批判性地评估粗糙感理论与模型、实验数据，并指出值得进一步研究的领域。我确定了两个关键问题：由于粗糙感定义中的同义反复和经验测量中缺乏独立性，导致结果定义和解释存在根本性问题；尽管模型开发广泛，但存在大量重复，且模型在数据质量和过拟合方面存在问题。未来的理论发展应追求模型简洁性，并系统评估额外的假设、特征和参数。模型评估应最大化预测刺激的广度。",
     "subjects": [
-      "Audio and Speech Processing (eess.AS)",
+      "Physics and Society (physics.soc-ph)",
       "Sound (cs.SD)",
-      "Physics and Society (physics.soc-ph)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-17",
     "paper_authors": "John M. McBride",
     "topic": [
       "Music Information Retrieval",
-      "Audio Representation Learning"
+      "Other"
     ],
     "category": [
       "Music"
@@ -65,11 +65,11 @@
     "paper_title_zh": "联合语言-音频嵌入是否编码感知音色语义？",
     "paper_id": "2510.14249",
     "paper_abstract": "Understanding and modeling the relationship between language and sound is critical for applications such as music information retrieval,text-guided music generation, and audio captioning. Central to these tasks is the use of joint language-audio embedding spaces, which map textual descriptions and auditory content into a shared embedding space. While multimodal embedding models such as MS-CLAP, LAION-CLAP, and MuQ-MuLan have shown strong performance in aligning language and audio, their correspondence to human perception of timbre, a multifaceted attribute encompassing qualities such as brightness, roughness, and warmth, remains underexplored. In this paper, we evaluate the above three joint language-audio embedding models on their ability to capture perceptual dimensions of timbre. Our findings show that LAION-CLAP consistently provides the most reliable alignment with human-perceived timbre semantics across both instrumental sounds and audio effects.",
-    "paper_abstract_zh": "理解和建模语言与声音之间的关系对于音乐信息检索、文本引导的音乐生成和音频字幕标注等应用至关重要。这些任务的核心是使用联合语言-音频嵌入空间，将文本描述和听觉内容映射到共享的嵌入空间中。尽管多模态嵌入模型如MS-CLAP、LAION-CLAP和MuQ-MuLan在语言和音频对齐方面表现出强大的性能，但它们与人类对音色的感知（一个包含亮度、粗糙度和温暖度等多方面属性的特征）之间的对应关系仍未得到充分探索。在本文中，我们评估了上述三种联合语言-音频嵌入模型捕捉音色感知维度的能力。我们的研究结果表明，在乐器声音和音频效果中，LAION-CLAP始终能够提供与人类感知音色语义最可靠的对齐。",
+    "paper_abstract_zh": "理解和建模语言与声音之间的关系对于音乐信息检索、文本引导的音乐生成和音频字幕等应用至关重要。这些任务的核心是使用联合语言-音频嵌入空间，将文本描述和听觉内容映射到共享的嵌入空间中。尽管多模态嵌入模型如MS-CLAP、LAION-CLAP和MuQ-MuLan在语言和音频对齐方面表现出强大的性能，但它们与人类对音色的感知（一个包含亮度、粗糙度和温暖度等多方面属性的特征）之间的对应关系仍未得到充分探索。在本文中，我们评估了上述三种联合语言-音频嵌入模型在捕捉音色感知维度方面的能力。我们的研究结果表明，在乐器声音和音频效果中，LAION-CLAP始终能够提供与人类感知音色语义最可靠的对齐。",
     "subjects": [
-      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-10-17",
     "paper_authors": "Qixin Deng, Bryan Pardo, Thrasyvoulos N Pappas",
@@ -87,7 +87,7 @@
     "paper_title_zh": "基于混合词嵌入的鲁棒分类方法用于阿尔茨海默病的早期诊断",
     "paper_id": "2510.14332",
     "paper_abstract": "Early detection of Alzheimer's Disease (AD) is greatly beneficial to AD patients, leading to early treatments that lessen symptoms and alleviating financial burden of health care. As one of the leading signs of AD, language capability changes can be used for early diagnosis of AD. In this paper, I develop a robust classification method using hybrid word embedding and fine-tuned hyperparameters to achieve state-of-the-art accuracy in the early detection of AD. Specifically, we create a hybrid word embedding based on word vectors from Doc2Vec and ELMo to obtain perplexity scores of the sentences. The scores identify whether a sentence is fluent or not and capture semantic context of the sentences. I enrich the word embedding by adding linguistic features to analyze syntax and semantics. Further, we input an embedded feature vector into logistic regression and fine tune hyperparameters throughout the pipeline. By tuning hyperparameters of the machine learning pipeline (e.g., model regularization parameter, learning rate and vector size of Doc2Vec, and vector size of ELMo), I achieve 91% classification accuracy and an Area Under the Curve (AUC) of 97% in distinguishing early AD from healthy subjects. Based on my knowledge, my model with 91% accuracy and 97% AUC outperforms the best existing NLP model for AD diagnosis with an accuracy of 88% [32]. I study the model stability through repeated experiments and find that the model is stable even though the training data is split randomly (standard deviation of accuracy = 0.0403; standard deviation of AUC = 0.0174). This affirms our proposed method is accurate and stable. This model can be used as a large-scale screening method for AD, as well as a complementary examination for doctors to detect AD.",
-    "paper_abstract_zh": "阿尔茨海默病(AD)的早期检测对AD患者非常有益，可以及早治疗以减轻症状并减轻医疗保健的经济负担。作为AD的主要标志之一，语言能力的变化可用于AD的早期诊断。在本文中，我开发了一种使用混合词嵌入和微调超参数的鲁棒分类方法，以在AD早期检测中实现最先进的准确性。具体来说，我们基于Doc2Vec和ELMo的词向量创建混合词嵌入，以获取句子的困惑度分数。这些分数确定句子是否流畅，并捕捉句子的语义上下文。我通过添加语言特征来丰富词嵌入，以分析句法和语义。此外，我们将嵌入的特征向量输入逻辑回归，并在整个流程中微调超参数。通过调整机器学习流程的超参数（例如，模型正则化参数、学习率和Doc2Vec的向量大小以及ELMo的向量大小），我在区分早期AD和健康受试者时实现了91%的分类准确率和97%的曲线下面积(AUC)。根据我的知识，我的模型以91%的准确率和97%的AUC优于现有最佳AD诊断NLP模型（准确率为88%[32]）。我通过重复实验研究模型稳定性，发现即使训练数据随机分割，模型也是稳定的（准确率的标准差=0.0403；AUC的标准差=0.0174）。这证实了我们提出的方法是准确且稳定的。该模型可作为AD的大规模筛查方法，也可作为医生检测AD的补充检查。",
+    "paper_abstract_zh": "阿尔茨海默病(AD)的早期检测对AD患者非常有益，可以及早治疗以减轻症状并减轻医疗保健的经济负担。作为AD的主要标志之一，语言能力的变化可用于AD的早期诊断。在本文中，我开发了一种使用混合词嵌入和微调超参数的鲁棒分类方法，以在AD早期检测中实现最先进的准确率。具体而言，我们基于Doc2Vec和ELMo的词向量创建混合词嵌入，以获得句子的困惑度分数。这些分数识别句子是否流畅，并捕捉句子的语义上下文。我通过添加语言特征来丰富词嵌入，以分析句法和语义。此外，我们将嵌入的特征向量输入逻辑回归，并在整个流程中微调超参数。通过调整机器学习流程的超参数（例如，模型正则化参数、学习率、Doc2Vec的向量大小和ELMo的向量大小），我在区分早期AD和健康受试者方面实现了91%的分类准确率和97%的曲线下面积(AUC)。据我所知，我的模型以91%的准确率和97%的AUC优于现有的最佳AD诊断NLP模型（准确率为88%[32]）。我通过重复实验研究了模型的稳定性，发现即使训练数据随机分割，模型也是稳定的（准确率的标准差=0.0403；AUC的标准差=0.0174）。这证实了我们提出的方法是准确且稳定的。该模型可作为AD的大规模筛查方法，也可作为医生检测AD的补充检查。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Artificial Intelligence (cs.AI)",
@@ -105,36 +105,37 @@
   },
   {
     "paper_title": "Revisit Modality Imbalance at the Decision Layer",
-    "paper_title_zh": "重新审视决策层中的模态不平衡问题",
+    "paper_title_zh": "重新审视决策层的模态不平衡问题",
     "paper_id": "2510.14411",
     "paper_abstract": "Multimodal learning integrates information from different modalities to enhance model performance, yet it often suffers from modality imbalance, where dominant modalities overshadow weaker ones during joint optimization. This paper reveals that such an imbalance not only occurs during representation learning but also manifests significantly at the decision layer. Experiments on audio-visual datasets (CREMAD and Kinetic-Sounds) show that even after extensive pretraining and balanced optimization, models still exhibit systematic bias toward certain modalities, such as audio. Further analysis demonstrates that this bias originates from intrinsic disparities in feature-space and decision-weight distributions rather than from optimization dynamics alone. We argue that aggregating uncalibrated modality outputs at the fusion stage leads to biased decision-layer weighting, hindering weaker modalities from contributing effectively. To address this, we propose that future multimodal systems should focus more on incorporate adaptive weight allocation mechanisms at the decision layer, enabling relative balanced according to the capabilities of each modality.",
-    "paper_abstract_zh": "多模态学习整合来自不同模态的信息以增强模型性能，但在联合优化过程中，它常常受到模态不平衡的影响，即主导模态会掩盖较弱的模态。本文揭示这种不平衡不仅发生在表示学习阶段，而且在决策层也显著存在。在音频-视觉数据集（CREMAD和Kinetic-Sounds）上的实验表明，即使在广泛的预训练和平衡优化之后，模型仍然表现出对某些模态（如音频）的系统性偏向。进一步的分析表明，这种偏差源于特征空间和决策权重分布的内在差异，而不仅仅是优化动态的结果。我们认为，在融合阶段聚合未校准的模态输出会导致决策层权重的偏差，阻碍较弱模态的有效贡献。为此，我们建议未来的多模态系统应更注重在决策层纳入自适应权重分配机制，以便根据各模态的能力实现相对平衡。",
+    "paper_abstract_zh": "多模态学习整合来自不同模态的信息以增强模型性能，但在联合优化过程中，它常常受到模态不平衡的影响，即主导模态会掩盖较弱的模态。本文揭示这种不平衡不仅出现在表示学习阶段，而且在决策层也显著存在。在音频-视觉数据集（CREMAD和Kinetic-Sounds）上的实验表明，即使经过广泛的预训练和平衡优化，模型仍然表现出对某些模态（如音频）的系统偏差。进一步分析表明，这种偏差源于特征空间和决策权重分布的内在差异，而不仅仅是优化动态的结果。我们认为，在融合阶段聚合未校准的模态输出会导致决策层的权重分配偏差，阻碍较弱模态的有效贡献。为此，我们建议未来的多模态系统应更注重在决策层纳入自适应权重分配机制，使各模态能够根据其能力实现相对平衡。",
     "subjects": [
-      "Machine Learning (cs.LG)",
-      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
       "Multimedia (cs.MM)",
-      "Audio and Speech Processing (eess.AS)"
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
     ],
     "update_time": "2025-10-17",
     "paper_authors": "Xiaoyu Ma, Hao Chen",
     "topic": [
+      "Audio Representation Learning",
       "Audio Classification",
       "Other"
     ],
     "category": [
-      "Speech"
+      "Other"
     ]
   },
   {
     "paper_title": "Big Data Approaches to Bovine Bioacoustics: A FAIR-Compliant Dataset and Scalable ML Framework for Precision Livestock Welfare",
-    "paper_title_zh": "牛类生物声学的大数据方法：符合FAIR标准的数据集和可扩展的机器学习框架用于精准畜牧福利",
+    "paper_title_zh": "牛类生物声学的大数据方法：一个符合FAIR标准的数据集和可扩展的机器学习框架，用于精准畜牧福利",
     "paper_id": "2510.14443",
     "paper_abstract": "The convergence of IoT sensing, edge computing, and machine learning is transforming precision livestock farming. Yet bioacoustic data streams remain underused because of computational complexity and ecological validity challenges. We present one of the most comprehensive bovine vocalization datasets to date, with 569 curated clips covering 48 behavioral classes, recorded across three commercial dairy farms using multiple microphone arrays and expanded to 2900 samples through domain informed augmentation. This FAIR compliant resource addresses major Big Data challenges - volume (90 hours of recordings, 65.6 GB), variety (multi farm and multi zone acoustics), velocity (real time processing), and veracity (noise robust feature extraction). Our distributed processing framework integrates advanced denoising using iZotope RX, multimodal synchronization through audio and video alignment, and standardized feature engineering with 24 acoustic descriptors generated from Praat, librosa, and openSMILE. Preliminary benchmarks reveal distinct class level acoustic patterns for estrus detection, distress classification, and maternal communication. The datasets ecological realism, reflecting authentic barn acoustics rather than controlled settings, ensures readiness for field deployment. This work establishes a foundation for animal centered AI, where bioacoustic data enable continuous and non invasive welfare assessment at industrial scale. By releasing standardized pipelines and detailed metadata, we promote reproducible research that connects Big Data analytics, sustainable agriculture, and precision livestock management. The framework supports UN SDG 9, showing how data science can turn traditional farming into intelligent, welfare optimized systems that meet global food needs while upholding ethical animal care.",
-    "paper_abstract_zh": "物联网传感、边缘计算和机器学习的融合正在改变精准畜牧养殖。然而，由于计算复杂性和生态有效性挑战，生物声学数据流仍未得到充分利用。我们迄今为止提出了最全面的牛类发声数据集之一，包含569个精选片段，涵盖48个行为类别，使用多个麦克风阵列在三个商业奶牛场录制，并通过领域信息增强扩展到2900个样本。这一符合FAIR标准的资源解决了主要的大数据挑战——体量（90小时录音，65.6 GB）、多样性（多农场和多区域声学）、速度（实时处理）和真实性（噪声鲁棒特征提取）。我们的分布式处理框架集成了使用iZotope RX的高级降噪、通过音频和视频对齐的多模态同步，以及使用从Praat、librosa和openSMILE生成的24个声学描述符的标准化特征工程。初步基准测试显示，在发情检测、痛苦分类和母性交流方面存在明显的类别级声学模式。该数据集的生态真实性反映了真实的谷仓声学而非受控环境，确保了现场部署的准备工作。这项工作为以动物为中心的人工智能奠定了基础，其中生物声学数据能够在工业规模上实现持续和非侵入性的福利评估。通过发布标准化流程和详细元数据，我们促进了可重复的研究，将大数据分析、可持续农业和精准畜牧管理联系起来。该框架支持联合国可持续发展目标9，展示了数据科学如何将传统农业转变为满足全球粮食需求同时坚持道德动物护理的智能化、福利优化系统。",
+    "paper_abstract_zh": "物联网传感、边缘计算和机器学习的融合正在改变精准畜牧养殖。然而，由于计算复杂性和生态有效性挑战，生物声学数据流仍未得到充分利用。我们提出了迄今为止最全面的牛类发声数据集之一，包含569个精选片段，涵盖48个行为类别，通过多个麦克风阵列在三个商业奶牛场录制，并通过领域信息增强扩展到2900个样本。这个符合FAIR标准的资源解决了主要的大数据挑战——体积（90小时录音，65.6 GB）、多样性（多农场和多区域声学）、速度（实时处理）和真实性（噪声鲁棒特征提取）。我们的分布式处理框架集成了使用iZotope RX的高级降噪、通过音频和视频对齐的多模态同步，以及使用从Praat、librosa和openSMILE生成的24个声学描述符的标准化特征工程。初步基准测试显示，发情检测、痛苦分类和母性交流方面存在明显的类别级声学模式。该数据集的生态真实性反映了真实的牛棚声学而非受控环境，确保了现场部署的可行性。这项工作为以动物为中心的人工智能奠定了基础，其中生物声学数据能够在工业规模上实现持续和非侵入性的福利评估。通过发布标准化流程和详细元数据，我们促进了可重复的研究，将大数据分析、可持续农业和精准畜牧管理联系起来。该框架支持联合国可持续发展目标9，展示了数据科学如何将传统农业转变为智能、福利优化的系统，在满足全球粮食需求的同时坚持道德的动物护理。",
     "subjects": [
-      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-10-17",
     "paper_authors": "Mayuri Kate, Suresh Neethirajan",
@@ -143,7 +144,7 @@
       "Audio Representation Learning"
     ],
     "category": [
-      "Other"
+      "Speech"
     ]
   },
   {
@@ -151,7 +152,7 @@
     "paper_title_zh": "AudioEval：文本到音频生成的双视角和多维度自动评估",
     "paper_id": "2510.14570",
     "paper_abstract": "Text-to-audio (TTA) is rapidly advancing, with broad potential in virtual reality, accessibility, and creative media. However, evaluating TTA quality remains difficult: human ratings are costly and limited, while existing objective metrics capture only partial aspects of perceptual quality. To address this gap, we introduce AudioEval, the first large-scale TTA evaluation dataset, containing 4,200 audio samples from 24 systems with 126,000 ratings across five perceptual dimensions, annotated by both experts and non-experts. Based on this resource, we propose Qwen-DisQA, a multimodal scoring model that jointly processes text prompts and generated audio to predict human-like quality ratings. Experiments show its effectiveness in providing reliable and scalable evaluation. The dataset will be made publicly available to accelerate future research.",
-    "paper_abstract_zh": "文本到音频（TTA）技术正在快速发展，在虚拟现实、无障碍访问和创意媒体领域具有广阔的应用前景。然而，评估TTA的质量仍然存在困难：人工评估成本高昂且有限，而现有的客观指标只能捕捉感知质量的部分方面。为解决这一差距，我们引入了AudioEval，这是首个大规模TTA评估数据集，包含来自24个系统的4200个音频样本，以及专家和非专家在五个感知维度上的126,000条评分。基于这一资源，我们提出了Qwen-DisQA，一个多模态评分模型，能够联合处理文本提示和生成的音频，以预测类人的质量评分。实验证明其在提供可靠且可扩展的评估方面的有效性。该数据集将公开发布，以加速未来研究。",
+    "paper_abstract_zh": "文本到音频（TTA）技术正在快速发展，在虚拟现实、无障碍和创意媒体领域具有广阔的应用潜力。然而，评估TTA的质量仍然存在困难：人工评估成本高昂且有限，而现有的客观指标只能捕捉感知质量的某些方面。为了解决这一差距，我们引入了AudioEval，这是首个大规模TTA评估数据集，包含来自24个系统的4,200个音频样本，以及专家和非专家在五个感知维度上提供的126,000个评分。基于这一资源，我们提出了Qwen-DisQA，一个多模态评分模型，它联合处理文本提示和生成的音频，以预测类人的质量评分。实验证明其在提供可靠和可扩展的评估方面的有效性。该数据集将公开发布，以加速未来的研究。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -171,7 +172,7 @@
     "paper_title_zh": "SpeechLLM-as-Judges: 通用且可解释的语音质量评估",
     "paper_id": "2510.14664",
     "paper_abstract": "Generative speech technologies are progressing rapidly, but evaluating the perceptual quality of synthetic speech remains a core challenge. Existing methods typically rely on scalar scores or binary decisions, which lack interpretability and generalization across tasks and languages. We present SpeechLLM-as-Judges, a new paradigm for enabling large language models (LLMs) to conduct structured and explanation-based speech quality evaluation. To support this direction, we introduce SpeechEval, a large-scale dataset containing 32,207 multilingual speech clips and 128,754 annotations spanning four tasks: quality assessment, pairwise comparison, improvement suggestion, and deepfake detection. Based on this resource, we develop SQ-LLM, a speech-quality-aware LLM trained with chain-of-thought reasoning and reward optimization to improve capability. Experimental results show that SQ-LLM delivers strong performance across tasks and languages, revealing the potential of this paradigm for advancing speech quality evaluation. Relevant resources will be open-sourced.",
-    "paper_abstract_zh": "生成式语音技术正在快速发展，但评估合成语音的感知质量仍然是一个核心挑战。现有方法通常依赖于标量分数或二元决策，这些方法缺乏跨任务和跨语言的可解释性和泛化能力。我们提出了SpeechLLM-as-Judges，这是一种新的范式，使大型语言模型（LLMs）能够进行结构化和基于解释的语音质量评估。为了支持这一方向，我们引入了SpeechEval，这是一个包含32,207个多语言语音片段和128,754个注释的大规模数据集，涵盖四个任务：质量评估、成对比较、改进建议和深度伪造检测。基于这一资源，我们开发了SQ-LLM，这是一个通过思维链推理和奖励优化的语音质量感知LLM，以提高其能力。实验结果表明，SQ-LLM在跨任务和跨语言方面表现出强大的性能，揭示了这一范式在推进语音质量评估方面的潜力。相关资源将开源。",
+    "paper_abstract_zh": "生成式语音技术正在快速发展，但评估合成语音的感知质量仍然是一个核心挑战。现有方法通常依赖于标量分数或二元决策，这些方法缺乏跨任务和跨语言的可解释性和泛化能力。我们提出了SpeechLLM-as-Judges，这是一种新范式，使大型语言模型（LLMs）能够进行结构化和基于解释的语音质量评估。为了支持这一方向，我们引入了SpeechEval，这是一个包含32,207个多语言语音片段和128,754个注释的大规模数据集，涵盖四个任务：质量评估、成对比较、改进建议和深度伪造检测。基于这一资源，我们开发了SQ-LLM，这是一个通过思维链推理和奖励优化训练的语音质量感知LLM，以提高其能力。实验结果表明，SQ-LLM在跨任务和跨语言方面表现出强大的性能，揭示了这一范式在推进语音质量评估方面的潜力。相关资源将开源。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -188,10 +189,10 @@
   },
   {
     "paper_title": "TRI-DEP: A Trimodal Comparative Study for Depression Detection Using Speech, Text, and EEG",
-    "paper_title_zh": "TRI-DEP：一种用于抑郁检测的三模态比较研究，使用语音、文本和脑电图",
+    "paper_title_zh": "TRI-DEP：一种使用语音、文本和脑电图进行抑郁检测的三模态比较研究",
     "paper_id": "2510.14922",
     "paper_abstract": "Depression is a widespread mental health disorder, yet its automatic detection remains challenging. Prior work has explored unimodal and multimodal approaches, with multimodal systems showing promise by leveraging complementary signals. However, existing studies are limited in scope, lack systematic comparisons of features, and suffer from inconsistent evaluation protocols. We address these gaps by systematically exploring feature representations and modelling strategies across EEG, together with speech and text. We evaluate handcrafted features versus pre-trained embeddings, assess the effectiveness of different neural encoders, compare unimodal, bimodal, and trimodal configurations, and analyse fusion strategies with attention to the role of EEG. Consistent subject-independent splits are applied to ensure robust, reproducible benchmarking. Our results show that (i) the combination of EEG, speech and text modalities enhances multimodal detection, (ii) pretrained embeddings outperform handcrafted features, and (iii) carefully designed trimodal models achieve state-of-the-art performance. Our work lays the groundwork for future research in multimodal depression detection.",
-    "paper_abstract_zh": "抑郁症是一种广泛存在的精神健康障碍，但其自动检测仍然具有挑战性。先前的研究探索了单模态和多模态方法，多模态系统通过利用互补信号显示出良好的前景。然而，现有研究范围有限，缺乏特征的系统比较，并且评估协议不一致。我们通过系统性地探索脑电图、语音和文本的特征表示和建模策略来解决这些差距。我们评估了手工设计特征与预训练嵌入的对比，评估了不同神经编码器的有效性，比较了单模态、双模态和三模态配置，并分析了融合策略，特别关注脑电图的作用。采用一致的受试者独立分割以确保稳健、可复现的基准测试。我们的结果表明：(i) 脑电图、语音和文本模态的结合增强了多模态检测，(ii) 预训练嵌入优于手工设计特征，(iii) 精心设计的三模态模型实现了最先进的性能。我们的工作为多模态抑郁检测的未来研究奠定了基础。",
+    "paper_abstract_zh": "抑郁症是一种广泛存在的精神健康障碍，但其自动检测仍然具有挑战性。先前的研究已经探索了单模态和多模态方法，其中多模态系统通过利用互补信号显示出潜力。然而，现有研究范围有限，缺乏特征的系统比较，并且评估协议不一致。我们通过系统性地探索脑电图、语音和文本的特征表示和建模策略来解决这些差距。我们评估了手工制作特征与预训练嵌入的有效性，评估了不同神经编码器的效果，比较了单模态、双模态和三模态配置，并分析了融合策略，特别关注脑电图的作用。采用一致的独立主体分割以确保稳健、可复现的基准测试。我们的结果表明：(i) 脑电图、语音和文本模态的组合增强了多模态检测，(ii) 预训练嵌入优于手工制作特征，(iii) 精心设计的三模态模型实现了最先进的性能。我们的工作为多模态抑郁检测的未来研究奠定了基础。",
     "subjects": [
       "Artificial Intelligence (cs.AI)",
       "Computation and Language (cs.CL)",
@@ -214,7 +215,7 @@
     "paper_title_zh": "将节拍检测作为目标检测",
     "paper_id": "2510.14391",
     "paper_abstract": "Recent beat and downbeat tracking models (e.g., RNNs, TCNs, Transformers) output frame-level activations. We propose reframing this task as object detection, where beats and downbeats are modeled as temporal \"objects.\" Adapting the FCOS detector from computer vision to 1D audio, we replace its original backbone with WaveBeat's temporal feature extractor and add a Feature Pyramid Network to capture multi-scale temporal patterns. The model predicts overlapping beat/downbeat intervals with confidence scores, followed by non-maximum suppression (NMS) to select final predictions. This NMS step serves a similar role to DBNs in traditional trackers, but is simpler and less heuristic. Evaluated on standard music datasets, our approach achieves competitive results, showing that object detection techniques can effectively model musical beats with minimal adaptation.",
-    "paper_abstract_zh": "最近的节拍和重音跟踪模型（如RNN、TCN、Transformer）输出帧级激活。我们提出将此任务重新框架为目标检测，其中节拍和重音被建模为时间'对象'。我们将计算机视觉中的FCOS检测器适配到1D音频，用WaveBeat的时间特征提取器替换其原始骨干网络，并添加特征金字塔网络以捕获多尺度时间模式。模型预测带有置信分数的重叠节拍/重音间隔，然后使用非极大值抑制（NMS）选择最终预测。这个NMS步骤在传统跟踪器中类似于DBN的作用，但更简单且启发式更少。在标准音乐数据集上评估，我们的方法取得了具有竞争力的结果，表明目标检测技术可以通过最小程度的有效适配来建模音乐节拍。",
+    "paper_abstract_zh": "最近的节拍和强拍跟踪模型（如RNN、TCN、Transformer）输出帧级激活。我们提出将此任务重新构建为目标检测，其中节拍和强拍被建模为时间'目标'。我们将计算机视觉中的FCOS检测器适配到一维音频，用WaveBeat的时间特征提取器替换其原始骨干网络，并添加特征金字塔网络以捕获多尺度时间模式。该模型预测带有置信度的重叠节拍/强拍区间，随后通过非极大值抑制（NMS）选择最终预测。这个NMS步骤在传统跟踪器中类似于DBN的作用，但更简单且启发式更少。在标准音乐数据集上的评估表明，我们的方法取得了具有竞争力的结果，表明目标检测技术只需最小调整就能有效建模音乐节拍。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -235,7 +236,7 @@
     "paper_title_zh": "TASLA: 具有多层聚合的文本对齐语音标记",
     "paper_id": "2510.14934",
     "paper_abstract": "We propose Text-Aligned Speech Tokens with Multiple Layer-Aggregation (TASLA), which is a text-aligned speech tokenization framework that aims to address the problem that under a low-frame-rate and text-aligned regime, single-source speech tokens may lose acoustic details during reconstruction. On the other hand, this paper further explains how different encoder layers collaborate to capture comprehensive acoustic features for tokenization. Previous work, TASTE, proposed the text-aligned speech tokenization framework, which is a LM-friendly architecture, but struggles to capture acoustic details. We address this trade-off with two components: Multi-Layer Dynamic Attention (MLDA), which lets each text position adaptively mix shallow/deep features from a frozen speech encoder, and Finite Scalar Quantization (FSQ), a simple per-dimension discretization with smooth optimization. At about 2.62 Hz (tokens/s), TASLA consistently improves prosody and achieves competitive quality over TASTE on in-domain (LibriSpeech) and OOD (EXPRESSO, Voxceleb) sets. We further demonstrate that dynamic layer mixing is correlated with spectral flux and explains why MLDA preserves prosody under a low frame rate with extreme feature compression.",
-    "paper_abstract_zh": "我们提出了具有多层聚合的文本对齐语音标记（TASLA），这是一个文本对齐语音标记框架，旨在解决在低帧率和文本对齐条件下，单源语音标记在重建过程中可能丢失声学细节的问题。另一方面，本文进一步解释了不同的编码器层如何协作以捕获全面的声学特征用于标记化。先前的工作TASTE提出了文本对齐语音标记框架，这是一种对语言模型友好的架构，但难以捕获声学细节。我们通过两个组件来解决这一权衡：多层动态注意力（MLDA），它使每个文本位置能够自适应地混合来自冻结语音编码器的浅层/深层特征；以及有限标量量化（FSQ），这是一种简单的逐维度离散化方法，具有平滑的优化过程。在约2.62 Hz（标记/秒）的速率下，TASLA在韵律方面持续改进，并在领域内（LibriSpeech）和领域外（EXPRESSO, Voxceleb）数据集上与TASTE实现了竞争性的质量。我们进一步证明了动态层混合与频谱通量相关，并解释了为什么MLDA能够在低帧率和极端特征压缩下保持韵律。",
+    "paper_abstract_zh": "我们提出了具有多层聚合的文本对齐语音标记（TASLA），这是一个文本对齐语音标记框架，旨在解决在低帧率和文本对齐条件下，单源语音标记在重建过程中可能丢失声学细节的问题。另一方面，本文进一步解释了不同的编码器层如何协作以捕获全面的声学特征用于标记化。先前的工作TASTE提出了文本对齐语音标记框架，这是一种对语言模型友好的架构，但难以捕获声学细节。我们通过两个组件来解决这种权衡：多层动态注意力（MLDA），它使每个文本位置能够自适应地混合来自冻结语音编码器的浅层/深层特征；以及有限标量量化（FSQ），这是一种简单的逐维度离散化方法，具有平滑的优化能力。在约2.62 Hz（标记/秒）的条件下，TASLA在韵律方面持续改进，并且在领域内（LibriSpeech）和领域外（EXPRESSO，Voxceleb）数据集上均实现了与TASTE相当的质量。我们进一步证明了动态层混合与谱通量相关，并解释了为什么MLDA能在低帧率和极端特征压缩条件下保持韵律。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -251,10 +252,10 @@
   },
   {
     "paper_title": "If You Hold Me Without Hurting Me: Pathways to Designing Game Audio for Healthy Escapism and Player Well-being",
-    "paper_title_zh": "如果你不伤害地拥抱我：设计游戏音频以实现健康逃避主义和玩家福祉的途径",
+    "paper_title_zh": "如果你不伤害地拥抱我：设计游戏音频以促进健康逃避主义和玩家福祉的途径",
     "paper_id": "2510.14691",
     "paper_abstract": "Escapism in games can support recovery or lead to harmful avoidance. Self-regulation, understood as combining autonomy with positive outcomes, is key to this distinction. We argue that audio, often overlooked, plays a central role in regulation. It can modulate arousal, mark transitions, and provide closure, yet its contribution to well-being remains underexplored. This paper identifies methodological and accessibility gaps that limit recognition of audio's potential and outlines ways to address them. We aim to encourage researchers and developers to integrate audio more deliberately into the design and study of healthier escapist play.",
-    "paper_abstract_zh": "游戏中的逃避主义可以支持康复，也可能导致有害的回避。自我调节，即自主性与积极结果的结合，是区分两者的关键。我们认为，音频常被忽视，但在调节中起着核心作用。它可以调节唤醒度、标记过渡并提供结束感，但其对福祉的贡献仍未得到充分探索。本文确定了限制音频潜力认可的方法论和可访问性差距，并概述了解决这些差距的方法。我们旨在鼓励研究人员和开发人员更深思熟虑地将音频整合到更健康的逃避主义游戏设计和研究中。",
+    "paper_abstract_zh": "游戏中的逃避主义可以支持康复或导致有害的回避。自我调节，即自主性与积极结果的结合，是区分两者的关键。我们认为，常被忽视的音频在调节中起着核心作用。它可以调节唤醒度、标记过渡并提供结束，但其对福祉的贡献仍未得到充分探索。本文确定了限制音频潜力认可的方法论和可访问性差距，并概述了解决这些差距的方法。我们旨在鼓励研究人员和开发人员将音频更深思熟虑地整合到更健康的逃避主义游戏设计和研究中。",
     "subjects": [
       "Human-Computer Interaction (cs.HC)",
       "Multimedia (cs.MM)",
@@ -274,7 +275,7 @@
     "paper_title_zh": "针对蚊子听觉干扰的声音掩蔽策略",
     "paper_id": "2510.14921",
     "paper_abstract": "The use of auditory masking has long been of interest in psychoacoustics and for engineering purposes, in order to cover sounds that are disruptive to humans or to species whose habitats overlap with ours. In most cases, we seek to minimize the disturbances to the communication of wildlife. However, in the case of pathogen-carrying insects, we may want to maximize these disturbances as a way to control populations. In the current work, we explore candidate masking strategies for a generic model of active auditory systems and a model of the mosquito auditory system. For both models, we find that masks with all acoustic power focused into just one or a few frequencies perform best. We propose that masks based on rapid frequency modulation are most effective for maximal disruption of information transfer and minimizing intelligibility. We hope that these results will serve to guide the avoidance or selection of possible acoustic signals for, respectively, maximizing or minimizing communication.",
-    "paper_abstract_zh": "听觉掩蔽在心理声学和工程领域一直备受关注，目的是掩盖对人类或与我们栖息地重叠的物种造成干扰的声音。在大多数情况下，我们试图尽量减少对野生动物通信的干扰。然而，对于携带病原体的昆虫，我们可能希望通过最大化这些干扰来控制其种群数量。在当前工作中，我们探索了针对通用主动听觉系统模型和蚊子听觉系统模型的候选掩蔽策略。对于这两个模型，我们发现将所有声学功率集中在单一或少数几个频率上的掩蔽效果最佳。我们提出，基于快速频率调制的掩蔽信号对于最大化信息传输干扰和最小化可理解性最为有效。我们希望这些结果能够分别指导在最大化或最小化通信时选择或避免可能的声学信号。",
+    "paper_abstract_zh": "听觉掩蔽在心理声学和工程领域一直备受关注，目的是掩盖对人类或与我们栖息地重叠的物种造成干扰的声音。在大多数情况下，我们试图尽量减少对野生动物通信的干扰。然而，对于携带病原体的昆虫，我们可能希望通过最大化这些干扰来控制其种群。在当前工作中，我们探索了针对通用主动听觉系统模型和蚊子听觉系统模型的候选掩蔽策略。对于这两个模型，我们发现所有声功率集中在单一或少数几个频率的掩蔽效果最佳。我们提出，基于快速频率调制的掩蔽信号对于最大化信息传输干扰和最小化可理解性最为有效。我们希望这些结果能够分别指导避免或选择可能的声信号，以最大化或最小化通信。",
     "subjects": [
       "Biological Physics (physics.bio-ph)",
       "Sound (cs.SD)"
