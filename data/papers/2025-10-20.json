@@ -1,13 +1,13 @@
 [
   {
     "paper_title": "LongCat-Audio-Codec: An Audio Tokenizer and Detokenizer Solution Designed for Speech Large Language Models",
-    "paper_title_zh": "LongCat-Audio-Codec: 一种面向语音大语言模型的音频编码器和解码器解决方案",
+    "paper_title_zh": "LongCat-Audio-Codec：一种专为语音大语言模型设计的音频编码器和解码器解决方案",
     "paper_id": "2510.15227",
     "paper_abstract": "This paper presents LongCat-Audio-Codec, an audio tokenizer and detokenizer solution designed for industrial grade end-to-end speech large language models. By leveraging a decoupled model architecture and a multistage training strategy, LongCat-Audio-Codec exhibits robust semantic modeling capabilities, flexible acoustic feature extraction capabilities, and low-latency streaming synthesis capabilities. It encodes speech at an ultra-low frame rate of 16.67 Hz, with a minimum bitrate of 0.43 kbps and a maximum bitrate of 0.87 kbps. Evaluation results demonstrate that LongCat-Audio-Codec achieves strong speech intelligibility and is capable of synthesizing highquality speech at low bitrate, thus effectively balancing coding efficiency and decoding quality. The inference code and model checkpoints of LongCat-Audio-Codec are available at: this https URL.",
-    "paper_abstract_zh": "本文介绍了LongCat-Audio-Codec，一种面向工业级端到端语音大语言模型的音频编码器和解码器解决方案。通过采用解耦模型架构和多阶段训练策略，LongCat-Audio-Codec展现出强大的语义建模能力、灵活的声学特征提取能力和低延迟流式合成能力。它以16.67 Hz的超低帧率对语音进行编码，最低比特率为0.43 kbps，最高比特率为0.87 kbps。评估结果表明，LongCat-Audio-Codec实现了良好的语音清晰度，能够在低比特率下合成高质量语音，从而有效平衡编码效率和解码质量。LongCat-Audio-Codec的推理代码和模型检查点可在以下网址获取：this https URL。",
+    "paper_abstract_zh": "本文介绍了LongCat-Audio-Codec，一种专为工业级端到端语音大语言模型设计的音频编码器和解码器解决方案。通过采用解耦模型架构和多阶段训练策略，LongCat-Audio-Codec展现出强大的语义建模能力、灵活的声学特征提取能力和低延迟流式合成能力。它以16.67 Hz的超低帧率对语音进行编码，最低比特率为0.43 kbps，最高比特率为0.87 kbps。评估结果表明，LongCat-Audio-Codec实现了良好的语音可懂度，能够在低比特率下合成高质量语音，从而有效平衡了编码效率和解码质量。LongCat-Audio-Codec的推理代码和模型检查点可在以下网址获取：this https URL。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-20",
     "paper_authors": "Xiaohan Zhao, Hongyu Xiang, Shengze Ye, Song Li, Zhengkun Tian, Guanyu Chen, Ke Ding, Guanglu Wan",
@@ -21,10 +21,10 @@
   },
   {
     "paper_title": "LDCodec: A high quality neural audio codec with low-complexity decoder",
-    "paper_title_zh": "LDCodec: 一种低复杂度解码器的高质量神经音频编解码器",
+    "paper_title_zh": "LDCodec: 一种具有低复杂度解码器的高质量神经音频编解码器",
     "paper_id": "2510.15364",
     "paper_abstract": "Neural audio coding has been shown to outperform classical audio coding at extremely low bitrates. However, the practical application of neural audio codecs is still limited by their elevated complexity. To address this challenge, we have developed a high-quality neural audio codec with a low-complexity decoder, named LDCodec (Low-complexity Decoder Neural Audio Codec), specifically designed for on-demand streaming media clients, such as smartphones. Specifically, we introduced a novel residual unit combined with Long-term and Short-term Residual Vector Quantization (LSRVQ), subband-fullband frequency discriminators, and perceptual loss functions. This combination results in high-quality audio reconstruction with lower complexity. Both our subjective and objective tests demonstrated that our proposed LDCodec at 6kbps outperforms Opus at 12kbps.",
-    "paper_abstract_zh": "神经音频编码已被证明在极低比特率下优于传统音频编码。然而，神经音频编解码器的实际应用仍然受到其高复杂度的限制。为了应对这一挑战，我们开发了一种具有低复杂度解码器的高质量神经音频编解码器，名为LDCodec（低复杂度解码器神经音频编解码器），专门为智能手机等按需流媒体客户端设计。具体而言，我们引入了一种新颖的残差单元，结合了长期和短期残差矢量量化（LSRVQ）、子带全带频谱鉴别器和感知损失函数。这种组合实现了更低复杂度的高质量音频重建。我们的主观和客观测试均表明，我们在6kbps下的LDCodec优于12kbps下的Opus。",
+    "paper_abstract_zh": "神经音频编码已被证明在极低比特率下优于传统音频编码。然而，神经音频编解码器的实际应用仍然受到其高复杂度的限制。为了应对这一挑战，我们开发了一种具有低复杂度解码器的高质量神经音频编解码器，名为LDCodec（低复杂度解码器神经音频编解码器），专门为智能手机等按需流媒体客户端设计。具体而言，我们引入了一种新颖的残差单元，结合了长期和短期残差矢量量化（LSRVQ）、子带全带频域鉴别器和感知损失函数。这种组合实现了更低复杂度的高质量音频重建。我们的主观和客观测试均表明，我们在6kbps下提出的LDCodec优于12kbps下的Opus。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -40,14 +40,14 @@
   },
   {
     "paper_title": "DroneAudioset: An Audio Dataset for Drone-based Search and Rescue",
-    "paper_title_zh": "DroneAudioset: 一个用于无人机搜索和救援的音频数据集",
+    "paper_title_zh": "DroneAudioset: 一个用于无人机搜救的音频数据集",
     "paper_id": "2510.15383",
     "paper_abstract": "Unmanned Aerial Vehicles (UAVs) or drones, are increasingly used in search and rescue missions to detect human presence. Existing systems primarily leverage vision-based methods which are prone to fail under low-visibility or occlusion. Drone-based audio perception offers promise but suffers from extreme ego-noise that masks sounds indicating human presence. Existing datasets are either limited in diversity or synthetic, lacking real acoustic interactions, and there are no standardized setups for drone audition. To this end, we present DroneAudioset (The dataset is publicly available at this https URL under the MIT license), a comprehensive drone audition dataset featuring 23.5 hours of annotated recordings, covering a wide range of signal-to-noise ratios (SNRs) from -57.2 dB to -2.5 dB, across various drone types, throttles, microphone configurations as well as environments. The dataset enables development and systematic evaluation of noise suppression and classification methods for human-presence detection under challenging conditions, while also informing practical design considerations for drone audition systems, such as microphone placement trade-offs, and development of drone noise-aware audio processing. This dataset is an important step towards enabling design and deployment of drone-audition systems.",
-    "paper_abstract_zh": "无人机（UAVs）或无人机越来越多地用于搜索和救援任务中，以检测人类的存在。现有系统主要依赖基于视觉的方法，这些方法在低能见度或遮挡条件下容易失败。基于无人机的音频感知具有潜力，但会受到极端自噪声的影响，这些噪声掩盖了表明人类存在的声音。现有的数据集要么多样性有限，要么是合成的，缺乏真实的声学交互，并且没有标准化的无人机听觉设置。为此，我们提出了DroneAudioset（该数据集在MIT许可下可通过此https URL公开获取），这是一个全面的无人机听觉数据集，包含23.5小时的标注录音，覆盖了从-57.2 dB到-2.5 dB的广泛信噪比（SNR），涵盖了各种无人机类型、油门、麦克风配置以及环境。该数据集能够在具有挑战性的条件下开发和对人类存在检测的噪声抑制和分类方法进行系统评估，同时还能为无人机听觉系统的实际设计考虑提供参考，例如麦克风放置的权衡以及无人机噪声感知的音频处理开发。该数据集是推动无人机听觉系统设计和部署的重要一步。",
+    "paper_abstract_zh": "无人机（UAVs）或无人机越来越多地用于搜救任务以检测人类存在。现有系统主要依赖基于视觉的方法，这些方法在低能见度或遮挡条件下容易失败。基于无人机的音频感知具有潜力，但会受到极端自噪声的影响，掩盖了表明人类存在的声音。现有数据集要么多样性有限，要么是合成的，缺乏真实的声学交互，并且没有标准化的无人机听觉设置。为此，我们提出了DroneAudioset（该数据集在MIT许可下可通过此https URL公开获取），这是一个全面的无人机听觉数据集，包含23.5小时的标注录音，覆盖了从-57.2 dB到-2.5 dB的广泛信噪比（SNR）范围，涵盖各种无人机类型、油门、麦克风配置以及环境。该数据集能够在具有挑战性的条件下开发用于人类存在检测的噪声抑制和分类方法，并进行系统性评估，同时为无人机听觉系统的实际设计考虑提供信息，例如麦克风放置的权衡以及无人机噪声感知的音频处理开发。该数据集是推动设计和部署无人机听觉系统的重要一步。",
     "subjects": [
+      "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
-      "Audio and Speech Processing (eess.AS)",
-      "Sound (cs.SD)"
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-20",
     "paper_authors": "Chitralekha Gupta, Soundarya Ramesh, Praveen Sasikumar, Kian Peen Yeo, Suranga Nanayakkara",
@@ -64,7 +64,7 @@
     "paper_title_zh": "迈向盲数据清洗：音乐源分离的案例研究",
     "paper_id": "2510.15409",
     "paper_abstract": "The performance of deep learning models for music source separation heavily depends on training data quality. However, datasets are often corrupted by difficult-to-detect artifacts such as audio bleeding and label noise. Since the type and extent of contamination are typically unknown, cleaning methods targeting specific corruptions are often impractical. This paper proposes and evaluates two distinct, noise-agnostic data cleaning methods to address this challenge. The first approach uses data attribution via unlearning to identify and filter out training samples that contribute the least to producing clean outputs. The second leverages the Fréchet Audio Distance to measure and remove samples that are perceptually dissimilar to a small and trusted clean reference set. On a dataset contaminated with a simulated distribution of real-world noise, our unlearning-based methods produced a cleaned dataset and a corresponding model that outperforms both the original contaminated data and the small clean reference set used for cleaning. This result closes approximately 66.7\\% of the performance gap between the contaminated baseline and a model trained on the same dataset without any contamination. Unlike methods tailored for specific artifacts, our noise-agnostic approaches offer a more generic and broadly applicable solution for curating high-quality training data.",
-    "paper_abstract_zh": "深度学习模型在音乐源分离中的性能高度依赖于训练数据的质量。然而，数据集常常受到难以检测的伪影（如音频泄漏和标签噪声）的污染。由于污染的类型和程度通常未知，针对特定污染的清洗方法往往不切实际。本文提出了并评估了两种不同的、与噪声无关的数据清洗方法来应对这一挑战。第一种方法通过遗忘学习进行数据归因，以识别并过滤掉对产生干净输出贡献最小的训练样本。第二种方法利用Fréchet音频距离来测量并移除与小而可信的干净参考集感知上不相似的样本。在一个受到模拟现实世界噪声污染的数据集上，我们基于遗忘学习的方法产生了一个清洗后的数据集和相应的模型，其性能优于原始污染数据集和用于清洗的小干净参考集。这一结果缩小了受污染基线模型与在同一数据集上训练但没有任何污染的模型之间约66.7%的性能差距。与针对特定伪影定制的方法不同，我们的与噪声无关的方法为策划高质量训练数据提供了更通用和广泛适用的解决方案。",
+    "paper_abstract_zh": "深度学习模型在音乐源分离中的性能高度依赖于训练数据的质量。然而，数据集常常受到难以检测的伪影（如音频泄漏和标签噪声）的污染。由于污染的类型和程度通常未知，针对特定污染的清洗方法往往不切实际。本文提出并评估了两种不同的、噪声无关的数据清洗方法来应对这一挑战。第一种方法通过遗忘学习进行数据归因，以识别并过滤掉对产生干净输出贡献最小的训练样本。第二种方法利用Fréchet音频距离来测量并移除在小而可信的干净参考集中感知上不相似的样本。在一个受到模拟真实世界噪声污染的数据集上，我们基于遗忘学习的方法产生了一个清洗后的数据集和相应的模型，其性能优于原始污染数据集和用于清洗的小干净参考集。这一结果缩小了污染基线模型与在无污染相同数据集上训练的模型之间约66.7%的性能差距。与针对特定伪影定制的方法不同，我们的噪声无关方法为策划高质量训练数据提供了更通用和广泛适用的解决方案。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -80,13 +80,13 @@
   },
   {
     "paper_title": "Quantization-Based Score Calibration for Few-Shot Keyword Spotting with Dynamic Time Warping in Noisy Environments",
-    "paper_title_zh": "基于量化的分数校准用于动态时间规架在嘈杂环境下的少样本关键词检测",
+    "paper_title_zh": "基于量化的分数校准用于动态时间规架在噪声环境下的少样本关键词检测",
     "paper_id": "2510.15432",
     "paper_abstract": "Detecting occurrences of keywords with keyword spotting (KWS) systems requires thresholding continuous detection scores. Selecting appropriate thresholds is a non-trivial task, typically relying on optimizing the performance on a validation dataset. However, such greedy threshold selection often leads to suboptimal performance on unseen data, particularly in varying or noisy acoustic environments or few-shot settings. In this work, we investigate detection threshold estimation for template-based open-set few-shot KWS using dynamic time warping on noisy speech data. To mitigate the performance degradation caused by suboptimal thresholds, we propose a score calibration approach consisting of two different steps: quantizing embeddings and normalizing detection scores using the quantization error prior to thresholding. Experiments on KWS-DailyTalk with simulated high frequency radio channels show that the proposed calibration approach simplifies the choice of detection thresholds and significantly improves the resulting performance.",
-    "paper_abstract_zh": "使用关键词检测(KWS)系统检测关键词的出现需要对连续检测分数进行阈值处理。选择适当的阈值是一项非平凡的任务，通常依赖于在验证数据集上优化性能。然而，这种贪婪的阈值选择通常会导致在未见数据上的次优性能，特别是在变化或嘈杂的声学环境中或少样本设置下。在这项工作中，我们研究了在嘈杂语音数据上使用动态时间规架进行基于模板的开放集少样本KWS的检测阈值估计。为了缓解次优阈值导致的性能下降，我们提出了一种分数校准方法，包含两个不同步骤：对嵌入进行量化和在阈值处理前使用量化误差对检测分数进行归一化。在KWS-DailyTalk上的实验，使用模拟高频无线电信道，表明所提出的校准方法简化了检测阈值的选择，并显著提高了最终性能。",
+    "paper_abstract_zh": "使用关键词检测(KWS)系统检测关键词的出现需要对连续检测分数进行阈值处理。选择适当的阈值是一项非平凡的任务，通常依赖于在验证数据集上优化性能。然而，这种贪婪的阈值选择通常会导致在未见数据上的次优性能，特别是在变化或嘈杂的声学环境或少样本设置中。在这项工作中，我们研究了基于模板的开放集少样本KWS在嘈杂语音数据上使用动态时间规架的检测阈值估计。为了缓解次优阈值导致的性能下降，我们提出了一种分数校准方法，包含两个不同的步骤：量化嵌入和使用量化误差在阈值处理前归一化检测分数。在KWS-DailyTalk上使用模拟高频无线电信道的实验表明，所提出的校准方法简化了检测阈值的选择，并显著提高了最终性能。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-20",
     "paper_authors": "Kevin Wilkinghoff, Alessia Cornaggia-Urrigshardt, Zheng-Hua Tan",
@@ -100,10 +100,10 @@
   },
   {
     "paper_title": "MC-LExt: Multi-Channel Target Speaker Extraction with Onset-Prompted Speaker Conditioning Mechanism",
-    "paper_title_zh": "MC-LExt: 基于起始提示说话人调节机制的多通道目标说话人提取",
+    "paper_title_zh": "MC-LExt：基于起始提示说话人调节机制的多通道目标说话人提取",
     "paper_id": "2510.15437",
     "paper_abstract": "Multi-channel target speaker extraction (MC-TSE) aims to extract a target speaker's voice from multi-speaker signals captured by multiple microphones. Existing methods often rely on auxiliary clues such as direction-of-arrival (DOA) or speaker embeddings. However, DOA-based approaches depend on explicit direction estimation and are sensitive to microphone array geometry, while methods based on speaker embeddings model speaker identity in an implicit manner and may degrade in noisy-reverberant conditions. To address these limitations, we propose multi-channel listen to extract (MC-LExt), a simple but highly-effective framework for MC-TSE. Our key idea is to prepend a short enrollment utterance of the target speaker to each channel of the multi-channel mixture, providing an onset-prompted conditioning signal that can guide TSE. This design allows the deep neural network (DNN) to learn spatial and speaker identity cues jointly in a fully end-to-end manner. Experiments on noisy-reverberant benchmarks, including WHAMR! and MC-Libri2Mix, demonstrate the effectiveness of MC-TSE.",
-    "paper_abstract_zh": "多通道目标说话人提取(MC-TSE)旨在从多个麦克风捕获的多说话人信号中提取目标说话人的语音。现有方法通常依赖于到达方向(DOA)或说话人嵌入等辅助线索。然而，基于DOA的方法依赖于显式的方向估计，并且对麦克风阵列几何形状敏感；而基于说话人嵌入的方法以隐式方式建模说话人身份，在有噪声和混响的条件下性能可能下降。为解决这些局限性，我们提出了多通道聆听提取(MC-LExt)，一种用于MC-TSE的简单但高度有效的框架。我们的核心思想是在多通道混合信号的每个通道前添加目标说话人的简短注册语音，提供一个起始提示的调节信号，用于引导TSE。这种设计使得深度神经网络(DNN)能够以完全端到端的方式联合学习空间和说话人身份线索。在WHAMR!和MC-Libri2Mix等有噪声和混响的基准测试上的实验证明了MC-TSE的有效性。",
+    "paper_abstract_zh": "多通道目标说话人提取（MC-TSE）旨在从多个麦克风捕获的多说话人信号中提取目标说话人的语音。现有方法通常依赖于到达方向（DOA）或说话人嵌入等辅助线索。然而，基于DOA的方法依赖于显式的方向估计，并且对麦克风阵列几何形状敏感，而基于说话人嵌入的方法以隐式方式建模说话人身份，在有噪声和混响的条件下可能会性能下降。为解决这些局限性，我们提出了多通道聆听提取（MC-LExt），这是一个用于MC-TSE的简单但高度有效的框架。我们的关键思想是将目标说话人的简短注册语音前置到多通道混合的每个通道上，提供一个起始提示的调节信号，可以指导TSE。这种设计使深度神经网络（DNN）能够以完全端到端的方式联合学习空间和说话人身份线索。在WHAMR!和MC-Libri2Mix等有噪声和混响的基准实验中，证明了MC-TSE的有效性。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -122,7 +122,7 @@
     "paper_title_zh": "基于幅度和相位特征融合的说话人识别协同注意力机制",
     "paper_id": "2510.15659",
     "paper_abstract": "Phase-based features related to vocal source characteristics can be incorporated into magnitude-based speaker recognition systems to improve the system performance. However, traditional feature-level fusion methods typically ignore the unique contributions of speaker semantics in the magnitude and phase domains. To address this issue, this paper proposed a feature-level fusion framework using the co-attention mechanism for speaker recognition. The framework consists of two separate sub-networks for the magnitude and phase domains respectively. Then, the intermediate high-level outputs of both domains are fused by the co-attention mechanism before a pooling layer. A correlation matrix from the co-attention module is supposed to re-assign the weights for dynamically scaling contributions in the magnitude and phase domains according to different pronunciations. Experiments on VoxCeleb showed that the proposed feature-level fusion strategy using the co-attention mechanism gave the Top-1 accuracy of 97.20%, outperforming the state-of-the-art system with 0.82% absolutely, and obtained EER reduction of 0.45% compared to single feature system using FBank.",
-    "paper_abstract_zh": "与声源特性相关的相位特征可以整合到基于幅度的说话人识别系统中，以提高系统性能。然而，传统的特征级融合方法通常忽略了幅度和相位域中说话人语义的独特贡献。为解决这一问题，本文提出了一种基于协同注意力机制的说话人识别特征级融合框架。该框架包含两个分别用于幅度和相位域的独立子网络。然后，在池化层之前，通过协同注意力机制融合两个域的中间高层输出。协同注意力模块的相关矩阵用于根据不同的发音动态重新分配权重，以调整幅度和相位域的贡献。在VoxCeleb上的实验表明，所提出的基于协同注意力机制的特征级融合策略达到了97.20%的Top-1准确率，比最先进的系统绝对提高了0.82%，并且与使用FBank的单特征系统相比，EER降低了0.45%。",
+    "paper_abstract_zh": "与声源特性相关的相位特征可以整合到基于幅度的说话人识别系统中，以提高系统性能。然而，传统的特征级融合方法通常忽略了幅度和相位域中说话人语义的独特贡献。为解决这一问题，本文提出了一种用于说话人识别的特征级融合框架，该框架采用协同注意力机制。该框架包含两个分别用于幅度和相位域的独立子网络。然后，在池化层之前，通过协同注意力机制融合两个域的中间高级输出。协同注意力模块的相关矩阵用于根据不同的发音动态调整幅度和相位域的贡献权重。在VoxCeleb上的实验表明，采用协同注意力机制提出的特征级融合策略实现了97.20%的Top-1准确率，比最先进的系统绝对提高了0.82%，与使用FBank的单特征系统相比，等错误率降低了0.45%。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -138,15 +138,15 @@
   },
   {
     "paper_title": "Extending Audio Context for Long-Form Understanding in Large Audio-Language Models",
-    "paper_title_zh": "扩展音频上下文以支持大型音频语言模型中的长形式理解",
+    "paper_title_zh": "扩展大型音频语言模型的音频上下文以实现长篇理解",
     "paper_id": "2510.15231",
     "paper_abstract": "Large Audio-Language Models (LALMs) are often constrained by short audio context windows, even when their text backbones support long contexts, limiting long-form audio understanding. Prior work has introduced context-extension methods (e.g. YaRN) on unimodal LLMs, yet their application to LALMs remains unexplored. First, building on RoPE-based context extension, we introduce Partial YaRN, a training-free, audio-only extension method that modifies only audio token positions, leaving text positions intact to preserve the base LLM's text capabilities. Second, we propose Virtual Longform Audio Training (VLAT), a training strategy that extends Partial YaRN into a training-time positional augmentation. VLAT simulates diverse audio lengths during training, enabling generalization to inputs far longer than those seen in training and improving robustness for long-context audio understanding. Our experiments on SALMONN and Qwen2-Audio show that Partial YaRN outperforms the original models across wide range of settings, and VLAT training strategy provides substantial improvement, achieving strong performance on long audio of unseen lengths.",
-    "paper_abstract_zh": "大型音频语言模型（LALMs）通常受限于短音频上下文窗口，即使其文本主干支持长上下文，这限制了长形式音频的理解能力。先前的工作在单模态大型语言模型（LLMs）上引入了上下文扩展方法（如YaRN），但它们在LALMs中的应用尚未被探索。首先，基于RoPE的上下文扩展，我们引入了Partial YaRN，这是一种无需训练的纯音频扩展方法，仅修改音频标记的位置，同时保持文本位置不变，以保留基础LLM的文本能力。其次，我们提出了虚拟长形式音频训练（VLAT），一种将Partial YaRN扩展为训练时位置增强的训练策略。VLAT在训练期间模拟多样化的音频长度，使模型能够泛化到远超训练时所见长度的输入，并提高长上下文音频理解的鲁棒性。在SALMONN和Qwen2-Audio上的实验表明，Partial YaRN在多种设置下均优于原始模型，而VLAT训练策略提供了显著改进，在未见过的长音频上实现了强大的性能。",
+    "paper_abstract_zh": "大型音频语言模型(LALMs)通常受限于短音频上下文窗口，即使它们的文本主干支持长上下文，这也限制了长篇音频理解能力。先前的工作已经在单模态大型语言模型上引入了上下文扩展方法(如YaRN)，但这些方法在LALMs上的应用尚未被探索。首先，基于RoPE的上下文扩展，我们提出了Partial YaRN，这是一种无需训练的纯音频扩展方法，它只修改音频标记的位置，同时保持文本位置不变，以保留基础LLM的文本能力。其次，我们提出了虚拟长篇音频训练(VLAT)策略，将Partial YaRN扩展为训练时的位置增强。VLAT在训练过程中模拟多样化的音频长度，使模型能够泛化到远超训练时所见长度的输入，并提高长上下文音频理解的鲁棒性。在SALMONN和Qwen2-Audio上的实验表明，Partial YaRN在各种设置下都优于原始模型，而VLAT训练策略提供了显著改进，在未见过的长音频上实现了强大的性能。",
     "subjects": [
-      "Sound (cs.SD)",
-      "Artificial Intelligence (cs.AI)",
       "Audio and Speech Processing (eess.AS)",
-      "Computation and Language (cs.CL)"
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-10-20",
     "paper_authors": "Yuatyong Chaichana, Pittawat Taveekitworachai, Warit Sirichotedumrong, Potsawee Manakul, Kunat Pipatanakul",
@@ -160,10 +160,10 @@
   },
   {
     "paper_title": "SpikeVox: Towards Energy-Efficient Speech Therapy Framework with Spike-driven Generative Language Models",
-    "paper_title_zh": "SpikeVox：面向节能语音治疗框架的脉冲驱动生成语言模型",
+    "paper_title_zh": "SpikeVox：面向能量高效的语音治疗框架，基于脉冲驱动的生成语言模型",
     "paper_id": "2510.15566",
     "paper_abstract": "Speech disorders can significantly affect the patients capability to communicate, learn, and socialize. However, existing speech therapy solutions (e.g., therapist or tools) are still limited and costly, hence such solutions remain inadequate for serving millions of patients worldwide. To address this, state-of-the-art methods employ neural network (NN) algorithms to help accurately detecting speech disorders. However, these methods do not provide therapy recommendation as feedback, hence providing partial solution for patients. Moreover, these methods incur high energy consumption due to their complex and resource-intensive NN processing, hence hindering their deployments on low-power/energy platforms (e.g., smartphones). Toward this, we propose SpikeVox, a novel framework for enabling energy-efficient speech therapy solutions through spike-driven generative language model. Specifically, SpikeVox employs a speech recognition module to perform highly accurate speech-to-text conversion; leverages a spike-driven generative language model to efficiently perform pattern analysis for speech disorder detection and generates suitable exercises for therapy; provides guidance on correct pronunciation as feedback; as well as utilizes the REST API to enable seamless interaction for users. Experimental results demonstrate that SpikeVox achieves 88% confidence level on average in speech disorder recognition, while providing a complete feedback for therapy exercises. Therefore, SpikeVox provides a comprehensive framework for energy-efficient speech therapy solutions, and potentially addresses the significant global speech therapy access gap.",
-    "paper_abstract_zh": "言语障碍会显著影响患者沟通、学习和社交的能力。然而，现有的言语治疗方案（如治疗师或工具）仍然有限且成本高昂，因此这些方案无法满足全球数百万患者的需求。为此，最先进的方法采用神经网络（NN）算法来帮助准确检测言语障碍。然而，这些方法不提供治疗建议作为反馈，因此为患者提供的解决方案不完整。此外，这些方法由于其复杂且资源密集的NN处理而消耗大量能源，从而阻碍了它们在低功耗/能源平台（如智能手机）上的部署。为此，我们提出了SpikeVox，一种通过脉冲驱动生成语言模型实现节能语音治疗解决方案的新框架。具体而言，SpikeVox采用语音识别模块执行高精度的语音转文本转换；利用脉冲驱动生成语言模型高效执行言语障碍检测的模式分析并生成适合的治疗练习；提供正确发音指导作为反馈；以及利用REST API实现用户的无缝交互。实验结果表明，SpikeVox在言语障碍识别上平均达到88%的置信水平，同时为治疗练习提供完整的反馈。因此，SpikeVox为节能语音治疗解决方案提供了全面的框架，并有可能解决全球言语治疗获取的重大差距。",
+    "paper_abstract_zh": "语音障碍会显著影响患者的沟通、学习和社交能力。然而，现有的语音治疗方案（如治疗师或工具）仍然有限且成本高昂，因此这些方案无法满足全球数百万患者的需求。为此，最先进的方法采用神经网络（NN）算法来帮助准确检测语音障碍。然而，这些方法不提供治疗建议作为反馈，因此仅为患者提供部分解决方案。此外，这些方法由于复杂且资源密集的NN处理而消耗大量能源，从而阻碍了它们在低功耗/能源平台（如智能手机）上的部署。为此，我们提出了SpikeVox，一种通过脉冲驱动的生成语言模型实现能量高效语音治疗解决方案的新框架。具体而言，SpikeVox采用语音识别模块执行高精度的语音转文本转换；利用脉冲驱动的生成语言模型高效执行语音障碍检测的模式分析，并生成适合的治疗练习；提供正确发音指导作为反馈；同时使用REST API实现用户的无缝交互。实验结果表明，SpikeVox在语音障碍识别上平均达到88%的置信度，同时为治疗练习提供完整的反馈。因此，SpikeVox为能量高效的语音治疗解决方案提供了全面的框架，并有望解决全球语音治疗获取的重大差距。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -181,10 +181,10 @@
   },
   {
     "paper_title": "Sound Clouds: Exploring ambient intelligence in public spaces to elicit deep human experience of awe, wonder, and beauty",
-    "paper_title_zh": "声云：探索公共空间中的环境智能，以唤起人类对敬畏、惊奇和美的深层体验",
+    "paper_title_zh": "声云：探索公共空间中的环境智能以唤起人类对敬畏、惊奇和美的深层体验",
     "paper_id": "2510.15865",
     "paper_abstract": "While the ambient intelligence (AmI) systems we encounter in our daily lives, including security monitoring and energy-saving systems, typically serve pragmatic purposes, we wonder how we can design and implement ambient artificial intelligence experiences in public spaces that elicit deep human feelings of awe, wonder, and beauty. As a manifestation, we introduce Sound Clouds, an immersive art installation that generates live music based on participants' interaction with several human-height spheres. Our installation serves as a provocation into future ambient intelligence that provokes, not limits, the future possibilities of AmI.",
-    "paper_abstract_zh": "虽然我们在日常生活中遇到的环境智能(AmI)系统，包括安全监控和节能系统，通常服务于实用目的，但我们思考如何设计和实施在公共空间中的人工智能体验，以唤起人类对敬畏、惊奇和美的深层感受。作为具体体现，我们介绍了声云(Sound Clouds)，这是一个沉浸式艺术装置，它根据参与者与几个人高球体的互动生成现场音乐。我们的装置作为对未来环境智能的一种启发，它激发而非限制了AmI的未来可能性。",
+    "paper_abstract_zh": "虽然我们在日常生活中遇到的环境智能(AmI)系统，包括安全监控和节能系统，通常服务于实用目的，但我们思考如何设计和实施公共空间中的环境人工智能体验，以唤起人类对敬畏、惊奇和美的深层情感。作为一个具体表现，我们介绍了声云(Sound Clouds)，这是一个沉浸式艺术装置，它根据参与者与几个人高球体的互动生成现场音乐。我们的装置作为对未来环境智能的一种启发，它启发而非限制AmI的未来可能性。",
     "subjects": [
       "Human-Computer Interaction (cs.HC)",
       "Multimedia (cs.MM)",
