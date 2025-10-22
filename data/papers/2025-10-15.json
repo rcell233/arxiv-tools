@@ -161,10 +161,10 @@
   },
   {
     "paper_title": "Audio-Guided Visual Perception for Audio-Visual Navigation",
-    "paper_title_zh": "",
+    "paper_title_zh": "音频引导的视觉感知用于视听导航",
     "paper_id": "2510.11760",
     "paper_abstract": "Audio-Visual Embodied Navigation aims to enable agents to autonomously navigate to sound sources in unknown 3D environments using auditory cues. While current AVN methods excel on in-distribution sound sources, they exhibit poor cross-source generalization: navigation success rates plummet and search paths become excessively long when agents encounter unheard sounds or unseen environments. This limitation stems from the lack of explicit alignment mechanisms between auditory signals and corresponding visual regions. Policies tend to memorize spurious \\enquote{acoustic fingerprint-scenario} correlations during training, leading to blind exploration when exposed to novel sound sources. To address this, we propose the AGVP framework, which transforms sound from policy-memorable acoustic fingerprint cues into spatial guidance. The framework first extracts global auditory context via audio self-attention, then uses this context as queries to guide visual feature attention, highlighting sound-source-related regions at the feature level. Subsequent temporal modeling and policy optimization are then performed. This design, centered on interpretable cross-modal alignment and region reweighting, reduces dependency on specific acoustic fingerprints. Experimental results demonstrate that AGVP improves both navigation efficiency and robustness while achieving superior cross-scenario generalization on previously unheard sounds.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "视听具身导航旨在使代理能够利用听觉线索在未知的三维环境中自主导航到声源。虽然当前的视听导航方法在分布内声源上表现出色，但它们在跨源泛化方面表现不佳：当代理遇到未听过的声音或未见过的环境时，导航成功率急剧下降，搜索路径变得过长。这一限制源于听觉信号与相应视觉区域之间缺乏明确的对齐机制。策略倾向于在训练过程中记忆虚假的声学指纹-场景相关性，导致在接触新声源时进行盲目探索。为解决这一问题，我们提出了AGVP框架，该框架将声音从策略可记忆的声学指纹线索转换为空间引导。该框架首先通过音频自注意力提取全局听觉上下文，然后使用此上下文作为查询来引导视觉特征注意力，在特征层面突出显示与声源相关的区域。随后进行时间建模和策略优化。这种以可解释的跨模态对齐和区域重新加权为中心的设计，减少了对特定声学指纹的依赖。实验结果表明，AGVP提高了导航效率和鲁棒性，同时在未听过的声音上实现了卓越的跨场景泛化能力。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -173,8 +173,12 @@
     ],
     "update_time": "2025-10-15",
     "paper_authors": "Yi Wang, Yinfeng Yu, Fuchun Sun, Liejun Wang, Wendong Zheng",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "UALM: Unified Audio Language Model for Understanding, Generation and Reasoning",
