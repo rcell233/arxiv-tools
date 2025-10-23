@@ -4,7 +4,7 @@
     "paper_title_zh": "RIR-Mega：用于机器学习和房间声学建模的大规模模拟房间脉冲响应数据集",
     "paper_id": "2510.18917",
     "paper_abstract": "Room impulse responses are a core resource for dereverberation, robust speech recognition, source localization, and room acoustics estimation. We present RIR-Mega, a large collection of simulated RIRs described by a compact, machine friendly metadata schema and distributed with simple tools for validation and reuse. The dataset ships with a Hugging Face Datasets loader, scripts for metadata checks and checksums, and a reference regression baseline that predicts RT60 like targets from waveforms. On a train and validation split of 36,000 and 4,000 examples, a small Random Forest on lightweight time and spectral features reaches a mean absolute error near 0.013 s and a root mean square error near 0.022 s. We host a subset with 1,000 linear array RIRs and 3,000 circular array RIRs on Hugging Face for streaming and quick tests, and preserve the complete 50,000 RIR archive on Zenodo. The dataset and code are public to support reproducible studies.",
-    "paper_abstract_zh": "房间脉冲响应是去混响、鲁棒语音识别、声源定位和房间声学估计的核心资源。我们提出了RIR-Mega，这是一个由紧凑且机器友好的元数据模式描述的大规模模拟RIR集合，并附带简单的验证和复用工具。该数据集包含Hugging Face Datasets加载器、元数据检查和校验和脚本，以及一个参考回归基线模型，可以从波形中预测RT60等目标值。在36,000个训练样本和4,000个验证样本的划分上，基于轻量级时域和频谱特征的小型随机森林模型达到了平均绝对误差约0.013秒和均方根误差约0.022秒的性能。我们在Hugging Face上托管了包含1,000个线性阵列RIR和3,000个圆形阵列RIR的子集用于流式传输和快速测试，并在Zenodo上保存了完整的50,000个RIR存档。该数据集和代码公开发布以支持可复现的研究。",
+    "paper_abstract_zh": "房间脉冲响应是去混响、鲁棒语音识别、声源定位和房间声学估计的核心资源。我们提出了RIR-Mega，这是一个大规模的模拟RIR集合，采用紧凑的、机器友好的元数据模式描述，并附带用于验证和重用的简单工具分发。该数据集配备了Hugging Face数据集加载器、元数据检查和校验和脚本，以及一个参考回归基线，用于从波形预测RT60等目标。在36,000个训练示例和4,000个验证示例的划分上，一个基于轻量级时间和频谱特征的小型随机森林达到了接近0.013秒的平均绝对误差和接近0.022秒的均方根误差。我们在Hugging Face上托管了一个包含1,000个线性阵列RIR和3,000个圆形阵列RIR的子集，用于流式传输和快速测试，并在Zenodo上保留了完整的50,000个RIR存档。该数据集和代码公开可用，以支持可重复的研究。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Signal Processing (eess.SP)"
@@ -13,8 +13,8 @@
     "paper_authors": "Mandip Goswami",
     "topic": [
       "Audio Representation Learning",
-      "Speech Enhancement",
-      "Speech Recognition"
+      "Speech Recognition",
+      "Speech Enhancement"
     ],
     "category": [
       "Speech"
@@ -25,7 +25,7 @@
     "paper_title_zh": "StutterZero和StutterFormer：用于口吃转录和纠正的端到端语音转换",
     "paper_id": "2510.18938",
     "paper_abstract": "Over 70 million people worldwide experience stuttering, yet most automatic speech systems misinterpret disfluent utterances or fail to transcribe them accurately. Existing methods for stutter correction rely on handcrafted feature extraction or multi-stage automatic speech recognition (ASR) and text-to-speech (TTS) pipelines, which separate transcription from audio reconstruction and often amplify distortions. This work introduces StutterZero and StutterFormer, the first end-to-end waveform-to-waveform models that directly convert stuttered speech into fluent speech while jointly predicting its transcription. StutterZero employs a convolutional-bidirectional LSTM encoder-decoder with attention, whereas StutterFormer integrates a dual-stream Transformer with shared acoustic-linguistic representations. Both architectures are trained on paired stuttered-fluent data synthesized from the SEP-28K and LibriStutter corpora and evaluated on unseen speakers from the FluencyBank dataset. Across all benchmarks, StutterZero had a 24% decrease in Word Error Rate (WER) and a 31% improvement in semantic similarity (BERTScore) compared to the leading Whisper-Medium model. StutterFormer achieved better results, with a 28% decrease in WER and a 34% improvement in BERTScore. The results validate the feasibility of direct end-to-end stutter-to-fluent speech conversion, offering new opportunities for inclusive human-computer interaction, speech therapy, and accessibility-oriented AI systems.",
-    "paper_abstract_zh": "全球有超过7000万人经历口吃，但大多数自动语音系统误解不流畅的话语或无法准确转录它们。现有的口吃纠正方法依赖于手工制作的特征提取或多阶段自动语音识别(ASR)和文本到语音(TTS)流水线，这些流水线将转录与音频重建分离并常常放大失真。这项工作介绍了StutterZero和StutterFormer，这是首批端到端的波形到波形模型，可以直接将口吃语音转换为流畅语音，同时联合预测其转录。StutterZero采用带有注意力的卷积-双向LSTM编码器-解码器，而StutterFormer集成了具有共享声学-语言表示的双流Transformer。两种架构都在从SEP-28K和LibriStutter语料库合成的配对口吃-流畅数据上进行训练，并在FluencyBank数据集中未见过的说话者上进行评估。在所有基准测试中，与领先的Whisper-Medium模型相比，StutterZero的词错误率(WER)降低了24%，语义相似性(BERTScore)提高了31%。StutterFormer取得了更好的结果，WER降低了28%，BERTScore提高了34%。这些结果验证了直接端到端口吃到流畅语音转换的可行性，为包容性人机交互、言语治疗和以可访问性为导向的AI系统提供了新的机会。",
+    "paper_abstract_zh": "全球超过7000万人患有口吃，但大多数自动语音系统误解不流畅的话语或无法准确转录它们。现有的口吃纠正方法依赖于手工制作的特征提取或多阶段自动语音识别(ASR)和文本到语音(TTS)流水线，这些流水线将转录与音频重建分开，并且通常会放大失真。这项工作介绍了StutterZero和StutterFormer，这是首批端到端的波形到波形模型，可以直接将口吃语音转换为流畅语音，同时联合预测其转录。StutterZero采用带有注意力的卷积双向LSTM编码器-解码器，而StutterFormer则集成了具有共享声学语言表示的双流Transformer。两种架构都是在从SEP-28K和LibriStutter语料库合成的成对口吃-流畅数据上训练的，并在FluencyBank数据集中未见过的说话者上进行了评估。在所有基准测试中，与领先的Whisper-Medium模型相比，StutterZero的词错误率(WER)降低了24%，语义相似性(BERTScore)提高了31%。StutterFormer取得了更好的结果，WER降低了28%，BERTScore提高了34%。这些结果验证了直接端到端口吃到流畅语音转换的可行性，为包容性人机交互、言语治疗和以无障碍为导向的AI系统提供了新的机会。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Artificial Intelligence (cs.AI)",
@@ -35,7 +35,6 @@
     "paper_authors": "Qianheng Xu",
     "topic": [
       "Speech Recognition",
-      "Speech Synthesis",
       "Speech Enhancement"
     ],
     "category": [
@@ -47,7 +46,7 @@
     "paper_title_zh": "基于耳部脑电信号的听觉注意力解码：具有动态注意力切换和严格交叉验证的数据集",
     "paper_id": "2510.19174",
     "paper_abstract": "Recent promising results in auditory attention decoding (AAD) using scalp electroencephalography (EEG) have motivated the exploration of cEEGrid, a flexible and portable ear-EEG system. While prior cEEGrid-based studies have confirmed the feasibility of AAD, they often neglect the dynamic nature of attentional states in real-world contexts. To address this gap, a novel cEEGrid dataset featuring three concurrent speakers distributed across three of five distinct spatial locations is introduced. The novel dataset is designed to probe attentional tracking and switching in realistic scenarios. Nested leave-one-out validation-an approach more rigorous than conventional single-loop leave-one-out validation-is employed to reduce biases stemming from EEG's intricate temporal dynamics. Four rule-based models are evaluated: Wiener filter (WF), canonical component analysis (CCA), common spatial pattern (CSP) and Riemannian Geometry-based classifier (RGC). With a 30-second decision window, WF and CCA models achieve decoding accuracies of 41.5% and 41.4%, respectively, while CSP and RGC models yield 37.8% and 37.6% accuracies using a 10-second window. Notably, both WF and CCA successfully track attentional state switches across all experimental tasks. Additionally, higher decoding accuracies are observed for electrodes positioned at the upper cEEGrid layout and near the listener's right ear. These findings underscore the utility of dynamic, ecologically valid paradigms and rigorous validation in advancing AAD research with cEEGrid.",
-    "paper_abstract_zh": "最近使用头皮脑电图(EEG)进行听觉注意力解码(AAD)的 promising 结果促使了探索cEEGrid，一种灵活且便携的耳部EEG系统。虽然基于cEEGrid的先前研究已确认了AAD的可行性，但它们常常忽略了现实世界中注意力状态的动态特性。为解决这一差距，本文引入了一个新的cEEGrid数据集，该数据集包含分布在五个不同空间位置中的三个并发说话者。这个新数据集旨在在真实场景中探测注意力的跟踪和切换。采用嵌套留一法验证——一种比传统单循环留一法验证更严格的方法——以减少源于EEG复杂时间动态的偏差。评估了四种基于规则的模型：维纳滤波器(WF)、典型成分分析(CCA)、公共空间模式(CSP)和基于黎曼几何的分类器(RGC)。使用30秒决策窗口时，WF和CCA模型分别实现了41.5%和41.4%的解码准确率，而使用10秒窗口时，CSP和RGC模型分别产生37.8%和37.6%的准确率。值得注意的是，WF和CCA模型都成功跟踪了所有实验任务中的注意力状态切换。此外，位于cEEGrid布局上部和靠近听者右耳的电极观察到更高的解码准确率。这些发现强调了动态、生态有效范式和严格验证在推进cEEGrid的AAD研究中的实用性。",
+    "paper_abstract_zh": "最近使用头皮脑电图(EEG)进行听觉注意力解码(AAD)的 promising 结果促使了对 cEEGrid 的探索，这是一种灵活且便携的耳部脑电系统。虽然先前基于 cEEGrid 的研究已证实了 AAD 的可行性，但它们往往忽略了现实世界中注意力状态的动态性。为解决这一差距，本文引入了一个新的 cEEGrid 数据集，其中包含分布在五个不同空间位置中的三个并发说话者。该数据集旨在探索现实场景中的注意力跟踪和切换。采用嵌套留一交叉验证——一种比传统单循环留一交叉验证更严格的方法——以减少源于脑电图复杂时间动态的偏差。评估了四种基于规则的模型：Wiener 滤波器(WF)、典型成分分析(CCA)、通用空间模式(CSP)和基于黎曼几何的分类器(RGC)。使用 30 秒决策窗口时，WF 和 CCA 模型分别实现了 41.5% 和 41.4% 的解码准确率，而使用 10 秒窗口时，CSP 和 RGC 模型分别达到 37.8% 和 37.6% 的准确率。值得注意的是，WF 和 CCA 均成功跟踪了所有实验任务中的注意力状态切换。此外，位于 cEEGrid 布局上部和靠近听众右耳的电极显示出更高的解码准确率。这些发现强调了动态、生态有效范式和严格验证在推进 cEEGrid 的 AAD 研究中的重要性。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Signal Processing (eess.SP)"
@@ -64,18 +63,17 @@
   },
   {
     "paper_title": "An Efficient Neural Network for Modeling Human Auditory Neurograms for Speech",
-    "paper_title_zh": "一种用于建模人类听觉神经图的语音高效神经网络",
+    "paper_title_zh": "用于语音建模的人类听觉神经图的高效神经网络",
     "paper_id": "2510.19354",
     "paper_abstract": "Classical auditory-periphery models, exemplified by Bruce et al., 2018, provide high-fidelity simulations but are stochastic and computationally demanding, limiting large-scale experimentation and low-latency use. Prior neural encoders approximate aspects of the periphery; however, few are explicitly trained to reproduce the deterministic, rate-domain neurogram , hindering like-for-like evaluation. We present a compact convolutional encoder that approximates the Bruce mean-rate pathway and maps audio to a multi-frequency neurogram. We deliberately omit stochastic spiking effects and focus on a deterministic mapping (identical outputs for identical inputs). Using a computationally efficient design, the encoder achieves close correspondence to the reference while significantly reducing computation, enabling efficient modeling and front-end processing for auditory neuroscience and audio signal processing applications.",
-    "paper_abstract_zh": "经典的听觉外周模型（如Bruce等人2018年的模型）提供高保真模拟，但具有随机性和高计算需求，限制了大规模实验和低延迟应用。先前的神经编码器近似模拟外周特性；然而，很少有模型被明确训练以重现确定性的速率域神经图，这妨碍了直接比较评估。我们提出了一种紧凑的卷积编码器，近似Bruce的平均速率通路，并将音频映射为多频率神经图。我们有意省略了随机脉冲效应，专注于确定性映射（相同输入产生相同输出）。通过计算效率高的设计，该编码器在显著减少计算量的同时实现了与参考模型的紧密对应，为听觉神经科学和音频信号处理应用提供了高效的建模和前端处理。",
+    "paper_abstract_zh": "经典听觉外周模型（如Bruce等人，2018年提出）虽然能够提供高保真模拟，但其随机性和计算密集型特性限制了大规模实验和低延迟应用。先前的神经编码器近似了听觉外周的某些特性；然而，很少有编码器被明确训练来重现确定性的、速率域的神经图，阻碍了直接比较。我们提出了一种紧凑的卷积编码器，该编码器近似Bruce的平均速率路径，并将音频映射为多频带神经图。我们特意省略了随机脉冲效应，专注于确定性映射（相同输入产生相同输出）。通过计算高效的架构设计，该编码器与参考模型高度吻合，同时显著降低了计算复杂度，为听觉神经科学和音频信号处理应用提供了高效的建模和前端处理能力。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-23",
     "paper_authors": "Eylon Zohar, Israel Nelken, Boaz Rafaely",
     "topic": [
-      "Audio Representation Learning",
-      "Speech Recognition"
+      "Audio Representation Learning"
     ],
     "category": [
       "Speech"
@@ -83,14 +81,14 @@
   },
   {
     "paper_title": "EchoFake: A Replay-Aware Dataset for Practical Speech Deepfake Detection",
-    "paper_title_zh": "EchoFake: 一个用于实际语音深度伪造检测的回放感知数据集",
+    "paper_title_zh": "EchoFake: 一个针对实际语音深度伪造检测的重放感知数据集",
     "paper_id": "2510.19414",
     "paper_abstract": "The growing prevalence of speech deepfakes has raised serious concerns, particularly in real-world scenarios such as telephone fraud and identity theft. While many anti-spoofing systems have demonstrated promising performance on lab-generated synthetic speech, they often fail when confronted with physical replay attacks-a common and low-cost form of attack used in practical settings. Our experiments show that models trained on existing datasets exhibit severe performance degradation, with average accuracy dropping to 59.6% when evaluated on replayed audio. To bridge this gap, we present EchoFake, a comprehensive dataset comprising more than 120 hours of audio from over 13,000 speakers, featuring both cutting-edge zero-shot text-to-speech (TTS) speech and physical replay recordings collected under varied devices and real-world environmental settings. Additionally, we evaluate three baseline detection models and show that models trained on EchoFake achieve lower average EERs across datasets, indicating better generalization. By introducing more practical challenges relevant to real-world deployment, EchoFake offers a more realistic foundation for advancing spoofing detection methods.",
-    "paper_abstract_zh": "语音深度伪造的日益普及引发了严重担忧，特别是在电话欺诈和身份盗窃等现实场景中。尽管许多反欺骗系统在实验室生成的合成语音上展示了有希望的性能，但当面对物理回放攻击时，它们往往会失败——这是一种在实际环境中常见且低成本的形式。我们的实验表明，在现有数据集上训练的模型表现出严重的性能下降，在回放音频上评估时，平均准确率降至59.6%。为了弥合这一差距，我们提出了EchoFake，这是一个包含13000多名 speakers 超过120小时音频的综合数据集，包含最先进的零样本文本到语音(TTS)语音和在各种设备和现实环境设置下收集的物理回放录音。此外，我们评估了三个基线检测模型，并显示在EchoFake上训练的模型在多个数据集上实现了更低的平均等错误率(EER)，表明具有更好的泛化能力。通过引入与实际部署相关的更多实际挑战，EchoFake为推进欺骗检测方法提供了更现实的基础。",
+    "paper_abstract_zh": "语音深度伪造的日益普及引发了严重担忧，特别是在电话欺诈和身份盗窃等现实场景中。尽管许多反欺骗系统在实验室生成的合成语音上展示了有前景的性能，但当面对物理重放攻击时，它们往往会失败——这是一种在实际环境中常见且低成本的形式。我们的实验表明，在现有数据集上训练的模型在评估重放音频时表现出严重的性能下降，平均准确率降至59.6%。为了弥合这一差距，我们提出了EchoFake，这是一个包含来自13,000多名 speaker 的120多小时音频的综合数据集，包含最先进的零样本文本到语音(TTS)语音和在不同设备和现实环境设置下收集的物理重放录音。此外，我们评估了三个基线检测模型，并显示在EchoFake上训练的模型在跨数据集上实现了更低的平均等错误率(EER)，表明具有更好的泛化能力。通过引入与实际部署相关的更实际挑战，EchoFake为推进欺骗检测方法提供了更现实的基础。",
     "subjects": [
+      "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Artificial Intelligence (cs.AI)",
-      "Sound (cs.SD)"
+      "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-10-23",
     "paper_authors": "Tong Zhang, Yihuan Huang, Yanzhen Ren",
@@ -107,7 +105,7 @@
     "paper_title_zh": "基于协方差减法的相对传递矩阵估计器",
     "paper_id": "2510.19439",
     "paper_abstract": "The Relative Transfer Matrix (ReTM), recently introduced as a generalization of the relative transfer function for multiple receivers and sources, shows promising performance when applied to speech enhancement and speaker separation in noisy environments. Blindly estimating the ReTM of sound sources by exploiting the covariance matrices of multichannel recordings is highly beneficial for practical applications. In this paper, we use covariance subtraction to present a flexible and practically viable method for estimating the ReTM for a select set of independent sound sources. To show the versatility of the method, we validated it through a speaker separation application under reverberant conditions. Separation performance is evaluated at low signal-to-noise ratio levels in comparison with existing ReTM-based and relative transfer function-based estimators, in both simulated and real-life environments.",
-    "paper_abstract_zh": "相对传递矩阵（ReTM）作为相对传递函数在多个接收器和源上的推广，在应用于嘈杂环境中的语音增强和说话人分离时展现出良好的性能。通过利用多通道录音的协方差矩阵来盲估计声源的ReTM，对实际应用非常有益。本文采用协方差减法，提出了一种灵活且实用的方法，用于估计选定独立声源的ReTM。为展示该方法的通用性，我们在混响条件下通过说话人分离应用对其进行了验证。在模拟和真实环境中，与现有的基于ReTM和相对传递函数的估计器相比，我们在低信噪比水平下评估了分离性能。",
+    "paper_abstract_zh": "相对传递矩阵(ReTM)最近被提出作为多接收器和多源情况下相对传递函数的推广，在应用于嘈杂环境中的语音增强和说话人分离时显示出良好的性能。通过利用多通道记录的协方差矩阵来盲估计声源的ReTM，对实际应用非常有益。本文使用协方差减法提出了一种灵活且实用的方法，用于估计选定独立声源的ReTM。为了展示该方法的通用性，我们在混响条件下通过说话人分离应用对其进行了验证。在模拟和真实环境中，与现有的基于ReTM和基于相对传递函数的估计器相比，在低信噪比水平下评估了分离性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Sound (cs.SD)"
@@ -115,8 +113,7 @@
     "update_time": "2025-10-23",
     "paper_authors": "Wageesha N. Manamperi, Thushara D. Abhayapala",
     "topic": [
-      "Speech Enhancement",
-      "Speech Recognition"
+      "Speech Enhancement"
     ],
     "category": [
       "Speech"
@@ -127,15 +124,15 @@
     "paper_title_zh": "VBx用于端到端神经和基于聚类的说话人分离",
     "paper_id": "2510.19572",
     "paper_abstract": "We present improvements to speaker diarization in the two-stage end-to-end neural diarization with vector clustering (EEND-VC) framework. The first stage employs a Conformer-based EEND model with WavLM features to infer frame-level speaker activity within short windows. The identities and counts of global speakers are then derived in the second stage by clustering speaker embeddings across windows. The focus of this work is to improve the second stage; we filter unreliable embeddings from short segments and reassign them after clustering. We also integrate the VBx clustering to improve robustness when the number of speakers is large and individual speaking durations are limited. Evaluation on a compound benchmark spanning multiple domains is conducted without fine-tuning the EEND model or tuning clustering parameters per dataset. Despite this, the system generalizes well and matches or exceeds recent state-of-the-art performance.",
-    "paper_abstract_zh": "我们提出了一种改进方法，用于在基于向量聚类的端到端神经说话人分离（EEND-VC）框架中改进说话人分离。第一阶段采用基于Conformer的EEND模型，使用WavLM特征来推断短时间窗口内的帧级说话人活动。然后在第二阶段通过跨窗口聚类说话人嵌入来推导全局说话人的身份和数量。本文的重点是改进第二阶段；我们从短片段中过滤不可靠的嵌入，并在聚类后重新分配它们。我们还集成了VBx聚类，以提高在说话人数量多且个体说话时长有限情况下的鲁棒性。我们在跨多个领域的复合基准上进行了评估，无需对EEND模型进行微调或针对每个数据集调整聚类参数。尽管如此，该系统仍具有良好的泛化能力，并匹配或超过了最近的最新性能。",
+    "paper_abstract_zh": "我们提出了在两阶段端到端神经说话人分离与向量聚类(EEND-VC)框架中改进说话人分离的方法。第一阶段采用基于Conformer的EEND模型和WavLM特征来推断短窗口内的帧级说话人活动。然后在第二阶段通过跨窗口聚类说话人嵌入来推导全局说话人的身份和数量。本文的重点是改进第二阶段；我们过滤来自短片段的不可靠嵌入并在聚类后重新分配它们。我们还集成了VBx聚类以提高当说话人数量大且个体说话时长有限时的鲁棒性。我们在跨越多个领域的复合基准上进行了评估，无需对EEND模型进行微调或针对每个数据集调整聚类参数。尽管如此，该系统泛化能力良好，匹配或超过了最近的最新性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-23",
     "paper_authors": "Petr Pálka, Jiangyu Han, Marc Delcroix, Naohiro Tawara, Lukáš Burget",
     "topic": [
-      "Audio Representation Learning",
-      "Speech Recognition"
+      "Speech Recognition",
+      "Audio Representation Learning"
     ],
     "category": [
       "Speech"
@@ -146,11 +143,11 @@
     "paper_title_zh": "MUSE基准测试：在音频大语言模型中探索音乐感知和听觉关系推理",
     "paper_id": "2510.19055",
     "paper_abstract": "Multimodal Large Language Models (MLLMs) have demonstrated capabilities in audio understanding, but current evaluations may obscure fundamental weaknesses in relational reasoning. We introduce the Music Understanding and Structural Evaluation (MUSE) Benchmark, an open-source resource with 10 tasks designed to probe fundamental music perception skills. We evaluate four SOTA models (Gemini Pro and Flash, Qwen2.5-Omni, and Audio-Flamingo 3) against a large human baseline (N=200). Our results reveal a wide variance in SOTA capabilities and a persistent gap with human experts. While Gemini Pro succeeds on basic perception, Qwen and Audio Flamingo 3 perform at or near chance, exposing severe perceptual deficits. Furthermore, we find Chain-of-Thought (CoT) prompting provides inconsistent, often detrimental results. Our work provides a critical tool for evaluating invariant musical representations and driving development of more robust AI systems.",
-    "paper_abstract_zh": "多模态大语言模型（MLLMs）已在音频理解方面展现出能力，但当前的评估可能掩盖了关系推理中的基本弱点。我们推出了音乐理解和结构评估（MUSE）基准测试，这是一个开源资源，包含10项任务，旨在探测基本的音乐感知技能。我们评估了四种最先进的模型（Gemini Pro和Flash、Qwen2.5-Omni以及Audio-Flamingo 3）与大规模人类基线（N=200）的表现。结果表明，最先进模型的能力存在广泛差异，且与人类专家之间仍存在明显差距。虽然Gemini Pro在基础感知任务上表现成功，但Qwen和Audio Flamingo 3的表现接近或仅达到随机水平，暴露了严重的感知缺陷。此外，我们发现思维链（CoT）提示提供了不一致且通常有害的结果。我们的工作为评估不变的音乐表征提供了关键工具，并推动了更稳健AI系统的发展。",
+    "paper_abstract_zh": "多模态大语言模型(MLLMs)已展现出音频理解能力，但当前评估可能掩盖了关系推理中的基本弱点。我们推出了音乐理解和结构评估(MUSE)基准测试，这是一个包含10个任务的开源资源，旨在探测基本的音乐感知技能。我们评估了四个最先进的模型(Gemini Pro和Flash、Qwen2.5-Omni和Audio-Flamingo 3)与一个大的人类基线(N=200)相比。结果显示，最先进模型的能力差异很大，且与人类专家之间存在持续差距。虽然Gemini Pro在基本感知任务上成功，但Qwen和Audio Flamingo 3的表现接近或低于随机水平，暴露了严重的感知缺陷。此外，我们发现思维链(CoT)提示提供了不一致且往往有害的结果。我们的工作为评估不变的音乐表征提供了关键工具，并推动了更强大AI系统的发展。",
     "subjects": [
-      "Artificial Intelligence (cs.AI)",
       "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)"
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-10-23",
     "paper_authors": "Brandon James Carone, Iran R. Roman, Pablo Ripollés",
@@ -164,10 +161,10 @@
   },
   {
     "paper_title": "Steering Autoregressive Music Generation with Recursive Feature Machines",
-    "paper_title_zh": "基于递归特征机器的自回归音乐生成引导方法",
+    "paper_title_zh": "基于递归特征机的自回归音乐生成引导方法",
     "paper_id": "2510.19127",
     "paper_abstract": "Controllable music generation remains a significant challenge, with existing methods often requiring model retraining or introducing audible artifacts. We introduce MusicRFM, a framework that adapts Recursive Feature Machines (RFMs) to enable fine-grained, interpretable control over frozen, pre-trained music models by directly steering their internal activations. RFMs analyze a model's internal gradients to produce interpretable \"concept directions\", or specific axes in the activation space that correspond to musical attributes like notes or chords. We first train lightweight RFM probes to discover these directions within MusicGen's hidden states; then, during inference, we inject them back into the model to guide the generation process in real-time without per-step optimization. We present advanced mechanisms for this control, including dynamic, time-varying schedules and methods for the simultaneous enforcement of multiple musical properties. Our method successfully navigates the trade-off between control and generation quality: we can increase the accuracy of generating a target musical note from 0.23 to 0.82, while text prompt adherence remains within approximately 0.02 of the unsteered baseline, demonstrating effective control with minimal impact on prompt fidelity. We release code to encourage further exploration on RFMs in the music domain.",
-    "paper_abstract_zh": "可控音乐生成仍然是一个重大挑战，现有方法通常需要重新训练模型或引入可听觉伪影。我们提出了MusicRFM框架，通过直接引导预训练音乐模型的内部激活，将递归特征机器（RFMs）适配到冻结的预训练音乐模型中，实现细粒度且可解释的控制。RFMs通过分析模型的内部梯度来生成可解释的'概念方向'，即对应音乐属性（如音符或和弦）的激活空间特定轴。我们首先训练轻量级的RFM探测器，在MusicGen的隐藏状态中发现这些方向；然后在推理过程中，将它们重新注入模型以实时引导生成过程，无需每步优化。我们提出了先进的控制机制，包括动态、随时间变化的调度方案，以及同时强制执行多种音乐属性的方法。我们的方法成功平衡了控制与生成质量之间的权衡：可将目标音乐音符生成准确率从0.23提升至0.82，同时文本提示遵循度仅比未引导基线降低约0.02，证明了在最小影响提示保真度的情况下实现了有效控制。我们开源代码以鼓励在音乐领域进一步探索RFM技术。",
+    "paper_abstract_zh": "可控音乐生成仍然是一个重大挑战，现有方法通常需要模型重新训练或引入可听觉伪影。我们提出了MusicRFM框架，该框架将递归特征机（RFMs）适配到预训练的冻结音乐模型中，通过直接引导其内部激活实现细粒度、可解释的控制。RFMs通过分析模型内部梯度生成可解释的'概念方向'，即对应音乐属性（如音符或和弦）的激活空间特定轴。我们首先训练轻量级RFM探测器在MusicGen的隐藏状态中发现这些方向；然后在推理过程中，将它们注入模型以实时引导生成过程，无需每步优化。我们提出了先进的控制机制，包括动态时间调度以及同时强制执行多种音乐属性的方法。我们的方法成功平衡了控制性与生成质量：目标音符生成准确率从0.23提升至0.82，同时文本提示遵循度仅比未引导基线下降约0.02，证明了在最小化提示保真度损失的同时实现了有效控制。我们开源代码以鼓励在音乐领域进一步探索RFM技术。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Artificial Intelligence (cs.AI)",
@@ -188,7 +185,7 @@
     "paper_title_zh": "重新评估自动语音识别中的最小贝叶斯风险解码",
     "paper_id": "2510.19471",
     "paper_abstract": "Recent work has shown that sample-based Minimum Bayes Risk (MBR) decoding outperforms beam search in text-to-text generation tasks, such as machine translation, text summarization, and image captioning. On the other hand, beam search is the current practice for speech-to-text tasks such as automatic speech recognition (ASR) and Speech Translation (ST). Given that MBR decoding is effective in text-to-text generation tasks, it is reasonable to expect it to also be effective for speech-to-text tasks. In this paper, we evaluate MBR decoding for ASR and ST tasks on English and Japanese using Whisper and its derivative models. We observe that the accuracy of MBR decoding outperforms that of beam search in most of the experimental settings we have evaluated. The results show that MBR decoding is a promising method for offline ASR and ST tasks that require high accuracy. The code is available at this https URL",
-    "paper_abstract_zh": "最近的研究表明，基于样本的最小贝叶斯风险(MBR)解码在文本到文本生成任务(如机器翻译、文本摘要和图像描述)中优于束搜索。另一方面，束搜索是当前语音到文本任务(如自动语音识别(ASR)和语音翻译(ST))的实践方法。鉴于MBR解码在文本到文本生成任务中有效，合理地预期它对语音到文本任务同样有效。在本文中，我们使用Whisper及其衍生模型在英语和日语上评估了ASR和ST任务的MBR解码。我们观察到，在大多数评估的实验设置中，MBR解码的准确性优于束搜索。结果表明，MBR解码是一种有前途的方法，适用于需要高精度的离线ASR和ST任务。代码可在提供的URL获取。",
+    "paper_abstract_zh": "最近的研究表明，基于样本的最小贝叶斯风险(MBR)解码在文本到文本生成任务中优于束搜索，例如机器翻译、文本摘要和图像字幕生成。另一方面，束搜索是当前语音到文本任务的标准实践，如自动语音识别(ASR)和语音翻译(ST)。鉴于MBR解码在文本到文本生成任务中有效，可以合理地预期它对语音到文本任务也同样有效。在本文中，我们使用Whisper及其衍生模型，在英语和日语的ASR和ST任务上评估了MBR解码。我们观察到，在大多数实验设置中，MBR解码的准确性优于束搜索。结果表明，MBR解码是一种有前途的方法，适用于需要高精度的离线ASR和ST任务。代码可在提供的URL获取。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Machine Learning (cs.LG)",
@@ -205,10 +202,10 @@
   },
   {
     "paper_title": "Which Evaluation for Which Model? A Taxonomy for Speech Model Assessment",
-    "paper_title_zh": "何种评估适用于何种模型？语音模型评估分类法",
+    "paper_title_zh": "哪种评估对应哪种模型？语音模型评估的分类法",
     "paper_id": "2510.19509",
     "paper_abstract": "Speech foundation models have recently achieved remarkable capabilities across a wide range of tasks. However, their evaluation remains disjointed across tasks and model types. Different models excel at distinct aspects of speech processing and thus require different evaluation protocols. This paper proposes a unified taxonomy that addresses the question: Which evaluation is appropriate for which model? The taxonomy defines three orthogonal axes: the \\textbf{evaluation aspect} being measured, the model capabilities required to attempt the task, and the task or protocol requirements needed to perform it. We classify a broad set of existing evaluations and benchmarks along these axes, spanning areas such as representation learning, speech generation, and interactive dialogue. By mapping each evaluation to the capabilities a model exposes (e.g., speech generation, real-time processing) and to its methodological demands (e.g., fine-tuning data, human judgment), the taxonomy provides a principled framework for aligning models with suitable evaluation methods. It also reveals systematic gaps, such as limited coverage of prosody, interaction, or reasoning, that highlight priorities for future benchmark design. Overall, this work offers a conceptual foundation and practical guide for selecting, interpreting, and extending evaluations of speech models.",
-    "paper_abstract_zh": "语音基础模型近期在广泛任务中展现出卓越能力，但不同任务和模型类型的评估方法仍处于割裂状态。由于不同模型在语音处理的不同方面表现各异，因此需要差异化的评估协议。本文提出了一种统一分类法，旨在回答：何种评估适用于何种模型？该分类法定义了三个正交维度：被测量的评估方面、完成任务所需的模型能力，以及执行任务所需的协议要求。我们将涵盖表示学习、语音生成和交互对话等领域的现有评估方法归类到这些维度下。通过将每种评估映射到模型所展现的能力（如语音生成、实时处理）及其方法论需求（如微调数据、人工判断），该分类法为模型与评估方法的匹配提供了系统性框架。同时，它揭示了诸如韵律、交互或推理覆盖不足等系统性空白，为未来基准设计指明优先方向。总体而言，本研究为语音模型评估的选择、解读与扩展提供了概念基础和实践指南。",
+    "paper_abstract_zh": "语音基础模型最近在广泛任务中取得了显著能力。然而，它们的评估在不同任务和模型类型之间仍然缺乏统一性。不同模型在语音处理的不同方面表现出色，因此需要不同的评估协议。本文提出了一种统一的分类法，旨在回答以下问题：哪种评估适合哪种模型？该分类法定义了三个正交轴：所衡量的评估方面、模型完成任务所需的能力以及执行任务所需的协议要求。我们沿着这些轴对现有的一系列评估和基准进行了分类，涵盖了表示学习、语音生成和交互式对话等领域。通过将每个评估映射到模型展示的能力（如语音生成、实时处理）及其方法论要求（如微调数据、人工判断），该分类法为模型与合适评估方法的匹配提供了原则性框架。它还揭示了系统性的差距，如韵律、交互或推理方面的覆盖有限，这突显了未来基准设计的优先事项。总体而言，这项工作为语音模型评估的选择、解释和扩展提供了概念基础和实践指南。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Audio and Speech Processing (eess.AS)"
@@ -217,11 +214,54 @@
     "paper_authors": "Maureen de Seyssel, Eeshan Gunesh Dhekane",
     "topic": [
       "Audio Representation Learning",
-      "Speech Synthesis",
-      "Other"
+      "Speech Recognition",
+      "Speech Synthesis"
     ],
     "category": [
       "Speech"
+    ]
+  },
+  {
+    "paper_title": "AMAuT: A Flexible and Efficient Multiview Audio Transformer Framework Trained from Scratch",
+    "paper_title_zh": "AMAuT: 一种从头训练的灵活高效的多视图音频Transformer框架",
+    "paper_id": "2510.19368",
+    "paper_abstract": "Recent foundational models, SSAST, EAT, HuBERT, Qwen-Audio, and Audio Flamingo, achieve top-tier results across standard audio benchmarks but are limited by fixed input rates and durations, hindering their reusability. This paper introduces the Augmentation-driven Multiview Audio Transformer (AMAuT), a training-from-scratch framework that eliminates the dependency on pre-trained weights while supporting arbitrary sample rates and audio lengths. AMAuT integrates four key components: (1) augmentation-driven multiview learning for robustness, (2) a conv1 + conv7 + conv1 one-dimensional CNN bottleneck for stable temporal encoding, (3) dual CLS + TAL tokens for bidirectional context representation, and (4) test-time adaptation/augmentation (TTA^2) to improve inference reliability. Experiments on five public benchmarks, AudioMNIST, SpeechCommands V1 & V2, VocalSound, and CochlScene, show that AMAuT achieves accuracies up to 99.8% while consuming less than 3% of the GPU hours required by comparable pre-trained models. Thus, AMAuT presents a highly efficient and flexible alternative to large pre-trained models, making state-of-the-art audio classification accessible in computationally constrained settings.",
+    "paper_abstract_zh": "最近的基础模型，如SSAST、EAT、HuBERT、Qwen-Audio和Audio Flamingo，在标准音频基准测试中取得了顶尖的成果，但它们受限于固定的输入采样率和持续时间，这阻碍了它们的可重用性。本文提出了增强驱动多视图音频Transformer（AMAuT），这是一个从头训练的框架，它消除了对预训练权重的依赖，同时支持任意采样率和音频长度。AMAuT集成了四个关键组件：（1）增强驱动的多视图学习，以提高鲁棒性；（2）conv1 + conv7 + conv1的一维CNN瓶颈，用于稳定的时间编码；（3）双CLS + TAL标记，用于双向上下文表示；（4）测试时适应/增强（TTA²），以提高推理可靠性。在五个公共基准测试（AudioMNIST、SpeechCommands V1 & V2、VocalSound和CochlScene）上的实验表明，AMAuT的准确率高达99.8%，同时消耗的GPU小时数不到可比预训练模型的3%。因此，AMAuT为大型预训练模型提供了一个高效且灵活的替代方案，使得在计算受限的情况下也能实现最先进的音频分类。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-10-23",
+    "paper_authors": "Weichuang Shao, Iman Yi Liao, Tomas Henrique Bode Maul, Tissa Chandesa",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Time delay embeddings to characterize the timbre of musical instruments using Topological Data Analysis: a study on synthetic and real data",
+    "paper_title_zh": "基于拓扑数据分析的时间延迟嵌入表征乐器音色：合成与真实数据研究",
+    "paper_id": "2510.19435",
+    "paper_abstract": "Timbre allows us to distinguish between sounds even when they share the same pitch and loudness, playing an important role in music, instrument recognition, and speech. Traditional approaches, such as frequency analysis or machine learning, often overlook subtle characteristics of sound. Topological Data Analysis (TDA) can capture complex patterns, but its application to timbre has been limited, partly because it is unclear how to represent sound effectively for TDA. In this study, we investigate how different time delay embeddings affect TDA results. Using both synthetic and real audio signals, we identify time delays that enhance the detection of harmonic structures. Our findings show that specific delays, related to fractions of the fundamental period, allow TDA to reveal key harmonic features and distinguish between integer and non-integer harmonics. The method is effective for synthetic and real musical instrument sounds and opens the way for future works, which could extend it to more complex sounds using higher-dimensional embeddings and additional persistence statistics.",
+    "paper_abstract_zh": "音色使我们能够在音高和响度相同的情况下区分不同声音，在音乐、乐器识别和语音中扮演重要角色。传统方法如频谱分析或机器学习常忽略声音的细微特征。拓扑数据分析（TDA）能够捕捉复杂模式，但其在音色表征中的应用受限，部分原因在于如何有效表示声音数据尚不明确。本研究探讨不同时间延迟嵌入对TDA结果的影响，通过合成与真实音频信号识别增强谐波结构检测的时间延迟。研究发现，与基频周期分数相关的特定延迟可使TDA揭示关键谐波特征，并区分整数与非整数谐波。该方法对合成与真实乐器声音均有效，为未来研究开辟了道路，可能通过高维嵌入和额外持久性统计量扩展至更复杂声音分析。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Algebraic Topology (math.AT)",
+      "Adaptation and Self-Organizing Systems (nlin.AO)",
+      "Data Analysis, Statistics and Probability (physics.data-an)",
+      "Physics and Society (physics.soc-ph)"
+    ],
+    "update_time": "2025-10-23",
+    "paper_authors": "Gakusei Sato, Hiroya Nakao, Riccardo Muolo",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
     ]
   }
 ]
