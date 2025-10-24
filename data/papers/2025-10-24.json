@@ -1,10 +1,10 @@
 [
   {
     "paper_title": "Neural Directional Filtering with Configurable Directivity Pattern at Inference",
-    "paper_title_zh": "具有可配置指向性模式的神经方向滤波",
+    "paper_title_zh": "具有可配置方向性模式的神经方向滤波",
     "paper_id": "2510.20253",
     "paper_abstract": "Spatial filtering with a desired directivity pattern is advantageous for many audio applications. In this work, we propose neural directional filtering with user-defined directivity patterns (UNDF), which enables spatial filtering based on directivity patterns that users can define during inference. To achieve this, we propose a DNN architecture that integrates feature-wise linear modulation (FiLM), allowing user-defined patterns to serve as conditioning inputs. Through analysis, we demonstrate that the FiLM-based architecture enables the UNDF to generalize to unseen user-defined patterns during interference with higher directivities, scaling variations, and different steering directions. Furthermore, we progressively refine training strategies to enhance pattern approximation and enable UNDF to approximate irregular shapes. Lastly, experimental comparisons show that UNDF outperforms conventional methods.",
-    "paper_abstract_zh": "具有所需指向性模式的空间滤波对许多音频应用具有优势。在这项工作中，我们提出了具有用户定义指向性模式(UNDF)的神经方向滤波，它使用户能够在推理过程中基于用户定义的指向性模式进行空间滤波。为此，我们提出了一种集成了特征级线性调制(FiLM)的DNN架构，使用户定义的模式可以作为条件输入。通过分析，我们证明基于FiLM的架构使UNDF能够在干扰过程中推广到未见过的用户定义模式，包括更高的指向性、缩放变化和不同的转向方向。此外，我们逐步完善训练策略，以提高模式近似能力，并使UNDF能够近似不规则形状。最后，实验比较表明，UNDF优于传统方法。",
+    "paper_abstract_zh": "具有期望方向性模式的空间滤波对许多音频应用具有优势。在这项工作中，我们提出了具有用户定义方向性模式的神经方向滤波(UNDF)，它使用户能够在推理过程中基于用户定义的方向性模式进行空间滤波。为此，我们提出了一种集成了特征级线性调制(FiLM)的DNN架构，使用户定义的模式可以作为条件输入。通过分析，我们证明基于FiLM的架构使UNDF能够在干扰、更高方向性、尺度变化和不同转向方向的情况下推广到未见过的用户定义模式。此外，我们逐步改进训练策略，以提高模式近似能力，并使UNDF能够近似不规则形状。最后，实验比较表明，UNDF优于传统方法。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -20,10 +20,10 @@
   },
   {
     "paper_title": "Time-series Random Process Complexity Ranking Using a Bound on Conditional Differential Entropy",
-    "paper_title_zh": "基于条件微分熵界的时间序列随机过程复杂度排序",
+    "paper_title_zh": "基于条件微分熵边界的时间序列随机过程复杂度排序",
     "paper_id": "2510.20551",
     "paper_abstract": "Conditional differential entropy provides an intuitive measure for relatively ranking time-series complexity by quantifying uncertainty in future observations given past context. However, its direct computation for high-dimensional processes from unknown distributions is often intractable. This paper builds on the information theoretic prediction error bounds established by Fang et al. \\cite{fang2019generic}, which demonstrate that the conditional differential entropy \\textbf{$h(X_k \\mid X_{k-1},...,X_{k-m})$} is upper bounded by a function of the determinant of the covariance matrix of next-step prediction errors for any next step prediction model. We add to this theoretical framework by further increasing this bound by leveraging Hadamard's inequality and the positive semi-definite property of covariance matrices.\nTo see if these bounds can be used to rank the complexity of time series, we conducted two synthetic experiments: (1) controlled linear autoregressive processes with additive Gaussian noise, where we compare ordinary least squares prediction error entropy proxies to the true entropies of various additive noises, and (2) a complexity ranking task of bio-inspired synthetic audio data with unknown entropy, where neural network prediction errors are used to recover the known complexity ordering.\nThis framework provides a computationally tractable method for time-series complexity ranking using prediction errors from next-step prediction models, that maintains a theoretical foundation in information theory.",
-    "paper_abstract_zh": "条件微分熵通过量化给定过去上下文时未来观测的不确定性，为时间序列复杂度的相对排序提供了直观的度量。然而，对于来自未知分布的高维过程，其直接计算通常是不可行的。本文基于Fang等人建立的信息论预测误差界，该界表明对于任何单步预测模型，条件微分熵h(X_k | X_{k-1},...,X_{k-m})由单步预测误差协方差矩阵的行列式的函数所界定。我们通过利用Hadamard不等式和协方差矩阵的正半定性，进一步提高了这一理论框架中的界。为了验证这些界是否可用于时间序列复杂度排序，我们进行了两个合成实验：(1) 具有加性高斯噪声的受控线性自回归过程，其中我们将普通最小二乘预测误差熵代理与各种加性噪声的真实熵进行比较；(2) 未知熵的生物启发式合成音频数据的复杂度排序任务，其中使用神经网络预测误差来恢复已知的复杂度排序。该框架提供了一种计算上可行的时间序列复杂度排序方法，它使用单步预测模型的预测误差，并在信息论中保持理论基础。",
+    "paper_abstract_zh": "条件微分熵通过量化给定过去上下文时未来观测的不确定性，为时间序列复杂度的相对排序提供了直观的度量。然而，对于来自未知分布的高维过程，其直接计算通常是不可行的。本文基于Fang等人建立的信息论预测误差边界，该边界表明，对于任何下一步预测模型，条件微分熵h(X_k | X_{k-1},...,X_{k-m})由下一步预测误差协方差矩阵的行列式函数的上界所限制。我们通过利用Hadamard不等式和协方差矩阵的正半定性，进一步提高了这一边界。为了验证这些边界是否可用于时间序列复杂度排序，我们进行了两个合成实验：(1) 具有附加高斯噪声的受控线性自回归过程，其中我们将普通最小二乘预测误差熵代理与各种附加噪声的真实熵进行比较；(2) 对具有未知熵的生物启发合成音频数据进行复杂度排序任务，其中使用神经网络预测误差来恢复已知的复杂度排序。该框架提供了一种计算可行的时间序列复杂度排序方法，使用来自下一步预测模型的预测误差，并在信息论中保持理论基础。",
     "subjects": [
       "Signal Processing (eess.SP)",
       "Information Theory (cs.IT)",
@@ -34,7 +34,6 @@
     "update_time": "2025-10-24",
     "paper_authors": "Jacob Ayers, Richard Hahnloser, Julia Ulrich, Lothar Sebastian Krapp, Remo Nitschke, Sabine Stoll, Balthasar Bickel, Reinhard Furrer",
     "topic": [
-      "Audio Representation Learning",
       "Other"
     ],
     "category": [
@@ -43,20 +42,21 @@
   },
   {
     "paper_title": "Resounding Acoustic Fields with Reciprocity",
-    "paper_title_zh": "基于互易性的回声声场重建",
+    "paper_title_zh": "利用互易性产生共鸣声场",
     "paper_id": "2510.20602",
     "paper_abstract": "Achieving immersive auditory experiences in virtual environments requires flexible sound modeling that supports dynamic source positions. In this paper, we introduce a task called resounding, which aims to estimate room impulse responses at arbitrary emitter location from a sparse set of measured emitter positions, analogous to the relighting problem in vision. We leverage the reciprocity property and introduce Versa, a physics-inspired approach to facilitating acoustic field learning. Our method creates physically valid samples with dense virtual emitter positions by exchanging emitter and listener poses. We also identify challenges in deploying reciprocity due to emitter/listener gain patterns and propose a self-supervised learning approach to address them. Results show that Versa substantially improve the performance of acoustic field learning on both simulated and real-world datasets across different metrics. Perceptual user studies show that Versa can greatly improve the immersive spatial sound experience. Code, dataset and demo videos are available on the project website: this https URL.",
-    "paper_abstract_zh": "在虚拟环境中实现沉浸式听觉体验需要灵活的声音建模，以支持动态声源位置。本文引入了一个称为回声重建的任务，旨在从稀疏测量的声源位置估计任意声源位置的房间脉冲响应，类似于视觉中的重新照明问题。我们利用互易性原理，提出了一种受物理启发的方法——Versa，以促进声场学习。我们的方法通过交换声源和监听器位置，生成具有密集虚拟声源位置的物理有效样本。此外，我们还识别了部署互易性时由于声源/监听器增益模式带来的挑战，并提出了一种自监督学习方法来解决这些问题。实验结果表明，Versa在模拟和真实数据集上的声场学习性能显著提升，感知用户研究也证明Versa能极大改善沉浸式空间声音体验。代码、数据集和演示视频可在项目网站获取：https URL。",
+    "paper_abstract_zh": "在虚拟环境中实现沉浸式听觉体验需要支持动态声源位置的灵活声音建模。在本文中，我们介绍了一项名为共鸣(resounding)的任务，其目标是从一组稀疏测量的声源位置中估计任意发射器位置的房间脉冲响应，类似于视觉领域中的重新照明(relighting)问题。我们利用互易性原理，并引入了Versa，这是一种受物理启发的促进声场学习方法。我们的方法通过交换发射器和听者姿态，在密集的虚拟发射器位置创建物理有效的样本。我们还指出了由于发射器/听者增益模式而部署互易性时面临的挑战，并提出了一种自监督学习方法来解决这些问题。结果表明，在模拟和真实世界数据集上，Versa在不同指标上都显著提高了声场学习的性能。感知用户研究表明，Versa可以大大增强沉浸式空间声音体验。代码、数据集和演示视频可在项目网站上获取：this https URL。",
     "subjects": [
-      "Signal Processing (eess.SP)",
       "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
-      "Artificial Intelligence (cs.AI)"
+      "Artificial Intelligence (cs.AI)",
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-24",
     "paper_authors": "Zitong Lan, Yiduo Hao, Mingmin Zhao",
     "topic": [
-      "Audio Representation Learning"
+      "Audio Representation Learning",
+      "Other"
     ],
     "category": [
       "Other"
@@ -64,14 +64,14 @@
   },
   {
     "paper_title": "R2-SVC: Towards Real-World Robust and Expressive Zero-shot Singing Voice Conversion",
-    "paper_title_zh": "R2-SVC：迈向真实世界鲁棒且富有表现力的零样本歌唱声音转换",
+    "paper_title_zh": "R2-SVC：迈向现实世界鲁棒且富有表现力的零样本歌唱声音转换",
     "paper_id": "2510.20677",
     "paper_abstract": "In real-world singing voice conversion (SVC) applications, environmental noise and the demand for expressive output pose significant challenges. Conventional methods, however, are typically designed without accounting for real deployment scenarios, as both training and inference usually rely on clean data. This mismatch hinders practical use, given the inevitable presence of diverse noise sources and artifacts from music separation. To tackle these issues, we propose R2-SVC, a robust and expressive SVC framework. First, we introduce simulation-based robustness enhancement through random fundamental frequency ($F_0$) perturbations and music separation artifact simulations (e.g., reverberation, echo), substantially improving performance under noisy conditions. Second, we enrich speaker representation using domain-specific singing data: alongside clean vocals, we incorporate DNSMOS-filtered separated vocals and public singing corpora, enabling the model to preserve speaker timbre while capturing singing style nuances. Third, we integrate the Neural Source-Filter (NSF) model to explicitly represent harmonic and noise components, enhancing the naturalness and controllability of converted singing. R2-SVC achieves state-of-the-art results on multiple SVC benchmarks under both clean and noisy conditions.",
-    "paper_abstract_zh": "在真实世界的歌唱声音转换（SVC）应用中，环境噪声和对富有表现力输出的需求带来了重大挑战。然而，传统方法通常没有考虑实际部署场景进行设计，因为训练和推理通常依赖于干净的数据。这种不匹配阻碍了实际应用，因为各种噪声源和音乐分离产生的伪影是不可避免的。为了解决这些问题，我们提出了R2-SVC，一个鲁棒且富有表现力的SVC框架。首先，我们通过随机基频（F0）扰动和音乐分离伪影模拟（如混响、回声）引入基于模拟的鲁棒性增强，显著提高了噪声条件下的性能。其次，我们使用领域特定的歌唱数据丰富说话人表示：除了干净的人声外，我们还整合了DNSMOS过滤后的分离人声和公共歌唱语料库，使模型能够在保留说话人音色的同时捕捉歌唱风格的细微差别。第三，我们整合了神经源滤波器（NSF）模型来明确表示谐波和噪声成分，提高了转换后歌唱的自然度和可控性。在干净和噪声条件下，R2-SVC在多个SVC基准测试中取得了最先进的结果。",
+    "paper_abstract_zh": "在现实世界的歌唱声音转换（SVC）应用中，环境噪声和对富有表现力输出的需求带来了重大挑战。然而，传统方法通常在设计时没有考虑实际部署场景，因为训练和推理通常依赖于干净的数据。这种不匹配阻碍了实际应用，因为不可避免地存在各种噪声源和音乐分离产生的伪影。为解决这些问题，我们提出了R2-SVC，一个鲁棒且富有表现力的SVC框架。首先，我们通过随机基频（F0）扰动和音乐分离伪影模拟（如混响、回声）引入基于模拟的鲁棒性增强，显著提高了在噪声条件下的性能。其次，我们使用特定领域的歌唱数据丰富说话人表示：除了干净的人声外，我们还整合了经过DNSMOS过滤的分离人声和公共歌唱语料库，使模型能够在保持说话人音色的同时捕捉歌唱风格的细微差别。第三，我们集成了神经源滤波器（NSF）模型，以明确表示谐波和噪声成分，提高了转换后歌唱的自然度和可控性。在干净和噪声条件下，R2-SVC在多个SVC基准测试中取得了最先进的结果。",
     "subjects": [
-      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
       "Audio and Speech Processing (eess.AS)",
-      "Artificial Intelligence (cs.AI)"
+      "Sound (cs.SD)"
     ],
     "update_time": "2025-10-24",
     "paper_authors": "Junjie Zheng, Gongyu Chen, Chaofan Ding, Zihao Chen",
@@ -85,17 +85,18 @@
   },
   {
     "paper_title": "Vox-Evaluator: Enhancing Stability and Fidelity for Zero-shot TTS with A Multi-Level Evaluator",
-    "paper_title_zh": "Vox-Evaluator：通过多级评估器提升零样本文本转语音的稳定性和保真度",
+    "paper_title_zh": "Vox-Evaluator: 通过多级评估器提升零样本TTS的稳定性和保真度",
     "paper_id": "2510.20210",
     "paper_abstract": "Recent advances in zero-shot text-to-speech (TTS), driven by language models, diffusion models and masked generation, have achieved impressive naturalness in speech synthesis. Nevertheless, stability and fidelity remain key challenges, manifesting as mispronunciations, audible noise, and quality degradation. To address these issues, we introduce Vox-Evaluator, a multi-level evaluator designed to guide the correction of erroneous speech segments and preference alignment for TTS systems. It is capable of identifying the temporal boundaries of erroneous segments and providing a holistic quality assessment of the generated speech. Specifically, to refine erroneous segments and enhance the robustness of the zero-shot TTS model, we propose to automatically identify acoustic errors with the evaluator, mask the erroneous segments, and finally regenerate speech conditioning on the correct portions. In addition, the fine-gained information obtained from Vox-Evaluator can guide the preference alignment for TTS model, thereby reducing the bad cases in speech synthesis. Due to the lack of suitable training datasets for the Vox-Evaluator, we also constructed a synthesized text-speech dataset annotated with fine-grained pronunciation errors or audio quality issues. The experimental results demonstrate the effectiveness of the proposed Vox-Evaluator in enhancing the stability and fidelity of TTS systems through the speech correction mechanism and preference optimization. The demos are shown.",
-    "paper_abstract_zh": "最近，由语言模型、扩散模型和掩码生成驱动的零样本文本转语音（TTS）技术取得了显著进展，在语音合成中实现了令人印象深刻的自然度。然而，稳定性和保真度仍然是关键挑战，表现为发音错误、可听噪声和质量下降。为解决这些问题，我们引入了Vox-Evaluator，一个多级评估器，旨在指导TTS系统对错误语音片段的纠正和偏好对齐。它能够识别错误片段的时间边界，并对生成的语音进行全面的质量评估。具体而言，为了优化错误片段并增强零样本TTS模型的鲁棒性，我们提出使用评估器自动识别声学错误，掩蔽错误片段，并最终基于正确部分重新生成语音。此外，从Vox-Evaluator获得的细粒度信息可以指导TTS模型的偏好对齐，从而减少语音合成中的不良案例。由于缺乏适合Vox-Evaluator的训练数据集，我们还构建了一个带有细粒度发音错误或音频质量问题标注的合成文本-语音数据集。实验结果证明了所提出的Vox-Evaluator通过语音纠正机制和偏好优化来增强TTS系统稳定性和保真度的有效性。演示效果已展示。",
+    "paper_abstract_zh": "由语言模型、扩散模型和掩码生成驱动的零样本文本转语音（TTS）最近取得了令人印象深刻的语音合成自然度。然而，稳定性和保真度仍然是关键挑战，表现为发音错误、可听见的噪声和质量下降。为解决这些问题，我们引入了Vox-Evaluator，一个多级评估器，旨在指导TTS系统对错误语音段的纠正和偏好对齐。它能够识别错误段的时间边界，并对生成的语音进行全面的质量评估。具体而言，为了优化错误段并增强零样本TTS模型的鲁棒性，我们提出使用评估器自动识别声学错误，掩码错误段，最后基于正确部分重新生成语音。此外，从Vox-Evaluator获得的细粒度信息可以指导TTS模型的偏好对齐，从而减少语音合成中的不良案例。由于缺乏适合Vox-Evaluator的训练数据集，我们还构建了一个带有细粒度发音错误或音频质量问题标注的合成文本-语音数据集。实验结果证明了所提出的Vox-Evaluator通过语音纠正机制和偏好优化增强TTS系统稳定性和保真度的有效性。演示已展示。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-10-24",
     "paper_authors": "Hualei Wang, Na Li, Chuke Wang, Shu Wu, Zhifeng Li, Dong Yu",
     "topic": [
-      "Speech Synthesis"
+      "Speech Synthesis",
+      "Speech Enhancement"
     ],
     "category": [
       "Speech"
@@ -106,7 +107,7 @@
     "paper_title_zh": "UniSE: 一种基于仅解码器自回归语言模型的语音增强统一框架",
     "paper_id": "2510.20441",
     "paper_abstract": "The development of neural audio codecs (NACs) has largely promoted applications of language models (LMs) to speech processing and understanding. However, there lacks the verification on the effectiveness of autoregressive (AR) LMbased models in unifying different sub-tasks of speech enhancement (SE). In this work, we propose UniSE, a unified decoder-only LM-based framework to handle different SE tasks including speech restoration, target speaker extraction and speech separation. It takes input speech features as conditions and generates discrete tokens of the target speech using AR modeling, which facilitates a compatibility between distinct learning patterns of multiple tasks. Experiments on several benchmarks indicate the proposed UniSE can achieve competitive performance compared to discriminative and generative baselines, showing the capacity of LMs in unifying SE tasks. The demo page is available here: this https URL.",
-    "paper_abstract_zh": "神经音频编解码器(NACs)的发展极大地促进了语言模型(LMs)在语音处理和理解中的应用。然而，目前还缺乏对自回归(AR) LM模型在统一语音增强(SE)不同子任务方面有效性的验证。在这项工作中，我们提出了UniSE，一个统一的仅解码器LM框架，用于处理不同的SE任务，包括语音修复、目标说话人提取和语音分离。它将输入语音特征作为条件，并使用AR建模生成目标语音的离散token，从而促进了不同任务学习模式之间的兼容性。在多个基准测试上的实验表明，所提出的UniSE能够与判别性和生成性基线模型相媲美的性能，展示了LM在统一SE任务方面的能力。演示页面可在此处访问：this https URL。",
+    "paper_abstract_zh": "神经音频编解码器(NACs)的发展极大地促进了语言模型(LMs)在语音处理和理解中的应用。然而，目前缺乏对自回归(AR) LM-based模型在统一语音增强(SE)不同子任务中有效性的验证。在这项工作中，我们提出了UniSE，一个统一的仅基于解码器的LM框架，用于处理不同的SE任务，包括语音修复、目标说话人提取和语音分离。它将输入语音特征作为条件，并使用AR建模生成目标语音的离散token，从而促进了多个任务不同学习模式之间的兼容性。在多个基准测试上的实验表明，所提出的UniSE能够与判别性和生成性基线方法相媲美的性能，展示了LM在统一SE任务中的能力。演示页面可在此处访问：this https URL。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
@@ -123,10 +124,10 @@
   },
   {
     "paper_title": "Speaking Clearly: A Simplified Whisper-Based Codec for Low-Bitrate Speech Coding",
-    "paper_title_zh": "清晰语音：一种基于简化Whisper的低比特率语音编解码器",
+    "paper_title_zh": "清晰说话：一种基于Whisper的低比特率语音编解码器简化方案",
     "paper_id": "2510.20504",
     "paper_abstract": "Speech codecs serve as bridges between continuous speech signals and large language models, yet face an inherent conflict between acoustic fidelity and semantic preservation. To mitigate this conflict, prevailing methods augment acoustic codecs with complex semantic supervision. We explore the opposite direction: a semantic-first approach that starts from a semantically-capable model and adapts it for high-fidelity acoustic reconstruction. Through empirical analysis, we discover that targeted architectural simplification can unlock the acoustic modeling potential of Whisper, a text-aligned Automatic Speech Recognition (ASR) model. Based on this finding, we propose SimWhisper-Codec, a novel codec that balances the semantic and acoustic preservation by leveraging a frozen, simplified Whisper encoder without requiring external supervision. Experimental results demonstrate that SimWhisper-Codec achieves superior performance in both semantic preservation and acoustic quality compared to semantically-supervised codecs such as Mimi Codec and SpeechTokenizer at similar bitrates, validating the effectiveness of our semantic-first approach. Code is available at this https URL.",
-    "paper_abstract_zh": "语音编解码器在连续语音信号与大语言模型之间起到桥梁作用，但其面临声学保真度与语义保留之间的固有冲突。为缓解这一矛盾，现有方法通过复杂的语义监督来增强声学编解码器。本文探索了相反方向：以语义能力模型为基础，调整其用于高保真声学重建的语义优先方法。通过实证分析，我们发现针对性的架构简化能够释放Whisper（一种与文本对齐的自动语音识别模型）的声学建模潜力。基于此发现，我们提出了SimWhisper-Codec，一种通过利用冻结的简化Whisper编码器实现语义与声学平衡保留的新型编解码器，且无需外部监督。实验结果表明，在相似比特率下，SimWhisper-Codec在语义保留和声学质量方面均优于Mimi Codec和SpeechTokenizer等语义监督编解码器，验证了语义优先方法的有效性。代码已公开。",
+    "paper_abstract_zh": "语音编解码器作为连续语音信号与大语言模型之间的桥梁，却面临着保真度与语义保留之间的固有冲突。为了缓解这一冲突，现有方法通过复杂的语义监督来增强声学编解码器。我们探索了相反的方向：一种语义优先的方法，从具有语义能力的模型出发，并使其适应高保真声学重建。通过实证分析，我们发现有针对性的架构简化可以解锁Whisper（一种文本对齐的自动语音识别模型）的声学建模潜力。基于这一发现，我们提出了SimWhisper-Codec，一种新型编解码器，它通过利用冻结的简化Whisper编码器，在不需要外部监督的情况下平衡了语义和声学保留。实验结果表明，在相似的比特率下，SimWhisper-Codec在语义保留和声学质量方面均优于Mimi Codec和SpeechTokenizer等语义监督编解码器，验证了我们语义优先方法的有效性。代码可在提供的URL获取。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -142,10 +143,10 @@
   },
   {
     "paper_title": "Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment",
-    "paper_title_zh": "解码耳朵：一种通过高效对齐从人类偏好中客观化表达性的框架",
+    "paper_title_zh": "解码耳朵：通过高效对齐从人类偏好中客观化表达力的框架",
     "paper_id": "2510.20513",
     "paper_abstract": "Recent speech-to-speech (S2S) models generate intelligible speech but still lack natural expressiveness, largely due to the absence of a reliable evaluation metric. Existing approaches, such as subjective MOS ratings, low-level acoustic features, and emotion recognition are costly, limited, or incomplete. To address this, we present DeEAR (Decoding the Expressive Preference of eAR), a framework that converts human preference for speech expressiveness into an objective score. Grounded in phonetics and psychology, DeEAR evaluates speech across three dimensions: Emotion, Prosody, and Spontaneity, achieving strong alignment with human perception (Spearman's Rank Correlation Coefficient, SRCC = 0.86) using fewer than 500 annotated samples. Beyond reliable scoring, DeEAR enables fair benchmarking and targeted data curation. It not only distinguishes expressiveness gaps across S2S models but also selects 14K expressive utterances to form ExpressiveSpeech, which improves the expressive score (from 2.0 to 23.4 on a 100-point scale) of S2S models. Demos and codes are available at this https URL",
-    "paper_abstract_zh": "最近的语音到语音（S2S）模型能够生成可理解的语音，但仍缺乏自然表达性，这主要是由于缺乏可靠的评估指标。现有方法，如主观MOS评分、低级声学特征和情感识别，成本高昂、有限或不完整。为此，我们提出了DeEAR（解码耳朵的表达偏好），一个将人类对语音表达性的偏好转化为客观分数的框架。基于语音学和心理学，DeEAR从三个维度评估语音：情感、韵律和自发性，使用不到500个标注样本实现了与人类感知的高度对齐（斯皮尔曼等级相关系数，SRCC = 0.86）。除了可靠的评分外，DeEAR还实现了公平的基准测试和有针对性的数据筛选。它不仅能区分不同S2S模型之间的表达性差距，还能选择14K个表达性话语组成ExpressiveSpeech，从而将S2S模型的表达性分数（在100分制上从2.0提高到23.4）。演示和代码可在提供的URL获取。",
+    "paper_abstract_zh": "近期的语音到语音（S2S）模型能够生成清晰的语音，但仍缺乏自然的表达力，这主要源于缺乏可靠的评估指标。现有方法如主观MOS评分、低层声学特征和情感识别存在成本高、范围有限或不完整的问题。为此，我们提出了DeEAR（解码eAR表达力偏好），一个将人类对语音表达力的偏好转化为客观评分的框架。基于语音学和心理学，DeEAR从情感、韵律和自发性三个维度评估语音，仅使用少于500个标注样本即可与人类感知高度一致（斯皮尔曼等级相关系数SRCC=0.86）。除了可靠的评分外，DeEAR还实现了公平的基准测试和针对性的数据筛选。它不仅能区分不同S2S模型的表达力差距，还筛选出1.4万个表达力丰富的语音片段，构建了ExpressiveSpeech数据集，使S2S模型的表达力评分（在100分制下）从2.0提升至23.4。演示视频和代码已公开。",
     "subjects": [
       "Sound (cs.SD)",
       "Computation and Language (cs.CL)",
@@ -154,8 +155,7 @@
     "update_time": "2025-10-24",
     "paper_authors": "Zhiyu Lin, Jingwen Yang, Jiale Zhao, Meng Liu, Sunzhu Li, Benyou Wang",
     "topic": [
-      "Speech Synthesis",
-      "Audio Representation Learning"
+      "Speech Synthesis"
     ],
     "category": [
       "Speech"
@@ -166,7 +166,7 @@
     "paper_title_zh": "可控嵌入变换用于情绪引导的音乐检索",
     "paper_id": "2510.20759",
     "paper_abstract": "Music representations are the backbone of modern recommendation systems, powering playlist generation, similarity search, and personalized discovery. Yet most embeddings offer little control for adjusting a single musical attribute, e.g., changing only the mood of a track while preserving its genre or instrumentation. In this work, we address the problem of controllable music retrieval through embedding-based transformation, where the objective is to retrieve songs that remain similar to a seed track but are modified along one chosen dimension. We propose a novel framework for mood-guided music embedding transformation, which learns a mapping from a seed audio embedding to a target embedding guided by mood labels, while preserving other musical attributes. Because mood cannot be directly altered in the seed audio, we introduce a sampling mechanism that retrieves proxy targets to balance diversity with similarity to the seed. We train a lightweight translation model using this sampling strategy and introduce a novel joint objective that encourages transformation and information preservation. Extensive experiments on two datasets show strong mood transformation performance while retaining genre and instrumentation far better than training-free baselines, establishing controllable embedding transformation as a promising paradigm for personalized music retrieval.",
-    "paper_abstract_zh": "音乐表征是现代推荐系统的支柱，支持播放列表生成、相似性搜索和个性化发现。然而，大多数嵌入方法对调整单一音乐属性的控制能力有限，例如在保留音乐类型或乐器编排的同时仅改变曲目情绪。本研究通过基于嵌入的变换解决可控音乐检索问题，目标是检索与种子曲目相似但沿选定维度进行修改的歌曲。我们提出了一种新颖的情绪引导音乐嵌入变换框架，该框架学习从种子音频嵌入到由情绪标签引导的目标嵌入的映射，同时保留其他音乐属性。由于种子音频中的情绪无法直接改变，我们引入了一种采样机制，检索代理目标以平衡多样性与种子相似性。我们使用这种采样策略训练了一个轻量级变换模型，并引入了一种新的联合目标，以鼓励变换和信息保留。在两个数据集上的广泛实验表明，与无训练基线相比，该方法在情绪变换方面表现出色，同时更好地保留了音乐类型和乐器编排，确立了可控嵌入变换作为个性化音乐检索的一种有前景的范式。",
+    "paper_abstract_zh": "音乐表征是现代推荐系统的支柱，支持播放列表生成、相似性搜索和个性化发现。然而，大多数嵌入方法难以对单一音乐属性进行调整，例如在保持音乐类型或乐器不变的情况下仅改变音轨的情绪。本研究通过基于嵌入的变换解决可控音乐检索问题，其目标是检索与种子音轨相似但沿选定维度进行修改的歌曲。我们提出了一种新颖的情绪引导音乐嵌入变换框架，该框架学习从种子音频嵌入到由情绪标签引导的目标嵌入的映射，同时保留其他音乐属性。由于情绪无法直接在种子音频中修改，我们引入了一种采样机制，检索代理目标以平衡多样性与种子相似性。我们使用这种采样策略训练了一个轻量级翻译模型，并引入了一种新的联合目标，以促进变换和信息保留。在两个数据集上的广泛实验表明，与无需训练的基线方法相比，该方法在情绪变换方面表现出色，同时更好地保留了音乐类型和乐器，确立了可控嵌入变换作为个性化音乐检索的一种有前景的范式。",
     "subjects": [
       "Sound (cs.SD)"
     ],
@@ -185,7 +185,7 @@
     "paper_title_zh": "SpeechAgent：一种用于言语障碍辅助的端到端移动基础设施",
     "paper_id": "2510.20113",
     "paper_abstract": "Speech is essential for human communication, yet millions of people face impairments such as dysarthria, stuttering, and aphasia conditions that often lead to social isolation and reduced participation. Despite recent progress in automatic speech recognition (ASR) and text-to-speech (TTS) technologies, accessible web and mobile infrastructures for users with impaired speech remain limited, hindering the practical adoption of these advances in daily communication. To bridge this gap, we present SpeechAgent, a mobile SpeechAgent designed to facilitate people with speech impairments in everyday communication. The system integrates large language model (LLM)- driven reasoning with advanced speech processing modules, providing adaptive support tailored to diverse impairment types. To ensure real-world practicality, we develop a structured deployment pipeline that enables real-time speech processing on mobile and edge devices, achieving imperceptible latency while maintaining high accuracy and speech quality. Evaluation on real-world impaired speech datasets and edge-device latency profiling confirms that SpeechAgent delivers both effective and user-friendly performance, demonstrating its feasibility for personalized, day-to-day assistive communication.",
-    "paper_abstract_zh": "言语对人类交流至关重要，然而数百万人面临言语障碍，如构音障碍、口吃和失语症等情况，这些情况常常导致社会隔离和参与度降低。尽管自动语音识别（ASR）和文本转语音（TTS）技术最近取得了进展，但面向言语障碍用户的可访问网络和移动基础设施仍然有限，阻碍了这些进步在日常交流中的实际应用。为了弥合这一差距，我们提出了SpeechAgent，这是一种专为帮助言语障碍者进行日常交流而设计的移动系统。该系统将大型语言模型（LLM）驱动的推理与先进的语音处理模块相结合，提供针对不同障碍类型的自适应支持。为确保实际可行性，我们开发了一个结构化的部署流程，能够在移动和边缘设备上实现实时语音处理，在保持高精度和语音质量的同时实现不可察觉的延迟。在真实世界言语障碍数据集上的评估和边缘设备延迟分析证实，SpeechAgent提供了有效且用户友好的性能，证明了其在个性化、日常辅助交流中的可行性。",
+    "paper_abstract_zh": "言语是人类交流的核心，然而数百万患有构音障碍、口吃或失语症的人常常因此面临社交孤立和参与度降低的问题。尽管自动语音识别（ASR）和文本转语音（TTS）技术近年来取得了进展，但针对言语障碍用户的可访问网络和移动基础设施仍然有限，阻碍了这些技术在日常交流中的实际应用。为弥合这一差距，我们提出了SpeechAgent，一种旨在帮助言语障碍人群实现日常沟通的移动系统。该系统将大语言模型（LLM）驱动的推理与先进的语音处理模块相结合，为不同类型的言语障碍提供自适应支持。为确保实际应用可行性，我们开发了结构化的部署流程，实现在移动设备和边缘设备上的实时语音处理，在保持高精度和语音质量的同时实现难以察觉的延迟。基于真实世界言语障碍数据集的评估和边缘设备延迟分析表明，SpeechAgent在提供高效且用户友好的性能方面具有可行性，可为个性化日常辅助沟通提供解决方案。",
     "subjects": [
       "Systems and Control (eess.SY)",
       "Sound (cs.SD)"
@@ -205,7 +205,7 @@
     "paper_title_zh": "从生成到归因：后流媒体时代的音乐AI代理架构",
     "paper_id": "2510.20276",
     "paper_abstract": "Generative AI is reshaping music creation, but its rapid growth exposes structural gaps in attribution, rights management, and economic models. Unlike past media shifts, from live performance to recordings, downloads, and streaming, AI transforms the entire lifecycle of music, collapsing boundaries between creation, distribution, and monetization. However, existing streaming systems, with opaque and concentrated royalty flows, are ill-equipped to handle the scale and complexity of AI-driven production. We propose a content-based Music AI Agent architecture that embeds attribution directly into the creative workflow through block-level retrieval and agentic orchestration. Designed for iterative, session-based interaction, the system organizes music into granular components (Blocks) stored in BlockDB; each use triggers an Attribution Layer event for transparent provenance and real-time settlement. This framework reframes AI from a generative tool into infrastructure for a Fair AI Media Platform. By enabling fine-grained attribution, equitable compensation, and participatory engagement, it points toward a post-streaming paradigm where music functions not as a static catalog but as a collaborative and adaptive ecosystem.",
-    "paper_abstract_zh": "生成式AI正在重塑音乐创作，但其快速增长暴露了归因、权利管理和经济模式中的结构性缺陷。与过去的媒体转型（从现场表演到录音、下载和流媒体）不同，AI改变了音乐的全生命周期，模糊了创作、分发和货币化之间的界限。然而，现有的流媒体系统因其不透明和集中的版税流动，难以处理AI驱动生产的规模和复杂性。我们提出了一种基于内容的Music AI Agent架构，通过块级检索和代理编排将归因直接嵌入创意工作流。该系统针对迭代、会话式交互设计，将音乐组织为存储在BlockDB中的细粒度组件（块）；每次使用都会触发归因层事件，以实现透明的来源追踪和实时结算。这一框架将AI从生成工具重新定义为公平AI媒体平台的基础设施。通过实现细粒度归因、公平补偿和参与式互动，它指向一个后流媒体范式，音乐不再作为静态目录存在，而是成为协作性和适应性的生态系统。",
+    "paper_abstract_zh": "生成式AI正在重塑音乐创作，但其快速增长暴露了归因、权利管理和经济模式中的结构性缺陷。与从现场表演到录音、下载和流媒体的过去媒体转变不同，AI改变了音乐的全生命周期，模糊了创作、分发和货币化之间的界限。然而，现有的流媒体系统因其不透明和集中的版税流动，无法有效处理AI驱动生产的规模和复杂性。我们提出了一种基于内容的Music AI Agent架构，通过块级检索和代理编排将归因直接嵌入到创作工作流中。该系统针对迭代、会话式交互而设计，将音乐组织成存储在BlockDB中的细粒度组件（块）；每次使用都会触发归因层事件，以实现透明的来源追踪和实时结算。这一框架将AI重新定义为公平AI媒体平台的基础设施，通过实现细粒度归因、公平补偿和参与式互动，指向一个后流媒体范式，其中音乐不再作为静态目录存在，而是作为协作和自适应生态系统运作。",
     "subjects": [
       "Information Retrieval (cs.IR)",
       "Human-Computer Interaction (cs.HC)",
