@@ -228,31 +228,41 @@
   },
   {
     "paper_title": "HiFi-HARP: A High-Fidelity 7th-Order Ambisonic Room Impulse Response Dataset",
-    "paper_title_zh": "",
+    "paper_title_zh": "HiFi-HARP: 一个高保真7阶Ambisonic房间脉冲响应数据集",
     "paper_id": "2510.21257",
     "paper_abstract": "We introduce HiFi-HARP, a large-scale dataset of 7th-order Higher-Order Ambisonic Room Impulse Responses (HOA-RIRs) consisting of more than 100,000 RIRs generated via a hybrid acoustic simulation in realistic indoor scenes. HiFi-HARP combines geometrically complex, furnished room models from the 3D-FRONT repository with a hybrid simulation pipeline: low-frequency wave-based simulation (finite-difference time-domain) up to 900 Hz is used, while high frequencies above 900 Hz are simulated using a ray-tracing approach. The combined raw RIRs are encoded into the spherical-harmonic domain (AmbiX ACN) for direct auralization. Our dataset extends prior work by providing 7th-order Ambisonic RIRs that combine wave-theoretic accuracy with realistic room content. We detail the generation pipeline (scene and material selection, array design, hybrid simulation, ambisonic encoding) and provide dataset statistics (room volumes, RT60 distributions, absorption properties). A comparison table highlights the novelty of HiFi-HARP relative to existing RIR collections. Finally, we outline potential benchmarks such as FOA-to-HOA upsampling, source localization, and dereverberation. We discuss machine learning use cases (spatial audio rendering, acoustic parameter estimation) and limitations (e.g., simulation approximations, static scenes). Overall, HiFi-HARP offers a rich resource for developing spatial audio and acoustics algorithms in complex environments.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们介绍了HiFi-HARP，这是一个大规模的7阶高阶Ambisonic房间脉冲响应(HOA-RIRs)数据集，包含超过100,000个RIRs，通过在真实的室内场景中混合声学仿真生成。HiFi-HARP结合了来自3D-FRONT存储库的几何复杂、配备家具的房间模型和混合仿真流程：低频(最高900Hz)使用基于波的仿真(有限差分时域法)，而高于900Hz的高频则使用射线追踪方法进行仿真。组合的原始RIRs被编码到球谐域(AmbiX ACN)中，以便直接听觉化。我们的数据集通过提供结合了波动理论准确性和真实房间内容的7阶Ambisonic RIRs，扩展了先前的工作。我们详细介绍了生成流程(场景和材料选择、阵列设计、混合仿真、Ambisonic编码)，并提供了数据集统计信息(房间体积、RT60分布、吸收特性)。比较表突出了HiFi-HARP相对于现有RIR集合的新颖性。最后，我们概述了潜在的基准测试，如FOA到HOA的上采样、声源定位和去混响。我们讨论了机器学习用例(空间音频渲染、声学参数估计)和局限性(例如，仿真近似、静态场景)。总体而言，HiFi-HARP为在复杂环境中开发空间音频和声学算法提供了丰富的资源。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-10-27",
     "paper_authors": "Shivam Saini, Jürgen Peissig",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "Smule Renaissance Small: Efficient General-Purpose Vocal Restoration",
-    "paper_title_zh": "",
+    "paper_title_zh": "Smule Renaissance Small: 高效通用人声修复",
     "paper_id": "2510.21659",
     "paper_abstract": "Vocal recordings on consumer devices commonly suffer from multiple concurrent degradations: noise, reverberation, band-limiting, and clipping. We present Smule Renaissance Small (SRS), a compact single-stage model that performs end-to-end vocal restoration directly in the complex STFT domain. By incorporating phase-aware losses, SRS enables large analysis windows for improved frequency resolution while achieving 10.5x real-time inference on iPhone 12 CPU at 48 kHz. On the DNS 5 Challenge blind set, despite no speech training, SRS outperforms a strong GAN baseline and closely matches a computationally expensive flow-matching system. To enable evaluation under realistic multi-degradation scenarios, we introduce the Extreme Degradation Bench (EDB): 87 singing and speech recordings captured under severe acoustic conditions. On EDB, SRS surpasses all open-source baselines on singing and matches commercial systems, while remaining competitive on speech despite no speech-specific training. We release both SRS and EDB under the MIT License.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "消费设备上的人声录音通常遭受多种并发降级：噪声、混响、带宽限制和削波。我们提出了Smule Renaissance Small (SRS)，这是一个紧凑的单阶段模型，直接在复数STFT域端到端执行人声修复。通过引入相位感知损失，SRS实现了大分析窗口以改善频率分辨率，同时在48 kHz采样率下在iPhone 12 CPU上达到10.5倍实时推理。在DNS 5 Challenge盲集测试中，尽管没有进行语音训练，SRS仍优于强大的GAN基线系统，并接近计算密集的流匹配系统性能。为了在真实的多降级场景下进行评估，我们引入了极端降级基准(EDB)：87条在严重声学条件下录制的歌唱和语音录音。在EDB上，SRS在歌唱任务上超越所有开源基线系统，并匹配商业系统性能，尽管没有语音特定训练，在语音任务上仍保持竞争力。我们以MIT许可证发布了SRS和EDB。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-10-27",
     "paper_authors": "Yongyi Zang, Chris Manchester, David Young, Ivan Ivanov, Jeffrey Lufkin, Martin Vladimirov, PJ Solomon, Svetoslav Kepchelev, Fei Yueh Chen, Dongting Cai, Teodor Naydenov, Randal Leistikow",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "FlowSynth: Instrument Generation Through Distributional Flow Matching and Test-Time Search",
