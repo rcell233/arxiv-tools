@@ -359,10 +359,10 @@
   },
   {
     "paper_title": "Evaluating Multimodal Large Language Models on Core Music Perception Tasks",
-    "paper_title_zh": "",
+    "paper_title_zh": "多模态大语言模型在核心音乐感知任务中的评估",
     "paper_id": "2510.22455",
     "paper_abstract": "Multimodal Large Language Models (LLMs) claim \"musical understanding\" via evaluations that conflate listening with score reading. We benchmark three SOTA LLMs (Gemini 2.5 Pro, Gemini 2.5 Flash, and Qwen2.5-Omni) across three core music skills: Syncopation Scoring, Transposition Detection, and Chord Quality Identification. Moreover, we separate three sources of variability: (i) perceptual limitations (audio vs. MIDI inputs), (ii) exposure to examples (zero- vs. few-shot manipulations), and (iii) reasoning strategies (Standalone, CoT, LogicLM). For the latter we adapt LogicLM, a framework combining LLMs with symbolic solvers to perform structured reasoning, to music. Results reveal a clear perceptual gap: models perform near ceiling on MIDI but show accuracy drops on audio. Reasoning and few-shot prompting offer minimal gains. This is expected for MIDI, where performance reaches saturation, but more surprising for audio, where LogicLM, despite near-perfect MIDI accuracy, remains notably brittle. Among models, Gemini Pro achieves the highest performance across most conditions. Overall, current systems reason well over symbols (MIDI) but do not yet \"listen\" reliably from audio. Our method and dataset make the perception-reasoning boundary explicit and offer actionable guidance for building robust, audio-first music systems.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "多模态大语言模型通过将聆听与乐谱阅读混淆的评估方式声称具备'音乐理解'能力。我们在三项核心音乐技能上对三种最先进模型（Gemini 2.5 Pro、Gemini 2.5 Flash和Qwen2.5-Omni）进行了基准测试：切分节奏评分、转调检测和和弦质量识别。此外，我们分离了三个变量来源：(i)感知限制（音频与MIDI输入），(ii)示例曝光度（零样本与少样本提示），以及(iii)推理策略（独立模式、思维链、LogicLM）。针对后者，我们将LogicLM框架（结合大语言模型与符号求解器执行结构化推理）适配到音乐领域。结果显示存在明显的感知差距：模型在MIDI输入上表现接近天花板水平，但在音频输入上准确率显著下降。推理能力和少样本提示带来的增益有限。对于MIDI输入，由于性能已达到饱和，这一现象在意料之中；但对于音频输入，尽管LogicLM在MIDI测试中表现近乎完美，其脆弱性仍令人意外。在各模型中，Gemini Pro在大多数条件下表现最佳。总体而言，当前系统能够很好地处理符号化信息（MIDI），但尚未能可靠地从音频中'聆听'。我们的方法和数据集明确了感知-推理边界，并为构建稳健的音频优先音乐系统提供了可操作的指导。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -370,8 +370,12 @@
     ],
     "update_time": "2025-10-28",
     "paper_authors": "Brandon James Carone, Iran R. Roman, Pablo Ripollés",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Low-Resource Audio Codec (LRAC): 2025 Challenge Description",

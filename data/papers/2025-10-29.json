@@ -4,7 +4,7 @@
     "paper_title_zh": "一种用于上下文偏置分数学习和过滤的神经模型",
     "paper_id": "2510.23849",
     "paper_abstract": "Contextual biasing improves automatic speech recognition (ASR) by integrating external knowledge, such as user-specific phrases or entities, during decoding. In this work, we use an attention-based biasing decoder to produce scores for candidate phrases based on acoustic information extracted by an ASR encoder, which can be used to filter out unlikely phrases and to calculate bonus for shallow-fusion biasing. We introduce a per-token discriminative objective that encourages higher scores for ground-truth phrases while suppressing distractors. Experiments on the Librispeech biasing benchmark show that our method effectively filters out majority of the candidate phrases, and significantly improves recognition accuracy under different biasing conditions when the scores are used in shallow fusion biasing. Our approach is modular and can be used with any ASR system, and the filtering mechanism can potentially boost performance of other biasing methods.",
-    "paper_abstract_zh": "上下文偏置通过在解码过程中集成外部知识（如用户特定的短语或实体）来提高自动语音识别(ASR)的性能。在这项工作中，我们使用一种基于注意力的偏置解码器，根据ASR编码器提取的声学信息为候选短语生成分数，这些分数可用于过滤掉不太可能的短语，并用于浅层融合偏置的奖励计算。我们引入了一种基于每个判别性目标的方法，鼓励为真实短语分配更高的分数，同时抑制干扰项。在Librispeech偏置基准测试上的实验表明，我们的方法能够有效过滤掉大部分候选短语，当这些分数用于浅层融合偏置时，在不同偏置条件下显著提高了识别准确率。我们的方法是模块化的，可以与任何ASR系统一起使用，并且过滤机制有望提高其他偏置方法的性能。",
+    "paper_abstract_zh": "上下文偏置通过在解码过程中集成外部知识（如用户特定短语或实体）来提高自动语音识别（ASR）的性能。在这项工作中，我们使用基于注意力的偏置解码器，根据ASR编码器提取的声学信息为候选短语生成分数，这些分数可用于过滤掉不太可能的短语，并计算用于浅层融合偏置的奖励。我们引入了一种每个判别性目标函数，鼓励提高真实短语的分数同时抑制干扰项。在Librispeech偏置基准测试上的实验表明，我们的方法能有效过滤掉大部分候选短语，当分数用于浅层融合偏置时，在不同偏置条件下显著提高了识别准确率。我们的方法是模块化的，可与任何ASR系统一起使用，且过滤机制有望提升其他偏置方法的性能。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -23,10 +23,10 @@
   },
   {
     "paper_title": "Listening without Looking: Modality Bias in Audio-Visual Captioning",
-    "paper_title_zh": "不看也能听：视听描述中的模态偏差",
+    "paper_title_zh": "不看只听：视听描述中的模态偏差",
     "paper_id": "2510.24024",
     "paper_abstract": "Audio-visual captioning aims to generate holistic scene descriptions by jointly modeling sound and vision. While recent methods have improved performance through sophisticated modality fusion, it remains unclear to what extent the two modalities are complementary in current audio-visual captioning models and how robust these models are when one modality is degraded. We address these questions by conducting systematic modality robustness tests on LAVCap, a state-of-the-art audio-visual captioning model, in which we selectively suppress or corrupt the audio or visual streams to quantify sensitivity and complementarity. The analysis reveals a pronounced bias toward the audio stream in LAVCap. To evaluate how balanced audio-visual captioning models are in their use of both modalities, we augment AudioCaps with textual annotations that jointly describe the audio and visual streams, yielding the AudioVisualCaps dataset. In our experiments, we report LAVCap baseline results on AudioVisualCaps. We also evaluate the model under modality robustness tests on AudioVisualCaps and the results indicate that LAVCap trained on AudioVisualCaps exhibits less modality bias than when trained on AudioCaps.",
-    "paper_abstract_zh": "视听描述旨在通过联合建模声音和视觉来生成整体场景描述。尽管最近的方法通过复杂的模态融合提高了性能，但目前尚不清楚在当前的视听描述模型中两种模态在多大程度上是互补的，以及当一个模态退化时这些模型的鲁棒性如何。我们通过对LAVCap（一种先进的视听描述模型）进行系统的模态鲁棒性测试来回答这些问题，在该测试中，我们选择性地抑制或损坏音频或视觉流，以量化敏感性和互补性。分析显示LAVCap对音频流存在明显的偏向。为了评估视听描述模型在两种模态使用上的平衡性，我们扩充了AudioCaps数据集，添加了同时描述音频和视觉流的文本注释，从而创建了AudioVisualCaps数据集。在我们的实验中，我们报告了LAVCap在AudioVisualCaps上的基线结果。我们还评估了模型在AudioVisualCaps上的模态鲁棒性测试，结果表明，在AudioVisualCaps上训练的LAVCap比在AudioCaps上训练的LAVCap表现出更少的模态偏差。",
+    "paper_abstract_zh": "视听描述旨在通过联合建模声音和视觉来生成整体场景描述。尽管最近的方法通过复杂的模态融合提高了性能，但目前尚不清楚在当前的视听描述模型中，这两种模态在多大程度上是互补的，以及当一个模态退化时，这些模型的鲁棒性如何。我们通过对最先进的视听描述模型LAVCap进行系统的模态鲁棒性测试来回答这些问题，在该测试中，我们选择性地抑制或损坏音频或视觉流，以量化敏感性和互补性。分析显示，LAVCap对音频流存在明显的偏差。为了评估视听描述模型在两种模态使用上的平衡性，我们扩展了AudioCaps数据集，添加了同时描述音频和视觉流的文本注释，生成了AudioVisualCaps数据集。在我们的实验中，我们报告了LAVCap在AudioVisualCaps上的基线结果。我们还评估了模型在AudioVisualCaps上的模态鲁棒性测试，结果表明，在AudioVisualCaps上训练的LAVCap比在AudioCaps上训练的模型表现出更少的模态偏差。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Computer Vision and Pattern Recognition (cs.CV)",
@@ -43,10 +43,10 @@
   },
   {
     "paper_title": "Forward Convolutive Prediction for Frame Online Monaural Speech Dereverberation Based on Kronecker Product Decomposition",
-    "paper_title_zh": "基于Kronecker积分解的帧在线单通道语音去混响前向卷积预测",
+    "paper_title_zh": "基于Kronecker积分解的帧在线单声道语音去混响前向卷积预测",
     "paper_id": "2510.24471",
     "paper_abstract": "Dereverberation has long been a crucial research topic in speech processing, aiming to alleviate the adverse effects of reverberation in voice communication and speech interaction systems. Among existing approaches, forward convolutional prediction (FCP) has recently attracted attention. It typically employs a deep neural network to predict the direct-path signal and subsequently estimates a linear prediction filter to suppress residual reverberation. However, a major drawback of this approach is that the required linear prediction filter is often excessively long, leading to considerable computational complexity. To address this, our work proposes a novel FCP method based on Kronecker product (KP) decomposition, in which the long prediction filter is modeled as the KP of two much shorter filters. This decomposition significantly reduces the computational cost. An adaptive algorithm is then provided to iteratively update these shorter filters online. Experimental results show that, compared to conventional methods, our approach achieves competitive dereverberation performance while substantially reducing computational cost.",
-    "paper_abstract_zh": "去混响一直是语音处理中的一个重要研究课题，旨在减轻语音通信和语音交互系统中混响的不利影响。在现有方法中，前向卷积预测(FCP)最近引起了关注。它通常采用深度神经网络来预测直接路径信号，然后估计线性预测滤波器以抑制残留混响。然而，这种方法的一个主要缺点是所需的线性预测滤波器通常过长，导致相当大的计算复杂度。为了解决这个问题，我们的工作提出了一种基于Kronecker积(KP)分解的新型FCP方法，其中长预测滤波器被建模为两个更短滤波器的KP。这种分解显著降低了计算成本。然后提供了一种自适应算法，用于在线迭代更新这些较短的滤波器。实验结果表明，与传统方法相比，我们的方法在实现具有竞争力的去混响性能的同时，显著降低了计算成本。",
+    "paper_abstract_zh": "去混响一直是语音处理中的一个重要研究课题，旨在减轻语音通信和语音交互系统中混响的不利影响。在现有方法中，前向卷积预测(FCP)最近引起了关注。它通常采用深度神经网络来预测直达路径信号，然后估计线性预测滤波器以抑制残留混响。然而，这种方法的一个主要缺点是所需的线性预测滤波器通常过长，导致相当大的计算复杂度。为解决这一问题，我们的工作提出了一种基于Kronecker积(KP)分解的新型FCP方法，其中长预测滤波器被建模为两个较短滤波器的KP。这种分解显著降低了计算成本。随后，提供了一种自适应算法，用于在线迭代更新这些较短滤波器。实验结果表明，与传统方法相比，我们的方法在实现具有竞争力的去混响性能的同时，显著降低了计算成本。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
@@ -61,10 +61,10 @@
   },
   {
     "paper_title": "Optimized Loudspeaker Panning for Adaptive Sound-Field Correction and Non-stationary Listening Areas",
-    "paper_title_zh": "用于自适应声场校正和非稳定听音区域的优化扬声器声像定位",
+    "paper_title_zh": "自适应声场校正和非稳定听音区域的优化扬声器声像定位",
     "paper_id": "2510.23937",
     "paper_abstract": "Surround sound systems commonly distribute loudspeakers along standardized layouts for multichannel audio reproduction. However in less controlled environments, practical layouts vary in loudspeaker quantity, placement, and listening locations / areas. Deviations from standard layouts introduce sound-field errors that degrade acoustic timbre, imaging, and clarity of audio content reproduction. This work introduces both Bayesian loudspeaker normalization and content panning optimization methods for sound-field correction. Conjugate prior distributions over loudspeaker-listener directions update estimated layouts for non-stationary listening locations; digital filters adapt loudspeaker acoustic responses to a common reference target at the estimated listening area without acoustic measurements. Frequency-domain panning coefficients are then optimized via sensitivity / efficiency objectives subject to spatial, electrical, and acoustic domain constraints; normalized and panned loudspeakers form virtual loudspeakers in standardized layouts for accurate multichannel reproduction. Experiments investigate robustness of Bayesian adaptation, and panning optimizations in practical applications.",
-    "paper_abstract_zh": "环绕声系统通常采用标准化布局来分配扬声器，以实现多声道音频重放。然而，在控制较少的环境中，扬声器的数量、布置以及听音位置/区域各不相同。偏离标准布局会导致声场误差，降低音频内容重放的音色、声像和清晰度。本文提出了贝叶斯扬声器归一化和内容声像定位优化方法，用于声场校正。通过扬声器-听音方向的共轭先验分布，对非稳定听音位置的估计布局进行更新；数字滤波器将扬声器的声学响应调整到估计听音区域的共同参考目标，无需进行声学测量。然后，在空间、电气和声学域约束条件下，通过灵敏度/效率目标优化频域声像定位系数；归一化和声像定位后的扬声器形成标准化布局中的虚拟扬声器，实现准确的多声道重放。实验研究了贝叶斯适应和声像定位优化在实际应用中的鲁棒性。",
+    "paper_abstract_zh": "环绕声系统通常采用标准化布局来分配扬声器以实现多声道音频重放。然而，在控制较少的环境中，扬声器的数量、位置以及听音位置/区域各不相同。偏离标准布局会导致声场误差，降低音频内容重放的音色、声像和清晰度。这项工作引入了贝叶斯扬声器归一化和内容声像定位优化方法用于声场校正。基于扬声器-听音方向的共轭先验分布，可更新非稳定听音位置的估计布局；数字滤波器使扬声器的声学响应适应于估计听音区域的通用参考目标，无需进行声学测量。然后，通过敏感度/效率目标优化频域声像定位系数，并满足空间、电气和声学域的约束；归一化和声像定位后的扬声器形成标准化布局中的虚拟扬声器，以实现准确的多声道重放。实验研究了贝叶斯适应和实际应用中声像定位优化的鲁棒性。",
     "subjects": [
       "Sound (cs.SD)",
       "Optimization and Control (math.OC)",
@@ -82,14 +82,14 @@
   },
   {
     "paper_title": "emg2speech: synthesizing speech from electromyography using self-supervised speech models",
-    "paper_title_zh": "EMG2Speech：使用自监督语音模型从肌电图合成语音",
+    "paper_title_zh": "emg2speech: 使用自监督语音模型从肌电图合成语音",
     "paper_id": "2510.23969",
     "paper_abstract": "We present a neuromuscular speech interface that translates electromyographic (EMG) signals collected from orofacial muscles during speech articulation directly into audio. We show that self-supervised speech (SS) representations exhibit a strong linear relationship with the electrical power of muscle action potentials: SS features can be linearly mapped to EMG power with a correlation of $r = 0.85$. Moreover, EMG power vectors corresponding to different articulatory gestures form structured and separable clusters in feature space. This relationship: $\\text{SS features}$ $\\xrightarrow{\\texttt{linear mapping}}$ $\\text{EMG power}$ $\\xrightarrow{\\texttt{gesture-specific clustering}}$ $\\text{articulatory movements}$, highlights that SS models implicitly encode articulatory mechanisms. Leveraging this property, we directly map EMG signals to SS feature space and synthesize speech, enabling end-to-end EMG-to-speech generation without explicit articulatory models and vocoder training.",
-    "paper_abstract_zh": "我们提出了一种神经肌肉语音接口，能够直接将语音发音过程中从口面肌肉收集的肌电图(EMG)信号转换为音频。我们证明自监督语音(SS)表示与肌肉动作电位的电功率之间存在强烈的线性关系：SS特征可以线性映射到EMG功率，相关系数为r=0.85。此外，对应于不同发音手势的EMG功率向量在特征空间中形成结构化和可分离的聚类。这种关系：SS特征→线性映射→EMG功率→手势特定聚类→发音运动，表明SS模型隐式编码了发音机制。利用这一特性，我们将EMG信号直接映射到SS特征空间并合成语音，实现了无需明确发音模型和声码器训练的端到端EMG到语音生成。",
+    "paper_abstract_zh": "我们提出了一种神经肌肉语音接口，可以直接将语音发音过程中从面部肌肉收集的肌电图(EMG)信号转换为音频。我们证明自监督语音(SS)表示与肌肉动作电位的电功率之间存在强烈的线性关系：SS特征可以线性映射到EMG功率，相关系数为r = 0.85。此外，对应于不同发音手势的EMG功率向量在特征空间中形成结构化和可分离的聚类。这种关系：SS特征 → 线性映射 → EMG功率 → 手势特定聚类 → 发音动作，突显了SS模型隐式编码发音机制。利用这一特性，我们将EMG信号直接映射到SS特征空间并合成语音，实现了无需明确发音模型和声码器训练的端到端EMG到语音生成。",
     "subjects": [
       "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
-      "Computation and Language (cs.CL)"
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-29",
     "paper_authors": "Harshavardhana T. Gowda, Lee M. Miller",
@@ -103,10 +103,10 @@
   },
   {
     "paper_title": "Model-Guided Dual-Role Alignment for High-Fidelity Open-Domain Video-to-Audio Generation",
-    "paper_title_zh": "模型引导的双角色对齐用于高保真开放域视频到音频生成",
+    "paper_title_zh": "模型引导的双角色对齐用于高保真开放领域视频到音频生成",
     "paper_id": "2510.24103",
     "paper_abstract": "We present MGAudio, a novel flow-based framework for open-domain video-to-audio generation, which introduces model-guided dual-role alignment as a central design principle. Unlike prior approaches that rely on classifier-based or classifier-free guidance, MGAudio enables the generative model to guide itself through a dedicated training objective designed for video-conditioned audio generation. The framework integrates three main components: (1) a scalable flow-based Transformer model, (2) a dual-role alignment mechanism where the audio-visual encoder serves both as a conditioning module and as a feature aligner to improve generation quality, and (3) a model-guided objective that enhances cross-modal coherence and audio realism. MGAudio achieves state-of-the-art performance on VGGSound, reducing FAD to 0.40, substantially surpassing the best classifier-free guidance baselines, and consistently outperforms existing methods across FD, IS, and alignment metrics. It also generalizes well to the challenging UnAV-100 benchmark. These results highlight model-guided dual-role alignment as a powerful and scalable paradigm for conditional video-to-audio generation. Code is available at: this https URL",
-    "paper_abstract_zh": "我们提出了MGAudio，一种用于开放域视频到音频生成的新型基于流的框架，该框架引入了模型引导的双角色对齐作为核心设计原则。与依赖于基于分类器或无分类器引导的先前方法不同，MGAudio使生成模型能够通过专门为视频条件音频生成设计的训练目标来引导自身。该框架集成了三个主要组件：(1) 一个可扩展的基于流的Transformer模型，(2) 一个双角色对齐机制，其中音频视觉编码器既作为条件模块又作为特征对齐器，以提高生成质量，以及(3) 一个模型引导的目标，用于增强跨模态一致性和音频保真度。MGAudio在VGGSound上实现了最先进的性能，将FAD降低到0.40，显著超越了最佳的无分类器引导基线，并在FD、IS和对齐指标上一致优于现有方法。它还能很好地推广到具有挑战性的UnAV-100基准测试上。这些结果突显了模型引导的双角色对齐作为条件视频到音频生成的一种强大且可扩展的范式。代码可在以下网址获取：this https URL",
+    "paper_abstract_zh": "我们提出了MGAudio，一种用于开放领域视频到音频生成的新型基于流的框架，该框架引入了模型引导的双角色对齐作为核心设计原则。与依赖于基于分类器或无分类器引导的先前方法不同，MGAudio通过专门为视频条件音频生成设计的训练目标，使生成模型能够自我引导。该框架集成了三个主要组件：(1) 可扩展的基于流的Transformer模型，(2) 双角色对齐机制，其中视听编码器既作为条件模块又作为特征对齐器，以提高生成质量，以及 (3) 模型引导的目标，增强跨模态一致性和音频真实感。MGAudio在VGGSound上实现了最先进的性能，将FAD降低到0.40，显著优于最佳的无分类器引导基线，并在FD、IS和对齐指标上一致优于现有方法。它也能很好地推广到具有挑战性的UnAV-100基准测试上。这些结果突显了模型引导的双角色对齐作为条件视频到音频生成的一种强大且可扩展的范式。代码可在以下网址获取：this https URL",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -116,8 +116,6 @@
     "update_time": "2025-10-29",
     "paper_authors": "Kang Zhang, Trung X. Pham, Suyeon Lee, Axi Niu, Arda Senocak, Joon Son Chung",
     "topic": [
-      "Audio Representation Learning",
-      "Music Generation",
       "Video Generation"
     ],
     "category": [
@@ -126,20 +124,20 @@
   },
   {
     "paper_title": "HergNet: a Fast Neural Surrogate Model for Sound Field Predictions via Superposition of Plane Waves",
-    "paper_title_zh": "HergNet：基于平面波叠加的快速声场预测神经网络代理模型",
+    "paper_title_zh": "赫格网络：通过平面波叠加实现声场预测的快速神经代理模型",
     "paper_id": "2510.24279",
     "paper_abstract": "We present a novel neural network architecture for the efficient prediction of sound fields in two and three dimensions. The network is designed to automatically satisfy the Helmholtz equation, ensuring that the outputs are physically valid. Therefore, the method can effectively learn solutions to boundary-value problems in various wave phenomena, such as acoustics, optics, and electromagnetism. Numerical experiments show that the proposed strategy can potentially outperform state-of-the-art methods in room acoustics simulation, in particular in the range of mid to high frequencies.",
-    "paper_abstract_zh": "我们提出了一种用于高效预测二维和三维声场的新型神经网络架构。该网络设计能够自动满足亥姆霍兹方程，确保输出结果符合物理规律，因此可以有效学习各种波动现象（如声学、光学和电磁学）中的边界值问题。数值实验表明，所提出的方法在房间声学模拟中，特别是在中高频范围内，可能优于现有最先进方法。",
+    "paper_abstract_zh": "我们提出了一种用于高效预测二维和三维声场的新型神经网络架构。该网络设计能够自动满足亥姆霍兹方程，确保输出结果的物理有效性。因此，该方法可以有效学习各种波现象（如声学、光学和电磁学）中的边界值问题。数值实验表明，所提出的方法在房间声学模拟中，特别是在中高频范围内，可能优于现有最先进方法。",
     "subjects": [
+      "Machine Learning (cs.LG)",
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
-      "Machine Learning (cs.LG)",
       "Computational Engineering, Finance, and Science (cs.CE)"
     ],
     "update_time": "2025-10-29",
     "paper_authors": "Matteo Calafà, Yuanxin Xia, Cheol-Ho Jeong",
     "topic": [
-      "Audio Representation Learning"
+      "Other"
     ],
     "category": [
       "Other"
@@ -150,7 +148,7 @@
     "paper_title_zh": "TsetlinKWS：一种用于关键词识别的65nm 16.58μW、0.63mm²基于状态驱动的卷积Tsetlin机器加速器",
     "paper_id": "2510.24282",
     "paper_abstract": "The Tsetlin Machine (TM) has recently attracted attention as a low-power alternative to neural networks due to its simple and interpretable inference mechanisms. However, its performance on speech-related tasks remains limited. This paper proposes TsetlinKWS, the first algorithm-hardware co-design framework for the Convolutional Tsetlin Machine (CTM) on the 12-keyword spotting task. Firstly, we introduce a novel Mel-Frequency Spectral Coefficient and Spectral Flux (MFSC-SF) feature extraction scheme together with spectral convolution, enabling the CTM to reach its first-ever competitive accuracy of 87.35% on the 12-keyword spotting task. Secondly, we develop an Optimized Grouped Block-Compressed Sparse Row (OG-BCSR) algorithm that achieves a remarkable 9.84$\\times$ reduction in model size, significantly improving the storage efficiency on CTMs. Finally, we propose a state-driven architecture tailored for the CTM, which simultaneously exploits data reuse and sparsity to achieve high energy efficiency. The full system is evaluated in 65 nm process technology, consuming 16.58 $\\mu$W at 0.7 V with a compact 0.63 mm$^2$ core area. TsetlinKWS requires only 907k logic operations per inference, representing a 10$\\times$ reduction compared to the state-of-the-art KWS accelerators, positioning the CTM as a highly-efficient candidate for ultra-low-power speech applications.",
-    "paper_abstract_zh": "Tsetlin机器（TM）因其简单且可解释的推理机制，最近作为神经网络的低功耗替代方案受到关注。然而，其在语音相关任务上的表现仍然有限。本文提出了TsetlinKWS，这是第一个针对12关键词识别任务的卷积Tsetlin机器（CTM）的算法-硬件协同设计框架。首先，我们引入了一种新颖的梅尔频率谱系数和谱通量（MFSC-SF）特征提取方案，并结合谱卷积，使CTM在12关键词识别任务上首次达到了87.35%的竞争性准确率。其次，我们开发了一种优化的分组块压缩稀疏行（OG-BCSR）算法，实现了模型大小9.84倍的显著减少，显著提高了CTM的存储效率。最后，我们提出了一种专为CTM设计的状态驱动架构，同时利用数据重用和稀疏性来实现高能效。整个系统在65nm工艺技术中进行了评估，在0.7V电压下消耗16.58μW，核心面积紧凑为0.63mm²。TsetlinKWS每次推理仅需907k次逻辑运算，与最先进的关键词识别加速器相比减少了10倍，使CTM成为超低功耗语音应用的高效候选方案。",
+    "paper_abstract_zh": "Tsetlin机器（TM）因其简单且可解释的推理机制，最近作为神经网络的低功耗替代方案受到关注。然而，其在语音相关任务上的表现仍然有限。本文提出了TsetlinKWS，这是首个针对12关键词识别任务的卷积Tsetlin机器（CTM）的算法-硬件协同设计框架。首先，我们引入了一种新颖的梅尔频率谱系数和谱通量（MFSC-SF）特征提取方案，并结合谱卷积，使CTM在12关键词识别任务上首次达到了87.35%的竞争性准确率。其次，我们开发了一种优化的分组块压缩稀疏行（OG-BCSR）算法，实现了模型大小9.84倍的显著减少，大幅提高了CTM的存储效率。最后，我们提出了一种专为CTM设计的状态驱动架构，同时利用数据重用和稀疏性来实现高能效。整个系统在65nm工艺技术下进行了评估，在0.7V电压下消耗16.58μW，核心面积紧凑为0.63mm²。TsetlinKWS每次推理仅需907k次逻辑运算，与最先进的关键词识别加速器相比减少了10倍，使CTM成为超低功耗语音应用的高效候选方案。",
     "subjects": [
       "Sound (cs.SD)",
       "Hardware Architecture (cs.AR)",
@@ -168,14 +166,14 @@
   },
   {
     "paper_title": "Sound Source Localization for Spatial Mapping of Surgical Actions in Dynamic Scenes",
-    "paper_title_zh": "动态场景中外科手术动作的空间映射声源定位",
+    "paper_title_zh": "动态场景中手术动作空间映射的声源定位",
     "paper_id": "2510.24332",
     "paper_abstract": "Purpose: Surgical scene understanding is key to advancing computer-aided and intelligent surgical systems. Current approaches predominantly rely on visual data or end-to-end learning, which limits fine-grained contextual modeling. This work aims to enhance surgical scene representations by integrating 3D acoustic information, enabling temporally and spatially aware multimodal understanding of surgical environments.\nMethods: We propose a novel framework for generating 4D audio-visual representations of surgical scenes by projecting acoustic localization information from a phased microphone array onto dynamic point clouds from an RGB-D camera. A transformer-based acoustic event detection module identifies relevant temporal segments containing tool-tissue interactions which are spatially localized in the audio-visual scene representation. The system was experimentally evaluated in a realistic operating room setup during simulated surgical procedures performed by experts.\nResults: The proposed method successfully localizes surgical acoustic events in 3D space and associates them with visual scene elements. Experimental evaluation demonstrates accurate spatial sound localization and robust fusion of multimodal data, providing a comprehensive, dynamic representation of surgical activity.\nConclusion: This work introduces the first approach for spatial sound localization in dynamic surgical scenes, marking a significant advancement toward multimodal surgical scene representations. By integrating acoustic and visual data, the proposed framework enables richer contextual understanding and provides a foundation for future intelligent and autonomous surgical systems.",
-    "paper_abstract_zh": "目的：外科场景理解是推进计算机辅助和智能外科系统的关键。当前方法主要依赖视觉数据或端到端学习，这限制了细粒度上下文建模。本研究旨在通过整合3D声学信息来增强外科场景表示，从而实现对手术环境时空感知的多模态理解。方法：我们提出了一种新颖的框架，通过将相控麦克风阵列的声学定位信息投影到RGB-D相机的动态点云上，生成外科场景的4D视听表示。基于变压器的声学事件检测模块识别包含工具-组织相互作用的相关时间片段，并在视听场景表示中进行空间定位。系统在专家进行的模拟手术过程中，在真实的手术室设置中进行了实验评估。结果：所提出的方法成功地在3D空间中定位外科声学事件，并将其与视觉场景元素相关联。实验评估证明了精确的空间声学定位和鲁棒的多模态数据融合，提供了外科活动的全面动态表示。结论：本研究首次提出了动态外科场景中的空间声学定位方法，标志着向多模态外科场景表示迈出的重要一步。通过整合声学和视觉数据，所提出的框架能够实现更丰富的上下文理解，并为未来的智能和自主外科系统奠定基础。",
+    "paper_abstract_zh": "目的：手术场景理解是推进计算机辅助和智能手术系统的关键。当前方法主要依赖视觉数据或端到端学习，这限制了细粒度上下文建模。本研究旨在通过整合3D声学信息来增强手术场景表示，从而实现对手术环境时空感知的多模态理解。方法：我们提出了一种新颖的框架，通过将相控麦克风阵列的声学定位信息投影到RGB-D相机的动态点云上，生成手术场景的4D视听表示。基于变压器的声学事件检测模块识别包含工具-组织相互作用的相关时间段，并在视听场景表示中进行空间定位。该系统在专家进行的模拟手术过程中，在真实的手术室设置中进行了实验评估。结果：所提出的方法成功地将手术声学事件定位在3D空间中，并将其与视觉场景元素相关联。实验评估证明了精确的空间声学定位和多模态数据的稳健融合，提供了手术活动的全面动态表示。结论：本研究首次提出了动态手术场景中空间声学定位的方法，标志着向多模态手术场景表示迈出了重要一步。通过整合声学和视觉数据，所提出的框架实现了更丰富的上下文理解，并为未来智能和自主手术系统奠定了基础。",
     "subjects": [
       "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
       "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)",
       "Image and Video Processing (eess.IV)"
     ],
     "update_time": "2025-10-29",
@@ -190,10 +188,10 @@
   },
   {
     "paper_title": "Bayesian Speech synthesizers Can Learn from Multiple Teachers",
-    "paper_title_zh": "贝叶斯语音合成器可以从多个教师模型中学习",
+    "paper_title_zh": "贝叶斯语音合成器可以从多个教师那里学习",
     "paper_id": "2510.24372",
     "paper_abstract": "Codec-based text-to-speech (TTS) models have recently gained traction for their efficiency and strong performance in voice cloning. However, codec-based TTS faces limitations due to the challenges of pretraining robust speech codecs and the quality degradation introduced by quantization errors. Emerging evidence suggests that continuous-valued generative models can alleviate these issues and serve as a promising alternative. Yet, effectively modelling diverse speech patterns and developing reliable sampling strategies for continuous-valued autoregressive (AR) TTS remains underexplored. In this work, we propose BELLE, Bayesian evidential learning with language modelling for TTS, a novel continuous-valued AR framework that directly predicts mel-spectrograms from textual input. BELLE treats each mel-spectrogram frame as a Gaussian distribution sampled from a learned hyper distribution, enabling principled uncertainty estimation, particularly in scenarios with parallel data (i.e., one text-audio prompt paired with multiple speech samples). To obtain such data, diverse speech samples are synthesized using multiple pre-trained TTS models given the same text-audio prompts, which are distilled into BELLE via Bayesian evidential learning. Experimental results indicate that BELLE demonstrates highly competitive performance compared with the current best open-source TTS models, even though BELLE is trained on a large amount of synthetic data and uses only approximately one-tenth of their training data. Audio samples generated by BELLE are available at this https URL. The code, checkpoints, and synthetic data will be released after the paper is accepted.",
-    "paper_abstract_zh": "基于编解码器的文本转语音（TTS）模型因其高效性和在语音克隆中的优异性能而受到关注。然而，基于编解码器的TTS面临预训练稳健语音编解码器的挑战以及量化误差导致的性能下降问题。新兴证据表明，连续值生成模型可以缓解这些问题，并成为有前景的替代方案。然而，如何有效建模多样化的语音模式以及开发连续值自回归（AR）TTS的可靠采样策略仍缺乏深入探索。本文提出了一种名为BELLE（基于语言建模的贝叶斯证据学习）的新型连续值自回归框架，该框架直接从文本输入预测梅尔谱图。BELLE将每个梅尔谱图帧视为从学习到的超分布中采样的高斯分布，从而实现原理性的不确定性估计，特别是在并行数据场景（即一个文本-音频提示对应多个语音样本）中。为获取此类数据，本文通过多个预训练TTS模型生成相同文本-音频提示的多样化语音样本，并通过贝叶斯证据学习将这些样本蒸馏到BELLE中。实验结果表明，BELLE在与当前最佳开源TTS模型的对比中表现出高度竞争力，尽管BELLE仅使用了十分之一的训练数据且基于大量合成数据进行训练。BELLE生成的音频样本可通过此URL访问。代码、检查点和合成数据将在论文被接收后发布。",
+    "paper_abstract_zh": "基于编解码器的文本到语音（TTS）模型因其效率和语音克隆中的强大性能而最近受到关注。然而，基于编解码器的TTS由于预训练鲁棒语音编解码器的挑战以及量化误差引入的质量下降而面临局限性。新兴证据表明，连续值生成模型可以缓解这些问题，并成为一种有前途的替代方案。然而，有效建模多样化的语音模式以及为连续值自回归（AR）TTS开发可靠的采样策略仍未得到充分探索。在这项工作中，我们提出了BELLE，一种用于TTS的贝叶斯证据学习与语言建模，这是一种新颖的连续值AR框架，可以直接从文本输入预测梅尔频谱图。BELLE将每个梅尔频谱图帧视为从学习到的超分布中采样的高斯分布，从而实现了原则性的不确定性估计，特别是在具有并行数据的场景中（即一个文本-音频提示与多个语音样本配对）。为了获得这样的数据，使用多个预训练的TTS模型针对相同的文本-音频提示合成多样化的语音样本，并通过贝叶斯证据学习将其蒸馏到BELLE中。实验结果表明，BELLE与当前最佳的开源TTS模型相比表现出极具竞争力的性能，尽管BELLE是在大量合成数据上训练的，并且仅使用了它们约十分之一的训练数据。BELLE生成的音频样本可在此https URL获取。代码、检查点和合成数据将在论文被接受后发布。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
@@ -210,14 +208,14 @@
   },
   {
     "paper_title": "Your Microphone Array Retains Your Identity: A Robust Voice Liveness Detection System for Smart Speakers",
-    "paper_title_zh": "您的麦克风阵列保留了您的身份：一种用于智能音箱的鲁棒语音活体检测系统",
+    "paper_title_zh": "您的麦克风阵列保留了您的身份：一种针对智能音箱的鲁棒语音活体检测系统",
     "paper_id": "2510.24393",
     "paper_abstract": "Though playing an essential role in smart home systems, smart speakers are vulnerable to voice spoofing attacks. Passive liveness detection, which utilizes only the collected audio rather than the deployed sensors to distinguish between live-human and replayed voices, has drawn increasing attention. However, it faces the challenge of performance degradation under the different environmental factors as well as the strict requirement of the fixed user gestures.\nIn this study, we propose a novel liveness feature, array fingerprint, which utilizes the microphone array inherently adopted by the smart speaker to determine the identity of collected audios. Our theoretical analysis demonstrates that by leveraging the circular layout of microphones, compared with existing schemes, array fingerprint achieves a more robust performance under the environmental change and user's movement. Then, to leverage such a fingerprint, we propose ARRAYID, a lightweight passive detection scheme, and elaborate a series of features working together with array fingerprint. Our evaluation on the dataset containing 32,780 audio samples and 14 spoofing devices shows that ARRAYID achieves an accuracy of 99.84%, which is superior to existing passive liveness detection schemes.",
-    "paper_abstract_zh": "尽管在智能家居系统中扮演着重要角色，智能音箱容易受到语音欺骗攻击。仅使用收集的音频而非部署的传感器来区分真人语音和重放语音的被动活体检测技术正受到越来越多的关注。然而，它在不同环境因素下面临性能下降的挑战，并且对固定用户手势有严格要求。在这项研究中，我们提出了一种新的活体特征——阵列指纹，它利用智能音箱内置的麦克风阵列来确定收集音频的身份。我们的理论分析表明，通过利用麦克风的圆形布局，与现有方案相比，阵列指纹在环境变化和用户移动的情况下实现了更鲁棒的性能。然后，为了利用这种指纹，我们提出了ARRAYID，一种轻量级的被动检测方案，并详细阐述了一系列与阵列指纹协同工作的特征。我们在包含32,780个音频样本和14种欺骗设备的数据集上的评估表明，ARRAYID的准确率达到99.84%，优于现有的被动活体检测方案。",
+    "paper_abstract_zh": "尽管在智能家居系统中扮演着重要角色，智能音箱容易受到语音欺骗攻击。仅使用收集的音频而非部署的传感器来区分真人语音和重放语音的被动活体检测技术日益受到关注。然而，它在面对不同环境因素以及用户固定手势的严格要求时面临性能下降的挑战。在本研究中，我们提出了一种新的活体特征——阵列指纹，它利用智能音箱内置的麦克风阵列来确定收集音频的身份。我们的理论分析表明，通过利用麦克风的圆形布局，与现有方案相比，阵列指纹在环境变化和用户移动的情况下实现了更鲁棒的性能。随后，为了利用这种指纹，我们提出了ARRAYID，一种轻量级的被动检测方案，并详细阐述了一系列与阵列指纹协同工作的特征。我们在包含32,780个音频样本和14种欺骗设备的评估数据集上进行了测试，结果显示ARRAYID的准确率达到99.84%，优于现有的被动活体检测方案。",
     "subjects": [
       "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
-      "Cryptography and Security (cs.CR)"
+      "Cryptography and Security (cs.CR)",
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-29",
     "paper_authors": "Yan Meng, Jiachun Li, Matthew Pillari, Arjun Deopujari, Liam Brennan, Hafsah Shamsie, Haojin Zhu, Yuan Tian",
@@ -231,10 +229,10 @@
   },
   {
     "paper_title": "Online neural fusion of distortionless differential beamformers for robust speech enhancement",
-    "paper_title_zh": "无失真差分波束成形器的在线神经融合用于鲁棒语音增强",
+    "paper_title_zh": "面向鲁棒语音增强的无失真差分波束成形器在线神经融合",
     "paper_id": "2510.24497",
     "paper_abstract": "Fixed beamforming is widely used in practice since it does not depend on the estimation of noise statistics and provides relatively stable performance. However, a single beamformer cannot adapt to varying acoustic conditions, which limits its interference suppression capability. To address this, adaptive convex combination (ACC) algorithms have been introduced, where the outputs of multiple fixed beamformers are linearly combined to improve robustness. Nevertheless, ACC often fails in highly non-stationary scenarios, such as rapidly moving interference, since its adaptive updates cannot reliably track rapid changes. To overcome this limitation, we propose a frame-online neural fusion framework for multiple distortionless differential beamformers, which estimates the combination weights through a neural network. Compared with conventional ACC, the proposed method adapts more effectively to dynamic acoustic environments, achieving stronger interference suppression while maintaining the distortionless constraint.",
-    "paper_abstract_zh": "固定波束成形在实际应用中被广泛使用，因为它不依赖于噪声统计估计并能提供相对稳定的性能。然而，单一波束成形器无法适应变化的声学环境，这限制了其干扰抑制能力。为解决这一问题，引入了自适应凸组合（ACC）算法，通过线性组合多个固定波束成形器的输出来提高鲁棒性。然而，ACC在高度非平稳场景（如快速移动干扰）中往往失效，因为其自适应更新无法可靠跟踪快速变化。为克服这一限制，我们提出了一种用于多个无失真差分波束成形器的在线神经融合框架，通过神经网络估计组合权重。与传统ACC相比，所提出的方法能更有效地适应动态声学环境，在保持无失真约束的同时实现更强的干扰抑制。",
+    "paper_abstract_zh": "固定波束成形技术由于不依赖噪声统计估计且性能相对稳定，在实践中被广泛应用。然而，单一波束成形器无法适应变化的声学环境，限制了其干扰抑制能力。为解决这一问题，引入了自适应凸组合（ACC）算法，通过线性组合多个固定波束成形器的输出来提高鲁棒性。但ACC在高度非平稳场景（如快速移动干扰）中往往失效，因为其自适应更新无法可靠跟踪快速变化。为克服这一局限，本文提出了一种面向多个无失真差分波束成形器的在线神经融合框架，通过神经网络估计组合权重。与传统ACC相比，所提方法能更有效地适应动态声学环境，在保持无失真约束的同时实现更强的干扰抑制。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -254,7 +252,7 @@
     "paper_title_zh": "基于时域梅尔频率小波系数的音频信号处理",
     "paper_id": "2510.24519",
     "paper_abstract": "Extracting features from the speech is the most critical process in speech signal processing. Mel Frequency Cepstral Coefficients (MFCC) are the most widely used features in the majority of the speaker and speech recognition applications, as the filtering in this feature is similar to the filtering taking place in the human ear. But the main drawback of this feature is that it provides only the frequency information of the signal but does not provide the information about at what time which frequency is present. The wavelet transform, with its flexible time-frequency window, provides time and frequency information of the signal and is an appropriate tool for the analysis of non-stationary signals like speech. On the other hand, because of its uniform frequency scaling, a typical wavelet transform may be less effective in analysing speech signals, have poorer frequency resolution in low frequencies, and be less in line with human auditory perception. Hence, it is necessary to develop a feature that incorporates the merits of both MFCC and wavelet transform. A great deal of studies are trying to combine both these features. The present Wavelet Transform based Mel-scaled feature extraction methods require more computation when a wavelet transform is applied on top of Mel-scale filtering, since it adds extra processing steps. Here we are proposing a method to extract Mel scale features in time domain combining the concept of wavelet transform, thus reducing the computational burden of time-frequency conversion and the complexity of wavelet extraction. Combining our proposed Time domain Mel frequency Wavelet Coefficient(TMFWC) technique with the reservoir computing methodology has significantly improved the efficiency of audio signal processing.",
-    "paper_abstract_zh": "从语音中提取特征是语音信号处理中最关键的过程。梅尔频率倒谱系数(MFCC)是在大多数说话人和语音识别应用中最广泛使用的特征，因为此特征中的滤波类似于人耳中的滤波。但该特征的主要缺点是它只提供信号的频率信息，而不提供频率出现的时间信息。小波变换凭借其灵活的时间-频率窗口，提供了信号的时间和频率信息，是分析语音等非平稳信号的合适工具。另一方面，由于其均匀的频率缩放，典型的小波变换在分析语音信号时可能效果较差，低频频率分辨率较低，且与人类听觉感知不太一致。因此，有必要开发一种结合MFCC和小波变换优点的特征。大量研究试图结合这两种特征。目前基于小波变换的梅尔尺度特征提取方法在梅尔尺度滤波基础上应用小波变换时需要更多计算，因为它增加了额外的处理步骤。本文提出了一种在时域结合小波变换概念提取梅尔尺度特征的方法，从而减少了时间-频率转换的计算负担和小波提取的复杂性。将我们提出的时域梅尔频率小波系数(TMFWC)技术与水库计算方法相结合，显著提高了音频信号处理的效率。",
+    "paper_abstract_zh": "从语音中提取特征是语音信号处理中最关键的步骤。梅尔频率倒谱系数（MFCC）是大多数说话人识别和语音识别应用中最广泛使用的特征，因为该特征的滤波过程与人耳中的滤波过程相似。但该特征的主要缺点是仅提供信号的频率信息，而无法提供特定频率在何时出现的信息。小波变换凭借其灵活的时频窗，能够提供信号的时间和频率信息，是分析非平稳信号（如语音）的合适工具。然而，由于其均匀的频率缩放特性，典型的小波变换在分析语音信号时可能效果较差，在低频区域的频率分辨率较低，且与人耳听觉感知不符。因此，有必要开发一种结合MFCC和小波变换优点的特征。许多研究尝试将这两种特征相结合。目前基于小波变换的梅尔尺度特征提取方法在梅尔尺度滤波后应用小波变换时计算量较大，因为增加了额外的处理步骤。本文提出了一种结合小波变换概念在时域提取梅尔尺度特征的方法，从而降低了时频转换的计算负担和小波提取的复杂度。将所提出的时域梅尔频率小波系数（TMFWC）技术与储备池计算方法结合，显著提高了音频信号处理的效率。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -272,14 +270,14 @@
   },
   {
     "paper_title": "STAR-Bench: Probing Deep Spatio-Temporal Reasoning as Audio 4D Intelligence",
-    "paper_title_zh": "STAR-Bench：将深度时空推理作为音频4D智能进行探测",
+    "paper_title_zh": "STAR-Bench：将深度时空推理作为音频4D智能进行探索",
     "paper_id": "2510.24693",
     "paper_abstract": "Despite rapid progress in Multi-modal Large Language Models and Large Audio-Language Models, existing audio benchmarks largely test semantics that can be recovered from text captions, masking deficits in fine-grained perceptual reasoning. We formalize audio 4D intelligence that is defined as reasoning over sound dynamics in time and 3D space, and introduce STAR-Bench to measure it. STAR-Bench combines a Foundational Acoustic Perception setting (six attributes under absolute and relative regimes) with a Holistic Spatio-Temporal Reasoning setting that includes segment reordering for continuous and discrete processes and spatial tasks spanning static localization, multi-source relations, and dynamic trajectories. Our data curation pipeline uses two methods to ensure high-quality samples. For foundational tasks, we use procedurally synthesized and physics-simulated audio. For holistic data, we follow a four-stage process that includes human annotation and final selection based on human performance. Unlike prior benchmarks where caption-only answering reduces accuracy slightly, STAR-Bench induces far larger drops (-31.5\\% temporal, -35.2\\% spatial), evidencing its focus on linguistically hard-to-describe cues. Evaluating 19 models reveals substantial gaps compared with humans and a capability hierarchy: closed-source models are bottlenecked by fine-grained perception, while open-source models lag across perception, knowledge, and reasoning. Our STAR-Bench provides critical insights and a clear path forward for developing future models with a more robust understanding of the physical world.",
-    "paper_abstract_zh": "尽管多模态大语言模型和大音频语言模型发展迅速，但现有的音频基准测试主要测试可以从文本描述中恢复的语义，掩盖了细粒度感知推理的不足。我们将音频4D智能定义为对时间和3D空间中声音动态的推理，并引入STAR-Bench来衡量这一能力。STAR-Bench结合了基础感知设置（包括绝对和相对条件下的六个属性）和整体时空推理设置，后者包括连续和离散过程的段重排序以及涵盖静态定位、多源关系和动态轨迹的空间任务。我们的数据整理流程采用两种方法确保高质量样本：对于基础任务，我们使用程序合成和物理模拟的音频；对于整体数据，我们遵循四阶段流程，包括人工注释和基于人类表现的最终选择。与先前基准测试中仅使用描述回答略微降低准确率不同，STAR-Bench导致准确率大幅下降（时间维度-31.5%，空间维度-35.2%），证明了其专注于语言难以描述的线索。对19个模型的评估显示与人类存在显著差距，并揭示了能力层次结构：闭源模型受限于细粒度感知，而开源模型在感知、知识和推理方面均落后。我们的STAR-Bench为开发具有更强大物理世界理解能力的未来模型提供了关键见解和明确路径。",
+    "paper_abstract_zh": "尽管多模态大语言模型和大音频语言模型发展迅速，但现有的音频基准测试主要测试可以从文本描述中恢复的语义，掩盖了细粒度感知推理的缺陷。我们将音频4D智能形式化为在时间和3D空间中对声音动态进行推理的能力，并引入STAR-Bench来衡量这一能力。STAR-Bench结合了基础感知设置（包括绝对和相对条件下的六种属性）和整体时空推理设置，后者包括连续和离散过程的段重排序以及跨越静态定位、多源关系和动态轨迹的空间任务。我们的数据整理流程采用两种方法确保高质量样本。对于基础任务，我们使用程序合成和物理模拟的音频。对于整体数据，我们遵循四阶段流程，包括人工标注和基于人类表现的最终筛选。与先前基准测试中仅使用描述回答略微降低准确率不同，STAR-Bench导致准确率大幅下降（时间维度-31.5%，空间维度-35.2%），证明了其专注于语言难以描述的线索。对19个模型的评估显示与人类存在显著差距，并揭示了能力层次结构：闭源模型受限于细粒度感知，而开源模型在感知、知识和推理方面均落后。我们的STAR-Bench为开发对物理世界有更稳健理解的未来模型提供了关键见解和明确路径。",
     "subjects": [
       "Sound (cs.SD)",
-      "Audio and Speech Processing (eess.AS)",
-      "Computation and Language (cs.CL)"
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-10-29",
     "paper_authors": "Zihan Liu, Zhikang Niu, Qiuyang Xiao, Zhisheng Zheng, Ruoqi Yuan, Yuhang Zang, Yuhang Cao, Xiaoyi Dong, Jianze Liang, Xie Chen, Leilei Sun, Dahua Lin, Jiaqi Wang",
