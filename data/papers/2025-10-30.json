@@ -1,0 +1,277 @@
+[
+  {
+    "paper_title": "EasyEyes: Online hearing research using speakers calibrated by phones",
+    "paper_title_zh": "EasyEyes: 使用手机校准的扬声器进行在线听力研究",
+    "paper_id": "2510.25048",
+    "paper_abstract": "Hearing research requires a calibrated sound source, traditionally as lab equipment. Online research is quicker and more inclusive, but most participants lack calibration equipment and their sound sources are uncalibrated and diverse. This article explains how the open-source this http URL calibrates loudspeakers online. A library of smartphone-microphone profiles allows EasyEyes to use the participant's phone to calibrate their computer's loudspeaker in three minutes. Participants select their phone model, which is verified by screen size. Calibration employs the Novak et al. nonsynchronous maximum-length-sequence (MLS) algorithm. The computer's loudspeaker is corrected by convolving its input with the inverse of its impulse response. Researchers can contribute to the open-access library by calibrating phones with a measurement microphone. In the library, each profile is linked back to the profile used to produce it, back to the manufacturer profile of a measurement microphone. Correction accuracy is such that playing the flat-spectrum MLS through the corrected loudspeaker produces a nearly flat spectrum, with standard deviation less than 3 dB. A survey shows that a library of 94 phone models from major brands will support most participants in the USA (87%) and UK (80%). This method facilitates efficient and inclusive online hearing research.",
+    "paper_abstract_zh": "听力研究需要校准的声源，传统上使用实验室设备。在线研究更快且更具包容性，但大多数参与者缺乏校准设备，他们的声源未经校准且多样化。本文解释了开源项目EasyEyes如何在线校准扬声器。通过智能手机麦克风库，EasyEyes可以利用参与者的手机在三分钟内校准其计算机扬声器。参与者选择手机型号，并通过屏幕尺寸进行验证。校准采用Novak等人提出的非同步最大长度序列(MLS)算法。通过将计算机扬声器的输入与其脉冲响应的逆卷积来校正扬声器。研究人员可以通过使用测量麦克风校准手机来贡献开放访问库。在库中，每个配置文件都链接回用于生成它的配置文件，再追溯到测量麦克风的制造商配置文件。校正精度足够高，通过校正后的扬声器播放平坦频谱的MLS会产生接近平坦的频谱，标准差小于3分贝。调查显示，包含来自主要品牌的94款手机型号的库将支持美国(87%)和英国(80%)的大多数参与者。这种方法促进了高效和包容的在线听力研究。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Ivan Vican, Hugo De Moraes, Chongjun Liao, Nathnael H. Tsegaye, William O'Gara, Jasper Inamoto, Denis G. Pelli",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Retaining Mixture Representations for Domain Generalized Anomalous Sound Detection",
+    "paper_title_zh": "保留混合表示用于领域泛化的异常声音检测",
+    "paper_id": "2510.25182",
+    "paper_abstract": "Anomalous sound detection (ASD) in the wild requires robustness to distribution shifts such as unseen low-SNR input mixtures of machine and noise types. State-of-the-art systems extract embeddings from an adapted audio encoder and detect anomalies via nearest-neighbor search, but fine tuning on noisy machine sounds often acts like a denoising objective, suppressing noise and reducing generalization under mismatched mixtures or inconsistent labeling. Training-free systems with frozen self-supervised learning (SSL) encoders avoid this issue and show strong first-shot generalization, yet their performance drops when mixture embeddings deviate from clean-source embeddings. We propose to improve SSL backbones with a retain-not-denoise strategy that better preserves information from mixed sound sources. The approach combines a multi-label audio tagging loss with a mixture alignment loss that aligns student mixture embeddings to convex teacher embeddings of clean and noise inputs. Controlled experiments on stationary, non-stationary, and mismatched noise subsets demonstrate improved robustness under distribution shifts, narrowing the gap toward oracle mixture representations.",
+    "paper_abstract_zh": "野外异常声音检测（ASD）需要具备处理分布偏移的鲁棒性，例如未见过的低信噪比机器和噪声类型混合输入。现有系统通过调整音频编码器提取嵌入并使用最近邻搜索检测异常，但在嘈杂机器声音上微调通常起到去噪作用，抑制噪声并降低在混合不匹配或标签不一致情况下的泛化能力。训练-free系统采用冻结的自监督学习（SSL）编码器避免此问题，展现出强大的首帧泛化能力，但当混合嵌入偏离干净源嵌入时性能下降。我们提出通过保留-不降噪策略改进SSL骨干网络，更好地保留混合声音源的信息。该方法结合多标签音频标记损失与混合对齐损失，将学生混合嵌入与干净输入和噪声输入的凸教师嵌入对齐。在静止、非静止和不匹配噪声子集上的受控实验证明了其在分布偏移下的鲁棒性提升，缩小了与理想混合表示之间的差距。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Phurich Saengthong, Tomoya Nishida, Kota Dohi, Natsuo Yamashita, Yohei Kawaguchi",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Separating peripheral and higher-level effects on speech intelligibility using a hearing loss simulator and an objective intelligibility measure",
+    "paper_title_zh": "使用听力损失模拟器和客观可懂度测量方法分离外周和高级效应对语音可懂度的影响",
+    "paper_id": "2510.25235",
+    "paper_abstract": "This paper presents a new method for separating the effects of peripheral hearing loss (HL) and higher-level processes on speech intelligibility (SI). In a previous study, we conducted an SI experiment with 14 older adult (OA) listeners, using speech-in-noise sounds that were either processed with an ideal ratio mask (IRM) enhancement technique or left unprocessed. The current study involved an SI experiment with 15 young, normal-hearing (YNH) listeners. This experiment used simulated HL sounds processed with the WHIS simulator that reflected the hearing level of a specific OA from the previous study. The results showed that the target OA's SI scores were higher than the average YNH scores. This implies that the target OA's higher-level processes may be more effective than those of the average YNH. To understand the characteristics of other OAs, we used the GESI objective intelligibility measure to predict SI. First, we confirmed that GESI could fairly accurately predict the SI scores for both the YNH and OA listeners. Next, we predicted the SI scores of the 14 OA listeners using the parameters estimated in the YNH experiment. The results showed that some OAs had higher SI scores than the average YNH, while one OA had lower scores. These differences in SI scores may reflect variations in the efficiency of higher-level this http URL results imply that WHIS and GESI could facilitate contrastive experiments between YNH and OA listeners, regardless of hearing level. This would allow us to study the effects of higher-level processes in OA listeners individually.",
+    "paper_abstract_zh": "本文提出了一种新方法，用于分离外周听力损失（HL）和高级处理过程对语音可懂度（SI）的影响。在先前的研究中，我们使用理想比率掩蔽（IRM）增强技术和未处理语音信号，对14名老年听障（OA）受试者进行了语音可懂度实验。本研究针对15名年轻正常听力（YNH）受试者开展了语音可懂度实验，采用WHIS模拟器处理的听力损失信号，模拟先前研究中特定OA的听力水平。实验结果表明，目标OA的SI得分高于平均YNH受试者得分，暗示该OA的高级处理能力可能优于平均YNH受试者。为探究其他OA的特性，我们利用GESI客观可懂度测量方法预测SI得分。首先验证了GESI能较准确预测YNH和OA受试者的SI得分；随后基于YNH实验参数预测了14名OA受试者的SI得分。结果显示部分OA的SI得分高于平均YNH，而1名OA得分较低。这些差异可能反映高级处理效率的个体差异。结果表明WHIS和GESI可突破听力水平限制，实现YNH与OA受试者的对比实验，从而针对老年听障人群个体化研究高级处理效应。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Toshio Irino, Ayako Yamamoto, Fuki Miyazaki",
+    "topic": [
+      "Speech Enhancement",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "PitchFlower: A flow-based neural audio codec with pitch controllability",
+    "paper_title_zh": "PitchFlower: 一种具有音高可控性的基于流的神经音频编解码器",
+    "paper_id": "2510.25566",
+    "paper_abstract": "We present PitchFlower, a flow-based neural audio codec with explicit pitch controllability. Our approach enforces disentanglement through a simple perturbation: during training, F0 contours are flattened and randomly shifted, while the true F0 is provided as conditioning. A vector-quantization bottleneck prevents pitch recovery, and a flow-based decoder generates high quality audio. Experiments show that PitchFlower achieves more accurate pitch control than WORLD at much higher audio quality, and outperforms SiFiGAN in controllability while maintaining comparable quality. Beyond pitch, this framework provides a simple and extensible path toward disentangling other speech attributes.",
+    "paper_abstract_zh": "我们提出了PitchFlower，一种具有明确音高可控性的基于流的神经音频编解码器。我们的方法通过一个简单的扰动来强制解耦：在训练过程中，F0轮廓被压平并随机偏移，而真实的F0则作为条件提供。向量量化瓶颈防止了音高恢复，基于流的解码器生成高质量音频。实验表明，PitchFlower比WORLD实现了更准确的音高控制，同时音频质量更高，并且在可控性方面优于SiFiGAN，同时保持相当的质量。除了音高，这个框架还为解耦其他语音属性提供了一条简单且可扩展的路径。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Diego Torres, Axel Roebel, Nicolas Obin",
+    "topic": [
+      "Audio Codec",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Lost in Phonation: Voice Quality Variation as an Evaluation Dimension for Speech Foundation Models",
+    "paper_title_zh": "发声迷失：语音质量变化作为语音基础模型的评估维度",
+    "paper_id": "2510.25577",
+    "paper_abstract": "Recent advances in speech foundation models (SFMs) have enabled the direct processing of spoken language from raw audio, bypassing intermediate textual representations. This capability allows SFMs to be exposed to, and potentially respond to, rich paralinguistic variations embedded in the input speech signal. One under-explored dimension of paralinguistic variation is voice quality, encompassing phonation types such as creaky and breathy voice. These phonation types are known to influence how listeners infer affective state, stance and social meaning in speech. Existing benchmarks for speech understanding largely rely on multiple-choice question answering (MCQA) formats, which are prone to failure and therefore unreliable in capturing the nuanced ways paralinguistic features influence model behaviour. In this paper, we probe SFMs through open-ended generation tasks and speech emotion recognition, evaluating whether model behaviours are consistent across different phonation inputs. We introduce a new parallel dataset featuring synthesized modifications to voice quality, designed to evaluate SFM responses to creaky and breathy voice. Our work provides the first examination of SFM sensitivity to these particular non-lexical aspects of speech perception.",
+    "paper_abstract_zh": "语音基础模型(SFMs)的最新进展使得能够直接处理原始音频中的口语，绕过中间的文本表示。这种能力使SFMs能够接触到输入语音信号中嵌入的丰富的副语言变化，并可能对这些变化做出响应。副语言变化中一个未被充分探索的维度是语音质量，包括诸如沙哑和气声等发声类型。这些发声类型已知会影响听者如何推断语音中的情感状态、立场和社会意义。现有的语音理解基准测试主要依赖于多项选择题问答(MCQA)格式，这些格式容易失败，因此在捕捉副语言特征如何微妙影响模型行为方面并不可靠。在本文中，我们通过开放式生成任务和语音情感识别来探测SFMs，评估模型行为在不同发声输入下是否一致。我们引入了一个新的并行数据集，其中包含对语音质量的合成修改，旨在评估SFMs对沙哑和气声的响应。我们的工作首次对SFMs对这些特定语音感知的非词汇方面的敏感性进行了检验。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Harm Lameris, Shree Harsha Bokkahalli Satish, Joakim Gustafson, Éva Székely",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Evaluating Emotion Recognition in Spoken Language Models on Emotionally Incongruent Speech",
+    "paper_title_zh": "基于情感不一致语音的语音语言模型情感识别评估",
+    "paper_id": "2510.25054",
+    "paper_abstract": "Advancements in spoken language processing have driven the development of spoken language models (SLMs), designed to achieve universal audio understanding by jointly learning text and audio representations for a wide range of tasks. Although promising results have been achieved, there is growing discussion regarding these models' generalization capabilities and the extent to which they truly integrate audio and text modalities in their internal representations. In this work, we evaluate four SLMs on the task of speech emotion recognition using a dataset of emotionally incongruent speech samples, a condition under which the semantic content of the spoken utterance conveys one emotion while speech expressiveness conveys another. Our results indicate that SLMs rely predominantly on textual semantics rather than speech emotion to perform the task, indicating that text-related representations largely dominate over acoustic representations. We release both the code and the Emotionally Incongruent Synthetic Speech dataset (EMIS) to the community.",
+    "paper_abstract_zh": "语音处理技术的进步推动了语音语言模型（SLMs）的发展，这些模型旨在通过联合学习文本和音频表示来实现通用音频理解，以应对多种任务。尽管取得了令人鼓舞的成果，但关于这些模型的泛化能力以及其内部表示是否真正整合了音频和文本模态的讨论日益增多。本研究使用情感不一致语音数据集，评估了四种SLMs在语音情感识别任务上的表现。该数据集的特点是口语内容传达一种情感，而语音表现力传达另一种情感。实验结果表明，SLMs主要依赖文本语义而非语音情感完成任务，说明文本相关表征在模型决策中占据主导地位。研究团队已向社区公开代码及情感不一致合成语音数据集（EMIS）。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Pedro Corrêa, João Lima, Victor Moreno, Paula Dornhofer Paro Costa",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Joint Analysis of Acoustic Scenes and Sound Events Based on Semi-Supervised Training of Sound Events With Partial Labels",
+    "paper_title_zh": "基于声音事件部分标签的半监督训练进行声学场景和声音事件的联合分析",
+    "paper_id": "2510.25075",
+    "paper_abstract": "Annotating time boundaries of sound events is labor-intensive, limiting the scalability of strongly supervised learning in audio detection. To reduce annotation costs, weakly-supervised learning with only clip-level labels has been widely adopted. As an alternative, partial label learning offers a cost-effective approach, where a set of possible labels is provided instead of exact weak annotations. However, partial label learning for audio analysis remains largely unexplored. Motivated by the observation that acoustic scenes provide contextual information for constructing a set of possible sound events, we utilize acoustic scene information to construct partial labels of sound events. On the basis of this idea, in this paper, we propose a multitask learning framework that jointly performs acoustic scene classification and sound event detection with partial labels of sound events. While reducing annotation costs, weakly-supervised and partial label learning often suffer from decreased detection performance due to lacking the precise event set and their temporal annotations. To better balance between annotation cost and detection performance, we also explore a semi-supervised framework that leverages both strong and partial labels. Moreover, to refine partial labels and achieve better model training, we propose a label refinement method based on self-distillation for the proposed approach with partial labels.",
+    "paper_abstract_zh": "标注声音事件的时间边界是劳动密集型的，这限制了强监督学习在音频检测中的可扩展性。为了减少标注成本，仅使用片段级标签的弱监督学习已被广泛采用。作为一种替代方案，部分标签学习提供了一种经济高效的方法，即提供一组可能的标签而非精确的弱标注。然而，音频分析中的部分标签学习在很大程度上仍未被探索。受声学场景为构建可能的声音事件集提供上下文信息的启发，我们利用声学场景信息来构建声音事件的部分标签。基于这一想法，本文提出了一个多任务学习框架，联合执行声学场景分类和带有部分标签的声音事件检测。在减少标注成本的同时，弱监督和部分标签学习通常由于缺乏精确的事件集及其时间标注而导致检测性能下降。为了更好地平衡标注成本和检测性能，我们还探讨了利用强标签和部分标签的半监督框架。此外，为了优化部分标签并实现更好的模型训练，我们提出了一种基于自蒸馏的标签细化方法，用于处理带有部分标签的 proposed 方法。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Keisuke Imoto",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "SFMS-ALR: Script-First Multilingual Speech Synthesis with Adaptive Locale Resolution",
+    "paper_title_zh": "SFMS-ALR：基于脚本优先的多语言语音合成与自适应区域解析",
+    "paper_id": "2510.25178",
+    "paper_abstract": "Intra-sentence multilingual speech synthesis (code-switching TTS) remains a major challenge due to abrupt language shifts, varied scripts, and mismatched prosody between languages. Conventional TTS systems are typically monolingual and fail to produce natural, intelligible speech in mixed-language contexts. We introduce Script-First Multilingual Synthesis with Adaptive Locale Resolution (SFMS-ALR), an engine-agnostic framework for fluent, real-time code-switched speech generation. SFMS-ALR segments input text by Unicode script, applies adaptive language identification to determine each segment's language and locale, and normalizes prosody using sentiment-aware adjustments to preserve expressive continuity across languages. The algorithm generates a unified SSML representation with appropriate \"lang\" or \"voice\" spans and synthesizes the utterance in a single TTS request. Unlike end-to-end multilingual models, SFMS-ALR requires no retraining and integrates seamlessly with existing voices from Google, Apple, Amazon, and other providers. Comparative analysis with data-driven pipelines such as Unicom and Mask LID demonstrates SFMS-ALR's flexibility, interpretability, and immediate deployability. The framework establishes a modular baseline for high-quality, engine-independent multilingual TTS and outlines evaluation strategies for intelligibility, naturalness, and user preference.",
+    "paper_abstract_zh": "句子内多语言语音合成（代码切换TTS）由于语言突变、脚本差异以及语言间韵律不匹配等问题仍面临重大挑战。传统TTS系统通常为单语言系统，在混合语言场景中难以生成自然流畅的语音。本文提出脚本优先多语言语音合成自适应区域解析（SFMS-ALR）框架，实现流畅实时的代码切换语音生成。该框架通过Unicode脚本分割输入文本，采用自适应语言识别确定各段落的语言和区域，并通过情感感知的韵律归一化调整以保持跨语言表达连贯性。算法生成包含适当'lang'或'voice'跨度的统一SSML表示，并通过单次TTS请求合成语音。与端到端多语言模型不同，SFMS-ALR无需重新训练，可无缝集成Google、Apple、Amazon等语音服务提供商的现有语音资源。与Unicom和Mask LID等数据驱动管道的对比分析表明，SFMS-ALR具有灵活性、可解释性和即时部署性。该框架为高质量、引擎无关的多语言TTS建立了模块化基线，并提出了可懂度、自然度和用户偏好评估策略。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Dharma Teja Donepudi",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Controlling Contrastive Self-Supervised Learning with Knowledge-Driven Multiple Hypothesis: Application to Beat Tracking",
+    "paper_title_zh": "基于知识驱动多假设的对比自监督学习控制：应用于节拍跟踪",
+    "paper_id": "2510.25560",
+    "paper_abstract": "Ambiguities in data and problem constraints can lead to diverse, equally plausible outcomes for a machine learning task. In beat and downbeat tracking, for instance, different listeners may adopt various rhythmic interpretations, none of which would necessarily be incorrect. To address this, we propose a contrastive self-supervised pre-training approach that leverages multiple hypotheses about possible positive samples in the data. Our model is trained to learn representations compatible with different such hypotheses, which are selected with a knowledge-based scoring function to retain the most plausible ones. When fine-tuned on labeled data, our model outperforms existing methods on standard benchmarks, showcasing the advantages of integrating domain knowledge with multi-hypothesis selection in music representation learning in particular.",
+    "paper_abstract_zh": "数据和问题约束中的模糊性可能导致机器学习任务产生多种合理的结果。例如在节拍和下拍跟踪中，不同听众可能采用不同的节奏解释，这些解释均可能成立。为解决该问题，我们提出一种利用数据中可能正样本的多假设进行对比自监督预训练的方法。该模型通过训练学习与不同假设兼容的表示，并基于知识评分函数选择保留最合理的假设。在标记数据上微调后，该模型在标准基准测试中优于现有方法，展示了在音乐表示学习中整合领域知识与多假设选择的优势。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Antonin Gagnere, Slim Essid, Geoffroy Peeters",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "A Parameter-Efficient Multi-Scale Convolutional Adapter for Synthetic Speech Detection",
+    "paper_title_zh": "一种参数高效的多尺度卷积适配器用于合成语音检测",
+    "paper_id": "2510.24852",
+    "paper_abstract": "Recent synthetic speech detection models typically adapt a pre-trained SSL model via finetuning, which is computationally demanding. Parameter-Efficient Fine-Tuning (PEFT) offers an alternative. However, existing methods lack the specific inductive biases required to model the multi-scale temporal artifacts characteristic of spoofed audio. This paper introduces the Multi-Scale Convolutional Adapter (MultiConvAdapter), a parameter-efficient architecture designed to address this limitation. MultiConvAdapter integrates parallel convolutional modules within the SSL encoder, facilitating the simultaneous learning of discriminative features across multiple temporal resolutions, capturing both short-term artifacts and long-term distortions. With only $3.17$M trainable parameters ($1\\%$ of the SSL backbone), MultiConvAdapter substantially reduces the computational burden of adaptation. Evaluations on five public datasets, demonstrate that MultiConvAdapter achieves superior performance compared to full fine-tuning and established PEFT methods.",
+    "paper_abstract_zh": "最近的合成语音检测模型通常通过微调来适应预训练的自监督学习(SSL)模型，但这计算量很大。参数高效微调(PEFT)提供了一种替代方案。然而，现有方法缺乏建模欺骗性音频特征的多尺度时间伪影所需的特定归纳偏置。本文介绍了多尺度卷积适配器(MultiConvAdapter)，这是一种参数高效的架构，旨在解决这一限制。MultiConvAdapter在SSL编码器中集成了并行卷积模块，促进在多个时间分辨率上同时学习判别性特征，同时捕捉短期伪影和长期失真。仅需3.17M可训练参数(占SSL主干网络的1%)，MultiConvAdapter显著降低了适应的计算负担。在五个公共数据集上的评估表明，与完全微调和既定的PEFT方法相比，MultiConvAdapter实现了优越的性能。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Yassine El Kheir, Fabian Ritter-Guttierez, Arnab Das, Tim Polzehl, Sebastian Möller",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Studies for : A Human-AI Co-Creative Sound Artwork Using a Real-time Multi-channel Sound Generation Model",
+    "paper_title_zh": "Studies for：一种基于实时多通道声音生成模型的人机协同创作声音艺术作品研究",
+    "paper_id": "2510.25228",
+    "paper_abstract": "This paper explores the integration of AI technologies into the artistic workflow through the creation of Studies for, a generative sound installation developed in collaboration with sound artist Evala (this https URL). The installation employs SpecMaskGIT, a lightweight yet high-quality sound generation AI model, to generate and playback eight-channel sound in real-time, creating an immersive auditory experience over the course of a three-month exhibition. The work is grounded in the concept of a \"new form of archive,\" which aims to preserve the artistic style of an artist while expanding beyond artists' past artworks by continued generation of new sound elements. This speculative approach to archival preservation is facilitated by training the AI model on a dataset consisting of over 200 hours of Evala's past sound artworks.\nBy addressing key requirements in the co-creation of art using AI, this study highlights the value of the following aspects: (1) the necessity of integrating artist feedback, (2) datasets derived from an artist's past works, and (3) ensuring the inclusion of unexpected, novel outputs. In Studies for, the model was designed to reflect the artist's artistic identity while generating new, previously unheard sounds, making it a fitting realization of the concept of \"a new form of archive.\" We propose a Human-AI co-creation framework for effectively incorporating sound generation AI models into the sound art creation process and suggest new possibilities for creating and archiving sound art that extend an artist's work beyond their physical existence. Demo page: this https URL",
+    "paper_abstract_zh": "本文通过与声音艺术家Evala合作创作生成性声音装置作品《Studies for》（演示页面：this https URL），探索人工智能技术在艺术创作流程中的整合应用。该装置采用SpecMaskGIT模型——一种轻量级但高质量的声音生成AI模型——实现实时八通道声音生成与播放，在为期三个月的展览中创造出沉浸式听觉体验。作品基于'新档案形式'概念展开，旨在保存艺术家的艺术风格的同时，通过持续生成新的声音元素超越艺术家过往作品的范畴。这种档案保存的 speculative 方法通过使用包含Evala超过200小时过往声音艺术作品的数据集训练AI模型得以实现。本研究通过解决AI协同创作艺术中的关键需求，突出了以下价值：（1）艺术家反馈整合的必要性；（2）基于艺术家过往作品的数据集构建；（3）确保包含意外性、新颖性的输出结果。在《Studies for》中，模型既反映了艺术家的艺术身份，又能生成前所未有的声音，完美诠释了'新档案形式'概念。我们提出了一个有效将声音生成AI模型融入声音艺术创作过程的人机协同创作框架，并建议了延伸艺术家物理存在之外的声音艺术创作与档案保存的新可能性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Chihiro Nagashima, Akira Takahashi, Zhi Zhong, Shusuke Takahashi, Yuki Mitsufuji",
+    "topic": [
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Binaspect -- A Python Library for Binaural Audio Analysis, Visualization & Feature Generation",
+    "paper_title_zh": "Binaspect——用于双耳音频分析、可视化与特征生成的Python库",
+    "paper_id": "2510.25714",
+    "paper_abstract": "We present Binaspect, an open-source Python library for binaural audio analysis, visualization, and feature generation. Binaspect generates interpretable \"azimuth maps\" by calculating modified interaural time and level difference spectrograms, and clustering those time-frequency (TF) bins into stable time-azimuth histogram representations. This allows multiple active sources to appear as distinct azimuthal clusters, while degradations manifest as broadened, diffused, or shifted distributions. Crucially, Binaspect operates blindly on audio, requiring no prior knowledge of head models. These visualizations enable researchers and engineers to observe how binaural cues are degraded by codec and renderer design choices, among other downstream processes. We demonstrate the tool on bitrate ladders, ambisonic rendering, and VBAP source positioning, where degradations are clearly revealed. In addition to their diagnostic value, the proposed representations can be exported as structured features suitable for training machine learning models in quality prediction, spatial audio classification, and other binaural tasks. Binaspect is released under an open-source license with full reproducibility scripts at this https URL.",
+    "paper_abstract_zh": "我们提出Binaspect，一个开源的Python库，用于双耳音频分析、可视化和特征生成。Binaspect通过计算改进的双耳时间与强度差谱图，并将这些时频(bin)聚类为稳定的时间-方位直方图表示，从而生成可解释的'方位图'。这使得多个活动声源呈现为不同的方位聚类，而信号退化则表现为扩展、弥散或偏移的分布。关键的是，Binaspect能够盲处理音频，无需任何头部模型先验知识。这些可视化使研究人员和工程师能够观察编解码器和渲染器设计选择等下游过程如何导致双耳线索退化。我们在比特率阶梯、全向声场渲染和VBAP声源定位中展示了该工具的效果，清晰揭示了信号退化现象。除了诊断价值外，所提出的表示方法可导出为结构化特征，适用于训练机器学习模型进行质量预测、空间音频分类及其他双耳音频任务。Binaspect以开源许可证发布，并提供完整的可复现脚本。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Dan Barry, Davoud Shariat Panah, Alessandro Ragano, Jan Skoglund, Andrew Hines",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Efficient Vocal Source Separation Through Windowed Sink Attention",
+    "paper_title_zh": "基于窗口化Sink注意力的高效人声音源分离",
+    "paper_id": "2510.25745",
+    "paper_abstract": "State-of-the-art vocal separation models like Mel-Band-Roformer rely on full temporal self-attention mechanisms, where each temporal frame interacts with every other frames. This incurs heavy computational costs that scales quadratically with input audio length, motivating chunking and windowing approaches. Through analysis of a pre-trained vocal separation model, we discovered that temporal attention patterns are highly localized. Building on this insight, we replaced full attention with windowed sink attention (WSA) with small temporal attention window and attention sinks. We show empirically that fine-tuning from the original checkpoint recovers 92% of the original SDR performance while reducing FLOPs by 44.5x. We release our code and checkpoints under MIT license at this https URL.",
+    "paper_abstract_zh": "当前先进的人声音源分离模型如Mel-Band-Roformer依赖于全时域自注意力机制，其中每个时间帧与其他所有帧进行交互。这导致计算成本随输入音频长度呈平方级增长，促使采用分块和窗口化方法。通过对预训练人声音源分离模型的分析，我们发现时域注意力模式具有高度局部性。基于这一洞察，我们使用小窗口时域注意力和注意力汇聚点（窗口化Sink注意力）替代了全注意力机制。实验证明，从原始检查点进行微调可恢复92%的原始信噪比退化性能，同时降低44.5倍的浮点运算量。我们已在MIT许可证下发布代码和检查点。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Christodoulos Benetatos, Yongyi Zang, Randal Leistikow",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "State Space and Self-Attention Collaborative Network with Feature Aggregation for DOA Estimation",
+    "paper_title_zh": "基于特征聚合的状态空间与自注意力协同网络用于DOA估计",
+    "paper_id": "2510.25193",
+    "paper_abstract": "Accurate direction-of-arrival (DOA) estimation for sound sources is challenging due to the continuous changes in acoustic characteristics across time and frequency. In such scenarios, accurate localization relies on the ability to aggregate relevant features and model temporal dependencies effectively. In time series modeling, achieving a balance between model performance and computational efficiency remains a significant challenge. To address this, we propose FA-Stateformer, a state space and self-attention collaborative network with feature aggregation. The proposed network first employs a feature aggregation module to enhance informative features across both temporal and spectral dimensions. This is followed by a lightweight Conformer architecture inspired by the squeeze-and-excitation mechanism, where the feedforward layers are compressed to reduce redundancy and parameter overhead. Additionally, a temporal shift mechanism is incorporated to expand the receptive field of convolutional layers while maintaining a compact kernel size. To further enhance sequence modeling capabilities, a bidirectional Mamba module is introduced, enabling efficient state-space-based representation of temporal dependencies in both forward and backward directions. The remaining self-attention layers are combined with the Mamba blocks, forming a collaborative modeling framework that achieves a balance between representation capacity and computational efficiency. Extensive experiments demonstrate that FA-Stateformer achieves superior performance and efficiency compared to conventional architectures.",
+    "paper_abstract_zh": "由于声学特征随时间和频率持续变化，声源方向估计（DOA）具有挑战性。在此场景下，精确定位依赖于有效聚合相关特征并建模时间依赖性。在时间序列建模中，实现模型性能与计算效率之间的平衡仍是一个重大挑战。为此，我们提出FA-Stateformer，一种基于特征聚合的状态空间与自注意力协同网络。该网络首先采用特征聚合模块增强时域和频域的信息特征，随后使用受挤压激励机制启发的轻量级Conformer架构，通过压缩前馈层以减少冗余和参数开销。此外，引入时序移位机制在保持紧凑卷积核尺寸的同时扩展卷积层的感受野。为进一步增强序列建模能力，设计双向Mamba模块，实现前向和后向方向上的高效状态空间时间依赖表征。剩余的自注意力层与Mamba模块结合，形成兼顾表征能力和计算效率的协同建模框架。大量实验表明，FA-Stateformer在性能和效率方面均优于传统架构。",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-10-30",
+    "paper_authors": "Qi You, Qinghua Huang, Yi-Cheng Lin",
+    "topic": [
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
