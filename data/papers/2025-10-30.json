@@ -221,17 +221,22 @@
   },
   {
     "paper_title": "Binaspect -- A Python Library for Binaural Audio Analysis, Visualization & Feature Generation",
-    "paper_title_zh": "",
+    "paper_title_zh": "Binaspect——用于双耳音频分析、可视化与特征生成的Python库",
     "paper_id": "2510.25714",
     "paper_abstract": "We present Binaspect, an open-source Python library for binaural audio analysis, visualization, and feature generation. Binaspect generates interpretable \"azimuth maps\" by calculating modified interaural time and level difference spectrograms, and clustering those time-frequency (TF) bins into stable time-azimuth histogram representations. This allows multiple active sources to appear as distinct azimuthal clusters, while degradations manifest as broadened, diffused, or shifted distributions. Crucially, Binaspect operates blindly on audio, requiring no prior knowledge of head models. These visualizations enable researchers and engineers to observe how binaural cues are degraded by codec and renderer design choices, among other downstream processes. We demonstrate the tool on bitrate ladders, ambisonic rendering, and VBAP source positioning, where degradations are clearly revealed. In addition to their diagnostic value, the proposed representations can be exported as structured features suitable for training machine learning models in quality prediction, spatial audio classification, and other binaural tasks. Binaspect is released under an open-source license with full reproducibility scripts at this https URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们提出Binaspect，一个开源的Python库，用于双耳音频分析、可视化和特征生成。Binaspect通过计算改进的双耳时间和级别差异谱图，并将这些时频(bin)聚类为稳定的时间-方位直方图表示，生成可解释的“方位图”。这使得多个活动声源呈现为不同的方位聚类，而失真则表现为扩展、弥散或偏移的分布。Binaspect无需任何头部模型先验知识即可盲处理音频。这些可视化使研究人员和工程师能够观察编解码器和渲染器设计选择等下游过程如何导致双耳线索失真。我们在比特率阶梯、全向声渲染和VBAP声源定位中展示了该工具，清晰揭示了失真现象。除了诊断价值外，所提出的表示方法可导出为结构化特征，适用于训练机器学习模型进行质量预测、空间音频分类及其他双耳任务。Binaspect以开源许可证发布，并附有完整可复现脚本。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-10-30",
     "paper_authors": "Dan Barry, Davoud Shariat Panah, Alessandro Ragano, Jan Skoglund, Andrew Hines",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "Efficient Vocal Source Separation Through Windowed Sink Attention",
