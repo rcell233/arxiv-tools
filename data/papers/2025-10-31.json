@@ -81,10 +81,10 @@
   },
   {
     "paper_title": "ALMGuard: Safety Shortcuts and Where to Find Them as Guardrails for Audio-Language Models",
-    "paper_title_zh": "",
+    "paper_title_zh": "ALMGuard：音频语言模型的安全捷径及防护栏",
     "paper_id": "2510.26096",
     "paper_abstract": "Recent advances in Audio-Language Models (ALMs) have significantly improved multimodal understanding capabilities. However, the introduction of the audio modality also brings new and unique vulnerability vectors. Previous studies have proposed jailbreak attacks that specifically target ALMs, revealing that defenses directly transferred from traditional audio adversarial attacks or text-based Large Language Model (LLM) jailbreaks are largely ineffective against these ALM-specific threats. To address this issue, we propose ALMGuard, the first defense framework tailored to ALMs. Based on the assumption that safety-aligned shortcuts naturally exist in ALMs, we design a method to identify universal Shortcut Activation Perturbations (SAPs) that serve as triggers that activate the safety shortcuts to safeguard ALMs at inference time. To better sift out effective triggers while preserving the model's utility on benign tasks, we further propose Mel-Gradient Sparse Mask (M-GSM), which restricts perturbations to Mel-frequency bins that are sensitive to jailbreaks but insensitive to speech understanding. Both theoretical analyses and empirical results demonstrate the robustness of our method against both seen and unseen attacks. Overall, \\MethodName reduces the average success rate of advanced ALM-specific jailbreak attacks to 4.6% across four models, while maintaining comparable utility on benign benchmarks, establishing it as the new state of the art. Our code and data are available at this https URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "最近音频语言模型（ALMs）的显著进步极大地提升了多模态理解能力。然而，音频模态的引入也带来了新的独特漏洞向量。先前的研究提出了专门针对ALMs的越狱攻击，表明直接从传统音频对抗攻击或基于文本的大型语言模型（LLM）越狱转移而来的防御措施对这些ALM特定威胁大多无效。为解决这一问题，我们提出了ALMGuard，这是首个专门针对ALMs设计的防御框架。基于ALMs中自然存在安全对齐捷径的假设，我们设计了一种方法来识别通用捷径激活扰动（SAPs），这些扰动作为触发器，在推理时激活安全捷径以保护ALMs。为了在有效筛选触发器的同时保持模型在良性任务上的效用，我们进一步提出了梅尔梯度稀疏掩码（M-GSM），该掩码将扰动限制在对越狱敏感但对语音理解不敏感的梅尔频率频段上。理论分析和实证结果均证明了我们的方法对已知和未知攻击的鲁棒性。总体而言，MethodName将四种模型上高级ALM特定越狱攻击的平均成功率降低到4.6%，同时在良性基准测试上保持相当的效用，确立了其作为最新技术的地位。我们的代码和数据可在提供的网址获取。",
     "subjects": [
       "Sound (cs.SD)",
       "Cryptography and Security (cs.CR)",
@@ -92,8 +92,13 @@
     ],
     "update_time": "2025-10-31",
     "paper_authors": "Weifei Jin, Yuxin Cao, Junjie Su, Minhui Xue, Jie Hao, Ke Xu, Jin Song Dong, Derui Wang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens",
