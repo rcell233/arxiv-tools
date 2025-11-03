@@ -1,0 +1,232 @@
+[
+  {
+    "paper_title": "See the Speaker: Crafting High-Resolution Talking Faces from Speech with Prior Guidance and Region Refinement",
+    "paper_title_zh": "看见说话者：通过先验指导和区域细化从语音生成高分辨率说话人脸",
+    "paper_id": "2510.26819",
+    "paper_abstract": "Unlike existing methods that rely on source images as appearance references and use source speech to generate motion, this work proposes a novel approach that directly extracts information from the speech, addressing key challenges in speech-to-talking face. Specifically, we first employ a speech-to-face portrait generation stage, utilizing a speech-conditioned diffusion model combined with statistical facial prior and a sample-adaptive weighting module to achieve high-quality portrait generation. In the subsequent speech-driven talking face generation stage, we embed expressive dynamics such as lip movement, facial expressions, and eye movements into the latent space of the diffusion model and further optimize lip synchronization using a region-enhancement module. To generate high-resolution outputs, we integrate a pre-trained Transformer-based discrete codebook with an image rendering network, enhancing video frame details in an end-to-end manner. Experimental results demonstrate that our method outperforms existing approaches on the HDTF, VoxCeleb, and AVSpeech datasets. Notably, this is the first method capable of generating high-resolution, high-quality talking face videos exclusively from a single speech input.",
+    "paper_abstract_zh": "与依赖源图像作为外观参考并使用源语音生成运动的方法不同，本文提出了一种新颖的方法，直接从语音中提取信息，解决了语音到说话人脸的关键挑战。具体而言，我们首先采用语音到人脸肖像生成阶段，利用语音条件扩散模型结合统计面部先验和样本自适应加权模块实现高质量肖像生成。在后续的语音驱动说话人脸生成阶段，我们将唇部运动、面部表情和眼部运动等表达性动态嵌入到扩散模型的潜在空间中，并使用区域增强模块进一步优化唇部同步。为了生成高分辨率输出，我们将预训练的基于Transformer的离散码本与图像渲染网络集成，以端到端方式增强视频帧细节。实验结果表明，我们的方法在HDTF、VoxCeleb和AVSpeech数据集上优于现有方法。值得注意的是，这是第一种仅从单一语音输入就能生成高分辨率、高质量说话人脸视频的方法。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Jinting Wang, Jun Wang, Hei Victor Cheng, Li Liu",
+    "topic": [
+      "Video Generation",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Multi-Representation Attention Framework for Underwater Bioacoustic Denoising and Recognition",
+    "paper_title_zh": "用于水下生物声学去噪和识别的多表示注意力框架",
+    "paper_id": "2510.26838",
+    "paper_abstract": "Automated monitoring of marine mammals in the St. Lawrence Estuary faces extreme challenges: calls span low-frequency moans to ultrasonic clicks, often overlap, and are embedded in variable anthropogenic and environmental noise. We introduce a multi-step, attention-guided framework that first segments spectrograms to generate soft masks of biologically relevant energy and then fuses these masks with the raw inputs for multi-band, denoised classification. Image and mask embeddings are integrated via mid-level fusion, enabling the model to focus on salient spectrogram regions while preserving global context. Using real-world recordings from the Saguenay St. Lawrence Marine Park Research Station in Canada, we demonstrate that segmentation-driven attention and mid-level fusion improve signal discrimination, reduce false positive detections, and produce reliable representations for operational marine mammal monitoring across diverse environmental conditions and signal-to-noise ratios. Beyond in-distribution evaluation, we further assess the generalization of Mask-Guided Classification (MGC) under distributional shifts by testing on spectrograms generated with alternative acoustic transformations. While high-capacity baseline models lose accuracy in this Out-of-distribution (OOD) setting, MGC maintains stable performance, with even simple fusion mechanisms (gated, concat) achieving comparable results across distributions. This robustness highlights the capacity of MGC to learn transferable representations rather than overfitting to a specific transformation, thereby reinforcing its suitability for large-scale, real-world biodiversity monitoring. We show that in all experimental settings, the MGC framework consistently outperforms baseline architectures, yielding substantial gains in accuracy on both in-distribution and OOD data.",
+    "paper_abstract_zh": "在圣劳伦斯河口对海洋哺乳动物进行自动监测面临极端挑战：叫声从低频呻吟到超声波咔哒声，经常重叠，并且嵌入在可变的人为和环境中。我们引入了一个多步骤、注意力引导的框架，首先对频谱图进行分割，生成与生物学相关的能量的软掩码，然后将这些掩码与原始输入融合，进行多带去噪分类。图像和掩码嵌入通过中层融合集成，使模型能够专注于显著的频谱图区域，同时保持全局上下文。使用来自加拿大萨格奈-圣劳伦斯海洋公园研究站的现实世界录音，我们证明分割驱动的注意力和中层融合改善了信号辨别能力，减少了误检，并在不同的环境条件和信噪比下为操作性的海洋哺乳动物监测提供了可靠的表示。除了在分布内评估外，我们还通过测试使用替代声学变换生成的频谱图，评估了掩码引导分类（MGC）在分布偏移下的泛化能力。虽然高容量基线模型在这种分布外（OOD）设置中会失去准确性，但MGC保持了稳定的性能，即使简单的融合机制（门控、连接）也能在不同分布上实现 comparable 的结果。这种鲁棒性突显了MGC学习可转移表示而非过度拟合特定变换的能力，从而强化了其适用于大规模、现实世界生物多样性监测的适用性。我们表明，在所有实验设置中，MGC框架始终优于基线架构，在分布内和分布外数据上都取得了显著的准确性提升。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)",
+      "Applications (stat.AP)",
+      "Sound (cs.SD)",
+      "Machine Learning (stat.ML)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Amine Razig, Youssef Soulaymani, Loubna Benabbou, Pierre Cauchy",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Beamforming in the Reproducing Kernel Domain Based on Spatial Differentiation",
+    "paper_title_zh": "基于空间微分在再生核域中的波束形成",
+    "paper_id": "2510.27143",
+    "paper_abstract": "This paper proposes a novel beamforming framework in the reproducing kernel domain, derived from a unified interpretation of directional response as spatial differentiation of the sound field. By representing directional response using polynomial differential operators, the proposed method enables the formulation of arbitrary beam patterns including non-axisymmetric. The derivation of the reproducing kernel associated with the interior fields is mathematically supported by Hobson's theorem, which allows concise analytical expressions. Furthermore, the proposed framework generalizes conventional spherical harmonic domain beamformers by reinterpreting them as spatial differential operators, thereby clarifying their theoretical structure and extensibility. Three numerical simulations conducted in two-dimensional space confirm the validity of the method.",
+    "paper_abstract_zh": "本文提出了一种在再生核域中的新型波束形成框架，该框架源于对方向响应作为声场空间微分的统一解释。通过使用多项式微分算子表示方向响应，所提出的方法能够形成任意波束模式，包括非轴对称的。与内部场相关的再生核的推导得到了Hobson定理的数学支持，这使得简洁的解析表达式成为可能。此外，所提出的框架通过重新解释传统球谐波域波束形成器为空间微分算子，从而推广了它们，并阐明了它们的理论结构和可扩展性。在二维空间中进行的三项数值模拟验证了该方法的有效性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Takahiro Iwami, Naohisa Inoue, Akira Omoto",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Reference Microphone Selection for Guided Source Separation based on the Normalized L-p Norm",
+    "paper_title_zh": "基于归一化L-p范数的引导源分离参考麦克风选择",
+    "paper_id": "2510.27198",
+    "paper_abstract": "Guided Source Separation (GSS) is a popular front-end for distant automatic speech recognition (ASR) systems using spatially distributed microphones. When considering spatially distributed microphones, the choice of reference microphone may have a large influence on the quality of the output signal and the downstream ASR performance. In GSS-based speech enhancement, reference microphone selection is typically performed using the signal-to-noise ratio (SNR), which is optimal for noise reduction but may neglect differences in early-to-late-reverberant ratio (ELR) across microphones. In this paper, we propose two reference microphone selection methods for GSS-based speech enhancement that are based on the normalized $\\ell_p$-norm, either using only the normalized $\\ell_p$-norm or combining the normalized $\\ell_p$-norm and the SNR to account for both differences in SNR and ELR across microphones. Experimental evaluation using a CHiME-8 distant ASR system shows that the proposed $\\ell_p$-norm-based methods outperform the baseline method, reducing the macro-average word error rate.",
+    "paper_abstract_zh": "引导源分离(GSS)是使用空间分布麦克风进行远场自动语音识别(ASR)系统的流行前端。在考虑空间分布麦克风时，参考麦克风的选择可能会对输出信号质量和下游ASR性能产生较大影响。在基于GSS的语音增强中，参考麦克风的选择通常使用信噪比(SNR)进行，这种方法在降噪方面是最优的，但可能忽略了不同麦克风之间早期混响与晚期混响比(ELR)的差异。在本文中，我们提出了两种基于归一化Lp范数的参考麦克风选择方法，用于基于GSS的语音增强，这些方法仅使用归一化Lp范数，或将归一化Lp范数与SNR结合，以考虑不同麦克风之间SNR和ELR的差异。使用CHiME-8远场ASR系统的实验评估表明，所提出的基于Lp范数的方法优于基线方法，降低了宏平均词错误率。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Anselm Lohmann, Tomohiro Nakatani, Rintaro Ikeshita, Marc Delcroix, Shoko Araki, Simon Doclo",
+    "topic": [
+      "Speech Enhancement",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Oral Tradition-Encoded NanyinHGNN: Integrating Nanyin Music Preservation and Generation through a Pipa-Centric Dataset",
+    "paper_title_zh": "传统编码的南音HGNN：通过琵琶中心数据集整合南音音乐保存与生成",
+    "paper_id": "2510.26817",
+    "paper_abstract": "We propose NanyinHGNN, a heterogeneous graph network model for generating Nanyin instrumental music. As a UNESCO-recognized intangible cultural heritage, Nanyin follows a heterophonic tradition centered around the pipa, where core melodies are notated in traditional notation while ornamentations are passed down orally, presenting challenges for both preservation and contemporary innovation. To address this, we construct a Pipa-Centric MIDI dataset, develop NanyinTok as a specialized tokenization method, and convert symbolic sequences into graph structures using a Graph Converter to ensure that key musical features are preserved. Our key innovation reformulates ornamentation generation as the creation of ornamentation nodes within a heterogeneous graph. First, a graph neural network generates melodic outlines optimized for ornamentations. Then, a rule-guided system informed by Nanyin performance practices refines these outlines into complete ornamentations without requiring explicit ornamentation annotations during training. Experimental results demonstrate that our model successfully generates authentic heterophonic ensembles featuring four traditional instruments. These findings validate that integrating domain-specific knowledge into model architecture can effectively mitigate data scarcity challenges in computational ethnomusicology.",
+    "paper_abstract_zh": "我们提出了NanyinHGNN，一种用于生成南器乐的异构图网络模型。作为联合国教科文组织认可的无形文化遗产，南音遵循以琵琶为中心的支声传统，其中核心旋律以传统记谱法记谱，而装饰音则通过口头传承，这给保存和当代创新带来了挑战。为此，我们构建了一个以琵琶为中心的MIDI数据集，开发了NanyinTok作为专门的标记化方法，并使用图转换器将符号序列转换为图结构，以确保保留关键音乐特征。我们的关键创新是将装饰音生成重新定义为异构图中装饰音节点的创建。首先，图神经网络生成针对装饰音优化的旋律轮廓。然后，一个由南音表演实践指导的规则系统将这些轮廓完善为完整的装饰音，而在训练期间不需要显式的装饰音注释。实验结果表明，我们的模型成功生成了包含四种传统乐器的真实支声合奏。这些发现验证了将领域特定知识整合到模型架构中可以有效解决计算民族音乐学中的数据稀缺挑战。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Jianbing Xiahou, Weixi Zhai, Xu Cui",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "GACA-DiT: Diffusion-based Dance-to-Music Generation with Genre-Adaptive Rhythm and Context-Aware Alignment",
+    "paper_title_zh": "GACA-DiT: 基于扩散的舞蹈到音乐生成，具有风格自适应节奏和上下文感知对齐",
+    "paper_id": "2510.26818",
+    "paper_abstract": "Dance-to-music (D2M) generation aims to automatically compose music that is rhythmically and temporally aligned with dance movements. Existing methods typically rely on coarse rhythm embeddings, such as global motion features or binarized joint-based rhythm values, which discard fine-grained motion cues and result in weak rhythmic alignment. Moreover, temporal mismatches introduced by feature downsampling further hinder precise synchronization between dance and music. To address these problems, we propose \\textbf{GACA-DiT}, a diffusion transformer-based framework with two novel modules for rhythmically consistent and temporally aligned music generation. First, a \\textbf{genre-adaptive rhythm extraction} module combines multi-scale temporal wavelet analysis and spatial phase histograms with adaptive joint weighting to capture fine-grained, genre-specific rhythm patterns. Second, a \\textbf{context-aware temporal alignment} module resolves temporal mismatches using learnable context queries to align music latents with relevant dance rhythm features. Extensive experiments on the AIST++ and TikTok datasets demonstrate that GACA-DiT outperforms state-of-the-art methods in both objective metrics and human evaluation. Project page: this https URL.",
+    "paper_abstract_zh": "舞蹈到音乐（D2M）生成旨在自动创作与舞蹈动作在节奏和时间上对齐的音乐。现有方法通常依赖于粗略的节奏嵌入，如全局运动特征或二值化的基于关节的节奏值，这些方法丢弃了细粒度的运动线索，导致节奏对齐效果不佳。此外，特征下采样引入的时间错位进一步阻碍了舞蹈和音乐之间的精确同步。为解决这些问题，我们提出了GACA-DiT，这是一个基于扩散变换器的框架，包含两个新颖模块，用于生成节奏一致且时间对齐的音乐。首先，风格自适应节奏提取模块结合多尺度时间小波分析和空间相位直方图，通过自适应关节加权来捕捉细粒度的、风格特定的节奏模式。其次，上下文感知时间对齐模块使用可学习的上下文查询解决时间错位问题，将音乐潜在特征与相关的舞蹈节奏特征对齐。在AIST++和TikTok数据集上的大量实验表明，GACA-DiT在客观指标和人工评估方面均优于最先进的方法。项目页面：this https URL。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Jinting Wang, Chenxing Li, Li Liu",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Cross-Corpus Validation of Speech Emotion Recognition in Urdu using Domain-Knowledge Acoustic Features",
+    "paper_title_zh": "基于领域知识声学特征的乌尔都语语音情感识别的跨语料库验证",
+    "paper_id": "2510.26823",
+    "paper_abstract": "Speech Emotion Recognition (SER) is a key affective computing technology that enables emotionally intelligent artificial intelligence. While SER is challenging in general, it is particularly difficult for low-resource languages such as Urdu. This study investigates Urdu SER in a cross-corpus setting, an area that has remained largely unexplored. We employ a cross-corpus evaluation framework across three different Urdu emotional speech datasets to test model generalization. Two standard domain-knowledge based acoustic feature sets, eGeMAPS and ComParE, are used to represent speech signals as feature vectors which are then passed to Logistic Regression and Multilayer Perceptron classifiers. Classification performance is assessed using unweighted average recall (UAR) whilst considering class-label imbalance. Results show that Self-corpus validation often overestimates performance, with UAR exceeding cross-corpus evaluation by up to 13%, underscoring that cross-corpus evaluation offers a more realistic measure of model robustness. Overall, this work emphasizes the importance of cross-corpus validation for Urdu SER and its implications contribute to advancing affective computing research for underrepresented language communities.",
+    "paper_abstract_zh": "语音情感识别(SER)是一种关键的情感计算技术，能够实现情感智能人工智能。虽然SER通常具有挑战性，但对于乌尔都语等低资源语言而言尤其困难。本研究探讨了乌尔都语SER在跨语料库设置下的表现，这是一个 largely unexplored 的领域。我们采用跨语料库评估框架，在三个不同的乌尔都语情感语音数据集上测试模型泛化能力。使用两种标准的基于领域知识的声学特征集eGeMAPS和ComParE将语音信号表示为特征向量，然后传递给逻辑回归和多层感知器分类器。在考虑类别标签不平衡的情况下，使用未加权平均召回率(UAR)评估分类性能。结果表明，自语料库验证往往高估了性能，UAR比跨语料库评估高出高达13%，强调了跨语料库评估为模型鲁棒性提供了更现实的衡量标准。总体而言，这项工作强调了跨语料库验证对乌尔都语SER的重要性，其贡献有助于推进代表性不足语言社区的情感计算研究。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Unzela Talpur, Zafi Sherhan Syed, Muhammad Shehram Shah Syed, Abbas Shah Syed",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Audio-Visual Speech Enhancement In Complex Scenarios With Separation And Dereverberation Joint Modeling",
+    "paper_title_zh": "",
+    "paper_id": "2510.26825",
+    "paper_abstract": "Audio-visual speech enhancement (AVSE) is a task that uses visual auxiliary information to extract a target speaker's speech from mixed audio. In real-world scenarios, there often exist complex acoustic environments, accompanied by various interfering sounds and reverberation. Most previous methods struggle to cope with such complex conditions, resulting in poor perceptual quality of the extracted speech. In this paper, we propose an effective AVSE system that performs well in complex acoustic environments. Specifically, we design a \"separation before dereverberation\" pipeline that can be extended to other AVSE networks. The 4th COGMHEAR Audio-Visual Speech Enhancement Challenge (AVSEC) aims to explore new approaches to speech processing in multimodal complex environments. We validated the performance of our system in AVSEC-4: we achieved excellent results in the three objective metrics on the competition leaderboard, and ultimately secured first place in the human subjective listening test.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Jiarong Du, Zhan Jin, Peijun Yang, Juan Liu, Zhuo Li, Xin Liu, Ming Li",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Expressive Range Characterization of Open Text-to-Audio Models",
+    "paper_title_zh": "开放文本到音频模型的表现力范围表征",
+    "paper_id": "2510.27102",
+    "paper_abstract": "Text-to-audio models are a type of generative model that produces audio output in response to a given textual prompt. Although level generators and the properties of the functional content that they create (e.g., playability) dominate most discourse in procedurally generated content (PCG), games that emotionally resonate with players tend to weave together a range of creative and multimodal content (e.g., music, sounds, visuals, narrative tone), and multimodal models have begun seeing at least experimental use for this purpose. However, it remains unclear what exactly such models generate, and with what degree of variability and fidelity: audio is an extremely broad class of output for a generative system to target.\nWithin the PCG community, expressive range analysis (ERA) has been used as a quantitative way to characterize generators' output space, especially for level generators. This paper adapts ERA to text-to-audio models, making the analysis tractable by looking at the expressive range of outputs for specific, fixed prompts. Experiments are conducted by prompting the models with several standardized prompts derived from the Environmental Sound Classification (ESC-50) dataset. The resulting audio is analyzed along key acoustic dimensions (e.g., pitch, loudness, and timbre). More broadly, this paper offers a framework for ERA-based exploratory evaluation of generative audio models.",
+    "paper_abstract_zh": "文本到音频模型是一种生成模型，能够根据给定的文本提示生成音频输出。尽管在程序生成内容（PCG）领域，关卡生成器及其生成功能内容（如可玩性）的特性主导了大多数讨论，但那些能与玩家产生情感共鸣的游戏往往会将多种创造性和多模态内容（如音乐、声音、视觉、叙事语调）融合在一起，而多模态模型已开始至少在实验层面用于此目的。然而，这些模型究竟生成什么内容，以及其变化程度和保真度如何，仍然不明确：对于生成系统而言，音频是一个极其广泛的输出类别。在PCG社区中，表现力范围分析（ERA）已被用作一种量化方法来表征生成器的输出空间，特别是针对关卡生成器。本文将ERA应用于文本到音频模型，通过研究特定固定提示的输出表现力范围，使分析变得可行。实验使用从环境声音分类（ESC-50）数据集派生的几个标准化提示来引导模型。生成的音频沿着关键声学维度（如音高、响度和音色）进行分析。更广泛地说，本文为基于ERA的生成音频模型探索性评估提供了一个框架。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Jonathan Morse, Azadeh Naderi, Swen Gaudl, Mark Cartwright, Amy K. Hoover, Mark J. Nelson",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Inferring trust in recommendation systems from brain, behavioural, and physiological data",
+    "paper_title_zh": "从脑、行为和生理数据推断推荐系统中的信任",
+    "paper_id": "2510.27272",
+    "paper_abstract": "As people nowadays increasingly rely on artificial intelligence (AI) to curate information and make decisions, assigning the appropriate amount of trust in automated intelligent systems has become ever more important. However, current measurements of trust in automation still largely rely on self-reports that are subjective and disruptive to the user. Here, we take music recommendation as a model to investigate the neural and cognitive processes underlying trust in automation. We observed that system accuracy was directly related to users' trust and modulated the influence of recommendation cues on music preference. Modelling users' reward encoding process with a reinforcement learning model further revealed that system accuracy, expected reward, and prediction error were related to oscillatory neural activity recorded via EEG and changes in pupil diameter. Our results provide a neurally grounded account of calibrating trust in automation and highlight the promises of a multimodal approach towards developing trustable AI systems.",
+    "paper_abstract_zh": "如今，人们越来越依赖人工智能（AI）来整理信息和做出决策，因此为自动化智能系统分配适当的信任度变得越来越重要。然而，目前对自动化信任的测量仍然主要依赖于主观且会干扰用户自我报告的方法。在这里，我们以音乐推荐为模型，研究自动化信任背后的神经和认知过程。我们观察到，系统准确性与用户的信任直接相关，并调节了推荐线索对音乐偏好的影响。使用强化学习模型对用户的奖励编码过程进行建模，进一步揭示了系统准确性、预期奖励和预测误差与通过脑电图（EEG）记录的振荡神经活动和瞳孔直径变化之间的关系。我们的结果为校准自动化信任提供了神经基础，并强调了多模态方法在开发可信AI系统方面的潜力。",
+    "subjects": [
+      "Human-Computer Interaction (cs.HC)",
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "Vincent K.M. Cheung, Pei-Cheng Shih, Masato Hirano, Masataka Goto, Shinichi Furuya",
+    "topic": [
+      "Music Information Retrieval",
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Representing Classical Compositions through Implication-Realization Temporal-Gestalt Graphs",
+    "paper_title_zh": "通过蕴含-实现时间-格式塔图表示古典音乐作品",
+    "paper_id": "2510.27530",
+    "paper_abstract": "Understanding the structural and cognitive underpinnings of musical compositions remains a key challenge in music theory and computational musicology. While traditional methods focus on harmony and rhythm, cognitive models such as the Implication-Realization (I-R) model and Temporal Gestalt theory offer insight into how listeners perceive and anticipate musical structure. This study presents a graph-based computational approach that operationalizes these models by segmenting melodies into perceptual units and annotating them with I-R patterns. These segments are compared using Dynamic Time Warping and organized into k-nearest neighbors graphs to model intra- and inter-segment relationships.\nEach segment is represented as a node in the graph, and nodes are further labeled with melodic expectancy values derived from Schellenberg's two-factor I-R model-quantifying pitch proximity and pitch reversal at the segment level. This labeling enables the graphs to encode both structural and cognitive information, reflecting how listeners experience musical tension and resolution.\nTo evaluate the expressiveness of these graphs, we apply the Weisfeiler-Lehman graph kernel to measure similarity between and within compositions. Results reveal statistically significant distinctions between intra- and inter-graph structures. Segment-level analysis via multidimensional scaling confirms that structural similarity at the graph level reflects perceptual similarity at the segment level. Graph2vec embeddings and clustering demonstrate that these representations capture stylistic and structural features that extend beyond composer identity.\nThese findings highlight the potential of graph-based methods as a structured, cognitively informed framework for computational music analysis, enabling a more nuanced understanding of musical structure and style through the lens of listener perception.",
+    "paper_abstract_zh": "理解音乐作品的结构和认知基础仍然是音乐理论和计算音乐学中的一个关键挑战。虽然传统方法侧重于和声与节奏，但诸如蕴含-实现(I-R)模型和时间格式塔理论等认知模型为听众如何感知和预期音乐结构提供了见解。本研究提出了一种基于图的计算方法，通过将旋律分割为感知单元并使用I-R模式对其进行标注，从而将这些模型形式化。这些片段使用动态时间规整进行比较，并组织成k近邻图，以建模片段内和片段间的关系。每个片段在图中表示为一个节点，节点进一步使用Schellenberg的双因素I-R模型派生的旋律预期值进行标记，该模型量化了片段级别的音高接近性和音高反转。这种标记使图能够编码结构和认知信息，反映听众如何体验音乐张力和解决。为了评估这些图的表达能力，我们应用Weisfeiler-Lehman图核来测量作品内部和之间的相似性。结果显示，图内和图间结构存在统计学上的显著差异。通过多维尺度分析的片段级别分析确认，图级别的结构相似性反映了片段级别的感知相似性。Graph2vec嵌入和聚类表明，这些表示捕获了超越作曲家身份的风格和结构特征。这些发现强调了基于图的方法作为计算音乐分析的结构化、认知信息框架的潜力，通过听众感知的视角，能够更细致地理解音乐结构和风格。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Social and Information Networks (cs.SI)"
+    ],
+    "update_time": "2025-11-03",
+    "paper_authors": "A. V. Bomediano, R. J. Conanan, L. D. Santuyo, A. Coronel",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
