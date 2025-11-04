@@ -1,0 +1,333 @@
+[
+  {
+    "paper_title": "NaturalVoices: A Large-Scale, Spontaneous and Emotional Podcast Dataset for Voice Conversion",
+    "paper_title_zh": "NaturalVoices: 一个用于语音转换的大规模、自发性和情感播客数据集",
+    "paper_id": "2511.00256",
+    "paper_abstract": "Everyday speech conveys far more than words, it reflects who we are, how we feel, and the circumstances surrounding our interactions. Yet, most existing speech datasets are acted, limited in scale, and fail to capture the expressive richness of real-life communication. With the rise of large neural networks, several large-scale speech corpora have emerged and been widely adopted across various speech processing tasks. However, the field of voice conversion (VC) still lacks large-scale, expressive, and real-life speech resources suitable for modeling natural prosody and emotion. To fill this gap, we release NaturalVoices (NV), the first large-scale spontaneous podcast dataset specifically designed for emotion-aware voice conversion. It comprises 5,049 hours of spontaneous podcast recordings with automatic annotations for emotion (categorical and attribute-based), speech quality, transcripts, speaker identity, and sound events. The dataset captures expressive emotional variation across thousands of speakers, diverse topics, and natural speaking styles. We also provide an open-source pipeline with modular annotation tools and flexible filtering, enabling researchers to construct customized subsets for a wide range of VC tasks. Experiments demonstrate that NaturalVoices supports the development of robust and generalizable VC models capable of producing natural, expressive speech, while revealing limitations of current architectures when applied to large-scale spontaneous data. These results suggest that NaturalVoices is both a valuable resource and a challenging benchmark for advancing the field of voice conversion. Dataset is available at: this https URL",
+    "paper_abstract_zh": "日常交流传达的远不止是词语，它反映了我们的身份、感受以及互动的环境。然而，大多数现有的语音数据集都是表演性质的，规模有限，且无法捕捉现实生活中交流的丰富表现力。随着大型神经网络的兴起，几个大规模语音语料库已经出现并被广泛应用于各种语音处理任务中。然而，语音转换（VC）领域仍然缺乏大规模、富有表现力且适合建模自然韵律和情感的语音资源。为了填补这一空白，我们发布了NaturalVoices（NV），这是第一个专门为情感感知语音转换设计的大规模自发播客数据集。它包含5,049小时的自发播客录音，并附有情感（分类和基于属性）、语音质量、转录文本、说话人身份和声音事件的自动标注。该数据集捕捉了成千上万说话人、多样话题和自然说话风格中的情感表现变化。我们还提供了一个开源管道，包含模块化标注工具和灵活的过滤功能，使研究人员能够为各种VC任务构建自定义子集。实验证明，NaturalVoices支持开发能够产生自然、富有表现力的语音的鲁棒且可泛化的VC模型，同时揭示了当前架构在大规模自发数据应用中的局限性。这些结果表明，NaturalVoices既是推动语音转换领域发展的宝贵资源，也是一个具有挑战性的基准测试。数据集可通过以下网址获取：this https URL",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Zongyang Du, Shreeram Suresh Chandra, Ismail Rasim Ulgen, Aurosweta Mahapatra, Ali N. Salman, Carlos Busso, Berrak Sisman",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "MULTI-Bench: A Multi-Turn Interactive Benchmark for Assessing Emotional Intelligence ability of Spoken Dialogue Models",
+    "paper_title_zh": "MULTI-Bench：一个用于评估口语对话模型情商能力的多轮交互式基准测试",
+    "paper_id": "2511.00850",
+    "paper_abstract": "Spoken Dialogue Models (SDMs) have advanced rapidly, yet their ability to sustain genuinely interactive multi-turn conversations remains underexplored, as most benchmarks focus on single-turn exchanges. We introduce Multi-Bench, the first benchmark explicitly designed to evaluate SDMs in multi-turn interactive dialogue with an emphasis on emotional intelligence. Multi-Bench employs a hierarchical structure with a basic track for emotion understanding and reasoning and an advanced track for emotion support and application. It comprises five carefully designed tasks and about 3.2K samples, ranging from emotion recognition to complex reasoning and interactive dialogue, supported by a reproducible evaluation framework. We evaluate six representative SDMs on eight subsets of Multi-Bench. Results show that while current SDMs achieve good performance on basic understanding tasks, they still have room for improvement in advanced multi-turn interactive dialogue and reasoning-related tasks, particularly in emotion awareness and application.",
+    "paper_abstract_zh": "口语对话模型(SDMs)发展迅速，但它们维持真正交互式多轮对话的能力仍未得到充分探索，因为大多数基准测试都专注于单轮交换。我们引入了Multi-Bench，这是第一个明确设计用于评估SDMs在多轮交互式对话中表现的基准测试，特别强调情商。Multi-Bench采用分层结构，包含一个基础的情感理解和推理轨道，以及一个高级的情感支持和应用轨道。它包含五个精心设计的任务，约3.2K个样本，范围从情感识别到复杂推理和交互式对话，并有一个可复现的评估框架支持。我们在Multi-Bench的八个子集上评估了六个代表性的SDMs。结果表明，尽管当前的SDMs在基础理解任务上表现良好，但在高级多轮交互式对话和推理相关任务上仍有改进空间，特别是在情感感知和应用方面。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Yayue Deng, Guoqiang Hu, Haiyang Sun, Xiangyu Zhang, Haoyang Zhang, Fei Tian, Xuerui Yang, Gang Yu, Eng Siong Chng",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "WhisperVC: Target Speaker-Controllable Mandarin Whisper-to-Speech Conversion",
+    "paper_title_zh": "WhisperVC：目标说话人可控的普通话耳语音转语音转换",
+    "paper_id": "2511.01056",
+    "paper_abstract": "Whispered speech lacks vocal-fold excitation and exhibits reduced energy and shifted formant frequencies, making natural and intelligible voice reconstruction highly challenging. To address this issue, we propose \\emph{WhisperVC}, a three-stage framework for Mandarin whisper-to-speech (W2S) conversion. Stage~1 employs a fine-tuned Content Encoder based on the OpenAI Whisper-large~V3 model and a Conformer-based variational autoencoder with soft-DTW alignment to learn domain-invariant and temporally consistent representations. Stage~2 introduces a deterministic Length--Channel Aligner and a duration-free FastSpeech~2 model conditioned on speaker embeddings for controllable timbre and stable prosody. Stage~3 fine-tunes a HiFi-GAN vocoder on predicted mel-spectrograms to synthesize high-fidelity waveforms. Experiments on the AISHELL6-Whisper corpus demonstrate that WhisperVC achieves near ground-truth quality (\\textbf{DNSMOS~3.11}, \\textbf{UTMOS~2.52}, \\textbf{CER~18.67\\%}), while maintaining speaker similarity (\\textbf{cosine~0.76}) and robust performance under whisper-only inference.",
+    "paper_abstract_zh": "耳语音缺乏声带振动，能量降低且共振峰频率偏移，使得自然且可懂的声音重建极具挑战性。为解决这一问题，我们提出了WhisperVC，一个用于普通话耳语音转语音（W2S）转换的三阶段框架。第一阶段采用基于OpenAI Whisper-large V3模型微调的内容编码器，以及基于Conformer的变分自编码器与软-DTW对齐，学习领域不变且时间一致的表示。第二阶段引入确定性长度-通道对齐器和基于说话人嵌入条件的无时长FastSpeech 2模型，实现可控音色和稳定韵律。第三阶段在预测的梅尔频谱图上微调HiFi-GAN声码器，以合成高保真波形。在AISHELL6-Whisper语料库上的实验表明，WhisperVC实现了接近真实质量（DNSMOS 3.11，UTMOS 2.52，CER 18.67%），同时保持说话人相似度（余弦相似度0.76）和仅使用耳语音推理时的鲁棒性能。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Dong Liu, Ming Li",
+    "topic": [
+      "Speech Synthesis",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Towards General Auditory Intelligence: Large Multimodal Models for Machine Listening and Speaking",
+    "paper_title_zh": "迈向通用听觉智能：用于机器听说的多模态大模型",
+    "paper_id": "2511.01299",
+    "paper_abstract": "In the era of large language models (LLMs) and artificial general intelligence (AGI), computer audition must evolve beyond traditional paradigms to fully leverage the capabilities of foundation models, towards more comprehensive understanding, more natural generation and more human-like interaction. Audio, as a modality rich in semantic, emotional, and contextual cues, plays a vital role in achieving naturalistic and embodied machine intelligence. This survey provides a comprehensive review of recent progress in integrating audio into LLMs, with a focus on four key areas: audio comprehension, audio generation, speech-based interaction, and audio-visual understanding. We analyze how LLMs are reshaping audio perception and reasoning, enabling systems to understand sound at a deeper semantic level, generate expressive audio outputs, and engage in human-like spoken interaction. Furthermore, we explore how the fusion of audio and visual modalities enhances situational awareness and cross-modal reasoning, pushing the boundaries of multimodal intelligence. This survey not only synthesizes existing research but also identifies critical challenges and future directions for building audio-native AGI systems capable of perceiving, understanding, and interacting through sound as naturally as humans do.",
+    "paper_abstract_zh": "在大语言模型（LLMs）和人工智能（AGI）的时代，计算机听觉必须超越传统范式，以充分利用基础模型的能力，实现更全面的理解、更自然的生成和更类人的交互。音频作为一种富含语义、情感和上下文线索的模态，在实现自然化和具身机器智能方面发挥着至关重要的作用。本综述全面回顾了将音频集成到LLMs中的最新进展，重点关注四个关键领域：音频理解、音频生成、基于语音的交互和视听理解。我们分析了LLMs如何重塑音频感知和推理，使系统能够在更深的语义层次上理解声音，生成富有表现力的音频输出，并进行类人的口语交互。此外，我们探讨了音频和视觉模态的融合如何增强情境感知和跨模态推理，推动多模态智能的边界。本综述不仅综合了现有研究，还确定了构建音频原生AGI系统的关键挑战和未来方向，这些系统能够像人类一样通过声音感知、理解和交互。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Siyin Wang, Zengrui Jin, Changli Tang, Qiujia Li, Bo Li, Chen Chen, Yuchen Hu, Wenyi Yu, Yixuan Li, Jimin Zhuang, Yudong Yang, Mingqiu Wang, Michael Han, Yifan Ding, Junwen Bai, Tom Ouyang, Shuo-yiin Chang, Xianzhao Chen, Xiaohai Tian, Jun Zhang, Lu Lu, Guangzhi Sun, Zhehuai Chen, Ji Wu, Bowen Zhou, Yuxuan Wang, Tara Sainath, Yonghui Wu, Chao Zhang",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "AudioNet: Supervised Deep Hashing for Retrieval of Similar Audio Events",
+    "paper_title_zh": "AudioNet: 用于相似音频事件检索的监督深度哈希",
+    "paper_id": "2511.01372",
+    "paper_abstract": "This work presents a supervised deep hashing method for retrieving similar audio events. The proposed method, named AudioNet, is a deep-learning-based system for efficient hashing and retrieval of similar audio events using an audio example as a query. AudioNet achieves high retrieval performance on multiple standard datasets by generating binary hash codes for similar audio events, setting new benchmarks in the field, and highlighting its efficacy and effectiveness compare to other hashing methods. Through comprehensive experiments on standard datasets, our research represents a pioneering effort in evaluating the retrieval performance of similar audio events. A novel loss function is proposed which incorporates weighted contrastive and weighted pairwise loss along with hashcode balancing to improve the efficiency of audio event retrieval. The method adopts discrete gradient propagation, which allows gradients to be propagated through discrete variables during backpropagation. This enables the network to optimize the discrete hash codes using standard gradient-based optimization algorithms, which are typically used for continuous variables. The proposed method showcases promising retrieval performance, as evidenced by the experimental results, even when dealing with imbalanced datasets. The systematic analysis conducted in this study further supports the significant benefits of the proposed method in retrieval performance across multiple datasets. The findings presented in this work establish a baseline for future studies on the efficient retrieval of similar audio events using deep audio embeddings.",
+    "paper_abstract_zh": "这项工作提出了一种用于检索相似音频事件的监督深度哈希方法。所提出的方法名为AudioNet，是一个基于深度学习的系统，使用音频示例作为查询，对相似音频事件进行高效哈希和检索。AudioNet通过为相似音频事件生成二进制哈希码，在多个标准数据集上实现了高检索性能，在该领域树立了新基准，并与其他哈希方法相比突显了其有效性和效率。通过对标准数据集的全面实验，我们的研究是评估相似音频事件检索性能的开拓性工作。提出了一种新的损失函数，结合了加权对比损失和加权成对损失以及哈希码平衡，以提高音频事件检索的效率。该方法采用离散梯度传播，允许在反向传播过程中通过离散变量传播梯度。这使得网络能够使用通常用于连续变量的基于标准梯度优化算法来优化离散哈希码。实验结果表明，所提出的方法在处理不平衡数据集时也展现出有前途的检索性能。本研究进行的系统分析进一步支持了所提出的方法在多个数据集上检索性能的显著优势。本研究的结果为未来使用深度音频嵌入高效检索相似音频事件的研究奠定了基准。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Sagar Dutta, Vipul Arora",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Leveraging Language Information for Target Language Extraction",
+    "paper_title_zh": "利用语言信息进行目标语言提取",
+    "paper_id": "2511.01652",
+    "paper_abstract": "Target Language Extraction aims to extract speech in a specific language from a mixture waveform that contains multiple speakers speaking different languages. The human auditory system is adept at performing this task with the knowledge of the particular language. However, the performance of the conventional extraction systems is limited by the lack of this prior knowledge. Speech pre-trained models, which capture rich linguistic and phonetic representations from large-scale in-the-wild corpora, can provide this missing language knowledge to these systems. In this work, we propose a novel end-to-end framework to leverage language knowledge from speech pre-trained models. This knowledge is used to guide the extraction model to better capture the target language characteristics, thereby improving extraction quality. To demonstrate the effectiveness of our proposed approach, we construct the first publicly available multilingual dataset for Target Language Extraction. Experimental results show that our method achieves improvements of 1.22 dB and 1.12 dB in SI-SNR for English and German extraction, respectively, from mixtures containing both languages.",
+    "paper_abstract_zh": "目标语言提取旨在从包含多个说话者使用不同语言的混合波形中提取特定语言的语音。人类听觉系统能够利用特定语言的知识熟练地执行此任务。然而，传统提取系统的性能因缺乏这种先验知识而受到限制。从大规模野外语料库中捕获丰富语言和语音表示的语音预训练模型可以为这些系统提供这种缺失的语言知识。在这项工作中，我们提出了一个新颖的端到端框架，以利用来自语音预训练模型的语言知识。该知识用于指导提取模型更好地捕获目标语言特征，从而提高提取质量。为了证明我们提出方法的有效性，我们构建了第一个可用于目标语言提取的公开多语言数据集。实验结果表明，从包含两种语言的混合语音中提取英语和德语时，我们的方法在SI-SNR指标上分别实现了1.22 dB和1.12 dB的改进。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Mehmet Sinan Yıldırım, Ruijie Tao, Wupeng Wang, Junyi Ao, Haizhou Li",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Ultralow-power standoff acoustic leak detection",
+    "paper_title_zh": "超远距离低功耗声学泄漏检测",
+    "paper_id": "2511.00348",
+    "paper_abstract": "An automated, standoff acoustic leak detection scheme has been designed, built, and tested. It merges the principles of glass breakage and smoke detection to alert for the presence of leaks emanating from pressurized plumbing. A simulated water leak flowing at 0.15 l/min has been reliably detected at a standoff distance of more than 10 m. The device is also effective at identifying the presence of leaks located behind surfaces such as walls, doors, floors, and ceilings. The anticipated application is as an autonomous, battery-powered, remote wireless node. All signal processing and analysis takes place on the edge with no need to stream audio data to the cloud. Sensor status is conveyed on-demand with only a few bytes of information, requiring minimal bandwidth. Power consumption is the range of 20--200 micro-Watts, depending on the amount of environmental noise and desired sensor latency. To attain optimum sensitivity and reliability, the hardware operates at acoustic frequencies well above the range of human conversations, making eavesdropping impossible. Development has been done with water escaping from pressurized plumbing, but the sensor concept can be used effectively to detect gas leaks.",
+    "paper_abstract_zh": "设计、构建并测试了一种自动化的超远距离声学泄漏检测方案。该方案结合了玻璃破碎和烟雾检测的原理，用于发出来自加压管道泄漏的警报。在超过10米的远距离处，已能可靠地检测到流速为0.15升/分钟的模拟水泄漏。该设备还能有效识别位于墙壁、门、地板和天花板等表面后面的泄漏。预期应用是作为自主的、电池供电的远程无线节点。所有信号处理和分析都在边缘完成，无需将音频数据流式传输到云端。传感器状态按需传递，仅需少量字节的信息，占用最小带宽。功耗范围为20-200微瓦，具体取决于环境噪声量和所需的传感器延迟。为了获得最佳灵敏度和可靠性，硬件在远高于人类对话范围的声学频率下工作，使窃听成为不可能。开发工作针对的是加压管道中的水泄漏，但该传感器概念也可有效用于检测气体泄漏。",
+    "subjects": [
+      "Cryptography and Security (cs.CR)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Michael P. Hasselbeck",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Speech-DRAME: A Framework for Human-Aligned Benchmarks in Speech Role-Play",
+    "paper_title_zh": "Speech-DRAME：一个面向语音角色扮演的人类对齐评估框架",
+    "paper_id": "2511.01261",
+    "paper_abstract": "Role-play has become a key testbed for generative models, expanding from text-only dialogue to multimodal interaction. Extending role-play to speech captures prosody, emotion, and delivery, but also poses new evaluation challenges. Current pipelines often use audio large language models (ALLMs) as zero-shot judges, which miss paralinguistic cues, collapse multiple aspects into coarse scores, and rely on synthetic speech references that fail to reflect real-world roles. We present Speech-DRAME, a unified framework that contributes at three levels: (i) Speech-DRAME-EvalBench, an evaluation benchmark with bilingual human-annotated data and protocols for training and testing speech evaluation models (SEMs), (ii) DRAME-Eval, a fine-tuned evaluation model, which substantially outperforms zero-shot and few-shot ALLMs, and (iii) Speech-DRAME-RoleBench, a speech role-play benchmark that leverages DRAME-Eval as an automatic judge to compare speech foundation models (SFMs). Speech-DRAME distinguishes between two complementary evaluation strategies: Archetype Evaluation, a top-down approach measuring adherence to broad role archetypes, and Realism Evaluation, a bottom-up approach grounded in real human speech that emphasizes nuanced role quality. Compared to zero-shot ALLM judges, DRAME-Eval achieves stronger agreement with human ratings (Pearson correlation from 0.480 to 0.629 in archetypes, and 0.390 to 0.625 in realism). By integrating transparent benchmark resources, modeling approaches, and system-level evaluation, Speech-DRAME provides the first comprehensive, reproducible foundation for assessing spoken role-play.",
+    "paper_abstract_zh": "角色扮演已成为生成模型的关键测试平台，从纯文本对话扩展到多模态交互。将角色扮演扩展到语音领域可以捕捉韵律、情感和表达方式，但也带来了新的评估挑战。当前的评估流程通常使用音频大语言模型（ALLMs）作为零样本评估者，这些模型忽略了副语言线索，将多个方面合并为粗粒度评分，并依赖无法反映现实世界角色的合成语音参考。我们提出了Speech-DRAME，这是一个统一框架，在三个层面做出贡献：（i）Speech-DRAME-EvalBench，一个包含双语人工标注数据和用于训练测试语音评估模型（SEMs）协议的评估基准；（ii）DRAME-Eval，一个微调后的评估模型，其性能显著优于零样本和少样本ALLMs；（iii）Speech-DRAME-RoleBench，一个语音角色扮演基准，利用DRAME-Eval作为自动评估者来比较语音基础模型（SFMs）。Speech-DRAME区分了两种互补的评估策略：原型评估（Archetype Evaluation），自上而下的方法，衡量对广泛角色原型的遵循程度；真实性评估（Realism Evaluation），自下而上的方法，基于真实人类语音，强调细微的角色质量。与零样本ALLM评估者相比，DRAME-Eval与人类评分的一致性更强（原型评估中的皮尔逊相关系数从0.480提高到0.629，真实性评估中从0.390提高到0.625）。通过整合透明的基准资源、建模方法和系统级评估，Speech-DRAME为评估语音角色扮演提供了首个全面且可复现的基础。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Jiatong Shi, Jionghao Han, Yichen Lu, Santiago Pascual, Pengfei Wu, Chenye Cui, Shinji Watanabe, Chao Weng, Cong Zhou",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Emotion Detection in Speech Using Lightweight and Transformer-Based Models: A Comparative and Ablation Study",
+    "paper_title_zh": "使用轻量级和基于Transformer的模型进行语音情感检测：比较与消融研究",
+    "paper_id": "2511.00402",
+    "paper_abstract": "Emotion recognition from speech plays a vital role in the development of empathetic human-computer interaction systems. This paper presents a comparative analysis of lightweight transformer-based models, DistilHuBERT and PaSST, by classifying six core emotions from the CREMA-D dataset. We benchmark their performance against a traditional CNN-LSTM baseline model using MFCC features. DistilHuBERT demonstrates superior accuracy (70.64%) and F1 score (70.36%) while maintaining an exceptionally small model size (0.02 MB), outperforming both PaSST and the baseline. Furthermore, we conducted an ablation study on three variants of the PaSST, Linear, MLP, and Attentive Pooling heads, to understand the effect of classification head architecture on model performance. Our results indicate that PaSST with an MLP head yields the best performance among its variants but still falls short of DistilHuBERT. Among the emotion classes, angry is consistently the most accurately detected, while disgust remains the most challenging. These findings suggest that lightweight transformers like DistilHuBERT offer a compelling solution for real-time speech emotion recognition on edge devices. The code is available at: this https URL.",
+    "paper_abstract_zh": "从语音中识别情感在开发有同理心的人机交互系统中起着至关重要的作用。本文通过对CREMA-D数据集中的六种核心情感进行分类，对轻量级基于Transformer的模型DistilHuBERT和PaSST进行了比较分析。我们使用MFCC特征将它们的性能与传统CNN-LSTM基线模型进行了基准测试。DistilHuBERT表现出卓越的准确率（70.64%）和F1分数（70.36%），同时保持异常小的模型大小（0.02 MB），性能优于PaSST和基线模型。此外，我们对PaSST的三种变体（Linear、MLP和Attentive Pooling头）进行了消融研究，以了解分类头架构对模型性能的影响。我们的结果表明，带有MLP头的PaSST在其变体中表现最佳，但仍不及DistilHuBERT。在情感类别中，愤怒始终是最准确检测到的，而厌恶仍然是最具挑战性的。这些发现表明，像DistilHuBERT这样的轻量级Transformer为边缘设备上的实时语音情感识别提供了有吸引力的解决方案。代码可在以下网址获取：this https URL。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Lucky Onyekwelu-Udoka, Md Shafiqul Islam, Md Shahedul Hasan",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Physics-Informed Neural Networks for Speech Production",
+    "paper_title_zh": "用于语音生成的物理信息神经网络",
+    "paper_id": "2511.00428",
+    "paper_abstract": "The analysis of speech production based on physical models of the vocal folds and vocal tract is essential for studies on vocal-fold behavior and linguistic research. This paper proposes a speech production analysis method using physics-informed neural networks (PINNs). The networks are trained directly on the governing equations of vocal-fold vibration and vocal-tract acoustics. Vocal-fold collisions introduce nondifferentiability and vanishing gradients, challenging phenomena for PINNs. We demonstrate, however, that introducing a differentiable approximation function enables the analysis of vocal-fold vibrations within the PINN framework. The period of self-excited vocal-fold vibration is generally unknown. We show that by treating the period as a learnable network parameter, a periodic solution can be obtained. Furthermore, by implementing the coupling between glottal flow and vocal-tract acoustics as a hard constraint, glottis-tract interaction is achieved without additional loss terms. We confirmed the method's validity through forward and inverse analyses, demonstrating that the glottal flow rate, vocal-fold vibratory state, and subglottal pressure can be simultaneously estimated from speech signals. Notably, the same network architecture can be applied to both forward and inverse analyses, highlighting the versatility of this approach. The proposed method inherits the advantages of PINNs, including mesh-free computation and the natural incorporation of nonlinearities, and thus holds promise for a wide range of applications.",
+    "paper_abstract_zh": "基于声带和声道物理模型的语音生成分析对于声带行为研究和语言学研究至关重要。本文提出了一种使用物理信息神经网络（PINNs）的语音生成分析方法。这些网络直接在声带振动和声道声学的控制方程上进行训练。声带碰撞引入了不可微性和梯度消失，这对PINNs来说是具有挑战性的现象。然而，我们证明引入可微近似函数能够在PINN框架内分析声带振动。自激声带振动的周期通常是未知的。我们表明，通过将周期作为可学习的网络参数，可以获得周期性解。此外，通过将声门流与声道声学的耦合作为硬约束实现，无需额外的损失项即可实现声门-声道相互作用。我们通过正向和逆向分析确认了该方法的有效性，证明可以从语音信号中同时估计声门流率、声带振动状态和声门下压力。值得注意的是，相同的网络架构可以应用于正向和逆向分析，突显了这种方法的多功能性。所提出的方法继承了PINNs的优势，包括无网格计算和非线性的自然融入，因此具有广泛的应用前景。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Kazuya Yokota, Ryosuke Harakawa, Masaaki Baba, Masahiro Iwahashi",
+    "topic": [
+      "Speech Synthesis",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "More Than A Shortcut: A Hyperbolic Approach To Early-Exit Networks",
+    "paper_title_zh": "不仅仅是捷径：一种用于早期退出网络的超几何方法",
+    "paper_id": "2511.00641",
+    "paper_abstract": "Deploying accurate event detection on resource-constrained devices is challenged by the trade-off between performance and computational cost. While Early-Exit (EE) networks offer a solution through adaptive computation, they often fail to enforce a coherent hierarchical structure, limiting the reliability of their early predictions. To address this, we propose Hyperbolic Early-Exit networks (HypEE), a novel framework that learns EE representations in the hyperbolic space. Our core contribution is a hierarchical training objective with a novel entailment loss, which enforces a partial-ordering constraint to ensure that deeper network layers geometrically refine the representations of shallower ones. Experiments on multiple audio event detection tasks and backbone architectures show that HypEE significantly outperforms standard Euclidean EE baselines, especially at the earliest, most computationally-critical exits. The learned geometry also provides a principled measure of uncertainty, enabling a novel triggering mechanism that makes the overall system both more efficient and more accurate than a conventional EE and standard backbone models without early-exits.",
+    "paper_abstract_zh": "在资源受限设备上部署准确的事件检测面临着性能与计算成本之间的权衡。虽然早期退出(EE)网络通过自适应计算提供了解决方案，但它们往往无法强制执行一致的层次结构，限制了其早期预测的可靠性。为此，我们提出了超几何早期退出网络(HypEE)，这是一个在超几何空间中学习EE表示的新框架。我们的核心贡献是一个具有新颖蕴含损失的层次训练目标，该损失强制执行部分排序约束，确保更深的网络层在几何上细化较浅层的表示。在多个音频事件检测任务和骨干架构上的实验表明，HypEE显著优于标准的欧几里得EE基线，特别是在最早、计算最关键的退出点。学习的几何结构还为不确定性提供了原则性的度量， enabling了一种新颖的触发机制，使整个系统比传统的EE和没有早期退出的标准骨干模型更高效、更准确。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Swapnil Bhosale, Cosmin Frateanu, Camilla Clark, Arnoldas Jasonas, Chris Mitchell, Xiatian Zhu, Vamsi Krishna Ithapu, Giacomo Ferroni, Cagdas Bilen, Sanjeel Parekh",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Feedback-driven Retrieval-augmented Audio Generation with Large Audio Language Models",
+    "paper_title_zh": "基于反馈驱动的检索增强音频生成与大型音频语言模型",
+    "paper_id": "2511.01091",
+    "paper_abstract": "We propose a general feedback-driven retrieval-augmented generation (RAG) approach that leverages Large Audio Language Models (LALMs) to address the missing or imperfect synthesis of specific sound events in text-to-audio (TTA) generation. Unlike previous RAG-based TTA methods that typically train specialized models from scratch, we utilize LALMs to analyze audio generation outputs, retrieve concepts that pre-trained models struggle to generate from an external database, and incorporate the retrieved information into the generation process. Experimental results show that our method not only enhances the ability of LALMs to identify missing sound events but also delivers improvements across different models, outperforming existing RAG-specialized approaches.",
+    "paper_abstract_zh": "我们提出了一种通用的基于反馈驱动的检索增强生成(RAG)方法，该方法利用大型音频语言模型(LALMs)来解决文本到音频(TTA)生成中特定声音事件的缺失或不完美合成问题。与以往基于RAG的TTA方法通常从头开始训练专门模型不同，我们利用LALMs分析音频生成输出，从外部数据库检索预训练模型难以生成的概念，并将检索到的信息整合到生成过程中。实验结果表明，我们的方法不仅增强了LALMs识别缺失声音事件的能力，还在不同模型上取得了改进，优于现有的专门RAG方法。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Junqi Zhao, Chenxing Li, Jinzheng Zhao, Rilin Chen, Dong Yu, Mark D. Plumbley, Wenwu Wang",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "The Ghost in the Keys: A Disklavier Demo for Human-AI Musical Co-Creativity",
+    "paper_title_zh": "键盘中的幽灵：Disklavier演示人机音乐共创",
+    "paper_id": "2511.01663",
+    "paper_abstract": "While generative models for music composition are increasingly capable, their adoption by musicians is hindered by text-prompting, an asynchronous workflow disconnected from the embodied, responsive nature of instrumental performance. To address this, we introduce Aria-Duet, an interactive system facilitating a real-time musical duet between a human pianist and Aria, a state-of-the-art generative model, using a Yamaha Disklavier as a shared physical interface. The framework enables a turn-taking collaboration: the user performs, signals a handover, and the model generates a coherent continuation performed acoustically on the piano. Beyond describing the technical architecture enabling this low-latency interaction, we analyze the system's output from a musicological perspective, finding the model can maintain stylistic semantics and develop coherent phrasal ideas, demonstrating that such embodied systems can engage in musically sophisticated dialogue and open a promising new path for human-AI co-creation.",
+    "paper_abstract_zh": "尽管音乐创作的生成模型能力日益增强，但音乐家们采用这些模型却受到文本提示的阻碍，这是一种与器乐表演的具身性和响应性脱节的异步工作流程。为解决这一问题，我们引入了Aria-Duet，一个交互式系统，通过雅马哈Disklavier作为共享物理界面，实现人类钢琴家与最先进的生成模型Aria之间的实时音乐二重奏。该框架 enables 一种轮流协作：用户演奏，发出交接信号，然后模型生成一个连贯的延续，并在钢琴上以声学方式演奏。除了描述实现这种低延迟交互的技术架构外，我们还从音乐学角度分析了系统的输出，发现模型能够保持风格语义并发展连贯的乐句理念，证明这类具身系统能够进行音乐上复杂的对话，并为人类-AI共创开辟了一条充满希望的新路径。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Human-Computer Interaction (cs.HC)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Louis Bradshaw, Alexander Spangher, Stella Biderman, Simon Colton",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "ADNAC: Audio Denoiser using Neural Audio Codec",
+    "paper_title_zh": "ADNAC: 使用神经音频编解码器的音频降噪器",
+    "paper_id": "2511.01773",
+    "paper_abstract": "Audio denoising is critical in signal processing, enhancing intelligibility and fidelity for applications like restoring musical recordings. This paper presents a proof-of-concept for adapting a state-of-the-art neural audio codec, the Descript Audio Codec (DAC), for music denoising. This work overcomes the limitations of traditional architectures like U-Nets by training the model on a large-scale, custom-synthesized dataset built from diverse sources. Training is guided by a multi objective loss function that combines time-domain, spectral, and signal-level fidelity metrics. Ultimately, this paper aims to present a PoC for high-fidelity, generative audio restoration.",
+    "paper_abstract_zh": "音频降噪在信号处理中至关重要，能够提高清晰度和保真度，例如用于恢复音乐录音。本文提出了一个概念验证，将最先进的神经音频编解码器Descript Audio Codec (DAC) 适配用于音乐降噪。这项工作通过在从多样化来源构建的大规模定制合成数据集上训练模型，克服了U-Net等传统架构的局限性。训练由多目标损失函数指导，该函数结合了时域、频谱和信号级保真度指标。最终，本文旨在为高保真、生成式音频恢复提供一个概念验证。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Daniel Jimon, Mircea Vaida, Adriana Stan",
+    "topic": [
+      "Audio Codec",
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "LongCat-Flash-Omni Technical Report",
+    "paper_title_zh": "LongCat-Flash-Omni技术报告",
+    "paper_id": "2511.00279",
+    "paper_abstract": "We introduce LongCat-Flash-Omni, a state-of-the-art open-source omni-modal model with 560 billion parameters, excelling at real-time audio-visual interaction. By adopting a curriculum-inspired progressive training strategy that transitions from simpler to increasingly complex modality sequence modeling tasks, LongCat-Flash-Omni attains comprehensive multimodal capabilities while maintaining strong unimodal capability. Building upon LongCat-Flash, which adopts a high-performance Shortcut-connected Mixture-of-Experts (MoE) architecture with zero-computation experts, LongCat-Flash-Omni integrates efficient multimodal perception and speech reconstruction modules. Despite its immense size of 560B parameters (with 27B activated), LongCat-Flash-Omni achieves low-latency real-time audio-visual interaction. For training infrastructure, we developed a modality-decoupled parallelism scheme specifically designed to manage the data and model heterogeneity inherent in large-scale multimodal training. This innovative approach demonstrates exceptional efficiency by sustaining over 90% of the throughput achieved by text-only training. Extensive evaluations show that LongCat-Flash-Omni achieves state-of-the-art performance on omni-modal benchmarks among open-source models. Furthermore, it delivers highly competitive results across a wide range of modality-specific tasks, including text, image, and video understanding, as well as audio understanding and generation. We provide a comprehensive overview of the model architecture design, training procedures, and data strategies, and open-source the model to foster future research and development in the community.",
+    "paper_abstract_zh": "我们介绍了LongCat-Flash-Omni，这是一个拥有5600亿参数的最先进开源多模态模型，擅长实时视听交互。通过采用受课程启发渐进式训练策略，从较简单的模态序列建模任务逐步过渡到越来越复杂的任务，LongCat-Flash-Omni在保持强大单模态能力的同时获得了全面的多模态能力。基于采用高性能快捷连接专家混合(MoE)架构且具有零计算专家的LongCat-Flash，LongCat-Flash-Omni集成了高效的多模态感知和语音重建模块。尽管拥有5600亿参数(激活270亿)，LongCat-Flash-Omni仍实现了低延迟的实时视听交互。在训练基础设施方面，我们开发了一种模态解耦并行方案，专门用于管理大规模多模态训练中固有的数据和模型异构性。这种创新方法通过维持超过文本-only训练90%的吞吐量，展示了卓越的效率。广泛的评估表明，LongCat-Flash-Omni在开源模型中实现了多模态基准的最先进性能。此外，它在广泛的模态特定任务中提供了极具竞争力的结果，包括文本、图像和视频理解，以及音频理解和生成。我们提供了模型架构设计、训练程序和数据策略的全面概述，并开源了该模型，以促进社区未来的研究和开发。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Distributed, Parallel, and Cluster Computing (cs.DC)",
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Meituan LongCat Team, Bairui Wang, Bayan, Bin Xiao, Bo Zhang, Bolin Rong, Borun Chen, Chang Wan, Chao Zhang, Chen Huang, Chen Chen, Chen Chen, Chengxu Yang, Chengzuo Yang, Cong Han, Dandan Peng, Delian Ruan, Detai Xin, Disong Wang, Dongchao Yang, Fanfan Liu, Fengjiao Chen, Fengyu Yang, Gan Dong, Gang Huang, Gang Xu, Guanglu Wan, Guoqiang Tan, Guoqiao Yu, Haibo Qiu, Hao Lu, Hongbo Liu, Hongyu Xiang, Jiaheng Wu, Jian Yang, Jiaxing Liu, Jing Huang, Jingang Wang, Jinrui Ding, Juchao Jiang, Jun Kuang, Jun Wang, Junhui Mei, Ke Ding, Kefeng Zhang, Lei Chen, Liang Shi, Limeng Qiao, Liming Zheng, Lin Ma, Liuyang Guo, Liya Ma, Luying Sun, Man Gao, Mengshen Zhu, Miao Cao, Minliang Lin, Nuo Xu, Peng Shi, Qi Zhang, Qian Fang, Qian Wang, Qian Yang, Quanxiu Wang, Rongxiang Weng, Rongxin Guo, Ruoxuan Liang, Senbin Yang, Shanbo Xu, Shanglin Lei, Shengze Ye, Shimin Chen, Shuaiqi Chen, Shujie Hu, Shuo Li, Siqi Yang, Siyu Xu, Siyu Ren, Song Li, Songxiang Liu, Tianhao Bai, Tianye Dai, Wei Hong, Wei Wang, Weixiao Zhao, Wengang Cao, Wenlong Zhu, Wenlong He, Xi Su, Xi Nan, Xiaohan Zhao, Xiaohao Wang, Xiaoyu Zhao, Xiaoyu Wang, Xiaoyu Li, Xin Pan, Xin Chen, Xiusong Sun, Xu Xiang, Xudong Xing",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Image Generation",
+      "Video Generation"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Rhythm in the Air: Vision-based Real-Time Music Generation through Gestures",
+    "paper_title_zh": "空中节奏：基于视觉的实时手势音乐生成",
+    "paper_id": "2511.00793",
+    "paper_abstract": "Gesture recognition is an essential component of human-computer interaction (HCI), facilitating seamless interconnectivity between users and computer systems without physical touch. This paper introduces an innovative application of vision-based dynamic gesture recognition (VDGR) for real-time music composition through gestures. To implement this application, we generate a custom gesture dataset that encompasses over 15000 samples across 21 classes, incorporating 7 musical notes each manifesting at three distinct pitch levels. To effectively deal with the modest volume of training data and to accurately discern and prioritize complex gesture sequences for music creation, we develop a multi-layer attention-based gated recurrent unit (MLA-GRU) model, in which gated recurrent unit (GRU) is used to learn temporal patterns from the observed sequence and an attention layer is employed to focus on musically pertinent gesture segments. Our empirical studies demonstrate that MLA-GRU significantly surpasses the classical GRU model, achieving a remarkable accuracy of 96.83% compared to the baseline's 86.7%. Moreover, our approach exhibits superior efficiency and processing speed, which are crucial for interactive applications. Using our proposed system, we believe that people will interact with music in a new and exciting way. It not only advances HCI experiences but also highlights MLA-GRU's effectiveness in scenarios demanding swift and precise gesture recognition.",
+    "paper_abstract_zh": "手势识别是人机交互（HCI）的重要组成部分，使用户与计算机系统无需物理接触即可实现无缝连接。本文介绍了一种基于视觉的动态手势识别（VDGR）的创新应用，用于通过手势进行实时音乐创作。为实现这一应用，我们生成了一个包含21个类别、超过15000个样本的自定义手势数据集，每个类别包含7个音符，每个音符以三种不同的音高呈现。为有效处理有限的训练数据，并准确识别和优先处理用于音乐创作的复杂手势序列，我们开发了一种基于多层注意力门控循环单元（MLA-GRU）的模型，其中门控循环单元（GRU）用于从观察序列中学习时间模式，注意力层则用于聚焦于与音乐相关的手势片段。我们的实证研究表明，MLA-GRU显著优于经典GRU模型，准确率达到96.83%，而基线模型为86.7%。此外，我们的方法在处理速度和效率方面表现出色，这对交互式应用至关重要。通过我们提出的系统，人们将以一种新颖而令人兴奋的方式与音乐互动。这不仅推进了HCI体验，还突显了MLA-GRU在需要快速精确手势识别的场景中的有效性。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-04",
+    "paper_authors": "Barathi Subramanian, Rathinaraja Jeyaraj, Anand Paul, Kapilya Gangadharan",
+    "topic": [
+      "Music Generation",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
