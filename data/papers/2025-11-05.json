@@ -1,0 +1,199 @@
+[
+  {
+    "paper_title": "Toward Objective and Interpretable Prosody Evaluation in Text-to-Speech: A Linguistically Motivated Approach",
+    "paper_title_zh": "面向文本到语音中韵律评估的客观性和可解释性：一种基于语言学的方法",
+    "paper_id": "2511.02104",
+    "paper_abstract": "Prosody is essential for speech technology, shaping comprehension, naturalness, and expressiveness. However, current text-to-speech (TTS) systems still struggle to accurately capture human-like prosodic variation, in part because existing evaluation methods for prosody remain limited. Traditional metrics like Mean Opinion Score (MOS) are resource-intensive, inconsistent, and offer little insight into why a system sounds unnatural. This study introduces a linguistically informed, semi-automatic framework for evaluating TTS prosody through a two-tier architecture that mirrors human prosodic organization. The method uses quantitative linguistic criteria to evaluate synthesized speech against human speech corpora across multiple acoustic dimensions. By integrating discrete and continuous prosodic measures, it provides objective and interpretable metrics of both event placement and cue realization, while accounting for the natural variability observed across speakers and prosodic cues. Results show strong correlations with perceptual MOS ratings while revealing model-specific weaknesses that traditional perceptual tests alone cannot capture. This approach provides a principled path toward diagnosing, benchmarking, and ultimately improving the prosodic naturalness of next-generation TTS systems.",
+    "paper_abstract_zh": "韵律对语音技术至关重要，它影响着理解度、自然度和表现力。然而，当前的文本到语音（TTS）系统仍然难以准确捕捉类似人类的韵律变化，部分原因是现有的韵律评估方法仍然有限。诸如平均意见得分（MOS）之类的传统指标资源密集、不一致，且无法解释系统为何听起来不自然。本研究引入了一种基于语言学的半自动框架，通过模仿人类韵律组织的双层架构来评估TTS韵律。该方法使用定量语言学标准，在多个声学维度上将合成语音与人类语音语料库进行比较。通过整合离散和连续的韵律测量，它提供了关于事件放置和线索实现的目标和可解释指标，同时考虑了不同说话人和韵律线索之间观察到的自然变异性。结果显示与感知MOS评分有强相关性，同时揭示了传统感知测试无法捕捉的模型特定弱点。这种方法为诊断、基准测试并最终改进下一代TTS系统的韵律自然性提供了原则性的路径。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Cedric Chan, Jianjing Kuang",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "From the perspective of perceptual speech quality: The robustness of frequency bands to noise",
+    "paper_title_zh": "从感知语音质量的角度：频带对噪声的鲁棒性",
+    "paper_id": "2511.02252",
+    "paper_abstract": "Speech quality is one of the main foci of speech-related research, where it is frequently studied with speech intelligibility, another essential measurement. Band-level perceptual speech intelligibility, however, has been studied frequently, whereas speech quality has not been thoroughly analyzed. In this paper, a Multiple Stimuli With Hidden Reference and Anchor (MUSHRA) inspired approach was proposed to study the individual robustness of frequency bands to noise with perceptual speech quality as the measure. Speech signals were filtered into thirty-two frequency bands with compromising real-world noise employed at different signal-to-noise ratios. Robustness to noise indices of individual frequency bands was calculated based on the human-rated perceptual quality scores assigned to the reconstructed noisy speech signals. Trends in the results suggest the mid-frequency region appeared less robust to noise in terms of perceptual speech quality. These findings suggest future research aiming at improving speech quality should pay more attention to the mid-frequency region of the speech signals accordingly.",
+    "paper_abstract_zh": "语音质量是语音相关研究的主要焦点之一，通常与语音可懂度这一重要测量指标一起进行研究。然而，频带级别的感知语音可懂度已被广泛研究，而语音质量尚未得到充分分析。本文提出了一种受多重刺激隐藏参考和锚点(MUSHRA)方法启发的途径，以感知语音质量为度量，研究频带对噪声的个体鲁棒性。语音信号被滤波为三十二个频带，并在不同信噪比下采用了折中的现实世界噪声。基于人类对重建的含噪语音信号感知质量评分，计算了各频带的噪声鲁棒性指数。结果表明，中频区域在感知语音质量方面对噪声的鲁棒性较差。这些发现表明，旨在提高语音质量的未来研究应相应地更多地关注语音信号的中频区域。",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Junyi Fan, Donald S. Williamson",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Augmenting Open-Vocabulary Dysarthric Speech Assessment with Human Perceptual Supervision",
+    "paper_title_zh": "利用人类感知监督增强开放词汇构音障碍语音评估",
+    "paper_id": "2511.02270",
+    "paper_abstract": "Dysarthria is a speech disorder characterized by impaired intelligibility and reduced communicative effectiveness. Automatic dysarthria assessment provides a scalable, cost-effective approach for supporting the diagnosis and treatment of neurological conditions such as Parkinson's disease, Alzheimer's disease, and stroke. This study investigates leveraging human perceptual annotations from speech synthesis assessment as reliable out-of-domain knowledge for dysarthric speech assessment. Experimental results suggest that such supervision can yield consistent and substantial performance improvements in self-supervised learning pre-trained models. These findings suggest that perceptual ratings aligned with human judgments from speech synthesis evaluations represent valuable resources for dysarthric speech modeling, enabling effective cross-domain knowledge transfer.",
+    "paper_abstract_zh": "构音障碍是一种以可懂度受损和沟通效果降低为特征的言语障碍。自动构音障碍评估为支持帕金森病、阿尔茨海默病和中风等神经状况的诊断和治疗提供了一种可扩展、具有成本效益的方法。本研究探讨了利用语音合成评估中的人类感知注释作为构音障碍语音评估的可靠领域外知识。实验结果表明，这种监督可以在自监督学习预训练模型中带来一致且显著的性能提升。这些发现表明，与语音合成评估中人类判断一致的感知评级是构音障碍语音建模的宝贵资源，能够实现有效的跨领域知识转移。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Kaimeng Jia, Minzhu Tu, Zengrui Jin, Siyin Wang, Chao Zhang",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Multiplexing Neural Audio Watermarks",
+    "paper_title_zh": "多路复用神经音频水印",
+    "paper_id": "2511.02278",
+    "paper_abstract": "Audio watermarking is a promising tool to ensure authenticity of speech content. However, existing watermarking methods remain vulnerable to more advanced dilution attacks such as lossy compression and neural reconstruction. In this paper, we propose to multiplex neural audio watermarking techniques to leverage their complementarity under different types of attacks. Specifically, five different multiplexing designs are investigated, including parallel, sequential, frequency-division, time-division and perceptual adaptive time-frequency multiplexing (PA-TFM). We evaluate our multiplexing technique on LibriSpeech data with 11 different attack methods, including 2 new neural reconstruction attacks featuring recent advancements in speech processing. As a result, the proposed PA-TFM as a training-free multiplexing method achieves better performance than single watermarking baselines by clear margins, showcasing a more robust way of using watermarks for audio.",
+    "paper_abstract_zh": "音频水印是一种确保语音内容真实性的有前景的工具。然而，现有的水印方法仍然容易受到更高级的稀释攻击，如有损压缩和神经重构。在本文中，我们提出多路复用神经音频水印技术，以利用它们在不同类型攻击下的互补性。具体来说，研究了五种不同的多路复用设计，包括并行、顺序、频分、时分和感知自适应时频复用（PA-TFM）。我们在LibriSpeech数据集上使用11种不同的攻击方法评估了我们的多路复用技术，其中包括2种利用语音处理最新进展的新型神经重构攻击。结果表明，所提出的PA-TFM作为一种无需训练的多路复用方法，以明显的优势优于单一水印基线，展示了音频水印的一种更鲁棒的使用方式。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Zheqi Yuan, Yucheng Huang, Guangzhi Sun, Zengrui Jin, Chao Zhang",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Condition-Invariant fMRI Decoding of Speech Intelligibility with Deep State Space Model",
+    "paper_title_zh": "基于深度状态空间模型的语音可懂度条件不变fMRI解码",
+    "paper_id": "2511.01868",
+    "paper_abstract": "Clarifying the neural basis of speech intelligibility is critical for computational neuroscience and digital speech processing. Recent neuroimaging studies have shown that intelligibility modulates cortical activity beyond simple acoustics, primarily in the superior temporal and inferior frontal gyri. However, previous studies have been largely confined to clean speech, leaving it unclear whether the brain employs condition-invariant neural codes across diverse listening environments. To address this gap, we propose a novel architecture built upon a deep state space model for decoding intelligibility from fMRI signals, specifically tailored to their high-dimensional temporal structure. We present the first attempt to decode intelligibility across acoustically distinct conditions, showing our method significantly outperforms classical approaches. Furthermore, region-wise analysis highlights contributions from auditory, frontal, and parietal regions, and cross-condition transfer indicates the presence of condition-invariant neural codes, thereby advancing understanding of abstract linguistic representations in the brain.",
+    "paper_abstract_zh": "阐明语音可懂度的神经基础对于计算神经科学和数字语音处理至关重要。最近的神经影像学研究显示，可懂度除了影响简单的声学特性外，还会调节大脑皮层的活动，主要发生在颞上回和额下回。然而，以往的研究大多局限于清晰语音，使得大脑是否能在多样化的聆听环境中采用条件不变的神经编码尚不清楚。为解决这一研究空白，我们提出了一种基于深度状态空间模型的新型架构，用于从fMRI信号中解码可懂度，特别针对其高维时间结构进行了优化。我们首次尝试在声学条件不同的环境下解码可懂度，结果表明我们的方法显著优于传统方法。此外，区域分析强调了听觉、额叶和顶叶区域的贡献，而跨条件转移则表明存在条件不变的神经编码，从而增进了对大脑中抽象语言表征的理解。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)",
+      "Neurons and Cognition (q-bio.NC)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Ching-Chih Sung, Shuntaro Suzuki, Francis Pingfan Chien, Komei Sugiura, Yu Tsao",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "An unscented Kalman filter method for real time input-parameter-state estimation",
+    "paper_title_zh": "一种用于实时输入参数状态估计的无迹卡尔曼滤波方法",
+    "paper_id": "2511.02717",
+    "paper_abstract": "The input-parameter-state estimation capabilities of a novel unscented Kalman filter is examined herein on both linear and nonlinear systems. The unknown input is estimated in two stages within each time step. Firstly, the predicted dynamic states and the system parameters provide an estimation of the input. Secondly, the corrected with measurements states and parameters provide a final estimation. Importantly, it is demonstrated using the perturbation analysis that, a system with at least a zero or a non-zero known input can potentially be uniquely identified. This output-only methodology allows for a better understanding of the system compared to classical output-only parameter identification strategies, given that all the dynamic states, the parameters, and the input are estimated jointly and in real-time.",
+    "paper_abstract_zh": "本文研究了一种新型无迹卡尔曼滤波器在线性和非线性系统中的输入参数状态估计能力。未知输入在每个时间步内通过两个阶段进行估计。首先，根据预测的动态状态和系统参数对输入进行初步估计。其次，根据测量校正后的状态和参数进行最终估计。重要的是，通过扰动分析证明，至少具有零输入或非零已知输入的系统可以被唯一识别。与传统的仅输出参数识别策略相比，这种仅输出的方法能够更好地理解系统，因为所有动态状态、参数和输入都是联合实时估计的。",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)",
+      "Systems and Control (eess.SY)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Marios Impraimakis, Andrew W. Smyth",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Improving DF-Conformer Using Hydra For High-Fidelity Generative Speech Enhancement on Discrete Codec Token",
+    "paper_title_zh": "基于Hydra的DF-Conformer改进用于高保真离散编解码器令牌生成语音增强",
+    "paper_id": "2511.02454",
+    "paper_abstract": "The Dilated FAVOR Conformer (DF-Conformer) is an efficient variant of the Conformer architecture designed for speech enhancement (SE). It employs fast attention through positive orthogonal random features (FAVOR+) to mitigate the quadratic complexity associated with self-attention, while utilizing dilated convolution to expand the receptive field. This combination results in impressive performance across various SE models. In this paper, we propose replacing FAVOR+ with bidirectional selective structured state-space sequence models to achieve two main objectives:(1) enhancing global sequential modeling by eliminating the approximations inherent in FAVOR+, and (2) maintaining linear complexity relative to the sequence length. Specifically, we utilize Hydra, a bidirectional extension of Mamba, framed within the structured matrix mixer framework. Experiments conducted using a generative SE model on discrete codec tokens, known as Genhancer, demonstrate that the proposed method surpasses the performance of the DF-Conformer.",
+    "paper_abstract_zh": "扩张FAVOIR Conformer (DF-Conformer) 是Conformer架构的一种高效变体，专为语音增强(SE)设计。它通过正交随机特征(FAVOR+)实现快速注意力，以缓解自注意力相关的二次复杂度问题，同时利用扩张卷积扩大感受野。这种组合在各种SE模型中表现出色。本文中，我们提出用双向选择性结构化状态空间序列模型替代FAVOR+，以实现两个主要目标：(1)通过消除FAVOR+固有的近似来增强全局序列建模能力，(2)保持与序列长度成线性复杂度。具体而言，我们使用了Hydra，这是Mamba的双向扩展，并在结构化矩阵混合器框架内构建。在基于离散编解码器令牌的生成SE模型(称为Genhancer)上进行的实验表明，所提出的方法超越了DF-Conformer的性能。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Shogo Seki, Shaoxiang Dang, Li Li",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Perceived Femininity in Singing Voice: Analysis and Prediction",
+    "paper_title_zh": "歌唱声音中的感知女性气质：分析与预测",
+    "paper_id": "2511.02726",
+    "paper_abstract": "This paper focuses on the often-overlooked aspect of perceived voice femininity in singing voices. While existing research has examined perceived voice femininity in speech, the same concept has not yet been studied in singing voice. The analysis of gender bias in music content could benefit from such study. To address this gap, we design a stimuli-based survey to measure perceived singing voice femininity (PSVF), and collect responses from 128 participants. Our analysis reveals intriguing insights into how PSVF varies across different demographic groups. Furthermore, we propose an automatic PSVF prediction model by fine-tuning an x-vector model, offering a novel tool for exploring gender stereotypes related to voices in music content analysis beyond binary sex classification. This study contributes to a deeper understanding of the complexities surrounding perceived femininity in singing voices by analyzing survey and proposes an automatic tool for future research.",
+    "paper_abstract_zh": "本文关注歌唱声音中常被忽视的感知女性气质方面。虽然现有研究已经考察了语音中的感知女性气质，但同一概念尚未在歌唱声音中得到研究。音乐内容中的性别偏见分析可以从此类研究中受益。为填补这一空白，我们设计了一种基于刺激的调查来测量感知歌唱声音女性气质(PSVF)，并收集了128名参与者的回应。我们的分析揭示了PSVF如何在不同人口统计群体中变化的有趣见解。此外，我们通过微调x-vector模型提出了一个自动PSVF预测模型，为探索音乐内容分析中与声音相关的性别刻板印象提供了新颖的工具，超越了二元性别分类。本研究通过分析调查结果，加深了对歌唱声音中感知女性气质复杂性的理解，并为未来研究提出了一个自动工具。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Yuexuan Kong, Viet-Anh Tran, Romain Hennequin",
+    "topic": [
+      "Audio Classification",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "An Evaluation of Interleaved Instruction Tuning on Semantic Reasoning Performance in an Audio MLLM",
+    "paper_title_zh": "",
+    "paper_id": "2511.02234",
+    "paper_abstract": "Standard training for Multi-modal Large Language Models (MLLMs) involves concatenating non-textual information, like vision or audio, with a text prompt. This approach may not encourage deep integration of modalities, limiting the model's ability to leverage the core language model's reasoning capabilities. This work examined the impact of interleaved instruction tuning in an audio MLLM, where audio tokens are interleaved within the prompt. Using the Listen, Think, and Understand (LTU) model as a testbed, we conduct an experiment using the Synonym and Hypernym Audio Reasoning Dataset (SHARD), our newly created reasoning benchmark for audio-based semantic reasoning focusing on synonym and hypernym recognition. Our findings show that while even zero-shot interleaved prompting improves performance on our reasoning tasks, a small amount of fine-tuning using interleaved training prompts improves the results further, however, at the expense of the MLLM's audio labeling ability.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Jiawei Liu, Enis Berk Çoban, Zarina Schevchenko, Hao Tang, Zhigang Zhu, Michael I Mandel, Johanna Devaney",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "H-Infinity Filter Enhanced CNN-LSTM for Arrhythmia Detection from Heart Sound Recordings",
+    "paper_title_zh": "基于H-Infinity滤波器增强的CNN-LSTM用于心律失常检测",
+    "paper_id": "2511.02379",
+    "paper_abstract": "Early detection of heart arrhythmia can prevent severe future complications in cardiac patients. While manual diagnosis still remains the clinical standard, it relies heavily on visual interpretation and is inherently subjective. In recent years, deep learning has emerged as a powerful tool to automate arrhythmia detection, offering improved accuracy, consistency, and efficiency. Several variants of convolutional and recurrent neural network architectures have been widely explored to capture spatial and temporal patterns in physiological signals. However, despite these advancements, current models often struggle to generalize well in real-world scenarios, especially when dealing with small or noisy datasets, which are common challenges in biomedical applications. In this paper, a novel CNN-H-Infinity-LSTM architecture is proposed to identify arrhythmic heart signals from heart sound recordings. This architecture introduces trainable parameters inspired by the H-Infinity filter from control theory, enhancing robustness and generalization. Extensive experimentation on the PhysioNet CinC Challenge 2016 dataset, a public benchmark of heart audio recordings, demonstrates that the proposed model achieves stable convergence and outperforms existing benchmarks, with a test accuracy of 99.42% and an F1 score of 98.85%.",
+    "paper_abstract_zh": "早期检测心脏心律失常可以预防心脏病患者未来的严重并发症。虽然手动诊断仍然是临床标准，但它严重依赖视觉解释且具有主观性。近年来，深度学习已成为自动化心律失常检测的强大工具，提供了更高的准确性、一致性和效率。卷积神经网络和循环神经网络架构的多种变体已被广泛探索，用于捕捉生理信号中的空间和时间模式。然而，尽管取得了这些进展，当前模型在真实场景中往往难以很好地泛化，尤其是在处理小型或有噪声的数据集时，这是生物医学应用的常见挑战。本文提出了一种新颖的CNN-H-Infinity-LSTM架构，用于从心脏声音记录中识别心律失常信号。该架构引入了受控制理论中H-Infinity滤波器启发的可训练参数，增强了模型的鲁棒性和泛化能力。在PhysioNet CinC Challenge 2016数据集（一个公开的心脏音频记录基准）上进行的大量实验表明，所提出的模型实现了稳定的收敛性能，并优于现有基准，测试准确率达到99.42%，F1得分为98.85%。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Systems and Control (eess.SY)"
+    ],
+    "update_time": "2025-11-05",
+    "paper_authors": "Rohith Shinoj Kumar, Rushdeep Dinda, Aditya Tyagi, Annappa B., Naveen Kumar M. R",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
