@@ -1,0 +1,205 @@
+[
+  {
+    "paper_title": "Quantifying Articulatory Coordination as a Biomarker for Schizophrenia",
+    "paper_title_zh": "量化发音协调性作为精神分裂症的生物标志物",
+    "paper_id": "2511.03084",
+    "paper_abstract": "Advances in artificial intelligence (AI) and deep learning have improved diagnostic capabilities in healthcare, yet limited interpretability continues to hinder clinical adoption. Schizophrenia, a complex disorder with diverse symptoms including disorganized speech and social withdrawal, demands tools that capture symptom severity and provide clinically meaningful insights beyond binary diagnosis. Here, we present an interpretable framework that leverages articulatory speech features through eigenspectra difference plots and a weighted sum with exponential decay (WSED) to quantify vocal tract coordination. Eigenspectra plots effectively distinguished complex from simpler coordination patterns, and WSED scores reliably separated these groups, with ambiguity confined to a narrow range near zero. Importantly, WSED scores correlated not only with overall BPRS severity but also with the balance between positive and negative symptoms, reflecting more complex coordination in subjects with pronounced positive symptoms and the opposite trend for stronger negative symptoms. This approach offers a transparent, severity-sensitive biomarker for schizophrenia, advancing the potential for clinically interpretable speech-based assessment tools.",
+    "paper_abstract_zh": "人工智能（AI）和深度学习的进步提高了医疗保健领域的诊断能力，但有限的解释性继续阻碍临床应用。精神分裂症是一种复杂疾病，症状多样，包括言语紊乱和社会退缩，需要能够捕捉症状严重程度并提供超越二元诊断的临床有意义见解的工具。在这里，我们提出一个可解释的框架，通过特征谱差图和带指数衰减的加权和（WSED）利用发音语音特征来量化声道协调性。特征谱图能有效区分复杂和简单的协调模式，WSED分数可靠地分离了这些组，模糊性仅限于零附近的狭窄范围。重要的是，WSED分数不仅与整体BPRS严重程度相关，还与阳性症状和阴性症状之间的平衡相关，反映了阳性症状明显的受试者具有更复杂的协调性，而阴性症状更强的受试者则呈现相反趋势。这种方法为精神分裂症提供了一种透明、对严重程度敏感的生物标志物，推进了基于语音的临床可解释评估工具的潜力。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Gowtham Premananth, Carol Espy-Wilson",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speech-Based Prioritization for Schizophrenia Intervention",
+    "paper_title_zh": "基于语音的精神分裂症干预优先级排序",
+    "paper_id": "2511.03086",
+    "paper_abstract": "Millions of people suffer from mental health conditions, yet many remain undiagnosed or receive delayed care due to limited clinical resources and labor-intensive assessment methods. While most machine-assisted approaches focus on diagnostic classification, estimating symptom severity is essential for prioritizing care, particularly in resource-constrained settings. Speech-based AI provides a scalable alternative by enabling automated, continuous, and remote monitoring, reducing reliance on subjective self-reports and time-consuming evaluations. In this paper, we introduce a speech-based model for pairwise comparison of schizophrenia symptom severity, leveraging articulatory and acoustic features. These comparisons are used to generate severity rankings via the Bradley-Terry model. Our approach outperforms previous regression-based models on ranking-based metrics, offering a more effective solution for clinical triage and prioritization.",
+    "paper_abstract_zh": "数百万人患有心理健康疾病，但由于临床资源有限和评估方法劳动密集，许多人仍未被诊断或获得延迟治疗。虽然大多数机器辅助方法侧重于诊断分类，但估计症状严重程度对于护理优先级排序至关重要，特别是在资源受限的环境中。基于语音的人工智能提供了一种可扩展的替代方案，通过实现自动化、连续和远程监测，减少对主观自我报告和耗时的评估的依赖。在本文中，我们介绍了一种基于语音的精神分裂症症状严重程度成对比较模型，利用发音和声学特征。这些比较通过Bradley-Terry模型生成严重程度排序。我们的方法在基于排名的指标上优于之前的基于回归的模型，为临床分诊和优先级排序提供了更有效的解决方案。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Gowtham Premananth, Philip Resnik, Sonia Bansal, Deanna L.Kelly, Carol Espy-Wilson",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "TASU: Text-Only Alignment for Speech Understanding",
+    "paper_title_zh": "TASU: 面向语音理解的纯文本对齐",
+    "paper_id": "2511.03310",
+    "paper_abstract": "Recent advances in Speech Large Language Models (Speech LLMs) have paved the way for unified architectures across diverse speech understanding tasks. However, prevailing alignment paradigms rely heavily on large-scale audio-text paired data and computationally intensive training, yet often exhibit limited generalization to unseen domains or tasks. To address these limitations, we propose TASU (Text-only Alignment for Speech Understanding), a novel alignment paradigm that can leverage only unpaired text data to guide cross-modal alignment. Experiments show that TASU achieves competitive zero-shot speech recognition. Leveraging this property, it can further function as a pre-training stage in curriculum learning, enhancing domain generalization in speech recognition. Ultimately, TASU can extend its zero-shot generalization to a wide range of speech understanding tasks and notably outperforms prominent Speech LLMs including GLM-4-Voice and Step-Audio on the MMSU benchmark, establishing TASU as an efficient and scalable alignment paradigm for Speech LLMs.",
+    "paper_abstract_zh": "最近，语音大语言模型(Speech LLMs)的进步为各种语音理解任务提供了统一架构的可能性。然而，当前的对齐范式严重依赖大规模的音频-文本配对数据和计算密集型训练，但通常在未见过的领域或任务上表现出有限的泛化能力。为解决这些局限性，我们提出了TASU(面向语音理解的纯文本对齐)，一种新颖的对齐范式，它仅能利用未配对的文本来指导跨模态对齐。实验表明，TASU实现了具有竞争力的零样本语音识别。利用这一特性，它还可以作为课程学习中的预训练阶段，增强语音识别的领域泛化能力。最终，TASU能够将其零样本泛化能力扩展到广泛的语音理解任务，并在MMSU基准测试上显著优于包括GLM-4-Voice和Step-Audio在内的 prominent Speech LLMs，使TASU成为语音LLMs的一种高效且可扩展的对齐范式。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Jing Peng, Yi Yang, Xu Li, Yu Xi, Quanwei Tang, Yangui Fang, Junjie Li, Kai Yu",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "audio2chart: End to End Audio Transcription into playable Guitar Hero charts",
+    "paper_title_zh": "audio2chart: 从原始音频端到端转录为可玩的吉他英雄谱",
+    "paper_id": "2511.03337",
+    "paper_abstract": "This work introduces audio2chart, a framework for the automatic generation of Guitar Hero style charts directly from raw audio. The task is formalized as a sequence prediction problem, where models are trained to generate discrete chart tokens aligned with the audio on discrete time steps. An unconditional baseline demonstrates strong predictive performance, while the addition of audio conditioning yields consistent improvements across accuracy based metrics. This work demonstrates that incorporating audio conditioning is both feasible and effective for improving note prediction in automatic chart generation. The complete codebase for training and inference is publicly available on GitHub supporting reproducible research on neural chart generation. A family of pretrained models is released on Hugging Face.",
+    "paper_abstract_zh": "这项工作介绍了audio2chart，一个直接从原始音频自动生成吉他英雄风格谱的框架。该任务被形式化为序列预测问题，其中模型被训练为在离散时间步生成与音频对齐的离散谱标记。一个无条件的基线模型展示了强大的预测性能，而添加音频条件则在基于准确性的指标上带来了一致的改进。这项工作证明了，在自动谱生成中纳入音频条件对于改进音符预测是可行且有效的。用于训练和推理的完整代码库已在GitHub上公开，支持神经谱生成的可重复研究。一组预训练模型已在Hugging Face上发布。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Riccardo Tripodi",
+    "topic": [
+      "Music Information Retrieval",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Open Source State-Of-the-Art Solution for Romanian Speech Recognition",
+    "paper_title_zh": "罗马尼亚语音识别的开源最先进解决方案",
+    "paper_id": "2511.03361",
+    "paper_abstract": "In this work, we present a new state-of-the-art Romanian Automatic Speech Recognition (ASR) system based on NVIDIA's FastConformer architecture--explored here for the first time in the context of Romanian. We train our model on a large corpus of, mostly, weakly supervised transcriptions, totaling over 2,600 hours of speech. Leveraging a hybrid decoder with both Connectionist Temporal Classification (CTC) and Token-Duration Transducer (TDT) branches, we evaluate a range of decoding strategies including greedy, ALSD, and CTC beam search with a 6-gram token-level language model. Our system achieves state-of-the-art performance across all Romanian evaluation benchmarks, including read, spontaneous, and domain-specific speech, with up to 27% relative WER reduction compared to previous best-performing systems. In addition to improved transcription accuracy, our approach demonstrates practical decoding efficiency, making it suitable for both research and deployment in low-latency ASR applications.",
+    "paper_abstract_zh": "在这项工作中，我们提出了一种基于NVIDIA FastConformer架构的新型罗马尼亚自动语音识别(ASR)系统--这是首次在罗马尼亚语境中探索该架构。我们在一个大型语料库上训练我们的模型，该语料库主要包含弱监督转录，总计超过2600小时的语音。利用具有连接主义时间分类(CTC)和令牌持续时间转换器(TDT)分支的混合解码器，我们评估了一系列解码策略，包括贪婪搜索、ALSD和带有6元语法令牌级语言模型的CTC束搜索。我们的系统在所有罗马尼亚评估基准上实现了最先进的性能，包括朗读、自发和领域特定语音，与之前表现最好的系统相比，相对词错误率(WER)降低了高达27%。除了提高转录准确性外，我们的方法还展示了实用的解码效率，使其适用于低延迟ASR应用的研究和部署。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Gabriel Pirlogeanu, Alexandru-Lucian Georgescu, Horia Cucu",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Seeing What You Say: Expressive Image Generation from Speech",
+    "paper_title_zh": "所见即所言：从语音生成表现力图像",
+    "paper_id": "2511.03423",
+    "paper_abstract": "This paper proposes VoxStudio, the first unified and end-to-end speech-to-image model that generates expressive images directly from spoken descriptions by jointly aligning linguistic and paralinguistic information. At its core is a speech information bottleneck (SIB) module, which compresses raw speech into compact semantic tokens, preserving prosody and emotional nuance. By operating directly on these tokens, VoxStudio eliminates the need for an additional speech-to-text system, which often ignores the hidden details beyond text, e.g., tone or emotion. We also release VoxEmoset, a large-scale paired emotional speech-image dataset built via an advanced TTS engine to affordably generate richly expressive utterances. Comprehensive experiments on the SpokenCOCO, Flickr8kAudio, and VoxEmoset benchmarks demonstrate the feasibility of our method and highlight key challenges, including emotional consistency and linguistic ambiguity, paving the way for future research.",
+    "paper_abstract_zh": "本文提出了VoxStudio，这是首个统一且端到端的语音到图像模型，它通过联合对齐语言和副语言信息，直接从语音描述中生成表现力图像。其核心是一个语音信息瓶颈（SIB）模块，将原始语音压缩为紧凑的语义标记，保留了韵律和情感细微差别。通过直接在这些标记上操作，VoxStudio消除了额外的语音到文本系统的需求，而该系统通常忽略文本之外的隐藏细节，如语调或情感。我们还发布了VoxEmoset，这是一个大规模的配对情感语音-图像数据集，通过先进的TTS引擎构建，可经济地生成丰富表现力的语音。在SpokenCOCO、Flickr8kAudio和VoxEmoset基准上的全面实验证明了我们方法的可行性，并突出了关键挑战，包括情感一致性和语言歧义，为未来研究铺平了道路。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Jiyoung Lee, Song Park, Sanghyuk Chun, Soo-Whan Chung",
+    "topic": [
+      "Audio Representation Learning",
+      "Image Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "A Computational Approach to Analyzing Disrupted Language in Schizophrenia: Integrating Surprisal and Coherence Measures",
+    "paper_title_zh": "一种分析精神分裂症语言障碍的计算方法：整合意外性和连贯性度量",
+    "paper_id": "2511.03089",
+    "paper_abstract": "Language disruptions are one of the well-known effects of schizophrenia symptoms. They are often manifested as disorganized speech and impaired discourse coherence. These abnormalities in spontaneous language production reflect underlying cognitive disturbances and have the potential to serve as objective markers for symptom severity and diagnosis of schizophrenia. This study focuses on how these language disruptions can be characterized in terms of two computational linguistic measures: surprisal and semantic coherence. By computing surprisal and semantic coherence of language using computational models, this study investigates how they differ between subjects with schizophrenia and healthy controls. Furthermore, this study provides further insight into how language disruptions in terms of these linguistic measures change with varying degrees of schizophrenia symptom severity.",
+    "paper_abstract_zh": "语言障碍是精神分裂症症状的众所周知的影响之一。它们通常表现为言语紊乱和话语连贯性受损。这些自发语言生产的异常反映了潜在的认知障碍，并有可能成为精神分裂症症状严重程度和诊断的客观标志物。本研究重点在于如何通过两个计算语言学度量——意外性和语义连贯性——来表征这些语言障碍。通过使用计算模型计算语言的意外性和语义连贯性，本研究探讨了精神分裂症患者与健康对照组在这些度量上的差异。此外，本研究进一步揭示了基于这些语言学度量的语言障碍如何随精神分裂症症状严重程度的变化而变化。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Gowtham Premananth, Carol Espy-Wilson",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Step-Audio-EditX Technical Report",
+    "paper_title_zh": "Step-Audio-EditX 技术报告",
+    "paper_id": "2511.03601",
+    "paper_abstract": "We present Step-Audio-EditX, the first open-source LLM-based audio model excelling at expressive and iterative audio editing encompassing emotion, speaking style, and paralinguistics alongside robust zero-shot text-to-speech (TTS) this http URL core innovation lies in leveraging only large-margin synthetic data, which circumvents the need for embedding-based priors or auxiliary modules. This large-margin learning approach enables both iterative control and high expressivity across voices, and represents a fundamental pivot from the conventional focus on representation-level disentanglement. Evaluation results demonstrate that Step-Audio-EditX surpasses both MiniMax-2.6-hd and Doubao-Seed-TTS-2.0 in emotion editing and other fine-grained control tasks.",
+    "paper_abstract_zh": "我们提出了 Step-Audio-EditX，这是第一个开源的基于大型语言模型（LLM）的音频模型，擅长于情感、说话风格和副语言等富有表现力和迭代性的音频编辑，同时具备强大的零样本文本到语音（TTS）能力。其核心创新在于仅利用大边距合成数据，这避免了基于嵌入的先验或辅助模块的需求。这种大边距学习方法实现了跨语音的迭代控制和高度表现力，并从根本上代表了从传统表示级解纠缠的转向。评估结果表明，在情感编辑和其他细粒度控制任务中，Step-Audio-EditX 优于 MiniMax-2.6-hd 和 Doubao-Seed-TTS-2.0。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Human-Computer Interaction (cs.HC)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Chao Yan, Boyong Wu, Peng Yang, Pengfei Tan, Guoqiang Hu, Yuxin Zhang, Xiangyu, Zhang, Fei Tian, Xuerui Yang, Xiangyu Zhang, Daxin Jiang, Gang Yu",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Why Not Put a Microphone Near the Loudspeaker? A New Paradigm for Acoustic Echo Cancellation",
+    "paper_title_zh": "为什么不在扬声器附近放置麦克风？声学回声消除的新范式",
+    "paper_id": "2511.03244",
+    "paper_abstract": "Acoustic echo cancellation (AEC) remains challenging in real-world environments due to nonlinear distortions caused by low-cost loudspeakers and complex room acoustics. To mitigate these issues, we introduce a dual-microphone configuration, where an auxiliary reference microphone is placed near the loudspeaker to capture the nonlinearly distorted far-end signal. Although this reference signal is contaminated by near-end speech, we propose a preprocessing module based on Wiener filtering to estimate a compressed time-frequency mask to suppress near-end components. This purified reference signal enables a more effective linear AEC stage, whose residual error signal is then fed to a deep neural network for joint residual echo and noise suppression. Evaluation results show that our method outperforms baseline approaches on matched test sets. To evaluate its robustness under strong nonlinearities, we further test it on a mismatched dataset and observe that it achieves substantial performance gains. These results demonstrate its effectiveness in practical scenarios where the nonlinear distortions are typically unknown.",
+    "paper_abstract_zh": "由于低成本扬声器引起的非线性失真和复杂的房间声学特性，声学回声消除（AEC）在实际环境中仍然具有挑战性。为了缓解这些问题，我们引入了一种双麦克风配置，其中在扬声器附近放置一个辅助参考麦克风，用于捕获非线性失真的远端信号。尽管这个参考信号受到近端语音的污染，但我们提出了一种基于维纳滤波的预处理模块，以估计一个压缩时频掩码来抑制近端分量。这个纯化的参考信号使线性AEC阶段更加有效，其残余误差信号随后被输入到深度神经网络，用于联合残余回声和噪声抑制。评估结果表明，我们的方法在匹配测试集上优于基线方法。为了评估其在强非线性下的鲁棒性，我们在不匹配的数据集上进一步测试，观察到其性能显著提升。这些结果证明了它在非线性失真通常未知的实际场景中的有效性。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Fei Zhao, Zhong-Qiu Wang",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SyMuPe: Affective and Controllable Symbolic Music Performance",
+    "paper_title_zh": "SyMuPe：情感化且可控的符号音乐表演",
+    "paper_id": "2511.03425",
+    "paper_abstract": "Emotions are fundamental to the creation and perception of music performances. However, achieving human-like expression and emotion through machine learning models for performance rendering remains a challenging task. In this work, we present SyMuPe, a novel framework for developing and training affective and controllable symbolic piano performance models. Our flagship model, PianoFlow, uses conditional flow matching trained to solve diverse multi-mask performance inpainting tasks. By design, it supports both unconditional generation and infilling of music performance features. For training, we use a curated, cleaned dataset of 2,968 hours of aligned musical scores and expressive MIDI performances. For text and emotion control, we integrate a piano performance emotion classifier and tune PianoFlow with the emotion-weighted Flan-T5 text embeddings provided as conditional inputs. Objective and subjective evaluations against transformer-based baselines and existing models show that PianoFlow not only outperforms other approaches, but also achieves performance quality comparable to that of human-recorded and transcribed MIDI samples. For emotion control, we present and analyze samples generated under different text conditioning scenarios. The developed model can be integrated into interactive applications, contributing to the creation of more accessible and engaging music performance systems.",
+    "paper_abstract_zh": "情感是音乐创作和感知的基础。然而，通过机器学习模型实现表演渲染中类似人类的表达和情感仍然是一项具有挑战性的任务。在这项工作中，我们提出了SyMuPe，这是一个用于开发和训练情感化且可控的符号钢琴表演模型的新框架。我们的旗舰模型PianoFlow使用条件流匹配进行训练，以解决多样化的多掩码表演修复任务。通过设计，它支持音乐表演特征的无条件生成和修复。对于训练，我们使用了一个精心策划和清理的数据集，包含2968小时的对齐乐谱和表现力MIDI表演。对于文本和情感控制，我们集成了一架钢琴表演情感分类器，并使用作为条件输入提供的情感加权Flan-T5文本嵌入对PianoFlow进行微调。与基于Transformer的基线和现有模型进行的客观和主观评估表明，PianoFlow不仅优于其他方法，而且实现了与人类录制和转录的MIDI样本相当的性能质量。对于情感控制，我们展示了并分析了在不同文本条件场景下生成的样本。所开发的模型可以集成到交互式应用中，有助于创建更易于访问和引人入胜的音乐表演系统。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-11-06",
+    "paper_authors": "Ilya Borovik, Dmitrii Gavrilev, Vladimir Viro",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
