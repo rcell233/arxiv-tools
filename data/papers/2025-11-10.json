@@ -1,0 +1,168 @@
+[
+  {
+    "paper_title": "Synthesizing speech with selected perceptual voice qualities - A case study with creaky voice",
+    "paper_title_zh": "合成具有选定感知语音质量的语音 - 以嘎吱声为例",
+    "paper_id": "2511.05143",
+    "paper_abstract": "The control of perceptual voice qualities in a text-to-speech (TTS) system is of interest for applications where unmanipu- lated and manipulated speech probes can serve to illustrate pho- netic concepts that are otherwise difficult to grasp. Here, we show that a TTS system, that is augmented with a global speaker attribute manipulation block based on normalizing flows1 , is capable of correctly manipulating the non-persistent, localized quality of creaky voice, thus avoiding the necessity of a, typi- cally unreliable, frame-wise creak predictor. Subjective listen- ing tests confirm successful creak manipulation at a slightly re- duced MOS score compared to the original recording.",
+    "paper_abstract_zh": "在文本到语音(TTS)系统中控制感知语音质量，对于未经处理和经过处理的语音探针能够说明难以理解的语言学概念的应用具有重要意义。本文展示了一种基于标准化流(normalizing flows)增强全局说话人属性操作块的TTS系统，能够正确操作非持久、局部化的嘎吱声质量，从而避免了通常不可靠的帧级嘎吱声预测器的必要性。主观听音测试证实了嘎吱声操作的成功，与原始录音相比，MOS评分略有降低。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-10",
+    "paper_authors": "Frederik Rautenberg, Fritz Seebauer, Jana Wiechmann, Michael Kuhlmann, Petra Wagner, Reinhold Haeb-Umbach",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "A Penny for Your Thoughts: Decoding Speech from Inexpensive Brain Signals",
+    "paper_title_zh": "一分钱的想法：从廉价脑信号中解码语音",
+    "paper_id": "2511.04691",
+    "paper_abstract": "We explore whether neural networks can decode brain activity into speech by mapping EEG recordings to audio representations. Using EEG data recorded as subjects listened to natural speech, we train a model with a contrastive CLIP loss to align EEG-derived embeddings with embeddings from a pre-trained transformer-based speech model. Building on the state-of-the-art EEG decoder from Meta, we introduce three architectural modifications: (i) subject-specific attention layers (+0.15% WER improvement), (ii) personalized spatial attention (+0.45%), and (iii) a dual-path RNN with attention (-1.87%). Two of the three modifications improved performance, highlighting the promise of personalized architectures for brain-to-speech decoding and applications in brain-computer interfaces.",
+    "paper_abstract_zh": "我们探索神经网络是否能够通过将脑电图记录映射到音频表示，将脑活动解码为语音。使用受试者听自然语音时记录的脑电图数据，我们训练了一个使用对比CLIP损失的模型，将脑电图衍生的嵌入与预训练的基于transformer的语音模型的嵌入对齐。在Meta最先进的脑电图解码器基础上，我们引入了三种架构修改：(i) 受试者特定的注意力层（+0.15% WER改进），(ii) 个性化空间注意力（+0.45%），以及(iii) 带有注意力的双路径RNN（-1.87%）。其中两项修改提高了性能，突显了个性化架构在脑到语音解码和脑机接口应用中的潜力。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Neurons and Cognition (q-bio.NC)",
+      "Human-Computer Interaction (cs.HC)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-10",
+    "paper_authors": "Quentin Auster, Kateryna Shapovalenko, Chuang Ma, Demaio Sun",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "EMO100DB: An Open Dataset of Improvised Songs with Emotion Data",
+    "paper_title_zh": "EMO100DB：一个包含情感数据的即兴歌曲开放数据集",
+    "paper_id": "2511.04755",
+    "paper_abstract": "In this study, we introduce Emo100DB: a dataset consisting of improvised songs that were recorded and transcribed with emotion data based on Russell's circumplex model of emotion. The dataset was developed by collecting improvised songs that consist of melody, lyrics, and an instrumental accompaniment played, sung, and recorded by 20 young adults. Before recording each song, the participants were asked to report their emotional state, with the axes representing arousal and valence based on Russell's circumplex model of emotions. The dataset is organized into four emotion quadrants, and it includes the lyrics text and MIDI file of the melody extracted from the participant recordings, along with the original audio in WAV format. By providing an integrated composition of data and analysis, this study aims to offer a comprehensive dataset that allows for a diverse exploration of the relationship between music and emotion.",
+    "paper_abstract_zh": "在本研究中，我们介绍了EMO100DB：一个基于Russell情感环状模型记录和转录情感数据的即兴歌曲数据集。该数据集通过收集由20名年轻成年人演奏、演唱和录制的即兴歌曲组成，这些歌曲包括旋律、歌词和器乐伴奏。在录制每首歌曲之前，参与者被要求报告他们的情感状态，情感状态基于Russell情感环状模型的唤醒度和效价两个维度进行表示。该数据集被组织成四个情感象限，包括从参与者录制的音频中提取的歌词文本和旋律的MIDI文件，以及WAV格式的原始音频。通过提供数据和分析的综合组成，本研究旨在提供一个全面的数据集，允许对音乐与情感之间的关系进行多样化的探索。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Information Retrieval (cs.IR)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-11-10",
+    "paper_authors": "Daeun Hwang, Saebyul Park",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "MERaLiON-SER: Robust Speech Emotion Recognition Model for English and SEA Languages",
+    "paper_title_zh": "MERaLiON-SER：面向英语和东南亚语言的鲁棒语音情感识别模型",
+    "paper_id": "2511.04914",
+    "paper_abstract": "We present MERaLiON-SER, a robust speech emotion recognition model de- signed for English and Southeast Asian languages. The model is trained using a hybrid objective combining weighted categorical cross-entropy and Concordance Correlation Coefficient (CCC) losses for joint discrete and dimensional emotion modelling. This dual approach enables the model to capture both the distinct categories of emotion (like happy or angry) and the fine-grained, such as arousal (intensity), valence (positivity/negativity), and dominance (sense of control), lead- ing to a more comprehensive and robust representation of human affect. Extensive evaluations across multilingual Singaporean languages (English, Chinese, Malay, and Tamil ) and other public benchmarks show that MERaLiON-SER consistently surpasses both open-source speech encoders and large Audio-LLMs. These results underscore the importance of specialised speech-only models for accurate paralin- guistic understanding and cross-lingual generalisation. Furthermore, the proposed framework provides a foundation for integrating emotion-aware perception into future agentic audio systems, enabling more empathetic and contextually adaptive multimodal reasoning.",
+    "paper_abstract_zh": "我们提出了MERaLiON-SER，一个面向英语和东南亚语言的鲁棒语音情感识别模型。该模型采用混合目标进行训练，结合了加权分类交叉熵和一致性相关系数(CCC)损失，用于联合离散和维度情感建模。这种方法使模型能够捕捉情感的明确类别（如快乐或愤怒）以及精细特征，如唤醒度（强度）、效价（积极/消极）和支配感（控制感），从而实现更全面和鲁棒的人类情感表示。在多语言新加坡语言（英语、中文、马来语和泰米尔语）和其他公共基准上的广泛评估表明，MERaLiON-SER持续优于开源语音编码器和大型音频大语言模型。这些结果强调了专门语音模型在准确理解副语言特征和跨语言泛化方面的重要性。此外，所提出的框架为将情感感知集成到未来智能音频系统中奠定了基础，使系统能够实现更具同理心和上下文适应性的多模态推理。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-10",
+    "paper_authors": "Hardik B. Sailor, Aw Ai Ti, Chen Fang Yih Nancy, Chiu Ying Lay, Ding Yang, He Yingxu, Jiang Ridong, Li Jingtao, Liao Jingyi, Liu Zhuohan, Lu Yanfeng, Ma Yi, Manas Gupta, Muhammad Huzaifah Bin Md Shahrin, Nabilah Binte Md Johan, Nattadaporn Lertcheva, Pan Chunlei, Pham Minh Duc, Siti Maryam Binte Ahmad Subaidi, Siti Umairah Binte Mohammad Salleh, Sun Shuo, Tarun Kumar Vangani, Wang Qiongqiong, Won Cheng Yi Lewis, Wong Heng Meng Jeremy, Wu Jinyang, Zhang Huayun, Zhang Longyin, Zou Xunlong",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Passive Acoustic Monitoring of Noisy Coral Reefs",
+    "paper_title_zh": "嘈杂珊瑚礁的被动声学监测",
+    "paper_id": "2511.05349",
+    "paper_abstract": "Passive acoustic monitoring offers the potential to enable long-term, spatially extensive assessments of coral reefs. To explore this approach, we deployed underwater acoustic recorders at ten coral reef sites around Singapore waters over two years. To mitigate the persistent biological noise masking the low-frequency reef soundscape, we trained a convolutional neural network denoiser. Analysis of the acoustic data reveals distinct morning and evening choruses. Though the correlation with environmental variates was obscured in the low-frequency part of the noisy recordings, the denoised data showed correlations of acoustic activity indices such as sound pressure level and acoustic complexity index with diver-based assessments of reef health such as live coral richness and cover, and algal cover. Furthermore, the shrimp snap rate, computed from the high-frequency acoustic band, is robustly correlated with the reef parameters, both temporally and spatially. This study demonstrates that passive acoustics holds valuable information that can help with reef monitoring, provided the data is effectively denoised and interpreted. This methodology can be extended to other marine environments where acoustic monitoring is hindered by persistent noise.",
+    "paper_abstract_zh": "被动声学监测有望实现对珊瑚礁的长期、大范围评估。为探索这一方法，我们在新加坡水域的十个珊瑚礁站点部署了水下声学记录器，持续监测两年。为减轻持续存在的生物噪声对低频珊瑚礁声景的掩盖影响，我们训练了一个卷积神经网络去噪器。声学数据分析揭示了明显的晨间和晚间合唱现象。尽管在嘈杂记录的低频部分，声学活动与环境变量的相关性被掩盖，但去噪后的数据显示，声压级和声学复杂指数等声学活动指数与基于潜水员评估的珊瑚礁健康状况（如活珊瑚丰富度和覆盖率以及藻类覆盖率）存在相关性。此外，从高频声学波段计算出的虾类 snapping 率与珊瑚礁参数在时间和空间上都表现出稳健的相关性。研究表明，被动声学包含有价值的信息，可用于珊瑚礁监测，前提是数据得到有效去噪和解释。该方法可扩展到其他因持续噪声而阻碍声学监测的海洋环境。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-10",
+    "paper_authors": "Hari Vishnu, Yuen Min Too, Mandar Chitre, Danwei Huang, Teong Beng Koay, Sudhanshi S. Jain",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Perceptually Aligning Representations of Music via Noise-Augmented Autoencoders",
+    "paper_title_zh": "通过噪声增强自编码器感知对齐音乐表示",
+    "paper_id": "2511.05350",
+    "paper_abstract": "We argue that training autoencoders to reconstruct inputs from noised versions of their encodings, when combined with perceptual losses, yields encodings that are structured according to a perceptual hierarchy. We demonstrate the emergence of this hierarchical structure by showing that, after training an audio autoencoder in this manner, perceptually salient information is captured in coarser representation structures than with conventional training. Furthermore, we show that such perceptual hierarchies improve latent diffusion decoding in the context of estimating surprisal in music pitches and predicting EEG-brain responses to music listening. Pretrained weights are available on this http URL.",
+    "paper_abstract_zh": "我们认为，当自编码器被训练为从其编码的噪声版本中重建输入，并结合感知损失时，会产生按照感知层次结构组织的编码。我们通过展示以下内容来证明这种层次结构的出现：在以这种方式训练音频自编码器后，感知上显著的信息比传统训练更粗粒度的表示结构中捕获。此外，我们表明，这种感知层次结构在估计音乐音调的意外度和预测音乐聆听的脑电图反应方面，改善了潜在扩散解码。预训练权重可在提供的URL上获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-10",
+    "paper_authors": "Mathias Rose Bjare, Giorgia Cantisani, Marco Pasini, Stefan Lattner, Gerhard Widmer",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Robust Neural Audio Fingerprinting using Music Foundation Models",
+    "paper_title_zh": "基于音乐基础模型的鲁棒神经音频指纹技术",
+    "paper_id": "2511.05399",
+    "paper_abstract": "The proliferation of distorted, compressed, and manipulated music on modern media platforms like TikTok motivates the development of more robust audio fingerprinting techniques to identify the sources of musical recordings. In this paper, we develop and evaluate new neural audio fingerprinting techniques with the aim of improving their robustness. We make two contributions to neural fingerprinting methodology: (1) we use a pretrained music foundation model as the backbone of the neural architecture and (2) we expand the use of data augmentation to train fingerprinting models under a wide variety of audio manipulations, including time streching, pitch modulation, compression, and filtering. We systematically evaluate our methods in comparison to two state-of-the-art neural fingerprinting models: NAFP and GraFPrint. Results show that fingerprints extracted with music foundation models (e.g., MuQ, MERT) consistently outperform models trained from scratch or pretrained on non-musical audio. Segment-level evaluation further reveals their capability to accurately localize fingerprint matches, an important practical feature for catalog management.",
+    "paper_abstract_zh": "在TikTok等现代媒体平台上，失真、压缩和处理过的音乐泛滥，这促使开发更鲁棒的音频指纹技术来识别音乐录音的来源。在本文中，我们开发和评估了新的神经音频指纹技术，旨在提高其鲁棒性。我们对神经指纹方法学做出了两项贡献：(1)我们使用预训练的音乐基础模型作为神经架构的骨干，(2)我们扩展了数据增强的使用，以在多种音频操作（包括时间拉伸、音调调制、压缩和滤波）下训练指纹模型。我们与两种最先进的神经指纹模型（NAFP和GraFPrint）系统地比较了我们的方法。结果表明，使用音乐基础模型（如MuQ、MERT）提取的指纹始终优于从头训练或在非音乐音频上预训练的模型。片段级别的评估进一步揭示了它们准确定位指纹匹配的能力，这是目录管理的一个重要实用特性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-10",
+    "paper_authors": "Shubhr Singh, Kiran Bhat, Xavier Riley, Benjamin Resnick, John Thickstun, Walter De Brouwer",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Model Merging Improves Zero-Shot Generalization in Bioacoustic Foundation Models",
+    "paper_title_zh": "模型合并提升生物声学基础模型的零样本泛化能力",
+    "paper_id": "2511.05171",
+    "paper_abstract": "Foundation models capable of generalizing across species and tasks represent a promising new frontier in bioacoustics, with NatureLM being one of the most prominent examples. While its domain-specific fine-tuning yields strong performance on bioacoustic benchmarks, we observe that it also introduces trade-offs in instruction-following flexibility. For instance, NatureLM achieves high accuracy when prompted for either the common or scientific name individually, but its accuracy drops significantly when both are requested in a single prompt. We address this by applying a simple model merging strategy that interpolates NatureLM with its base language model, recovering instruction-following capabilities with minimal loss of domain expertise. Finally, we show that the merged model exhibits markedly stronger zero-shot generalization, achieving over a 200% relative improvement and setting a new state-of-the-art in closed-set zero-shot classification of unseen species.",
+    "paper_abstract_zh": "能够跨物种和任务泛化的基础模型代表了生物声学领域一个充满前景的新方向，其中NatureLM是最突出的例子之一。尽管其领域特定的微调在生物声学基准测试中表现出色，但我们观察到它在遵循指令的灵活性方面也存在权衡。例如，当单独提示常见名称或科学名称时，NatureLM能够实现高精度，但当在单个提示中同时请求两者时，其精度会显著下降。我们通过应用一种简单的模型合并策略来解决这一问题，该策略将NatureLM与其基础语言模型进行插值，在最小化领域专业知识损失的同时恢复了遵循指令的能力。最后，我们证明合并后的模型表现出显著更强的零样本泛化能力，实现了超过200%的相对提升，并在未见物种的闭集零样本分类中设立了新的最先进水平。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-10",
+    "paper_authors": "Davide Marincione, Donato Crisostomi, Roberto Dessi, Emanuele Rodolà, Emanuele Rossi",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
