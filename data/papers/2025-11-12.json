@@ -1,0 +1,288 @@
+[
+  {
+    "paper_title": "Automatic Music Mixing using a Generative Model of Effect Embeddings",
+    "paper_title_zh": "基于效果嵌入生成模型的自动音乐混音",
+    "paper_id": "2511.08040",
+    "paper_abstract": "Music mixing involves combining individual tracks into a cohesive mixture, a task characterized by subjectivity where multiple valid solutions exist for the same input. Existing automatic mixing systems treat this task as a deterministic regression problem, thus ignoring this multiplicity of solutions. Here we introduce MEGAMI (Multitrack Embedding Generative Auto MIxing), a generative framework that models the conditional distribution of professional mixes given unprocessed tracks. MEGAMI uses a track-agnostic effects processor conditioned on per-track generated embeddings, handles arbitrary unlabeled tracks through a permutation-equivariant architecture, and enables training on both dry and wet recordings via domain adaptation. Our objective evaluation using distributional metrics shows consistent improvements over existing methods, while listening tests indicate performances approaching human-level quality across diverse musical genres.",
+    "paper_abstract_zh": "音乐混音涉及将单独的音轨组合成一个连贯的混合体，这是一个具有主观性的任务，对于相同的输入存在多种有效的解决方案。现有的自动混音系统将此任务视为确定性回归问题，从而忽略了这种解决方案的多样性。在这里，我们引入了MEGAMI（多音轨嵌入生成自动混音），这是一个生成式框架，用于建模未处理音轨条件下专业混音的条件分布。MEGAMI使用基于每音轨生成嵌入的条件无关效果处理器，通过排列等变架构处理任意未标记的音轨，并通过域适应技术能够在干声和湿声录音上进行训练。我们使用分布指标进行的客观评估显示，与现有方法相比有持续改进，而听音测试表明，在多样化的音乐类型中，性能接近人类水平。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Eloi Moliner, Marco A. Martínez-Ramírez, Junghyun Koo, Wei-Hsiang Liao, Kin Wai Cheuk, Joan Serrà, Vesa Välimäki, Yuki Mitsufuji",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Pruning as Regularization: Sensitivity-Aware One-Shot Pruning in ASR",
+    "paper_title_zh": "剪枝作为正则化：ASR中基于敏感性的单次剪枝",
+    "paper_id": "2511.08092",
+    "paper_abstract": "We challenge the conventional view of neural network pruning as solely a compression technique, demonstrating that one-shot magnitude pruning serves as a powerful implicit regularizer for ASR. Using Whisper-small, we combine gradient- and Fisher-based sensitivity diagnostics with targeted, component-wise pruning. This reveals architectural asymmetries: decoder FFNs are pruning-fragile, whereas decoder self-attention and the last encoder layers contain redundancy that, when removed, improves generalization. Without fine-tuning, pruning 50% of decoder self-attention reduces WER by 2.38% absolute (20.44% relative) on LibriSpeech test-other; pruning the last four encoder layers at 50% instead yields a 1.72% absolute (14.8% relative) improvement. Gains persisted on Common Voice and TED-LIUM datasets. Beyond regularization benefits, our sensitivity-aware approach enables more aggressive one-shot compression. At 40% sparsity, where established global pruning approaches catastrophically fail, our method preserves near-baseline accuracy. This positions pruning as a first-class architectural design tool: knowing where to prune is as important as how much to prune.",
+    "paper_abstract_zh": "我们挑战了将神经网络剪枝仅视为压缩技术的传统观点，证明了单次幅度剪枝可以作为ASR的强大隐式正则化器。使用Whisper-small，我们将基于梯度和Fisher的敏感性与有针对性的组件级剪枝相结合。这揭示了架构的不对称性：解码器的前馈网络(FFN)对剪枝敏感，而解码器的自注意力机制和编码器的最后几层包含冗余，移除这些冗余可以改善泛化能力。在无需微调的情况下，剪枝50%解码器自注意力可以将LibriSpeech test-other上的词错误率(WER)降低2.38%绝对值(20.44%相对值)；而以50%的比例剪枝最后四个编码器层则可带来1.72%绝对值(14.8%相对值)的改进。这些增益在Common Voice和TED-LIUM数据集上持续存在。除了正则化益处外，我们的敏感性感知方法还能实现更激进的单次压缩。在40%稀疏度下，当既定的全局剪枝方法灾难性失败时，我们的方法仍能保持接近基线的准确性。这使得剪枝成为一流的架构设计工具：知道在哪里剪枝与剪多少剪枝同样重要。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Julian Irigoyen, Arthur Söhler, Andreas Søeborg Kirkedal",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Quantizing Whisper-small: How design choices affect ASR performance",
+    "paper_title_zh": "量化Whisper-small：设计选择如何影响ASR性能",
+    "paper_id": "2511.08093",
+    "paper_abstract": "Large speech recognition models like Whisper-small achieve high accuracy but are difficult to deploy on edge devices due to their high computational demand. To this end, we present a unified, cross-library evaluation of post-training quantization (PTQ) on Whisper-small that disentangles the impact of quantization scheme, method, granularity, and bit-width. Our study is based on four libraries: PyTorch, Optimum-Quanto, HQQ, and bitsandbytes. Experiments on LibriSpeech test-clean and test-other show that dynamic int8 quantization with Quanto offers the best trade-off, reducing model size by 57% while improving on the baseline's word error rate. Static quantization performed worse, likely due to Whisper's Transformer architecture, while more aggressive formats (e.g., nf4, int3) achieved up to 71% compression at the cost of accuracy in noisy conditions. Overall, our results demonstrate that carefully chosen PTQ methods can substantially reduce model size and inference cost without retraining, enabling efficient deployment of Whisper-small on constrained hardware.",
+    "paper_abstract_zh": "像Whisper-small这样的大型语音识别模型虽然能实现高精度，但由于其高计算需求，难以在边缘设备上部署。为此，我们对Whisper-small进行了统一的跨库训练后量化(PTQ)评估，分离了量化方案、方法、粒度和位宽的影响。我们的研究基于四个库：PyTorch、Optimum-Quanto、HQQ和bitsandbytes。在LibriSpeech测试集(clean和other)上的实验表明，使用Quanto的动态int8量化提供了最佳权衡，将模型大小减少了57%，同时改善了基线的词错误率。静态量化表现较差，可能是由于Whisper的Transformer架构，而更激进的格式(如nf4、int3)在嘈杂条件下实现了高达71%的压缩，但以精度为代价。总体而言，我们的结果表明，精心选择的PTQ方法可以在不重新训练的情况下显著减小模型大小和推理成本，使Whisper-small能够在受限硬件上高效部署。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Arthur Söhler, Julian Irigoyen, Andreas Søeborg Kirkedal",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Unifying Model and Layer Fusion for Speech Foundation Models",
+    "paper_title_zh": "统一模型与层融合的语音基础模型",
+    "paper_id": "2511.08389",
+    "paper_abstract": "Speech Foundation Models have gained significant attention recently. Prior works have shown that the fusion of representations from multiple layers of the same model or the fusion of multiple models can improve performance on downstream tasks. We unify these two fusion strategies by proposing an interface module that enables fusion across multiple upstream speech models while integrating information across their layers. We conduct extensive experiments on different self-supervised and supervised models across various speech tasks, including ASR and paralinguistic analysis, and demonstrate that our method outperforms prior fusion approaches. We further analyze its scalability concerning model size and count, highlighting the importance of selecting appropriate upstream models. Our results show that the proposed interface provides an additional performance boost when given a suitable upstream model selection, making it a promising approach for utilizing Speech Foundation Models.",
+    "paper_abstract_zh": "语音基础模型最近受到了广泛关注。先前的工作表明，融合同一模型多个层的表示或融合多个模型可以提高下游任务的性能。我们通过提出一个接口模块来统一这两种融合策略，该模块能够在多个上游语音模型之间进行融合，同时整合它们各层的信息。我们在不同自监督和监督模型上进行了广泛的实验，涵盖语音识别和副语言分析等各种语音任务，证明我们的方法优于先前的融合方法。我们进一步分析了其在模型大小和数量方面的可扩展性，强调了选择合适上游模型的重要性。我们的结果表明，当给定合适的上游模型选择时，所提出的接口可以提供额外的性能提升，使其成为利用语音基础模型的一种有前景的方法。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Yi-Jen Shih, David Harwath",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Melodia: Training-Free Music Editing Guided by Attention Probing in Diffusion Models",
+    "paper_title_zh": "Melodia：基于扩散模型注意力探测的无训练音乐编辑",
+    "paper_id": "2511.08252",
+    "paper_abstract": "Text-to-music generation technology is progressing rapidly, creating new opportunities for musical composition and editing. However, existing music editing methods often fail to preserve the source music's temporal structure, including melody and rhythm, when altering particular attributes like instrument, genre, and mood. To address this challenge, this paper conducts an in-depth probing analysis on attention maps within AudioLDM 2, a diffusion-based model commonly used as the backbone for existing music editing methods. We reveal a key finding: cross-attention maps encompass details regarding distinct musical characteristics, and interventions on these maps frequently result in ineffective modifications. In contrast, self-attention maps are essential for preserving the temporal structure of the source music during its conversion into the target music. Building upon this understanding, we present Melodia, a training-free technique that selectively manipulates self-attention maps in particular layers during the denoising process and leverages an attention repository to store source music information, achieving accurate modification of musical characteristics while preserving the original structure without requiring textual descriptions of the source music. Additionally, we propose two novel metrics to better evaluate music editing methods. Both objective and subjective experiments demonstrate that our approach achieves superior results in terms of textual adherence and structural integrity across various datasets. This research enhances comprehension of internal mechanisms within music generation models and provides improved control for music creation.",
+    "paper_abstract_zh": "文本到音乐生成技术正在快速发展，为音乐创作和编辑创造了新的机会。然而，现有的音乐编辑方法在改变特定属性（如乐器、风格和情绪）时，往往无法保留源音乐的时间结构，包括旋律和节奏。为了解决这一挑战，本文对AudioLDM 2（一种扩散模型，常作为现有音乐编辑方法的骨干）中的注意力图进行了深入的探测分析。我们揭示了一个关键发现：交叉注意力图包含关于不同音乐特征的详细信息，对这些图的干预通常会导致无效的修改。相比之下，自注意力图在将源音乐转换为目标音乐的过程中，对于保留其时间结构至关重要。基于这一理解，我们提出了Melodia，一种无需训练的技术，它在去噪过程中选择性地操纵特定层的自注意力图，并利用一个注意力库来存储源音乐信息，从而在不需要源音乐文本描述的情况下，实现对音乐特征的准确修改，同时保留原始结构。此外，我们还提出了两种新颖的指标，以更好地评估音乐编辑方法。客观和主观实验均表明，我们的方法在各种数据集上，在文本遵循性和结构完整性方面均取得了优越的结果。这项研究增强了人们对音乐生成模型内部机制的理解，并为音乐创作提供了更好的控制。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Yi Yang, Haowen Li, Tianxiang Li, Boyu Cao, Xiaohan Zhang, Liqun Chen, Qi Liu",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "HQ-SVC: Towards High-Quality Zero-Shot Singing Voice Conversion in Low-Resource Scenarios",
+    "paper_title_zh": "HQ-SVC: 面向低资源场景的高质量零样本歌唱语音转换",
+    "paper_id": "2511.08496",
+    "paper_abstract": "Zero-shot singing voice conversion (SVC) transforms a source singer's timbre to an unseen target speaker's voice while preserving melodic content without fine-tuning. Existing methods model speaker timbre and vocal content separately, losing essential acoustic information that degrades output quality while requiring significant computational resources. To overcome these limitations, we propose HQ-SVC, an efficient framework for high-quality zero-shot SVC. HQ-SVC first extracts jointly content and speaker features using a decoupled codec. It then enhances fidelity through pitch and volume modeling, preserving critical acoustic information typically lost in separate modeling approaches, and progressively refines outputs via differentiable signal processing and diffusion techniques. Evaluations confirm HQ-SVC significantly outperforms state-of-the-art zero-shot SVC methods in conversion quality and efficiency. Beyond voice conversion, HQ-SVC achieves superior voice naturalness compared to specialized audio super-resolution methods while natively supporting voice super-resolution tasks.",
+    "paper_abstract_zh": "零样本歌唱语音转换(SVC)能够在不进行微调的情况下，将源歌手的音色转换为未见过的目标说话者的声音，同时保留旋律内容。现有方法分别建模说话者音色和声乐内容，丢失了重要的声学信息，导致输出质量下降，并且需要大量计算资源。为克服这些限制，我们提出了HQ-SVC，一个用于高质量零样本SVC的高效框架。HQ-SVC首先使用解耦编解码器联合提取内容和说话者特征。然后通过音高和音量建模增强保真度，保留了在单独建模方法中通常丢失的关键声学信息，并通过可微分信号处理和扩散技术逐步优化输出。评估证实，HQ-SVC在转换质量和效率上显著优于最先进的零样本SVC方法。除了语音转换外，HQ-SVC在与专门音频超分辨率方法的比较中实现了更优的语音自然度，并原生支持语音超分辨率任务。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Bingsong Bai, Yizhong Geng, Fengping Wang, Cong Wang, Puyuan Guo, Yingming Gao, Ya Li",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Synthesis",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Enabling Automatic Self-Talk Detection via Earables",
+    "paper_title_zh": "通过可穿戴耳机实现自动自言自语检测",
+    "paper_id": "2511.07493",
+    "paper_abstract": "Self-talk-an internal dialogue that can occur silently or be spoken aloud-plays a crucial role in emotional regulation, cognitive processing, and motivation, yet has remained largely invisible and unmeasurable in everyday life. In this paper, we present MutterMeter, a mobile system that automatically detects vocalized self-talk from audio captured by earable microphones in real-world settings. Detecting self-talk is technically challenging due to its diverse acoustic forms, semantic and grammatical incompleteness, and irregular occurrence patterns, which differ fundamentally from assumptions underlying conventional speech understanding models. To address these challenges, MutterMeter employs a hierarchical classification architecture that progressively integrates acoustic, linguistic, and contextual information through a sequential processing pipeline, adaptively balancing accuracy and computational efficiency. We build and evaluate MutterMeter using a first-of-its-kind dataset comprising 31.1 hours of audio collected from 25 participants. Experimental results demonstrate that MutterMeter achieves robust performance with a macro-averaged F1 score of 0.84, outperforming conventional approaches, including LLM-based and speech emotion recognition models.",
+    "paper_abstract_zh": "自言自语是一种可以默默进行或大声说出的内部对话，在情绪调节、认知处理和动机方面起着至关重要的作用，但在日常生活中却一直难以被察觉和测量。在本文中，我们提出了MutterMeter，这是一个移动系统，能够通过可穿戴耳机麦克风在真实环境中自动检测出有声的自言自语。由于自言自语具有多样的声学形式、语义和语法不完整性以及不规律的出现模式，这些特点与传统语音理解模型的基本假设存在根本差异，因此检测自言自语在技术上具有挑战性。为应对这些挑战，MutterMeter采用分层分类架构，通过顺序处理流程逐步整合声学、语言和上下文信息，自适应地平衡准确性和计算效率。我们使用首个包含25名参与者收集的31.1小时音频数据集构建并评估了MutterMeter。实验结果表明，MutterMeter实现了稳健的性能，宏平均F1得分为0.84，优于包括基于大语言模型和语音情感识别模型在内的传统方法。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Euihyeok Lee, Seonghyeon Kim, SangHun Im, Heung-Seon Oh, Seungwoo Kang",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speech Separation for Hearing-Impaired Children in the Classroom",
+    "paper_title_zh": "课堂环境中听障儿童的语音分离",
+    "paper_id": "2511.07677",
+    "paper_abstract": "Classroom environments are particularly challenging for children with hearing impairments, where background noise, multiple talkers, and reverberation degrade speech perception. These difficulties are greater for children than adults, yet most deep learning speech separation models for assistive devices are developed using adult voices in simplified, low-reverberation conditions. This overlooks both the higher spectral similarity of children's voices, which weakens separation cues, and the acoustic complexity of real classrooms. We address this gap using MIMO-TasNet, a compact, low-latency, multi-channel architecture suited for real-time deployment in bilateral hearing aids or cochlear implants. We simulated naturalistic classroom scenes with moving child-child and child-adult talker pairs under varying noise and distance conditions. Training strategies tested how well the model adapts to children's speech through spatial cues. Models trained on adult speech, classroom data, and finetuned variants were compared to assess data-efficient adaptation. Results show that adult-trained models perform well in clean scenes, but classroom-specific training greatly improves separation quality. Finetuning with only half the classroom data achieved comparable gains, confirming efficient transfer learning. Training with diffuse babble noise further enhanced robustness, and the model preserved spatial awareness while generalizing to unseen distances. These findings demonstrate that spatially aware architectures combined with targeted adaptation can improve speech accessibility for children in noisy classrooms, supporting future on-device assistive technologies.",
+    "paper_abstract_zh": "课堂环境对听障儿童来说尤其具有挑战性，背景噪声、多个说话者和混响会降低语音感知能力。这些困难对儿童来说比成人更大，然而大多数用于辅助设备的深度学习语音分离模型是在简化、低混响条件下使用成人语音开发的。这忽略了儿童语音之间更高的频谱相似性，这削弱了分离线索，以及真实课堂的声学复杂性。我们使用MIMO-TasNet解决这个问题，这是一种紧凑、低延迟的多通道架构，适合在双耳助听器或人工耳蜗中进行实时部署。我们在变化的噪声和距离条件下，模拟了包含移动的儿童-儿童和儿童-成人说话者对的自然课堂场景。测试的训练策略评估了模型通过空间线索适应儿童语音的能力。比较了在成人语音、课堂数据和微调变体上训练的模型，以评估数据高效的适应性。结果表明，成人训练的模型在干净场景中表现良好，但课堂特定的训练大大提高了分离质量。仅使用一半课堂数据进行微调就能实现相当的改进，证实了高效的迁移学习。使用扩散的嘈杂噪声进一步增强了鲁棒性，模型在泛化到未见距离的同时保持了空间感知能力。这些发现表明，结合空间感知架构和有针对性的适应性可以改善嘈杂课堂中儿童的语音可及性，支持未来的设备辅助技术。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Feyisayo Olalere, Kiki van der Heijden, H. Christiaan Stronks, Jeroen Briaire, Johan H. M. Frijns, Yagmur Güçlütürk",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SynTTS-Commands: A Public Dataset for On-Device KWS via TTS-Synthesized Multilingual Speech",
+    "paper_title_zh": "SynTTS-Commands: 用于通过TTS合成多语言语音的设备端关键词识别公共数据集",
+    "paper_id": "2511.07821",
+    "paper_abstract": "The development of high-performance, on-device keyword spotting (KWS) systems for ultra-low-power hardware is critically constrained by the scarcity of specialized, multi-command training datasets. Traditional data collection through human recording is costly, slow, and lacks scalability. This paper introduces SYNTTS-COMMANDS, a novel, multilingual voice command dataset entirely generated using state-of-the-art Text-to-Speech (TTS) synthesis. By leveraging the CosyVoice 2 model and speaker embeddings from public corpora, we created a scalable collection of English and Chinese commands. Extensive benchmarking across a range of efficient acoustic models demonstrates that our synthetic dataset enables exceptional accuracy, achieving up to 99.5\\% on English and 98\\% on Chinese command recognition. These results robustly validate that synthetic speech can effectively replace human-recorded audio for training KWS classifiers. Our work directly addresses the data bottleneck in TinyML, providing a practical, scalable foundation for building private, low-latency, and energy-efficient voice interfaces on resource-constrained edge devices.",
+    "paper_abstract_zh": "在超低功耗硬件上开发高性能设备端关键词识别(KWS)系统，受到专门化、多命令训练数据集稀缺的严重限制。通过人工录制进行传统数据收集成本高昂、速度缓慢且缺乏可扩展性。本文介绍了SYNTTS-COMMANDS，这是一个全新的多语言语音命令数据集，完全使用最先进的文本到语音(TTS)合成技术生成。通过利用CosyVoice 2模型和公共语料库中的说话人嵌入，我们创建了一个可扩展的英语和中文命令集合。在多种高效声学模型上的广泛基准测试表明，我们的合成数据集实现了卓越的准确性，英语命令识别达到99.5%，中文命令识别达到98%。这些结果有力地验证了合成语音可以有效替代人工录制的音频来训练KWS分类器。我们的工作直接解决了TinyML中的数据瓶颈，为在资源受限的边缘设备上构建私有、低延迟和节能的语音界面提供了实用、可扩展的基础。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Lu Gan, Xi Li",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SpikCommander: A High-performance Spiking Transformer with Multi-view Learning for Efficient Speech Command Recognition",
+    "paper_title_zh": "SpikCommander: 一种用于高效语音命令识别的高性能脉冲Transformer与多视图学习",
+    "paper_id": "2511.07883",
+    "paper_abstract": "Spiking neural networks (SNNs) offer a promising path toward energy-efficient speech command recognition (SCR) by leveraging their event-driven processing paradigm. However, existing SNN-based SCR methods often struggle to capture rich temporal dependencies and contextual information from speech due to limited temporal modeling and binary spike-based representations. To address these challenges, we first introduce the multi-view spiking temporal-aware self-attention (MSTASA) module, which combines effective spiking temporal-aware attention with a multi-view learning framework to model complementary temporal dependencies in speech commands. Building on MSTASA, we further propose SpikCommander, a fully spike-driven transformer architecture that integrates MSTASA with a spiking contextual refinement channel MLP (SCR-MLP) to jointly enhance temporal context modeling and channel-wise feature integration. We evaluate our method on three benchmark datasets: the Spiking Heidelberg Dataset (SHD), the Spiking Speech Commands (SSC), and the Google Speech Commands V2 (GSC). Extensive experiments demonstrate that SpikCommander consistently outperforms state-of-the-art (SOTA) SNN approaches with fewer parameters under comparable time steps, highlighting its effectiveness and efficiency for robust speech command recognition.",
+    "paper_abstract_zh": "脉冲神经网络(SNNs)通过其事件驱动的处理范式，为实现能效高的语音命令识别(SCR)提供了一条有前景的路径。然而，由于有限的时间建模和基于二值脉冲的表示，现有的基于SNN的SCR方法往往难以从语音中捕获丰富的时间依赖性和上下文信息。为了解决这些挑战，我们首先引入了多视图脉冲时间感知自注意力(MSTASA)模块，该模块将有效的脉冲时间感知注意力与多视图学习框架相结合，以建模语音命令中的互补时间依赖性。基于MSTASA，我们进一步提出了SpikCommander，这是一种完全由脉冲驱动的Transformer架构，它将MSTASA与脉冲上下文细化通道MLP(SCR-MLP)相结合，以共同增强时间上下文建模和通道级特征集成。我们在三个基准数据集上评估了我们的方法：脉冲海德堡数据集(SHD)、脉冲语音命令(SSC)和谷歌语音命令V2(GSC)。大量实验表明，在可比的时间步数下，SpikCommander以更少的参数持续优于最先进的(SOTA)SNN方法，突显了其在鲁棒语音命令识别中的有效性和效率。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Jiaqi Wang, Liutao Yu, Xiongri Shen, Sihang Guo, Chenlin Zhou, Leilei Zhao, Yi Zhong, Zhengyu Ma, Zhiguo Zhang",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SpeechJudge: Towards Human-Level Judgment for Speech Naturalness",
+    "paper_title_zh": "SpeechJudge：迈向人类水平的语音自然度判断",
+    "paper_id": "2511.07931",
+    "paper_abstract": "Aligning large generative models with human feedback is a critical challenge. In speech synthesis, this is particularly pronounced due to the lack of a large-scale human preference dataset, which hinders the development of models that truly align with human perception. To address this, we introduce SpeechJudge, a comprehensive suite comprising a dataset, a benchmark, and a reward model centered on naturalness--one of the most fundamental subjective metrics for speech synthesis. First, we present SpeechJudge-Data, a large-scale human feedback corpus of 99K speech pairs. The dataset is constructed using a diverse set of advanced zero-shot text-to-speech (TTS) models across diverse speech styles and multiple languages, with human annotations for both intelligibility and naturalness preference. From this, we establish SpeechJudge-Eval, a challenging benchmark for speech naturalness judgment. Our evaluation reveals that existing metrics and AudioLLMs struggle with this task; the leading model, Gemini-2.5-Flash, achieves less than 70% agreement with human judgment, highlighting a significant gap for improvement. To bridge this gap, we develop SpeechJudge-GRM, a generative reward model (GRM) based on Qwen2.5-Omni-7B. It is trained on SpeechJudge-Data via a two-stage post-training process: Supervised Fine-Tuning (SFT) with Chain-of-Thought rationales followed by Reinforcement Learning (RL) with GRPO on challenging cases. On the SpeechJudge-Eval benchmark, the proposed SpeechJudge-GRM demonstrates superior performance, achieving 77.2% accuracy (and 79.4% after inference-time scaling @10) compared to a classic Bradley-Terry reward model (72.7%). Furthermore, SpeechJudge-GRM can be also employed as a reward function during the post-training of speech generation models to facilitate their alignment with human preferences.",
+    "paper_abstract_zh": "使大型生成模型与人类反馈保持一致是一个关键挑战。在语音合成中，这一问题尤为突出，因为缺乏大规模的人类偏好数据集，这阻碍了真正符合人类感知的模型的发展。为解决这一问题，我们引入了SpeechJudge，这是一个包含数据集、基准测试和奖励模型的综合套件，专注于自然度——语音合成中最基本的主观指标之一。首先，我们介绍了SpeechJudge-Data，这是一个包含99K语音对的大规模人类反馈语料库。该数据集使用多样化的先进零样本文本转语音（TTS）模型构建，涵盖多样化的语音风格和多种语言，并对可理解性和自然度偏好进行了人工标注。基于此，我们建立了SpeechJudge-Eval，一个具有挑战性的语音自然度判断基准测试。我们的评估显示，现有指标和AudioLLMs在这一任务上表现不佳；领先的模型Gemini-2.5-Flash与人类判断的一致性低于70%，凸显了显著的改进空间。为弥合这一差距，我们开发了SpeechJudge-GRM，这是一个基于Qwen2.5-Omni-7B的生成式奖励模型（GRM）。它通过两阶段后训练过程在SpeechJudge-Data上进行训练：首先使用思维链（Chain-of-Thought）理由进行监督微调（SFT），然后在具有挑战性的案例上使用GRPO进行强化学习（RL）。在SpeechJudge-Eval基准测试上，提出的SpeechJudge-GRM表现出色，实现了77.2%的准确率（推理时扩展@10后达到79.4%），而经典的Bradley-Terry奖励模型为72.7%。此外，SpeechJudge-GRM还可作为语音生成模型后训练期间的奖励函数，促进其与人类偏好的一致性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Xueyao Zhang, Chaoren Wang, Huan Liao, Ziniu Li, Yuancheng Wang, Li Wang, Dongya Jia, Yuanzhe Chen, Xiulin Li, Zhuo Chen, Zhizheng Wu",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speech Emotion Recognition with Phonation Excitation Information and Articulatory Kinematics",
+    "paper_title_zh": "基于发声激励信息和发音运动学的语音情感识别",
+    "paper_id": "2511.07955",
+    "paper_abstract": "Speech emotion recognition (SER) has advanced significantly for the sake of deep-learning methods, while textual information further enhances its performance. However, few studies have focused on the physiological information during speech production, which also encompasses speaker traits, including emotional states. To bridge this gap, we conducted a series of experiments to investigate the potential of the phonation excitation information and articulatory kinematics for SER. Due to the scarcity of training data for this purpose, we introduce a portrayed emotional dataset, STEM-E2VA, which includes audio and physiological data such as electroglottography (EGG) and electromagnetic articulography (EMA). EGG and EMA provide information of phonation excitation and articulatory kinematics, respectively. Additionally, we performed emotion recognition using estimated physiological data derived through inversion methods from speech, instead of collected EGG and EMA, to explore the feasibility of applying such physiological information in real-world SER. Experimental results confirm the effectiveness of incorporating physiological information about speech production for SER and demonstrate its potential for practical use in real-world scenarios.",
+    "paper_abstract_zh": "由于深度学习方法的发展，语音情感识别（SER）取得了显著进步，而文本信息进一步提升了其性能。然而，很少有研究关注语音产生过程中的生理信息，这些信息也包含说话者的特征，包括情感状态。为了填补这一空白，我们进行了一系列实验，研究发声激励信息和发音运动学在SER中的潜力。由于此类训练数据的稀缺，我们引入了一个表演情感数据集STEM-E2VA，其中包括音频和生理数据，如电声门图（EGG）和电磁发音仪（EMA）。EGG和EMA分别提供发声激励信息和发音运动学信息。此外，我们使用通过逆方法从语音中估计的生理数据进行情感识别，而不是收集的EGG和EMA数据，以探索在现实SER中应用此类生理信息的可行性。实验结果证实，将语音产生过程中的生理信息整合到SER中是有效的，并展示了其在现实场景中实际应用的潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Ziqian Zhang, Min Huang, Zhongzhe Xiao",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DOA Estimation with Lightweight Network on LLM-Aided Simulated Acoustic Scenes",
+    "paper_title_zh": "基于轻量级网络在LLM辅助模拟声学场景中的DOA估计",
+    "paper_id": "2511.08012",
+    "paper_abstract": "Direction-of-Arrival (DOA) estimation is critical in spatial audio and acoustic signal processing, with wide-ranging applications in real-world. Most existing DOA models are trained on synthetic data by convolving clean speech with room impulse responses (RIRs), which limits their generalizability due to constrained acoustic diversity. In this paper, we revisit DOA estimation using a recently introduced dataset constructed with the assistance of large language models (LLMs), which provides more realistic and diverse spatial audio scenes. We benchmark several representative neural-based DOA methods on this dataset and propose LightDOA, a lightweight DOA estimation model based on depthwise separable convolutions, specifically designed for mutil-channel input in varying environments. Experimental results show that LightDOA achieves satisfactory accuracy and robustness across various acoustic scenes while maintaining low computational complexity. This study not only highlights the potential of spatial audio synthesized with the assistance of LLMs in advancing robust and efficient DOA estimation research, but also highlights LightDOA as efficient solution for resource-constrained applications.",
+    "paper_abstract_zh": "到达方向(DOA)估计在空间音频和声学信号处理中至关重要，在实际应用中具有广泛的用途。大多数现有的DOA模型是通过将干净语音与房间脉冲响应(RIRs)卷积来合成数据进行训练的，这限制了它们的泛化能力，因为声学多样性有限。在本文中，我们重新审视了DOA估计，使用了一个最近推出的、在大语言模型(LLMs)辅助下构建的数据集，该数据集提供了更真实和多样化的空间音频场景。我们在这个数据集上对几种代表性的基于神经网络的DOA方法进行了基准测试，并提出了LightDOA，这是一种基于深度可分离卷积的轻量级DOA估计模型，专为多通道输入和变化环境而设计。实验结果表明，LightDOA在各种声学场景中实现了令人满意的准确性和鲁棒性，同时保持了低计算复杂度。这项研究不仅突出了在LLM辅助下合成的空间音频在推进鲁棒高效的DOA估计研究方面的潜力，还强调了LightDOA作为资源受限应用的高效解决方案。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Haowen Li, Zhengding Luo, Dongyuan Shi, Boxiang Wang, Junwei Ji, Ziyi Yang, Woon-Seng Gan",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Uncertainty Calibration of Multi-Label Bird Sound Classifiers",
+    "paper_title_zh": "多标签鸟类声音分类器的不确定性校准",
+    "paper_id": "2511.08261",
+    "paper_abstract": "Passive acoustic monitoring enables large-scale biodiversity assessment, but reliable classification of bioacoustic sounds requires not only high accuracy but also well-calibrated uncertainty estimates to ground decision-making. In bioacoustics, calibration is challenged by overlapping vocalisations, long-tailed species distributions, and distribution shifts between training and deployment data. The calibration of multi-label deep learning classifiers within the domain of bioacoustics has not yet been assessed. We systematically benchmark the calibration of four state-of-the-art multi-label bird sound classifiers on the BirdSet benchmark, evaluating both global, per-dataset and per-class calibration using threshold-free calibration metrics (ECE, MCS) alongside discrimination metrics (cmAP). Model calibration varies significantly across datasets and classes. While Perch v2 and ConvNeXt$_{BS}$ show better global calibration, results vary between datasets. Both models indicate consistent underconfidence, while AudioProtoPNet and BirdMAE are mostly overconfident. Surprisingly, calibration seems to be better for less frequent classes. Using simple post hoc calibration methods we demonstrate a straightforward way to improve calibration. A small labelled calibration set is sufficient to significantly improve calibration with Platt scaling, while global calibration parameters suffer from dataset variability. Our findings highlight the importance of evaluating and improving uncertainty calibration in bioacoustic classifiers.",
+    "paper_abstract_zh": "被动声学监测 enables 大规模生物多样性评估，但可靠的生物声学声音分类不仅需要高准确性，还需要经过良好校准的不确定性估计以支持决策制定。在生物声学领域，校准面临着重叠发声、长尾物种分布以及训练和部署数据之间的分布转移等挑战。生物声学领域中多标签深度学习分类器的校准尚未得到评估。我们在BirdSet基准测试上对四个最先进的多标签鸟类声音分类器进行了系统性的校准基准测试，使用无阈值校准指标（ECE、MCS）和判别指标（cmAP）评估全局、每数据集和每类别的校准情况。模型校准在不同数据集和类别之间差异显著。虽然Perch v2和ConvNeXt_BS显示出更好的全局校准，但不同数据集的结果有所不同。这两种模型都表现出一致的欠校准，而AudioProtoPNet和BirdMAE则大多过度自信。令人惊讶的是，校准对于较少出现的类别似乎更好。通过使用简单的后验校准方法，我们展示了一种改进校准的简单方法。一个小型标记校准集足以通过Platt缩放显著提高校准效果，而全局校准参数则受到数据集变异性的影响。我们的研究强调了评估和改进生物声学分类器不确定性校准的重要性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-12",
+    "paper_authors": "Raphael Schwinger, Ben McEwen, Vincent S. Kather, René Heinrich, Lukas Rauch, Sven Tomforde",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
