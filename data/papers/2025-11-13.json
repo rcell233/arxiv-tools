@@ -1,0 +1,203 @@
+[
+  {
+    "paper_title": "ParaS2S: Benchmarking and Aligning Spoken Language Models for Paralinguistic-aware Speech-to-Speech Interaction",
+    "paper_title_zh": "ParaS2S：面向副语言感知语音到语音交互的口语语言模型基准测试与对齐",
+    "paper_id": "2511.08723",
+    "paper_abstract": "Speech-to-Speech (S2S) models have shown promising dialogue capabilities, but their ability to handle paralinguistic cues--such as emotion, tone, and speaker attributes--and to respond appropriately in both content and style remains underexplored. Progress is further hindered by the scarcity of high-quality and expressive demonstrations. To address this, we introduce a novel reinforcement learning (RL) framework for paralinguistic-aware S2S, ParaS2S, which evaluates and optimizes both content and speaking style directly at the waveform level. We first construct ParaS2SBench, a benchmark comprehensively evaluates S2S models' output for content and style appropriateness from diverse and challenging input queries. It scores the fitness of input-output pairs and aligns well with human judgments, serving as an automatic judge for model outputs. With this scalable scoring feedback, we enable the model to explore and learn from diverse unlabeled speech via Group Relative Policy Optimization (GRPO). Experiments show that existing S2S models fail to respond appropriately to paralinguistic attributes, performing no better than pipeline-based baselines. Our RL approach achieves a 11% relative improvement in response content and style's appropriateness on ParaS2SBench over supervised fine-tuning (SFT), surpassing all prior models while requiring substantially fewer warm-up annotations than pure SFT.",
+    "paper_abstract_zh": "语音到语音（S2S）模型已显示出有前景的对话能力，但它们处理副语言线索（如情感、语调和说话人属性）以及以内容和风格上适当回应的能力仍未得到充分探索。由于高质量且富有表现力的演示样本稀缺，进一步的研究进展受到阻碍。为解决这一问题，我们提出了一个新颖的强化学习（RL）框架——ParaS2S，用于副语言感知的S2S系统，该框架直接在波形级别评估和优化内容与说话风格。我们首先构建了ParaS2SBench基准，该基准全面评估S2S模型对多样化且具有挑战性的输入查询的内容和风格适当性。它对输入-输出对的适配性进行评分，并与人类判断高度一致，可作为模型输出的自动评判。通过这种可扩展的评分反馈，我们使模型能够通过组相对策略优化（GRPO）探索和学习多样化的未标记语音。实验表明，现有S2S模型无法对副语言属性做出适当回应，其表现并不优于基于流水线的基线方法。我们的RL方法在ParaS2SBench上实现了响应内容和风格适当性相对于监督微调（SFT）11%的相对提升，超越了所有先前模型，同时所需的预热标注数量远少于纯SFT方法。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Shu-wen Yang, Ming Tu, Andy T. Liu, Xinghua Qu, Hung-yi Lee, Lu Lu, Yuxuan Wang, Yonghui Wu",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Towards Effective and Efficient Non-autoregressive decoders for Conformer and LLM-based ASR using Block-based Attention Mask",
+    "paper_title_zh": "基于块级注意力掩码的Conformer和LLM语音识别系统的非自回归解码器优化",
+    "paper_id": "2511.09084",
+    "paper_abstract": "Automatic speech recognition (ASR) systems often rely on autoregressive (AR) Transformer decoder architectures, which limit efficient inference parallelization due to their sequential nature. To this end, non-autoregressive (NAR) approaches aim primarily to achieve significant decoding speedup while the maintaining recognition accuracy that is comparable to AR baselines. This paper proposes a novel NAR block-based attention mask decoder (AMD) that effectively improves decoding efficiency while maintaining ASR accuracy, and also offering flexibility in balancing the performance-efficiency trade-off on both Conformer and large language model (LLM)-based ASR systems. The proposed AMD performs parallel inference within contiguous blocks of output labels while maintaining monotonic left-to-right prediction between blocks. A one-pass beam search algorithm is designed to dynamically fuse Connectionist Temporal Classification (CTC), AR decoder, and AMD probabilities. Experiments are conducted on normal speech LS960 and DBank elderly speech across: a) The Conformer encoder-decoder ASR system with filterbank input features; b) its integration with WavLM features; and c) further advancement by integrating an LLM-based decoder. On the LS960 task, the proposed AMD empowered tripartite decoder achieves decoding speedup ratios of up to 1.44x, 1.55x, and 2.31x under the three model configurations over the CTC + AR baselines, without statistically significant WER increases. When operating with real-time factors (RTFs) comparable to the baselines, the tripartite decoder produces statistically significant WER reductions of 0.19%, 0.62% and 0.13% absolute (4.3%, 16.3%, and 3.8% relative). Similar improvements are also obtained on the DBank task.",
+    "paper_abstract_zh": "自动语音识别(ASR)系统通常依赖自回归(AR)Transformer解码器架构，由于其顺序特性限制了高效的推理并行化。为此，非自回归(NAR)方法主要旨在实现显著的解码加速，同时保持与基线相当的识别准确性。本文提出了一种新颖的NAR块级注意力掩码解码器(AMD)，有效提高了解码效率，同时保持ASR准确性，并在Conformer和基于大型语言模型(LLM)的ASR系统上提供了在性能与效率之间灵活权衡的能力。所提出的AMD在输出标签的连续块内执行并行推理，同时保持块之间的单调从左到右预测。设计了一种单束搜索算法，用于动态融合连接主义时间分类(CTC)、AR解码器和AMD概率。在正常语音LS960和DBank老年语音上进行了实验，包括：a)使用滤波器组输入特征的Conformer编码器-解码器ASR系统；b)其与WavLM特征的集成；c)通过集成基于LLM的解码器进一步推进。在LS960任务上，所提出的AMD赋能的三元解码器在三种模型配置下相对于CTC+AR基线实现了高达1.44x、1.55x和2.31x的解码加速比，且词错误率(WER)无统计学显著增加。当以与基线相当的真实时间因子(RTF)运行时，三元解码器产生了0.19%、0.62%和0.13%绝对(4.3%、16.3%和3.8%相对)的WER统计学显著降低。在DBank任务上也获得了类似的改进。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Tianzi Wang, Xurong Xie, Zengrui Jin, Mengzhe Geng, Jiajun Deng, Zhaoqing Li, Shoukang Hu, Shujie Hu, Guinan Li, Mingyu Cui, Helen Meng, Xunying Liu",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Diff-V2M: A Hierarchical Conditional Diffusion Model with Explicit Rhythmic Modeling for Video-to-Music Generation",
+    "paper_title_zh": "Diff-V2M: 一种具有显式节奏建模的分层条件扩散模型用于视频到音乐生成",
+    "paper_id": "2511.09090",
+    "paper_abstract": "Video-to-music (V2M) generation aims to create music that aligns with visual content. However, two main challenges persist in existing methods: (1) the lack of explicit rhythm modeling hinders audiovisual temporal alignments; (2) effectively integrating various visual features to condition music generation remains non-trivial. To address these issues, we propose Diff-V2M, a general V2M framework based on a hierarchical conditional diffusion model, comprising two core components: visual feature extraction and conditional music generation. For rhythm modeling, we begin by evaluating several rhythmic representations, including low-resolution mel-spectrograms, tempograms, and onset detection functions (ODF), and devise a rhythmic predictor to infer them directly from videos. To ensure contextual and affective coherence, we also extract semantic and emotional features. All features are incorporated into the generator via a hierarchical cross-attention mechanism, where emotional features shape the affective tone via the first layer, while semantic and rhythmic features are fused in the second cross-attention layer. To enhance feature integration, we introduce timestep-aware fusion strategies, including feature-wise linear modulation (FiLM) and weighted fusion, allowing the model to adaptively balance semantic and rhythmic cues throughout the diffusion process. Extensive experiments identify low-resolution ODF as a more effective signal for modeling musical rhythm and demonstrate that Diff-V2M outperforms existing models on both in-domain and out-of-domain datasets, achieving state-of-the-art performance in terms of objective metrics and subjective comparisons. Demo and code are available at this https URL.",
+    "paper_abstract_zh": "视频到音乐(V2M)生成旨在创作与视觉内容相匹配的音乐。然而，现有方法中存在两个主要挑战：(1)缺乏显式节奏建模阻碍了视听时间对齐；(2)有效整合各种视觉特征以条件化音乐生成仍然非同寻常。为解决这些问题，我们提出了Diff-V2M，一个基于分层条件扩散模型的通用V2M框架，包含两个核心组件：视觉特征提取和条件音乐生成。对于节奏建模，我们首先评估了几种节奏表示，包括低分辨率梅尔频谱图、节奏图和起始检测函数(ODF)，并设计了一个节奏预测器直接从视频中推断它们。为确保上下文和情感连贯性，我们还提取了语义和情感特征。所有特征通过分层交叉注意力机制被整合到生成器中，其中情感特征通过第一层塑造情感基调，而语义和节奏特征在第二交叉注意力层中融合。为增强特征整合，我们引入了时间步感知融合策略，包括特征级线性调制(FiLM)和加权融合，使模型能够在扩散过程中自适应地平衡语义和节奏线索。大量实验表明，低分辨率ODF是建模音乐节奏更有效的信号，并且Diff-V2M在领域内和领域外数据集上都优于现有模型，在客观指标和主观比较方面达到了最先进的性能。演示和代码可在提供的URL获取。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Shulei Ji, Zihao Wang, Jiaxing Yu, Xiangyuan Yang, Shuyu Li, Songruoyao Wu, Kejun Zhang",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Chord-conditioned Melody and Bass Generation",
+    "paper_title_zh": "基于和弦条件的旋律与贝斯生成",
+    "paper_id": "2511.08755",
+    "paper_abstract": "We evaluate five Transformer-based strategies for chord-conditioned melody and bass generation using a set of music theory-motivated metrics capturing pitch content, pitch interval size, and chord tone usage. The evaluated models include (1) no chord conditioning, (2) independent line chord-conditioned generation, (3) bass-first chord-conditioned generation, (4) melody-first chord-conditioned generation, and (5) chord-conditioned co-generation. We show that chord-conditioning improves the replication of stylistic pitch content and chord tone usage characteristics, particularly for the bass-first model.",
+    "paper_abstract_zh": "我们使用一组基于音乐理论的指标评估了五种基于Transformer的和弦条件旋律与贝斯生成策略，这些指标捕捉了音高内容、音高间隔大小和弦音使用情况。评估的模型包括：(1) 无和弦条件，(2) 独立线条和弦条件生成，(3) 贝斯优先和弦条件生成，(4) 旋律优先和弦条件生成，以及(5) 和弦条件协同生成。我们证明和弦条件能够提高风格化音高内容和弦音使用特征的复制能力，特别是对于贝斯优先模型。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Alexandra C Salem, Mohammad Shokri, Johanna Devaney",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Non-verbal Perception of Room Acoustics using Multi Dimensional Scaling Metho",
+    "paper_title_zh": "使用多维尺度法对房间声学进行非语言感知",
+    "paper_id": "2511.09029",
+    "paper_abstract": "Subjective room acoustics impressions play an important role for the performance and reception of music in concert venues and auralizations. Therefore, room acoustics since the 20th century dealt with the relationship between objective, acoustic parameters and subjective impressions of room acoustics. One common approach is to correlate acoustic measures with experts' subjective ratings of rooms as recalled from their long-term memory, and explain them using acoustical measures. Another approach is to let listeners rate auralized room acoustics on bipolar scales and find objective correlates. In this study, we present an alternative approach to characterizing the subjective impressions of room acoustics. We concolve music with binaural room impulse response measurements and utilize Multi Dimensional Scaling (MDS) to identify the perceptual dimensions of room acoustics. Results show that the perception of room acoustics has $5$ dimensions that can be explained by the (psycho-)acoustical measures echo density, fractal correlation dimension, roughness, loudness, and early decay time.",
+    "paper_abstract_zh": "主观房间声学印象在音乐厅和听觉化表演与接收中起着重要作用。因此，自20世纪以来，房间声学一直研究客观声学参数与主观房间声学印象之间的关系。一种常见方法是关联声学测量与专家从长期记忆中回忆的房间主观评级，并使用声学测量进行解释。另一种方法是让听众对听觉化的房间声学进行双极量表评级，并找到客观相关性。在本研究中，我们提出了一种替代方法来表征房间声学的主观印象。我们将音乐与双耳房间脉冲响应测量进行卷积，并利用多维尺度法（MDS）来识别房间声学的感知维度。结果表明，房间声学的感知有5个维度，这些维度可以通过（心理）声学测量回声密度、分形相关维度、粗糙度、响度和早期衰减时间来解释。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Adaptation and Self-Organizing Systems (nlin.AO)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Leonie Böhlke, Tim Ziemer, Rolf Bader",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Sound impact of simple viscoelastic damping changes due to aging and the role of the double bentside on soundboard tension in a 1755 Dulcken harpsichord",
+    "paper_title_zh": "1755年杜尔肯大键琴中简单粘弹性阻尼变化的声音影响以及双弯侧对音板张力的作用",
+    "paper_id": "2511.09037",
+    "paper_abstract": "The sound perception of wood aging is investigated on a Dulcken harpsichord of 1755 from the Museum of Applied Arts in Hamburg, Germany using a Finite-Difference Time Domain (FDTD) model of the harpsichords soundboard. The soundboard thickness was measured on the instrument at 497 positions during strings being deattached and used in the model. Impulse responses were taken on the instrument to estimate the present internal damping by calculating the T60 decay time and used as a model input. By varying the internal damping from this measured damping as a logarithmic decrement, impulse responses were simulated at 52 string positions on both, the 8' and 4' bridge. To estimate the changed sound brightness due to changed internal damping, spectral centroids were calculated from the simulated impulse responses. A dependency of brightness change due to aging on string position was found, where the lower strings have higher brightness, as expected, while the higher strings have decreased brightness. This counterintuitive finding is caused by the frequency-dependent filter effect of changed damping. Future studies need to incorporate viscoelasticity to differentiate this effect further. Furthermore, the attachment of the 8' string to the outer instead of the inner wall, a characteristic feature of Dulcken harpsichords, is investigated using a 3D Finite-Element Method (FEM) model simulation of the whole instrument. No considerable changes on the soundboard tension were found compared to an attachment of the 8' strings to the inner wall, pointing to another reason for this special construction.",
+    "paper_abstract_zh": "本研究使用大键琴音板的有限差分时域（FDTD）模型，探讨了木材老化对声音感知的影响。研究对象是德国汉堡应用艺术博物馆的一架1755年杜尔肯大键琴。在琴弦拆卸期间，对乐器上的497个位置进行了音板厚度测量，并将这些数据用于模型构建。通过计算T60衰减时间，对乐器进行了脉冲响应测量，以估计当前的内阻尼，并将其作为模型输入。通过将内阻尼从测量的阻尼值作为对数衰减进行变化，在8'和4'桥的52个琴弦位置上模拟了脉冲响应。为了估计因内阻尼变化导致的声音亮度变化，从模拟的脉冲响应中计算了频谱质心。研究发现，老化导致的亮度变化与琴弦位置相关，其中低音弦的亮度较高，而高音弦的亮度降低。这一反直觉的发现是由阻尼变化的频率相关滤波效应引起的。未来的研究需要纳入粘弹性以进一步区分这一效应。此外，通过使用整个乐器的三维有限元法（FEM）模型模拟，研究了杜尔肯大键琴的一个特征性构造——将8'琴弦连接到外墙而非内墙。与连接到内墙相比，未发现音板张力有显著变化，这表明这种特殊构造有其他原因。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Adaptation and Self-Organizing Systems (nlin.AO)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Rolf Bader, Niko Plath, Patrick Kontopidis",
+    "topic": [
+      "Music Information Retrieval",
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "End-to-end Contrastive Language-Speech Pretraining Model For Long-form Spoken Question Answering",
+    "paper_title_zh": "面向长篇口语问答的端到端对比语言-语音预训练模型",
+    "paper_id": "2511.09282",
+    "paper_abstract": "Significant progress has been made in spoken question answering (SQA) in recent years. However, many existing methods, including large audio language models, struggle with processing long audio. Follow the success of retrieval augmented generation, a speech-related retriever shows promising in help preprocessing long-form speech. But the performance of existing speech-related retrievers is lacking. To address this challenge, we propose CLSR, an end-to-end contrastive language-speech retriever that efficiently extracts question-relevant segments from long audio recordings for downstream SQA task. Unlike conventional speech-text contrastive models, CLSR incorporates an intermediate step that converts acoustic features into text-like representations prior to alignment, thereby more effectively bridging the gap between modalities. Experimental results across four cross-modal retrieval datasets demonstrate that CLSR surpasses both end-to-end speech related retrievers and pipeline approaches combining speech recognition with text retrieval, providing a robust foundation for advancing practical long-form SQA applications.",
+    "paper_abstract_zh": "近年来，口语问答（SQA）领域取得了显著进展。然而，许多现有方法，包括大型音频语言模型，在处理长音频时仍面临挑战。借鉴检索增强生成的成功经验，语音相关检索器在预处理长篇语音方面显示出良好前景。但现有语音相关检索器的性能仍有不足。为应对这一挑战，我们提出了CLSR，一种端到端的对比语言-语音检索器，能够高效地从长音频录音中提取与问题相关的片段，用于下游SQA任务。与传统语音-文本对比模型不同，CLSR在语音对齐前引入了一个将声学特征转换为类文本表示的中间步骤，从而更有效地弥合了模态间的差距。在四个跨模态检索数据集上的实验结果表明，CLSR超越了端到端语音相关检索器和结合语音识别与文本检索的流水线方法，为推进实用长篇SQA应用提供了坚实基础。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Jiliang Hu, Zuchao Li, Baoyuan Qi, Liu Guoming, Ping Wang",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Robust Multi-modal Task-oriented Communications with Redundancy-aware Representations",
+    "paper_title_zh": "基于冗余感知表示的鲁棒多模态任务导向通信",
+    "paper_id": "2511.08642",
+    "paper_abstract": "Semantic communications for multi-modal data can transmit task-relevant information efficiently over noisy and bandwidth-limited channels. However, a key challenge is to simultaneously compress inter-modal redundancy and improve semantic reliability under channel distortion. To address the challenge, we propose a robust and efficient multi-modal task-oriented communication framework that integrates a two-stage variational information bottleneck (VIB) with mutual information (MI) redundancy minimization. In the first stage, we apply uni-modal VIB to compress each modality separately, i.e., text, audio, and video, while preserving task-specific features. To enhance efficiency, an MI minimization module with adversarial training is then used to suppress cross-modal dependencies and to promote complementarity rather than redundancy. In the second stage, a multi-modal VIB is further used to compress the fused representation and to enhance robustness against channel distortion. Experimental results on multi-modal emotion recognition tasks demonstrate that the proposed framework significantly outperforms existing baselines in accuracy and reliability, particularly under low signal-to-noise ratio regimes. Our work provides a principled framework that jointly optimizes modality-specific compression, inter-modal redundancy, and communication reliability.",
+    "paper_abstract_zh": "多模态数据的语义通信可以在噪声和带宽受限的信道上高效传输任务相关信息。然而，一个关键挑战是如何在信道失真下同时压缩模态间冗余并提高语义可靠性。为解决这一挑战，我们提出了一种鲁棒且高效的多模态任务导向通信框架，该框架将两阶段变分信息瓶颈（VIB）与互信息（MI）冗余最小化相结合。在第一阶段，我们应用单模态VIB分别压缩每种模态（即文本、音频和视频），同时保留任务特定特征。为提高效率，随后采用具有对抗训练的MI最小化模块来抑制跨模态依赖性，促进互补性而非冗余。在第二阶段，进一步使用多模态VIB压缩融合表示，以增强对信道失真的鲁棒性。在多模态情感识别任务上的实验结果表明，所提框架在准确性和可靠性方面显著优于现有基线方法，特别是在低信噪比条件下。我们的工作提供了一个原则性框架，联合优化模态特定压缩、模态间冗余和通信可靠性。",
+    "subjects": [
+      "Image and Video Processing (eess.IV)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Jingwen Fu, Ming Xiao, Zhonghao Lyu, Mikael Skoglund, Celimuge Wu",
+    "topic": [
+      "Audio Representation Learning",
+      "Image Generation",
+      "Video Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "POTSA: A Cross-Lingual Speech Alignment Framework for Low Resource Speech-to-Text Translation",
+    "paper_title_zh": "POTSA: 一种面向低资源语音到文本翻译的跨语言语音对齐框架",
+    "paper_id": "2511.09232",
+    "paper_abstract": "Speech Large Language Models (SpeechLLMs) have achieved breakthroughs in multilingual speech-to-text translation (S2TT). However, existing approaches often overlook semantic commonalities across source languages, leading to biased translation performance. In this work, we propose \\textbf{POTSA} (Parallel Optimal Transport for Speech Alignment), a new framework based on cross-lingual parallel speech pairs and Optimal Transport (OT), designed to bridge high- and low-resource translation gaps. First, we introduce a Bias Compensation module to coarsely align initial speech representations across languages. Second, we impose token-level OT constraints on a Q-Former using parallel speech pairs to establish fine-grained consistency of representations. Then, we apply a layer scheduling strategy to focus OT constraints on the most semantically beneficial layers. Experiments on the FLEURS dataset show that our method achieves SOTA performance, with +0.93 BLEU on average over five common languages and +5.05 BLEU on zero-shot languages, using only 10 hours of parallel speech per source language.",
+    "paper_abstract_zh": "语音大语言模型(SpeechLLMs)在多语言语音到文本翻译(S2TT)方面取得了突破。然而，现有方法往往忽略了源语言之间的语义共性，导致翻译性能存在偏差。在这项工作中，我们提出了POTSA(语音对齐的并行最优传输)，一个基于跨语言并行语音对和最优传输(OT)的新框架，旨在弥合高资源和低资源翻译之间的差距。首先，我们引入了一个偏差补偿模块，用于初步对齐跨语言的初始语音表示。其次，我们使用并行语音对对Q-Former施加令牌级别的OT约束，以建立表示的细粒度一致性。然后，我们采用层调度策略，将OT约束集中在语义上最有益的层上。在FLEURS数据集上的实验表明，我们的方法实现了最先进的性能，在五种常见语言上平均BLEU提升了0.93，在零样本语言上提升了5.05，而每种源语言仅使用10小时的并行语音。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Xuanchen Li, Chenrui Cui, Tianrui Wang, Meng Ge, Zikang Huang, Jin Li, Yizhou Peng, Longbiao Wang, Jianwu Dang, Nyima Tashi",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Spatial Audio Rendering for Real-Time Speech Translation in Virtual Meetings",
+    "paper_title_zh": "虚拟会议中实时语音翻译的空间音频渲染",
+    "paper_id": "2511.09525",
+    "paper_abstract": "Language barriers in virtual meetings remain a persistent challenge to global collaboration. Real-time translation offers promise, yet current integrations often neglect perceptual cues. This study investigates how spatial audio rendering of translated speech influences comprehension, cognitive load, and user experience in multilingual meetings. We conducted a within-subjects experiment with 8 bilingual confederates and 47 participants simulating global team meetings with English translations of Greek, Kannada, Mandarin Chinese, and Ukrainian - languages selected for their diversity in grammar, script, and resource availability. Participants experienced four audio conditions: spatial audio with and without background reverberation, and two non-spatial configurations (diotic, monaural). We measured listener comprehension accuracy, workload ratings, satisfaction scores, and qualitative feedback. Spatially-rendered translations doubled comprehension compared to non-spatial audio. Participants reported greater clarity and engagement when spatial cues and voice timbre differentiation were present. We discuss design implications for integrating real-time translation into meeting platforms, advancing inclusive, cross-language communication in telepresence systems.",
+    "paper_abstract_zh": "虚拟会议中的语言障碍仍然是全球协作的持续挑战。实时翻译提供了希望，但当前的集成通常忽略了感知线索。本研究探讨了翻译语音的空间音频渲染如何影响多语言会议中的理解、认知负荷和用户体验。我们进行了一项被试内实验，涉及8名双语同谋和47名参与者，模拟全球团队会议，使用希腊语、卡纳达语、普通话和乌克兰语的英语翻译——这些语言在语法、文字和资源可用性方面具有多样性。参与者体验了四种音频条件：带和不带背景混响的空间音频，以及两种非空间配置（双耳、单耳）。我们测量了听者的理解准确性、工作负荷评分、满意度评分和定性反馈。与空间音频相比，空间渲染的翻译理解度提高了一倍。当存在空间线索和音色差异时，参与者报告了更高的清晰度和参与度。我们讨论了将实时翻译集成到会议平台中的设计启示，推进了远程呈现系统中的包容性跨语言通信。",
+    "subjects": [
+      "Human-Computer Interaction (cs.HC)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-13",
+    "paper_authors": "Margarita Geleta, Hong Sodoma, Hannes Gamper",
+    "topic": [
+      "Speech Synthesis",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
