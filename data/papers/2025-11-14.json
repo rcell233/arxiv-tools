@@ -1,0 +1,301 @@
+[
+  {
+    "paper_title": "Time-Layer Adaptive Alignment for Speaker Similarity in Flow-Matching Based Zero-Shot TTS",
+    "paper_title_zh": "基于Flow-Matching的零样本文本转语音系统中说话人相似性的时间层自适应对齐",
+    "paper_id": "2511.09995",
+    "paper_abstract": "Flow-Matching (FM)-based zero-shot text-to-speech (TTS) systems exhibit high-quality speech synthesis and robust generalization capabilities. However, the speaker representation ability of such systems remains underexplored, primarily due to the lack of explicit speaker-specific supervision in the FM framework. To this end, we conduct an empirical analysis of speaker information distribution and reveal its non-uniform allocation across time steps and network layers, underscoring the need for adaptive speaker alignment. Accordingly, we propose Time-Layer Adaptive Speaker Alignment (TLA-SA), a loss that enhances speaker consistency by jointly leveraging temporal and hierarchical variations in speaker information. Experimental results show that TLA-SA significantly improves speaker similarity compared to baseline systems on both research- and industrial-scale datasets and generalizes effectively across diverse model architectures, including decoder-only language models (LM) and FM-based TTS systems free of LM.",
+    "paper_abstract_zh": "基于Flow-Matching (FM) 的零样本文本转语音 (TTS) 系统展现出高质量的语音合成和强大的泛化能力。然而，这类系统的说话人表征能力仍未得到充分探索，主要原因是FM框架中缺乏显式的说话人特定监督。为此，我们对说话人信息分布进行了实证分析，揭示了其在时间步和网络层之间的非均匀分配，强调了自适应说话人对齐的必要性。据此，我们提出了时间层自适应说话人对齐 (TLA-SA) 损失函数，通过联合利用说话人信息在时间和层次结构上的变化来增强说话人一致性。实验结果表明，在研究级和工业级数据集上，TLA-SA 相比基线系统显著提高了说话人相似性，并且能够有效泛化到多种模型架构，包括仅解码器语言模型 (LM) 和无 LM 的基于 FM 的 TTS 系统。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Haoyu Li, Mingyang Han, Yu Xi, Dongxiao Wang, Hankun Wang, Haoxiang Shi, Boyu Li, Jun Song, Bo Zheng, Shuai Wang",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "A Study of Binaural Deep Beamforming With Interpretable Beampatterns Guided by Time-Varying RTF",
+    "paper_title_zh": "基于时变相对传递函数引导的可解释双耳深度波束成形研究",
+    "paper_id": "2511.10168",
+    "paper_abstract": "In this work, a deep beamforming framework for speech enhancement in dynamic acoustic environments is studied. The time-varying beamformer weights are estimated from the noisy multichannel signals by minimizing an SI-SDR loss. The estimation is guided by the continuously tracked relative transfer functions (RTFs) of the moving target speaker. The spatial behavior of the network is evaluated through both narrowband and wideband beampatterns under three settings: (i) oracle guidance using true RTFs, (ii) estimated RTFs obtained by a subspace tracking method, and (iii) without the RTF guidance. Results show that RTF-guided models produce smoother, spatially consistent beampatterns that accurately track the target's direction of arrival. In contrast, the model fails to maintain a clear spatial focus when guidance is absent. Using the estimated RTFs as guidance closely matches the oracle RTF behavior, confirming the effectiveness of the tracking scheme. The model also outputs a binaural signal to preserve the speaker's spatial cues, which promotes hearing aid and hearables applications.",
+    "paper_abstract_zh": "本文研究了一种用于动态声学环境中语音增强的深度波束成形框架。通过最小化SI-SDR损失，从 noisy 多通道信号中估计时变波束成形权重。该估计由持续跟踪的移动目标说话人的相对传递函数(RTF)引导。通过网络在三种设置下的窄带和宽带波束图评估其空间行为：(i) 使用真实RTF的oracle引导，(ii) 通过子空间跟踪方法获得的估计RTF，(iii) 无RTF引导。结果表明，RTF引导的模型产生更平滑、空间一致性更强的波束图，能够准确跟踪目标的到达方向。相比之下，当没有引导时，模型无法保持清晰的空间聚焦。使用估计的RTF作为引导与oracle RTF行为非常接近，证实了跟踪方案的有效性。该模型还输出双耳信号以保留说话人的空间线索，这促进了助听器和可穿戴音频设备的应用。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Ilai Zaidel, Sharon Gannot",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Music Flamingo: Scaling Music Understanding in Audio Language Models",
+    "paper_title_zh": "Music Flamingo：扩展音频语言模型中的音乐理解能力",
+    "paper_id": "2511.10289",
+    "paper_abstract": "We introduce Music Flamingo, a novel large audio-language model designed to advance music (including song) understanding in foundational audio models. While audio-language research has progressed rapidly, music remains challenging due to its dynamic, layered, and information-dense nature. Progress has been further limited by the difficulty of scaling open audio understanding models, primarily because of the scarcity of high-quality music data and annotations. As a result, prior models are restricted to producing short, high-level captions, answering only surface-level questions, and showing limited generalization across diverse musical cultures. To address these challenges, we curate MF-Skills, a large-scale dataset labeled through a multi-stage pipeline that yields rich captions and question-answer pairs covering harmony, structure, timbre, lyrics, and cultural context. We fine-tune an enhanced Audio Flamingo 3 backbone on MF-Skills and further strengthen multiple skills relevant to music understanding. To improve the model's reasoning abilities, we introduce a post-training recipe: we first cold-start with MF-Think, a novel chain-of-thought dataset grounded in music theory, followed by GRPO-based reinforcement learning with custom rewards. Music Flamingo achieves state-of-the-art results across 10+ benchmarks for music understanding and reasoning, establishing itself as a generalist and musically intelligent audio-language model. Beyond strong empirical results, Music Flamingo sets a new standard for advanced music understanding by demonstrating how models can move from surface-level recognition toward layered, human-like perception of songs. We believe this work provides both a benchmark and a foundation for the community to build the next generation of models that engage with music as meaningfully as humans do.",
+    "paper_abstract_zh": "我们介绍了Music Flamingo，这是一种新型的大型音频语言模型，旨在推进基础音频模型中的音乐（包括歌曲）理解能力。尽管音频语言研究取得了快速进展，但由于音乐具有动态、分层和信息密集的特性，音乐理解仍然充满挑战。由于高质量音乐数据和标注的稀缺性，扩展开放音频理解模型的能力进一步限制了进展。因此，现有模型仅限于生成简短的高级描述，仅回答表面层面的问题，并且在跨不同音乐文化的泛化能力上表现有限。为应对这些挑战，我们构建了MF-Skills数据集，该数据集通过多阶段流程标注，生成了涵盖和声、结构、音色、歌词和文化背景的丰富描述和问答对。我们在MF-Skills上对增强的Audio Flamingo 3主干模型进行微调，并进一步强化了与音乐理解相关的多种能力。为提升模型的推理能力，我们引入了一种后训练方法：首先使用基于音乐理论的MF-Think数据集进行冷启动，然后采用基于GRPO的强化学习与自定义奖励机制。Music Flamingo在10多个音乐理解和推理基准测试中取得了最先进的结果，确立了自己作为通用且具有音乐智能的音频语言模型的地位。除了强大的实证结果外，Music Flamingo通过展示模型如何从表面识别向分层、类人感知歌曲迈进，为高级音乐理解树立了新标准。我们相信这项工作为社区构建下一代能够像人类一样有意义地参与音乐的模型提供了基准和基础。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Sreyan Ghosh, Arushi Goel, Lasha Koroshinadze, Sang-gil Lee, Zhifeng Kong, Joao Felipe Santos, Ramani Duraiswami, Dinesh Manocha, Wei Ping, Mohammad Shoeybi, Bryan Catanzaro",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Direction-of-Arrival and Noise Covariance Matrix joint estimation for beamforming",
+    "paper_title_zh": "用于波束形成的到达方向与噪声协方差矩阵联合估计",
+    "paper_id": "2511.10639",
+    "paper_abstract": "We propose a joint estimation method for the Direction-of-Arrival (DoA) and the Noise Covariance Matrix (NCM) tailored for beamforming applications. Building upon an existing NCM framework, our approach simplifies the estimation procedure by deriving an quasi-linear solution, instead of the traditional exhaustive search. Additionally, we introduce a novel DoA estimation technique that operates across all frequency bins, improving robustness in reverberant environments. Simulation results demonstrate that our method outperforms classical techniques, such as MUSIC, in mid- to high-angle scenarios, achieving lower angular errors and superior signal enhancement through beamforming. The proposed framework was also fared against other techniques for signal enhancement, having better noise rejection and interference canceling capabilities. These improvements are validated using both theoretical and empirical performance metrics.",
+    "paper_abstract_zh": "我们提出了一种针对波束形成应用的到达方向(DoA)和噪声协方差矩阵(NCM)联合估计方法。基于现有的NCM框架，我们的方法通过推导准线性解而非传统穷举搜索来简化估计过程。此外，我们引入了一种新颖的跨所有频带的DoA估计技术，提高了混响环境中的鲁棒性。仿真结果表明，在中至高角度场景下，我们的方法优于经典技术如MUSIC，实现了更低的角误差和通过波束形成的卓越信号增强。所提出的框架还与其他信号增强技术进行了比较，具有更好的噪声抑制和干扰消除能力。这些改进通过理论和性能指标得到了验证。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Optimization and Control (math.OC)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Vitor Gelsleichter Probst Curtarelli",
+    "topic": [
+      "Speech Enhancement",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "MTR-DuplexBench: Towards a Comprehensive Evaluation of Multi-Round Conversations for Full-Duplex Speech Language Models",
+    "paper_title_zh": "MTR-DuplexBench：面向全双语音语言模型多轮对话的综合评估",
+    "paper_id": "2511.10262",
+    "paper_abstract": "Full-Duplex Speech Language Models (FD-SLMs) enable real-time, overlapping conversational interactions, offering a more dynamic user experience compared to traditional half-duplex models. However, existing benchmarks primarily focus on evaluating single-round interactions and conversational features, neglecting the complexities of multi-round communication and critical capabilities such as instruction following and safety. Evaluating FD-SLMs in multi-round settings poses significant challenges, including blurred turn boundaries in communication and context inconsistency during model inference. To address these gaps, we introduce MTR-DuplexBench, a novel benchmark that segments continuous full-duplex dialogues into discrete turns, enabling comprehensive, turn-by-turn evaluation of FD-SLMs across dialogue quality, conversational dynamics, instruction following, and safety. Experimental results reveal that current FD-SLMs face difficulties in maintaining consistent performance across multiple rounds and evaluation dimensions, highlighting the necessity and effectiveness of our proposed benchmark. The benchmark and code will be available in the future.",
+    "paper_abstract_zh": "全双语音语言模型（FD-SLMs）能够实现实时、重叠的对话交互，相比传统的半双工模型提供了更动态的用户体验。然而，现有的基准测试主要侧重于评估单轮交互和对话特征，忽略了多轮通信的复杂性以及指令遵循和安全等关键能力。在多轮设置下评估FD-SLMs面临重大挑战，包括通信中模糊的轮次边界和模型推理过程中的上下文不一致。为解决这些差距，我们引入了MTR-DuplexBench，这是一个新颖的基准，它将连续的全双工对话分割为离散的轮次，从而能够全面、逐轮地评估FD-SLMs在对话质量、对话动态、指令遵循和安全等方面的表现。实验结果表明，当前的FD-SLMs在多轮和多个评估维度上难以保持一致的性能，凸显了我们提出的基准的必要性和有效性。该基准和代码将在未来提供。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "He Zhang, Wenqian Cui, Haoning Xu, Xiaohui Li, Lei Zhu, Shaohua Ma, Irwin King",
+    "topic": [
+      "Speech Recognition",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "WaveRoll: JavaScript Library for Comparative MIDI Piano-Roll Visualization",
+    "paper_title_zh": "WaveRoll: 用于比较MIDI钢琴卷帘可视化的JavaScript库",
+    "paper_id": "2511.09562",
+    "paper_abstract": "WaveRoll is an interactive JavaScript library that enables comparative visualization and synchronized playback of multiple MIDI piano rolls on a browser. It addresses a specific evaluation need in Automatic Music Transcription (AMT), contrasting multiple MIDI outputs produced from the same input. The library displays multiple MIDI tracks on a single, time-aligned grid with synchronized audio, allowing users to compare pitch and timing, identify missed or extra notes, and observe onset and offset differences, as well as section-level patterns. We expect that such comparisons would assist in model evaluation and error analysis, and help readers to understand the model behavior better. The open-source library is available at this https URL",
+    "paper_abstract_zh": "WaveRoll是一个交互式JavaScript库，可在浏览器上实现多个MIDI钢琴卷帘的比较可视化和同步播放。它解决了自动音乐转录(AMT)中的一个特定评估需求，即对比同一输入产生的多个MIDI输出。该库在单个时间对齐的网格上显示多个MIDI音轨，并配有同步音频，使用户能够比较音高和时间，识别遗漏或多余的音符，观察音符开始和结束的差异，以及段落级别的模式。我们期望这种比较能够帮助模型评估和错误分析，并帮助读者更好地理解模型行为。该开源库可通过此https URL获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Hannah Park, Dasaem Jeong",
+    "topic": [
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Video Echoed in Music: Semantic, Temporal, and Rhythmic Alignment for Video-to-Music Generation",
+    "paper_title_zh": "视频中的音乐回响：视频到音乐生成的语义、时间和节奏对齐",
+    "paper_id": "2511.09585",
+    "paper_abstract": "Video-to-Music generation seeks to generate musically appropriate background music that enhances audiovisual immersion for videos. However, current approaches suffer from two critical limitations: 1) incomplete representation of video details, leading to weak alignment, and 2) inadequate temporal and rhythmic correspondence, particularly in achieving precise beat synchronization. To address the challenges, we propose Video Echoed in Music (VeM), a latent music diffusion that generates high-quality soundtracks with semantic, temporal, and rhythmic alignment for input videos. To capture video details comprehensively, VeM employs a hierarchical video parsing that acts as a music conductor, orchestrating multi-level information across modalities. Modality-specific encoders, coupled with a storyboard-guided cross-attention mechanism (SG-CAtt), integrate semantic cues while maintaining temporal coherence through position and duration encoding. For rhythmic precision, the frame-level transition-beat aligner and adapter (TB-As) dynamically synchronize visual scene transitions with music beats. We further contribute a novel video-music paired dataset sourced from e-commerce advertisements and video-sharing platforms, which imposes stricter transition-beat synchronization requirements. Meanwhile, we introduce novel metrics tailored to the task. Experimental results demonstrate superiority, particularly in semantic relevance and rhythmic precision.",
+    "paper_abstract_zh": "视频到音乐生成旨在生成适合的视频背景音乐，以增强音频视频沉浸感。然而，当前方法存在两个关键局限：1) 视频细节表示不完整，导致对齐效果弱；2) 时间和节奏对应不足，特别是在实现精确节拍同步方面。为解决这些挑战，我们提出Video Echoed in Music (VeM)，一种潜在音乐扩散模型，可为输入视频生成具有语义、时间和节奏对齐的高质量配乐。为全面捕捉视频细节，VeM采用分层视频解析作为音乐指挥，协调跨模态的多级信息。特定模态的编码器与故事板引导的交叉注意力机制(SG-CAtt)相结合，在保持时间连贯性的同时整合语义线索，并通过位置和持续时间编码实现。为提高节奏精度，帧级过渡节拍对齐器和适配器(TB-As)动态同步视觉场景转换与音乐节拍。我们进一步贡献了一个新颖的视频音乐配对数据集，源自电子商务广告和视频分享平台，该数据集对过渡节拍同步有更严格的要求。同时，我们引入了针对该任务的新颖评估指标。实验结果表明了该方法的优势，特别是在语义相关性和节奏精度方面。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Xinyi Tong, Yiran Zh, Jishang Chen, Chunru Zhan, Tianle Wang, Sirui Zhang, Nian Liu, Tiezheng Ge, Duo Xu, Xin Jin, Feng Yu, Song-Chun Zhu",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "FabasedVC: Enhancing Voice Conversion with Text Modality Fusion and Phoneme-Level SSL Features",
+    "paper_title_zh": "FabasedVC: 通过文本模态融合和音素级自监督学习特征增强语音转换",
+    "paper_id": "2511.10112",
+    "paper_abstract": "In voice conversion (VC), it is crucial to preserve complete semantic information while accurately modeling the target speaker's timbre and prosody. This paper proposes FabasedVC to achieve VC with enhanced similarity in timbre, prosody, and duration to the target speaker, as well as improved content integrity. It is an end-to-end VITS-based VC system that integrates relevant textual modality information, phoneme-level self-supervised learning (SSL) features, and a duration predictor. Specifically, we employ a text feature encoder to encode attributes such as text, phonemes, tones and BERT features. We then process the frame-level SSL features into phoneme-level features using two methods: average pooling and attention mechanism based on each phoneme's duration. Moreover, a duration predictor is incorporated to better align the speech rate and prosody of the target speaker. Experimental results demonstrate that our method outperforms competing systems in terms of naturalness, similarity, and content integrity.",
+    "paper_abstract_zh": "在语音转换(VC)中，在准确建模目标说话人的音色和韵律的同时保留完整的语义信息至关重要。本文提出了FabasedVC，以实现与目标说话人在音色、韵律和持续时间方面更高的相似性，并提高内容完整性。这是一个基于VITS的端到端VC系统，集成了相关的文本模态信息、音素级自监督学习(SSL)特征和持续时间预测器。具体而言，我们使用文本特征编码器来编码文本、音素、声调和BERT特征等属性。然后，我们通过两种方法将帧级SSL特征处理为音素级特征：基于每个音素持续时间的平均池化和注意力机制。此外，我们还集成了一个持续时间预测器，以更好地对齐目标说话人的语速和韵律。实验结果表明，我们的方法在自然度、相似性和内容完整性方面优于竞争系统。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Wenyu Wang, Zhetao Hu, Yiquan Zhou, Jiacheng Xu, Zhiyu Wu, Chen Li, Shihao Li",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speech-Audio Compositional Attacks on Multimodal LLMs and Their Mitigation with SALMONN-Guard",
+    "paper_title_zh": "针对多模态大语言模型的语音-音频组合攻击及其通过SALMONN-Guard的缓解",
+    "paper_id": "2511.10222",
+    "paper_abstract": "Recent progress in large language models (LLMs) has enabled understanding of both speech and non-speech audio, but exposing new safety risks emerging from complex audio inputs that are inadequately handled by current safeguards. We introduce SACRED-Bench (Speech-Audio Composition for RED-teaming) to evaluate the robustness of LLMs under complex audio-based attacks. Unlike existing perturbation-based methods that rely on noise optimization or white-box access, SACRED-Bench exploits speech-audio composition mechanisms. SACRED-Bench adopts three mechanisms: (a) speech overlap and multi-speaker dialogue, which embeds harmful prompts beneath or alongside benign speech; (b) speech-audio mixture, which imply unsafe intent via non-speech audio alongside benign speech or audio; and (c) diverse spoken instruction formats (open-ended QA, yes/no) that evade text-only filters. Experiments show that, even Gemini 2.5 Pro, the state-of-the-art proprietary LLM, still exhibits 66% attack success rate in SACRED-Bench test set, exposing vulnerabilities under cross-modal, speech-audio composition attacks. To bridge this gap, we propose SALMONN-Guard, a safeguard LLM that jointly inspects speech, audio, and text for safety judgments, reducing attack success down to 20%. Our results highlight the need for audio-aware defenses for the safety of multimodal LLMs. The benchmark and SALMONN-Guard checkpoints can be found at this https URL. Warning: this paper includes examples that may be offensive or harmful.",
+    "paper_abstract_zh": "最近大型语言模型（LLM）的进展使其能够理解语音和非语音音频，但也暴露了来自复杂音频输入的新安全风险，这些风险是当前安全措施无法充分应对的。我们引入了SACRED-Bench（用于RED测试的语音-音频组合）来评估LLM在复杂音频攻击下的鲁棒性。与现有的基于扰动的方法（依赖于噪声优化或白盒访问）不同，SACRED-Bench利用语音-音频组合机制。SACRED-Bench采用三种机制：（a）语音重叠和多说话人对话，将有害提示嵌入良性语音之下或 alongside；（b）语音-音频混合，通过非语音音频 alongside 良性语音或音频暗示不安全意图；（c）多样化的口语指令格式（开放式问答、是/否问题），以规避纯文本过滤器。实验表明，即使是目前最先进的专有LLM Gemini 2.5 Pro，在SACRED-Bench测试集中仍表现出66%的攻击成功率，暴露了其在跨模态、语音-音频组合攻击下的脆弱性。为弥补这一差距，我们提出了SALMONN-Guard，一个安全LLM，它联合检查语音、音频和文本以进行安全判断，将攻击成功率降至20%。我们的结果强调了多模态LLM安全需要音频感知防御的重要性。基准测试和SALMONN-Guard检查点可在提供的URL中找到。警告：本文包含可能令人反感或有害的示例。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Yudong Yang, Xuezhen Zhang, Zhifeng Han, Siyin Wang, Jimin Zhuang, Zengrui Jin, Jing Shao, Guangzhi Sun, Chao Zhang",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Rebellion: Noise-Robust Reasoning Training for Audio Reasoning Models",
+    "paper_title_zh": "Rebellion: 面向音频推理模型的抗噪声鲁棒推理训练",
+    "paper_id": "2511.09682",
+    "paper_abstract": "Instilling reasoning capabilities in large models (LMs) using reasoning training (RT) significantly improves LMs' performances. Thus Audio Reasoning Models (ARMs), i.e., audio LMs that can reason, are becoming increasingly popular. However, no work has studied the safety of ARMs against jailbreak attacks that aim to elicit harmful responses from target models. To this end, first, we show that standard RT with appropriate safety reasoning data can protect ARMs from vanilla audio jailbreaks, but cannot protect them against our proposed simple yet effective jailbreaks. We show that this is because of the significant representation drift between vanilla and advanced jailbreaks which forces the target ARMs to emit harmful responses. Based on this observation, we propose Rebellion, a robust RT that trains ARMs to be robust to the worst-case representation drift. All our results are on Qwen2-Audio; they demonstrate that Rebellion: 1) can protect against advanced audio jailbreaks without compromising performance on benign tasks, and 2) significantly improves accuracy-safety trade-off over standard RT method.",
+    "paper_abstract_zh": "通过推理训练(RT)在大模型(LMs)中注入推理能力，可以显著提高LMs的性能。因此，能够进行推理的音频推理模型(ARMs)，即可推理的音频LMs，正变得越来越流行。然而，目前还没有研究针对旨在从目标模型中获取有害响应的越狱攻击对ARMs的安全性。为此，首先，我们展示了使用适当的安全推理数据进行标准RT可以保护ARMs免受基本音频越狱攻击，但不能保护它们免受我们提出的简单而有效的越狱攻击。我们指出，这是因为基本和高级越狱攻击之间存在显著的表示漂移，这迫使目标ARMs发出有害响应。基于这一观察，我们提出了Rebellion，一种鲁棒的RT，训练ARMs使其对最坏情况的表示漂移具有鲁棒性。我们所有的结果都基于Qwen2-Audio；它们表明，Rebellion：1)可以在不损害良性任务性能的情况下保护ARMs免受高级音频越狱攻击，并且2)与标准RT方法相比，显著提高了准确性与安全性的权衡。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Tiansheng Huang, Virat Shejwalkar, Oscar Chang, Milad Nasr, Ling Liu",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Investigation of Feature Selection and Pooling Methods for Environmental Sound Classification",
+    "paper_title_zh": "环境声音分类中特征选择和池化方法的探究",
+    "paper_id": "2511.09802",
+    "paper_abstract": "This paper explores the impact of dimensionality reduction and pooling methods for Environmental Sound Classification (ESC) using lightweight CNNs. We evaluate Sparse Salient Region Pooling (SSRP) and its variants, SSRP-Basic (SSRP-B) and SSRP-Top-K (SSRP-T), under various hyperparameter settings and compare them with Principal Component Analysis (PCA). Experiments on the ESC-50 dataset demonstrate that SSRP-T achieves up to 80.69 % accuracy, significantly outperforming both the baseline CNN (66.75 %) and the PCA-reduced model (37.60 %). Our findings confirm that a well-tuned sparse pooling strategy provides a robust, efficient, and high-performing solution for ESC tasks, particularly in resource-constrained scenarios where balancing accuracy and computational cost is crucial.",
+    "paper_abstract_zh": "本文探讨了使用轻量级卷积神经网络(CNN)进行环境声音分类(ESC)时，降维和池化方法的影响。我们在各种超参数设置下评估了稀疏显著区域池化(SSRP)及其变体SSRP基础版(SSRP-B)和SSRP前K版(SSRP-T)，并将它们与主成分分析(PCA)进行比较。在ESC-50数据集上的实验表明，SSRP-T的准确率高达80.69%，显著优于基准CNN(66.75%)和PCA降维模型(37.60%)。我们的研究证实，经过良好调优的稀疏池化策略为ESC任务提供了一种稳健、高效且高性能的解决方案，特别是在资源受限的场景中，平衡准确性和计算成本至关重要。",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Parinaz Binandeh Dehaghani, Danilo Pena, A. Pedro Aguiar",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "HI-TransPA: Hearing Impairments Translation Personal Assistant",
+    "paper_title_zh": "HI-TransPA：听力障碍翻译助手",
+    "paper_id": "2511.09915",
+    "paper_abstract": "To provide a unified and flexible solution for daily communication among hearing-impaired individuals, we introduce the Omni-Model paradigm into assistive technology and present HI-TransPA, an instruction-driven audio-visual personal assistant. The model fuses indistinct speech with high-frame-rate lip dynamics, enabling both translation and dialogue within a single multimodal framework. To tackle the challenges of noisy and heterogeneous raw data and the limited adaptability of existing Omni-Models to hearing-impaired speech, we construct a comprehensive preprocessing and curation pipeline that detects facial landmarks, isolates and stabilizes the lip region, and quantitatively assesses multimodal sample quality. These quality scores guide a curriculum learning strategy that first trains on clean, high-confidence samples and progressively incorporates harder cases to strengthen model robustness. We further adopt a SigLIP encoder combined with a Unified 3D-Resampler to efficiently encode high-frame-rate lip motion. Experiments on our purpose-built HI-Dialogue dataset show that HI-TransPA achieves state-of-the-art performance in both literal accuracy and semantic fidelity. This work establishes a foundation for applying Omni-Models to assistive communication technology, providing an end-to-end modeling framework and essential processing tools for future research.",
+    "paper_abstract_zh": "为听力障碍人士的日常交流提供统一且灵活的解决方案，我们将全模型范式引入辅助技术，并提出了HI-TransPA，一个指令驱动的视听个人助手。该模型融合了模糊的语音和高帧率的唇部动态，在单一的多模态框架内实现翻译和对话。为解决嘈杂和异构的原始数据挑战，以及现有全模型对听力障碍语音的有限适应性，我们构建了一个全面的预处理和整理流程，包括检测面部标志点、隔离和稳定唇部区域，以及定量评估多模态样本质量。这些质量分数指导了一种课程学习策略，首先在干净、高置信度的样本上训练，并逐步融入更困难的案例以增强模型鲁棒性。我们进一步采用SigLIP编码器结合统一3D重采样器，以高效编码高帧率的唇部运动。在我们专门构建的HI-Dialogue数据集上的实验表明，HI-TransPA在字面准确性和语义保真度方面均达到了最先进的性能。这项工作为将全模型应用于辅助通信技术奠定了基础，为未来研究提供了端到端的建模框架和必要的处理工具。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Zhiming Ma, Shiyu Gan, Junhao Zhao, Xianming Li, Qingyun Pan, Peidong Wang, Mingjun Pan, Yuhao Mo, Jiajie Cheng, Chengxin Chen, Zhonglun Cao, Chonghan Liu, Shi Cheng",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Audio-VLA: Adding Contact Audio Perception to Vision-Language-Action Model for Robotic Manipulation",
+    "paper_title_zh": "Audio-VLA：为机器人操作将接触音频感知添加到视觉-语言-动作模型中",
+    "paper_id": "2511.09958",
+    "paper_abstract": "The Vision-Language-Action models (VLA) have achieved significant advances in robotic manipulation recently. However, vision-only VLA models create fundamental limitations, particularly in perceiving interactive and manipulation dynamic processes. This paper proposes Audio-VLA, a multimodal manipulation policy that leverages contact audio to perceive contact events and dynamic process feedback. Audio-VLA overcomes the vision-only constraints of VLA models. Additionally, this paper introduces the Task Completion Rate (TCR) metric to systematically evaluate dynamic operational processes. Audio-VLA employs pre-trained DINOv2 and SigLIP as visual encoders, AudioCLIP as the audio encoder, and Llama2 as the large language model backbone. We apply LoRA fine-tuning to these pre-trained modules to achieve robust cross-modal understanding of both visual and acoustic inputs. A multimodal projection layer aligns features from different modalities into the same feature space. Moreover RLBench and LIBERO simulation environments are enhanced by adding collision-based audio generation to provide realistic sound feedback during object interactions. Since current robotic manipulation evaluations focus on final outcomes rather than providing systematic assessment of dynamic operational processes, the proposed TCR metric measures how well robots perceive dynamic processes during manipulation, creating a more comprehensive evaluation metric. Extensive experiments on LIBERO, RLBench, and two real-world tasks demonstrate Audio-VLA's superior performance over vision-only comparative methods, while the TCR metric effectively quantifies dynamic process perception capabilities.",
+    "paper_abstract_zh": "视觉-语言-动作模型（VLA）最近在机器人操作方面取得了显著进展。然而，仅依赖视觉的VLA模型存在基本局限性，特别是在感知交互和操作动态过程方面。本文提出了Audio-VLA，一种多模态操作策略，利用接触音频来感知接触事件和动态过程反馈。Audio-VLA克服了VLA模型仅依赖视觉的限制。此外，本文引入了任务完成率（TCR）指标，用于系统评估动态操作过程。Audio-VLA采用预训练的DINOv2和SigLIP作为视觉编码器，AudioCLIP作为音频编码器，Llama2作为大语言模型主干。我们对这些预训练模块应用LoRA微调，以实现对视觉和声学输入的鲁棒跨模态理解。多模态投影层将不同模态的特征对齐到同一特征空间。此外，通过添加基于碰撞的音频生成来增强RLBench和LIBERO仿真环境，以在物体交互期间提供真实的声音反馈。由于当前机器人操作评估侧重于最终结果，而非对动态操作过程进行系统评估，因此提出的TCR指标衡量机器人在操作过程中对动态过程的感知能力，从而创建了一个更全面的评估指标。在LIBERO、RLBench和两个真实世界任务上的大量实验表明，Audio-VLA相对于仅依赖视觉的对比方法具有优越性能，而TCR指标有效量化了动态过程感知能力。",
+    "subjects": [
+      "Robotics (cs.RO)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Xiangyi Wei, Haotian Zhang, Xinyi Cao, Siyu Xie, Weifeng Ge, Yang Li, Changbo Wang",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "VocalNet-M2: Advancing Low-Latency Spoken Language Modeling via Integrated Multi-Codebook Tokenization and Multi-Token Prediction",
+    "paper_title_zh": "VocalNet-M2：通过集成多码本标记化和多标记预测推进低延迟口语语言建模",
+    "paper_id": "2511.10232",
+    "paper_abstract": "Current end-to-end spoken language models (SLMs) have made notable progress, yet they still encounter considerable response latency. This delay primarily arises from the autoregressive generation of speech tokens and the reliance on complex flow-matching models for speech synthesis. To overcome this, we introduce VocalNet-M2, a novel low-latency SLM that integrates a multi-codebook tokenizer and a multi-token prediction (MTP) strategy. Our model directly generates multi-codebook speech tokens, thus eliminating the need for a latency-inducing flow-matching model. Furthermore, our MTP strategy enhances generation efficiency and improves overall performance. Extensive experiments demonstrate that VocalNet-M2 achieves a substantial reduction in first chunk latency (from approximately 725ms to 350ms) while maintaining competitive performance across mainstream SLMs. This work also provides a comprehensive comparison of single-codebook and multi-codebook strategies, offering valuable insights for developing efficient and high-performance SLMs for real-time interactive applications.",
+    "paper_abstract_zh": "当前端到端的口语语言模型(SLMs)已取得显著进展，但仍面临相当大的响应延迟。这种延迟主要源于语音标记的自回归生成以及依赖复杂的流匹配模型进行语音合成。为解决这一问题，我们引入了VocalNet-M2，一种新型低延迟SLM，它集成了多码本标记化和多标记预测(MTP)策略。我们的模型直接生成多码本语音标记，从而消除了导致延迟的流匹配模型的需求。此外，我们的MTP策略提高了生成效率并改善了整体性能。大量实验表明，VocalNet-M2在保持与主流SLMs竞争性性能的同时，显著降低了首块延迟(从约725ms降至350ms)。这项工作还对单码本和多码本策略进行了全面比较，为开发用于实时交互应用的高效高性能SLMs提供了有价值的见解。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Yuhao Wang, Ziyang Cheng, Heyang Liu, Ronghua Wu, Qunshan Gu, Yanfeng Wang, Yu Wang",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Proceedings of The third international workshop on eXplainable AI for the Arts (XAIxArts)",
+    "paper_title_zh": "第三届可解释人工智能艺术国际会议论文集",
+    "paper_id": "2511.10482",
+    "paper_abstract": "This third international workshop on explainable AI for the Arts (XAIxArts) brought together a community of researchers in HCI, Interaction Design, AI, explainable AI (XAI), and digital arts to explore the role of XAI for the Arts. Workshop held at the 17th ACM Conference on Creativity and Cognition (C&C 2025), online.",
+    "paper_abstract_zh": "第三届可解释人工智能艺术国际会议(XAIxArts)汇集了人机交互、交互设计、人工智能、可解释人工智能(XAI)和数字艺术领域的研究人员，共同探讨可解释人工智能在艺术领域的作用。会议于第17届ACM创造力与认知会议(C&C 2025)在线举行。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Human-Computer Interaction (cs.HC)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-14",
+    "paper_authors": "Corey Ford, Elizabeth Wilson, Shuoyang Zheng, Gabriel Vigliensoni, Jeba Rezwana, Lanxi Xiao, Michael Clemens, Makayla Lewis, Drew Hemment, Alan Chamberlain, Helen Kennedy, Nick Bryan-Kinns",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
