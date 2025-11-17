@@ -1,0 +1,321 @@
+[
+  {
+    "paper_title": "Towards Attribution of Generators and Emotional Manipulation in Cross-Lingual Synthetic Speech using Geometric Learning",
+    "paper_title_zh": "基于几何学习的跨语言合成语音生成者归属与情感操纵研究",
+    "paper_id": "2511.10790",
+    "paper_abstract": "In this work, we address the problem of finegrained traceback of emotional and manipulation characteristics from synthetically manipulated speech. We hypothesize that combining semantic-prosodic cues captured by Speech Foundation Models (SFMs) with fine-grained spectral dynamics from auditory representations can enable more precise tracing of both emotion and manipulation source. To validate this hypothesis, we introduce MiCuNet, a novel multitask framework for fine-grained tracing of emotional and manipulation attributes in synthetically generated speech. Our approach integrates SFM embeddings with spectrogram-based auditory features through a mixed-curvature projection mechanism that spans Hyperbolic, Euclidean, and Spherical spaces guided by a learnable temporal gating mechanism. Our proposed method adopts a multitask learning setup to simultaneously predict original emotions, manipulated emotions, and manipulation sources on the EmoFake dataset (EFD) across both English and Chinese subsets. MiCuNet yields consistent improvements, consistently surpassing conventional fusion strategies. To the best of our knowledge, this work presents the first study to explore a curvature-adaptive framework specifically tailored for multitask tracking in synthetic speech.",
+    "paper_abstract_zh": "在这项工作中，我们解决了从合成操纵语音中精细追溯情感和操纵特征的问题。我们假设，结合语音基础模型（SFMs）捕获的语义-韵律线索和听觉表示中的精细频谱动力学，可以更精确地追溯情感和操纵源。为验证这一假设，我们引入了MiCuNet，这是一种新颖的多任务框架，用于精细追溯合成语音中的情感和操纵属性。我们的方法通过混合曲率投影机制将SFM嵌入与基于语谱图的听觉特征相结合，该机制跨越双曲、欧几里得和球面空间，并由可学习的时间门控机制引导。我们提出的方法采用多任务学习设置，同时在英语和中文子集的EmoFake数据集（EFD）上预测原始情感、操纵情感和操纵源。MiCuNet持续取得改进，始终超越传统融合策略。据我们所知，这项工作是首个探索专门针对合成语音多任务跟踪的曲率自适应框架的研究。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Girish, Mohd Mujtaba Akhtar, Farhan Sheth, Muskaan Singh",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Curved Worlds, Clear Boundaries: Generalizing Speech Deepfake Detection using Hyperbolic and Spherical Geometry Spaces",
+    "paper_title_zh": "弯曲世界，清晰边界：使用双曲和球面几何空间泛化语音深度伪造检测",
+    "paper_id": "2511.10793",
+    "paper_abstract": "In this work, we address the challenge of generalizable audio deepfake detection (ADD) across diverse speech synthesis paradigms-including conventional text-to-speech (TTS) systems and modern diffusion or flow-matching (FM) based generators. Prior work has mostly targeted individual synthesis families and often fails to generalize across paradigms due to overfitting to generation-specific artifacts. We hypothesize that synthetic speech, irrespective of its generative origin, leaves behind shared structural distortions in the embedding space that can be aligned through geometry-aware modeling. To this end, we propose RHYME, a unified detection framework that fuses utterance-level embeddings from diverse pretrained speech encoders using non-Euclidean projections. RHYME maps representations into hyperbolic and spherical manifolds-where hyperbolic geometry excels at modeling hierarchical generator families, and spherical projections capture angular, energy-invariant cues such as periodic vocoder artifacts. The fused representation is obtained via Riemannian barycentric averaging, enabling synthesis-invariant alignment. RHYME outperforms individual PTMs and homogeneous fusion baselines, achieving top performance and setting new state-of-the-art in cross-paradigm ADD.",
+    "paper_abstract_zh": "在这项工作中，我们解决了跨不同语音合成范式（包括传统文本转语音(TTS)系统和现代基于扩散或流匹配(FM)的生成器）的可泛化音频深度伪造检测(ADD)的挑战。先前的工作大多针对单个合成家族，并且由于过度拟合生成特定的伪影，往往无法跨范式泛化。我们假设，无论其生成来源如何，合成语音在嵌入空间中会留下共享的结构扭曲，这些扭曲可以通过几何感知建模进行对齐。为此，我们提出了RHYME，一个统一的检测框架，它使用非欧几里得投影融合来自各种预训练语音编码器的语句级嵌入。RHYME将表示映射到双曲和球面流形上——其中双曲几何擅长建模层次化的生成器家族，而球面投影捕获角度、能量不变的线索，如周期性声码器伪影。融合表示通过黎曼质心平均获得，实现了合成不变的对齐。RHYME优于单个PTM和同质融合基线，在跨范式ADD中取得了最佳性能，并设定了新的最先进水平。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Farhan Sheth, Girish, Mohd Mujtaba Akhtar, Muskaan Singh",
+    "topic": [
+      "Audio Classification",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Synthetic Voices, Real Threats: Evaluating Large Text-to-Speech Models in Generating Harmful Audio",
+    "paper_title_zh": "合成语音，真实威胁：评估大型文本转语音模型在生成有害音频中的表现",
+    "paper_id": "2511.10913",
+    "paper_abstract": "Modern text-to-speech (TTS) systems, particularly those built on Large Audio-Language Models (LALMs), generate high-fidelity speech that faithfully reproduces input text and mimics specified speaker identities. While prior misuse studies have focused on speaker impersonation, this work explores a distinct content-centric threat: exploiting TTS systems to produce speech containing harmful content. Realizing such threats poses two core challenges: (1) LALM safety alignment frequently rejects harmful prompts, yet existing jailbreak attacks are ill-suited for TTS because these systems are designed to faithfully vocalize any input text, and (2) real-world deployment pipelines often employ input/output filters that block harmful text and audio.\nWe present HARMGEN, a suite of five attacks organized into two families that address these challenges. The first family employs semantic obfuscation techniques (Concat, Shuffle) that conceal harmful content within text. The second leverages audio-modality exploits (Read, Spell, Phoneme) that inject harmful content through auxiliary audio channels while maintaining benign textual prompts. Through evaluation across five commercial LALMs-based TTS systems and three datasets spanning two languages, we demonstrate that our attacks substantially reduce refusal rates and increase the toxicity of generated speech.\nWe further assess both reactive countermeasures deployed by audio-streaming platforms and proactive defenses implemented by TTS providers. Our analysis reveals critical vulnerabilities: deepfake detectors underperform on high-fidelity audio; reactive moderation can be circumvented by adversarial perturbations; while proactive moderation detects 57-93% of attacks. Our work highlights a previously underexplored content-centric misuse vector for TTS and underscore the need for robust cross-modal safeguards throughout training and deployment.",
+    "paper_abstract_zh": "现代文本转语音(TTS)系统，特别是那些基于大型音频语言模型(LALM)构建的系统，能够生成高保真度的语音，忠实再现输入文本并模仿指定的说话人身份。虽然先前的滥用研究主要集中在说话人模仿上，但本文探讨了一种不同的内容中心威胁：利用TTS系统生成包含有害内容的语音。实现此类威胁面临两个核心挑战：(1) LALM安全对齐经常拒绝有害提示，但现有的越狱攻击不适合TTS，因为这些系统被设计为忠实朗读任何输入文本；(2) 现实部署管道通常采用输入/输出过滤器来阻止有害文本和音频。我们提出了HARMGEN，这是一个包含五种攻击的套件，分为两个家族来解决这些挑战。第一个家族采用语义模糊技术(Concat, Shuffle)，将有害内容隐藏在文本中。第二个家族利用音频模态漏洞(Read, Spell, Phoneme)，通过辅助音频通道注入有害内容，同时保持良性的文本提示。通过对五个基于商业LALM的TTS系统和涵盖两种语言的三种数据集进行评估，我们证明这些攻击显著降低了拒绝率并增加了生成语音的毒性。我们进一步评估了音频流媒体平台部署的反应性防御措施和TTS提供商实施的主动性防御措施。我们的分析揭示了关键漏洞：深度伪造检测器在高保真音频上表现不佳；反应性内容审核可以通过对抗性扰动绕过；而主动性内容审核能检测到57-93%的攻击。我们的工作突出了TTS中一个先前未被充分探索的内容中心滥用向量，并强调了在训练和部署过程中需要强大的跨模态保护措施。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Multimedia (cs.MM)",
+      "Cryptography and Security (cs.CR)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Guangke Chen, Yuhui Wang, Shouling Ji, Xiapu Luo, Ting Wang",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Proactive Hearing Assistants that Isolate Egocentric Conversations",
+    "paper_title_zh": "主动式听力助手：隔离以自我为中心的对话",
+    "paper_id": "2511.11473",
+    "paper_abstract": "We introduce proactive hearing assistants that automatically identify and separate the wearer's conversation partners, without requiring explicit prompts. Our system operates on egocentric binaural audio and uses the wearer's self-speech as an anchor, leveraging turn-taking behavior and dialogue dynamics to infer conversational partners and suppress others. To enable real-time, on-device operation, we propose a dual-model architecture: a lightweight streaming model runs every 12.5 ms for low-latency extraction of the conversation partners, while a slower model runs less frequently to capture longer-range conversational dynamics. Results on real-world 2- and 3-speaker conversation test sets, collected with binaural egocentric hardware from 11 participants totaling 6.8 hours, show generalization in identifying and isolating conversational partners in multi-conversation settings. Our work marks a step toward hearing assistants that adapt proactively to conversational dynamics and engagement. More information can be found on our website: this https URL",
+    "paper_abstract_zh": "我们介绍了一种主动式听力助手，它能够自动识别并分离佩戴者的对话伙伴，而无需明确的提示。我们的系统基于以自我为中心的双耳音频运行，并利用佩戴者的自我语音作为锚点，利用轮流对话行为和对话动态来推断对话伙伴并抑制其他声音。为了实现实时、设备上的操作，我们提出了一种双模型架构：一个轻量级流式模型每12.5毫秒运行一次，用于低延迟提取对话伙伴；而一个较慢的模型运行频率较低，以捕捉长距离的对话动态。在真实世界的2人和3人对话测试集上的结果表明，该系统能够在多对话环境中识别并隔离对话伙伴，具有泛化能力。我们的工作朝着能够主动适应对话动态和参与的听力助手迈出了一步。更多信息请访问我们的网站：this https URL",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Guilin Hu, Malek Itani, Tuochao Chen, Shyamnath Gollakota",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "StyleBreak: Revealing Alignment Vulnerabilities in Large Audio-Language Models via Style-Aware Audio Jailbreak",
+    "paper_title_zh": "StyleBreak：通过风格感知音频越狱揭示大型音频语言模型的对齐漏洞",
+    "paper_id": "2511.10692",
+    "paper_abstract": "Large Audio-language Models (LAMs) have recently enabled powerful speech-based interactions by coupling audio encoders with Large Language Models (LLMs). However, the security of LAMs under adversarial attacks remains underexplored, especially through audio jailbreaks that craft malicious audio prompts to bypass alignment. Existing efforts primarily rely on converting text-based attacks into speech or applying shallow signal-level perturbations, overlooking the impact of human speech's expressive variations on LAM alignment robustness. To address this gap, we propose StyleBreak, a novel style-aware audio jailbreak framework that systematically investigates how diverse human speech attributes affect LAM alignment robustness. Specifically, StyleBreak employs a two-stage style-aware transformation pipeline that perturbs both textual content and audio to control linguistic, paralinguistic, and extralinguistic attributes. Furthermore, we develop a query-adaptive policy network that automatically searches for adversarial styles to enhance the efficiency of LAM jailbreak exploration. Extensive evaluations demonstrate that LAMs exhibit critical vulnerabilities when exposed to diverse human speech attributes. Moreover, StyleBreak achieves substantial improvements in attack effectiveness and efficiency across multiple attack paradigms, highlighting the urgent need for more robust alignment in LAMs.",
+    "paper_abstract_zh": "大型音频语言模型（LAMs）最近通过将音频编码器与大型语言模型（LLMs）相结合，实现了强大的基于语音的交互。然而，LAMs在对抗攻击下的安全性仍未得到充分探索，特别是通过制作恶意音频提示来绕过对齐的音频越狱攻击。现有工作主要依赖于将基于文本的攻击转换为语音或应用浅层信号级扰动，忽略了人类语音表达变化对LAM对齐鲁棒性的影响。为解决这一差距，我们提出了StyleBreak，一种新颖的风格感知音频越狱框架，系统性地研究了多样化的人类语音属性如何影响LAM对齐鲁棒性。具体而言，StyleBreak采用两阶段风格感知转换管道，通过扰动文本内容和音频来控制语言学、副语言学和超语言学属性。此外，我们还开发了一种查询自适应策略网络，自动搜索对抗性风格以提高LAM越狱探索的效率。大量评估表明，当暴露于多样化的人类语音属性时，LAMs表现出严重的漏洞。此外，StyleBreak在多种攻击范式下显著提高了攻击有效性和效率，凸显了LAMs需要更强大对齐的迫切需求。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Hongyi Li, Chengxuan Zhou, Chu Wang, Sicheng Liang, Yanting Chen, Qinlin Xie, Jiawei Ye, Jie Wu",
+    "topic": [
+      "Speech Recognition",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Graph Neural Field with Spatial-Correlation Augmentation for HRTF Personalization",
+    "paper_title_zh": "基于空间相关性增强的图神经场用于HRTF个性化",
+    "paper_id": "2511.10697",
+    "paper_abstract": "To achieve immersive spatial audio rendering on VR/AR devices, high-quality Head-Related Transfer Functions (HRTFs) are essential. In general, HRTFs are subject-dependent and position-dependent, and their measurement is time-consuming and tedious. To address this challenge, we propose the Graph Neural Field with Spatial-Correlation Augmentation (GraphNF-SCA) for HRTF personalization, which can be used to generate individual HRTFs for unseen subjects. The GraphNF-SCA consists of three key components: an HRTF personalization (HRTF-P) module, an HRTF upsampling (HRTF-U) module, and a fine-tuning stage. In the HRTF-P module, we predict HRTFs of the target subject via the Graph Neural Network (GNN) with an encoder-decoder architecture, where the encoder extracts universal features and the decoder incorporates the target-relevant features and produces individualized HRTFs. The HRTF-U module employs another GNN to model spatial correlations across HRTFs. This module is fine-tuned using the output of the HRTF-P module, thereby enhancing the spatial consistency of the predicted HRTFs. Unlike existing methods that estimate individual HRTFs position-by-position without spatial correlation modeling, the GraphNF-SCA effectively leverages inherent spatial correlations across HRTFs to enhance the performance of HRTF personalization. Experimental results demonstrate that the GraphNF-SCA achieves state-of-the-art results.",
+    "paper_abstract_zh": "为了在VR/AR设备上实现沉浸式空间音频渲染，高质量的头部相关传递函数（HRTF）是必不可少的。通常，HRTF具有个体依赖性和位置依赖性，且其测量过程耗时繁琐。为解决这一挑战，我们提出了带有空间相关性增强的图神经场（GraphNF-SCA）用于HRTF个性化，该方法能够为未见过的个体生成个性化的HRTF。GraphNF-SCA包含三个关键组件：HRTF个性化（HRTF-P）模块、HRTF上采样（HRTF-U）模块和一个微调阶段。在HRTF-P模块中，我们通过具有编码器-解码器架构的图神经网络（GNN）预测目标个体的HRTF，其中编码器提取通用特征，解码器整合目标相关特征并生成个性化的HRTF。HRTF-U模块采用另一个GNN建模HRTF之间的空间相关性。该模块使用HRTF-P模块的输出进行微调，从而增强预测HRTF的空间一致性。与现有方法在没有空间相关性建模的情况下逐位置估计个体HRTF不同，GraphNF-SCA有效利用了HRTF之间的固有空间相关性，提高了HRTF个性化的性能。实验结果表明，GraphNF-SCA达到了最先进的结果。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "De Hu, Junsheng Hu, Cuicui Jiang",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "CAT-Net: A Cross-Attention Tone Network for Cross-Subject EEG-EMG Fusion Tone Decoding",
+    "paper_title_zh": "CAT-Net：一种用于跨受试者EEG-EMG融合音调解码的交叉注意力音调网络",
+    "paper_id": "2511.10935",
+    "paper_abstract": "Brain-computer interface (BCI) speech decoding has emerged as a promising tool for assisting individuals with speech impairments. In this context, the integration of electroencephalography (EEG) and electromyography (EMG) signals offers strong potential for enhancing decoding performance. Mandarin tone classification presents particular challenges, as tonal variations convey distinct meanings even when phonemes remain identical. In this study, we propose a novel cross-subject multimodal BCI decoding framework that fuses EEG and EMG signals to classify four Mandarin tones under both audible and silent speech conditions. Inspired by the cooperative mechanisms of neural and muscular systems in speech production, our neural decoding architecture combines spatial-temporal feature extraction branches with a cross-attention fusion mechanism, enabling informative interaction between modalities. We further incorporate domain-adversarial training to improve cross-subject generalization. We collected 4,800 EEG trials and 4,800 EMG trials from 10 participants using only twenty EEG and five EMG channels, demonstrating the feasibility of minimal-channel decoding. Despite employing lightweight modules, our model outperforms state-of-the-art baselines across all conditions, achieving average classification accuracies of 87.83% for audible speech and 88.08% for silent speech. In cross-subject evaluations, it still maintains strong performance with accuracies of 83.27% and 85.10% for audible and silent speech, respectively. We further conduct ablation studies to validate the effectiveness of each component. Our findings suggest that tone-level decoding with minimal EEG-EMG channels is feasible and potentially generalizable across subjects, contributing to the development of practical BCI applications.",
+    "paper_abstract_zh": "脑机接口(BCI)语音解码已成为辅助言语障碍者的有前景的工具。在此背景下，脑电图(EEG)和肌电图(EMG)信号的整合为提高解码性能提供了强大潜力。汉语音调分类面临特殊挑战，因为即使音素保持相同，音调变化也会传达不同的含义。在本研究中，我们提出了一种新颖的跨受试者多模态BCI解码框架，该框架融合EEG和EMG信号，在有声音和无声语音条件下对四种汉语音调进行分类。受语音产生中神经和肌肉系统协作机制的启发，我们的神经解码架构结合了时空特征提取分支和交叉注意力融合机制，实现了模态之间的信息交互。我们进一步采用领域对抗训练来提高跨受试者的泛化能力。我们仅使用20个EEG通道和5个EMG通道从10名参与者中收集了4800个EEG试验和4800个EMG试验，证明了最小通道解码的可行性。尽管采用轻量级模块，我们的模型在所有条件下都优于最先进的基线模型，在有声音和无声语音条件下分别实现了87.83%和88.08%的平均分类准确率。在跨受试者评估中，它仍保持强劲性能，有声音和无声语音条件下的准确率分别为83.27%和85.10%。我们进一步进行了消融研究以验证每个组件的有效性。我们的研究结果表明，使用最小EEG-EMG通道进行音调级别的解码是可行的，并且可能在受试者之间具有泛化性，有助于实用BCI应用的发展。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Neurons and Cognition (q-bio.NC)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Yifan Zhuang, Calvin Huang, Zepeng Yu, Yongjie Zou, Jiawei Ju",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DialogGraph-LLM: Graph-Informed LLMs for End-to-End Audio Dialogue Intent Recognition",
+    "paper_title_zh": "DialogGraph-LLM：用于端到端音频对话意图识别的图增强大语言模型",
+    "paper_id": "2511.11000",
+    "paper_abstract": "Recognizing speaker intent in long audio dialogues among speakers has a wide range of applications, but is a non-trivial AI task due to complex inter-dependencies in speaker utterances and scarce annotated data. To address these challenges, an end-to-end framework, namely DialogGraph-LLM, is proposed in the current work. DialogGraph-LLM combines a novel Multi-Relational Dialogue Attention Network (MR-DAN) architecture with multimodal foundation models (e.g., Qwen2.5-Omni-7B) for direct acoustic-to-intent inference. An adaptive semi-supervised learning strategy is designed using LLM with a confidence-aware pseudo-label generation mechanism based on dual-threshold filtering using both global and class confidences, and an entropy-based sample selection process that prioritizes high-information unlabeled instances. Extensive evaluations on the proprietary MarketCalls corpus and the publicly available MIntRec 2.0 benchmark demonstrate DialogGraph-LLM's superiority over strong audio and text-driven baselines. The framework demonstrates strong performance and efficiency in intent recognition in real world scenario audio dialogues, proving its practical value for audio-rich domains with limited supervision. Our code is available at this https URL.",
+    "paper_abstract_zh": "在长音频对话中识别说话者意图具有广泛的应用，但由于说话者话语间的复杂相互依赖关系和标注数据的稀缺性，这是一个非平凡的AI任务。为应对这些挑战，本文提出了一个名为DialogGraph-LLM的端到端框架。DialogGraph-LLM结合了一种新颖的多关系对话注意力网络(MR-DAN)架构与多模态基础模型（如Qwen2.5-Omni-7B），用于直接从声学信号到意图的推理。设计了一种自适应半监督学习策略，利用大语言模型(LLM)和基于双阈值过滤的置信度感知伪标签生成机制（同时考虑全局置信度和类别置信度），以及一种基于熵的样本选择过程，优先选择信息量高的未标记实例。在专有的MarketCalls语料库和公开可用的MIntRec 2.0基准上的广泛评估表明，DialogGraph-LLM优于强大的音频和文本驱动基线。该框架在真实场景音频对话的意图识别中表现出强大的性能和效率，证明了其在监督有限且音频丰富的领域具有实用价值。我们的代码可在提供的URL获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "HongYu Liu, Junxin Li, Changxi Guo, Hao Chen, Yaqian Huang, Yifu Guo, Huan Yang, Lihua Cai",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "MSMT-FN: Multi-segment Multi-task Fusion Network for Marketing Audio Classification",
+    "paper_title_zh": "MSMT-FN：面向营销音频分类的多段多任务融合网络",
+    "paper_id": "2511.11006",
+    "paper_abstract": "Audio classification plays an essential role in sentiment analysis and emotion recognition, especially for analyzing customer attitudes in marketing phone calls. Efficiently categorizing customer purchasing propensity from large volumes of audio data remains challenging. In this work, we propose a novel Multi-Segment Multi-Task Fusion Network (MSMT-FN) that is uniquely designed for addressing this business demand. Evaluations conducted on our proprietary MarketCalls dataset, as well as established benchmarks (CMU-MOSI, CMU-MOSEI, and MELD), show MSMT-FN consistently outperforms or matches state-of-the-art methods. Additionally, our newly curated MarketCalls dataset will be available upon request, and the code base is made accessible at GitHub Repository MSMT-FN, to facilitate further research and advancements in audio classification domain.",
+    "paper_abstract_zh": "音频分类在情感分析和情感识别中扮演着重要角色，特别是在分析营销电话中的客户态度方面。从大量音频数据中高效分类客户购买倾向仍然具有挑战性。在这项工作中，我们提出了一种新颖的多段多任务融合网络（MSMT-FN），专门针对这一业务需求而设计。在我们专有的MarketCalls数据集以及已建立的基准数据集（CMU-MOSI、CMU-MOSEI和MELD）上进行的评估表明，MSMT-FN始终优于或匹配最先进的方法。此外，我们新整理的MarketCalls数据集可根据要求获取，代码库已在GitHub Repository MSMT-FN上公开，以促进音频分类领域的进一步研究和进步。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "HongYu Liu, Ruijie Wan, Yueju Han, Junxin Li, Liuxing Lu, Chao He, Lihua Cai",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "TimeAudio: Bridging Temporal Gaps in Large Audio-Language Models",
+    "paper_title_zh": "TimeAudio: 弥补大型音频语言模型中的时间间隔",
+    "paper_id": "2511.11039",
+    "paper_abstract": "Recent Large Audio-Language Models (LALMs) exhibit impressive capabilities in understanding audio content for conversational QA tasks. However, these models struggle to accurately understand timestamps for temporal localization (e.g., Temporal Audio Grounding) and are restricted to short audio perception, leading to constrained capabilities on fine-grained tasks. We identify three key aspects that limit their temporal localization and long audio understanding: (i) timestamp representation, (ii) architecture, and (iii) data. To address this, we introduce TimeAudio, a novel method that empowers LALMs to connect their understanding of audio content with precise temporal perception. Specifically, we incorporate unique temporal markers to improve time-sensitive reasoning and apply an absolute time-aware encoding that explicitly grounds the acoustic features with absolute time information. Moreover, to achieve end-to-end long audio understanding, we introduce a segment-level token merging module to substantially reduce audio token redundancy and enhance the efficiency of information extraction. Due to the lack of suitable datasets and evaluation metrics, we consolidate existing audio datasets into a new dataset focused on temporal tasks and establish a series of metrics to evaluate the fine-grained performance. Evaluations show strong performance across a variety of fine-grained tasks, such as dense captioning, temporal grounding, and timeline speech summarization, demonstrating TimeAudio's robust temporal localization and reasoning capabilities.",
+    "paper_abstract_zh": "最近的大型音频语言模型(LALMs)在理解对话问答任务中的音频内容方面表现出令人印象深刻的能力。然而，这些模型在准确理解时间戳以进行时间定位(例如，时间音频定位)方面存在困难，并且仅限于短音频感知，导致在细粒度任务上的能力受限。我们确定了限制其时间定位和长音频理解的三个关键方面：(i) 时间戳表示，(ii) 架构，(iii) 数据。为此，我们引入了TimeAudio，一种新颖的方法，使LALMs能够将其对音频内容的理解与精确的时间感知联系起来。具体来说，我们融入了独特的时间标记来提高时间敏感推理能力，并应用了一种绝对时间感知编码，明确将声学特征与绝对时间信息相关联。此外，为实现端到端的长音频理解，我们引入了一个分段级令牌合并模块，显著减少了音频令牌的冗余，并提高了信息提取的效率。由于缺乏合适的数据集和评估指标，我们将现有的音频数据集整合为一个专注于时间任务的新数据集，并建立了一系列指标来评估细粒度性能。评估显示在多种细粒度任务(如密集描述、时间定位和时间线语音摘要)上表现出色，证明了TimeAudio强大的时间定位和推理能力。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Hualei Wang, Yiming Li, Shuo Ma, Hong Liu, Xiangdong Wang",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "CLARITY: Contextual Linguistic Adaptation and Accent Retrieval for Dual-Bias Mitigation in Text-to-Speech Generation",
+    "paper_title_zh": "CLARITY：用于文本转语音生成中双重偏见缓解的上下文语言适应和口音检索",
+    "paper_id": "2511.11104",
+    "paper_abstract": "Instruction-guided text-to-speech (TTS) research has reached a maturity level where excellent speech generation quality is possible on demand, yet two coupled biases persist: accent bias, where models default to dominant phonetic patterns, and linguistic bias, where dialect-specific lexical and cultural cues are ignored. These biases are interdependent, as authentic accent generation requires both accent fidelity and localized text. We present Contextual Linguistic Adaptation and Retrieval for Inclusive TTS sYnthesis (CLARITY), a backbone-agnostic framework that addresses these biases through dual-signal optimization: (i) contextual linguistic adaptation that localizes input text to the target dialect, and (ii) retrieval-augmented accent prompting (RAAP) that supplies accent-consistent speech prompts. Across twelve English accents, CLARITY improves accent accuracy and fairness while maintaining strong perceptual quality.",
+    "paper_abstract_zh": "指令引导的文本转语音（TTS）研究已达到成熟水平，能够按需生成高质量的语音，但仍然存在两种相互关联的偏见：口音偏见，即模型默认采用主导的语音模式；以及语言偏见，即忽略特定方言的词汇和文化线索。这些偏见是相互依赖的，因为真实的口音生成既需要口音保真度，也需要本地化的文本。我们提出了包容性TTS合成的上下文语言适应和检索（CLARITY），一个与主干无关的框架，通过双重信号优化解决这些偏见：（i）上下文语言适应，将输入文本本地化为目标方言；（ii）检索增强的口音提示（RAAP），提供口音一致的语音提示。在十二种英语口音中，CLARITY在保持强感知质量的同时提高了口音准确性和公平性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Crystal Min Hui Poon, Pai Chet Ng, Xiaoxiao Miao, Immanuel Jun Kai Loh, Bowen Zhang, Haoyu Song, Ian Mcloughlin",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Evaluation of Audio Compression Codecs",
+    "paper_title_zh": "音频压缩编解码器评估",
+    "paper_id": "2511.11527",
+    "paper_abstract": "Perceptual quality of audio is the combination of aural accuracy and listener-perceived sound fidelity. It is how humans respond to the accuracy, intelligibility, and fidelity of aural media. Today this fidelity is also heavily influenced by the use of audio compression codecs for storing aural media in digital form. We argue that, when choosing an audio compression codec, users should not only look at compression efficiency but also consider the sonic perceptual quality properties of available audio compression codecs.\nWe evaluate several commonly used audio compression codecs in terms of compression performance as well as their sonic perceptual quality via codec performance measurements, visualizations, and PEAQ scores. We demonstrate how perceptual quality is affected by digital audio compression techniques, providing insights for users in the process of choosing a digital audio compression scheme.",
+    "paper_abstract_zh": "音频的感知质量是听觉准确性和听众感知保真度的结合。它是人类对听觉媒体的准确性、可懂度和保真度的反应。如今，这种保真度也受到用于以数字形式存储听觉媒体的音频压缩编解码器的使用的影响。我们认为，在选择音频压缩编解码器时，用户不仅应关注压缩效率，还应考虑可用音频压缩编解码器的声音感知质量特性。我们通过编解码器性能测量、可视化和PEAQ分数，评估了几种常用音频压缩编解码器的压缩性能及其声音感知质量。我们展示了感知质量如何受到数字音频压缩技术的影响，为用户在选择数字音频压缩方案的过程中提供了见解。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Thien T. Duong, Jan P. Springer",
+    "topic": [
+      "Audio Codec"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Towards Fine-Grained Code-Switch Speech Translation with Semantic Space Alignment",
+    "paper_title_zh": "面向细粒度语码转换语音翻译的语义空间对齐",
+    "paper_id": "2511.10670",
+    "paper_abstract": "Code-switching (CS) speech translation (ST) refers to translating speech that alternates between two or more languages into a target language text, which poses significant challenges due to the complexity of semantic modeling and the scarcity of CS data. Previous studies tend to rely on the model itself to implicitly learn semantic modeling during training, and resort to inefficient and costly manual annotations for these two challenges. To mitigate these limitations, we propose enhancing Large Language Models (LLMs) with a Mixture of Experts (MoE) speech projector, where each expert specializes in the semantic subspace of a specific language, enabling fine-grained modeling of speech features. Additionally, we introduce a multi-stage training paradigm that utilizes readily available monolingual automatic speech recognition (ASR) and monolingual ST data, facilitating speech-text alignment and improving translation capabilities. During training, we leverage a combination of language-specific loss and intra-group load balancing loss to guide the MoE speech projector in efficiently allocating tokens to the appropriate experts, across expert groups and within each group, respectively. To bridge the data gap across different training stages and improve adaptation to the CS scenario, we further employ a transition loss, enabling smooth transitions of data between stages, to effectively address the scarcity of high-quality CS speech translation data. Extensive experiments on widely used datasets demonstrate the effectiveness and generality of our approach.",
+    "paper_abstract_zh": "语码转换(CS)语音翻译(ST)指的是将交替使用两种或多种语言的语音翻译成目标语言文本，由于语义建模的复杂性和CS数据的稀缺性，这带来了显著挑战。先前的研究倾向于在训练过程中依赖模型隐式学习语义建模，并通过低效且昂贵的人工标注来解决这两个挑战。为缓解这些局限性，我们提出了一种增强大型语言模型(LLMs)的方法，引入了专家混合(MoE)语音投影器，其中每个专家专注于特定语言的语义子空间，实现对语音特征的细粒度建模。此外，我们引入了一种多阶段训练范式，利用现成的单语自动语音识别(ASR)和单语ST数据，促进语音-文本对齐并提高翻译能力。在训练过程中，我们结合了语言特定损失和组内负载均衡损失，指导MoE语音投影器在专家组之间和每个组内高效地将令牌分配给适当的专家。为弥合不同训练阶段之间的数据差距并提高对CS场景的适应性，我们进一步采用了过渡损失，实现数据阶段间的平滑过渡，有效解决高质量CS语音翻译数据稀缺的问题。在广泛使用的数据集上的大量实验证明了我们方法的有效性和通用性。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Yan Gao, Yazheng Yang, Zhibin Lan, Yidong Chen, Min Zhang, Daimeng Wei, Hui Huang, Jinsong Su",
+    "topic": [
+      "Speech Recognition",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Do AI Voices Learn Social Nuances? A Case of Politeness and Speech Rate",
+    "paper_title_zh": "",
+    "paper_id": "2511.10693",
+    "paper_abstract": "Voice-based artificial intelligence is increasingly expected to adhere to human social conventions, but can it learn implicit cues that are not explicitly programmed? This study investigates whether state-of-the-art text-to-speech systems have internalized the human tendency to reduce speech rate to convey politeness - a non-obvious prosodic marker. We prompted 22 synthetic voices from two leading AI platforms (AI Studio and OpenAI) to read a fixed script under both \"polite and formal\" and \"casual and informal\" conditions and measured the resulting speech duration. Across both AI platforms, the polite prompt produced slower speech than the casual prompt with very large effect sizes, an effect that was statistically significant for all of AI Studio's voices and for a large majority of OpenAI's voices. These results demonstrate that AI can implicitly learn and replicate psychological nuances of human communication, highlighting its emerging role as a social actor capable of reinforcing human social norms.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Human-Computer Interaction (cs.HC)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Eyal Rabin, Zohar Elyoseph, Rotem Israel-Fishelson, Adi Dali, Ravit Nussinson",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "AccKV: Towards Efficient Audio-Video LLMs Inference via Adaptive-Focusing and Cross-Calibration KV Cache Optimization",
+    "paper_title_zh": "AccKV: 通过自适应聚焦和交叉校准KV缓存优化实现高效音频-视频大语言模型推理",
+    "paper_id": "2511.11106",
+    "paper_abstract": "Recent advancements in Audio-Video Large Language Models (AV-LLMs) have enhanced their capabilities in tasks like audio-visual question answering and multimodal dialog systems. Video and audio introduce an extended temporal dimension, resulting in a larger key-value (KV) cache compared to static image embedding. A naive optimization strategy is to selectively focus on and retain KV caches of audio or video based on task. However, in the experiment, we observed that the attention of AV-LLMs to various modalities in the high layers is not strictly dependent on the task. In higher layers, the attention of AV-LLMs shifts more towards the video modality. In addition, we also found that directly integrating temporal KV of audio and spatial-temporal KV of video may lead to information confusion and significant performance degradation of AV-LLMs. If audio and video are processed indiscriminately, it may also lead to excessive compression or reservation of a certain modality, thereby disrupting the alignment between modalities. To address these challenges, we propose AccKV, an Adaptive-Focusing and Cross-Calibration KV cache optimization framework designed specifically for efficient AV-LLMs inference. Our method is based on layer adaptive focusing technology, selectively focusing on key modalities according to the characteristics of different layers, and enhances the recognition of heavy hitter tokens through attention redistribution. In addition, we propose a Cross-Calibration technique that first integrates inefficient KV caches within the audio and video modalities, and then aligns low-priority modalities with high-priority modalities to selectively evict KV cache of low-priority modalities. The experimental results show that AccKV can significantly improve the computational efficiency of AV-LLMs while maintaining accuracy.",
+    "paper_abstract_zh": "最近，音频-视频大语言模型（AV-LLMs）在音频-视觉问答和多模态对话系统等任务中的能力得到了提升。视频和音频引入了扩展的时间维度，导致与静态图像嵌入相比，键值（KV）缓存更大。一种简单的优化策略是根据任务选择性地关注和保留音频或视频的KV缓存。然而，在实验中，我们观察到AV-LLMs在高层对不同模态的关注并不严格依赖于任务。在更高层，AV-LLMs的关注更多地转向视频模态。此外，我们还发现，直接集成音频的时间KV和视频的时空KV可能导致信息混乱和AV-LLMs性能的显著下降。如果音频和视频被无差别处理，也可能导致某一模态的过度压缩或保留，从而破坏模态之间的对齐。为了解决这些挑战，我们提出了AccKV，这是一个专为高效AV-LLMs推理设计的自适应聚焦和交叉校准KV缓存优化框架。我们的方法基于层自适应聚焦技术，根据不同层的特征选择性地关注关键模态，并通过注意力重分配增强对高频令牌的识别。此外，我们提出了一种交叉校准技术，首先整合音频和视频模态内的低效KV缓存，然后将低优先级模态与高优先级模态对齐，以选择性驱逐低优先级模态的KV缓存。实验结果表明，AccKV在保持准确性的同时，可以显著提高AV-LLMs的计算效率。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Zhonghua Jiang, Kui Chen, Kunxi Li, Keting Yin, Yiyun Zhou, Zhaode Wang, Chengfei Lv, Shengyu Zhang",
+    "topic": [
+      "Audio Representation Learning",
+      "Video Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "AV-Dialog: Spoken Dialogue Models with Audio-Visual Input",
+    "paper_title_zh": "AV-Dialog：具有音频视觉输入的口语对话模型",
+    "paper_id": "2511.11124",
+    "paper_abstract": "Dialogue models falter in noisy, multi-speaker environments, often producing irrelevant responses and awkward turn-taking. We present AV-Dialog, the first multimodal dialog framework that uses both audio and visual cues to track the target speaker, predict turn-taking, and generate coherent responses. By combining acoustic tokenization with multi-task, multi-stage training on monadic, synthetic, and real audio-visual dialogue datasets, AV-Dialog achieves robust streaming transcription, semantically grounded turn-boundary detection and accurate responses, resulting in a natural conversational flow. Experiments show that AV-Dialog outperforms audio-only models under interference, reducing transcription errors, improving turn-taking prediction, and enhancing human-rated dialogue quality. These results highlight the power of seeing as well as hearing for speaker-aware interaction, paving the way for {spoken} dialogue agents that perform {robustly} in real-world, noisy environments.",
+    "paper_abstract_zh": "对话模型在嘈杂的多说话人环境中表现不佳，常常产生不相关的回应和尴尬的轮次转换。我们提出了AV-Dialog，这是第一个多模态对话框架，它利用音频和视觉线索来跟踪目标说话人、预测轮次转换并生成连贯的回应。通过将声学标记化与单模态、合成和真实音频视觉对话数据集上的多任务、多阶段训练相结合，AV-Dialog实现了强大的流式转录、语义驱动的轮次边界检测和准确的回应，从而形成自然的对话流程。实验表明，在干扰情况下，AV-Dialog优于仅使用音频的模型，减少了转录错误，提高了轮次转换预测，并增强了人类评估的对话质量。这些结果突显了在感知说话人交互中视觉与听觉结合的力量，为在现实嘈杂环境中稳健运行的口语对话代理铺平了道路。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-17",
+    "paper_authors": "Tuochao Chen, Bandhav Veluri, Hongyu Gong, Shyamnath Gollakota",
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
