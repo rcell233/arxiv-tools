@@ -1,0 +1,281 @@
+[
+  {
+    "paper_title": "Principled Coarse-Grained Acceptance for Speculative Decoding in Speech",
+    "paper_title_zh": "语音推测解码中的原则性粗粒度接受",
+    "paper_id": "2511.13732",
+    "paper_abstract": "Speculative decoding accelerates autoregressive speech generation by letting a fast draft model propose tokens that a larger target model verifies. However, for speech LLMs that generate acoustic tokens, exact token matching is overly restrictive: many discrete tokens are acoustically or semantically interchangeable, reducing acceptance rates and limiting speedups. We introduce Principled Coarse-Graining (PCG), which verifies proposals at the level of Acoustic Similarity Groups (ASGs) derived from the target model's embedding space. By splitting each token's probability mass across the overlapping groups that contain it, we define an overlap-aware coarse-grained distribution and perform rejection sampling on the resulting group variable. This yields an exactness guarantee at the group level while allowing the accepted draft token to stand in for any member of the group in practice. On LibriTTS, PCG increases acceptance and throughput relative to standard speculative decoding and prior speech-specific relaxations while maintaining intelligibility and speaker similarity. These results suggest acoustically aware, group-level acceptance as a simple and general way to accelerate speech token generation while maintaining speech quality.",
+    "paper_abstract_zh": "推测解码通过让快速草稿模型提出由更大目标模型验证的标记来加速自回归语音生成。然而，对于生成声学标记的语音大语言模型，精确的标记匹配过于严格：许多离散标记在声学或语义上是可互换的，这降低了接受率并限制了加速效果。我们引入了原则性粗粒度（PCG），它基于从目标模型嵌入空间导出的声学相似组（ASGs）级别来验证提案。通过将每个标记的概率质量分布到包含它的重叠组中，我们定义了一个重叠感知的粗粒度分布，并对 resulting 组变量执行拒绝采样。这保证了组级别的精确性，同时在实际中允许接受的草稿标记代表组中的任何成员。在LibriTTS上，与标准推测解码和先前语音特定的放松方法相比，PCG提高了接受率和吞吐量，同时保持了可懂度和说话人相似性。这些结果表明，声学感知的组级接受是一种简单而通用的方法，可以在保持语音质量的同时加速语音标记生成。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Moran Yanuka, Paul Dixon, Eyal Finkelshtein, Daniel Rotman, Raja Giryes",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "FxSearcher: gradient-free text-driven audio transformation",
+    "paper_title_zh": "FxSearcher: 无梯度的文本驱动音频转换",
+    "paper_id": "2511.14138",
+    "paper_abstract": "Achieving diverse and high-quality audio transformations from text prompts remains challenging, as existing methods are fundamentally constrained by their reliance on a limited set of differentiable audio effects. This paper proposes \\textbf{FxSearcher}, a novel gradient-free framework that discovers the optimal configuration of audio effects (FX) to transform a source signal according to a text prompt. Our method employs Bayesian Optimization and CLAP-based score function to perform this search efficiently. Furthermore, a guiding prompt is introduced to prevent undesirable artifacts and enhance human preference. To objectively evaluate our method, we propose an AI-based evaluation framework. The results demonstrate that the highest scores achieved by our method on these metrics align closely with human preferences. Demos are available at this https URL",
+    "paper_abstract_zh": "从文本提示实现多样化和高质量的音频转换仍然具有挑战性，因为现有方法从根本上受到其对有限可微分音频效果的依赖的限制。本文提出了FxSearcher，一种新颖的无梯度框架，用于发现音频效果(FX)的最佳配置，以根据文本提示转换源信号。我们的方法采用贝叶斯优化和基于CLAP的评分函数来高效执行此搜索。此外，引入了引导提示以防止不理想的伪影并增强人类偏好。为了客观评估我们的方法，我们提出了一个基于AI的评估框架。结果表明，我们的方法在这些指标上获得的最高得分与人类偏好高度一致。演示可在提供的URL获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Hojoon Ki, Jongsuk Kim, Minchan Kwon, Junmo Kim",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "TTA: Transcribe, Translate and Alignment for Cross-lingual Speech Representation",
+    "paper_title_zh": "TTA：跨语言语音表示的转录、翻译与对齐",
+    "paper_id": "2511.14410",
+    "paper_abstract": "Speech-LLM models have demonstrated great performance in multi-modal and multi-task speech understanding. A typical speech-LLM paradigm is integrating speech modality with a large language model (LLM). While the Whisper encoder was frequently adopted in previous studies for speech input, it shows limitations regarding input format, model scale, and semantic performance. To this end, we propose a lightweight TTA model specialized in speech semantics for more effective LLM integration. With large-scale training of 358k hours of speech data on multilingual speech recognition (ASR), speech translation (ST) and speech-text alignment tasks, TTA is capable of producing robust cross-lingual speech representations. Extensive evaluations across diverse benchmarks, including ASR/ST, speech retrieval, and ASR-LLM performance assessments, demonstrate TTA's superiority over Whisper. Furthermore, we rigorously validate the interplay between cross-lingual capabilities and ASR/ST performance. The model weights and training recipes of TTA will be released as part of an audio understanding toolkit Auden.",
+    "paper_abstract_zh": "语音-大语言模型（Speech-LLM）在多模态和多任务语音理解方面展现出卓越的性能。典型的语音-LLM范式是将语音模态与大语言模型（LLM）相结合。尽管先前的研究常采用Whisper编码器处理语音输入，但其在输入格式、模型规模和语义性能方面存在局限性。为此，我们提出了一种轻量级TTA模型，专注于语音语义，以实现更有效的LLM集成。通过在多语言语音识别（ASR）、语音翻译（ST）和语音-文本对齐任务上对358k小时的语音数据进行大规模训练，TTA能够生成强大的跨语言语音表示。在ASR/ST、语音检索和ASR-LLM性能评估等多样化基准上的广泛评估表明，TTA优于Whisper。此外，我们严格验证了跨语言能力与ASR/ST性能之间的相互作用。TTA的模型权重和训练配方将作为音频理解工具包Auden的一部分发布。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Wei Liu, Jiahong Li, Yiwen Shao, Dong Yu",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Emotion Recognition in Multi-Speaker Conversations through Speaker Identification, Knowledge Distillation, and Hierarchical Fusion",
+    "paper_title_zh": "通过说话人识别、知识蒸馏和层次融合实现多说话人对话中的情感识别",
+    "paper_id": "2511.13731",
+    "paper_abstract": "Emotion recognition in multi-speaker conversations faces significant challenges due to speaker ambiguity and severe class imbalance. We propose a novel framework that addresses these issues through three key innovations: (1) a speaker identification module that leverages audio-visual synchronization to accurately identify the active speaker, (2) a knowledge distillation strategy that transfers superior textual emotion understanding to audio and visual modalities, and (3) hierarchical attention fusion with composite loss functions to handle class imbalance. Comprehensive evaluations on MELD and IEMOCAP datasets demonstrate superior performance, achieving 67.75% and 72.44% weighted F1 scores respectively, with particularly notable improvements on minority emotion classes.",
+    "paper_abstract_zh": "多说话人对话中的情感识别面临着说话人模糊和严重的类别不平衡等重大挑战。我们提出了一个新颖的框架，通过三个关键创新来解决这些问题：(1) 利用视听同步来准确识别活跃说话人的说话人识别模块，(2) 将卓越的文本情感理解转移到音频和视觉模态的知识蒸馏策略，(3) 处理类别不平衡的层次注意力融合和复合损失函数。在MELD和IEMOCAP数据集上的全面评估展示了卓越的性能，分别实现了67.75%和72.44%的加权F1分数，在少数情感类别上取得了特别显著的改进。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Xiao Li, Kotaro Funakoshi, Manabu Okumura",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Segmenting Collision Sound Sources in Egocentric Videos",
+    "paper_title_zh": "在第一人称视频中分割碰撞声源",
+    "paper_id": "2511.13863",
+    "paper_abstract": "Humans excel at multisensory perception and can often recognise object properties from the sound of their interactions. Inspired by this, we propose the novel task of Collision Sound Source Segmentation (CS3), where we aim to segment the objects responsible for a collision sound in visual input (i.e. video frames from the collision clip), conditioned on the audio. This task presents unique challenges. Unlike isolated sound events, a collision sound arises from interactions between two objects, and the acoustic signature of the collision depends on both. We focus on egocentric video, where sounds are often clear, but the visual scene is cluttered, objects are small, and interactions are brief.\nTo address these challenges, we propose a weakly-supervised method for audio-conditioned segmentation, utilising foundation models (CLIP and SAM2). We also incorporate egocentric cues, i.e. objects in hands, to find acting objects that can potentially be collision sound sources. Our approach outperforms competitive baselines by $3\\times$ and $4.7\\times$ in mIoU on two benchmarks we introduce for the CS3 task: EPIC-CS3 and Ego4D-CS3.",
+    "paper_abstract_zh": "人类擅长多感官感知，通常能够从物体交互的声音中识别物体属性。受此启发，我们提出了碰撞声源分割(CS3)这一新任务，旨在根据音频条件，在视觉输入（即碰撞片段的视频帧）中分割出产生碰撞声音的物体。这一任务具有独特的挑战。与孤立的声音事件不同，碰撞声音源于两个物体之间的交互，且碰撞的声学特征取决于这两个物体。我们专注于第一人称视频，其中声音通常清晰，但视觉场景杂乱，物体小，且交互短暂。为应对这些挑战，我们提出了一种弱监督的音频条件分割方法，利用基础模型（CLIP和SAM2）。我们还融入了第一人称线索，即手中的物体，以寻找可能成为碰撞声源的主动物体。在我们为CS3任务引入的两个基准测试EPIC-CS3和Ego4D-CS3上，我们的方法在mIoU上分别比竞争基线高出3倍和4.7倍。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computer Vision and Pattern Recognition (cs.CV)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Kranti Kumar Parida, Omar Emara, Hazel Doughty, Dima Damen",
+    "topic": [
+      "Audio Representation Learning",
+      "Image Generation",
+      "Video Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Accelerating Automatic Differentiation of Direct Form Digital Filters",
+    "paper_title_zh": "加速直接形式数字滤波器的自动微分",
+    "paper_id": "2511.14390",
+    "paper_abstract": "We introduce a general formulation for automatic differentiation through direct form filters, yielding a closed-form backpropagation that includes initial condition gradients. The result is a single expression that can represent both the filter and its gradients computation while supporting parallelism. C++/CUDA implementations in PyTorch achieve at least 1000x speedup over naive Python implementations and consistently run fastest on the GPU. For the low-order filters commonly used in practice, exact time-domain filtering with analytical gradients outperforms the frequency-domain method in terms of speed. The source code is available at this https URL.",
+    "paper_abstract_zh": "我们提出了一种通过直接形式滤波器进行自动微分的一般公式，得到了包含初始条件梯度的闭式反向传播。结果是单个表达式可以同时表示滤波器及其梯度计算，并支持并行计算。在PyTorch中实现的C++/CUDA版本比朴素的Python实现实现至少1000倍的加速，并且在GPU上始终运行最快。对于实践中常用的低阶滤波器，具有解析梯度的精确时域滤波在速度上优于频域方法。源代码可通过此https URL获取。",
+    "subjects": [
+      "Systems and Control (eess.SY)",
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Chin-Yun Yu, György Fazekas",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Preference-Based Learning in Audio Applications: A Systematic Analysis",
+    "paper_title_zh": "音频应用中的偏好学习：系统性分析",
+    "paper_id": "2511.13936",
+    "paper_abstract": "Despite the parallel challenges that audio and text domains face in evaluating generative model outputs, preference learning remains remarkably underexplored in audio applications. Through a PRISMA-guided systematic review of approximately 500 papers, we find that only 30 (6%) apply preference learning to audio tasks. Our analysis reveals a field in transition: pre-2021 works focused on emotion recognition using traditional ranking methods (rankSVM), while post-2021 studies have pivoted toward generation tasks employing modern RLHF frameworks. We identify three critical patterns: (1) the emergence of multi-dimensional evaluation strategies combining synthetic, automated, and human preferences; (2) inconsistent alignment between traditional metrics (WER, PESQ) and human judgments across different contexts; and (3) convergence on multi-stage training pipelines that combine reward signals. Our findings suggest that while preference learning shows promise for audio, particularly in capturing subjective qualities like naturalness and musicality, the field requires standardized benchmarks, higher-quality datasets, and systematic investigation of how temporal factors unique to audio impact preference learning frameworks.",
+    "paper_abstract_zh": "尽管音频和文本领域在评估生成模型输出方面面临相似的挑战，但偏好学习在音频应用中仍然研究不足。通过对约500篇论文进行PRISMA指导的系统性回顾，我们发现只有30篇（6%）将偏好学习应用于音频任务。我们的分析揭示了一个正在转型的领域：2021年之前的工作专注于使用传统排序方法（rankSVM）进行情感识别，而2021年后的研究则转向采用现代RLHF框架的生成任务。我们确定了三个关键模式：（1）结合合成、自动化和人类偏好的多维度评估策略的出现；（2）传统指标（WER、PESQ）与人类判断在不同情境下的一致性不一致；（3）结合奖励信号的多阶段训练管道的趋同。我们的研究结果表明，尽管偏好学习在音频领域显示出潜力，特别是在捕捉自然度和音乐性等主观品质方面，但该领域需要标准化基准、更高质量的数据集，以及对音频特有的时间因素如何影响偏好学习框架进行系统性研究。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Aaron Broukhim, Yiran Shen, Prithviraj Ammanabrolu, Nadir Weibel",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Count The Notes: Histogram-Based Supervision for Automatic Music Transcription",
+    "paper_title_zh": "数音符：基于直方图的自动音乐转录监督方法",
+    "paper_id": "2511.14250",
+    "paper_abstract": "Automatic Music Transcription (AMT) converts audio recordings into symbolic musical representations. Training deep neural networks (DNNs) for AMT typically requires strongly aligned training pairs with precise frame-level annotations. Since creating such datasets is costly and impractical for many musical contexts, weakly aligned approaches using segment-level annotations have gained traction. However, existing methods often rely on Dynamic Time Warping (DTW) or soft alignment loss functions, both of which still require local semantic correspondences, making them error-prone and computationally expensive. In this article, we introduce CountEM, a novel AMT framework that eliminates the need for explicit local alignment by leveraging note event histograms as supervision, enabling lighter computations and greater flexibility. Using an Expectation-Maximization (EM) approach, CountEM iteratively refines predictions based solely on note occurrence counts, significantly reducing annotation efforts while maintaining high transcription accuracy. Experiments on piano, guitar, and multi-instrument datasets demonstrate that CountEM matches or surpasses existing weakly supervised methods, improving AMT's robustness, scalability, and efficiency. Our project page is available at this https URL.",
+    "paper_abstract_zh": "自动音乐转录(AMT)将音频录音转换为符号化的音乐表示。为AMT训练深度神经网络(DNNs)通常需要具有精确帧级标注的强对齐训练对。由于创建此类数据集成本高昂且在许多音乐情境下不切实际，使用段级标注的弱对齐方法逐渐受到关注。然而，现有方法通常依赖于动态时间规整(DTW)或软对齐损失函数，这两种方法仍需要局部语义对应关系，使其容易出错且计算成本高昂。在本文中，我们引入了CountEM，这是一种新颖的AMT框架，它通过利用音符事件直方图作为监督，消除了显式局部对齐的需求，实现了更轻量的计算和更大的灵活性。CountEM采用期望最大化(EM)方法，仅基于音符出现次数迭代优化预测，显著减少了标注工作量，同时保持了高转录准确性。在钢琴、吉他和多乐器数据集上的实验表明，CountEM匹配或超越了现有的弱监督方法，提高了AMT的鲁棒性、可扩展性和效率。我们的项目页面可通过此https URL访问。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Jonathan Yaffe, Ben Maman, Meinard Müller, Amit H. Bermano",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Segmentwise Pruning in Audio-Language Models",
+    "paper_title_zh": "音频语言模型中的分段剪枝",
+    "paper_id": "2511.14293",
+    "paper_abstract": "Recent audio-language models have shown impressive performance across a wide range of audio tasks and are increasingly capable of handling long audio inputs. However, the computing costs in these models heavily depend on sequence length, which can become very large given the nature of audio data. In the vision-language domain, token pruning methods have proven effective in reducing token counts while preserving strong performance on standard benchmarks. In this work, we investigate the relevance and effectiveness of such token selection strategies in the context of audio-language models. We also improve them by proposing a lightweight strategy that takes the time dimension into account. While retaining only a quarter of the initial tokens, our approach results in a relative maximum decrease of 2% in CIDEr on Clotho v2 and a relative maximum decrease of 4% in accuracy on MMAU.",
+    "paper_abstract_zh": "最近的音频语言模型在广泛的音频任务中展示了令人印象深刻的性能，并且越来越能够处理长音频输入。然而，这些模型的计算成本严重依赖于序列长度，考虑到音频数据的特性，序列长度可能会变得非常大。在视觉语言领域，标记剪枝方法已被证明在减少标记数量的同时，在标准基准测试上保持了强大的性能。在这项工作中，我们研究了这些标记选择策略在音频语言模型背景下的相关性和有效性。我们还通过提出一个考虑时间维度的轻量级策略来改进它们。在仅保留初始标记的四分之一的情况下，我们的方法在Clotho v2上的CIDEr相对最大减少了2%，在MMAU上的准确率相对最大减少了4%。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Marcel Gibier, Raphaël Duroselle, Pierre Serrano, Olivier Boeffard, Jean-François Bonastre",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Audio Question Answering with GRPO-Based Fine-Tuning and Calibrated Segment-Level Predictions",
+    "paper_title_zh": "基于GRPO微调和校准分段级预测的音频问答",
+    "paper_id": "2511.14307",
+    "paper_abstract": "In this report, we describe our submission to Track 5 of the DCASE 2025 Challenge for the task of Audio Question Answering(AQA). Our system leverages the SSL backbone BEATs to extract frame-level audio features, which are then processed by a classification head to generate segment-level predictions of acoustic events, following the Audioset ontology. These segment-level predictions are subsequently calibrated before producing event-level predictions. Finally, these predictions are incorporated into a structured prompt, along with the question and candidate answers. This prompt is then fed to a fine-tuned version of Qwen2.5-7B-Instruct, trained using the GRPO algorithm with a simple reward function. Our method achieves an accuracy of 62.6 % on the development set, demonstrating the effectiveness of combining acoustic event reasoning with instruction-tuned large language models for AQA.",
+    "paper_abstract_zh": "在本报告中，我们描述了提交给DCASE 2025挑战赛第5赛道音频问答(AQA)任务的系统。我们的系统利用SSL主干网络BEATs提取帧级音频特征，然后通过分类头处理，生成遵循Audioset本体的声学事件分段级预测。这些分段级预测在生成事件级预测之前进行校准。最后，这些预测与问题和候选答案一起被整合到结构化提示中。该提示随后被输入到使用GRPO算法和简单奖励函数训练的微调版Qwen2.5-7B-Instruct。我们的方法在开发集上实现了62.6%的准确率，证明了将声学事件推理与指令微调大语言模型相结合对AQA的有效性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Marcel Gibier, Nolwenn Celton, Raphaël Duroselle, Pierre Serrano, Olivier Boeffard, Jean-François Bonastre",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "IMSE: Efficient U-Net-based Speech Enhancement using Inception Depthwise Convolution and Amplitude-Aware Linear Attention",
+    "paper_title_zh": "",
+    "paper_id": "2511.14515",
+    "paper_abstract": "Achieving a balance between lightweight design and high performance remains a significant challenge for speech enhancement (SE) tasks on resource-constrained devices. Existing state-of-the-art methods, such as MUSE, have established a strong baseline with only 0.51M parameters by introducing a Multi-path Enhanced Taylor (MET) transformer and Deformable Embedding (DE). However, an in-depth analysis reveals that MUSE still suffers from efficiency bottlenecks: the MET module relies on a complex \"approximate-compensate\" mechanism to mitigate the limitations of Taylor-expansion-based attention, while the offset calculation for deformable embedding introduces additional computational burden. This paper proposes IMSE, a systematically optimized and ultra-lightweight network. We introduce two core innovations: 1) Replacing the MET module with Amplitude-Aware Linear Attention (MALA). MALA fundamentally rectifies the \"amplitude-ignoring\" problem in linear attention by explicitly preserving the norm information of query vectors in the attention calculation, achieving efficient global modeling without an auxiliary compensation branch. 2) Replacing the DE module with Inception Depthwise Convolution (IDConv). IDConv borrows the Inception concept, decomposing large-kernel operations into efficient parallel branches (square, horizontal, and vertical strips), thereby capturing spectrogram features with extremely low parameter redundancy. Extensive experiments on the VoiceBank+DEMAND dataset demonstrate that, compared to the MUSE baseline, IMSE significantly reduces the parameter count by 16.8\\% (from 0.513M to 0.427M) while achieving competitive performance comparable to the state-of-the-art on the PESQ metric (3.373). This study sets a new benchmark for the trade-off between model size and speech quality in ultra-lightweight speech enhancement.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Xinxin Tang, Bin Qin, Yufang Li",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "A Controllable Perceptual Feature Generative Model for Melody Harmonization via Conditional Variational Autoencoder",
+    "paper_title_zh": "基于条件变分自编码器的可控感知特征生成模型用于旋律和声",
+    "paper_id": "2511.14600",
+    "paper_abstract": "While Large Language Models (LLMs) make symbolic music generation increasingly accessible, producing music with distinctive composition and rich expressiveness remains a significant challenge. Many studies have introduced emotion models to guide the generative process. However, these approaches still fall short of delivering novelty and creativity. In the field of Music Information Retrieval (MIR), auditory perception is recognized as a key dimension of musical experience, offering insights into both compositional intent and emotional patterns. To this end, we propose a neural network named CPFG-Net, along with a transformation algorithm that maps perceptual feature values to chord representations, enabling melody harmonization. The system can controllably predict sequences of perceptual features and tonal structures from given melodies, and subsequently generate harmonically coherent chord progressions. Our network is trained on our newly constructed perceptual feature dataset BCPT-220K, derived from classical music. Experimental results show state-of-the-art perceptual feature prediction capability of our model as well as demonstrate our musical expressiveness and creativity in chord inference. This work offers a novel perspective on melody harmonization and contributes to broader music generation tasks. Our symbolic-based model can be easily extended to audio-based models.",
+    "paper_abstract_zh": "虽然大型语言模型（LLMs）使符号音乐生成变得越来越容易，但创作具有独特性和丰富表现力的音乐仍然是一个重大挑战。许多研究引入了情感模型来指导生成过程。然而，这些方法仍然无法提供足够的新颖性和创造性。在音乐信息检索（MIR）领域，听觉感知被认为是音乐体验的关键维度，它能够洞察创作意图和情感模式。为此，我们提出了一种名为CPFG-Net的神经网络，以及一种将感知特征值映射到和弦表示的转换算法，从而实现旋律和声。该系统可以根据给定的旋律可控地预测感知特征序列和音高结构，并随后生成和声协调的和弦进行。我们的网络是在我们新构建的感知特征数据集BCPT-220K上训练的，该数据集源自古典音乐。实验结果表明，我们的模型具有最先进的感知特征预测能力，并在和弦推理中展示了音乐表现力和创造性。这项工作为旋律和声提供了新的视角，并为更广泛的音乐生成任务做出了贡献。我们的基于符号的模型可以轻松扩展到基于音频的模型。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Dengyun Huang, Yonghua Zhu",
+    "topic": [
+      "Music Information Retrieval",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Subject-Independent Imagined Speech Detection via Cross-Subject Generalization and Calibration",
+    "paper_title_zh": "基于跨主体泛化和校准的独立主体想象语音检测",
+    "paper_id": "2511.13739",
+    "paper_abstract": "Achieving robust generalization across individuals remains a major challenge in electroencephalogram based imagined speech decoding due to substantial variability in neural activity patterns. This study examined how training dynamics and lightweight subject specific adaptation influence cross subject performance in a neural decoding framework. A cyclic inter subject training approach, involving shorter per subject training segments and frequent alternation among subjects, led to modest yet consistent improvements in decoding performance across unseen target data. Furthermore, under the subject calibrated leave one subject out scheme, incorporating only 10 % of the target subjects data for calibration achieved an accuracy of 0.781 and an AUC of 0.801, demonstrating the effectiveness of few shot adaptation. These findings suggest that integrating cyclic training with minimal calibration provides a simple and effective strategy for developing scalable, user adaptive brain computer interface systems that balance generalization and personalization.",
+    "paper_abstract_zh": "由于神经活动模式存在显著差异，在基于脑电图的想象语音解码中实现跨个体的稳健泛化仍然是一个主要挑战。本研究探讨了在神经解码框架中，训练动态和轻量级主体特定适应如何影响跨主体性能。一种循环的跨主体训练方法，涉及较短的每个主体训练段和主体间频繁交替，在对未见目标数据的解码性能上带来了适度但一致的改进。此外，在主体校准的留一主体方案下，仅使用目标主体10%的数据进行校准，即可达到0.781的准确率和0.801的AUC，证明了少样本适应的有效性。这些研究结果表明，将循环训练与最小校准相结合，为开发可扩展、用户自适应的脑机接口系统提供了一种简单有效的策略，这些系统能够平衡泛化和个性化。",
+    "subjects": [
+      "Neurons and Cognition (q-bio.NC)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Byung-Kwan Ko, Soowon Kim, Seo-Hyun Lee",
+    "topic": [
+      "Speech Recognition",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Listen Like a Teacher: Mitigating Whisper Hallucinations using Adaptive Layer Attention and Knowledge Distillation",
+    "paper_title_zh": "像教师一样倾听：使用自适应层注意力和知识蒸馏减轻Whisper幻觉",
+    "paper_id": "2511.14219",
+    "paper_abstract": "The Whisper model, an open-source automatic speech recognition system, is widely adopted for its strong performance across multilingual and zero-shot settings. However, it frequently suffers from hallucination errors, especially under noisy acoustic conditions. Previous works to reduce hallucinations in Whisper-style ASR systems have primarily focused on audio preprocessing or post-processing of transcriptions to filter out erroneous content. However, modifications to the Whisper model itself remain largely unexplored to mitigate hallucinations directly. To address this challenge, we present a two-stage architecture that first enhances encoder robustness through Adaptive Layer Attention (ALA) and further suppresses hallucinations using a multi-objective knowledge distillation (KD) framework. In the first stage, ALA groups encoder layers into semantically coherent blocks via inter-layer correlation analysis. A learnable multi-head attention module then fuses these block representations, enabling the model to jointly exploit low- and high-level features for more robust encoding. In the second stage, our KD framework trains the student model on noisy audio to align its semantic and attention distributions with a teacher model processing clean inputs. Our experiments on noisy speech benchmarks show notable reductions in hallucinations and word error rates, while preserving performance on clean speech. Together, ALA and KD offer a principled strategy to improve Whisper's reliability under real-world noisy conditions.",
+    "paper_abstract_zh": "Whisper模型是一个开源的自动语音识别系统，因其多语言和零样本设置下的强大性能而被广泛采用。然而，它在嘈杂的声学条件下经常出现幻觉错误。先前减少Whisper风格ASR系统幻觉的工作主要集中在音频预处理或转录的后处理上，以过滤掉错误内容。然而，对Whisper模型本身的修改在很大程度上仍未被探索以直接减轻幻觉。为了应对这一挑战，我们提出了一个两阶段架构，首先通过自适应层注意力（ALA）增强编码器的鲁棒性，然后使用多目标知识蒸馏（KD）框架进一步抑制幻觉。在第一阶段，ALA通过层间相关性分析将编码器层分组为语义连贯的块。然后，一个可学习的多头注意力模块融合这些块表示，使模型能够联合利用低级和高级特征进行更鲁棒的编码。在第二阶段，我们的KD框架在嘈杂音频上训练学生模型，使其语义和注意力分布与处理干净输入的教师模型保持一致。我们在嘈杂语音基准上的实验表明，幻觉和词错误率显著降低，同时在干净语音上保持了性能。ALA和KD共同提供了一种原则性的策略，以提高Whisper在现实世界嘈杂条件下的可靠性。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-19",
+    "paper_authors": "Kumud Tripathi, Aditya Srinivas Menon, Aman Gaurav, Raj Prakash Gohil, Pankaj Wasnik",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
