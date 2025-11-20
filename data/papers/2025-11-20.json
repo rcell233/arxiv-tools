@@ -1,0 +1,204 @@
+[
+  {
+    "paper_title": "Quality-Controlled Multimodal Emotion Recognition in Conversations with Identity-Based Transfer Learning and MAMBA Fusion",
+    "paper_title_zh": "基于身份迁移学习和MAMBA融合的对话多模态情感识别质量控制",
+    "paper_id": "2511.14969",
+    "paper_abstract": "This paper addresses data quality issues in multimodal emotion recognition in conversation (MERC) through systematic quality control and multi-stage transfer learning. We implement a quality control pipeline for MELD and IEMOCAP datasets that validates speaker identity, audio-text alignment, and face detection. We leverage transfer learning from speaker and face recognition, assuming that identity-discriminative embeddings capture not only stable acoustic and Facial traits but also person-specific patterns of emotional expression. We employ RecoMadeEasy(R) engines for extracting 512-dimensional speaker and face embeddings, fine-tune MPNet-v2 for emotion-aware text representations, and adapt these features through emotion-specific MLPs trained on unimodal datasets. MAMBA-based trimodal fusion achieves 64.8% accuracy on MELD and 74.3% on IEMOCAP. These results show that combining identity-based audio and visual embeddings with emotion-tuned text representations on a quality-controlled subset of data yields consistent competitive performance for multimodal emotion recognition in conversation and provides a basis for further improvement on challenging, low-frequency emotion classes.",
+    "paper_abstract_zh": "本文通过系统质量控制和多阶段迁移学习解决了对话多模态情感识别(MERC)中的数据质量问题。我们为MELD和IEMOCAP数据集实现了质量控制流程，验证了说话人身份、音频文本对齐和面部检测。我们利用说话人和人脸识别的迁移学习，假设身份判别性嵌入不仅捕获稳定的声学和面部特征，还捕获情感表达的特定人模式。我们使用RecoMadeEasy(R)引擎提取512维说话人和人脸嵌入，微调MPNet-v2以获得情感感知的文本表示，并通过在单模态数据集上训练的情感特定MLP调整这些特征。基于MAMBA的三模态融合在MELD上达到64.8%的准确率，在IEMOCAP上达到74.3%。这些结果表明，在质量控制的子数据集上结合基于身份的音频和视觉嵌入与情感调整的文本表示，为对话多模态情感识别提供了持续竞争性的性能，并为在具有挑战性的低频情感类别上进一步改进提供了基础。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)",
+      "Image and Video Processing (eess.IV)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Zanxu Wang, Homayoon Beigi",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "CASTELLA: Long Audio Dataset with Captions and Temporal Boundaries",
+    "paper_title_zh": "CASTELLA: 带有字幕和时间边界的长音频数据集",
+    "paper_id": "2511.15131",
+    "paper_abstract": "We introduce CASTELLA, a human-annotated audio benchmark for the task of audio moment retrieval (AMR). Although AMR has various useful potential applications, there is still no established benchmark with real-world data. The early study of AMR trained the model with solely synthetic datasets. Moreover, the evaluation is based on annotated dataset of fewer than 100 samples. This resulted in less reliable reported performance. To ensure performance for applications in real-world environments, we present CASTELLA, a large-scale manually annotated AMR dataset. CASTELLA consists of 1,009, 213, and 640 audio recordings for train, valid, and test split, respectively, which is 24 times larger than the previous dataset. We also establish a baseline model for AMR using CASTELLA. Our experiments demonstrate that a model fine-tuned on CASTELLA after pre-training on the synthetic data outperformed a model trained solely on the synthetic data by 10.4 points in Recall1@0.7. CASTELLA is publicly available in this https URL.",
+    "paper_abstract_zh": "我们介绍了CASTELLA，这是一个用于音频片段检索(AMR)任务的人工标注音频基准。尽管AMR具有多种有用的潜在应用，但目前仍没有基于真实数据的成熟基准。早期的AMR研究仅使用合成数据集训练模型。此外，评估基于的标注数据集样本不足100个，导致报告的性能可靠性较低。为确保在实际环境中的应用性能，我们提出了CASTELLA，这是一个大规模人工标注的AMR数据集。CASTELLA分别包含1,009、213和640条用于训练、验证和测试分割的音频记录，比之前的数据集大24倍。我们还使用CASTELLA建立了AMR的基线模型。实验表明，在合成数据上预训练后，再在CASTELLA上进行微调的模型，在Recall1@0.7指标上比仅使用合成数据训练的模型高出10.4分。CASTELLA可通过此链接公开获取：https URL。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Hokuto Munakata, Takehiro Imamura, Taichi Nishimura, Tatsuya Komatsu",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Auden-Voice: General-Purpose Voice Encoder for Speech and Language Understanding",
+    "paper_title_zh": "Auden-Voice: 用于语音和语言理解的全能语音编码器",
+    "paper_id": "2511.15145",
+    "paper_abstract": "Human voice encodes both identity and paralinguistic cues, yet encoders in large audio-language models (LALMs) rarely balance both aspects. In this work, we present a study toward building a general-purpose voice encoder that captures nuanced voice cues. Through a comprehensive evaluation, we find that multi-task training yields the most balanced representations, whereas contrastive language-audio pretraining (CLAP) primarily improves retrieval without enhancing paralinguistic understanding. Our final encoder, Auden-Voice, also demonstrates strong performance when integrated with LLMs. The code and training recipes will be released with the audio understanding toolkit Auden.",
+    "paper_abstract_zh": "人类声音同时编码身份和副语言线索，但大型音频语言模型(LALMs)中的编码器很少能平衡这两个方面。在这项工作中，我们提出了一项研究，旨在构建一个能够捕捉细微语音线索的全能语音编码器。通过全面评估，我们发现多任务训练能产生最平衡的表示，而对比语言音频预训练(CLAP)主要提高检索能力，而不增强副语言理解能力。我们的最终编码器Auden-Voice在与LLMs集成时也表现出强大的性能。代码和训练配方将与音频理解工具包Auden一起发布。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Mingyue Huo, Wei-Cheng Tseng, Yiwen Shao, Hao Zhang, Dong Yu",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "OBHS: An Optimized Block Huffman Scheme for Real-Time Audio Compression",
+    "paper_title_zh": "OBHS：一种用于实时音频压缩的优化块霍夫曼方案",
+    "paper_id": "2511.14793",
+    "paper_abstract": "In this paper, we introduce OBHS (Optimized Block Huffman Scheme), a novel lossless audio compression algorithm tailored for real-time streaming applications. OBHS leverages block-wise Huffman coding with canonical code representation and intelligent fallback mechanisms to achieve high compression ratios while maintaining low computational complexity. Our algorithm partitions audio data into fixed-size blocks, constructs optimal Huffman trees for each block, and employs canonical codes for efficient storage and transmission. Experimental results demonstrate that OBHS attains compression ratios of up to 93.6% for silence-rich audio and maintains competitive performance across various audio types, including pink noise, tones, and real-world recordings. With a linear time complexity of O(n) for n audio samples, OBHS effectively balances compression efficiency and computational demands, making it highly suitable for resource-constrained real-time audio streaming scenarios.",
+    "paper_abstract_zh": "本文介绍了OBHS（优化块霍夫曼方案），这是一种专为实时流式应用设计的新型无损音频压缩算法。OBHS利用基于块的霍夫曼编码、规范码表示和智能回退机制，在保持低计算复杂度的同时实现高压缩比。我们的算法将音频数据划分为固定大小的块，为每个块构建最优霍夫曼树，并采用规范码以实现高效的存储和传输。实验结果表明，OBHS对富含静音的音频可实现高达93.6%的压缩比，并在粉红噪声、音调及真实录音等多种音频类型上保持竞争力。对于n个音频样本，OBHS具有O(n)的线性时间复杂度，有效平衡了压缩效率和计算需求，使其非常适合资源受限的实时音频流式场景。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Muntahi Safwan Mahfi, Md. Manzurul Hasan, Gahangir Hossain",
+    "topic": [
+      "Audio Codec"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Fine-tuning Pre-trained Audio Models for COVID-19 Detection: A Technical Report",
+    "paper_title_zh": "针对COVID-19检测的预训练音频模型微调技术报告",
+    "paper_id": "2511.14939",
+    "paper_abstract": "This technical report investigates the performance of pre-trained audio models on COVID-19 detection tasks using established benchmark datasets. We fine-tuned Audio-MAE and three PANN architectures (CNN6, CNN10, CNN14) on the Coswara and COUGHVID datasets, evaluating both intra-dataset and cross-dataset generalization. We implemented a strict demographic stratification by age and gender to prevent models from exploiting spurious correlations between demographic characteristics and COVID-19 status. Intra-dataset results showed moderate performance, with Audio-MAE achieving the strongest result on Coswara (0.82 AUC, 0.76 F1-score), while all models demonstrated limited performance on Coughvid (AUC 0.58-0.63). Cross-dataset evaluation revealed severe generalization failure across all models (AUC 0.43-0.68), with Audio-MAE showing strong performance degradation (F1-score 0.00-0.08). Our experiments demonstrate that demographic balancing, while reducing apparent model performance, provides more realistic assessment of COVID-19 detection capabilities by eliminating demographic leakage - a confounding factor that inflate performance metrics. Additionally, the limited dataset sizes after balancing (1,219-2,160 samples) proved insufficient for deep learning models that typically require substantially larger training sets. These findings highlight fundamental challenges in developing generalizable audio-based COVID-19 detection systems and underscore the importance of rigorous demographic controls for clinically robust model evaluation.",
+    "paper_abstract_zh": "本技术报告研究了使用已建立的基准数据集，预训练音频模型在COVID-19检测任务中的性能。我们在Coswara和COUGHVID数据集上对Audio-MAE和三种PANN架构（CNN6、CNN10、CNN14）进行了微调，评估了数据集内和数据集间的泛化能力。我们通过年龄和性别实施了严格的人口分层，以防止模型利用人口特征与COVID-19状态之间的虚假相关性。数据集内结果显示了中等性能，其中Audio-MAE在Coswara上取得了最佳结果（AUC 0.82，F1分数0.76），而所有模型在Coughvid上的表现有限（AUC 0.58-0.63）。跨数据集评估显示所有模型都出现了严重的泛化失败（AUC 0.43-0.68），其中Audio-MAE表现出显著的性能下降（F1分数0.00-0.08）。我们的实验表明，人口平衡虽然降低了模型的表面性能，但通过消除人口泄露这一夸大性能指标的混淆因素，为COVID-19检测能力提供了更现实的评估。此外，平衡后有限的数据集规模（1,219-2,160个样本）对于通常需要更大训练集的深度学习模型来说是不够的。这些研究结果强调了开发可泛化的基于音频的COVID-19检测系统所面临的基本挑战，并强调了严格的人口控制对临床稳健模型评估的重要性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Daniel Oliveira de Brito, Letícia Gabriella de Souza, Marcelo Matheus Gauy, Marcelo Finger, Arnaldo Candido Junior",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Aligning Generative Music AI with Human Preferences: Methods and Challenges",
+    "paper_title_zh": "使生成式音乐AI与人类偏好保持一致：方法与挑战",
+    "paper_id": "2511.15038",
+    "paper_abstract": "Recent advances in generative AI for music have achieved remarkable fidelity and stylistic diversity, yet these systems often fail to align with nuanced human preferences due to the specific loss functions they use. This paper advocates for the systematic application of preference alignment techniques to music generation, addressing the fundamental gap between computational optimization and human musical appreciation. Drawing on recent breakthroughs including MusicRL's large-scale preference learning, multi-preference alignment frameworks like diffusion-based preference optimization in DiffRhythm+, and inference-time optimization techniques like Text2midi-InferAlign, we discuss how these techniques can address music's unique challenges: temporal coherence, harmonic consistency, and subjective quality assessment. We identify key research challenges including scalability to long-form compositions, reliability amongst others in preference modelling. Looking forward, we envision preference-aligned music generation enabling transformative applications in interactive composition tools and personalized music services. This work calls for sustained interdisciplinary research combining advances in machine learning, music-theory to create music AI systems that truly serve human creative and experiential needs.",
+    "paper_abstract_zh": "近年来，生成式音乐AI在保真度和风格多样性方面取得了显著进展，但这些系统由于使用的特定损失函数，往往无法与细微的人类偏好保持一致。本文主张将偏好对齐技术系统地应用于音乐生成，解决计算优化与人类音乐欣赏之间的根本差距。借鉴MusicRL的大规模偏好学习、DiffRhythm+等多偏好对齐框架（如基于扩散的偏好优化）以及Text2midi-InferAlign等推理时优化技术的最新突破，我们讨论了这些技术如何应对音乐特有的挑战：时间连贯性、和谐一致性和主观质量评估。我们确定了关键的研究挑战，包括扩展到长篇作品的规模，以及在偏好建模中的可靠性。展望未来，我们设想偏好对齐的音乐生成将在交互式作曲工具和个性化音乐服务中实现变革性应用。这项工作呼吁持续开展跨学科研究，结合机器学习和音乐理论的进步，创建真正满足人类创造性和体验需求的音乐AI系统。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Dorien Herremans, Abhinaba Roy",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "IHearYou: Linking Acoustic Features to DSM-5 Depressive Behavior Indicators",
+    "paper_title_zh": "IHearYou: 将声学特征与DSM-5抑郁行为指标关联",
+    "paper_id": "2511.14801",
+    "paper_abstract": "Depression affects over millions people worldwide, yet diagnosis still relies on subjective self-reports and interviews that may not capture authentic behavior. We present IHearYou, an approach to automated depression detection focused on speech acoustics. Using passive sensing in household environments, IHearYou extracts voice features and links them to DSM-5 (Diagnostic and Statistical Manual of Mental Disorders) indicators through a structured Linkage Framework instantiated for Major Depressive Disorder. The system runs locally to preserve privacy and includes a persistence schema and dashboard, presenting real-time throughput on a commodity laptop. To ensure reproducibility, we define a configuration-driven protocol with False Discovery Rate (FDR) correction and gender-stratified testing. Applied to the DAIC-WOZ dataset, this protocol reveals directionally consistent feature-indicator associations, while a TESS-based audio streaming experiment validates end-to-end feasibility. Our results show how passive voice sensing can be turned into explainable DSM-5 indicator scores, bridging the gap between black-box detection and clinically interpretable, on-device analysis.",
+    "paper_abstract_zh": "抑郁症影响着全球数百万人，但诊断仍依赖于主观的自我报告和访谈，这些方法可能无法捕捉真实的行为。我们提出了IHearYou，一种专注于语音声学的自动化抑郁检测方法。IHearYou在家庭环境中使用被动感知技术，提取语音特征，并通过针对重度抑郁症实例化的结构化关联框架，将这些特征与DSM-5（精神障碍诊断与统计手册）指标关联起来。该系统在本地运行以保护隐私，并包含持久化模式和仪表板，可在普通笔记本电脑上实时显示吞吐量。为确保可重复性，我们定义了一个基于配置的协议，包含错误发现率（FDR）校正和性别分层测试。应用于DAIC-WOZ数据集时，该协议揭示了特征-指标关联的方向一致性，而基于TESS的音频流实验验证了端到端的可行性。我们的结果表明，如何将被动语音感知转化为可解释的DSM-5指标分数，弥合了黑盒检测与临床可解释的设备分析之间的差距。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Jonas Länzlinger, Katharina Müller, Bruno Rodrigues",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Voiced-Aware Style Extraction and Style Direction Adjustment for Expressive Text-to-Speech",
+    "paper_title_zh": "基于语音感知的风格提取与风格方向调整的情感文本转语音",
+    "paper_id": "2511.14824",
+    "paper_abstract": "Recent advances in expressive text-to-speech (TTS) have introduced diverse methods based on style embedding extracted from reference speech. However, synthesizing high-quality expressive speech remains challenging. We propose SpotlightTTS, which exclusively emphasizes style via voiced-aware style extraction and style direction adjustment. Voiced-aware style extraction focuses on voiced regions highly related to style while maintaining continuity across different speech regions to improve expressiveness. We adjust the direction of the extracted style for optimal integration into the TTS model, which improves speech quality. Experimental results demonstrate that Spotlight-TTS achieves superior performance compared to baseline models in terms of expressiveness, overall speech quality, and style transfer capability.",
+    "paper_abstract_zh": "近年来，情感文本转语音(TTS)的进展引入了多种基于从参考语音中提取的风格嵌入的方法。然而，合成高质量的情感语音仍然具有挑战性。我们提出了SpotlightTTS，它通过语音感知的风格提取和风格方向调整专门强调风格。语音感知的风格提取专注于与风格高度相关的语音区域，同时保持不同语音区域之间的连续性，以提高表现力。我们调整提取的风格方向，以最佳方式整合到TTS模型中，从而提高语音质量。实验结果表明，在表现力、整体语音质量和风格转换能力方面，Spotlight-TTS相比基线模型实现了优越的性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Nam-Gyu Kim",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "LargeSHS: A large-scale dataset of music adaptation",
+    "paper_title_zh": "LargeSHS: 一个大规模音乐改编数据集",
+    "paper_id": "2511.15270",
+    "paper_abstract": "Recent advances in AI-based music generation have focused heavily on text-conditioned models, with less attention given to reference-based generation such as song adaptation. To support this line of research, we introduce LargeSHS, a large-scale dataset derived from SecondHandSongs, containing over 1.7 million metadata entries and approximately 900k publicly accessible audio links. Unlike existing datasets, LargeSHS includes structured adaptation relationships between musical works, enabling the construction of adaptation trees and performance clusters that represent cover song families. We provide comprehensive statistics and comparisons with existing datasets, highlighting the unique scale and richness of LargeSHS. This dataset paves the way for new research in cover song generation, reference-based music generation, and adaptation-aware MIR tasks.",
+    "paper_abstract_zh": "基于AI的音乐生成最近的研究主要集中在文本条件模型上，而对基于参考的生成（如歌曲改编）关注较少。为了支持这一研究方向，我们引入了LargeSHS，这是一个从SecondHandSongs衍生的大规模数据集，包含超过170万个元数据条目和约90万个公开可访问的音频链接。与现有数据集不同，LargeSHS包含音乐作品之间的结构化改编关系，能够构建表示翻唱歌曲家族的改编树和表演聚类。我们提供了全面的统计数据并与现有数据集进行了比较，突显了LargeSHS的独特规模和丰富性。这个数据集为翻唱生成、基于参考的音乐生成和改编感知的音乐信息检索任务开辟了新的研究途径。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Chih-Pin Tan, Hsuan-Kai Kao, Li Su, Yi-Hsuan Yang",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "A Novel CustNetGC Boosted Model with Spectral Features for Parkinson's Disease Prediction",
+    "paper_title_zh": "一种结合谱特征的新型CustNetGC增强模型用于帕金森病预测",
+    "paper_id": "2511.15485",
+    "paper_abstract": "Parkinson's disease is a neurodegenerative disorder that can be very tricky to diagnose and treat. Such early symptoms can include tremors, wheezy breathing, and changes in voice quality as critical indicators of neural damage. Notably, there has been growing interest in utilizing changes in vocal attributes as markers for the detection of PD early on. Based on this understanding, the present paper was designed to focus on the acoustic feature analysis based on voice recordings of patients diagnosed with PD and healthy controls (HC). In this paper, we introduce a novel classification and visualization model known as CustNetGC, combining a Convolutional Neural Network (CNN) with Custom Network Grad-CAM and CatBoost to enhance the efficiency of PD diagnosis. We use a publicly available dataset from Figshare, including voice recordings of 81 participants: 40 patients with PD and 41 healthy controls. From these recordings, we extracted the key spectral features: L-mHP and Spectral Slopes. The L-mHP feature combines three spectrogram representations: Log-Mel spectrogram, harmonic spectrogram, and percussive spectrogram, which are derived using Harmonic-Percussive Source Separation (HPSS). Grad-CAM was used to highlight the important regions in the data, thus making the PD predictions interpretable and effective. Our proposed CustNetGC model achieved an accuracy of 99.06% and precision of 95.83%, with the area under the ROC curve (AUC) recorded at 0.90 for the PD class and 0.89 for the HC class. Additionally, the combination of CatBoost, a gradient boosting algorithm, enhanced the robustness and the prediction performance by properly classifying PD and non-PD samples. Therefore, the results provide the potential improvement in the CustNetGC system in enhancing diagnostic accuracy and the interpretability of the Parkinson's Disease prediction model.",
+    "paper_abstract_zh": "帕金森病是一种神经退行性疾病，诊断和治疗可能非常困难。其早期症状可能包括震颤、喘息样呼吸以及声音质量变化，这些是神经损伤的关键指标。值得注意的是，利用声音属性变化作为早期检测帕金森病(PD)的标志物日益受到关注。基于这一理解，本文专注于分析帕金森病患者和健康对照者(HC)的语音录音中的声学特征。在本文中，我们介绍了一种名为CustNetGC的新型分类和可视化模型，该模型结合了卷积神经网络(CNN)、自定义网络Grad-CAM和CatBoost，以提高帕金森病诊断的效率。我们使用了来自Figshare的公开数据集，包括81名参与者的语音录音：40名帕金森病患者和41名健康对照者。从这些录音中，我们提取了关键的谱特征：L-mHP和谱斜率。L-mHP特征结合了三种语谱图表示：对数梅尔语谱图、谐波语谱图和打击乐语谱图，这些是通过谐波-打击乐源分离(HPSS)技术衍生的。使用Grad-CAM来突出数据中的重要区域，从而使帕金森病预测具有可解释性和有效性。我们提出的CustNetGC模型达到了99.06%的准确率和95.83%的精确率，帕金森病类的ROC曲线下面积(AUC)记录为0.90，健康对照者类为0.89。此外，梯度提升算法CatBoost的结合通过正确分类帕金森病和非帕金森病样本，增强了模型的鲁棒性和预测性能。因此，这些结果表明CustNetGC系统在提高诊断准确性和帕金森病预测模型的可解释性方面具有潜在改进。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)"
+    ],
+    "update_time": "2025-11-20",
+    "paper_authors": "Abishek Karthik, Pandiyaraju V, Dominic Savio M, Rohit Swaminathan S",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
