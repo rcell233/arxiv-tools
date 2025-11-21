@@ -1,0 +1,136 @@
+[
+  {
+    "paper_title": "A Generalized Weighted Overlap-Add (WOLA) Filter Bank for Improved Subband System Identification",
+    "paper_title_zh": "一种用于改进子带系统识别的广义加权重叠相加（WOLA）滤波器组",
+    "paper_id": "2511.15766",
+    "paper_abstract": "This paper addresses the challenges in short-time Fourier transform (STFT) domain subband adaptive filtering, in particular, subband system identification. Previous studies in this area have primarily focused on setups with subband filtering at a downsampled rate, implemented using the weighted overlap-add (WOLA) filter bank, popular in audio and speech-processing for its reduced complexity. However, this traditional approach imposes constraints on the subband filters when transformed to their full-rate representation. This paper makes three key contributions. First, it introduces a generalized WOLA filter bank that repositions subband filters before the downsampling operation, eliminating the constraints on subband filters inherent in the conventional WOLA filter bank. Second, it investigates the mean square error (MSE) performance of the generalized WOLA filter bank for full-band system identification, establishing analytical ties between the order of subband filters, the full-band system impulse response length, the decimation factor, and the prototype filters. Third, to address the increased computational complexity of the generalized WOLA, the paper proposes a low-complexity implementation termed per-tone weighted overlap-add (PT-WOLA), which maintains computational complexity on par with conventional WOLA. Analytical and empirical evidence demonstrates that the proposed generalized WOLA filter bank significantly enhances the performance of subband system identification.",
+    "paper_abstract_zh": "本文解决了短时傅里叶变换（STFT）域子带自适应滤波中的挑战，特别是子带系统识别。该领域先前的研究主要集中在使用加权重叠相加（WOLA）滤波器组的降采样率子带滤波设置上，WOLA滤波器组因其降低的复杂度而在音频和语音处理中广受欢迎。然而，这种传统方法在将子带滤波器转换为全速率表示时对子带滤波器施加了约束。本文有三个主要贡献。首先，它引入了一种广义WOLA滤波器组，该滤波器组在下采样操作之前重新定位子带滤波器，消除了传统WOLA滤波器组中固有的子带滤波器约束。其次，它研究了广义WOLA滤波器组在全带系统识别中的均方误差（MSE）性能，建立了子带滤波器阶数、全带系统脉冲响应长度、抽取因子和原型滤波器之间的分析联系。第三，为了解决广义WOLA增加的计算复杂度，本文提出了一种称为按音调加权重叠相加（PT-WOLA）的低复杂度实现方法，其计算复杂度与传统WOLA相当。分析和经验证据表明，所提出的广义WOLA滤波器组显著提高了子带系统识别的性能。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-21",
+    "paper_authors": "Mohit Sharma, Robbe Van Rompaey, Wouter Lanneer, Marc Moonen",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Train Short, Infer Long: Speech-LLM Enables Zero-Shot Streamable Joint ASR and Diarization on Long Audio",
+    "paper_title_zh": "",
+    "paper_id": "2511.16046",
+    "paper_abstract": "Joint automatic speech recognition (ASR) and speaker diarization aim to answer the question \"who spoke what\" in multi-speaker scenarios. In this paper, we present an end-to-end speech large language model (Speech-LLM) for Joint strEamable DIarization and aSr (JEDIS-LLM). The model is trained only on short audio under 20s but is capable of streamable inference on long-form audio without additional training. This is achieved by introducing a Speaker Prompt Cache (SPC) with an on-the-fly update mechanism during chunk-wise streaming inference, inspired by the autoregressive nature of LLMs. The SPC also allows the seamless use of pre-enrolled speaker profiles which is common in many scenarios like meeting transcription. To further enhance diarization capability, we incorporate word-level speaker supervision into the speech encoder during training. Experimental results demonstrate that our system outperforms strong baselines, including Sortformer and Meta-Cat in the local setting on audio up to 20s, and DiarizationLM on long-form audio, despite being fully end-to-end and streamable while DiarizationLM follows a cascaded offline pipeline. To the best of our knowledge, this is the first work enabling zero-shot streamable joint ASR and diarization on long audio using a Speech-LLM trained only on short audio, achieving state-of-the-art performance.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-21",
+    "paper_authors": "Mohan Shi, Xiong Xiao, Ruchao Fan, Shaoshi Ling, Jinyu Li",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "SUNAC: Source-aware Unified Neural Audio Codec",
+    "paper_title_zh": "SUNAC：源感知统一神经音频编解码器",
+    "paper_id": "2511.16126",
+    "paper_abstract": "Neural audio codecs (NACs) provide compact representations that can be leveraged in many downstream applications, in particular large language models. Yet most NACs encode mixtures of multiple sources in an entangled manner, which may impede efficient downstream processing in applications that need access to only a subset of the sources (e.g., analysis of a particular type of sound, transcription of a given speaker, etc). To address this, we propose a source-aware codec that encodes individual sources directly from mixtures, conditioned on source type prompts. This enables user-driven selection of which source(s) to encode, including separately encoding multiple sources of the same type (e.g., multiple speech signals). Experiments show that our model achieves competitive resynthesis and separation quality relative to a cascade of source separation followed by a conventional NAC, with lower computational cost.",
+    "paper_abstract_zh": "神经音频编解码器（NAC）提供紧凑的表示，可以在许多下游应用中利用，特别是大型语言模型。然而，大多数NAC以纠缠的方式编码多个源的混合，这可能阻碍需要仅访问源子集的应用程序中的高效下游处理（例如，特定类型声音的分析、给定说话人的转录等）。为了解决这个问题，我们提出了一种源感知编解码器，该编解码器根据源类型提示直接从混合中编码单个源。这使用户能够驱动选择要编码的源（包括单独编码多个相同类型的源，例如多个语音信号）。实验表明，与级联的源分离后跟传统NAC相比，我们的模型在重新合成和分离质量方面具有竞争力，并且计算成本更低。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-11-21",
+    "paper_authors": "Ryo Aihara, Yoshiki Masuyama, Francesco Paissan, François G. Germain, Gordon Wichern, Jonathan Le Roux",
+    "topic": [
+      "Audio Codec",
+      "Audio Representation Learning",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Codec2Vec: Self-Supervised Speech Representation Learning Using Neural Speech Codecs",
+    "paper_title_zh": "Codec2Vec: 基于神经语音编解码器的自监督语音表示学习",
+    "paper_id": "2511.16639",
+    "paper_abstract": "Recent advancements in neural audio codecs have not only enabled superior audio compression but also enhanced speech synthesis techniques. Researchers are now exploring their potential as universal acoustic feature extractors for a broader range of speech processing tasks. Building on this trend, we introduce Codec2Vec, the first speech representation learning framework that relies exclusively on discrete audio codec units. This approach offers several advantages, including improved data storage and transmission efficiency, faster training, and enhanced data privacy. We explore masked prediction with various training target derivation strategies to thoroughly understand the effectiveness of this framework. Evaluated on the SUPERB benchmark, Codec2Vec achieves competitive performance compared to continuous-input models while reducing storage requirements by up to 16.5x and training time by 2.3x, showcasing its scalability and efficiency.",
+    "paper_abstract_zh": "神经音频编解码器的最新进展不仅实现了卓越的音频压缩，还增强了语音合成技术。研究人员现在正在探索其作为更广泛语音处理任务的通用声学特征提取器的潜力。基于这一趋势，我们引入了Codec2Vec，这是第一个完全依赖离散音频编解码器单元的语音表示学习框架。该方法具有多种优势，包括提高数据存储和传输效率、更快的训练速度以及增强数据隐私。我们探索了掩码预测和多种训练目标推导策略，以全面了解该框架的有效性。在SUPERB基准测试中，Codec2Vec与连续输入模型相比实现了具有竞争力的性能，同时将存储需求减少了高达16.5倍，训练时间缩短了2.3倍，展示了其可扩展性和效率。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-21",
+    "paper_authors": "Wei-Cheng Tseng, David Harwath",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SceneGuard: Training-Time Voice Protection with Scene-Consistent Audible Background Noise",
+    "paper_title_zh": "SceneGuard: 基于场景一致可听背景噪声的训练时语音保护",
+    "paper_id": "2511.16114",
+    "paper_abstract": "Voice cloning technology poses significant privacy threats by enabling unauthorized speech synthesis from limited audio samples. Existing defenses based on imperceptible adversarial perturbations are vulnerable to common audio preprocessing such as denoising and compression. We propose SceneGuard, a training-time voice protection method that applies scene-consistent audible background noise to speech recordings. Unlike imperceptible perturbations, SceneGuard leverages naturally occurring acoustic scenes (e.g., airport, street, park) to create protective noise that is contextually appropriate and robust to countermeasures. We evaluate SceneGuard on text-to-speech training attacks, demonstrating 5.5% speaker similarity degradation with extremely high statistical significance (p < 10^{-15}, Cohen's d = 2.18) while preserving 98.6% speech intelligibility (STOI = 0.986). Robustness evaluation shows that SceneGuard maintains or enhances protection under five common countermeasures including MP3 compression, spectral subtraction, lowpass filtering, and downsampling. Our results suggest that audible, scene-consistent noise provides a more robust alternative to imperceptible perturbations for training-time voice protection. The source code are available at: this https URL.",
+    "paper_abstract_zh": "语音克隆技术能够从有限的音频样本中实现未经授权的语音合成，对隐私构成重大威胁。现有基于不可感知对抗扰动的防御方法容易受到常见的音频预处理（如降噪和压缩）的影响。我们提出了SceneGuard，一种训练时语音保护方法，它对语音录音应用场景一致的可听背景噪声。与不可感知的扰动不同，SceneGuard利用自然发生的声学场景（如机场、街道、公园）来创建具有上下文适当性且能抵抗反制措施的保护性噪声。我们在文本到语音训练攻击上评估了SceneGuard，结果表明在保持98.6%语音可懂度（STOI = 0.986）的同时，实现了5.5%的说话人相似度退化，且具有极高的统计显著性（p < 10^{-15}, Cohen's d = 2.18）。鲁棒性评估显示，SceneGuard在MP3压缩、谱减、低通滤波和下采样等五种常见反制措施下保持或增强了保护效果。我们的研究结果表明，可听的、场景一致的噪声是训练时语音保护中不可感知扰动的更鲁棒的替代方案。源代码可在以下网址获取：this https URL。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-21",
+    "paper_authors": "Rui Sang, Yuxuan Liu",
+    "topic": [
+      "Speech Synthesis",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education",
+    "paper_title_zh": "使用合成数据控制钢琴乐谱难度以实现包容性音乐教育",
+    "paper_id": "2511.16228",
+    "paper_abstract": "Despite its potential, AI advances in music education are hindered by proprietary systems that limit the democratization of technology in this domain. In particular, AI-driven music difficulty adjustment is especially promising, as simplifying complex pieces can make music education more inclusive and accessible to learners of all ages and contexts. Nevertheless, recent efforts have relied on proprietary datasets, which prevents the research community from reproducing, comparing, or extending the current state of the art. In addition, while these generative methods offer great potential, most of them use the MIDI format, which, unlike others, such as MusicXML, lacks readability and layout information, thereby limiting their practical use for human performers. This work introduces a transformer-based method for adjusting the difficulty of MusicXML piano scores. Unlike previous methods, which rely on annotated datasets, we propose a synthetic dataset composed of pairs of piano scores ordered by estimated difficulty, with each pair comprising a more challenging and easier arrangement of the same piece. We generate these pairs by creating variations conditioned on the same melody and harmony and leverage pretrained models to assess difficulty and style, ensuring appropriate pairing. The experimental results illustrate the validity of the proposed approach, showing accurate control of playability and target difficulty, as highlighted through qualitative and quantitative evaluations. In contrast to previous work, we openly release all resources (code, dataset, and models), ensuring reproducibility while fostering open-source innovation to help bridge the digital divide.",
+    "paper_abstract_zh": "尽管人工智能在音乐教育领域具有巨大潜力，但专有系统的存在限制了该领域技术的民主化进程。特别是，AI驱动的音乐难度调整技术前景广阔，因为简化复杂作品可以使音乐教育更加包容，让不同年龄和背景的学习者都能接触到。然而，近期的研究工作依赖于专有数据集，这阻碍了研究界对当前最先进技术的复现、比较或扩展。此外，尽管这些生成方法具有巨大潜力，但大多数方法使用MIDI格式，与MusicXML等格式不同，MIDI缺乏可读性和布局信息，从而限制了其在人类表演者中的实际应用。本文介绍了一种基于Transformer的MusicXML钢琴乐谱难度调整方法。与以往依赖标注数据集的方法不同，我们提出了一种由按估计难度排序的钢琴乐谱对组成的合成数据集，每对包含同一作品的更具挑战性和更简单的编曲。我们通过基于相同旋律和和声创建变体来生成这些乐谱对，并利用预训练模型评估难度和风格，确保适当的配对。实验结果证明了所提方法的有效性，通过定性和定量评估展示了可演奏性和目标难度的精确控制。与以往工作相比，我们公开了所有资源（代码、数据集和模型），确保了可复现性，同时促进开源创新，帮助弥合数字鸿沟。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-21",
+    "paper_authors": "Pedro Ramoneda, Emilia Parada-Cabaleiro, Dasaem Jeong, Xavier Serra",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Step-Audio-R1 Technical Report",
+    "paper_title_zh": "Step-Audio-R1 技术报告",
+    "paper_id": "2511.15848",
+    "paper_abstract": "Recent advances in reasoning models have demonstrated remarkable success in text and vision domains through extended chain-of-thought deliberation. However, a perplexing phenomenon persists in audio language models: they consistently perform better with minimal or no reasoning, raising a fundamental question - can audio intelligence truly benefit from deliberate thinking? We introduce Step-Audio-R1, the first audio reasoning model that successfully unlocks reasoning capabilities in the audio domain. Through our proposed Modality-Grounded Reasoning Distillation (MGRD) framework, Step-Audio-R1 learns to generate audio-relevant reasoning chains that genuinely ground themselves in acoustic features rather than hallucinating disconnected deliberations. Our model exhibits strong audio reasoning capabilities, surpassing Gemini 2.5 Pro and achieving performance comparable to the state-of-the-art Gemini 3 Pro across comprehensive audio understanding and reasoning benchmarks spanning speech, environmental sounds, and music. These results demonstrate that reasoning is a transferable capability across modalities when appropriately anchored, transforming extended deliberation from a liability into a powerful asset for audio intelligence. By establishing the first successful audio reasoning model, Step-Audio-R1 opens new pathways toward building truly multimodal reasoning systems that think deeply across all sensory modalities.",
+    "paper_abstract_zh": "最近，推理模型在文本和视觉领域通过扩展的链式思考推理取得了显著的成功。然而，在音频语言模型中，一个令人费解的现象依然存在：它们在最少或没有推理的情况下表现更好，这引发了一个根本性问题——音频智能是否真的能从深思熟虑的思考中受益？我们介绍了 Step-Audio-R1，这是第一个成功解锁音频领域推理能力的音频推理模型。通过我们提出的模态基础推理蒸馏（MGRD）框架，Step-Audio-R1 学会生成真正基于声学特征而非产生不连贯幻觉的音频相关推理链。我们的模型展现出强大的音频推理能力，超越了 Gemini 2.5 Pro，并在涵盖语音、环境声音和音乐的全面音频理解和推理基准测试中，达到了与最先进的 Gemini 3 Pro 相当的性能。这些结果表明，当适当锚定时，推理能力是跨模态可转移的，将扩展的思考从负债转变为音频智能的强大资产。通过建立第一个成功的音频推理模型，Step-Audio-R1 为构建真正跨所有感官模态进行深度思考的多模态推理系统开辟了新途径。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-21",
+    "paper_authors": "Fei Tian, Xiangyu Tony Zhang, Yuxin Zhang, Haoyang Zhang, Yuxin Li, Daijiao Liu, Yayue Deng, Donghang Wu, Jun Chen, Liang Zhao, Chengyuan Yao, Hexin Liu, Eng Siong Chng, Xuerui Yang, Xiangyu Zhang, Daxin Jiang, Gang Yu",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
