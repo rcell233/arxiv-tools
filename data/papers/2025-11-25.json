@@ -1,0 +1,331 @@
+[
+  {
+    "paper_title": "Speech Recognition Model Improves Text-to-Speech Synthesis using Fine-Grained Reward",
+    "paper_title_zh": "基于细粒度奖励的语音识别模型改进文本到语音合成",
+    "paper_id": "2511.17555",
+    "paper_abstract": "Recent advances in text-to-speech (TTS) have enabled models to clone arbitrary unseen speakers and synthesize high-quality, natural-sounding speech. However, evaluation methods lag behind: typical mean opinion score (MOS) estimators perform regression over entire utterances, while failures usually occur in a few problematic words. We observe that encoder-decoder ASR models (e.g., Whisper) surface word-level mismatches between speech and text via cross-attention, providing a fine-grained reward signal. Building on this, we introduce Word-level TTS Alignment by ASR-driven Attentive Reward (W3AR). Without explicit reward annotations, W3AR uses attention from a pre-trained ASR model to drive finer-grained alignment and optimization of sequences predicted by a TTS model. Experiments show that W3AR improves the quality of existing TTS systems and strengthens zero-shot robustness on unseen speakers. More broadly, our results suggest a simple recipe for generative modeling: understanding models can act as evaluators, delivering informative, fine-grained feedback for optimization.",
+    "paper_abstract_zh": "近年来，文本到语音（TTS）技术的进步使得模型能够克隆任意未见过的说话人并合成高质量、自然的语音。然而，评估方法相对滞后：典型的平均意见分数（MOS）估计器对整个语音片段进行回归，而错误通常发生在几个有问题的单词上。我们观察到，编码器-解码器ASR模型（如Whisper）通过交叉注意力揭示了语音和文本之间的单词级不匹配，提供了细粒度的奖励信号。基于此，我们引入了由ASR驱动的注意力奖励（W3AR）进行单词级TTS对齐。在没有明确奖励标注的情况下，W3AR利用预训练ASR模型的注意力来驱动TTS模型预测序列的更细粒度对齐和优化。实验表明，W3AR提高了现有TTS系统的质量，并增强了在未见说话人上的零样本鲁棒性。更广泛地说，我们的结果为生成建模提供了一个简单的配方：理解模型可以作为评估者，为优化提供信息丰富、细粒度的反馈。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Guansu Wang, Peijie Sun",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "InstructAudio: Unified speech and music generation with natural language instruction",
+    "paper_title_zh": "InstructAudio：基于自然语言指令的统一语音和音乐生成",
+    "paper_id": "2511.18487",
+    "paper_abstract": "Text-to-speech (TTS) and text-to-music (TTM) models face significant limitations in instruction-based control. TTS systems usually depend on reference audio for timbre, offer only limited text-level attribute control, and rarely support dialogue generation. TTM systems are constrained by input conditioning requirements that depend on expert knowledge annotations. The high heterogeneity of these input control conditions makes them difficult to joint modeling with speech synthesis. Despite sharing common acoustic modeling characteristics, these two tasks have long been developed independently, leaving open the challenge of achieving unified modeling through natural language instructions. We introduce InstructAudio, a unified framework that enables instruction-based (natural language descriptions) control of acoustic attributes including timbre (gender, age), paralinguistic (emotion, style, accent), and musical (genre, instrument, rhythm, atmosphere). It supports expressive speech, music, and dialogue generation in English and Chinese. The model employs joint and single diffusion transformer layers with a standardized instruction-phoneme input format, trained on 50K hours of speech and 20K hours of music data, enabling multi-task learning and cross-modal alignment. Fig. 1 visualizes performance comparisons with mainstream TTS and TTM models, demonstrating that InstructAudio achieves optimal results on most metrics. To our best knowledge, InstructAudio represents the first instruction-controlled framework unifying speech and music generation. Audio samples are available at: this https URL",
+    "paper_abstract_zh": "文本到语音（TTS）和文本到音乐（TTM）模型在基于指令的控制方面存在显著局限性。TTS系统通常依赖参考音频来控制音色，仅提供有限的文本级属性控制，且很少支持对话生成。TTM系统受限于需要专家知识标注的输入条件要求。这些输入控制条件的高度异质性使得它们难以与语音合成进行联合建模。尽管这两个任务共享共同的声学建模特性，但它们长期以来一直独立发展，留下了通过自然语言指令实现统一建模的挑战。我们介绍了InstructAudio，这是一个统一框架，能够通过指令（自然语言描述）控制声学属性，包括音色（性别、年龄）、副语言（情感、风格、口音）和音乐（流派、乐器、节奏、氛围）。它支持英语和中文的情感语音、音乐和对话生成。该模型采用联合和单一扩散Transformer层，并使用标准化的指令-音素输入格式，在5万小时的语音和2万小时的音乐数据上进行训练，实现了多任务学习和跨模态对齐。图1展示了与主流TTS和TTM模型的性能比较，证明InstructAudio在大多数指标上取得了最优结果。据我们所知，InstructAudio代表了首个统一语音和音乐生成的指令控制框架。音频样本可通过以下链接获取：this https URL",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Chunyu Qiang, Kang Yin, Xiaopeng Wang, Yuzhe Liang, Jiahui Zhao, Ruibo Fu, Tianrui Wang, Cheng Gong, Chen Zhang, Longbiao Wang, Jianwu Dang",
+    "topic": [
+      "Speech Synthesis",
+      "Music Generation"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "First Deep Learning Approach to Hammering Acoustics for Stem Stability Assessment in Total Hip Arthroplasty",
+    "paper_title_zh": "首次深度学习方法应用于全髋关节置换术中的锤击声学评估股骨柄稳定性",
+    "paper_id": "2511.18725",
+    "paper_abstract": "Audio event classification has recently emerged as a promising approach in medical applications. In total hip arthroplasty (THA), intra-operative hammering acoustics provide critical cues for assessing the initial stability of the femoral stem, yet variability due to femoral morphology, implant size, and surgical technique constrains conventional assessment methods. We propose the first deep learning framework for this task, employing a TimeMIL model trained on Log-Mel Spectrogram features and enhanced with pseudo-labeling. On intra-operative recordings, the method achieved 91.17 % +/- 2.79 % accuracy, demonstrating reliable estimation of stem stability. Comparative experiments further show that reducing the diversity of femoral stem brands improves model performance, although limited dataset size remains a bottleneck. These results establish deep learning-based audio event classification as a feasible approach for intra-operative stability assessment in THA.",
+    "paper_abstract_zh": "音频事件分类最近已成为医学应用中的一种有前景的方法。在全髋关节置换术(THA)中，术中锤击声学为评估股骨柄的初始稳定性提供了关键线索，但由于股骨形态、植入物大小和手术技术的差异，传统评估方法受到限制。我们为这项任务提出了第一个深度学习框架，采用在Log-Mel频谱图特征上训练的TimeMIL模型，并通过伪标签增强。在术中录音上，该方法达到了91.17% +/- 2.79%的准确率，证明了股骨柄稳定性的可靠估计。比较实验进一步表明，减少股骨柄品牌的多样性可以提高模型性能，尽管数据集规模有限仍然是一个瓶颈。这些结果确立了基于深度学习的音频事件分类作为THA术中稳定性评估的可行方法。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Dongqi Zhu, Zhuwen Xu, Youyuan Chen, Minghao Jin, Wan Zheng, Yi Zhou, Huiwu Li, Yongyun Chang, Feng Hong, Zanjing Zhai",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "PrismAudio: Decomposed Chain-of-Thoughts and Multi-dimensional Rewards for Video-to-Audio Generation",
+    "paper_title_zh": "PrismAudio：用于视频到音频生成的分解式思维链和多维奖励",
+    "paper_id": "2511.18833",
+    "paper_abstract": "Video-to-Audio (V2A) generation requires balancing four critical perceptual dimensions: semantic consistency, audio-visual temporal synchrony, aesthetic quality, and spatial accuracy; yet existing methods suffer from objective entanglement that conflates competing goals in single loss functions and lack human preference alignment. We introduce PrismAudio, the first framework to integrate Reinforcement Learning into V2A generation with specialized Chain-of-Thought (CoT) planning. Our approach decomposes monolithic reasoning into four specialized CoT modules (Semantic, Temporal, Aesthetic, and Spatial CoT), each paired with targeted reward functions. This CoT-reward correspondence enables multidimensional RL optimization that guides the model to jointly generate better reasoning across all perspectives, solving the objective entanglement problem while preserving interpretability. To make this optimization computationally practical, we propose Fast-GRPO, which employs hybrid ODE-SDE sampling that dramatically reduces the training overhead compared to existing GRPO implementations. We also introduce AudioCanvas, a rigorous benchmark that is more distributionally balanced and covers more realistically diverse and challenging scenarios than existing datasets, with 300 single-event classes and 501 multi-event samples. Experimental results demonstrate that PrismAudio achieves state-of-the-art performance across all four perceptual dimensions on both the in-domain VGGSound test set and out-of-domain AudioCanvas benchmark. The project page is available at this https URL.",
+    "paper_abstract_zh": "视频到音频（V2A）生成需要平衡四个关键感知维度：语义一致性、视听时间同步性、美学质量和空间准确性；然而，现有方法存在目标纠缠问题，将竞争目标混合在单一损失函数中，并且缺乏人类偏好对齐。我们引入了PrismAudio，这是第一个将强化学习集成到V2A生成中的框架，并配备了专门的思维链（CoT）规划。我们的方法将整体推理分解为四个专门的CoT模块（语义、时间、美学和空间CoT），每个模块都配有针对性的奖励函数。这种CoT-奖励对应关系实现了多维RL优化，引导模型在所有视角上共同生成更好的推理，解决了目标纠缠问题，同时保留了可解释性。为了使这种计算优化切实可行，我们提出了Fast-GRPO，它采用混合ODE-SDE采样，与现有的GRPO实现相比，显著降低了训练开销。我们还引入了AudioCanvas，这是一个严格的基准测试集，比现有数据集在分布上更加平衡，覆盖了更多样化且具有挑战性的现实场景，包含300个单事件类别和501个多事件样本。实验结果表明，PrismAudio在领域内的VGGSound测试集和领域外的AudioCanvas基准测试中，在所有四个感知维度上都取得了最先进的性能。项目页面可通过此URL访问。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Image and Video Processing (eess.IV)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Huadai Liu, Kaicheng Luo, Wen Wang, Qian Chen, Peiwen Sun, Rongjie Huang, Xiangang Li, Jieping Ye, Wei Xue",
+    "topic": [
+      "Audio Representation Learning",
+      "Video Generation",
+      "Music Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Multidimensional Music Aesthetic Evaluation via Semantically Consistent C-Mixup Augmentation",
+    "paper_title_zh": "通过语义一致的C-Mixup增强进行多维音乐美学评估",
+    "paper_id": "2511.18869",
+    "paper_abstract": "Evaluating the aesthetic quality of generated songs is challenging due to the multi-dimensional nature of musical perception. We propose a robust music aesthetic evaluation framework that combines (1) multi-source multi-scale feature extraction to obtain complementary segment- and track-level representations, (2) a hierarchical audio augmentation strategy to enrich training data, and (3) a hybrid training objective that integrates regression and ranking losses for accurate scoring and reliable top-song identification. Experiments on the ICASSP 2026 SongEval benchmark demonstrate that our approach consistently outperforms baseline methods across correlation and top-tier metrics.",
+    "paper_abstract_zh": "评估生成歌曲的美学质量具有挑战性，因为音乐感知具有多维特性。我们提出了一种稳健的音乐美学评估框架，该框架结合了(1)多源多尺度特征提取，以获取互补的段落级和曲目级表示；(2)分层音频增强策略，以丰富训练数据；(3)混合训练目标，整合回归和排序损失，以实现准确评分和可靠的首歌曲识别。在ICASSP 2026 SongEval基准测试上的实验表明，我们的方法在相关性和顶级指标方面始终优于基线方法。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Shuyang Liu, Yuan Jin, Rui Lin, Shizhe Chen, Junyu Dai, Tao Jiang",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Dynamic Multi-Species Bird Soundscape Generation with Acoustic Patterning and 3D Spatialization",
+    "paper_title_zh": "基于声学模式和3D空间化的动态多物种鸟声景观生成",
+    "paper_id": "2511.19275",
+    "paper_abstract": "Generation of dynamic, scalable multi-species bird soundscapes remains a significant challenge in computer music and algorithmic sound design. Birdsongs involve rapid frequency-modulated chirps, complex amplitude envelopes, distinctive acoustic patterns, overlapping calls, and dynamic inter-bird interactions, all of which require precise temporal and spatial control in 3D environments. Existing approaches, whether Digital Signal Processing (DSP)-based or data-driven, typically focus only on single species modeling, static call structures, or synthesis directly from recordings, and often suffer from noise, limited flexibility, or large data needs. To address these challenges, we present a novel, fully algorithm-driven framework that generates dynamic multi-species bird soundscapes using DSP-based chirp generation and 3D spatialization, without relying on recordings or training data. Our approach simulates multiple independently-moving birds per species along different moving 3D trajectories, supporting controllable chirp sequences, overlapping choruses, and realistic 3D motion in scalable soundscapes while preserving species-specific acoustic patterns. A visualization interface provides bird trajectories, spectrograms, activity timelines, and sound waves for analytical and creative purposes. Both visual and audio evaluations demonstrate the ability of the system to generate dense, immersive, and ecologically inspired soundscapes, highlighting its potential for computer music, interactive virtual environments, and computational bioacoustics research.",
+    "paper_abstract_zh": "在计算机音乐和算法声音设计中，生成动态、可扩展的多物种鸟声景观仍然是一个重大挑战。鸟鸣涉及快速调频的啁啾声、复杂的振幅包络、独特的声学模式、重叠的叫声以及动态的鸟类间互动，所有这些都需要在3D环境中进行精确的时间和空间控制。现有的方法，无论是基于数字信号处理(DSP)的还是数据驱动的，通常只专注于单一物种建模、静态呼叫结构或直接从录音中合成，并且常常受到噪声、灵活性有限或大数据需求的困扰。为了解决这些挑战，我们提出了一种新颖的完全算法驱动的框架，它使用基于DSP的啁啾生成和3D空间化来生成动态的多物种鸟声景观，而不依赖于录音或训练数据。我们的方法模拟了每个物种中多个独立移动的鸟类，沿着不同的3D移动轨迹，支持可控的啁啾序列、重叠的合唱团和可扩展声景中的真实3D运动，同时保留物种特定的声学模式。可视化界面提供了鸟类轨迹、频谱图、活动时间线和声波，用于分析和创意目的。视觉和音频评估都证明了该系统能够生成密集、沉浸式和生态启发的声景，突显了其在计算机音乐、交互式虚拟环境和计算生物声学研究中的潜力。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Signal Processing (eess.SP)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Ellie L. Zhang, Duoduo Liao, Callie C. Liao",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Three-Class Emotion Classification for Audiovisual Scenes Based on Ensemble Learning Scheme",
+    "paper_title_zh": "基于集成学习方案的视听场景三分类情感识别",
+    "paper_id": "2511.17926",
+    "paper_abstract": "Emotion recognition plays a pivotal role in enhancing human-computer interaction, particularly in movie recommendation systems where understanding emotional content is essential. While multimodal approaches combining audio and video have demonstrated effectiveness, their reliance on high-performance graphical computing limits deployment on resource-constrained devices such as personal computers or home audiovisual systems. To address this limitation, this study proposes a novel audio-only ensemble learning framework capable of classifying movie scenes into three emotional categories: Good, Neutral, and Bad. The model integrates ten support vector machines and six neural networks within a stacking ensemble architecture to enhance classification performance. A tailored data preprocessing pipeline, including feature extraction, outlier handling, and feature engineering, is designed to optimize emotional information from audio inputs. Experiments on a simulated dataset achieve 67% accuracy, while a real-world dataset collected from 15 diverse films yields an impressive 86% accuracy. These results underscore the potential of audio-based, lightweight emotion recognition methods for broader consumer-level applications, offering both computational efficiency and robust classification capabilities.",
+    "paper_abstract_zh": "情感识别在增强人机交互中扮演着关键角色，特别是在电影推荐系统中，理解情感内容至关重要。虽然结合音频和视频的多模态方法已显示出有效性，但它们对高性能图形计算的依赖限制了在个人电脑或家庭视听系统等资源受限设备上的部署。为解决这一限制，本研究提出了一种新颖的仅音频集成学习框架，能够将电影场景分为三种情感类别：好、中性、坏。该模型在堆叠集成架构中集成了十个支持向量机和六个神经网络，以提高分类性能。设计了一个定制的数据预处理流程，包括特征提取、异常值处理和特征工程，以优化来自音频输入的情感信息。在模拟数据集上的实验达到了67%的准确率，而从15部不同电影收集的真实数据集则取得了86%的准确率。这些结果强调了基于音频的轻量级情感识别方法在更广泛的消费级应用中的潜力，同时提供了计算效率和强大的分类能力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Human-Computer Interaction (cs.HC)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Xiangrui Xiong, Zhou Zhou, Guocai Nong, Junlin Deng, Ning Wu",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Diffusion-based Surrogate Model for Time-varying Underwater Acoustic Channels",
+    "paper_title_zh": "基于扩散的水下时变声信道代理模型",
+    "paper_id": "2511.18078",
+    "paper_abstract": "Accurate modeling of time-varying underwater acoustic channels is essential for the design, evaluation, and deployment of reliable underwater communication systems. Conventional physics models require detailed environmental knowledge, while stochastic replay methods are constrained by the limited diversity of measured channels and often fail to generalize to unseen scenarios, reducing their practical applicability. To address these challenges, we propose StableUASim, a pre-trained conditional latent diffusion surrogate model that captures the stochastic dynamics of underwater acoustic communication channels. Leveraging generative modeling, StableUASim produces diverse and statistically realistic channel realizations, while supporting conditional generation from specific measurement samples. Pre-training enables rapid adaptation to new environments using minimal additional data, and the autoencoder latent representation facilitates efficient channel analysis and compression. Experimental results demonstrate that StableUASim accurately reproduces key channel characteristics and communication performance, providing a scalable, data-efficient, and physically consistent surrogate model for both system design and machine learning-driven underwater applications.",
+    "paper_abstract_zh": "准确建模时变水下声信道对于可靠水下通信系统的设计、评估和部署至关重要。传统物理模型需要详细的环境知识，而随机重放方法受限于测量信道的有限多样性，通常无法泛化到未见场景，降低了其实际适用性。为解决这些挑战，我们提出了StableUASim，这是一种预训练的条件潜在扩散代理模型，能够捕捉水下声通信信道的随机动态。利用生成建模，StableUASim能够生成多样且统计上真实的信道实现，同时支持从特定测量样本的条件生成。预训练使得使用最少的额外数据能够快速适应新环境，并且自编码器潜在表示促进了高效的信道分析和压缩。实验结果表明，StableUASim准确重现了关键信道特性和通信性能，为系统设计和机器学习驱动的水下应用提供了可扩展、数据高效且物理一致的代理模型。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Kexin Li, Mandar Chitre",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "NSTR: Neural Spectral Transport Representation for Space-Varying Frequency Fields",
+    "paper_title_zh": "NSTR: 用于空间变化频率场的神经谱传输表示",
+    "paper_id": "2511.18384",
+    "paper_abstract": "Implicit Neural Representations (INRs) have emerged as a powerful paradigm for representing signals such as images, audio, and 3D scenes. However, existing INR frameworks -- including MLPs with Fourier features, SIREN, and multiresolution hash grids -- implicitly assume a \\textit{global and stationary} spectral basis. This assumption is fundamentally misaligned with real-world signals whose frequency characteristics vary significantly across space, exhibiting local high-frequency textures, smooth regions, and frequency drift phenomena. We propose \\textbf{Neural Spectral Transport Representation (NSTR)}, the first INR framework that \\textbf{explicitly models a spatially varying local frequency field}. NSTR introduces a learnable \\emph{frequency transport equation}, a PDE that governs how local spectral compositions evolve across space. Given a learnable local spectrum field $S(x)$ and a frequency transport network $F_\\theta$ enforcing $\\nabla S(x) \\approx F_\\theta(x, S(x))$, NSTR reconstructs signals by spatially modulating a compact set of global sinusoidal bases. This formulation enables strong local adaptivity and offers a new level of interpretability via visualizing frequency flows. Experiments on 2D image regression, audio reconstruction, and implicit 3D geometry show that NSTR achieves significantly better accuracy-parameter trade-offs than SIREN, Fourier-feature MLPs, and Instant-NGP. NSTR requires fewer global frequencies, converges faster, and naturally explains signal structure through spectral transport fields. We believe NSTR opens a new direction in INR research by introducing explicit modeling of space-varying spectrum.",
+    "paper_abstract_zh": "隐式神经表示（INRs）已成为表示图像、音频和3D场景等信号的一种强大范式。然而，现有的INR框架——包括带有傅里叶特征的多层感知机（MLPs）、SIREN和多分辨率哈希网格——都隐式地假设了一个全局和静态的谱基。这一假设与真实世界信号的频率特性在空间上显著变化这一事实根本不符，后者表现出局部高频纹理、平滑区域和频率漂移现象。我们提出了神经谱传输表示（NSTR），这是第一个明确建模空间变化局部频率场的INR框架。NSTR引入了一个可学习的频率传输方程，这是一个控制局部谱组成如何在空间上演化的偏微分方程（PDE）。给定一个可学习的局部谱场S(x)和一个强制∇S(x)≈F_θ(x,S(x))的频率传输网络F_θ，NSTR通过对一组紧凑的全局正弦基进行空间调制来重建信号。这种 formulation 强化了局部适应性，并通过可视化频率流提供了新的可解释性层次。在2D图像回归、音频重建和隐式3D几何实验中，NSTR比SIREN、傅里叶特征MLP和Instant-NGP实现了显著更好的精度-参数权衡。NSTR需要更少的全局频率，收敛更快，并通过谱传输场自然地解释信号结构。我们相信NSTR通过引入空间变化谱的显式建模，为INR研究开辟了新方向。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Plein Versace",
+    "topic": [
+      "Audio Representation Learning",
+      "Image Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "DHAuDS: A Dynamic and Heterogeneous Audio Benchmark for Test-Time Adaptation",
+    "paper_title_zh": "DHAuDS: 一种用于测试时适应的动态异构音频基准",
+    "paper_id": "2511.18421",
+    "paper_abstract": "Audio classifiers frequently face domain shift, when models trained on one dataset lose accuracy on data recorded in acoustically different conditions. Previous Test-Time Adaptation (TTA) research in speech and sound analysis often evaluates models under fixed or mismatched noise settings, that fail to mimic real-world variability. To overcome these limitations, this paper presents DHAuDS (Dynamic and Heterogeneous Audio Domain Shift), a benchmark designed to assess TTA approaches under more realistic and diverse acoustic shifts. DHAuDS comprises four standardized benchmarks: UrbanSound8K-C, SpeechCommandsV2-C, VocalSound-C, and ReefSet-C, each constructed with dynamic corruption severity levels and heterogeneous noise types to simulate authentic audio degradation scenarios. The framework defines 14 evaluation criteria for each benchmark (8 for UrbanSound8K-C), resulting in 50 unrepeated criteria (124 experiments) that collectively enable fair, reproducible, and cross-domain comparison of TTA algorithms. Through the inclusion of dynamic and mixed-domain noise settings, DHAuDS offers a consistent and publicly reproducible testbed to support ongoing studies in robust and adaptive audio modeling.",
+    "paper_abstract_zh": "音频分类器经常面临领域偏移问题，即在一个数据集上训练的模型在声学不同条件下记录的数据上会失去准确性。先前在语音和声音分析中的测试时适应(TTA)研究通常在固定或失配的噪声设置下评估模型，这些设置无法模拟现实世界的变异性。为了克服这些限制，本文提出了DHAuDS（动态异构音频领域偏移），这是一个旨在评估TTA方法在更真实和多样化声学偏移下的基准。DHAuDS包含四个标准化基准：UrbanSound8K-C、SpeechCommandsV2-C、VocalSound-C和ReefSet-C，每个基准都构建了动态损坏严重性级别和异构噪声类型，以模拟真实的音频退化场景。该框架为每个基准定义了14个评估标准（UrbanSound8K-C为8个），总共产生50个不重复的标准（124个实验），这些标准共同实现了TTA算法的公平、可复现和跨领域比较。通过包含动态和混合域噪声设置，DHAuDS提供了一个一致且可公开复现的测试平台，以支持稳健和自适应音频建模的持续研究。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Weichuang Shao, Iman Yi Liao, Tomas Henrique Bode Maul, Tissa Chandesa",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Multimodal Real-Time Anomaly Detection and Industrial Applications",
+    "paper_title_zh": "多模态实时异常检测与工业应用",
+    "paper_id": "2511.18698",
+    "paper_abstract": "This paper presents the design, implementation, and evolution of a comprehensive multimodal room-monitoring system that integrates synchronized video and audio processing for real-time activity recognition and anomaly detection. We describe two iterations of the system: an initial lightweight implementation using YOLOv8, ByteTrack, and the Audio Spectrogram Transformer (AST), and an advanced version that incorporates multi-model audio ensembles, hybrid object detection, bidirectional cross-modal attention, and multi-method anomaly detection. The evolution demonstrates significant improvements in accuracy, robustness, and industrial applicability. The advanced system combines three audio models (AST, Wav2Vec2, and HuBERT) for comprehensive audio understanding, dual object detectors (YOLO and DETR) for improved accuracy, and sophisticated fusion mechanisms for enhanced cross-modal learning. Experimental evaluation shows the system's effectiveness in general monitoring scenarios as well as specialized industrial safety applications, achieving real-time performance on standard hardware while maintaining high accuracy.",
+    "paper_abstract_zh": "本文介绍了一个综合多模态房间监控系统的设计、实现和演进，该系统集成了同步的视频和音频处理，用于实时活动识别和异常检测。我们描述了系统的两个版本：初始的轻量级实现使用YOLOv8、ByteTrack和音频频谱变换器(AST)，以及一个高级版本，它集成了多模型音频集成、混合目标检测、双向跨模态注意力和多方法异常检测。该演进展示了在准确性、鲁棒性和工业适用性方面的显著改进。高级系统结合了三种音频模型(AST、Wav2Vec2和HuBERT)以实现全面的音频理解，双目标检测器(YOLO和DETR)以提高准确性，以及复杂的融合机制以增强跨模态学习。实验评估表明，该系统在一般监控场景以及专门的工业安全应用中都是有效的，在标准硬件上实现了实时性能，同时保持了高准确性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Machine Learning (cs.LG)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Aman Verma, Keshav Samdani, Mohd. Samiuddin Shafi",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Explicit Tonal Tension Conditioning via Dual-Level Beam Search for Symbolic Music Generation",
+    "paper_title_zh": "基于双层束搜索的显式调性张力调节用于符号音乐生成",
+    "paper_id": "2511.19342",
+    "paper_abstract": "State-of-the-art symbolic music generation models have recently achieved remarkable output quality, yet explicit control over compositional features, such as tonal tension, remains challenging. We propose a novel approach that integrates a computational tonal tension model, based on tonal interval vector analysis, into a Transformer framework. Our method employs a two-level beam search strategy during inference. At the token level, generated candidates are re-ranked using model probability and diversity metrics to maintain overall quality. At the bar level, a tension-based re-ranking is applied to ensure that the generated music aligns with a desired tension curve. Objective evaluations indicate that our approach effectively modulates tonal tension, and subjective listening tests confirm that the system produces outputs that align with the target tension. These results demonstrate that explicit tension conditioning through a dual-level beam search provides a powerful and intuitive tool to guide AI-generated music. Furthermore, our experiments demonstrate that our method can generate multiple distinct musical interpretations under the same tension condition.",
+    "paper_abstract_zh": "最先进的符号音乐生成模型最近已取得了卓越的输出质量，但对作曲特征（如调性张力）的显式控制仍然具有挑战性。我们提出了一种新方法，将基于调性间隔向量分析的计算调性张力模型集成到Transformer框架中。我们的方法在推理过程中采用双层束搜索策略。在标记级别，使用模型概率和多样性指标对生成的候选进行重新排序，以保持整体质量。在小节级别，应用基于张力的重新排序，以确保生成的音乐符合期望的张力曲线。客观评估表明，我们的方法能有效调节调性张力，主观听音测试证实系统生成的输出与目标张力一致。这些结果表明，通过双层束搜索进行显式张力调节为引导AI生成的音乐提供了强大而直观的工具。此外，我们的实验证明，在相同张力条件下，我们的方法可以生成多种不同的音乐诠释。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Maral Ebrahimzadeh, Gilberto Bernardes, Sebastian Stober",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Real-Time Object Tracking with On-Device Deep Learning for Adaptive Beamforming in Dynamic Acoustic Environments",
+    "paper_title_zh": "动态声学环境中基于设备端深度学习的自适应波束形成的实时目标跟踪",
+    "paper_id": "2511.19396",
+    "paper_abstract": "Advances in object tracking and acoustic beamforming are driving new capabilities in surveillance, human-computer interaction, and robotics. This work presents an embedded system that integrates deep learning-based tracking with beamforming to achieve precise sound source localization and directional audio capture in dynamic environments. The approach combines single-camera depth estimation and stereo vision to enable accurate 3D localization of moving objects. A planar concentric circular microphone array constructed with MEMS microphones provides a compact, energy-efficient platform supporting 2D beam steering across azimuth and elevation. Real-time tracking outputs continuously adapt the array's focus, synchronizing the acoustic response with the target's position. By uniting learned spatial awareness with dynamic steering, the system maintains robust performance in the presence of multiple or moving sources. Experimental evaluation demonstrates significant gains in signal-to-interference ratio, making the design well-suited for teleconferencing, smart home devices, and assistive technologies.",
+    "paper_abstract_zh": "目标跟踪和声波束形成技术的进步正在推动监控、人机交互和机器人领域的新能力。这项工作提出了一种嵌入式系统，该系统集成了基于深度学习的跟踪与波束形成，以在动态环境中实现精确的声源定位和定向音频捕获。该方法结合了单相机深度估计和立体视觉，以实现移动物体的准确3D定位。由MEMS麦克风构建的平面同心圆麦克风阵列提供了一个紧凑、节能的平台，支持在方位角和仰角上进行2D波束控制。实时跟踪输出持续调整阵列的焦点，使声学响应与目标位置同步。通过将学习到的空间感知与动态转向相结合，该系统在存在多个或移动声源的情况下保持稳健的性能。实验评估表明信干比有显著提升，使该设计非常适合于视频会议、智能家居设备和辅助技术。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Jorge Ortigoso-Narro, Jose A. Belloch, Adrian Amor-Martin, Sandra Roger, Maximo Cobos",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Frequency-Invariant Beamforming in Elevation and Azimuth via Autograd and Concentric Circular Microphone Arrays",
+    "paper_title_zh": "通过自动梯度和同心圆麦克风阵列实现方位角和仰角频率不变波束形成",
+    "paper_id": "2511.19403",
+    "paper_abstract": "The use of planar and concentric circular microphone arrays in beamforming has gained attention due to their ability to optimize both azimuth and elevation angles, making them ideal for spatial audio tasks like sound source localization and noise suppression. Unlike linear arrays, which restrict steering to a single axis, 2D arrays offer dual-axis optimization, although elevation control remains challenging. This study explores the integration of autograd, an automatic differentiation tool, with concentric circular arrays to impose beamwidth and frequency invariance constraints. This enables continuous optimization over both angles while maintaining performance across a wide frequency range. We evaluate our method through simulations of beamwidth, white noise gain, and directivity across multiple frequencies. A comparative analysis is presented against standard and advanced beamformers, including delay-and-sum, modified delay-and-sum, a Jacobi-Anger expansion-based method, and a Gaussian window-based gradient descent approach. Our method achieves superior spatial selectivity and narrower mainlobes, particularly in the elevation axis at lower frequencies. These results underscore the effectiveness of our approach in enhancing beamforming performance for acoustic sensing and spatial audio applications requiring precise dual-axis control.",
+    "paper_abstract_zh": "平面和同心圆麦克风阵列在波束形成中的应用因其能够优化方位角和仰角而受到关注，使其成为声音源定位和噪声抑制等空间音频任务的理想选择。与仅限于单轴转向的线性阵列不同，二维阵列提供双轴优化，尽管仰角控制仍然具有挑战性。本研究探讨了将自动微分工具autograd与同心圆阵列相结合，以施加波束宽度和频率不变性约束。这能够在保持宽频带性能的同时，对两个角度进行连续优化。我们通过模拟不同频率下的波束宽度、白噪声增益和指向性来评估我们的方法。与标准和高级波束形成器（包括延迟求和、改进延迟求和、基于雅可比-昂格展开的方法以及基于高斯窗口的梯度下降方法）进行了比较分析。我们的方法在空间选择性方面表现更优，主波束更窄，特别是在低频下的仰角轴上。这些结果强调了我们的方法在需要精确双轴控制的声音传感和空间音频应用中提高波束形成性能的有效性。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Jorge Ortigoso-Narro, Jose A. Belloch, Maximo Morales-Cespedes, Maximo Cobos",
+    "topic": [
+      "Speech Enhancement",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Point of Order: Action-Aware LLM Persona Modeling for Realistic Civic Simulation",
+    "paper_title_zh": "秩序点：面向真实公民模拟的行动感知LLM人格建模",
+    "paper_id": "2511.17813",
+    "paper_abstract": "Large language models offer opportunities to simulate multi-party deliberation, but realistic modeling remains limited by a lack of speaker-attributed data. Transcripts produced via automatic speech recognition (ASR) assign anonymous speaker labels (e.g., Speaker_1), preventing models from capturing consistent human behavior. This work introduces a reproducible pipeline to transform public Zoom recordings into speaker-attributed transcripts with metadata like persona profiles and pragmatic action tags (e.g., [propose_motion]). We release three local government deliberation datasets: Appellate Court hearings, School Board meetings, and Municipal Council sessions. Fine-tuning LLMs to model specific participants using this \"action-aware\" data produces a 67% reduction in perplexity and nearly doubles classifier-based performance metrics for speaker fidelity and realism. Turing-style human evaluations show our simulations are often indistinguishable from real deliberations, providing a practical and scalable method for complex realistic civic simulations.",
+    "paper_abstract_zh": "大型语言模型为模拟多方审议提供了机会，但由于缺乏说话人归属数据的限制，真实建模仍然受限。通过自动语音识别(ASR)生成的转录本分配了匿名说话人标签（例如Speaker_1），这阻止了模型捕捉一致的人类行为。这项工作引入了一个可复现的流程，将公共Zoom录音转换为带有元数据（如人格档案和语用行动标签，例如[propose_motion]）的说话人归属转录本。我们发布了三个地方政府审议数据集：上诉法院听证会、学校董事会会议和市政委员会会议。使用这种\"行动感知\"数据对大型语言模型进行微调，以建模特定参与者， perplexity降低了67%，基于分类器的说话人保真度和真实性性能指标几乎翻倍。图灵风格的人类评估表明，我们的模拟通常与真实审议无法区分，为复杂真实的公民模拟提供了一种实用且可扩展的方法。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Scott Merrill, Shashank Srivastava",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Generative Adversarial Post-Training Mitigates Reward Hacking in Live Human-AI Music Interaction",
+    "paper_title_zh": "生成式对抗后训练减轻实时人机音乐交互中的奖励黑客攻击",
+    "paper_id": "2511.17879",
+    "paper_abstract": "Most applications of generative AI involve a sequential interaction in which a person inputs a prompt and waits for a response, and where reaction time and adaptivity are not important factors. In contrast, live jamming is a collaborative interaction that requires real-time coordination and adaptation without access to the other player's future moves, while preserving diversity to sustain a creative flow. Reinforcement learning post-training enables effective adaptation through on-policy interaction, yet it often reduces output diversity by exploiting coherence-based rewards. This collapse, known as ``reward hacking'', affects many RL post-training pipelines, but is especially harmful in live jamming, where musical creativity relies on dynamic variation and mutual responsiveness. In this paper, we propose a novel adversarial training method on policy-generated trajectories to mitigate reward hacking in RL post-training for melody-to-chord accompaniment. A co-evolving discriminator separates policy trajectories from the data distribution, while the policy maximizes the discriminator output in addition to coherence rewards to prevent collapse to trivial outputs. We evaluate accompaniment quality and output diversity in simulation with both fixed test melodies and learned melody agents, and we conduct a user study with the model deployed in a real-time interactive system with expert musicians. Quantitative evaluation and user feedback demonstrate improved output diversity, harmonic coherence, adaptation speed and user agency. Our results demonstrate a simple yet effective method to mitigate reward hacking in RL post-training of generative sequence models.",
+    "paper_abstract_zh": "大多数生成式AI的应用涉及一种顺序交互，即用户输入提示并等待响应，其中反应时间和适应性不是重要因素。相比之下，实时合奏是一种协作交互，需要实时协调和适应，无法获取其他玩家的未来走法，同时保持多样性以维持创造性流动。强化学习后训练通过在线策略交互实现有效适应，但通常基于一致性奖励减少输出多样性。这种崩溃被称为'奖励黑客攻击'，影响许多强化学习后训练流程，但在实时合奏中尤其有害，因为音乐创造力依赖于动态变化和相互响应。在本文中，我们提出了一种新颖的基于策略生成轨迹的对抗训练方法，以减轻强化学习后训练中旋律到和弦伴奏的奖励黑客攻击。一个共同进化的判别器将策略轨迹与数据分布分离，同时策略除了最大化一致性奖励外，还最大化判别器输出，以防止崩溃到平凡输出。我们在固定测试旋律和学习到的旋律代理的模拟中评估伴奏质量和输出多样性，并在部署到实时交互系统中的模型上与专业音乐家进行用户研究。定量评估和用户反馈表明，输出多样性、和谐一致性、适应速度和用户代理能力得到了改善。我们的结果展示了一种简单而有效的方法，可以减轻生成式序列模型强化学习后训练中的奖励黑客攻击。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-25",
+    "paper_authors": "Yusong Wu, Stephen Brade, Teng Ma, Tia-Jane Fowler, Enning Yang, Berker Banar, Aaron Courville, Natasha Jaques, Cheng-Zhi Anna Huang",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
