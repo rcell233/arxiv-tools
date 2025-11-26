@@ -1,0 +1,167 @@
+[
+  {
+    "paper_title": "BERT-APC: A Reference-free Framework for Automatic Pitch Correction via Musical Context Inference",
+    "paper_title_zh": "BERT-APC：一种基于音乐上下文推断的无参考自动音高校正框架",
+    "paper_id": "2511.20006",
+    "paper_abstract": "Automatic Pitch Correction (APC) enhances vocal recordings by aligning pitch deviations with the intended musical notes. However, existing APC systems either rely on reference pitches, which limits their practical applicability, or employ simple pitch estimation algorithms that often fail to preserve expressiveness and naturalness. We propose BERT-APC, a novel reference-free APC framework that corrects pitch errors while maintaining the natural expressiveness of vocal performances. In BERT-APC, a novel stationary pitch predictor first estimates the perceived pitch of each note from the detuned singing voice. A context-aware note pitch predictor estimates the intended pitch sequence by leveraging a music language model repurposed to incorporate musical context. Finally, a note-level correction algorithm fixes pitch errors while preserving intentional pitch deviations for emotional expression. In addition, we introduce a learnable data augmentation strategy that improves the robustness of the music language model by simulating realistic detuning patterns. Compared to two recent singing voice transcription models, BERT-APC demonstrated superior performance in note pitch prediction, outperforming the second-best model, ROSVOT, by 10.49%p on highly detuned samples in terms of the raw pitch accuracy. In the MOS test, BERT-APC achieved the highest score of $4.32 \\pm 0.15$, which is significantly higher than those of the widely-used commercial APC tools, AutoTune ($3.22 \\pm 0.18$) and Melodyne ($3.08 \\pm 0.18$), while maintaining a comparable ability to preserve expressive nuances. To the best of our knowledge, this is the first APC model that leverages a music language model to achieve reference-free pitch correction with symbolic musical context. The corrected audio samples of BERT-APC are available online.",
+    "paper_abstract_zh": "自动音高校正(APC)通过将音高偏差与预期的音乐音符对齐来增强人声录音。然而，现有的APC系统要么依赖于参考音高，这限制了它们的实际适用性，要么采用简单的音高估计算法，这些算法往往无法保持表现力和自然性。我们提出了BERT-APC，一种新颖的无参考APC框架，它在纠正音高错误的同时保持人声表演的自然表现力。在BERT-APC中，一种新颖的静态音高预测器首先从不和谐的人声中估计每个音符的感知音高。一个上下文感知的音符音高预测器利用重新利用的音乐语言模型来融入音乐上下文，从而估计预期的音高序列。最后，一个音符级别的校正算法纠正音高错误，同时保留用于情感表达的有意音高偏差。此外，我们引入了一种可学习的数据增强策略，通过模拟真实的失谐模式来提高音乐语言模型的鲁棒性。与两个最新的人声转录模型相比，BERT-APC在音符音高预测方面表现出优越的性能，在高度失谐样本的原始音高准确率上，比第二好的模型ROSVOT高出10.49个百分点。在MOS测试中，BERT-APC获得了4.32±0.15的最高分，这显著高于广泛使用的商业APC工具AutoTune(3.22±0.18)和Melodyne(3.08±0.18)的得分，同时保持了相当的保留表现细微差别的能力。据我们所知，这是第一个利用音乐语言模型实现无参考音高校正并具有符号音乐上下文的APC模型。BERT-APC的校正音频样本可在网上获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-26",
+    "paper_authors": "Sungjae Kim, Kihyun Na, Jinyoung Choi, Injung Kim",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "It Hears, It Sees too: Multi-Modal LLM for Depression Detection By Integrating Visual Understanding into Audio Language Models",
+    "paper_title_zh": "它既能听也能看：通过将视觉理解集成到音频语言模型中实现抑郁检测的多模态大语言模型",
+    "paper_id": "2511.19877",
+    "paper_abstract": "Depression is one of the most prevalent mental health disorders globally. In recent years, multi-modal data, such as speech, video, and transcripts, has been increasingly used to develop AI-assisted depression assessment systems. Large language models have further advanced this field due to their strong language understanding and generalization capabilities. However, conventional LLMs remain text-centric and cannot process the rich non-verbal cues found in audio and visual modalities, which are critical components in mental health evaluation. While multi-modal LLMs offer a promising direction, few are tailored for psychological applications. In this study, we propose a novel multi-modal LLM framework for depression detection. Our approach augments an audio language model with visual understanding and aligns audio-visual features at the timestamp level. This fine-grained alignment improves modeling of temporal dynamics across modalities while reducing the need for extensive training data and computational resources. Experiments on the DAIC-WoZ dataset demonstrate that our model outperforms both single-modality approaches and previous multi-modal methods. Moreover, the proposed framework can be extended to incorporate additional physiological signals, paving the way for broader clinical applications beyond mental health.",
+    "paper_abstract_zh": "抑郁症是全球最普遍的精神健康障碍之一。近年来，语音、视频和转录文本等多模态数据越来越多地被用于开发人工智能辅助的抑郁评估系统。大型语言模型因其强大的语言理解和泛化能力进一步推动了这一领域的发展。然而，传统的LLM仍然以文本为中心，无法处理音频和视觉模态中丰富的非语言线索，而这些线索是心理健康评估的关键组成部分。虽然多模态大语言模型提供了有前景的方向，但很少有模型专门为心理应用而设计。在本研究中，我们提出了一种用于抑郁检测的新型多模态大语言模型框架。我们的方法通过增强音频语言模型的视觉理解能力，并在时间戳级别对视听特征进行对齐。这种细粒度对齐改善了跨模态的时间动态建模，同时减少了对大量训练数据和计算资源的需求。在DAIC-WoZ数据集上的实验表明，我们的模型优于单模态方法和之前的多模态方法。此外，所提出的框架可以扩展以纳入额外的生理信号，为超越心理健康领域的更广泛临床应用铺平了道路。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-26",
+    "paper_authors": "Xiangyu Zhao, Yaling Shen, Yiwen Jiang, Zimu Wang, Jiahe Liu, Maxmartwell H Cheng, Guilherme C Oliveira, Robert Desimone, Dominic Dwyer, Zongyuan Ge",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Mispronunciation Detection and Diagnosis Without Model Training: A Retrieval-Based Approach",
+    "paper_title_zh": "无需模型训练的发音错误检测与诊断：一种基于检索的方法",
+    "paper_id": "2511.20107",
+    "paper_abstract": "Mispronunciation Detection and Diagnosis (MDD) is crucial for language learning and speech therapy. Unlike conventional methods that require scoring models or training phoneme-level models, we propose a novel training-free framework that leverages retrieval techniques with a pretrained Automatic Speech Recognition model. Our method avoids phoneme-specific modeling or additional task-specific training, while still achieving accurate detection and diagnosis of pronunciation errors. Experiments on the L2-ARCTIC dataset show that our method achieves a superior F1 score of 69.60% while avoiding the complexity of model training.",
+    "paper_abstract_zh": "发音错误检测与诊断（MDD）对语言学习和言语治疗至关重要。与传统需要评分模型或音素级模型训练的方法不同，我们提出了一种新颖的无训练框架，该框架利用检索技术和预训练的自动语音识别模型。我们的方法避免了特定音素的建模或额外的任务特定训练，同时仍能实现准确的发音错误检测和诊断。在L2-ARCTIC数据集上的实验表明，我们的方法在避免模型训练复杂性的同时，实现了69.60%的优越F1分数。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-11-26",
+    "paper_authors": "Huu Tuong Tu, Ha Viet Khanh, Tran Tien Dat, Vu Huan, Thien Van Luong, Nguyen Tien Cuong, Nguyen Thi Thu Trang",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Evaluating Objective Speech Quality Metrics for Neural Audio Codecs",
+    "paper_title_zh": "评估神经音频编解码器的客观语音质量指标",
+    "paper_id": "2511.19734",
+    "paper_abstract": "Neural audio codecs have gained recent popularity for their use in generative modeling as they offer high-fidelity audio reconstruction at low bitrates. While human listening studies remain the gold standard for assessing perceptual quality, they are time-consuming and impractical. In this work, we examine the reliability of existing objective quality metrics in assessing the performance of recent neural audio codecs. To this end, we conduct a MUSHRA listening test on high-fidelity speech signals and analyze the correlation between subjective scores and widely used objective metrics. Our results show that, while some metrics align well with human perception, others struggle to capture relevant distortions. Our findings provide practical guidance for selecting appropriate evaluation metrics when using neural audio codecs for speech.",
+    "paper_abstract_zh": "神经音频编解码器因其能够在低比特率下提供高保真音频重建而在生成建模中最近获得了普及。虽然人类听音研究仍然是评估感知质量的黄金标准，但它们耗时且不切实际。在这项工作中，我们研究了现有客观质量指标在评估最近神经音频编解码器性能时的可靠性。为此，我们对高保真语音信号进行了MUSHRA听音测试，并分析了主观评分与广泛使用的客观指标之间的相关性。我们的结果表明，虽然一些指标与人类感知高度一致，但其他指标难以捕捉相关的失真。我们的发现为在使用神经音频编解码器处理语音时选择适当的评估指标提供了实用指导。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-26",
+    "paper_authors": "Luca A. Lanzendörfer, Florian Grötschla",
+    "topic": [
+      "Audio Codec",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Continual Audio Deepfake Detection via Universal Adversarial Perturbation",
+    "paper_title_zh": "通过通用对抗扰动实现持续音频深度伪造检测",
+    "paper_id": "2511.19974",
+    "paper_abstract": "The rapid advancement of speech synthesis and voice conversion technologies has raised significant security concerns in multimedia forensics. Although current detection models demonstrate impressive performance, they struggle to maintain effectiveness against constantly evolving deepfake attacks. Additionally, continually fine-tuning these models using historical training data incurs substantial computational and storage costs. To address these limitations, we propose a novel framework that incorporates Universal Adversarial Perturbation (UAP) into audio deepfake detection, enabling models to retain knowledge of historical spoofing distribution without direct access to past data. Our method integrates UAP seamlessly with pre-trained self-supervised audio models during fine-tuning. Extensive experiments validate the effectiveness of our approach, showcasing its potential as an efficient solution for continual learning in audio deepfake detection.",
+    "paper_abstract_zh": "语音合成和语音转换技术的快速发展在多媒体取证领域引发了重大的安全担忧。尽管当前的检测模型表现出令人印象深刻的性能，但它们在面对不断演变的深度伪造攻击时难以保持有效性。此外，使用历史训练数据持续微调这些模型会带来巨大的计算和存储成本。为解决这些局限性，我们提出了一种新颖的框架，将通用对抗扰动（UAP）应用于音频深度伪造检测，使模型能够在不直接访问过去数据的情况下保留对历史欺骗分布的知识。我们的方法在微调过程中将UAP与预训练的自监督音频模型无缝集成。大量实验验证了我们方法的有效性，展示了其作为音频深度伪造检测持续学习高效解决方案的潜力。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-11-26",
+    "paper_authors": "Wangjie Li, Lin Li, Qingyang Hong",
+    "topic": [
+      "Audio Classification",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DUO-TOK: Dual-Track Semantic Music Tokenizer for Vocal-Accompaniment Generation",
+    "paper_title_zh": "DUO-TOK：用于人声-伴奏生成的双轨语义音乐标记器",
+    "paper_id": "2511.20224",
+    "paper_abstract": "Duo-Tok is a source-aware dual-codebook tokenizer for vocal-accompaniment music that targets the growing tension between reconstruction quality and language-model (LM) learnability in modern lyrics-to-song systems. Existing codecs either prioritize high-fidelity reconstruction with difficult-to-model acoustic tokens or compress aggressively into semantic tokens that are LM-friendly but lossy, and they rarely make the tokenizer itself aware of dual-track structure. Duo-Tok follows a four-stage, SSL-centered pipeline: we first pretrain a BEST-RQ-style encoder on large-scale audio, then stabilize and factorize the representation with Gaussian replacement noise and multi-task supervision, before freezing the encoder to learn SimVQ-based dual codebooks with hard routing for vocals and accompaniment, and finally training latent diffusion decoders on top of the discrete tokens. Duo-Tok at 0.75 kbps shifts the empirical reconstruction-generation Pareto frontier, achieving the best music-tagging AP and the lowest vocabulary-normalized LM perplexity among compared codecs while maintaining reconstruction quality comparable to state-of-the-art music tokenizers.",
+    "paper_abstract_zh": "Duo-Tok 是一种面向人声-伴奏音乐且具有源感知能力的双码本标记器，旨在解决现代歌词到歌曲系统中重建质量与语言模型（LM）可学习性之间日益增长的矛盾。现有的编解码器要么优先考虑高保真重建，但使用难以建模的声学标记，要么过度压缩为语义标记，虽然对语言模型友好但有损，而且它们很少使标记器本身意识到双轨结构。Duo-Tok 遵循一个以自监督学习（SSL）为中心的四阶段流程：我们首先在大规模音频上预训练 BEST-RQ 风格的编码器，然后通过高斯替换噪声和多任务监督来稳定和分解表示，接着冻结编码器以学习基于 SimVQ 的双码本，用于人声和伴奏的硬路由，最后在离散标记之上训练潜在扩散解码器。在 0.75 kbps 的比特率下，Duo-Tok 推动了经验重建-生成帕累托前沿，在比较的编解码器中实现了最佳音乐标记 AP 和最低的词汇表归一化 LM 困惑度，同时保持了与最先进音乐标记器相当的重建质量。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-26",
+    "paper_authors": "Rui Lin, Zhiyue Wu, Jiahe Le, Kangdi Wang, Weixiong Chen, Junyu Dai, Tao Jiang",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation",
+      "Audio Codec"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Differentiable Attenuation Filters for Feedback Delay Networks",
+    "paper_title_zh": "用于反馈延迟网络的可微分衰减滤波器",
+    "paper_id": "2511.20380",
+    "paper_abstract": "We introduce a novel method for designing attenuation filters in digital audio reverberation systems based on Feedback Delay Net- works (FDNs). Our approach uses Second Order Sections (SOS) of Infinite Impulse Response (IIR) filters arranged as parametric equalizers (PEQ), enabling fine control over frequency-dependent reverberation decay. Unlike traditional graphic equalizer designs, which require numerous filters per delay line, we propose a scal- able solution where the number of filters can be adjusted. The fre- quency, gain, and quality factor (Q) parameters are shared parame- ters across delay lines and only the gain is adjusted based on delay length. This design not only reduces the number of optimization parameters, but also remains fully differentiable and compatible with gradient-based learning frameworks. Leveraging principles of analog filter design, our method allows for efficient and accu- rate filter fitting using supervised learning. Our method delivers a flexible and differentiable design, achieving state-of-the-art per- formance while significantly reducing computational cost.",
+    "paper_abstract_zh": "我们提出了一种基于反馈延迟网络（FDNs）的数字混响系统中设计衰减滤波器的新方法。我们的方法采用无限脉冲响应（IIR）滤波器的二阶节（SOS）作为参数均衡器（PEQ），实现对频率相关混响衰减的精细控制。与传统的图形均衡器设计（每个延迟线需要多个滤波器）不同，我们提出了一种可扩展的解决方案，其中滤波器数量可调整。频率、增益和品质因数（Q）参数在延迟线之间共享，仅根据延迟长度调整增益。这种设计不仅减少了优化参数的数量，而且保持完全可微分，并与基于梯度的学习框架兼容。利用模拟滤波器设计原理，我们的方法允许通过监督学习实现高效准确的滤波器拟合。我们的方法提供了灵活且可微分的设计，在显著降低计算成本的同时实现了最先进的性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-11-26",
+    "paper_authors": "Ilias Ibnyahya, Joshua D. Reiss",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Efficient and Fast Generative-Based Singing Voice Separation using a Latent Diffusion Model",
+    "paper_title_zh": "使用潜在扩散模型的高效快速生成式歌唱声部分离",
+    "paper_id": "2511.20470",
+    "paper_abstract": "Extracting individual elements from music mixtures is a valuable tool for music production and practice. While neural networks optimized to mask or transform mixture spectrograms into the individual source(s) have been the leading approach, the source overlap and correlation in music signals poses an inherent challenge. Also, accessing all sources in the mixture is crucial to train these systems, while complicated. Attempts to address these challenges in a generative fashion exist, however, the separation performance and inference efficiency remain limited. In this work, we study the potential of diffusion models to advance toward bridging this gap, focusing on generative singing voice separation relying only on corresponding pairs of isolated vocals and mixtures for training. To align with creative workflows, we leverage latent diffusion: the system generates samples encoded in a compact latent space, and subsequently decodes these into audio. This enables efficient optimization and faster inference. Our system is trained using only open data. We outperform existing generative separation systems, and level the compared non-generative systems on a list of signal quality measures and on interference removal. We provide a noise robustness study on the latent encoder, providing insights on its potential for the task. We release a modular toolkit for further research on the topic.",
+    "paper_abstract_zh": "从音乐混合物中提取单个元素是音乐制作和练习的有用工具。虽然经过优化的神经网络可以通过掩码或转换混合频谱图来分离单个源已成为主流方法，但音乐信号中的源重叠和相关性带来了固有挑战。同时，访问混合物中的所有源对于训练这些系统至关重要，但这很复杂。已有尝试以生成方式解决这些挑战，但分离性能和推理效率仍然有限。在这项工作中，我们研究扩散模型弥合这一差距的潜力，专注于生成式歌唱声部分离，仅使用对应的孤立人声和混合物对进行训练。为了与创意工作流程保持一致，我们利用潜在扩散：系统生成编码在紧凑潜在空间中的样本，然后将其解码为音频。这实现了高效的优化和更快的推理。我们的系统仅使用开放数据进行训练。我们在一系列信号质量指标和干扰去除方面超越了现有的生成式分离系统，并与非生成式系统相当。我们对潜在编码器进行了噪声鲁棒性研究，为该任务提供了潜在应用的见解。我们发布了一个模块化工具包，用于对该主题的进一步研究。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-11-26",
+    "paper_authors": "Genís Plaja-Roglans, Yun-Ning Hung, Xavier Serra, Igor Pereira",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
