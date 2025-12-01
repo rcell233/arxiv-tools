@@ -161,10 +161,10 @@
   },
   {
     "paper_title": "An Evaluation of Interleaved Instruction Tuning on Semantic Reasoning Performance in an Audio MLLM",
-    "paper_title_zh": "",
+    "paper_title_zh": "交错指令调优在音频多模态大语言模型语义推理性能评估中的研究",
     "paper_id": "2511.02234",
     "paper_abstract": "Standard training for Multi-modal Large Language Models (MLLMs) involves concatenating non-textual information, like vision or audio, with a text prompt. This approach may not encourage deep integration of modalities, limiting the model's ability to leverage the core language model's reasoning capabilities. This work examined the impact of interleaved instruction tuning in an audio MLLM, where audio tokens are interleaved within the prompt. Using the Listen, Think, and Understand (LTU) model as a testbed, we conduct an experiment using the Synonym and Hypernym Audio Reasoning Dataset (SHARD), our newly created reasoning benchmark for audio-based semantic reasoning focusing on synonym and hypernym recognition. Our findings show that while even zero-shot interleaved prompting improves performance on our reasoning tasks, a small amount of fine-tuning using interleaved training prompts improves the results further, however, at the expense of the MLLM's audio labeling ability.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "多模态大语言模型(MLLMs)的标准训练涉及将非文本信息(如视觉或音频)与文本提示串联。这种方法可能无法促进模态的深度集成，限制了模型利用核心语言模型推理能力的能力。本研究探讨了在音频MLLM中使用交错指令调优的影响，其中音频标记在提示中交错排列。我们以Listen, Think, and Understand (LTU)模型为测试平台，使用我们新创建的基于语义推理的音频推理基准数据集SHARD(同义词和上义词音频推理数据集)进行实验。我们的研究结果表明，即使零样本交错提示也能提高推理任务性能，而使用交错训练提示进行少量微调可以进一步改善结果，但代价是MLLM的音频标注能力有所下降。",
     "subjects": [
       "Multimedia (cs.MM)",
       "Computation and Language (cs.CL)",
@@ -172,8 +172,13 @@
     ],
     "update_time": "2025-11-05",
     "paper_authors": "Jiawei Liu, Enis Berk Çoban, Zarina Schevchenko, Hao Tang, Zhigang Zhu, Michael I Mandel, Johanna Devaney",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "H-Infinity Filter Enhanced CNN-LSTM for Arrhythmia Detection from Heart Sound Recordings",

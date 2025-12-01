@@ -1,0 +1,206 @@
+[
+  {
+    "paper_title": "Group-Aware Partial Model Merging for Children's Automatic Speech Recognition",
+    "paper_title_zh": "面向儿童语音识别的群体感知部分模型合并",
+    "paper_id": "2511.23098",
+    "paper_abstract": "Automatic Speech Recognition (ASR) for children remains challenging, primarily due to large acoustic variability and limited availability of training data. While supervised fine-tuning of adult pre-trained models has shown promise, it often fails to capture group-specific characteristics variations among children. To address this, we introduce GRoup-Aware PARtial model Merging (GRAPAM), a parameter-efficient approach that combines unsupervised clustering, partial fine-tuning, and model merging. Our approach adapts adult-pre-trained models to children by first grouping the children's data based on acoustic similarity. Each group is used to partially fine-tune an adult pre-trained model, and the resulting models are merged at the parameter level. Experiments conducted on the MyST children's speech corpus indicate that GRAPAM achieves a relative improvement of 6% of Word Error Rate (WER), using the same amount of data, outperforming full fine-tuning while training fewer parameters. These results highlight the promise of model merging as a scalable and effective strategy for children's ASR.",
+    "paper_abstract_zh": "儿童语音自动识别（ASR）仍然具有挑战性，主要由于声学变异大和可用训练数据有限。虽然成人预训练模型的监督微调已显示出潜力，但它往往无法捕捉儿童群体间的特定特征变化。为解决这一问题，我们提出了GRoup-Aware PARtial model Merging（GRAPAM），一种结合无监督聚类、部分微调和模型合并的参数高效方法。该方法首先基于声学相似性对儿童数据进行分组，然后使用每组数据对成人预训练模型进行部分微调，最后在参数层面合并得到的模型。在MyST儿童语音语料库上的实验表明，GRAPAM在使用相同数据量的情况下，实现了词错误率（WER）6%的相对改进，优于完全微调且训练参数更少。这些结果凸显了模型合并作为儿童ASR可扩展且有效策略的潜力。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Thomas Rolland, Alberto Abad",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Advancing Marine Bioacoustics with Deep Generative Models: A Hybrid Augmentation Strategy for Southern Resident Killer Whale Detection",
+    "paper_title_zh": "使用深度生成模型推进海洋生物声学：针对南方定居虎鲸检测的混合增强策略",
+    "paper_id": "2511.21872",
+    "paper_abstract": "Automated detection and classification of marine mammals vocalizations is critical for conservation and management efforts but is hindered by limited annotated datasets and the acoustic complexity of real-world marine environments. Data augmentation has proven to be an effective strategy to address this limitation by increasing dataset diversity and improving model generalization without requiring additional field data. However, most augmentation techniques used to date rely on effective but relatively simple transformations, leaving open the question of whether deep generative models can provide additional benefits. In this study, we evaluate the potential of deep generative for data augmentation in marine mammal call detection including: Variational Autoencoders, Generative Adversarial Networks, and Denoising Diffusion Probabilistic Models. Using Southern Resident Killer Whale (Orcinus orca) vocalizations from two long-term hydrophone deployments in the Salish Sea, we compare these approaches against traditional augmentation methods such as time-shifting and vocalization masking. While all generative approaches improved classification performance relative to the baseline, diffusion-based augmentation yielded the highest recall (0.87) and overall F1-score (0.75). A hybrid strategy combining generative-based synthesis with traditional methods achieved the best overall performance with an F1-score of 0.81. We hope this study encourages further exploration of deep generative models as complementary augmentation strategies to advance acoustic monitoring of threatened marine mammal populations.",
+    "paper_abstract_zh": "海洋哺乳动物发声的自动检测和分类对保护和管理工作至关重要，但受到标注数据集有限和现实海洋环境声学复杂性的阻碍。数据增强已被证明是一种有效的策略，可以通过增加数据集多样性并提高模型泛化能力来解决这个问题，而无需额外的现场数据。然而，迄今为止使用的大多数增强技术依赖于有效但相对简单的变换，这留下了深度生成模型是否能提供额外益处的问题。在本研究中，我们评估了深度生成模型在海洋哺乳动物叫声检测中作为数据增强的潜力，包括：变分自编码器、生成对抗网络和去噪扩散概率模型。使用来自萨利什海两个长期水听器部署的南方定居虎鲸（Orcinus orca）发声，我们将这些方法与传统增强方法（如时间偏移和发声掩码）进行比较。虽然所有生成方法相对于基线都提高了分类性能，但基于扩散的增强实现了最高的召回率（0.87）和整体F1分数（0.75）。结合基于生成的合成与传统方法的混合策略实现了最佳整体性能，F1分数为0.81。我们希望这项研究能鼓励进一步探索深度生成模型作为补充增强策略，以推进受威胁海洋哺乳动物种群的声学监测。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Bruno Padovese, Fabio Frazao, Michael Dowd, Ruth Joy",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "GLA-Grad++: An Improved Griffin-Lim Guided Diffusion Model for Speech Synthesis",
+    "paper_title_zh": "GLA-Grad++: 一种改进的Griffin-Lim引导扩散模型用于语音合成",
+    "paper_id": "2511.22293",
+    "paper_abstract": "Recent advances in diffusion models have positioned them as powerful generative frameworks for speech synthesis, demonstrating substantial improvements in audio quality and stability. Nevertheless, their effectiveness in vocoders conditioned on mel spectrograms remains constrained, particularly when the conditioning diverges from the training distribution. The recently proposed GLA-Grad model introduced a phase-aware extension to the WaveGrad vocoder that integrated the Griffin-Lim algorithm (GLA) into the reverse process to reduce inconsistencies between generated signals and conditioning mel spectrogram. In this paper, we further improve GLA-Grad through an innovative choice in how to apply the correction. Particularly, we compute the correction term only once, with a single application of GLA, to accelerate the generation process. Experimental results demonstrate that our method consistently outperforms the baseline models, particularly in out-of-domain scenarios.",
+    "paper_abstract_zh": "最近扩散模型的进展已将它们定位为语音合成的强大生成框架，在音频质量和稳定性方面显示出显著改进。然而，它们在基于梅尔频谱图调节的声码器中的有效性仍然受到限制，特别是当调节信号偏离训练分布时。最近提出的GLA-Grad模型为WaveGrad声码器引入了一种相位感知扩展，将Griffin-Lim算法(GLA)集成到反向过程中，以减少生成信号与调节梅尔频谱图之间的不一致性。在本文中，我们通过创新地应用校正方法进一步改进了GLA-Grad。特别地，我们仅计算一次校正项，通过单次应用GLA来加速生成过程。实验结果表明，我们的方法在领域外场景中持续优于基线模型。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Teysir Baoueb, Xiaoyu Bie, Mathieu Fontaine, Gaël Richard",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Joint Speech and Text Training for LLM-Based End-to-End Spoken Dialogue State Tracking",
+    "paper_title_zh": "基于大型语言模型的端到端口语对话状态跟踪的联合语音与文本训练",
+    "paper_id": "2511.22503",
+    "paper_abstract": "End-to-end spoken dialogue state tracking (DST) is made difficult by the tandem of having to handle speech input and data scarcity. Combining speech foundation encoders and large language models has been proposed in recent work as to alleviate some of this difficulty. Although this approach has been shown to result in strong spoken DST models, achieving state-of-the-art performance in realistic multi-turn DST, it struggles to generalize across domains and requires annotated spoken DST training data for each domain of interest. However, collecting such data for every target domain is both costly and difficult. Noting that textual DST data is more easily obtained for various domains, in this work, we propose jointly training on available spoken DST data and written textual data from other domains as a way to achieve cross-domain generalization. We conduct experiments which show the efficacy of our proposed method for getting good cross-domain DST performance without relying on spoken training data from the target domains.",
+    "paper_abstract_zh": "端到端口语对话状态跟踪(DST)因需要处理语音输入和数据稀疏性而变得困难。最近的工作提出结合语音基础编码器和大型语言模型来缓解这一困难。尽管这种方法已被证明能够构建强大的口语DST模型，在现实的多轮DST中达到最先进的性能，但它难以跨领域泛化，并且需要为每个感兴趣的领域标注口语DST训练数据。然而，为目标领域的每个领域收集此类数据既昂贵又困难。注意到文本DST数据更容易为不同领域获取，在这项工作中，我们提出在可用的口语DST数据和其他领域的书面文本数据上进行联合训练，以实现跨领域泛化。我们进行了实验，证明了我们提出的方法在不依赖目标领域口语训练数据的情况下，能够获得良好的跨领域DST性能。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Katia Vendrame, Bolaji Yusuf, Santosh Kesiraju, Šimon Sedláček, Oldřich Plchot, Jan Černocký",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "PURE Codec: Progressive Unfolding of Residual Entropy for Speech Codec Learning",
+    "paper_title_zh": "PURE编解码器：用于语音编解码学习的残差熵渐进展开",
+    "paper_id": "2511.22687",
+    "paper_abstract": "Neural speech codecs have achieved strong performance in low-bitrate compression, but residual vector quantization (RVQ) often suffers from unstable training and ineffective decomposition, limiting reconstruction quality and efficiency. We propose PURE Codec (Progressive Unfolding of Residual Entropy), a novel framework that guides multi-stage quantization using a pre-trained speech enhancement model. The first quantization stage reconstructs low-entropy, denoised speech embeddings, while subsequent stages encode residual high-entropy components. This design improves training stability significantly. Experiments demonstrate that PURE consistently outperforms conventional RVQ-based codecs in reconstruction and downstream speech language model-based text-to-speech, particularly under noisy training conditions.",
+    "paper_abstract_zh": "神经语音编解码器在低比特率压缩方面已取得强大性能，但残差矢量量化（RVQ）常面临训练不稳定和分解无效的问题，限制了重建质量和效率。我们提出了PURE编解码器（残差熵渐进展开），一种新颖的框架，利用预训练的语音增强模型指导多阶段量化。第一量化阶段重建低熵、去噪的语音嵌入，而后续阶段编码残差高熵成分。这种设计显著提高了训练稳定性。实验证明，PURE在重建和基于下游语音语言模型的文本转语音方面，均优于传统的基于RVQ的编解码器，特别是在嘈杂训练条件下。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Jiatong Shi, Haoran Wang, William Chen, Chenda Li, Wangyou Zhang, Jinchuan Tian, Shinji Watanabe",
+    "topic": [
+      "Audio Codec",
+      "Speech Enhancement",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Probabilistic Fusion and Calibration of Neural Speaker Diarization Models",
+    "paper_title_zh": "神经说话人分离模型的概率融合与校准",
+    "paper_id": "2511.22696",
+    "paper_abstract": "End-to-End Neural Diarization (EEND) systems produce frame-level probabilistic speaker activity estimates, yet since evaluation focuses primarily on Diarization Error Rate (DER), the reliability and calibration of these confidence scores have been largely neglected. When fusing multiple diarization systems, DOVER-Lap remains the only established approach, operating at the segment level with hard decisions. We propose working with continuous probability outputs, which enables more sophisticated calibration and fusion techniques that can leverage model uncertainty and complementary strengths across different architectures. This paper presents the first comprehensive framework for calibrating and fusing EEND models at the probability level. We investigate two output formulations (multilabel and powerset representations) and their impact on calibration and fusion effectiveness. Through extensive experiments on the CallHome two-speaker benchmark, we demonstrate that proper calibration provides substantial improvements even for individual models (up to 19% relative DER reduction), in some cases mitigating the absence of domain adaptation. We reveal that joint calibration in powerset space consistently outperforms independent per-speaker calibration, and that the Fuse-then-Calibrate ordering generally outperforms calibrating individual models before fusion while requiring calibration of only a single combined model. Our best configuration outperforms DOVER-Lap in terms of DER while providing reliable confidence estimates essential for downstream applications. This work proposes best practices for probability-level fusion of EEND systems and demonstrates the advantages of leveraging soft outputs over hard decisions.",
+    "paper_abstract_zh": "端到端神经说话人分离（EEND）系统生成帧级别的说话人活动概率估计，但由于评估主要关注说话人分离错误率（DER），这些置信分数的可靠性和校准性在很大程度上被忽视了。当融合多个说话人分离系统时，DOVER-Lap仍然是唯一成熟的方法，它在段级别进行硬决策操作。我们提出使用连续概率输出，这使得能够采用更复杂的校准和融合技术，这些技术可以利用不同架构模型的不确定性和互补优势。本文首次提出了在概率级别校准和融合EEND模型的综合框架。我们研究了两种输出表示形式（多标签和幂集表示）及其对校准和融合效果的影响。通过在CallHome双人对话基准上的大量实验，我们证明适当的校准即使对单个模型也能带来显著改进（相对DER降低高达19%），在某些情况下减轻了领域缺失适应的影响。我们发现在幂集空间中的联合校准始终优于独立的每说话人校准，并且先融合后校准的顺序通常优于先校准后融合，同时只需要校准单个组合模型。我们的最佳配置在DER方面优于DOVER-Lap，同时为下游应用提供了可靠的置信度估计。这项工作提出了EEND系统概率级融合的最佳实践，并展示了利用软输出而非硬决策的优势。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Juan Ignacio Alvarez-Trejos, Sergio A. Balanya, Daniel Ramos, Alicia Lozano-Diez",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "HPSU: A Benchmark for Human-Level Perception in Real-World Spoken Speech Understanding",
+    "paper_title_zh": "HPSU：真实世界口语理解中人类水平感知的基准测试",
+    "paper_id": "2511.23178",
+    "paper_abstract": "Recent advances in Speech Large Language Models (Speech LLMs) have led to great progress in speech understanding tasks such as Automatic Speech Recognition (ASR) and Speech Emotion Recognition (SER). However, whether these models can achieve human-level auditory perception, particularly in terms of their ability to comprehend latent intentions and implicit emotions in real-world spoken language, remains underexplored. To this end, we introduce the Human-level Perception in Spoken Speech Understanding (HPSU), a new benchmark for fully evaluating the human-level perceptual and understanding capabilities of Speech LLMs. HPSU comprises over 20,000 expert-validated spoken language understanding samples in English and Chinese. It establishes a comprehensive evaluation framework by encompassing a spectrum of tasks, ranging from basic speaker attribute recognition to complex inference of latent intentions and implicit emotions. To address the issues of data scarcity and high cost of manual annotation in real-world scenarios, we developed a semi-automatic annotation process. This process fuses audio, textual, and visual information to enable precise speech understanding and labeling, thus enhancing both annotation efficiency and quality. We systematically evaluate various open-source and proprietary Speech LLMs. The results demonstrate that even top-performing models still fall considerably short of human capabilities in understanding genuine spoken interactions. Consequently, HPSU will be useful for guiding the development of Speech LLMs toward human-level perception and cognition.",
+    "paper_abstract_zh": "最近，语音大语言模型（Speech LLMs）在语音理解任务中取得了显著进展，如自动语音识别（ASR）和语音情感识别（SER）。然而，这些模型是否能够达到人类水平的听觉感知能力，特别是在理解真实世界口语中的潜在意图和隐含情感方面，仍然有待探索。为此，我们引入了口语理解中的人类水平感知（HPSU）基准，用于全面评估语音大语言模型的人类水平感知和理解能力。HPSU包含超过20,000条经过专家验证的英语和中文口语理解样本。它通过涵盖从基本说话人属性识别到复杂潜在意图和隐含情感推断的一系列任务，建立了一个全面的评估框架。为解决真实场景中数据稀缺和人工标注成本高的问题，我们开发了一种半自动标注流程。该流程融合音频、文本和视觉信息，实现精确的语音理解和标注，从而提高标注效率和质量。我们系统评估了各种开源和专有的语音大语言模型。结果表明，即使是表现最佳的模型在理解真实口语互动方面仍远未达到人类水平。因此，HPSU将有助于指导语音大语言模型向人类水平的感知和认知方向发展。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Chen Li, Peiji Yang, Yicheng Zhong, Jianxing Yu, Zhisheng Wang, Zihao Gou, Wenqing Chen, Jian Yin",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "On the Cross-lingual Transferability of Pre-trained wav2vec2-based Models",
+    "paper_title_zh": "关于基于预训练wav2vec2模型的跨语言可迁移性",
+    "paper_id": "2511.21704",
+    "paper_abstract": "Using representations provided by a large pre-trained model has become the primary strategy for achieving state-of-the-art results in a wide range of tasks. A recently proposed large pre-trained model, wav2vec 2.0, was seminal for several other works on pre-training large models on speech data. Many models are being pre-trained using the same architecture as wav2vec 2.0 and are getting state-of-the-art in various speech-related tasks. Previous work has demonstrated that the data used during the pre-training of these wav2vec2-based models can impact the model's performance in downstream tasks, and this should be taken into consideration before utilizing these models. However, few works have proposed investigating further how the transfer knowledge of these pre-trained models behaves in different languages, even when the target language differs from the one used during the model's pre-training. Our work aims to investigate the cross-lingual transferability of these wav2vec2-based models. We performed several fine-tuning experiments on the speech recognition task in 18 languages using 15 large pre-trained models. The results of our experiments showed us that the size of data used during the pre-training of these models is not as important to the final performance as the diversity. We noticed that the performance of Indo-European languages is superior to non-Indo-European languages in the evaluated models. We have observed a positive cross-lingual transfer of knowledge using monolingual models, which was evident in all the languages we used, but more pronounced when the language used during pre-training was more similar to the downstream task language. With these findings, we aim to assist the scientific community in utilizing existing wav2vec2-based pre-trained models, as well as facilitate the pre-training of new ones.",
+    "paper_abstract_zh": "利用大型预训练模型提供的表示已成为在广泛任务中实现最先进结果的主要策略。最近提出的大型预训练模型wav2vec 2.0，为在语音数据上预训练大型模型的几项开创性工作奠定了基础。许多模型使用与wav2vec 2.0相同的架构进行预训练，并在各种语音相关任务中取得了最先进的成果。先前的工作表明，这些wav2vec2-based模型在预训练中使用的数据会影响模型在下游任务中的性能，因此在利用这些模型时应考虑这一点。然而，很少有工作提出进一步研究这些预训练模型的迁移知识在不同语言中的表现，即使目标语言与模型预训练时使用的语言不同。我们的工作旨在研究这些wav2vec2-based模型的跨语言可迁移性。我们在18种语言的语音识别任务上使用15个大型预训练模型进行了多次微调实验。我们的实验结果表明，模型预训练中使用的数据量对最终性能的重要性不如数据多样性。我们注意到，在评估的模型中，印欧语系语言的性能优于非印欧语系语言。我们观察到使用单语模型存在积极的跨语言知识迁移，这在所有使用的语言中都显而易见，但当预训练中使用的语言与下游任务语言更相似时，这种迁移更为明显。基于这些发现，我们旨在帮助科学界利用现有的wav2vec2-based预训练模型，并促进新模型的预训练。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Jonatas Grosman, Cassio Almeida, Guilherme Schardong, Hélio Lopes",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "3MDiT: Unified Tri-Modal Diffusion Transformer for Text-Driven Synchronized Audio-Video Generation",
+    "paper_title_zh": "3MDiT：用于文本驱动的同步音频视频生成的统一三模态扩散Transformer",
+    "paper_id": "2511.21780",
+    "paper_abstract": "Text-to-video (T2V) diffusion models have recently achieved impressive visual quality, yet most systems still generate silent clips and treat audio as a secondary concern. Existing audio-video generation pipelines typically decompose the task into cascaded stages, which accumulate errors across modalities and are trained under separate objectives. Recent joint audio-video generators alleviate this issue but often rely on dual-tower architectures with ad-hoc cross-modal bridges and static, single-shot text conditioning, making it difficult to both reuse T2V backbones and to reason about how audio, video and language interact over time. To address these challenges, we propose 3MDiT, a unified tri-modal diffusion transformer for text-driven synchronized audio-video generation. Our framework models video, audio and text as jointly evolving streams: an isomorphic audio branch mirrors a T2V backbone, tri-modal omni-blocks perform feature-level fusion across the three modalities, and an optional dynamic text conditioning mechanism updates the text representation as audio and video evidence co-evolve. The design supports two regimes: training from scratch on audio-video data, and orthogonally adapting a pretrained T2V model without modifying its backbone. Experiments show that our approach generates high-quality videos and realistic audio while consistently improving audio-video synchronization and tri-modal alignment across a range of quantitative metrics.",
+    "paper_abstract_zh": "文本到视频（T2V）扩散模型最近取得了令人印象深刻的视觉质量，但大多数系统仍然生成无声片段，并将音频视为次要关注点。现有的音频视频生成管道通常将任务分解为级联阶段，这些阶段在模态间累积错误并在独立目标下进行训练。最近的联合音频视频生成器缓解了这个问题，但通常依赖于双塔架构和临时的跨模态桥接，以及静态的单次文本条件设置，这使得难以重用T2V主干，并且难以推理音频、视频和语言如何随时间相互作用。为了解决这些挑战，我们提出了3MDiT，一个用于文本驱动的同步音频视频生成的统一三模态扩散Transformer。我们的框架将视频、音频和文本建模为共同演化的流：同构的音频分支镜像T2V主干，三模态全块执行三个模态间的特征级融合，并且可选的动态文本条件机制在音频和视频证据共同演化时更新文本表示。该设计支持两种模式：从音频视频数据从头开始训练，以及正交地适应预训练的T2V模型而不修改其主干。实验表明，我们的方法在一系列定量指标上生成高质量的视频和逼真的音频，同时持续改进音频视频同步和三模态对齐。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Yaoru Li, Heyu Si, Federico Landi, Pilar Oplustil Gallegos, Ioannis Koutsoumpas, O. Ricardo Cortez Vazquez, Ruiju Fu, Qi Guo, Xin Jin, Shunyu Liu, Mingli Song",
+    "topic": [
+      "Video Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Adapting Neural Audio Codecs to EEG",
+    "paper_title_zh": "将神经音频编解码器适应于脑电图",
+    "paper_id": "2511.23142",
+    "paper_abstract": "EEG and audio are inherently distinct modalities, differing in sampling rate, channel structure, and scale. Yet, we show that pretrained neural audio codecs can serve as effective starting points for EEG compression, provided that the data are preprocessed to be suitable to the codec's input constraints. Using DAC, a state-of-the-art neural audio codec as our base, we demonstrate that raw EEG can be mapped into the codec's stride-based framing, enabling direct reuse of the audio-pretrained encoder-decoder. Even without modification, this setup yields stable EEG reconstructions, and fine-tuning on EEG data further improves fidelity and generalization compared to training from scratch. We systematically explore compression-quality trade-offs by varying residual codebook depth, codebook (vocabulary) size, and input sampling rate. To capture spatial dependencies across electrodes, we propose DAC-MC, a multi-channel extension with attention-based cross-channel aggregation and channel-specific decoding, while retaining the audio-pretrained initialization. Evaluations on the TUH Abnormal and Epilepsy datasets show that the adapted codecs preserve clinically relevant information, as reflected in spectrogram-based reconstruction loss and downstream classification accuracy.",
+    "paper_abstract_zh": "脑电图(EEG)和音频在本质上属于不同的模态，它们在采样率、通道结构和尺度上存在差异。然而，我们表明，预训练的神经音频编解码器可以作为脑电图压缩的有效起点，前提是数据经过预处理以适应编解码器的输入约束。我们使用DAC（一种最先进的神经音频编解码器）作为基础，证明了原始脑电图可以映射到编解码器的基于步幅的帧结构中，从而能够直接重用音频预训练的编码器-解码器。即使不进行修改，这种设置也能产生稳定的脑电图重建，并且在脑电图数据上进行微调相比从头开始训练可以进一步提高保真度和泛化能力。我们通过改变残差码本深度、码本（词汇表）大小和输入采样率，系统地探索了压缩质量之间的权衡。为了捕捉电极之间的空间依赖性，我们提出了DAC-MC，这是一种多通道扩展，具有基于注意力的跨通道聚合和通道特定解码，同时保留了音频预训练的初始化。在TUH Abnormal和Epilepsy数据集上的评估表明，适应后的编解码器保留了临床相关信息，这体现在基于频谱图的重建损失和下游分类准确性上。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-01",
+    "paper_authors": "Ard Kastrati, Luca Lanzendörfer, Riccardo Rigoni, John Staib Matilla, Roger Wattenhofer",
+    "topic": [
+      "Audio Codec",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
