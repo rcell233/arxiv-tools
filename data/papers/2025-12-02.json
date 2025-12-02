@@ -1,0 +1,326 @@
+[
+  {
+    "paper_title": "Beyond Performance: Probing Representation Dynamics In Speech Enhancement Models",
+    "paper_title_zh": "超越性能：探究语音增强模型中的表示动力学",
+    "paper_id": "2512.00482",
+    "paper_abstract": "We probe internal representations of a speech enhancement (SE) model across noise conditions. Using MUSE, a transformer-convolutional model trained on VoiceBank DEMAND, we analyze activations in encoder, latent, decoder, and refinement blocks while sweeping input signal-to-noise-ratios (SNRs) from -10 to 30 dB. We use Centered Kernel Alignment (CKA) to measure point-wise representation similarity and diffusion distance to capture distributional shifts across SNRs. Results show that the encoder CKA between noisy and clean inputs remains stable and latent and decoder CKA drop sharply as SNR decreases. Linear fits of CKA versus SNR reveal a depth-dependent robustness-sensitivity trade-off. The diffusion distance varies incrementally with SNR within each layer but differs strongly across layers, especially at low SNRs. Together, these findings indicate that noise levels differentially activate model regions and induce distinct inter-layer dynamics, motivating SNR-aware conditioning and refinement strategies for SE.",
+    "paper_abstract_zh": "我们探究了语音增强(SE)模型在不同噪声条件下的内部表示。使用在VoiceBank DEMAND上训练的transformer-convolutional模型MUSE，我们在输入信噪比(SNR)从-10到30 dB变化的情况下，分析了编码器、潜在空间、解码器和精炼块中的激活情况。我们使用Centered Kernel Alignment (CKA)来测量点对点的表示相似性，并使用扩散距离来捕捉SNR变化时的分布变化。结果表明，在噪声输入和干净输入之间的编码器CKA保持稳定，而随着SNR降低，潜在空间和解码器的CKA急剧下降。CKA与SNR的线性拟合揭示了深度相关的鲁棒性-敏感性权衡。扩散距离在每个层内随SNR变化而渐进变化，但层间差异显著，特别是在低SNR情况下。这些发现共同表明，噪声水平会差异化地激活模型区域并诱导不同的层间动力学，这促使我们为SE开发SNR感知的条件和精炼策略。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Yair Amar, Amir Ivry, Israel Cohen",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "A Low-Complexity Speech Codec Using Parametric Dithering for ASR",
+    "paper_title_zh": "一种用于ASR的低复杂度语音编解码器，采用参数化抖动技术",
+    "paper_id": "2512.00511",
+    "paper_abstract": "Dithering is a technique commonly used to improve the perceptual quality of lossy data compression. In this work, we analytically and experimentally justify the use of dithering for ASR input compression. We formalize an understanding of optimal ASR performance under lossy input compression and leverage this to propose a parametric dithering technique for a low-complexity speech compression pipeline. The method performs well at 1-bit resolution, showing a 25\\% relative CER improvement, while also demonstrating improvements of 32.4\\% and 33.5\\% at 2- and 3-bit resolution, respectively, with our second dither choice yielding a reduced data rate. The proposed codec is adaptable to meet performance targets or stay within entropy constraints.",
+    "paper_abstract_zh": "抖动是一种常用于提高有损数据压缩感知质量的技术。在这项工作中，我们通过分析和实验证明了抖动技术在ASR输入压缩中的有效性。我们形式化地理解了在有损输入压缩下ASR的最优性能，并利用这一点提出了一种用于低复杂度语音压缩管道的参数化抖动技术。该方法在1位分辨率下表现良好，相对CER提高了25%，同时在2位和3位分辨率下分别显示出32.4%和33.5%的改进，我们的第二种抖动选择降低了数据速率。所提出的编解码器可适应以满足性能目标或保持在熵约束内。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Ellison Murray, Morriel Kasher, Predrag Spasojevic",
+    "topic": [
+      "Speech Recognition",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Arabic TTS with FastPitch: Reproducible Baselines, Adversarial Training, and Oversmoothing Analysis",
+    "paper_title_zh": "基于FastPitch的阿拉伯语TTS：可复现基线、对抗训练和过平滑分析",
+    "paper_id": "2512.00937",
+    "paper_abstract": "Arabic text-to-speech (TTS) remains challenging due to limited resources and complex phonological patterns. We present reproducible baselines for Arabic TTS built on the FastPitch architecture and introduce cepstral-domain metrics for analyzing oversmoothing in mel-spectrogram prediction. While traditional Lp reconstruction losses yield smooth but over-averaged outputs, the proposed metrics reveal their temporal and spectral effects throughout training. To address this, we incorporate a lightweight adversarial spectrogram loss, which trains stably and substantially reduces oversmoothing. We further explore multi-speaker Arabic TTS by augmenting FastPitch with synthetic voices generated using XTTSv2, resulting in improved prosodic diversity without loss of stability. The code, pretrained models, and training recipes are publicly available at: this https URL.",
+    "paper_abstract_zh": "由于资源有限和音韵模式复杂，阿拉伯语文本转语音（TTS）仍然具有挑战性。我们提出了基于FastPitch架构的阿拉伯语TTS可复现基线，并引入了用于分析梅尔频谱图预测中过平滑的倒谱域指标。虽然传统的Lp重建损失会产生平滑但过度平均的输出，但所提出的指标揭示了它们在训练过程中对时间和频谱的影响。为解决这一问题，我们纳入了轻量级的对抗频谱图损失，该损失训练稳定且显著减少了过平滑。我们进一步通过使用XTTSv2生成的合成语音增强FastPitch，探索了多说话人阿拉伯语TTS，从而提高了韵律多样性而不会损失稳定性。代码、预训练模型和训练配方可在以下公开获取：this https URL。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Lars Nippert",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Identifiability Conditions for Acoustic Feedback Cancellation with the Two-Channel Adaptive Feedback Canceller Algorithm",
+    "paper_title_zh": "双通道自适应反馈消除算法的声学反馈消除可识别性条件",
+    "paper_id": "2512.01466",
+    "paper_abstract": "In audio signal processing applications with a microphone and a loudspeaker within the same acoustic environment, the loudspeaker signals can feed back into the microphone, thereby creating a closed-loop system that potentially leads to system instability. To remove this acoustic coupling, prediction error method (PEM) feedback cancellation algorithms aim to identify the feedback path between the loudspeaker and the microphone by assuming that the input signal can be modelled by means of an autoregressive (AR) model. It has previously been shown that this PEM framework and resulting algorithms can identify the feedback path correctly in cases where the forward path from microphone to loudspeaker is sufficiently time-varying or non-linear, or when the forward path delay equals or exceeds the order of the AR model. In this paper, it is shown that this delay-based condition can be generalised for one particular PEM-based algorithm, the so-called two-channel adaptive feedback canceller (2ch-AFC), to an invertibility-based condition, for which it is shown that identifiability can be achieved when the order of the forward path feedforward filter exceeds the order of the AR model. Additionally, the condition number of inversion of the correlation matrix as used in the 2ch-AFC algorithm can serve as a measure for monitoring the identifiability.",
+    "paper_abstract_zh": "在麦克风和扬声器位于同一声学环境中的音频信号处理应用中，扬声器信号可能会反馈到麦克风，从而形成闭环系统，可能导致系统不稳定。为了消除这种声学耦合，预测误差方法（PEM）反馈消除算法旨在通过假设输入信号可以用自回归（AR）模型来建模，从而识别扬声器与麦克风之间的反馈路径。先前的研究表明，在从前置麦克风到扬声器的前向路径具有足够的时间变化性或非线性，或者当前向路径延迟等于或超过AR模型阶数的情况下，这种PEM框架及其算法可以正确识别反馈路径。本文表明，对于特定的基于PEM的算法，即所谓的双通道自适应反馈消除器（2ch-AFC），这种基于延迟的条件可以推广为基于可逆性的条件，即当前向路径前馈滤波器的阶数超过AR模型阶数时，可以实现可识别性。此外，2ch-AFC算法中使用的相关矩阵求逆的条件数可以作为监控可识别性的度量。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Arnout Roebben, Toon van Waterschoot, Jan Wouters, Marc Moonen",
+    "topic": [
+      "Speech Enhancement",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "MoLT: Mixture of Layer-Wise Tokens for Efficient Audio-Visual Learning",
+    "paper_title_zh": "MoLT: 用于高效音频视觉学习的分层标记混合模型",
+    "paper_id": "2512.00115",
+    "paper_abstract": "In this paper, we propose Mixture of Layer-Wise Tokens (MoLT), a parameter- and memory-efficient adaptation framework for audio-visual learning. The key idea of MoLT is to replace conventional, computationally heavy sequential adaptation at every transformer layer with a parallel, lightweight scheme that extracts and fuses layer-wise tokens only from the late layers. We adopt two types of adapters to distill modality-specific information and cross-modal interaction into compact latent tokens in a layer-wise manner. A token fusion module then dynamically fuses these layer-wise tokens by taking into account their relative significance. To prevent the redundancy of latent tokens, we apply an orthogonality regularization between latent tokens during training. Through the systematic analysis of the position of adaptation in the pre-trained transformers, we extract latent tokens only from the late layers of the transformers. This strategic adaptation approach avoids error propagation from the volatile early-layer features, thereby maximizing the adaptation performance while maintaining parameter and memory efficiency. Through extensive experiments, we demonstrate that MoLT outperforms existing methods on diverse audio-visual benchmarks, including Audio-Visual Question Answering, Audio-Visual Segmentation, and Audio-Visual Event Localization.",
+    "paper_abstract_zh": "在本文中，我们提出了分层标记混合模型（MoLT），这是一个用于音频视觉学习的参数和内存高效的自适应框架。MoLT的核心思想是用一种并行、轻量级的方案替代传统上在每个transformer层中计算量大的顺序自适应，该方案仅从后期层中提取和融合分层标记。我们采用两种类型的适配器，以分层方式将模态特定信息和跨模态交互提取并融合到紧凑的潜在标记中。然后，一个标记融合模块根据这些分层标记的相对重要性动态融合它们。为了防止潜在标记的冗余，我们在训练过程中对潜在标记应用了正则化约束。通过对预训练transformer中自适应位置的系统性分析，我们仅从transformer的后期层中提取潜在标记。这种战略性的自适应方法避免了来自不稳定的早期层特征的误差传播，从而在保持参数和内存效率的同时最大化了自适应性能。通过大量实验，我们证明MoLT在多种音频视觉基准测试上优于现有方法，包括音频视觉问答、音频视觉分割和音频视觉事件定位。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Kyeongha Rho, Hyeongkeun Lee, Jae Won Cho, Joon Son Chung",
+    "topic": [
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Art2Music: Generating Music for Art Images with Multi-modal Feeling Alignment",
+    "paper_title_zh": "Art2Music: 通过多模态情感对齐为艺术图像生成音乐",
+    "paper_id": "2512.00120",
+    "paper_abstract": "With the rise of AI-generated content (AIGC), generating perceptually natural and feeling-aligned music from multimodal inputs has become a central challenge. Existing approaches often rely on explicit emotion labels that require costly annotation, underscoring the need for more flexible feeling-aligned methods. To support multimodal music generation, we construct ArtiCaps, a pseudo feeling-aligned image-music-text dataset created by semantically matching descriptions from ArtEmis and MusicCaps. We further propose Art2Music, a lightweight cross-modal framework that synthesizes music from artistic images and user comments. In the first stage, images and text are encoded with OpenCLIP and fused using a gated residual module; the fused representation is decoded by a bidirectional LSTM into Mel-spectrograms with a frequency-weighted L1 loss to enhance high-frequency fidelity. In the second stage, a fine-tuned HiFi-GAN vocoder reconstructs high-quality audio waveforms. Experiments on ArtiCaps show clear improvements in Mel-Cepstral Distortion, Frechet Audio Distance, Log-Spectral Distance, and cosine similarity. A small LLM-based rating study further verifies consistent cross-modal feeling alignment and offers interpretable explanations of matches and mismatches across modalities. These results demonstrate improved perceptual naturalness, spectral fidelity, and semantic consistency. Art2Music also maintains robust performance with only 50k training samples, providing a scalable solution for feeling-aligned creative audio generation in interactive art, personalized soundscapes, and digital art exhibitions.",
+    "paper_abstract_zh": "随着AI生成内容(AIGC)的兴起，从多模态输入中生成感知自然且情感对齐的音乐已成为一个核心挑战。现有方法通常依赖于需要昂贵标注的显式情感标签，凸显了更灵活的情感对齐方法的必要性。为了支持多模态音乐生成，我们构建了ArtiCaps数据集，这是一个通过语义匹配ArtEmis和MusicCaps中的描述而创建的伪情感对齐图像-音乐-文本数据集。我们进一步提出了Art2Music，一个轻量级跨模态框架，可以从艺术图像和用户评论中合成音乐。在第一阶段，图像和文本通过OpenCLIP进行编码，并使用门控残差模块进行融合；融合后的表示通过双向LSTM解码为Mel频谱图，并采用频率加权的L1损失来增强高频保真度。在第二阶段，微调的HiFi-GAN声码器重建高质量音频波形。在ArtiCaps上的实验显示，在Mel失真距离、弗雷切音频距离、对数谱距离和余弦相似度方面有显著改善。一个小型基于LLM的评级研究进一步验证了跨模态情感对齐的一致性，并提供了跨模态匹配和不匹配的可解释性解释。这些结果表明了感知自然度、频谱保真度和语义一致性的提升。Art2Music仅使用5k训练样本即可保持稳健性能，为交互式艺术、个性化声景和数字艺术展览中的情感对齐创意音频生成提供了可扩展的解决方案。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Machine Learning (cs.LG)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Jiaying Hong, Ting Zhu, Thanet Markchom, Huizhi Liang",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "STCTS: Generative Semantic Compression for Ultra-Low Bitrate Speech via Explicit Text-Prosody-Timbre Decomposition",
+    "paper_title_zh": "STCTS: 通过显式文本-韵律-音色分解实现超低比特率语音的生成式语义压缩",
+    "paper_id": "2512.00451",
+    "paper_abstract": "Voice communication in bandwidth-constrained environments--maritime, satellite, and tactical networks--remains prohibitively expensive. Traditional codecs struggle below 1 kbps, while existing semantic approaches (STT-TTS) sacrifice prosody and speaker identity. We present STCTS, a generative semantic compression framework enabling natural voice communication at approximately 80 bps. STCTS explicitly decomposes speech into linguistic content, prosodic expression, and speaker timbre, applying tailored compression: context-aware text encoding (approximately 70 bps), sparse prosody transmission via TTS interpolation (less than 14 bps at 0.1-1 Hz), and amortized speaker embedding.\nEvaluations on LibriSpeech demonstrate a 75x bitrate reduction versus Opus (6 kbps) and 12x versus EnCodec (1 kbps), while maintaining perceptual quality (NISQA MOS greater than 4.26). We also discover a bimodal quality distribution with prosody sampling rate: sparse and dense updates both achieve high quality, while mid-range rates degrade due to perceptual discontinuities--guiding optimal configuration design. Beyond efficiency, our modular architecture supports privacy-preserving encryption, human-interpretable transmission, and flexible deployment on edge devices, offering a robust solution for ultra-low bandwidth scenarios.",
+    "paper_abstract_zh": "在带宽受限环境（如海事、卫星和战术网络）中的语音通信仍然成本高昂。传统编解码器在低于1 kbps时表现不佳，而现有的语义方法（语音识别-语音转换）会牺牲韵律和说话人身份。我们提出了STCTS，一种生成式语义压缩框架，能够在约80 bps的比特率下实现自然的语音通信。STCTS显式地将语音分解为语言内容、韵律表达和说话人音色，并应用定制化的压缩：上下文感知的文本编码（约70 bps）、通过TTS插值实现的稀疏韵律传输（在0.1-1 Hz时低于14 bps）和分摊的说话人嵌入。在LibriSpeech上的评估表明，与Opus（6 kbps）相比，比特率降低了75倍，与EnCodec（1 kbps）相比降低了12倍，同时保持了感知质量（NISQA MOS大于4.26）。我们还发现了质量分布与韵律采样率的双峰模式：稀疏和密集更新都能实现高质量，而中等速率由于感知不连续性会导致质量下降——这指导了最优配置设计。除了高效性，我们的模块化架构支持隐私保护加密、人类可解释的传输和在边缘设备上的灵活部署，为超低带宽场景提供了强大的解决方案。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Siyu Wang, Haitao Li",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Explainable Multi-Modal Deep Learning for Automatic Detection of Lung Diseases from Respiratory Audio Signals",
+    "paper_title_zh": "基于呼吸音频信号的可解释多模态深度学习在肺部疾病自动检测中的应用",
+    "paper_id": "2512.00563",
+    "paper_abstract": "Respiratory diseases remain major global health challenges, and traditional auscultation is often limited by subjectivity, environmental noise, and inter-clinician variability. This study presents an explainable multimodal deep learning framework for automatic lung-disease detection using respiratory audio signals. The proposed system integrates two complementary representations: a spectral-temporal encoder based on a CNN-BiLSTM Attention architecture, and a handcrafted acoustic-feature encoder capturing physiologically meaningful descriptors such as MFCCs, spectral centroid, spectral bandwidth, and zero-crossing rate. These branches are combined through late-stage fusion to leverage both data-driven learning and domain-informed acoustic cues. The model is trained and evaluated on the Asthma Detection Dataset Version 2 using rigorous preprocessing, including resampling, normalization, noise filtering, data augmentation, and patient-level stratified partitioning. The study achieved strong generalization with 91.21% accuracy, 0.899 macro F1-score, and 0.9866 macro ROC-AUC, outperforming all ablated variants. An ablation study confirms the importance of temporal modeling, attention mechanisms, and multimodal fusion. The framework incorporates Grad-CAM, Integrated Gradients, and SHAP, generating interpretable spectral, temporal, and feature-level explanations aligned with known acoustic biomarkers to build clinical transparency. The findings demonstrate the framework's potential for telemedicine, point-of-care diagnostics, and real-world respiratory screening.",
+    "paper_abstract_zh": "呼吸疾病仍然是全球健康的主要挑战，传统听诊常受主观性、环境噪音和临床医生间差异的限制。本研究提出了一种可解释的多模态深度学习框架，用于基于呼吸音频信号自动检测肺部疾病。该系统整合了两种互补的表示方法：一种基于CNN-BiLSTM注意力机制的谱时序编码器，以及一种手工制作的声学特征编码器，用于捕捉具有生理意义的描述符，如MFCC、谱质心、谱带宽和过零率。这些分支通过后期融合相结合，以利用数据驱动学习和领域相关的声学线索。模型在哮喘检测数据集版本2上进行了训练和评估，采用了严格的预处理，包括重采样、归一化、噪声过滤、数据增强和患者分层划分。研究取得了91.21%的准确率、0.899的宏F1分数和0.9866的宏ROC-AUC，优于所有消融变体。消融研究证实了时序建模、注意力机制和多模态融合的重要性。该框架集成了Grad-CAM、积分梯度和SHAP，生成了与已知声学生物标志物一致的可解释谱、时序和特征级解释，以建立临床透明度。研究结果表明，该框架在远程医疗、即时诊断和现实世界呼吸筛查方面具有潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "S M Asiful Islam Saky, Md Rashidul Islam, Md Saiful Arefin, Shahaba Alam",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Melody or Machine: Detecting Synthetic Music with Dual-Stream Contrastive Learning",
+    "paper_title_zh": "旋律还是机器：使用双流对比学习检测合成音乐",
+    "paper_id": "2512.00621",
+    "paper_abstract": "The rapid evolution of end-to-end AI music generation poses an escalating threat to artistic authenticity and copyright, demanding detection methods that can keep pace. While foundational, existing models like SpecTTTra falter when faced with the diverse and rapidly advancing ecosystem of new generators, exhibiting significant performance drops on out-of-distribution (OOD) content. This generalization failure highlights a critical gap: the need for more challenging benchmarks and more robust detection architectures. To address this, we first introduce Melody or Machine (MoM), a new large-scale benchmark of over 130,000 songs (6,665 hours). MoM is the most diverse dataset to date, built with a mix of open and closed-source models and a curated OOD test set designed specifically to foster the development of truly generalizable detectors. Alongside this benchmark, we introduce CLAM, a novel dual-stream detection architecture. We hypothesize that subtle, machine-induced inconsistencies between vocal and instrumental elements, often imperceptible in a mixed signal, offer a powerful tell-tale sign of synthesis. CLAM is designed to test this hypothesis by employing two distinct pre-trained audio encoders (MERT and Wave2Vec2) to create parallel representations of the audio. These representations are fused by a learnable cross-aggregation module that models their inter-dependencies. The model is trained with a dual-loss objective: a standard binary cross-entropy loss for classification, complemented by a contrastive triplet loss which trains the model to distinguish between coherent and artificially mismatched stream pairings, enhancing its sensitivity to synthetic artifacts without presuming a simple feature alignment. CLAM establishes a new state-of-the-art in synthetic music forensics. It achieves an F1 score of 0.925 on our challenging MoM benchmark.",
+    "paper_abstract_zh": "端到端AI音乐生成的快速发展对艺术真实性和版权构成了日益严重的威胁，需要能够跟上步伐的检测方法。虽然现有模型如SpecTTTra具有基础性，但当面对多样化且快速发展的新生成器生态系统时，它们在分布外(OOD)内容上表现出显著性能下降。这种泛化失败凸显了一个关键差距：需要更具挑战性的基准和更强大的检测架构。为此，我们首先引入了Melody or Machine (MoM)，这是一个包含超过130,000首歌曲(6,665小时)的新大规模基准。MoM是迄今为止最多样化的数据集，由开源和闭源模型混合构建，并专门设计了一个精选的OOD测试集，旨在促进真正可泛化检测器的发展。除了这个基准，我们还引入了CLAM，一种新颖的双流检测架构。我们假设，人声和乐器元素之间微妙的机器引起的不一致性（在混合信号中通常难以察觉）是合成的有力标志。CLAM通过采用两个不同的预训练音频编码器(MERT和Wave2Vec2)来创建音频的并行表示来测试这一假设。这些表示通过可学习的跨聚合模块融合，该模块建模它们之间的相互依赖性。模型采用双损失目标进行训练：用于分类的标准二元交叉熵损失，辅以对比三元组损失，该损失训练模型区分一致性和人为不匹配的流对配，增强其对合成伪影的敏感性，而无需假设简单的特征对齐。CLAM在合成音乐取证领域建立了新的最先进水平。在我们具有挑战性的MoM基准上，它达到了0.925的F1分数。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Arnesh Batra, Dev Sharma, Krish Thukral, Ruhani Bhatia, Naman Batra, Aditya Gautam",
+    "topic": [
+      "Audio Classification",
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Q2D2: A Geometry-Aware Audio Codec Leveraging Two-Dimensional Quantization",
+    "paper_title_zh": "Q2D2：一种利用二维量化的几何感知音频编解码器",
+    "paper_id": "2512.01537",
+    "paper_abstract": "Recent neural audio codecs have achieved impressive reconstruction quality, typically relying on quantization methods such as Residual Vector Quantization (RVQ), Vector Quantization (VQ) and Finite Scalar Quantization (FSQ). However, these quantization techniques limit the geometric structure of the latent space, make it harder to capture correlations between features leading to inefficiency in representation learning, codebook utilization and token rate. In this paper we introduce Two Dimensional Quantization (Q2D2), a quantization scheme in which feature pairs are projected onto structured 2D grids such as hexagonal, rhombic, or rectangular tiling and quantized to the nearest grid values, yielding an implicit codebook defined by the product of grid levels, with codebook sizes comparable to conventional methods. Despite its simple geometric formulation, Q2D2 improves audio compression efficiency, with low token rates and high codebook utilization while maintaining state of the art reconstruction quality. Specifically, Q2D2 achieves competitive to superior performance in various objective and subjective reconstruction metrics, across extensive experiments in speech domain compared to state of the art models. Comprehensive ablation studies further confirm the effectiveness of our design choices.",
+    "paper_abstract_zh": "最近的神经音频编解码器已经实现了令人印象深刻的重建质量，通常依赖于诸如残差矢量量化（RVQ）、矢量量化（VQ）和有限标量量化（FSQ）等量化方法。然而，这些量化技术限制了潜在空间的几何结构，使得捕获特征之间的相关性变得更加困难，从而导致表示学习、码本利用和令牌率方面的效率低下。在本文中，我们引入了二维量化（Q2D2），一种量化方案，其中特征对被投影到结构化的二维网格上，如六边形、菱形或矩形平铺，并量化到最近的网格值，从而产生由网格级别乘积定义的隐式码本，其码本大小与传统方法相当。尽管其简单的几何公式，Q2D2提高了音频压缩效率，具有低令牌率和高码本利用率，同时保持了最先进的重建质量。具体而言，与最先进的模型相比，在语音领域的广泛实验中，Q2D2在各种客观和主观重建指标上实现了具有竞争力的或更优的性能。全面的消融研究进一步证实了我们设计选择的有效性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Information Theory (cs.IT)",
+      "Machine Learning (cs.LG)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Tal Shuster, Eliya Nachmani",
+    "topic": [
+      "Audio Codec",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "LLM2Fx-Tools: Tool Calling For Music Post-Production",
+    "paper_title_zh": "LLM2Fx-Tools：音乐后制作的工具调用",
+    "paper_id": "2512.01559",
+    "paper_abstract": "This paper introduces LLM2Fx-Tools, a multimodal tool-calling framework that generates executable sequences of audio effects (Fx-chain) for music post-production. LLM2Fx-Tools uses a large language model (LLM) to understand audio inputs, select audio effects types, determine their order, and estimate parameters, guided by chain-of-thought (CoT) planning. We also present LP-Fx, a new instruction-following dataset with structured CoT annotations and tool calls for audio effects modules. Experiments show that LLM2Fx-Tools can infer an Fx-chain and its parameters from pairs of unprocessed and processed audio, enabled by autoregressive sequence modeling, tool calling, and CoT reasoning. We further validate the system in a style transfer setting, where audio effects information is transferred from a reference source and applied to new content. Finally, LLM-as-a-judge evaluation demonstrates that our approach generates appropriate CoT reasoning and responses for music production queries. To our knowledge, this is the first work to apply LLM-based tool calling to audio effects modules, enabling interpretable and controllable music production.",
+    "paper_abstract_zh": "本文介绍了LLM2Fx-Tools，一个多模态工具调用框架，用于为音乐后制作生成可执行的音频效果(Fx-chain)序列。LLM2Fx-Tools利用大型语言模型(LLM)理解音频输入，选择音频效果类型，确定它们的顺序，并估计参数，通过思维链(CoT)规划进行指导。我们还提出了LP-Fx，一个新的指令遵循数据集，包含音频效果模块的结构化CoT注释和工具调用。实验表明，LLM2Fx-Tools可以通过自回归序列建模、工具调用和CoT推理从未处理和处理过的音频对中推断出Fx-chain及其参数。我们在风格迁移设置中进一步验证了该系统，其中音频效果信息从参考源传输并应用于新内容。最后，LLM作为评估者的评估表明，我们的方法为音乐制作查询生成适当的CoT推理和响应。据我们所知，这是第一个将基于LLM的工具调用应用于音频效果模块的工作，实现了可解释和可控的音乐制作。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Seungheon Doh, Junghyun Koo, Marco A. Martínez-Ramírez, Woosung Choi, Wei-Hsiang Liao, Qiyu Wu, Juhan Nam, Yuki Mitsufuji",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Parallel Delayed Memory Units for Enhanced Temporal Modeling in Biomedical and Bioacoustic Signal Analysis",
+    "paper_title_zh": "并行延迟记忆单元：增强生物医学和生物声学信号分析中的时序建模",
+    "paper_id": "2512.01626",
+    "paper_abstract": "Advanced deep learning architectures, particularly recurrent neural networks (RNNs), have been widely applied in audio, bioacoustic, and biomedical signal analysis, especially in data-scarce environments. While gated RNNs remain effective, they can be relatively over-parameterised and less training-efficient in some regimes, while linear RNNs tend to fall short in capturing the complexity inherent in bio-signals. To address these challenges, we propose the Parallel Delayed Memory Unit (PDMU), a {delay-gated state-space module for short-term temporal credit assignment} targeting audio and bioacoustic signals, which enhances short-term temporal state interactions and memory efficiency via a gated delay-line mechanism. Unlike previous Delayed Memory Units (DMU) that embed temporal dynamics into the delay-line architecture, the PDMU further compresses temporal information into vector representations using Legendre Memory Units (LMU). This design serves as a form of causal attention, allowing the model to dynamically adjust its reliance on past states and improve real-time learning performance. Notably, in low-information scenarios, the gating mechanism behaves similarly to skip connections by bypassing state decay and preserving early representations, thereby facilitating long-term memory retention. The PDMU is modular, supporting parallel training and sequential inference, and can be easily integrated into existing linear RNN frameworks. Furthermore, we introduce bidirectional, efficient, and spiking variants of the architecture, each offering additional gains in performance or energy efficiency. Experimental results on diverse audio and biomedical benchmarks demonstrate that the PDMU significantly enhances both memory capacity and overall model performance.",
+    "paper_abstract_zh": "先进的深度学习架构，特别是循环神经网络（RNN），已被广泛应用于音频、生物声学和生物医学信号分析，尤其是在数据稀缺的环境中。虽然门控RNN仍然有效，但在某些情况下它们可能相对过度参数化且训练效率较低，而线性RNN则难以捕捉生物信号固有的复杂性。为解决这些挑战，我们提出了并行延迟记忆单元（PDMU），这是一种针对音频和生物声学信号的延迟门控状态空间模块，通过门控延迟线机制增强短期时态状态交互和记忆效率。与将时间动态嵌入延迟线架构的先前延迟记忆单元（DMU）不同，PDMU使用勒让德记忆单元（LMU）将时间信息压缩为向量表示。这种设计充当了一种因果注意力机制，使模型能够动态调整对过去状态的依赖，并提高实时学习性能。值得注意的是，在低信息场景中，门控机制通过绕过状态衰减并保留早期表示，表现得类似于跳跃连接，从而促进长期记忆保留。PDMU是模块化的，支持并行训练和顺序推理，并且可以轻松集成到现有的线性RNN框架中。此外，我们引入了该架构的双向、高效和脉冲变体，每种变体在性能或能效方面都提供了额外的提升。在多样化的音频和生物医学基准测试上的实验结果表明，PDMU显著增强了记忆容量和整体模型性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Neural and Evolutionary Computing (cs.NE)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Pengfei Sun, Wenyu Jiang, Paul Devos, Dick Botteldooren",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Audio-Visual World Models: Towards Multisensory Imagination in Sight and Sound",
+    "paper_title_zh": "视听世界模型：迈向视听多感官想象",
+    "paper_id": "2512.00883",
+    "paper_abstract": "World models simulate environmental dynamics to enable agents to plan and reason about future states. While existing approaches have primarily focused on visual observations, real-world perception inherently involves multiple sensory modalities. Audio provides crucial spatial and temporal cues such as sound source localization and acoustic scene properties, yet its integration into world models remains largely unexplored. No prior work has formally defined what constitutes an audio-visual world model or how to jointly capture binaural spatial audio and visual dynamics under precise action control with task reward prediction. This work presents the first formal framework for Audio-Visual World Models (AVWM), formulating multimodal environment simulation as a partially observable Markov decision process with synchronized audio-visual observations, fine-grained actions, and task rewards. To address the lack of suitable training data, we construct AVW-4k, a dataset comprising 30 hours of binaural audio-visual trajectories with action annotations and reward signals across 76 indoor environments. We propose AV-CDiT, an Audio-Visual Conditional Diffusion Transformer with a novel modality expert architecture that balances visual and auditory learning, optimized through a three-stage training strategy for effective multimodal integration. Extensive experiments demonstrate that AV-CDiT achieves high-fidelity multimodal prediction across visual and auditory modalities with reward. Furthermore, we validate its practical utility in continuous audio-visual navigation tasks, where AVWM significantly enhances the agent's performance.",
+    "paper_abstract_zh": "世界模型模拟环境动态，使智能体能够规划和推理未来状态。尽管现有方法主要关注视觉观察，但现实世界的感知本质上涉及多种感官模态。音频提供了关键的空间和时间线索，如声源定位和声学场景特性，但其与世界模型的集成在很大程度上仍未被探索。之前的工作没有正式定义视听世界模型的构成，也没有如何在精确动作控制和任务奖励预测下联合捕捉双耳空间音频和视觉动态。本文提出了视听世界模型(AVWM)的第一个正式框架，将多模态环境模拟为一个具有同步视听观察、细粒度动作和任务奖励的部分可观察马尔可夫决策过程。为解决缺乏合适训练数据的问题，我们构建了AVW-4k数据集，包含76个室内环境下的30小时双耳视听轨迹，带有动作注释和奖励信号。我们提出了AV-CDiT，一种具有新型模态专家架构的视听条件扩散Transformer，平衡视觉和听觉学习，并通过三阶段训练策略进行优化，以实现有效的多模态集成。大量实验表明，AV-CDiT在视听模态上实现了高保真多模态预测并带有奖励。此外，我们在连续视听导航任务中验证了其实用性，其中AVWM显著提高了智能体的性能。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Jiahua Wang, Shannan Yan, Leqi Zheng, Jialong Wu, Yaoxin Mao",
+    "topic": [
+      "Image Generation",
+      "Video Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "ZO-ASR: Zeroth-Order Fine-Tuning of Speech Foundation Models without Back-Propagation",
+    "paper_title_zh": "ZO-ASR: 无需反向传播的语音基础模型零阶微调",
+    "paper_id": "2512.01267",
+    "paper_abstract": "Fine-tuning pre-trained speech foundation models for Automatic Speech Recognition (ASR) is prevalent, yet constrained by substantial GPU memory requirements. We introduce ZO-ASR, a memory-efficient Zeroth-Order (ZO) method that avoids Back-Propagation (BP) and activation memory by estimating gradients via forward passes. When combined with SGD optimizer, ZO-ASR-SGD fine-tunes ASR models using only inference memory. Our evaluation spans supervised and unsupervised tasks. For Supervised Domain Adaptation on Whisper-Large-V3, ZO-ASR's multiple query mechanism enhances robustness and achieves up to an 18.9\\% relative Word Error Rate reduction over zero-shot baselines, outperforming existing ZO methods. For unsupervised Test-Time Adaptation on Wav2Vec2-Base, ZO-ASR exhibits moderately lower performance compared to first-order optimizer Adam. Our BP-free approach provides a viable solution for fine-tuning ASR models in computationally resource-constrained or gradient-inaccessible scenarios.",
+    "paper_abstract_zh": "微调预训练的语音基础模型用于自动语音识别(ASR)很普遍，但受到大量GPU内存需求的限制。我们介绍了ZO-ASR，这是一种内存高效的零阶(ZO)方法，它通过前向传播估计梯度来避免反向传播(BP)和激活内存。当与SGD优化器结合时，ZO-ASR-SGD仅使用推理内存微调ASR模型。我们的评估涵盖监督和无监督任务。对于Whisper-Large-V3上的监督领域适应，ZO-ASR的多查询机制增强了鲁棒性，相比零样本基线实现了高达18.9%的相对词错误率降低，优于现有的ZO方法。对于Wav2Vec2-Base上的无监督测试时适应，ZO-ASR与一阶优化器Adam相比表现略低。我们的无BP方法为在计算资源受限或梯度不可访问的场景中微调ASR模型提供了可行的解决方案。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Yuezhang Peng, Yuxin Liu, Yao Li, Sheng Wang, Fei Wen, Xie Chen",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Masked Symbol Modeling for Demodulation of Oversampled Baseband Communication Signals in Impulsive Noise-Dominated Channels",
+    "paper_title_zh": "",
+    "paper_id": "2512.01428",
+    "paper_abstract": "Recent breakthroughs in natural language processing show that attention mechanism in Transformer networks, trained via masked-token prediction, enables models to capture the semantic context of the tokens and internalize the grammar of language. While the application of Transformers to communication systems is a burgeoning field, the notion of context within physical waveforms remains under-explored. This paper addresses that gap by re-examining inter-symbol contribution (ISC) caused by pulse-shaping overlap. Rather than treating ISC as a nuisance, we view it as a deterministic source of contextual information embedded in oversampled complex baseband signals. We propose Masked Symbol Modeling (MSM), a framework for the physical (PHY) layer inspired by Bidirectional Encoder Representations from Transformers methodology. In MSM, a subset of symbol aligned samples is randomly masked, and a Transformer predicts the missing symbol identifiers using the surrounding \"in-between\" samples. Through this objective, the model learns the latent syntax of complex baseband waveforms. We illustrate MSM's potential by applying it to the task of demodulating signals corrupted by impulsive noise, where the model infers corrupted segments by leveraging the learned context. Our results suggest a path toward receivers that interpret, rather than merely detect communication signals, opening new avenues for context-aware PHY layer design.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Oguz Bedir, Nurullah Sevim, Mostafa Ibrahim, Sabit Ekin",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "MEGConformer: Conformer-Based MEG Decoder for Robust Speech and Phoneme Classification",
+    "paper_title_zh": "MEGConformer: 基于Conformer的MEG解码器用于鲁棒的语音和音素分类",
+    "paper_id": "2512.01443",
+    "paper_abstract": "We present Conformer-based decoders for the LibriBrain 2025 PNPL competition, targeting two foundational MEG tasks: Speech Detection and Phoneme Classification. Our approach adapts a compact Conformer to raw 306-channel MEG signals, with a lightweight convolutional projection layer and task-specific heads. For Speech Detection, a MEG-oriented SpecAugment provided a first exploration of MEG-specific augmentation. For Phoneme Classification, we used inverse-square-root class weighting and a dynamic grouping loader to handle 100-sample averaged examples. In addition, a simple instance-level normalization proved critical to mitigate distribution shifts on the holdout split. Using the official Standard track splits and F1-macro for model selection, our best systems achieved 88.9% (Speech) and 65.8% (Phoneme) on the leaderboard, surpassing the competition baselines and ranking within the top-10 in both tasks. For further implementation details, the technical documentation, source code, and checkpoints are available at this https URL.",
+    "paper_abstract_zh": "我们为LibriBrain 2025 PNPL竞赛提出了基于Conformer的解码器，针对两个基础的MEG任务：语音检测和音素分类。我们的方法将一个紧凑的Conformer适配到原始的306通道MEG信号上，使用了轻量级的卷积投影层和任务特定的头部。对于语音检测，我们采用了一种面向MEG的SpecAugment，这是对MEG特定增强的首次探索。对于音素分类，我们使用了逆平方根类权重和动态分组加载器来处理100样本平均的示例。此外，一个简单的实例级归一化被证明对于缓解保留集上的分布偏移至关重要。使用官方标准轨道分割和F1-macro进行模型选择，我们的最佳系统在排行榜上分别达到了88.9%（语音）和65.8%（音素）的成绩，超越了竞赛基线并在两个任务中都排名前10。更多实现细节、技术文档、源代码和模型检查点可在提供的https URL获取。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)",
+      "Neural and Evolutionary Computing (cs.NE)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-02",
+    "paper_authors": "Xabier de Zuazo, Ibon Saratxaga, Eva Navas",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
