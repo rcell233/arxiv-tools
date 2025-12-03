@@ -1,0 +1,286 @@
+[
+  {
+    "paper_title": "On the Difficulty of Token-Level Modeling of Dysfluency and Fluency Shaping Artifacts",
+    "paper_title_zh": "关于口吃和流利度塑造工具有令牌级建模的难度",
+    "paper_id": "2512.02027",
+    "paper_abstract": "Automatic transcription of stuttered speech remains a challenge, even for modern end-to-end (E2E) automatic speech recognition (ASR) frameworks. Dysfluencies and fluency-shaping artifacts are often overlooked, resulting in non-verbatim transcriptions with limited clinical and research value. We propose a parameter-efficient adaptation method to decode dysfluencies and fluency modifications as special tokens within transcriptions, evaluated on simulated (LibriStutter, English) and natural (KSoF, German) stuttered speech datasets. To mitigate ASR performance disparities and bias towards English, we introduce a multi-step fine-tuning strategy with language-adaptive pretraining. Tokenization analysis further highlights the tokenizer's English-centric bias, which poses challenges for improving performance on German data. Our findings demonstrate the effectiveness of lightweight adaptation techniques for dysfluency-aware ASR while exposing key limitations in multilingual E2E systems.",
+    "paper_abstract_zh": "口吃语音的自动转录仍然是一个挑战，即使是对于现代端到端（E2E）自动语音识别（ASR）框架也是如此。口吃和流利度塑造工具常常被忽视，导致转录内容不完整，临床和研究价值有限。我们提出了一种参数高效的适应方法，将口吃和流利度修改作为特殊令牌在转录中进行解码，并在模拟（LibriStutter，英语）和自然（KSoF，德语）口吃语音数据集上进行了评估。为了减轻ASR性能差异和对英语的偏向，我们引入了一种多步微调策略，结合了语言自适应预训练。令牌化分析进一步强调了令牌化器的英语中心偏向，这对提高德语数据性能构成了挑战。我们的研究证明了轻量级适应技术在口吃感知ASR中的有效性，同时揭示了多语言E2E系统中的关键局限性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Kashaf Gulzar, Dominik Wagner, Sebastian P. Bayerl, Florian Hönig, Tobias Bocklet, Korbinian Riedhammer",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Towards Language-Independent Face-Voice Association with Multimodal Foundation Models",
+    "paper_title_zh": "使用多模态基础模型实现语言无关的面部-声音关联",
+    "paper_id": "2512.02759",
+    "paper_abstract": "This paper describes the UZH-CL system submitted to the FAME2026 Challenge. The challenge focuses on cross-modal verification under unique multilingual conditions, specifically unseen and unheard languages. Our approach investigates two distinct architectures, consisting of a baseline dual-encoder system trained from scratch using contrastive and orthogonal projection losses, and a foundation model approach leveraging ImageBind with LoRA. To address the data scarcity and language constraints of the challenge, we curated an external Arabic dataset from VoxBlink. Our best-performing system, ImageBind-LoRA, demonstrates remarkable cross-lingual generalization: despite being fine-tuned exclusively on Arabic audio, it achieved an EER of 24.73% on the evaluation set (English and German), securing 2nd place in the competition.",
+    "paper_abstract_zh": "本文描述了提交给FAME2026挑战赛的UZH-CL系统。该挑战赛专注于独特多语言条件下的跨模态验证，特别是未见过的和未听过的语言。我们的方法研究了两种不同的架构：一种是从头开始使用对比损失和正交投影损失训练的基线双编码器系统，另一种是利用ImageBind和LoRA的基础模型方法。为应对挑战赛的数据稀缺和语言限制，我们从VoxBlink中整理了一个外部阿拉伯语数据集。我们表现最好的系统ImageBind-LoRA展示了卓越的跨语言泛化能力：尽管仅在阿拉伯语音频上进行了微调，但在评估集（英语和德语）上仍达到了24.73%的等错误率(EER)，在比赛中获得第二名。",
+    "subjects": [
+      "Image and Video Processing (eess.IV)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Aref Farhadipour, Teodora Vukovic, Volker Dellwo",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Perceptual evaluation of Acoustic Level of Detail in Virtual Acoustic Environments",
+    "paper_title_zh": "虚拟声学环境中声学细节层级的感知评估",
+    "paper_id": "2512.02891",
+    "paper_abstract": "Virtual acoustic environments enable the creation and simulation of realistic and eco-logically valid daily-life situations vital for hearing research and audiology. Reverberant indoor environments are particularly important. For real-time applications, room acous-tics simulation requires simplifications, however, the necessary acoustic level of detail (ALOD) remains unclear in order to capture all perceptually relevant effects. This study examines the impact of varying ALOD in simulations of three real environments: a living room with a coupled kitchen, a pub, and an underground station. ALOD was varied by generating different numbers of image sources for early reflections, or by excluding geo-metrical room details specific for each environment. Simulations were perceptually eval-uated using headphones in comparison to binaural room impulse responses measured with a dummy head in the corresponding real environments, or by using loudspeakers. The study assessed the perceived overall difference for a pulse stimulus, a played electric bass and a speech token. Additionally, plausibility, speech intelligibility, and externaliza-tion were evaluated. Results indicate that a strong reduction in ALOD is feasible while maintaining similar plausibility, speech intelligibility, and externalization as with dummy head recordings. The number and accuracy of early reflections appear less relevant, pro-vided diffuse late reverberation is appropriately represented.",
+    "paper_abstract_zh": "虚拟声学环境能够创建和模拟真实且生态有效的日常生活情境，这对听力研究和耳科学至关重要。混响室内环境尤其重要。对于实时应用，房间声学模拟需要简化，但为了捕捉所有感知相关效应，必要的声学细节层级（ALOD）仍不明确。本研究通过模拟三个真实环境（带耦合厨房的客厅、酒吧和地铁站）来检验不同ALOD的影响。通过生成不同数量的镜像源用于早期反射，或排除每个环境特有的几何房间细节来改变ALOD。使用耳机与在相应真实环境中使用假人头测量的双耳房间脉冲响应进行比较，或使用扬声器进行模拟感知评估。研究评估了脉冲刺激、播放的电贝斯和语音令牌的感知整体差异。此外，还评估了可信度、语音清晰度和外部化程度。结果表明，在保持与假人头录音相似的可信度、语音清晰度和外部化程度的同时，大幅降低ALOD是可行的。只要适当表示扩散的后期混响，早期反射的数量和准确性似乎不那么重要。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Stefan Fichna, Steven van de Par, Bernhard U. Seeber, Stephan D. Ewert",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Spoken Conversational Agents with Large Language Models",
+    "paper_title_zh": "基于大型语言模型的口语对话代理",
+    "paper_id": "2512.02593",
+    "paper_abstract": "Spoken conversational agents are converging toward voice-native LLMs. This tutorial distills the path from cascaded ASR/NLU to end-to-end, retrieval-and vision-grounded systems. We frame adaptation of text LLMs to audio, cross-modal alignment, and joint speech-text training; review datasets, metrics, and robustness across accents and compare design choices (cascaded vs. E2E, post-ASR correction, streaming). We link industrial assistants to current open-domain and task-oriented agents, highlight reproducible baselines, and outline open problems in privacy, safety, and evaluation. Attendees leave with practical recipes and a clear systems-level roadmap.",
+    "paper_abstract_zh": "口语对话代理正朝着语音原生大语言模型(LLM)的方向发展。本教程梳理了从级联ASR/NLU到端到端、检索和视觉基础系统的演进路径。我们讨论了文本LLM向音频的适配、跨模态对齐以及联合语音文本训练；回顾了数据集、指标和不同口音下的鲁棒性，并比较了设计选择(级联vs端到端、ASR后校正、流式处理)。我们将工业助手与当前开放域和任务导向型代理联系起来，突出了可复现的基线，并概述了隐私、安全和评估方面的开放问题。参会者将获得实用的解决方案和清晰的系统级路线图。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Neural and Evolutionary Computing (cs.NE)",
+      "Multiagent Systems (cs.MA)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Chao-Han Huck Yang, Andreas Stolcke, Larry Heck",
+    "topic": [
+      "Speech Recognition",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Hear What Matters! Text-conditioned Selective Video-to-Audio Generation",
+    "paper_title_zh": "听取重要内容！基于文本条件的选择性视频到音频生成",
+    "paper_id": "2512.02650",
+    "paper_abstract": "This work introduces a new task, text-conditioned selective video-to-audio (V2A) generation, which produces only the user-intended sound from a multi-object video. This capability is especially crucial in multimedia production, where audio tracks are handled individually for each sound source for precise editing, mixing, and creative control. However, current approaches generate single source-mixed sounds at once, largely because visual features are entangled, and region cues or prompts often fail to specify the source. We propose SelVA, a novel text-conditioned V2A model that treats the text prompt as an explicit selector of target source and modulates video encoder to distinctly extract prompt-relevant video features. The proposed supplementary tokens promote cross-attention by suppressing text-irrelevant activations with efficient parameter tuning, yielding robust semantic and temporal grounding. SelVA further employs a self-augmentation scheme to overcome the lack of mono audio track supervision. We evaluate SelVA on VGG-MONOAUDIO, a curated benchmark of clean single-source videos for such a task. Extensive experiments and ablations consistently verify its effectiveness across audio quality, semantic alignment, and temporal synchronization. Code and demo are available at this https URL.",
+    "paper_abstract_zh": "这项工作引入了一个新任务：基于文本条件的选择性视频到音频（V2A）生成，它能够从多目标视频中仅生成用户预期的声音。这种能力在多媒体制作中尤为重要，因为音频轨道需要针对每个声源单独处理，以实现精确的编辑、混音和创意控制。然而，当前方法通常一次性生成单一源混合声音，这主要是因为视觉特征相互纠缠，且区域提示或提示往往无法明确指定声源。我们提出了SelVA，一种新颖的基于文本条件的V2A模型，它将文本提示作为目标声源的显式选择器，并调制视频编码器以 distinctly 提取提示相关的视频特征。所提出的补充标记通过使用高效的参数调校来抑制文本无关的激活，从而促进跨注意力机制，产生稳健的语义和时序基础。SelVA进一步采用了一种自增强方案来克服单音频轨道监督的缺失。我们在VGG-MONOAUDIO上评估了SelVA，这是一个为该任务精心策划的清洁单源视频基准。大量的实验和消融研究一致验证了其在音频质量、语义对齐和时序同步方面的有效性。代码和演示可在提供的URL获取。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Junwon Lee, Juhan Nam, Jiyoung Lee",
+    "topic": [
+      "Audio Representation Learning",
+      "Video Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Story2MIDI: Emotionally Aligned Music Generation from Text",
+    "paper_title_zh": "Story2MIDI：从文本生成情感对齐的音乐",
+    "paper_id": "2512.02192",
+    "paper_abstract": "In this paper, we introduce Story2MIDI, a sequence-to-sequence Transformer-based model for generating emotion-aligned music from a given piece of text. To develop this model, we construct the Story2MIDI dataset by merging existing datasets for sentiment analysis from text and emotion classification in music. The resulting dataset contains pairs of text blurbs and music pieces that evoke the same emotions in the reader or listener. Despite the small scale of our dataset and limited computational resources, our results indicate that our model effectively learns emotion-relevant features in music and incorporates them into its generation process, producing samples with diverse emotional responses. We evaluate the generated outputs using objective musical metrics and a human listening study, confirming the model's ability to capture intended emotional cues.",
+    "paper_abstract_zh": "在本文中，我们介绍了Story2MIDI，这是一种基于Transformer的序列到序列模型，用于从给定文本生成情感对齐的音乐。为开发此模型，我们通过合并现有的文本情感分析数据集和音乐情感分类数据集构建了Story2MIDI数据集。 resulting数据集包含能够引发读者或听众相同情感的文本摘要和音乐片段。尽管我们的数据集规模较小且计算资源有限，但结果表明我们的模型能够有效学习音乐中与情感相关的特征，并将其融入生成过程，产生具有多样化情感反应的样本。我们使用客观的音乐指标和人类听音研究评估生成的输出，证实了模型捕捉预期情感线索的能力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Mohammad Shokri, Alexandra C. Salem, Gabriel Levine, Johanna Devaney, Sarah Ita Levitan",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Continual Learning for Singing Voice Separation with Human in the Loop Adaptation",
+    "paper_title_zh": "基于人类在环适应的歌唱语音分离持续学习",
+    "paper_id": "2512.02432",
+    "paper_abstract": "Deep learning-based works for singing voice separation have performed exceptionally well in the recent past. However, most of these works do not focus on allowing users to interact with the model to improve performance. This can be crucial when deploying the model in real-world scenarios where music tracks can vary from the original training data in both genre and instruments. In this paper, we present a deep learning-based interactive continual learning framework for singing voice separation that allows users to fine-tune the vocal separation model to conform it to new target songs. We use a U-Net-based base model architecture that produces a mask for separating vocals from the spectrogram, followed by a human-in-the-loop task where the user provides feedback by marking a few false positives, i.e., regions in the extracted vocals that should have been silence. We propose two continual learning algorithms. Experiments substantiate the improvement in singing voice separation performance by the proposed algorithms over the base model in intra-dataset and inter-dataset settings.",
+    "paper_abstract_zh": "基于深度学习的歌唱语音分离工作在近期表现出色。然而，这些工作大多不关注允许用户与模型交互以提高性能。当模型部署在现实场景中时，这可能是至关重要的，因为音乐曲目在类型和乐器方面可能与原始训练数据有所不同。在本文中，我们提出了一种基于深度学习的交互式持续学习框架，用于歌唱语音分离，允许用户微调人声分离模型以适应新的目标歌曲。我们使用基于U-Net的基础模型架构，该架构生成用于从频谱图中分离人声的掩码，然后进行人类在环任务，用户通过标记一些假阳性（即提取的人声中应为静音的区域）提供反馈。我们提出了两种持续学习算法。实验证明了所提出的算法在数据集内和数据集外设置下，相较于基础模型提高了歌唱语音分离性能。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Ankur Gupta, Anshul Rai, Archit Bansal, Vipul Arora",
+    "topic": [
+      "Speech Enhancement",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "VibOmni: Towards Scalable Bone-conduction Speech Enhancement on Earables",
+    "paper_title_zh": "VibOmni：面向耳机的可扩展骨传导语音增强",
+    "paper_id": "2512.02515",
+    "paper_abstract": "Earables, such as True Wireless Stereo earphones and VR/AR headsets, are increasingly popular, yet their compact design poses challenges for robust voice-related applications like telecommunication and voice assistant interactions in noisy environments. Existing speech enhancement systems, reliant solely on omnidirectional microphones, struggle with ambient noise like competing speakers. To address these issues, we propose VibOmni, a lightweight, end-to-end multi-modal speech enhancement system for earables that leverages bone-conducted vibrations captured by widely available Inertial Measurement Units (IMUs). VibOmni integrates a two-branch encoder-decoder deep neural network to fuse audio and vibration features. To overcome the scarcity of paired audio-vibration datasets, we introduce a novel data augmentation technique that models Bone Conduction Functions (BCFs) from limited recordings, enabling synthetic vibration data generation with only 4.5% spectrogram similarity error. Additionally, a multi-modal SNR estimator facilitates continual learning and adaptive inference, optimizing performance in dynamic, noisy settings without on-device back-propagation. Evaluated on real-world datasets from 32 volunteers with different devices, VibOmni achieves up to 21% improvement in Perceptual Evaluation of Speech Quality (PESQ), 26% in Signal-to-Noise Ratio (SNR), and about 40% WER reduction with much less latency on mobile devices. A user study with 35 participants showed 87% preferred VibOmni over baselines, demonstrating its effectiveness for deployment in diverse acoustic environments.",
+    "paper_abstract_zh": "真无线立体声耳机和VR/AR头戴式设备等耳戴式设备日益普及，但其紧凑的设计在嘈杂环境中为稳健的语音相关应用（如电信和语音助手交互）带来了挑战。现有仅依赖全向麦克风的语音增强系统难以应对竞争说话者等环境噪声。为解决这些问题，我们提出了VibOmni，这是一种面向耳戴式设备的轻量级端到端多模态语音增强系统，它利用广泛可用的惯性测量单元（IMU）捕获的骨传导振动。VibOmni集成了双分支编码器-解码器深度神经网络，以融合音频和振动特征。为解决配对音频-振动数据集稀缺的问题，我们引入了一种新颖的数据增强技术，从有限录音中建模骨传导函数（BCFs），仅使用4.5%的频谱图相似性误差即可生成合成振动数据。此外，多模态信噪比估计器促进持续学习和自适应推理，优化了动态嘈杂环境中的性能，无需设备端反向传播。在来自32名志愿者使用不同设备的真实世界数据集上评估，VibOmni在语音质量感知评估（PESQ）上实现了高达21%的改进，信噪比（SNR）上提升了26%，字错误率（WER）减少了约40%，且在移动设备上延迟更低。一项涉及35名参与者的用户研究表明，87%的人更喜欢VibOmni而非基线系统，证明了其在多样化声学环境中部署的有效性。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Lixing He, Yunqi Guo, Haozheng Hou, Zhenyu Yan",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Generative Multi-modal Feedback for Singing Voice Synthesis Evaluation",
+    "paper_title_zh": "用于歌唱语音合成评估的生成式多模态反馈",
+    "paper_id": "2512.02523",
+    "paper_abstract": "Singing voice synthesis (SVS) has advanced significantly, enabling models to generate vocals with accurate pitch and consistent style. As these capabilities improve, the need for reliable evaluation and optimization becomes increasingly critical. However, current methods like reward systems often rely on single numerical scores, struggle to capture various dimensions such as phrasing or expressiveness, and require costly annotations, limiting interpretability and generalization. To address these issues, we propose a generative feedback (i.e., reward model) framework that provides multi-dimensional language and audio feedback for SVS assessment. Our approach leverages an audio-language model to generate text and audio critiques-covering aspects such as melody, content, and auditory quality. The model is fine-tuned on a hybrid dataset combining human music reactions and synthetic critiques from a MLLMs, enhancing diversity and linguistic richness. Quantitative experiments validate the effectiveness of the proposed dataset and training strategy, demonstrating that the framework produces musically accurate and interpretable evaluations suitable for guiding generative model improvement. The code is at [this https URL](this https URL)",
+    "paper_abstract_zh": "歌唱语音合成(SVS)已取得显著进展，使模型能够生成具有准确音高和一致风格的声乐。随着这些能力的提升，可靠评估和优化的需求变得越来越关键。然而，当前方法如奖励系统通常依赖单一数值评分，难以捕捉如乐句或表现力等多维度特征，且需要昂贵的标注，限制了可解释性和泛化能力。为解决这些问题，我们提出了一种生成式反馈(即奖励模型)框架，为SVS评估提供多维度的语言和音频反馈。我们的方法利用音频-语言模型生成文本和音频评论，涵盖旋律、内容和听觉质量等方面。该模型在混合数据集上进行微调，结合了人类音乐反应和来自MLLMs的合成评论，提高了多样性和语言丰富性。定量实验验证了所提数据集和训练策略的有效性，表明该框架能够产生音乐准确且可解释的评估，适合指导生成模型的改进。代码位于[此https URL](此https URL)",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Xueyan Li, Yuxin Wang, Mengjie Jiang, Qingzi Zhu, Jiang Zhang, Zoey Kim, Yazhe Niu",
+    "topic": [
+      "Speech Synthesis",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Pianist Transformer: Towards Expressive Piano Performance Rendering via Scalable Self-Supervised Pre-Training",
+    "paper_title_zh": "钢琴家Transformer：通过可扩展的自监督预训练实现富有表现力的钢琴演奏渲染",
+    "paper_id": "2512.02652",
+    "paper_abstract": "Existing methods for expressive music performance rendering rely on supervised learning over small labeled datasets, which limits scaling of both data volume and model size, despite the availability of vast unlabeled music, as in vision and language. To address this gap, we introduce Pianist Transformer, with four key contributions: 1) a unified Musical Instrument Digital Interface (MIDI) data representation for learning the shared principles of musical structure and expression without explicit annotation; 2) an efficient asymmetric architecture, enabling longer contexts and faster inference without sacrificing rendering quality; 3) a self-supervised pre-training pipeline with 10B tokens and 135M-parameter model, unlocking data and model scaling advantages for expressive performance rendering; 4) a state-of-the-art performance model, which achieves strong objective metrics and human-level subjective ratings. Overall, Pianist Transformer establishes a scalable path toward human-like performance synthesis in the music domain.",
+    "paper_abstract_zh": "现有的富有表现力的音乐演奏渲染方法依赖于在小规模标记数据集上的监督学习，这限制了数据量和模型规模的扩展，尽管存在大量未标记的音乐数据，类似于视觉和语言领域。为了解决这一差距，我们引入了钢琴家Transformer，具有四个关键贡献：1) 一种统一的乐器数字接口(MIDI)数据表示，用于学习音乐结构和表达的共享原理，无需显式标注；2) 一种高效的非对称架构，能够在不牺牲渲染质量的情况下实现更长的上下文和更快的推理；3) 一个包含100亿标记和1.35亿参数模型的自监督预训练流程，为富有表现力的演奏渲染解锁了数据和模型扩展的优势；4) 一个最先进的性能模型，实现了强大的客观指标和人类水平的主观评价。总体而言，钢琴家Transformer在音乐领域建立了通往类人演奏合成的可扩展路径。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Hong-Jie You, Jie-Jing Shao, Xiao-Wen Yang, Lin-Han Jia, Lan-Zhe Guo, Yu-Feng Li",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "SAND Challenge: Four Approaches for Dysartria Severity Classification",
+    "paper_title_zh": "SAND挑战：四种构音障碍严重程度分类方法",
+    "paper_id": "2512.02669",
+    "paper_abstract": "This paper presents a unified study of four distinct modeling approaches for classifying dysarthria severity in the Speech Analysis for Neurodegenerative Diseases (SAND) challenge. All models tackle the same five class classification task using a common dataset of speech recordings. We investigate: (1) a ViT-OF method leveraging a Vision Transformer on spectrogram images, (2) a 1D-CNN approach using eight 1-D CNN's with majority-vote fusion, (3) a BiLSTM-OF approach using nine BiLSTM models with majority vote fusion, and (4) a Hierarchical XGBoost ensemble that combines glottal and formant features through a two stage learning framework. Each method is described, and their performances on a validation set of 53 speakers are compared. Results show that while the feature-engineered XGBoost ensemble achieves the highest macro-F1 (0.86), the deep learning models (ViT, CNN, BiLSTM) attain competitive F1-scores (0.70) and offer complementary insights into the problem.",
+    "paper_abstract_zh": "本文针对神经退行性疾病语音分析(SAND)挑战中的构音障碍严重程度分类任务，对四种不同的建模方法进行了统一研究。所有模型使用相同的语音记录数据集，解决相同的五类分类问题。我们研究了：(1)一种基于频谱图图像使用视觉变换器(ViT)的ViT-OF方法，(2)一种使用八个一维卷积神经网络并通过多数投票融合的1D-CNN方法，(3)一种使用九个双向长短期记忆网络并通过多数投票融合的BiLSTM-OF方法，以及(4)一种通过两阶段学习框架结合声门和共振峰特征的分层XGBoost集成方法。本文详细描述了每种方法，并在包含53名说话者的验证集上比较了它们的性能。结果表明，虽然经过特征工程的XGBoost集成方法获得了最高的宏F1分数(0.86)，但深度学习模型(ViT、CNN、BiLSTM)也取得了具有竞争力的F1分数(0.70)，并为该问题提供了互补的见解。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Gauri Deshpande, Harish Battula, Ashish Panda, Sunil Kumar Kopparapu",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Exploring Definitions of Quality and Diversity in Sonic Measurement Spaces",
+    "paper_title_zh": "探索声音测量空间中的质量和多样性定义",
+    "paper_id": "2512.02783",
+    "paper_abstract": "Digital sound synthesis presents the opportunity to explore vast parameter spaces containing millions of configurations. Quality diversity (QD) evolutionary algorithms offer a promising approach to harness this potential, yet their success hinges on appropriate sonic feature representations. Existing QD methods predominantly employ handcrafted descriptors or supervised classifiers, potentially introducing unintended exploration biases and constraining discovery to familiar sonic regions. This work investigates unsupervised dimensionality reduction methods for automatically defining and dynamically reconfiguring sonic behaviour spaces during QD search. We apply Principal Component Analysis (PCA) and autoencoders to project high-dimensional audio features onto structured grids for MAP-Elites, implementing dynamic reconfiguration through model retraining at regular intervals. Comparison across two experimental scenarios shows that automatic approaches achieve significantly greater diversity than handcrafted behaviour spaces while avoiding expert-imposed biases. Dynamic behaviour-space reconfiguration maintains evolutionary pressure and prevents stagnation, with PCA proving most effective among the dimensionality reduction techniques. These results contribute to automated sonic discovery systems capable of exploring vast parameter spaces without manual intervention or supervised training constraints.",
+    "paper_abstract_zh": "数字声音合成为探索包含数百万种配置的广阔参数空间提供了机会。质量和多样性(QD)进化算法为利用这一潜力提供了有前景的方法，但它们的成功取决于适当的声音特征表示。现有的QD方法主要采用手工制作的描述符或监督分类器，这可能会引入意外的探索偏见，并将发现限制在熟悉的声音区域。本研究调查了无监督降维方法，用于在QD搜索期间自动定义和动态重新配置声音行为空间。我们将主成分分析(PCA)和自编码器应用于将高维音频特征投影到结构化网格上，以实现MAP-Elites，并通过定期重新训练模型来实现动态重新配置。在两个实验场景中的比较表明，自动方法比手工制作的行为空间实现了显著更大的多样性，同时避免了专家施加的偏见。动态行为空间重新配置维持了进化压力并防止了停滞，其中PCA在降维技术中被证明是最有效的。这些结果有助于实现自动声音发现系统，能够在没有人工干预或监督训练限制的情况下探索广阔的参数空间。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Neural and Evolutionary Computing (cs.NE)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Björn Þór Jónsson, Çağrı Erdem, Stefano Fasciani, Kyrre Glette",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Dialect Identification Using Resource-Efficient Fine-Tuning Approaches",
+    "paper_title_zh": "使用资源高效的微调方法进行方言识别",
+    "paper_id": "2512.02074",
+    "paper_abstract": "Dialect Identification (DI) is a task to recognize different dialects within the same language from a speech signal. DI can help to improve the downstream speech related tasks even when speakers have a strong dialect. However, fine-tuning a speech model for tasks like DI is expensive in terms of computation cost and memory requirement. Recent studies have explored fine-tuning pre-trained speech models for tasks like DI using Parameter-Efficient Fine-Tuning (PEFT) methods, which offer parameter efficiency but limited improvement in memory efficiency and training speed. To address these challenges, we explore Memory-Efficient Fine-Tuning (MEFT) methods, originally proposed for language processing, and apply them to the general-purpose pre-trained speech model. We then comprehensively analyze the GPU memory usage and fine-tuning speed based on various MEFT methods. As a case study, we fine-tune the Whisper model to identify six Mandarin subdialects from the KeSpeech dataset, reducing GPU memory usage by up to 73.25% and accelerating training speed by a factor of 2.1, while maintaining accuracy comparable to vanilla fine-tuning and PEFT methods.",
+    "paper_abstract_zh": "方言识别(DI)是一项从语音信号中识别同一语言内不同方言的任务。即使说话者带有强烈方言，DI也能帮助改进下游语音相关任务。然而，为DI等任务微调语音模型在计算成本和内存需求方面是昂贵的。最近的研究探索了使用参数高效微调(PEFT)方法为DI等任务微调预训练语音模型，这些方法虽然参数效率高，但在内存效率和训练速度方面的改进有限。为解决这些挑战，我们探索了最初为语言处理提出的内存高效微调(MEFT)方法，并将其应用于通用预训练语音模型。然后，我们基于各种MEFT方法全面分析了GPU内存使用情况和微调速度。作为案例研究，我们微调了Whisper模型，用于识别KeSpeech数据集中的六个汉语子方言，将GPU内存使用量减少了高达73.25%，并将训练速度提高了2.1倍，同时保持了与原始微调和PEFT方法相当的准确性。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Zirui Lin, Haris Gulzar, Monnika Roslianna Busto, Akiko Masaki, Takeharu Eda, Kazuhiro Nakadai",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "WhAM: Towards A Translative Model of Sperm Whale Vocalization",
+    "paper_title_zh": "",
+    "paper_id": "2512.02206",
+    "paper_abstract": "Sperm whales communicate in short sequences of clicks known as codas. We present WhAM (Whale Acoustics Model), the first transformer-based model capable of generating synthetic sperm whale codas from any audio prompt. WhAM is built by finetuning VampNet, a masked acoustic token model pretrained on musical audio, using 10k coda recordings collected over the past two decades. Through iterative masked token prediction, WhAM generates high-fidelity synthetic codas that preserve key acoustic features of the source recordings. We evaluate WhAM's synthetic codas using Fréchet Audio Distance and through perceptual studies with expert marine biologists. On downstream classification tasks including rhythm, social unit, and vowel classification, WhAM's learned representations achieve strong performance, despite being trained for generation rather than classification. Our code is available at this https URL",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-03",
+    "paper_authors": "Orr Paradise, Pranav Muralikrishnan, Liangyuan Chen, Hugo Flores García, Bryan Pardo, Roee Diamant, David F. Gruber, Shane Gero, Shafi Goldwasser",
+    "topic": [],
+    "category": []
+  }
+]
