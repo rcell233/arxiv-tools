@@ -1,0 +1,256 @@
+[
+  {
+    "paper_title": "Towards predicting binaural audio quality in listeners with normal and impaired hearing",
+    "paper_title_zh": "预测正常和听力受损听众的双耳音频质量",
+    "paper_id": "2512.04792",
+    "paper_abstract": "Eurich et al. (2024) recently introduced the computationally efficient monaural and binaural audio quality model (eMoBi-Q). This model integrates both monaural and binaural auditory features and has been validated across six audio datasets encompassing quality ratings for music and speech, processed via algorithms commonly employed in modern hearing devices (e.g., acoustic transparency, feedback cancellation, and binaural beamforming) or presented via loudspeakers. In the current study, we expand eMoBi-Q to account for perceptual effects of sensorineural hearing loss (HL) on audio quality. For this, the model was extended by a nonlinear auditory filterbank. Given that altered loudness perception is a prevalent issue among listeners with hearing impairment, our goal is to incorporate loudness as a sub-dimension for predicting audio quality in both normal-hearing and hearing-impaired populations. While predicting loudness itself is important in the context of loudness-based hearing aid fitting, loudness as audio quality sub-measure may be helpful for the selection of reliable auditory features in hearing impaired listeners. The parameters of the filterbank and subsequent processing stages were informed by the physiologically-based (binaural) loudness model proposed by Pieper et al. (2018). This study presents and discusses the initial implementation of the extended binaural quality model.",
+    "paper_abstract_zh": "Eurich等人(2024)最近引入了一种计算高效的单耳和双耳音频质量模型(eMoBi-Q)。该模型整合了单耳和双耳听觉特征，并在六个音频数据集上进行了验证，这些数据集涵盖了通过现代助听设备常用算法(如声学透明度、反馈消除和双耳波束成形)处理或通过扬声器呈现的音乐和语音的质量评分。在当前研究中，我们扩展了eMoBi-Q，以考虑感音神经性听力损失(HL)对音频质量的感知影响。为此，模型通过非线性听觉滤波器组进行了扩展。鉴于响度感知改变是听力受损听众中普遍存在的问题，我们的目标是将响度作为子维度，纳入正常听力人群和听力受损人群的音频质量预测中。虽然预测响度本身在基于响度的助听器适配背景下很重要，但作为音频质量的子度量，响度可能有助于为听力受损听众选择可靠的听觉特征。滤波器组和后续处理阶段的参数基于Pieper等人(2018)提出的生理学基础(双耳)响度模型。本研究展示了并讨论了扩展双耳质量模型的初步实现。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Thomas Biberger, Stephan D. Ewert",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "TripleC Learning and Lightweight Speech Enhancement for Multi-Condition Target Speech Extraction",
+    "paper_title_zh": "TripleC学习与多条件目标语音提取的轻量级语音增强",
+    "paper_id": "2512.04945",
+    "paper_abstract": "In our recent work, we proposed Lightweight Speech Enhancement Guided Target Speech Extraction (LGTSE) and demonstrated its effectiveness in multi-speaker-plus-noise scenarios. However, real-world applications often involve more diverse and complex conditions, such as one-speaker-plus-noise or two-speaker-without-noise. To address this challenge, we extend LGTSE with a Cross-Condition Consistency learning strategy, termed TripleC Learning. This strategy is first validated under multi-speaker-plus-noise condition and then evaluated for its generalization across diverse scenarios. Moreover, building upon the lightweight front-end denoiser in LGTSE, which can flexibly process both noisy and clean mixtures and shows strong generalization to unseen conditions, we integrate TripleC learning with a proposed parallel universal training scheme that organizes batches containing multiple scenarios for the same target speaker. By enforcing consistent extraction across different conditions, easier cases can assist harder ones, thereby fully exploiting diverse training data and fostering a robust universal model. Experimental results on the Libri2Mix three-condition tasks demonstrate that the proposed LGTSE with TripleC learning achieves superior performance over condition-specific models, highlighting its strong potential for universal deployment in real-world speech applications.",
+    "paper_abstract_zh": "在我们最近的工作中，我们提出了轻量级语音增强引导目标语音提取（LGTSE），并证明了其在多说话人加噪声场景中的有效性。然而，实际应用通常涉及更多样化和复杂的条件，例如单说话人加噪声或双说话人无噪声。为应对这一挑战，我们通过跨条件一致性学习策略扩展了LGTSE，称为TripleC学习。该策略首先在多说话人加噪声条件下得到验证，然后评估了其在多样化场景中的泛化能力。此外，基于LGTSE中的轻量级前端降噪器（能够灵活处理噪声和干净混合信号，并对未见条件表现出强泛化能力），我们将TripleC学习与提出的并行通用训练方案相结合，该方案组织包含同一目标说话人多种场景的批次。通过强制在不同条件下保持一致的提取，简单案例可以帮助困难案例，从而充分利用多样化的训练数据，培养强大的通用模型。在Libri2Mix三条件任务上的实验结果表明，采用TripleC学习的LGTSE优于条件特定模型，突显了其在实际语音应用中通用部署的巨大潜力。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Ziling Huang",
+    "topic": [
+      "Speech Enhancement",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "HiPPO: Exploring A Novel Hierarchical Pronunciation Assessment Approach for Spoken Languages",
+    "paper_title_zh": "HiPPO：探索一种用于口语的新型分层发音评估方法",
+    "paper_id": "2512.04964",
+    "paper_abstract": "Automatic pronunciation assessment (APA) seeks to quantify a second language (L2) learner's pronunciation proficiency in a target language by offering timely and fine-grained diagnostic feedback. Most existing efforts on APA have predominantly concentrated on highly constrained reading-aloud tasks (where learners are prompted to read a reference text aloud); however, assessing pronunciation quality in unscripted speech (or free-speaking scenarios) remains relatively underexplored. In light of this, we first propose HiPPO, a hierarchical pronunciation assessment model tailored for spoken languages, which evaluates an L2 learner's oral proficiency at multiple linguistic levels based solely on the speech uttered by the learner. To improve the overall accuracy of assessment, a contrastive ordinal regularizer and a curriculum learning strategy are introduced for model training. The former aims to generate score-discriminative features by exploiting the ordinal nature of regression targets, while the latter gradually ramps up the training complexity to facilitate the assessment task that takes unscripted speech as input. Experiments conducted on the Speechocean762 benchmark dataset validates the feasibility and superiority of our method in relation to several cutting-edge baselines.",
+    "paper_abstract_zh": "自动发音评估（APA）旨在通过提供及时和细粒度的诊断反馈，量化第二语言（L2）学习者在目标语言中的发音熟练程度。目前大多数APA研究主要集中在高度受限的朗读任务上（学习者被提示朗读参考文本）；然而，在无脚本语音（或自由说话场景）中评估发音质量仍然相对未被充分探索。鉴于此，我们首先提出了HiPPO，一种专为口语设计的分层发音评估模型，该模型仅基于学习者发出的语音，在多个语言层面评估L2学习者的口语熟练度。为了提高整体评估准确性，我们引入了对比序数正则化课程学习策略用于模型训练。前者旨在利用回归目标的序数性质生成具有分数区分性的特征，而后者则逐步提高训练复杂度，以促进以无脚本语音作为输入的评估任务。在Speechocean762基准数据集上进行的实验验证了我们的方法相对于几种前沿基线的可行性和优越性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Bi-Cheng Yan, Hsin-Wei Wang, Fu-An Chao, Tien-Hong Lo, Yung-Chang Hsu, Berlin Chen",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Multi-Loss Learning for Speech Emotion Recognition with Energy-Adaptive Mixup and Frame-Level Attention",
+    "paper_title_zh": "基于能量自适应混合和帧级注意力的语音情感识别多损失学习",
+    "paper_id": "2512.04551",
+    "paper_abstract": "Speech emotion recognition (SER) is an important technology in human-computer interaction. However, achieving high performance is challenging due to emotional complexity and scarce annotated data. To tackle these challenges, we propose a multi-loss learning (MLL) framework integrating an energy-adaptive mixup (EAM) method and a frame-level attention module (FLAM). The EAM method leverages SNR-based augmentation to generate diverse speech samples capturing subtle emotional variations. FLAM enhances frame-level feature extraction for multi-frame emotional cues. Our MLL strategy combines Kullback-Leibler divergence, focal, center, and supervised contrastive loss to optimize learning, address class imbalance, and improve feature separability. We evaluate our method on four widely used SER datasets: IEMOCAP, MSP-IMPROV, RAVDESS, and SAVEE. The results demonstrate our method achieves state-of-the-art performance, suggesting its effectiveness and robustness.",
+    "paper_abstract_zh": "语音情感识别(SER)是人机交互中的重要技术。然而，由于情感的复杂性和标注数据的稀缺性，实现高性能具有挑战性。为了应对这些挑战，我们提出了一种多损失学习(MLL)框架，集成了能量自适应混合(EAM)方法和帧级注意力模块(FLAM)。EAM方法利用基于信噪比的增强技术生成多样化的语音样本，捕捉细微的情感变化。FLAM增强了多帧情感线索的帧级特征提取。我们的MLL策略结合了Kullback-Leibler散度、焦点、中心和监督对比损失，以优化学习、解决类别不平衡问题并提高特征可分性。我们在四个广泛使用的SER数据集上评估了我们的方法：IEMOCAP、MSP-IMPROV、RAVDESS和SAVEE。结果表明，我们的方法达到了最先进的性能，证明了其有效性和鲁棒性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Cong Wang, Yizhong Geng, Yuhua Wen, Qifei Li, Yingming Gao, Ruimin Wang, Chunfeng Wang, Hao Li, Ya Li, Wei Chen",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "RRPO: Robust Reward Policy Optimization for LLM-based Emotional TTS",
+    "paper_title_zh": "RRPO：基于LLM的鲁棒奖励策略优化用于情感TTS",
+    "paper_id": "2512.04552",
+    "paper_abstract": "Differentiable reinforcement learning (RL) frameworks like DiffRO offer a powerful approach for controllable text-to-speech (TTS), but are vulnerable to reward hacking, particularly for nuanced tasks like emotion control. The policy model can exploit a vanilla Reward Model (RM) by generating acoustic artifacts to achieve spurious rewards, but at the cost of degrading perceptual quality. To address this, we propose Robust Reward Policy Optimization (RRPO), a novel framework that employs a hybrid regularization scheme. This scheme develops a robust RM whose reward signal is more reliably aligned with human perception, compelling the policy to abandon detrimental shortcuts and instead learn the complex features of genuine emotions. Our ablation study confirms the enhanced robustness of our RM, as evidenced by its strong cross-lingual generalization. The subjective evaluation demonstrates that this robust RM effectively mitigates reward hacking, leading to significant improvements in both emotional expressiveness and naturalness over all baselines. Demo page: this https URL.",
+    "paper_abstract_zh": "DiffRO等可微分强化学习(RL)框架为可控文本到语音(TTS)提供了强大的方法，但对于情感控制等精细任务容易受到奖励黑客攻击。策略模型可以通过生成声学伪影来利用普通奖励模型(RM)获得虚假奖励，但这会降低感知质量。为此，我们提出鲁棒奖励策略优化(RRPO)，一种采用混合正则化方案的新框架。该方案开发了一个鲁棒RM，其奖励信号更可靠地与人类感知对齐，迫使策略放弃有害的捷径，转而学习真实情感的复杂特征。我们的消融研究证实了RM的增强鲁棒性，其强大的跨语言泛化能力证明了这一点。主观评估表明，这种鲁棒RM有效缓解了奖励黑客攻击，在情感表现力和自然度方面均显著优于所有基线。演示页面：this https URL。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Cong Wang, Changfeng Gao, Yang Xiang, Zhihao Du, Keyu An, Han Zhao, Qian Chen, Xiangang Li, Yingming Gao, Ya Li",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Standard audiogram classification from loudness scaling data using unsupervised, supervised, and explainable machine learning techniques",
+    "paper_title_zh": "使用无监督、监督和可解释机器学习技术从响度标度数据中进行标准听力图分类",
+    "paper_id": "2512.04616",
+    "paper_abstract": "To address the calibration and procedural challenges inherent in remote audiogram assessment for rehabilitative audiology, this study investigated whether calibration-independent adaptive categorical loudness scaling (ACALOS) data can be used to approximate individual audiograms by classifying listeners into standard Bisgaard audiogram types using machine learning. Three classes of machine learning approaches - unsupervised, supervised, and explainable - were evaluated. Principal component analysis (PCA) was performed to extract the first two principal components, which together explained more than 50 percent of the variance. Seven supervised multi-class classifiers were trained and compared, alongside unsupervised and explainable methods. Model development and evaluation used a large auditory reference database containing ACALOS data (N = 847). The PCA factor map showed substantial overlap between listeners, indicating that cleanly separating participants into six Bisgaard classes based solely on their loudness patterns is challenging. Nevertheless, the models demonstrated reasonable classification performance, with logistic regression achieving the highest accuracy among supervised approaches. These findings demonstrate that machine learning models can predict standard Bisgaard audiogram types, within certain limits, from calibration-independent loudness perception data, supporting potential applications in remote or resource-limited settings without requiring a traditional audiogram.",
+    "paper_abstract_zh": "为了解决康复听力远程听力图评估中固有的校准和程序挑战，本研究探讨了是否可以使用校准无关的自适应分类响度标度(ACALOS)数据，通过机器学习将听众分类为标准Bisgaard听力图类型，从而近似个体听力图。评估了三类机器学习方法：无监督、监督和可解释方法。执行了主成分分析(PCA)以提取前两个主成分，这两个主成分共同解释了超过50%的方差。训练并比较了七种监督多类分类器，以及无监督和可解释方法。模型开发和评估使用了包含ACALOS数据的大型听觉参考数据库(N = 847)。PCA因子图显示听众之间存在大量重叠，表明仅根据响度模式将参与者清晰地分为六类Bisgaard具有挑战性。尽管如此，模型仍表现出合理的分类性能，其中逻辑回归在监督方法中达到了最高的准确率。这些研究结果表明，机器学习模型可以在一定限制范围内，从校准无关的响度感知数据预测标准Bisgaard听力图类型，支持在不需要传统听力图的情况下，在远程或资源有限环境中的潜在应用。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Medical Physics (physics.med-ph)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Chen Xu, Lena Schell-Majoor, Birger Kollmeier",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Large Speech Model Enabled Semantic Communication",
+    "paper_title_zh": "基于大型语音模型的语义通信",
+    "paper_id": "2512.04711",
+    "paper_abstract": "Existing speech semantic communication systems mainly based on Joint Source-Channel Coding (JSCC) architectures have demonstrated impressive performance, but their effectiveness remains limited by model structures specifically designed for particular tasks and datasets. Recent advances indicate that generative large models pre-trained on massive datasets, can achieve outstanding performance arexhibit exceptional performance across diverse downstream tasks with minimal fine-tuning. To exploit the rich semantic knowledge embedded in large models and enable adaptive transmission over lossy channels, we propose a Large Speech Model enabled Semantic Communication (LargeSC) system. Simultaneously achieving adaptive compression and robust transmission over lossy channels remains challenging, requiring trade-offs among compression efficiency, speech quality, and latency. In this work, we employ the Mimi as a speech codec, converting speech into discrete tokens compatible with existing network architectures. We propose an adaptive controller module that enables adaptive transmission and in-band Unequal Error Protection (UEP), dynamically adjusting to both speech content and packet loss probability under bandwidth constraints. Additionally, we employ Low-Rank Adaptation (LoRA) to finetune the Moshi foundation model for generative recovery of lost speech tokens. Simulation results show that the proposed system supports bandwidths ranging from 550 bps to 2.06 kbps, outperforms conventional baselines in speech quality under high packet loss rates and achieves an end-to-end latency of approximately 460 ms, thereby demonstrating its potential for real-time deployment.",
+    "paper_abstract_zh": "现有的语音语义通信系统主要基于联合信源信道编码(JSCC)架构，已展现出令人印象深刻的性能，但其有效性仍受限于为特定任务和数据集专门设计的模型结构。最近的进展表明，在大量数据集上进行预训练的生成式大模型，可以在各种下游任务中实现卓越的性能，只需微调即可。为了利用大模型中嵌入的丰富语义知识，并实现在有损信道上的自适应传输，我们提出了一种基于大型语音模型的语义通信(LargeSC)系统。同时实现自适应压缩和在有损信道上的鲁棒传输仍然具有挑战性，需要在压缩效率、语音质量和延迟之间进行权衡。在这项工作中，我们采用Mimi作为语音编解码器，将语音转换为与现有网络架构兼容的离散令牌。我们提出了一种自适应控制器模块，实现自适应传输和带内不等错误保护(UEP)，动态调整语音内容和丢包概率，同时满足带宽限制。此外，我们采用低秩适应(LoRA)来微调Moshi基础模型，以生成性地恢复丢失的语音令牌。仿真结果表明，所提出的系统支持从550 bps到2.06 kbps的带宽，在高丢包率下语音质量优于传统基线，并实现了约460毫秒的端到端延迟，从而展示了其实时部署的潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Yun Tian, Zhijin Qin, Guocheng Lv, Ye Jin, Kaibin Huang, Zhu Han",
+    "topic": [
+      "Audio Codec",
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "M3-TTS: Multi-modal DiT Alignment & Mel-latent for Zero-shot High-fidelity Speech Synthesis",
+    "paper_title_zh": "M3-TTS: 多模态DiT对齐与Mel潜变量用于零样本高保真语音合成",
+    "paper_id": "2512.04720",
+    "paper_abstract": "Non-autoregressive (NAR) text-to-speech synthesis relies on length alignment between text sequences and audio representations, constraining naturalness and expressiveness. Existing methods depend on duration modeling or pseudo-alignment strategies that severely limit naturalness and computational efficiency. We propose M3-TTS, a concise and efficient NAR TTS paradigm based on multi-modal diffusion transformer (MM-DiT) architecture. M3-TTS employs joint diffusion transformer layers for cross-modal alignment, achieving stable monotonic alignment between variable-length text-speech sequences without pseudo-alignment requirements. Single diffusion transformer layers further enhance acoustic detail modeling. The framework integrates a mel-vae codec that provides 3* training acceleration. Experimental results on Seed-TTS and AISHELL-3 benchmarks demonstrate that M3-TTS achieves state-of-the-art NAR performance with the lowest word error rates (1.36\\% English, 1.31\\% Chinese) while maintaining competitive naturalness scores. Code and demos will be available at this https URL.",
+    "paper_abstract_zh": "非自回归文本到语音合成依赖于文本序列与音频表示之间的长度对齐，这限制了自然度和表现力。现有方法依赖于持续时间建模或伪对齐策略，这些策略严重限制了自然度和计算效率。我们提出了M3-TTS，这是一种基于多模态扩散变压器(MM-DiT)架构的简洁高效的非自回归TTS范式。M3-TTS采用联合扩散变压器层进行跨模态对齐，实现了可变长度文本-语音序列之间的稳定单调对齐，无需伪对齐要求。单个扩散变压器层进一步增强了声学细节建模。该框架集成了一个mel-VAE编解码器，可提供3倍训练加速。在Seed-TTS和AISHELL-3基准上的实验结果表明，M3-TTS实现了最先进的非自回归性能，具有最低的词错误率（英语1.36%，中文1.31%），同时保持了具有竞争力的自然度评分。代码和演示将在https URL上提供。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Xiaopeng Wang, Chunyu Qiang, Ruibo Fu, Zhengqi Wen, Xuefei Liu, Yukun Liu, Yuzhe Liang, Kang Yin, Yuankun Xie, Heng Xie, Chenxing Li, Chen Zhang, Changsheng Li",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "YingMusic-Singer: Zero-shot Singing Voice Synthesis and Editing with Annotation-free Melody Guidance",
+    "paper_title_zh": "YingMusic-Singer：无需标注的旋律引导的零样本歌唱语音合成与编辑",
+    "paper_id": "2512.04779",
+    "paper_abstract": "Singing Voice Synthesis (SVS) remains constrained in practical deployment due to its strong dependence on accurate phoneme-level alignment and manually annotated melody contours, requirements that are resource-intensive and hinder scalability. To overcome these limitations, we propose a melody-driven SVS framework capable of synthesizing arbitrary lyrics following any reference melody, without relying on phoneme-level alignment. Our method builds on a Diffusion Transformer (DiT) architecture, enhanced with a dedicated melody extraction module that derives melody representations directly from reference audio. To ensure robust melody encoding, we employ a teacher model to guide the optimization of the melody extractor, alongside an implicit alignment mechanism that enforces similarity distribution constraints for improved melodic stability and coherence. Additionally, we refine duration modeling using weakly annotated song data and introduce a Flow-GRPO reinforcement learning strategy with a multi-objective reward function to jointly enhance pronunciation clarity and melodic fidelity. Experiments show that our model achieves superior performance over existing approaches in both objective measures and subjective listening tests, especially in zero-shot and lyric adaptation settings, while maintaining high audio quality without manual annotation. This work offers a practical and scalable solution for advancing data-efficient singing voice synthesis. To support reproducibility, we release our inference code and model checkpoints.",
+    "paper_abstract_zh": "歌唱语音合成（SVS）在实际部署中仍然受到限制，因为它严重依赖准确的音素级对齐和手动标注的旋律轮廓，这些要求资源密集且阻碍了可扩展性。为了克服这些限制，我们提出了一种旋律驱动的SVS框架，能够合成遵循任意参考旋律的任意歌词，而不依赖于音素级对齐。我们的方法基于扩散变换器（DiT）架构，并增强了一个专门的旋律提取模块，直接从参考音频中提取旋律表示。为确保稳健的旋律编码，我们采用教师模型指导旋律提取器的优化，并引入隐式对齐机制，强制执行相似度分布约束，以提高旋律的稳定性和连贯性。此外，我们利用弱标注的歌曲数据改进持续时间建模，并引入具有多目标奖励函数的Flow-GRPO强化学习策略，以共同提高发音清晰度和旋律保真度。实验表明，我们的模型在客观指标和主观听力测试中均优于现有方法，特别是在零样本和歌词适应设置中，同时保持高音频质量而无需手动标注。这项工作为推进数据高效的歌唱语音合成提供了实用且可扩展的解决方案。为支持可复现性，我们发布了推理代码和模型检查点。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Junjie Zheng, Chunbo Hao, Guobin Ma, Xiaoyu Zhang, Gongyu Chen, Chaofan Ding, Zihao Chen, Lei Xie",
+    "topic": [
+      "Speech Synthesis",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "YingMusic-SVC: Real-World Robust Zero-Shot Singing Voice Conversion with Flow-GRPO and Singing-Specific Inductive Biases",
+    "paper_title_zh": "YingMusic-SVC：基于Flow-GRPO和歌唱特定归纳偏置的鲁棒零样本歌唱声音转换",
+    "paper_id": "2512.04793",
+    "paper_abstract": "Singing voice conversion (SVC) aims to render the target singer's timbre while preserving melody and lyrics. However, existing zero-shot SVC systems remain fragile in real songs due to harmony interference, F0 errors, and the lack of inductive biases for singing. We propose YingMusic-SVC, a robust zero-shot framework that unifies continuous pre-training, robust supervised fine-tuning, and Flow-GRPO reinforcement learning. Our model introduces a singing-trained RVC timbre shifter for timbre-content disentanglement, an F0-aware timbre adaptor for dynamic vocal expression, and an energy-balanced rectified flow matching loss to enhance high-frequency fidelity. Experiments on a graded multi-track benchmark show that YingMusic-SVC achieves consistent improvements over strong open-source baselines in timbre similarity, intelligibility, and perceptual naturalness, especially under accompanied and harmony-contaminated conditions, demonstrating its effectiveness for real-world SVC deployment.",
+    "paper_abstract_zh": "歌唱声音转换（SVC）旨在保留旋律和歌词的同时渲染目标歌手的音色。然而，由于和声干扰、F0错误以及缺乏针对歌唱的归纳偏置，现有的零样本SVC系统在实际歌曲中仍然脆弱。我们提出了YingMusic-SVC，一个鲁棒的零样本框架，统一了连续预训练、鲁棒监督微调和Flow-GRPO强化学习。我们的模型引入了经过歌唱训练的RVC音色转换器用于音色-内容解耦，一个F0感知的音色适配器用于动态声乐表达，以及一个能量平衡的修正流匹配损失以增强高频保真度。在分级多轨道基准测试上的实验表明，YingMusic-SVC在音色相似度、可懂度和感知自然度方面优于强大的开源基线，特别是在伴奏和和声污染条件下，证明了其在实际SVC部署中的有效性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Gongyu Chen, Xiaoyu Zhang, Zhenqiang Weng, Junjie Zheng, Da Shen, Chaofan Ding, Wei-Qiang Zhang, Zihao Chen",
+    "topic": [
+      "Speech Synthesis",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Shared Multi-modal Embedding Space for Face-Voice Association",
+    "paper_title_zh": "用于人脸-语音关联的共享多模态嵌入空间",
+    "paper_id": "2512.04814",
+    "paper_abstract": "The FAME 2026 challenge comprises two demanding tasks: training face-voice associations combined with a multilingual setting that includes testing on languages on which the model was not trained. Our approach consists of separate uni-modal processing pipelines with general face and voice feature extraction, complemented by additional age-gender feature extraction to support prediction. The resulting single-modal features are projected into a shared embedding space and trained with an Adaptive Angular Margin (AAM) loss. Our approach achieved first place in the FAME 2026 challenge, with an average Equal-Error Rate (EER) of 23.99%.",
+    "paper_abstract_zh": "FAME 2026挑战包含两项艰巨任务：结合多语言设置训练人脸-语音关联，包括在模型未训练的语言上进行测试。我们的方法包括独立的单模态处理管道，具有通用的人脸和语音特征提取，辅以额外的年龄-性别特征提取以支持预测。所得的单模态特征被投影到共享的嵌入空间，并使用自适应角度边际(AAM)损失进行训练。我们的方法在FAME 2026挑战赛中获得第一名，平均等错误率(EER)为23.99%。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Christopher Simic, Korbinian Riedhammer, Tobias Bocklet",
+    "topic": [
+      "Audio Representation Learning",
+      "Image Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Contract-Driven QoE Auditing for Speech and Singing Services: From MOS Regression to Service Graphs",
+    "paper_title_zh": "",
+    "paper_id": "2512.04827",
+    "paper_abstract": "Subjective mean opinion scores (MOS) remain the de-facto target for non-intrusive speech and singing quality assessment. However, MOS is a scalar that collapses heterogeneous user expectations, ignores service-level objectives, and is difficult to compare across deployment graphs. We propose a contract-driven QoE auditing framework: each service graph G is evaluated under a set of human-interpretable experience contracts C, yielding a contract-level satisfaction vector Q(G, C). We show that (i) classical MOS regression is a special case with a degenerate contract set, (ii) contract-driven quality is more stable than MOS under graph view transformations (e.g., pooling by system vs. by system type), and (iii) the effective sample complexity of learning contracts is governed by contract semantics rather than merely the dimensionality of C. We instantiate the framework on URGENT2024 MOS (6.9k speech utterances with raw rating vectors) and SingMOS v1 (7,981 singing clips; 80 systems). On URGENT, we train a contract-aware neural auditor on self-supervised WavLM embeddings; on SingMOS, we perform contract-driven graph auditing using released rating vectors and metadata without decoding audio. Empirically, our auditor matches strong MOS predictors in MOS accuracy while providing calibrated contract probabilities; on SingMOS, Q(G, C) exhibits substantially smaller cross-view drift than raw MOS and graph-only baselines; on URGENT, difficulty curves reveal that mis-specified \"simple\" contracts can be harder to learn than richer but better aligned contract sets.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Wenzhang Du",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Language Models as Semantic Teachers: Post-Training Alignment for Medical Audio Understanding",
+    "paper_title_zh": "语言模型作为语义教师：医学音频理解的后训练对齐",
+    "paper_id": "2512.04847",
+    "paper_abstract": "Pre-trained audio models excel at detecting acoustic patterns in auscultation sounds but often fail to grasp their clinical significance, limiting their use and performance in diagnostic tasks. To bridge this gap, we introduce AcuLa (Audio-Clinical Understanding via Language Alignment), a lightweight post-training framework that instills semantic understanding into any audio encoder by aligning it with a medical language model, which acts as a \"semantic teacher.\" To enable alignment at scale, we construct a large-scale dataset by leveraging off-the-shelf large language models to translate the rich, structured metadata accompanying existing audio recordings into coherent clinical reports. Our alignment strategy combines a representation-level contrastive objective with a self-supervised modeling, ensuring that the model learns clinical semantics while preserving fine-grained temporal cues. AcuLa achieves state-of-the-art results across 18 diverse cardio-respiratory tasks from 10 different datasets, improving the mean AUROC on classification benchmarks from 0.68 to 0.79 and, on the most challenging COVID-19 cough detection task, boosting the AUROC from 0.55 to 0.89. Our work demonstrates that this audio-language alignment transforms purely acoustic models into clinically-aware diagnostic tools, establishing a novel paradigm for enhancing physiological understanding in audio-based health monitoring.",
+    "paper_abstract_zh": "预训练音频模型在听诊声音中检测声学模式方面表现出色，但往往无法把握其临床意义，限制了它们在诊断任务中的使用和性能。为了弥合这一差距，我们引入了AcuLa（通过语言对齐实现音频临床理解），这是一个轻量级的后训练框架，通过将任何音频编码器与医学语言模型（充当\"语义教师\"）对齐，为其注入语义理解。为了实现大规模对齐，我们利用现成的大型语言模型将现有录音的丰富结构化元数据转换为连贯的临床报告，构建了一个大规模数据集。我们的对齐策略结合了表示级对比目标和自监督建模，确保模型在保留细粒度时间线索的同时学习临床语义。AcuLa在来自10个不同数据集的18种多样化心肺任务上取得了最先进的结果，将分类基准的平均AUROC从0.68提高到0.79，并在最具挑战性的COVID-19咳嗽检测任务中，将AUROC从0.55提高到0.89。我们的工作表明，这种音频语言对齐将纯声学模型转变为具有临床意识的诊断工具，为基于音频的健康监测中增强生理理解建立了一种新范式。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-05",
+    "paper_authors": "Tsai-Ning Wang, Lin-Lin Chen, Neil Zeghidour, Aaqib Saeed",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]

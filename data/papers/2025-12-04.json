@@ -1,0 +1,105 @@
+[
+  {
+    "paper_title": "State Space Models for Bioacoustics: A comparative Evaluation with Transformers",
+    "paper_title_zh": "生物声学领域的状态空间模型：与Transformer的比较评估",
+    "paper_id": "2512.03563",
+    "paper_abstract": "In this study, we evaluate the efficacy of the Mamba model in the field of bioacoustics. We first pretrain a Mamba-based audio large language model (LLM) on a large corpus of audio data using self-supervised learning. We fine-tune and evaluate BioMamba on the BEANS benchmark, a collection of diverse bioacoustic tasks including classification and detection, and compare its performance and efficiency with multiple baseline models, including AVES, a state-of-the-art Transformer-based model. The results show that BioMamba achieves comparable performance with AVES while consumption significantly less VRAM, demonstrating its potential in this domain.",
+    "paper_abstract_zh": "在本研究中，我们评估了Mamba模型在生物声学领域的有效性。我们首先使用自监督学习在大型音频数据语料库上预训练了一个基于Mamba的音频大语言模型（LLM）。我们在BEANS基准测试上对BioMamba进行微调和评估，该基准测试包含多种生物声学任务，如分类和检测，并将其性能和效率与多个基线模型（包括最先进的基于Transformer的模型AVES）进行比较。结果表明，BioMamba在性能上与AVES相当，同时显著减少了VRAM消耗，展示了该领域应用的潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-04",
+    "paper_authors": "Chengyu Tang, Sanjeev Baskiyar",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "AaPE: Aliasing-aware Patch Embedding for Self-Supervised Audio Representation Learning",
+    "paper_title_zh": "AaPE：抗混叠的补丁嵌入用于自监督音频表示学习",
+    "paper_id": "2512.03637",
+    "paper_abstract": "Transformer-based audio SSL (self-supervised learning) models often treat spectrograms as images, applying convolutional patchification with heavy temporal downsampling. This lowers the effective Nyquist frequency and introduces aliasing, while naïve low-pass filtering removes task-relevant high-frequency cues. In this study, we present Aliasing-aware Patch Embedding (AaPE), a drop-in patch stem that mitigates aliasing while preserving high-frequency information. AaPE augments standard patch tokens with features produced by a band-limited complex sinusoidal kernel using a two-sided exponential window that dynamically targets alias-prone bands. Frequency and decay parameters of the kernel are estimated from the input, enabling parallel, adaptive subband analysis whose outputs are fused with the standard patch tokens. AaPE integrates seamlessly into the masked teacher-student self-supervised learning. In addition, we combine a multi-mask strategy with a contrastive objective to enforce consistency across diverse mask patterns, stabilizing training. Pre-training on AudioSet followed by fine-tuning evaluation across diverse downstream benchmarks, which spanned categories, such as environmental sounds and other common audio domains. This approach yields state-of-the-art performance on a subset of tasks and competitive results across the remainder. Complementary linear probing evaluation mirrors this pattern, yielding clear gains on several benchmarks and strong performance elsewhere. The collective analysis of these results indicates that AaPE serves to mitigate the effects of aliasing without discarding of informative high-frequency content.",
+    "paper_abstract_zh": "基于Transformer的音频自监督学习模型通常将频谱图视为图像，应用具有大量时间下采样的卷积补丁化方法。这降低了有效奈奎斯特频率并引入了混叠，而简单的低通滤波会移除与任务相关的高频线索。在本研究中，我们提出了抗混叠补丁嵌入（AaPE），一种即插即用的补丁主干网络，可以减轻混叠同时保留高频信息。AaPE通过使用双指数窗的带限复正弦核产生的特征来增强标准补丁标记，该窗动态针对易混叠频带。核的频率和衰减参数从输入中估计，实现并行、自适应的子带分析，其输出与标准补丁标记融合。AaPE无缝集成到掩码教师-学生自监督学习中。此外，我们将多掩码策略与对比目标相结合，以在不同掩码模式间强制一致性，稳定训练。在AudioSet上进行预训练，然后在多样化的下游基准测试（涵盖环境声音和其他常见音频领域）上进行微调评估。该方法在部分任务上取得了最先进的性能，在其他任务上取得了具有竞争力的结果。互补的线性探测评估也反映了这一模式，在多个基准测试上取得了明显提升，并在其他任务上保持了强大性能。对这些结果的综合分析表明，AaPE能够减轻混叠效应，同时不丢弃有价值的高频内容。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Machine Learning (stat.ML)"
+    ],
+    "update_time": "2025-12-04",
+    "paper_authors": "Kohei Yamamoto, Kosuke Okusa",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "A Convolutional Framework for Mapping Imagined Auditory MEG into Listened Brain Responses",
+    "paper_title_zh": "一种用于映射想象听觉MEG到聆听脑响应的卷积框架",
+    "paper_id": "2512.03458",
+    "paper_abstract": "Decoding imagined speech engages complex neural processes that are difficult to interpret due to uncertainty in timing and the limited availability of imagined-response datasets. In this study, we present a Magnetoencephalography (MEG) dataset collected from trained musicians as they imagined and listened to musical and poetic stimuli. We show that both imagined and perceived brain responses contain consistent, condition-specific information. Using a sliding-window ridge regression model, we first mapped imagined responses to listened responses at the single-subject level, but found limited generalization across subjects. At the group level, we developed an encoder-decoder convolutional neural network with a subject-specific calibration layer that produced stable and generalizable mappings. The CNN consistently outperformed the null model, yielding significantly higher correlations between predicted and true listened responses for nearly all held-out subjects. Our findings demonstrate that imagined neural activity can be transformed into perception-like responses, providing a foundation for future brain-computer interface applications involving imagined speech and music.",
+    "paper_abstract_zh": "解码想象言语涉及复杂的神经过程，由于时间不确定性和想象响应数据集的有限可用性，这些过程难以解释。在本研究中，我们呈现了一个从训练有素的音乐家那里收集的脑磁图(MEG)数据集，他们在想象和聆听音乐和诗歌刺激时进行了这些活动。我们表明，想象和感知的脑响应都包含一致的、特定条件的信息。首先，使用滑动窗口岭回归模型，我们在单受试者水平上将想象响应映射到聆听响应，但发现跨受试者的泛化能力有限。在群体水平上，我们开发了一种具有受试者特定校准层的编码器-解码器卷积神经网络，该网络产生了稳定且可泛化的映射。CNN始终优于零模型，对于几乎所有保留的受试者，预测的聆听响应与真实聆听响应之间的相关性显著更高。我们的研究结果表明，想象神经活动可以转化为类似感知的响应，为涉及想象言语和音乐的脑机接口应用奠定了基础。",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-04",
+    "paper_authors": "Maryam Maghsoudi, Mohsen Rezaeizadeh, Shihab Shamma",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Head, posture, and full-body gestures in interactive communication",
+    "paper_title_zh": "交互式交流中的头部、姿势和全身手势",
+    "paper_id": "2512.03636",
+    "paper_abstract": "When face-to-face communication becomes effortful due to background noise or interfering talkers, the role of visual cues becomes increasingly important for communication success. While previous research has selectively examined head or hand movements, here we explore movements of the whole body in acoustically adverse conditions. We hypothesized that increasing background noise in conversations would lead to increased gesture frequency in hand, head, trunk, and leg movements typical of conversation. Increased use of hand movements should support the speaker's role, while increased head and trunk movements may help the listener. We conducted a free dyadic conversation experiment with normal-hearing participants (n=8) in a virtual acoustic environment. Conversational movements were described with a newly developed labeling system for typical conversational actions, and the frequency of individual types was analyzed. In addition, we analyzed gesture quality by assessing hand-speech synchrony, with the hypothesis that higher levels of background noise would lead to a loss of synchrony according to an interactive coupling model. Higher noise levels led to increased hand-gesture complexity during speaking and listening, more pronounced up-down head movements, and contrary to expectations, head movements during listening generally decreased relative to speaking. Synchrony and peak velocity were unaffected by noise, while gesture quality scaled only modestly. The results support previous findings regarding gesturing frequency, but we found only limited evidence for changes in speech-gesture synchrony. This work reveals communication patterns of the whole body and illustrates multimodal adaptation to communication demands.",
+    "paper_abstract_zh": "当面对面交流因背景噪音或干扰说话者而变得费力时，视觉线索对交流成功的重要性日益增加。虽然先前的研究有选择地检查了头部或手部动作，但我们在声学不利条件下探索了全身的动作。我们假设，对话中背景噪音的增加会导致典型对话的手部、头部、躯干和腿部动作手势频率的增加。手部动作的增加应支持说话者的角色，而头部和躯干动作的增加可能有助于听者。我们在虚拟声学环境中对正常听力参与者（n=8）进行了自由对话实验。对话动作用新开发的典型对话动作标记系统描述，并分析了每种类型的频率。此外，我们通过评估手部-言语同步性分析了手势质量，假设根据交互耦合模型，背景噪音的增加会导致同步性的丧失。更高的噪音水平导致说话和倾听时手部手势复杂性的增加，更明显的上下头部动作，与预期相反，倾听时的头部动作通常相对于说话减少。同步性和峰值速度不受噪音影响，而手势质量仅适度增加。结果支持了关于手势频率的先前发现，但我们发现关于言语-手势同步性变化的证据有限。这项工作揭示了全身的交流模式，并说明了交流需求的多模态适应。",
+    "subjects": [
+      "Human-Computer Interaction (cs.HC)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-04",
+    "paper_authors": "Ľuboš Hládek, Bernhard U. Seeber",
+    "topic": [
+      "Speech Recognition",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Omni-AutoThink: Adaptive Multimodal Reasoning via Reinforcement Learning",
+    "paper_title_zh": "Omni-AutoThink: 通过强化学习的自适应多模态推理",
+    "paper_id": "2512.03783",
+    "paper_abstract": "Recent advances in Omni models have enabled unified multimodal perception and generation. However, most existing systems still exhibit rigid reasoning behaviors, either overthinking simple problems or failing to reason when necessary. To address this limitation, we propose Omni-AutoThink, a novel adaptive reasoning framework that dynamically adjusts the model's reasoning depth according to task difficulty. Our framework comprises two stages: (1) an Adaptive Supervised Fine-Tuning (Adaptive SFT) stage, which endows the Omni model with fundamental reasoning capability using large-scale reasoning-augmented data, and (2) an Adaptive Reinforcement Learning (Adaptive GRPO) stage, which optimizes reasoning behaviors based on task complexity and reward feedback. We further construct a comprehensive adaptive reasoning benchmark that spans text-only, text-audio, text-visual, and text-audio-visual modalities, providing both training and evaluation splits for multimodal reasoning assessment. Experimental results demonstrate that our proposed framework significantly improves adaptive reasoning performance compared to previous baselines. All benchmark data and code will be publicly released.",
+    "paper_abstract_zh": "最近的全能模型(Omni models)的进展实现了统一的多模态感知和生成。然而，大多数现有系统仍然表现出僵化的推理行为，要么对简单问题过度思考，要么在必要时无法进行推理。为了解决这一局限性，我们提出了Omni-AutoThink，这是一种新颖的自适应推理框架，能够根据任务难度动态调整模型的推理深度。我们的框架包含两个阶段：(1)自适应监督微调(Adaptive SFT)阶段，使用大规模增强推理数据赋予全能模型基本推理能力；(2)自适应强化学习(Adaptive GRPO)阶段，基于任务复杂性和奖励反馈优化推理行为。我们进一步构建了一个全面的自适应推理基准，涵盖纯文本、文本-音频、文本-视觉以及文本-音频-视觉模态，为多模态推理评估提供了训练和评估分割。实验结果表明，与之前的基线相比，我们提出的框架显著提高了自适应推理性能。所有基准数据和代码将公开发布。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-04",
+    "paper_authors": "Dongchao Yang, Songxiang Liu, Disong Wang, Yuanyuan Wang, Guanglu Wan, Helen Meng",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
