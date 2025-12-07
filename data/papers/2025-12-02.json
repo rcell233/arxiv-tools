@@ -287,10 +287,10 @@
   },
   {
     "paper_title": "Masked Symbol Modeling for Demodulation of Oversampled Baseband Communication Signals in Impulsive Noise-Dominated Channels",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于掩码符号建模的过采样基带通信信号在脉冲噪声主导信道中的解调",
     "paper_id": "2512.01428",
     "paper_abstract": "Recent breakthroughs in natural language processing show that attention mechanism in Transformer networks, trained via masked-token prediction, enables models to capture the semantic context of the tokens and internalize the grammar of language. While the application of Transformers to communication systems is a burgeoning field, the notion of context within physical waveforms remains under-explored. This paper addresses that gap by re-examining inter-symbol contribution (ISC) caused by pulse-shaping overlap. Rather than treating ISC as a nuisance, we view it as a deterministic source of contextual information embedded in oversampled complex baseband signals. We propose Masked Symbol Modeling (MSM), a framework for the physical (PHY) layer inspired by Bidirectional Encoder Representations from Transformers methodology. In MSM, a subset of symbol aligned samples is randomly masked, and a Transformer predicts the missing symbol identifiers using the surrounding \"in-between\" samples. Through this objective, the model learns the latent syntax of complex baseband waveforms. We illustrate MSM's potential by applying it to the task of demodulating signals corrupted by impulsive noise, where the model infers corrupted segments by leveraging the learned context. Our results suggest a path toward receivers that interpret, rather than merely detect communication signals, opening new avenues for context-aware PHY layer design.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "自然语言处理领域的最新突破表明，通过掩码标记训练的Transformer网络中的注意力机制使模型能够捕获标记的语义上下文并内化语言的语法。尽管Transformer在通信系统中的应用是一个新兴领域，但物理波形中的上下文概念仍未得到充分探索。本文通过重新审视由脉冲整形重叠引起的符号间贡献(ISC)来填补这一空白。我们不将ISC视为干扰，而是将其视为嵌入在过采样复基带信号中的确定性上下文信息来源。我们提出了掩码符号建模(MSM)，这是一种受Transformer双向编码器表示方法启发的物理(PHY)层框架。在MSM中，一部分符号对齐的样本被随机掩码，Transformer使用周围的'中间'样本预测缺失的符号标识符。通过这一目标，模型学习复基带波形的潜在语法。我们通过将MSM应用于解调受脉冲噪声破坏的信号任务来展示其潜力，模型利用学习到的上下文推断损坏的段。我们的研究结果表明，接收器可以解释而不仅仅是检测通信信号，为上下文感知的PHY层设计开辟了新途径。",
     "subjects": [
       "Signal Processing (eess.SP)",
       "Machine Learning (cs.LG)",
@@ -298,8 +298,12 @@
     ],
     "update_time": "2025-12-02",
     "paper_authors": "Oguz Bedir, Nurullah Sevim, Mostafa Ibrahim, Sabit Ekin",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "MEGConformer: Conformer-Based MEG Decoder for Robust Speech and Phoneme Classification",
