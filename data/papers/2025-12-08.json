@@ -1,0 +1,162 @@
+[
+  {
+    "paper_title": "SyncVoice: Towards Video Dubbing with Vision-Augmented Pretrained TTS Model",
+    "paper_title_zh": "SyncVoice: 基于视觉增强的预训练TTS模型的视频配音方法",
+    "paper_id": "2512.05126",
+    "paper_abstract": "Video dubbing aims to generate high-fidelity speech that is precisely temporally aligned with the visual content. Existing methods still suffer from limitations in speech naturalness and audio-visual synchronization, and are limited to monolingual settings. To address these challenges, we propose SyncVoice, a vision-augmented video dubbing framework built upon a pretrained text-to-speech (TTS) model. By fine-tuning the TTS model on audio-visual data, we achieve strong audiovisual consistency. We propose a Dual Speaker Encoder to effectively mitigate inter-language interference in cross-lingual speech synthesis and explore the application of video dubbing in video translation scenarios. Experimental results show that SyncVoice achieves high-fidelity speech generation with strong synchronization performance, demonstrating its potential in video dubbing tasks.",
+    "paper_abstract_zh": "视频配音旨在生成与视觉内容精确时间对齐的高保真语音。现有方法在语音自然度和音视频同步方面仍存在局限性，且仅限于单语设置。为解决这些挑战，我们提出了SyncVoice，这是一个基于预训练文本到语音(TTS)模型构建的视觉增强视频配音框架。通过在音视频数据上微调TTS模型，我们实现了强大的音视频一致性。我们提出了双说话人编码器，以有效减轻跨语言语音合成中的语言间干扰，并探索了视频配音在视频翻译场景中的应用。实验结果表明，SyncVoice实现了具有强大同步性能的高保真语音生成，展示了其在视频配音任务中的潜力。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-12-08",
+    "paper_authors": "Kaidi Wang, Yi He, Wenhao Guan, Weijie Wu, Hongwu Ding, Xiong Zhang, Di Wu, Meng Meng, Jian Luan, Lin Li, Qingyang Hong",
+    "topic": [
+      "Speech Synthesis",
+      "Video Generation"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "A Multi-Channel Auditory Signal Encoder with Adaptive Resolution Using Volatile Memristors",
+    "paper_title_zh": "一种使用挥发性忆阻器的多通道听觉信号自适应分辨率编码器",
+    "paper_id": "2512.05701",
+    "paper_abstract": "We demonstrate and experimentally validate an end-to-end hybrid CMOS-memristor auditory encoder that realises adaptive-threshold, asynchronous delta-modulation (ADM)-based spike encoding by exploiting the inherent volatility of HfTiOx devices. A spike-triggered programming pulse rapidly raises the ADM threshold Delta (desensitisation); the device's volatility then passively lowers Delta when activity subsides (resensitisation), emphasising onsets while restoring sensitivity without static control energy. Our prototype couples an 8-channel 130 nm encoder IC to off-chip HfTiOx devices via a switch interface and an off-chip controller that monitors spike activity and issues programming events. An on-chip current-mirror transimpedance amplifier (TIA) converts device current into symmetric thresholds, enabling both sensitive and conservative encoding regimes. Evaluated with gammatone-filtered speech, the adaptive loop-at matched spike budget-sharpens onsets and preserves fine temporal detail that a fixed-Delta baseline misses; multi-channel spike cochleagrams show the same trend. Together, these results establish a practical hybrid CMOS-memristor pathway to onset-salient, spike-efficient neuromorphic audio front-ends and motivate low-power single-chip integration.",
+    "paper_abstract_zh": "我们展示并实验验证了一种端到端的混合CMOS-忆阻器听觉编码器，通过利用HfTiOx器件的固有挥发性，实现了自适应阈值、异步增量调制(ADM)的尖峰编码。尖峰触发的编程脉冲快速提高ADM阈值Δ（去敏感化）；然后器件的挥发性在活动减弱时被动降低Δ（再敏感化），强调起始点同时恢复灵敏度而不需要静态控制能量。我们的原型将8通道130纳米编码器IC通过开关接口和监控尖峰活动并发出编程事件的片外控制器连接到片外HfTiOx器件。片上电流镜跨阻放大器(TIA)将器件电流转换为对称阈值，实现敏感和保守的编码模式。使用伽马滤波语音评估时，自适应循环在匹配的尖峰预算下锐化了起始点，并保留了固定Δ基线所错过的精细时间细节；多通道尖峰耳蜗图显示了相同的趋势。总之，这些结果建立了一种实用的混合CMOS-忆阻器途径，用于起始点突出、尖峰高效的神经形态音频前端，并推动了低功耗单片集成的研究。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-08",
+    "paper_authors": "Dongxu Guo, Deepika Yadav, Patrick Foster, Spyros Stathopoulos, Mingyi Chen, Themis Prodromakis, Shiwei Wang",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speech World Model: Causal State-Action Planning with Explicit Reasoning for Speech",
+    "paper_title_zh": "语音世界模型：基于显式推理的语音因果状态-动作规划",
+    "paper_id": "2512.05933",
+    "paper_abstract": "Current speech-language models (SLMs) typically use a cascade of speech encoder and large language model, treating speech understanding as a single black box. They analyze the content of speech well but reason weakly about other aspects, especially under sparse supervision. Thus, we argue for explicit reasoning over speech states and actions with modular and transparent decisions. Inspired by cognitive science we adopt a modular perspective and a world model view in which the system learns forward dynamics over latent states. We factorize speech understanding into four modules that communicate through a causal graph, establishing a cognitive state search space. Guided by posterior traces from this space, an instruction-tuned language model produces a concise causal analysis and a user-facing response, enabling counterfactual interventions and interpretability under partial supervision. We present the first graph based modular speech model for explicit reasoning and we will open source the model and data to promote the development of advanced speech understanding.",
+    "paper_abstract_zh": "当前的语音语言模型(SLMs)通常采用语音编码器和大型语言模型的级联结构，将语音理解视为单一的黑盒。它们能很好地分析语音内容，但在其他方面的推理能力较弱，特别是在监督稀疏的情况下。因此，我们主张对语音状态和动作进行显式推理，采用模块化和透明的决策方式。受认知科学启发，我们采用模块化视角和世界模型观点，系统在潜在状态上学习前向动态。我们将语音理解分解为四个模块，这些模块通过因果图进行通信，建立了认知状态搜索空间。在该空间的后验轨迹指导下，一个经过指令调整的语言模型生成简洁的因果分析和面向用户的响应，实现了在部分监督下的反事实干预和可解释性。我们提出了首个基于图结构的模块化语音模型，用于显式推理，并将开源该模型和数据，以促进高级语音理解的发展。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-08",
+    "paper_authors": "Xuanru Zhou, Jiachen Lian, Henry Hong, Xinyi Yang, Gopala Anumanchipalli",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Noise Suppression for Time Difference of Arrival: Performance Evaluation of a Generalized Cross-Correlation Method Using Mean Signal and Inverse Filter",
+    "paper_title_zh": "",
+    "paper_id": "2512.05355",
+    "paper_abstract": "This paper proposes a novel generalized cross-correlation (GCC) method, termed GCC-MSIF, to improve time difference of arrival (TDOA) estimation accuracy in noisy environments. Conventional GCC methods often suffer from performance degradation under low signal-to-noise ratio (SNR) conditions, particularly when the signal bandwidth is unknown. GCC-MSIF introduces a \"mean signal\" estimated from multi-channel inputs and an \"inverse filter\" to virtually reconstruct the source signal, enabling adaptive suppression of out-of-band noise. Numerical simulations simulating a small-scale array demonstrate that GCC-MSIF significantly outperforms conventional methods, such as GCC-PHAT and GCC-SCOT, in low SNR regions and achieves robustness comparable to or exceeding the maximum likelihood (GCC-ML) method. Furthermore, the estimation accuracy improves scalably with the number of array elements. These results suggest that GCC-MSIF is a promising solution for robust passive localization in practical blind environments.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-08",
+    "paper_authors": "Hirotaka Obo, Yuki Fujita, Masahisa Ishii, Hideki Moriyama, Ryota Tsuchiya, Yuta Ohashi, Kotaro Seki",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Decoding Selective Auditory Attention to Musical Elements in Ecologically Valid Music Listening",
+    "paper_title_zh": "解码生态有效音乐聆听中的选择性听觉注意对音乐元素的注意",
+    "paper_id": "2512.05528",
+    "paper_abstract": "Art has long played a profound role in shaping human emotion, cognition, and behavior. While visual arts such as painting and architecture have been studied through eye tracking, revealing distinct gaze patterns between experts and novices, analogous methods for auditory art forms remain underdeveloped. Music, despite being a pervasive component of modern life and culture, still lacks objective tools to quantify listeners' attention and perceptual focus during natural listening experiences. To our knowledge, this is the first attempt to decode selective attention to musical elements using naturalistic, studio-produced songs and a lightweight consumer-grade EEG device with only four electrodes. By analyzing neural responses during real world like music listening, we test whether decoding is feasible under conditions that minimize participant burden and preserve the authenticity of the musical experience. Our contributions are fourfold: (i) decoding music attention in real studio-produced songs, (ii) demonstrating feasibility with a four-channel consumer EEG, (iii) providing insights for music attention decoding, and (iv) demonstrating improved model ability over prior work. Our findings suggest that musical attention can be decoded not only for novel songs but also across new subjects, showing performance improvements compared to existing approaches under our tested conditions. These findings show that consumer-grade devices can reliably capture signals, and that neural decoding in music could be feasible in real-world settings. This paves the way for applications in education, personalized music technologies, and therapeutic interventions.",
+    "paper_abstract_zh": "艺术长期以来在塑造人类情感、认知和行为方面发挥着重要作用。虽然视觉艺术如绘画和建筑已通过眼动追踪进行研究，揭示了专家与新手之间的不同注视模式，但听觉艺术形式的相关方法仍然发展不足。尽管音乐是现代生活和文化中普遍存在的组成部分，但在自然聆听体验中，仍然缺乏客观工具来量化听众的注意力和感知焦点。据我们所知，这是首次使用自然、工作室制作的歌曲和仅配备四个电极的轻量级消费级脑电图设备来解码对音乐元素的选择性注意。通过分析真实世界音乐聆听过程中的神经反应，我们测试了在最小化参与者负担并保持音乐体验真实性的条件下，解码是否可行。我们的贡献有四个方面：(i) 解码真实工作室制作歌曲中的音乐注意力，(ii) 证明四通道消费级脑电图的可行性，(iii) 提供音乐注意力解码的见解，(iv) 展示与先前工作相比模型能力的提升。我们的研究结果表明，音乐注意力不仅可以针对新歌曲进行解码，还可以跨新受试者进行解码，并在我们测试的条件下表现出比现有方法更好的性能。这些发现表明，消费级设备可以可靠地捕获信号，并且音乐中的神经解码在现实世界环境中是可行的。这为教育、个性化音乐技术和治疗干预的应用铺平了道路。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)",
+      "Neurons and Cognition (q-bio.NC)"
+    ],
+    "update_time": "2025-12-08",
+    "paper_authors": "Taketo Akama, Zhuohao Zhang, Tsukasa Nagashima, Takagi Yutaka, Shun Minamikawa, Natalia Polouliakh",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "The T12 System for AudioMOS Challenge 2025: Audio Aesthetics Score Prediction System Using KAN- and VERSA-based Models",
+    "paper_title_zh": "T12系统用于AudioMOS挑战赛2025：基于KAN和VERSA模型的音频美学评分预测系统",
+    "paper_id": "2512.05592",
+    "paper_abstract": "We propose an audio aesthetics score (AES) prediction system by CyberAgent (AESCA) for AudioMOS Challenge 2025 (AMC25) Track 2. The AESCA comprises a Kolmogorov--Arnold Network (KAN)-based audiobox aesthetics and a predictor from the metric scores using the VERSA toolkit. In the KAN-based predictor, we replaced each multi-layer perceptron layer in the baseline model with a group-rational KAN and trained the model with labeled and pseudo-labeled audio samples. The VERSA-based predictor was designed as a regression model using extreme gradient boosting, incorporating outputs from existing metrics. Both the KAN- and VERSA-based models predicted the AES, including the four evaluation axes. The final AES values were calculated using an ensemble model that combined four KAN-based models and a VERSA-based model. Our proposed T12 system yielded the best correlations among the submitted systems, in three axes at the utterance level, two axes at the system level, and the overall average.",
+    "paper_abstract_zh": "我们为AudioMOS挑战赛2025（AMC25）的第二赛道提出了一种由CyberAgent开发的音频美学评分（AES）预测系统（AESCA）。AESCA包含一个基于Kolmogorov-Arnold网络（KAN）的audiobox美学预测器，以及一个使用VERSA工具包从指标分数中提取的预测器。在基于KAN的预测器中，我们将基线模型中的每个多层感知器层替换为一组有理KAN，并使用标记和伪标记的音频样本训练模型。基于VERSA的预测器被设计为一个使用极端梯度提升的回归模型，整合了现有指标的输出。基于KAN和VERSA的模型都预测了AES，包括四个评估轴。最终的AES值是通过组合四个基于KAN的模型和一个基于VERSA的模型的集成模型计算得出的。我们提出的T12系统在提交的系统中获得了最佳相关性，在语句级别有三个轴，在系统级别有两个轴，以及整体平均值。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-08",
+    "paper_authors": "Katsuhiko Yamamoto, Koichi Miyazaki, Shogo Seki",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Lyrics Matter: Exploiting the Power of Learnt Representations for Music Popularity Prediction",
+    "paper_title_zh": "歌词很重要：利用学习到的表示进行音乐流行度预测",
+    "paper_id": "2512.05508",
+    "paper_abstract": "Accurately predicting music popularity is a critical challenge in the music industry, offering benefits to artists, producers, and streaming platforms. Prior research has largely focused on audio features, social metadata, or model architectures. This work addresses the under-explored role of lyrics in predicting popularity. We present an automated pipeline that uses LLM to extract high-dimensional lyric embeddings, capturing semantic, syntactic, and sequential information. These features are integrated into HitMusicLyricNet, a multimodal architecture that combines audio, lyrics, and social metadata for popularity score prediction in the range 0-100. Our method outperforms existing baselines on the SpotGenTrack dataset, which contains over 100,000 tracks, achieving 9% and 20% improvements in MAE and MSE, respectively. Ablation confirms that gains arise from our LLM-driven lyrics feature pipeline (LyricsAENet), underscoring the value of dense lyric representations.",
+    "paper_abstract_zh": "准确预测音乐流行度是音乐行业面临的关键挑战，可为艺术家、制作人和流媒体平台带来益处。先前的研究主要集中在音频特征、社交元数据或模型架构上。这项工作探讨了歌词在预测流行度中尚未充分探索的作用。我们提出了一种自动化流程，使用大型语言模型（LLM）提取高维歌词嵌入，捕捉语义、句法和序列信息。这些特征被整合到HitMusicLyricNet中，这是一个多模态架构，结合音频、歌词和社交元数据来预测0-100范围内的流行度分数。我们在包含超过10万首曲目的SpotGenTrack数据集上，我们的方法超越了现有基线，在MAE和MSE上分别实现了9%和20%的改进。消融实验证实，性能提升来自于我们基于LLM的歌词特征提取流程（LyricsAENet），强调了密集歌词表示的价值。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-08",
+    "paper_authors": "Yash Choudhary, Preeti Rao, Pushpak Bhattacharyya",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "MuMeNet: A Network Simulator for Musical Metaverse Communications",
+    "paper_title_zh": "MuMeNet：一种面向音乐元宇宙通信的网络模拟器",
+    "paper_id": "2512.05201",
+    "paper_abstract": "The Metaverse, a shared and spatially organized digital continuum, is transforming various industries, with music emerging as a leading use case. Live concerts, collaborative composition, and interactive experiences are driving the Musical Metaverse (MM), but the requirements of the underlying network and service infrastructures hinder its growth. These challenges underscore the need for a novel modeling and simulation paradigm tailored to the unique characteristics of MM sessions, along with specialized service provisioning strategies capable of capturing their interactive, heterogeneous, and multicast-oriented nature. To this end, we make a first attempt to formally model and analyze the problem of service provisioning for MM sessions in 5G/6G networks. We first formalize service and network graph models for the MM, using \"live audience interaction in a virtual concert\" as a reference scenario. We then present MuMeNet, a novel discrete-event network simulator specifically tailored to the requirements and the traffic dynamics of the MM. We showcase the effectiveness of MuMeNet by running a linear programming based orchestration policy on the reference scenario and providing performance analysis under realistic MM workloads.",
+    "paper_abstract_zh": "元宇宙作为一个共享且空间组织化的数字连续体，正在改变各个行业，其中音乐成为主要用例之一。现场音乐会、协作创作和互动体验推动着音乐元宇宙（MM）的发展，但其底层网络和服务基础设施的需求阻碍了其增长。这些挑战凸显了需要一种针对MM会话独特特性的新型建模和仿真范式，以及能够捕捉其交互性、异构性和多播特性的专门服务提供策略。为此，我们首次尝试对5G/6G网络中MM会话的服务提供问题进行形式化建模和分析。我们首先以'虚拟音乐会中的现场观众互动'为参考场景，为MM形式化了服务和网络图模型。然后，我们提出了MuMeNet，一种专门针对MM需求和流量动态的新型离散事件网络模拟器。我们在参考场景上运行基于线性编排的策略，并通过在真实的MM工作负载下提供性能分析，展示了MuMeNet的有效性。",
+    "subjects": [
+      "Networking and Internet Architecture (cs.NI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-08",
+    "paper_authors": "Ali Al Housseini, Jaime Llorca, Luca Turchet, Tiziano Leidi, Cristina Rottondi, Omran Ayoub",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
