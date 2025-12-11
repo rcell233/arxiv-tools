@@ -1,0 +1,203 @@
+[
+  {
+    "paper_title": "LG Uplus System with Multi-Speaker IDs and Discriminator-based Sub-Judges for the WildSpoof Challenge",
+    "paper_title_zh": "LG Uplus系统：基于多说话人ID和判别器子评估器的WildSpoof挑战方案",
+    "paper_id": "2512.09000",
+    "paper_abstract": "This paper describes our submission to the WildSpoof Challenge Track 2, which focuses on spoof-aware speaker verification (SASV) in the presence of high-quality text-to-speech (TTS) attacks. We adopt a ResNet-221 back-bone and study two speaker-labeling strategies, namelyDual-Speaker IDs and Multi-Speaker IDs, to explicitly enlarge the margin between bona fide and generated speech in the embedding space. In addition, we propose discriminator-based sub-judge systems that reuse internal features from HiFi-GAN and BigVGAN discriminators, aggregated via multi-query multi-head attentive statistics pooling(MQMHA). Experimental results on the SpoofCeleb corpus show that our system design is effective in improving agnostic detection cost function (a-DCF).",
+    "paper_abstract_zh": "本文描述了我们提交给WildSpoof挑战赛第二赛道的工作，该赛道专注于应对高质量文本转语音(TTS)攻击的欺骗感知说话人验证(SASV)。我们采用ResNet-221作为骨干网络，并研究了两种说话人标记策略，即双说话人ID和多说话人ID，以在嵌入空间中明确扩大真实语音与生成语音之间的差距。此外，我们提出了基于判别器的子评估器系统，该系统复用HiFi-GAN和BigVGAN判别器的内部特征，并通过多查询多头注意力统计池化(MQMHA)进行聚合。在SpoofCeleb语料库上的实验结果表明，我们的系统设计在提高未知检测成本函数(a-DCF)方面是有效的。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Jinyoung Park, Won Jang, Jiwoong Park",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Human perception of audio deepfakes: the role of language and speaking style",
+    "paper_title_zh": "人类对音频深度伪造的感知：语言和说话风格的作用",
+    "paper_id": "2512.09221",
+    "paper_abstract": "Audio deepfakes have reached a level of realism that makes it increasingly difficult to distinguish between human and artificial voices, which poses risks such as identity theft or spread of disinformation. Despite these concerns, research on humans' ability to identify deepfakes is limited, with most studies focusing on English and very few exploring the reasons behind listeners' perceptual decisions. This study addresses this gap through a perceptual experiment in which 54 listeners (28 native Spanish speakers and 26 native Japanese speakers) classified voices as natural or synthetic, and justified their choices. The experiment included 80 stimuli (50% artificial), organized according to three variables: language (Spanish/Japanese), speech style (audiobooks/interviews), and familiarity with the voice (familiar/unfamiliar). The goal was to examine how these variables influence detection and to analyze qualitatively the reasoning behind listeners' perceptual decisions. Results indicate an average accuracy of 59.11%, with higher performance on authentic samples. Judgments of vocal naturalness rely on a combination of linguistic and non-linguistic cues. Comparing Japanese and Spanish listeners, our qualitative analysis further reveals both shared cues and notable cross-linguistic differences in how listeners conceptualize the \"humanness\" of speech. Overall, participants relied primarily on suprasegmental and higher-level or extralinguistic characteristics - such as intonation, rhythm, fluency, pauses, speed, breathing, and laughter - over segmental features. These findings underscore the complexity of human perceptual strategies in distinguishing natural from artificial speech and align partly with prior research emphasizing the importance of prosody and phenomena typical of spontaneous speech, such as disfluencies.",
+    "paper_abstract_zh": "音频深度伪造已达到逼真的程度，使得区分人类和人工声音变得越来越困难，这带来了身份盗窃或虚假信息传播等风险。尽管存在这些担忧，但关于人类识别深度伪造能力的研究有限，大多数研究集中在英语上，很少有研究探讨听众感知决策背后的原因。本研究通过一项感知实验填补了这一空白，实验中54名听众（28名西班牙语母语者和26名日语母语者）将声音分类为自然或合成，并解释了他们的选择。实验包括80个刺激样本（50%为人工合成），根据三个变量组织：语言（西班牙语/日语）、说话风格（有声读物/访谈）以及对声音的熟悉度（熟悉/不熟悉）。目标是检验这些变量如何影响检测，并定性分析听众感知决策背后的推理。结果表明，平均准确率为59.11%，在真实样本上的表现更高。声音自然性的判断依赖于语言和非语言线索的组合。通过比较日语和西班牙语听众，我们的定性分析进一步揭示了听众在概念化语音'人性'方面的共同线索和显著的跨语言差异。总体而言，参与者主要依赖超音段特征和更高级的或语言外特征，如语调、节奏、流畅度、停顿、速度、呼吸和笑声，而非音段特征。这些发现强调了人类在区分自然和人工语音时的感知策略的复杂性，并在一定程度上与先前强调韵律和自发言语现象重要性的研究一致。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Eugenia San Segundo, Aurora López-Jareño, Xin Wang, Junichi Yamagishi",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Robust Speech Activity Detection in the Presence of Singing Voice",
+    "paper_title_zh": "存在歌声情况下的鲁棒语音活动检测",
+    "paper_id": "2512.09713",
+    "paper_abstract": "Speech Activity Detection (SAD) systems often misclassify singing as speech, leading to degraded performance in applications such as dialogue enhancement and automatic speech recognition. We introduce Singing-Robust Speech Activity Detection ( SR-SAD ), a neural network designed to robustly detect speech in the presence of singing. Our key contributions are: i) a training strategy using controlled ratios of speech and singing samples to improve discrimination, ii) a computationally efficient model that maintains robust performance while reducing inference runtime, and iii) a new evaluation metric tailored to assess SAD robustness in mixed speech-singing scenarios. Experiments on a challenging dataset spanning multiple musical genres show that SR-SAD maintains high speech detection accuracy (AUC = 0.919) while rejecting singing. By explicitly learning to distinguish between speech and singing, SR-SAD enables more reliable SAD in mixed speech-singing scenarios.",
+    "paper_abstract_zh": "语音活动检测(SAD)系统经常将歌声误分类为语音，导致对话增强和自动语音识别等应用性能下降。我们提出了歌声鲁棒语音活动检测(SR-SAD)，这是一种神经网络，旨在存在歌声的情况下鲁棒地检测语音。我们的主要贡献包括：i)使用语音和歌声样本的受控比例进行训练的策略，以提高区分能力；ii)一种计算效率高的模型，在保持鲁棒性能的同时减少推理运行时间；iii)一种新的评估指标，专门用于评估混合语音-歌声场景中SAD的鲁棒性。在涵盖多种音乐流派的有挑战性数据集上的实验表明，SR-SAD在拒绝歌声的同时保持高语音检测精度(AUC = 0.919)。通过明确学习区分语音和歌声，SR-SAD能够在混合语音-歌声场景中实现更可靠的SAD。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Philipp Grundhuber, Mhd Modar Halimeh, Martin Strauß, Emanuël A. P. Habets",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Enhancing Automatic Speech Recognition Through Integrated Noise Detection Architecture",
+    "paper_title_zh": "通过集成噪声检测架构增强自动语音识别",
+    "paper_id": "2512.08973",
+    "paper_abstract": "This research presents a novel approach to enhancing automatic speech recognition systems by integrating noise detection capabilities directly into the recognition architecture. Building upon the wav2vec2 framework, the proposed method incorporates a dedicated noise identification module that operates concurrently with speech transcription. Experimental validation using publicly available speech and environmental audio datasets demonstrates substantial improvements in transcription quality and noise discrimination. The enhanced system achieves superior performance in word error rate, character error rate, and noise detection accuracy compared to conventional architectures. Results indicate that joint optimization of transcription and noise classification objectives yields more reliable speech recognition in challenging acoustic conditions.",
+    "paper_abstract_zh": "本研究提出了一种新颖的方法，通过将噪声检测功能直接集成到识别架构中，来增强自动语音识别系统。基于wav2vec2框架，该方法集成了一个专用的噪声识别模块，该模块与语音转录同时运行。使用公开可用的语音和环境音频数据集进行的实验验证表明，转录质量和噪声辨别能力有显著提高。与传统架构相比，增强系统在词错误率、字符错误率和噪声检测准确性方面表现出优越的性能。结果表明，转录和噪声分类目标的联合优化能够在具有挑战性的声学条件下实现更可靠的语音识别。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Karamvir Singh",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "TinyDéjàVu: Smaller Memory Footprint & Faster Inference on Sensor Data Streams with Always-On Microcontrollers",
+    "paper_title_zh": "TinyDéjàVu：在始终开启的微控制器上通过更小的内存占用和更快的推理处理传感器数据流",
+    "paper_id": "2512.09786",
+    "paper_abstract": "Always-on sensors are increasingly expected to embark a variety of tiny neural networks and to continuously perform inference on time-series of the data they sense. In order to fit lifetime and energy consumption requirements when operating on battery, such hardware uses microcontrollers (MCUs) with tiny memory budget e.g., 128kB of RAM. In this context, optimizing data flows across neural network layers becomes crucial. In this paper, we introduce TinyDéjàVu, a new framework and novel algorithms we designed to drastically reduce the RAM footprint required by inference using various tiny ML models for sensor data time-series on typical microcontroller hardware. We publish the implementation of TinyDéjàVu as open source, and we perform reproducible benchmarks on hardware. We show that TinyDéjàVu can save more than 60% of RAM usage and eliminate up to 90% of redundant compute on overlapping sliding window inputs.",
+    "paper_abstract_zh": "始终开启的传感器越来越多地需要搭载各种小型神经网络，并对其感知的时间序列数据持续进行推理。为了在电池供电时满足寿命和能耗要求，此类硬件使用内存预算极小的微控制器(MCU)，例如128KB的RAM。在此背景下，优化神经网络层之间的数据流变得至关重要。在本文中，我们介绍了TinyDéjàVu，这是一个新框架和我们设计的新算法，旨在显著减少在典型微控制器硬件上使用各种小型机器学习模型对传感器数据时间序列进行推理所需的RAM占用。我们以开源形式发布了TinyDéjàVu的实现，并在硬件上进行了可复现的基准测试。我们证明，TinyDéjàVu可以节省超过60%的RAM使用，并在重叠的滑动窗口输入中消除高达90%的冗余计算。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Performance (cs.PF)",
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Zhaolan Huang, Emmanuel Baccelli",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "ORCA: Open-ended Response Correctness Assessment for Audio Question Answering",
+    "paper_title_zh": "ORCA：音频问答开放式回答正确性评估",
+    "paper_id": "2512.09066",
+    "paper_abstract": "Evaluating open-ended responses from large audio language models (LALMs) is challenging because human annotators often genuinely disagree on answer correctness due to multiple valid interpretations, partial correctness, and subjective judgment. Traditional metrics reporting only mean scores fail to capture this uncertainty. We present ORCA (Open-ended Response Correctness Assessment), a framework that models the variability in human judgments using Beta distributions to predict both expected correctness and uncertainty. Our three-stage annotation framework combines human judgment with structured feedback and iterative refinement to simultaneously curate training data and improve benchmark quality. We collected 11,721 annotations across 3,580 question-answer pairs from 15 LALMs on two audio QA benchmarks, achieving inter-annotator agreement of 0.82 (Krippendorff's alpha). ORCA achieves 0.91 Spearman correlation with mean human judgments, matching or outperforming LLM-judge baselines while providing uncertainty estimates and requiring significantly less compute. We release our models, code, and curated dataset.",
+    "paper_abstract_zh": "评估大型音频语言模型（LALMs）的开放式回答具有挑战性，因为人类标注者常常对答案的正确性存在真实分歧，这源于多种有效解释、部分正确性和主观判断。仅报告平均分的传统指标无法捕捉这种不确定性。我们提出了ORCA（开放式回答正确性评估）框架，该框架使用Beta分布建模人类判断的变异性，以预测预期的正确性和不确定性。我们的三阶段标注框架结合了人类判断、结构化反馈和迭代改进，同时用于训练数据整理和基准测试质量提升。我们在两个音频QA基准上收集了来自15个LALMs的3580个问答对的11721条标注，达到了0.82的标注者间一致性（Krippendorff's alpha）。ORCA与人类平均判断的Spearman相关系数达到0.91，匹配或优于LLM-judge基线模型，同时提供不确定性估计且计算需求显著减少。我们发布了我们的模型、代码和整理后的数据集。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Šimon Sedláček, Sara Barahona, Bolaji Yusuf, Laura Herrera-Alarcón, Santosh Kesiraju, Cecilia Bolaños, Alicia Lozano-Diez, Sathvik Udupa, Fernando López, Allison Ferner, Ramani Duraiswami, Jan Černocký",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Who Speaks What from Afar: Eavesdropping In-Person Conversations via mmWave Sensing",
+    "paper_title_zh": "谁在远处说了什么：通过毫米波传感窃听面对面对话",
+    "paper_id": "2512.09285",
+    "paper_abstract": "Multi-participant meetings occur across various domains, such as business negotiations and medical consultations, during which sensitive information like trade secrets, business strategies, and patient conditions is often discussed. Previous research has demonstrated that attackers with mmWave radars outside the room can overhear meeting content by detecting minute speech-induced vibrations on objects. However, these eavesdropping attacks cannot differentiate which speech content comes from which person in a multi-participant meeting, leading to potential misunderstandings and poor decision-making. In this paper, we answer the question ``who speaks what''. By leveraging the spatial diversity introduced by ubiquitous objects, we propose an attack system that enables attackers to remotely eavesdrop on in-person conversations without requiring prior knowledge, such as identities, the number of participants, or seating arrangements. Since participants in in-person meetings are typically seated at different locations, their speech induces distinct vibration patterns on nearby objects. To exploit this, we design a noise-robust unsupervised approach for distinguishing participants by detecting speech-induced vibration differences in the frequency domain. Meanwhile, a deep learning-based framework is explored to combine signals from objects for speech quality enhancement. We validate the proof-of-concept attack on speech classification and signal enhancement through extensive experiments. The experimental results show that our attack can achieve the speech classification accuracy of up to $0.99$ with several participants in a meeting room. Meanwhile, our attack demonstrates consistent speech quality enhancement across all real-world scenarios, including different distances between the radar and the objects.",
+    "paper_abstract_zh": "多参与者会议发生在各个领域，如商业谈判和医疗咨询，期间经常讨论敏感信息，如商业机密、业务策略和患者状况。先前的研究表明，房间外的毫米波雷达攻击者可以通过检测物体上的微小语音诱导振动来窃听会议内容。然而，这些窃听攻击无法区分多参与者会议中哪些语音内容来自哪个人，可能导致误解和决策失误。在本文中，我们回答了'谁说了什么'的问题。通过利用无处不在物体引入的空间多样性，我们提出了一种攻击系统，使攻击者能够远程窃听面对面对话，而无需先验知识，如身份、参与者数量或座位安排。由于面对面会议的参与者通常坐在不同位置，他们的语音会在附近的物体上引起不同的振动模式。为了利用这一点，我们设计了一种噪声鲁棒的无监督方法，通过检测频域中语音诱导振动的差异来区分参与者。同时，探索了一种基于深度学习的框架，用于结合物体信号以增强语音质量。我们通过大量实验验证了语音分类和信号增强的概念验证攻击。实验结果表明，我们的攻击在会议室中有多个参与者的情况下，可以实现高达0.99的语音分类准确率。同时，我们的攻击在所有现实场景中表现出一致的语音质量增强，包括雷达与物体之间的不同距离。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Shaoying Wang, Hansong Zhou, Yukun Yuan, Xiaonan Zhang",
+    "topic": [
+      "Audio Classification",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DMP-TTS: Disentangled multi-modal Prompting for Controllable Text-to-Speech with Chained Guidance",
+    "paper_title_zh": "DMP-TTS：基于链式引导的可控文本到语音的去耦多模态提示",
+    "paper_id": "2512.09504",
+    "paper_abstract": "Controllable text-to-speech (TTS) systems face significant challenges in achieving independent manipulation of speaker timbre and speaking style, often suffering from entanglement between these attributes. We present DMP-TTS, a latent Diffusion Transformer (DiT) framework with explicit disentanglement and multi-modal prompting. A CLAP-based style encoder (Style-CLAP) aligns cues from reference audio and descriptive text in a shared space and is trained with contrastive learning plus multi-task supervision on style attributes. For fine-grained control during inference, we introduce chained classifier-free guidance (cCFG) trained with hierarchical condition dropout, enabling independent adjustment of content, timbre, and style guidance strengths. Additionally, we employ Representation Alignment (REPA) to distill acoustic-semantic features from a pretrained Whisper model into intermediate DiT representations, stabilizing training and accelerating convergence. Experiments show that DMP-TTS delivers stronger style controllability than open-source baselines while maintaining competitive intelligibility and naturalness. Code and demos will be available at this https URL.",
+    "paper_abstract_zh": "可控文本到语音（TTS）系统在实现说话人音色和说话风格的独立控制方面面临重大挑战，通常这些属性之间存在纠缠。我们提出了DMP-TTS，这是一个具有明确解耦和多模态提示的潜在扩散Transformer（DiT）框架。基于CLAP的风格编码器（Style-CLAP）在共享空间中对齐参考音频和描述性文本的提示，并通过风格属性的对比学习和多任务监督进行训练。为了在推理过程中实现细粒度控制，我们引入了通过分层条件丢弃训练的链式无分类器引导（cCFG），能够独立调整内容、音色和风格引导的强度。此外，我们采用表示对齐（REPA）将预训练Whisper模型的声学-语义特征蒸馏到中间DiT表示中，以稳定训练并加速收敛。实验表明，与开源基线相比，DMP-TTS提供了更强的风格可控性，同时保持了竞争力的可懂度和自然度。代码和演示将在提供的URL上提供。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Kang Yin, Chunyu Qiang, Sirui Zhao, Xiaopeng Wang, Yuzhe Liang, Pengfei Cai, Tong Xu, Chen Zhang, Enhong Chen",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "VABench: A Comprehensive Benchmark for Audio-Video Generation",
+    "paper_title_zh": "VABench：一个用于音视频生成的综合基准测试",
+    "paper_id": "2512.09299",
+    "paper_abstract": "Recent advances in video generation have been remarkable, enabling models to produce visually compelling videos with synchronized audio. While existing video generation benchmarks provide comprehensive metrics for visual quality, they lack convincing evaluations for audio-video generation, especially for models aiming to generate synchronized audio-video outputs. To address this gap, we introduce VABench, a comprehensive and multi-dimensional benchmark framework designed to systematically evaluate the capabilities of synchronous audio-video generation. VABench encompasses three primary task types: text-to-audio-video (T2AV), image-to-audio-video (I2AV), and stereo audio-video generation. It further establishes two major evaluation modules covering 15 dimensions. These dimensions specifically assess pairwise similarities (text-video, text-audio, video-audio), audio-video synchronization, lip-speech consistency, and carefully curated audio and video question-answering (QA) pairs, among others. Furthermore, VABench covers seven major content categories: animals, human sounds, music, environmental sounds, synchronous physical sounds, complex scenes, and virtual worlds. We provide a systematic analysis and visualization of the evaluation results, aiming to establish a new standard for assessing video generation models with synchronous audio capabilities and to promote the comprehensive advancement of the field.",
+    "paper_abstract_zh": "近年来视频生成技术的进步显著，使模型能够生成具有同步音频的视觉上引人入胜的视频。虽然现有的视频生成基准测试为视觉质量提供了全面的评估指标，但它们缺乏对音视频生成的令人信服的评估，特别是对于那些旨在生成同步音视频输出的模型。为解决这一差距，我们引入了VABench，这是一个全面且多维的基准测试框架，旨在系统性地评估同步音视频生成的能力。VABench包含三种主要任务类型：文本到音视频（T2AV）、图像到音视频（I2AV）和立体声音频视频生成。它进一步建立了两个主要评估模块，涵盖15个维度。这些维度具体评估成对相似性（文本-视频、文本-音频、视频-音频）、音视频同步、唇语一致性，以及精心策划的音频和视频问答（QA）对等。此外，VABench涵盖七个主要内容类别：动物、人类声音、音乐、环境声音、同步物理声音、复杂场景和虚拟世界。我们对评估结果进行了系统分析和可视化，旨在为评估具有同步音频能力的视频生成模型建立新标准，并推动该领域的全面进步。",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Daili Hua, Xizhi Wang, Bohan Zeng, Xinyi Huang, Hao Liang, Junbo Niu, Xinlong Chen, Quanqing Xu, Wentao Zhang",
+    "topic": [
+      "Video Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "UniLS: End-to-End Audio-Driven Avatars for Unified Listening and Speaking",
+    "paper_title_zh": "UniLS: 用于统一听说的端到端音频驱动化身",
+    "paper_id": "2512.09327",
+    "paper_abstract": "Generating lifelike conversational avatars requires modeling not just isolated speakers, but the dynamic, reciprocal interaction of speaking and listening. However, modeling the listener is exceptionally challenging: direct audio-driven training fails, producing stiff, static listening motions. This failure stems from a fundamental imbalance: the speaker's motion is strongly driven by speech audio, while the listener's motion primarily follows an internal motion prior and is only loosely guided by external speech. This challenge has led most methods to focus on speak-only generation. The only prior attempt at joint generation relies on extra speaker's motion to produce the listener. This design is not end-to-end, thereby hindering the real-time applicability. To address this limitation, we present UniLS, the first end-to-end framework for generating unified speak-listen expressions, driven by only dual-track audio. Our method introduces a novel two-stage training paradigm. Stage 1 first learns the internal motion prior by training an audio-free autoregressive generator, capturing the spontaneous dynamics of natural facial motion. Stage 2 then introduces the dual-track audio, fine-tuning the generator to modulate the learned motion prior based on external speech cues. Extensive evaluations show UniLS achieves state-of-the-art speaking accuracy. More importantly, it delivers up to 44.1\\% improvement in listening metrics, generating significantly more diverse and natural listening expressions. This effectively mitigates the stiffness problem and provides a practical, high-fidelity audio-driven solution for interactive digital humans.",
+    "paper_abstract_zh": "生成逼真的对话化身不仅需要建模孤立的说话者，还需要建模说话和听说的动态、相互交互。然而，建模听者特别具有挑战性：直接的音频驱动训练会失败，产生僵硬、静态的听的动作。这种失败源于一个根本的不平衡：说话者的动作主要由语音音频驱动，而听者的动作主要遵循内部动作先验，仅由外部语音松散引导。这一挑战导致大多数方法专注于仅生成说话。唯一尝试联合生成的方法依赖于额外的说话者动作来生成听者。这种设计不是端到端的，从而阻碍了实时应用。为解决这一限制，我们提出了UniLS，这是第一个用于生成统一说-听表达的端到端框架，仅由双轨音频驱动。我们的方法引入了一种新颖的两阶段训练范式。阶段一首先通过训练无音频的自回归生成器来学习内部动作先验，捕捉自然面部动作的自发动态。阶段二然后引入双轨音频，微调生成器以基于外部语音线索调节学习到的动作先验。广泛的评估显示UniLS实现了最先进的说话准确性。更重要的是，它在听者指标上实现了高达44.1%的改进，生成更多样化和自然的听者表达。这有效缓解了僵硬问题，并为交互式数字人提供了实用的、高保真的音频驱动解决方案。",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-11",
+    "paper_authors": "Xuangeng Chu, Ruicong Liu, Yifei Huang, Yun Liu, Yichen Peng, Bo Zheng",
+    "topic": [
+      "Video Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  }
+]
