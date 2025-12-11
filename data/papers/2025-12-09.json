@@ -268,18 +268,23 @@
   },
   {
     "paper_title": "XM-ALIGN: Unified Cross-Modal Embedding Alignment for Face-Voice Association",
-    "paper_title_zh": "",
+    "paper_title_zh": "XM-ALIGN: 用于人脸-语音关联的统一跨模态嵌入对齐",
     "paper_id": "2512.06757",
     "paper_abstract": "This paper introduces our solution, XM-ALIGN (Unified Cross-Modal Embedding Alignment Framework), proposed for the FAME challenge at ICASSP 2026. Our framework combines explicit and implicit alignment mechanisms, significantly improving cross-modal verification performance in both \"heard\" and \"unheard\" languages. By extracting feature embeddings from both face and voice encoders and jointly optimizing them using a shared classifier, we employ mean squared error (MSE) as the embedding alignment loss to ensure tight alignment between modalities. Additionally, data augmentation strategies are applied during model training to enhance generalization. Experimental results show that our approach demonstrates superior performance on the MAV-Celeb dataset. The code will be released at this https URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本文介绍了我们在ICASSP 2026 FAME挑战赛中提出的解决方案XM-ALIGN（统一跨模态嵌入对齐框架）。我们的框架结合了显式和隐式对齐机制，显著提高了'已听'和'未听'语言中的跨模态验证性能。通过从人脸和语音编码器中提取特征嵌入，并使用共享分类器进行联合优化，我们采用均方误差（MSE）作为嵌入对齐损失，以确保模态之间的紧密对齐。此外，在模型训练期间应用数据增强策略以提高泛化能力。实验结果表明，我们的方法在MAV-Celeb数据集上表现出优越的性能。代码将在提供的URL上发布。",
     "subjects": [
       "Sound (cs.SD)",
       "Computer Vision and Pattern Recognition (cs.CV)"
     ],
     "update_time": "2025-12-09",
     "paper_authors": "Zhihua Fang, Shumei Tao, Junxu Wang, Liang He",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "What Needs to be Known in Order to Perform a Meaningful Scientific Comparison Between Animal Communications and Human Spoken Language",
