@@ -63,18 +63,23 @@
   },
   {
     "paper_title": "Noise Suppression for Time Difference of Arrival: Performance Evaluation of a Generalized Cross-Correlation Method Using Mean Signal and Inverse Filter",
-    "paper_title_zh": "",
+    "paper_title_zh": "到达时间差噪声抑制：基于平均信号和逆滤波的广义互相关方法性能评估",
     "paper_id": "2512.05355",
     "paper_abstract": "This paper proposes a novel generalized cross-correlation (GCC) method, termed GCC-MSIF, to improve time difference of arrival (TDOA) estimation accuracy in noisy environments. Conventional GCC methods often suffer from performance degradation under low signal-to-noise ratio (SNR) conditions, particularly when the signal bandwidth is unknown. GCC-MSIF introduces a \"mean signal\" estimated from multi-channel inputs and an \"inverse filter\" to virtually reconstruct the source signal, enabling adaptive suppression of out-of-band noise. Numerical simulations simulating a small-scale array demonstrate that GCC-MSIF significantly outperforms conventional methods, such as GCC-PHAT and GCC-SCOT, in low SNR regions and achieves robustness comparable to or exceeding the maximum likelihood (GCC-ML) method. Furthermore, the estimation accuracy improves scalably with the number of array elements. These results suggest that GCC-MSIF is a promising solution for robust passive localization in practical blind environments.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本文提出了一种新颖的广义互相关(GCC)方法，称为GCC-MSIF，以提高嘈杂环境中到达时间差(TDOA)的估计精度。传统的GCC方法在低信噪比(SNR)条件下，特别是在信号带宽未知的情况下，性能往往会下降。GCC-MSIF引入了从多通道输入估计的'平均信号'和'逆滤波器'，以虚拟重建源信号，从而实现对带外噪声的自适应抑制。模拟小规模阵列的数值仿真表明，GCC-MSIF在低SNR区域显著优于传统方法，如GCC-PHAT和GCC-SCOT，并且其鲁棒性可与或超过最大似然(GCC-ML)方法相媲美。此外，估计精度随阵列元素数量可扩展地提高。这些结果表明，GCC-MSIF是实际盲环境中鲁棒被动定位的一种有前途的解决方案。",
     "subjects": [
       "Signal Processing (eess.SP)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-12-08",
     "paper_authors": "Hirotaka Obo, Yuki Fujita, Masahisa Ishii, Hideki Moriyama, Ryota Tsuchiya, Yuta Ohashi, Kotaro Seki",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Enhancement",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Decoding Selective Auditory Attention to Musical Elements in Ecologically Valid Music Listening",
