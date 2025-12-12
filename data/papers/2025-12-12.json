@@ -1,0 +1,160 @@
+[
+  {
+    "paper_title": "Exploring Perceptual Audio Quality Measurement on Stereo Processing Using the Open Dataset of Audio Quality",
+    "paper_title_zh": "使用音频质量开放数据集探索立体声处理中的感知音频质量测量",
+    "paper_id": "2512.10689",
+    "paper_abstract": "ODAQ (Open Dataset of Audio Quality) provides a comprehensive framework for exploring both monaural and binaural audio quality degradations across a range of distortion classes and signals, accompanied by subjective quality ratings. A recent update of ODAQ, focusing on the impact of stereo processing methods such as Mid/Side (MS) and Left/Right (LR), provides test signals and subjective ratings for the in-depth investigation of state-of-the-art objective audio quality metrics. Our evaluation results suggest that, while timbre-focused metrics often yield robust results under simpler conditions, their prediction performance tends to suffer under the conditions with a more complex presentation context. Our findings underscore the importance of modeling the interplay of bottom-up psychoacoustic processes and top-down contextual factors, guiding future research toward models that more effectively integrate both timbral and spatial dimensions of perceived audio quality.",
+    "paper_abstract_zh": "ODAQ（音频质量开放数据集）提供了一个全面的框架，用于探索各种失真类别和信号下的单声道和双声道音频质量退化问题，并附有主观质量评分。ODAQ最近的更新专注于立体声处理方法（如中侧（MS）和左右（LR））的影响，提供了测试信号和主观评分，用于深入研究最先进的客观音频质量指标。我们的评估结果表明，虽然专注于音色的指标在较简单条件下通常能产生稳健的结果，但在呈现条件更复杂的情况下，其预测性能往往会下降。我们的研究结果强调了建模自下而上心理声学过程与自上而下上下文因素之间相互作用的重要性，指导未来研究向更有效整合感知音频质量音色和空间维度的模型方向发展。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-12",
+    "paper_authors": "Pablo M. Delgado, Sascha Dick, Christoph Thompson, Chih-Wei Wu, Phillip A. Williams",
+    "topic": [
+      "Audio Codec",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Building Audio-Visual Digital Twins with Smartphones",
+    "paper_title_zh": "使用智能手机构建视听数字孪生",
+    "paper_id": "2512.10778",
+    "paper_abstract": "Digital twins today are almost entirely visual, overlooking acoustics-a core component of spatial realism and interaction. We introduce AV-Twin, the first practical system that constructs editable audio-visual digital twins using only commodity smartphones. AV-Twin combines mobile RIR capture and a visual-assisted acoustic field model to efficiently reconstruct room acoustics. It further recovers per-surface material properties through differentiable acoustic rendering, enabling users to modify materials, geometry, and layout while automatically updating both audio and visuals. Together, these capabilities establish a practical path toward fully modifiable audio-visual digital twins for real-world environments.",
+    "paper_abstract_zh": "当今的数字孪生几乎完全是视觉的，忽略了声学这一空间真实感和交互的核心组成部分。我们介绍了AV-Twin，这是第一个仅使用商用智能手机构建可编辑视听数字孪生的实用系统。AV-Twin结合了移动房间脉冲响应(RIR)采集和视觉辅助声场模型，以高效重建房间声学特性。它通过可微分声学渲染进一步恢复了每个表面的材料属性，使用户能够修改材料、几何形状和布局，同时自动更新音频和视觉内容。这些能力共同为现实世界环境中的完全可修改视听数字孪生建立了实用路径。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-12-12",
+    "paper_authors": "Zitong Lan, Yiwei Tang, Yuhan Wang, Haowen Lai, Yido Hao, Mingmin Zhao",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "VocSim: A Training-free Benchmark for Zero-shot Content Identity in Single-source Audio",
+    "paper_title_zh": "VocSim: 单源音频中零样本内容身份的无训练基准",
+    "paper_id": "2512.10120",
+    "paper_abstract": "General-purpose audio representations aim to map acoustically variable instances of the same event to nearby points, resolving content identity in a zero-shot setting. Unlike supervised classification benchmarks that measure adaptability via parameter updates, we introduce VocSim, a training-free benchmark probing the intrinsic geometric alignment of frozen embeddings. VocSim aggregates 125k single-source clips from 19 corpora spanning human speech, animal vocalizations, and environmental sounds. By restricting to single-source audio, we isolate content representation from the confound of source separation. We evaluate embeddings using Precision@k for local purity and the Global Separation Rate (GSR) for point-wise class separation. To calibrate GSR, we report lift over an empirical permutation baseline. Across diverse foundation models, a simple pipeline, frozen Whisper encoder features, time-frequency pooling, and label-free PCA, yields strong zero-shot performance. However, VocSim also uncovers a consistent generalization gap. On blind, low-resource speech, local retrieval drops sharply. While performance remains statistically distinguishable from chance, the absolute geometric structure collapses, indicating a failure to generalize to unseen phonotactics. As external validation, our top embeddings predict avian perceptual similarity, improve bioacoustic classification, and achieve state-of-the-art results on the HEAR benchmark. We posit that the intrinsic geometric quality measured here proxies utility in unlisted downstream applications. We release data, code, and a public leaderboard to standardize the evaluation of intrinsic audio geometry.",
+    "paper_abstract_zh": "通用音频表示旨在将同一事件的不同声学实例映射到相近的点，从而在零样本设置下解决内容身份识别问题。与通过参数更新来衡量适应性的监督分类基准不同，我们引入了VocSim，这是一个无需训练的基准，用于探测冻结嵌入的内在几何对齐。VocSim汇集了来自19个语料库的125k个单源音频片段，涵盖人类语音、动物发声和环境声音。通过限制为单源音频，我们将内容表示与源分离的混淆因素隔离开来。我们使用Precision@k评估局部纯度，使用全局分离率(GSR)评估点级类别分离。为了校准GSR，我们报告了基于经验排列基线的提升值。在各种基础模型中，一个简单的流程——冻结的Whisper编码器特征、时频池化和无标签PCA——产生了强大的零样本性能。然而，VocSim也揭示了一致性的泛化差距。在盲目的低资源语音上，局部检索性能急剧下降。虽然性能仍可从随机水平中统计区分，但绝对几何结构崩溃，表明未能泛化到未见过的语音规则。作为外部验证，我们最佳的嵌入预测了鸟类感知相似性，改善了生物声学分类，并在HEAR基准上取得了最先进的结果。我们认为，此处测量的内在几何质量代表了未列出的下游应用中的效用。我们发布了数据、代码和公共排行榜，以标准化内在音频几何的评估。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-12",
+    "paper_authors": "Maris Basha, Anja Zai, Sabine Stoll, Richard Hahnloser",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Semantic-Aware Confidence Calibration for Automated Audio Captioning",
+    "paper_title_zh": "语义感知的自动音频字幕置信度校准",
+    "paper_id": "2512.10170",
+    "paper_abstract": "Automated audio captioning models frequently produce overconfident predictions regardless of semantic accuracy, limiting their reliability in deployment. This deficiency stems from two factors: evaluation metrics based on n-gram overlap that fail to capture semantic correctness, and the absence of calibrated confidence estimation. We present a framework that addresses both limitations by integrating confidence prediction into audio captioning and redefining correctness through semantic similarity. Our approach augments a Whisper-based audio captioning model with a learned confidence prediction head that estimates uncertainty from decoder hidden states. We employ CLAP audio-text embeddings and sentence transformer similarities (FENSE) to define semantic correctness, enabling Expected Calibration Error (ECE) computation that reflects true caption quality rather than surface-level text overlap. Experiments on Clotho v2 demonstrate that confidence-guided beam search with semantic evaluation achieves dramatically improved calibration (CLAP-based ECE of 0.071) compared to greedy decoding baselines (ECE of 0.488), while simultaneously improving caption quality across standard metrics. Our results establish that semantic similarity provides a more meaningful foundation for confidence calibration in audio captioning than traditional n-gram metrics.",
+    "paper_abstract_zh": "自动音频字幕模型经常产生过度自信的预测，而不管语义准确性如何，这限制了它们在部署中的可靠性。这种缺陷源于两个因素：基于n-gram重叠的评估指标无法捕捉语义正确性，以及缺乏校准的置信度估计。我们提出了一个框架，通过将置信度预测整合到音频字幕中并通过语义相似性重新定义正确性来解决这两个限制。我们的方法通过一个学习的置信度预测头来增强基于Whisper的音频字幕模型，该头从解码器隐藏状态估计不确定性。我们使用CLAP音频文本嵌入和句子变换器相似度（FENSE）来定义语义正确性，从而能够计算反映真实字幕质量而非表面文本重叠的期望校准误差（ECE）。在Clotho v2上的实验表明，与贪心解码基线（ECE为0.488）相比，使用语义评估的置信度引导束搜索实现了显著改善的校准（基于CLAP的ECE为0.071），同时同时提高了标准指标下的字幕质量。我们的结果表明，在音频字幕的置信度校准中，语义相似性比传统的n-gram指标提供了更有意义的基础。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-12",
+    "paper_authors": "Lucas Dunker, Sai Akshay Menta, Snigdha Mohana Addepalli, Venkata Krishna Rayalu Garapati",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "MR-FlowDPO: Multi-Reward Direct Preference Optimization for Flow-Matching Text-to-Music Generation",
+    "paper_title_zh": "MR-FlowDPO: 用于流匹配文本到音乐生成的多奖励直接偏好优化",
+    "paper_id": "2512.10264",
+    "paper_abstract": "A key challenge in music generation models is their lack of direct alignment with human preferences, as music evaluation is inherently subjective and varies widely across individuals. We introduce MR-FlowDPO, a novel approach that enhances flow-matching-based music generation models - a major class of modern music generative models, using Direct Preference Optimization (DPO) with multiple musical rewards. The rewards are crafted to assess music quality across three key dimensions: text alignment, audio production quality, and semantic consistency, utilizing scalable off-the-shelf models for each reward prediction. We employ these rewards in two ways: (i) By constructing preference data for DPO and (ii) by integrating the rewards into text prompting. To address the ambiguity in musicality evaluation, we propose a novel scoring mechanism leveraging semantic self-supervised representations, which significantly improves the rhythmic stability of generated music. We conduct an extensive evaluation using a variety of music-specific objective metrics as well as a human study. Results show that MR-FlowDPO significantly enhances overall music generation quality and is consistently preferred over highly competitive baselines in terms of audio quality, text alignment, and musicality. Our code is publicly available at this https URL Samples are provided in our demo page at this https URL.",
+    "paper_abstract_zh": "音乐生成模型的一个关键挑战是它们缺乏与人类偏好的直接对齐，因为音乐评估本质上具有主观性，并且在个体之间差异很大。我们介绍了MR-FlowDPO，一种新颖的方法，它使用具有多种音乐奖励的直接偏好优化（DPO）来增强基于流匹配的音乐生成模型——这是一类现代音乐生成模型。这些奖励被设计用来评估音乐质量的三个关键维度：文本对齐、音频制作质量和语义一致性，并为每个奖励预测利用可扩展的现成模型。我们以两种方式使用这些奖励：（i）通过为DPO构建偏好数据，以及（ii）将奖励整合到文本提示中。为了解决音乐性评估中的模糊性问题，我们提出了一种新颖的评分机制，利用语义自监督表示，这显著提高了生成音乐的节奏稳定性。我们使用各种音乐特定的客观指标以及一项人类研究进行了广泛的评估。结果表明，MR-FlowDPO显著提高了整体音乐生成质量，并且在音频质量、文本对齐和音乐性方面，始终比高度竞争的基线模型更受青睐。我们的代码在提供的URL上公开可用，样本在我们的演示页面的URL上提供。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-12",
+    "paper_authors": "Alon Ziv, Sanyuan Chen, Andros Tjandra, Yossi Adi, Wei-Ning Hsu, Bowen Shi",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Neural personal sound zones with flexible bright zone control",
+    "paper_title_zh": "具有灵活亮区控制的神经个人声区",
+    "paper_id": "2512.10375",
+    "paper_abstract": "Personal sound zone (PSZ) reproduction system, which attempts to create distinct virtual acoustic scenes for different listeners at their respective positions within the same spatial area using one loudspeaker array, is a fundamental technology in the application of virtual reality. For practical applications, the reconstruction targets must be measured on the same fixed receiver array used to record the local room impulse responses (RIRs) from the loudspeaker array to the control points in each PSZ, which makes the system inconvenient and costly for real-world use. In this paper, a 3D convolutional neural network (CNN) designed for PSZ reproduction with flexible control microphone grid and alternative reproduction target is presented, utilizing the virtual target scene as inputs and the PSZ pre-filters as output. Experimental results of the proposed method are compared with the traditional method, demonstrating that the proposed method is able to handle varied reproduction targets on flexible control point grid using only one training session. Furthermore, the proposed method also demonstrates the capability to learn global spatial information from sparse sampling points distributed in PSZs.",
+    "paper_abstract_zh": "个人声区(PSZ)重放系统试图在同一空间区域内使用一个扬声器阵列为不同听众在其各自位置创建不同的虚拟声学场景，是虚拟现实应用中的基础技术。对于实际应用，重建目标必须在用于记录从扬声器阵列到每个PSZ中控制点的本地房间脉冲响应(RIRs)的同一固定接收器阵列上进行测量，这使得系统在实际使用中不便且成本高昂。本文提出了一种用于PSZ重放的3D卷积神经网络(CNN)，具有灵活的控制麦克风网格和替代重放目标，利用虚拟目标场景作为输入，PSZ预滤波器作为输出。将所提出方法的实验结果与传统方法进行比较，证明所提出的方法能够仅通过一次训练处理灵活控制点网格上的各种重放目标。此外，所提出的方法还展示了从分布在PSZ中的稀疏采样点学习全局空间信息的能力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-12",
+    "paper_authors": "Wenye Zhu, Jun Tang, Xiaofei Li",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Investigating training objective for flow matching-based speech enhancement",
+    "paper_title_zh": "研究基于流匹配的语音增强训练目标",
+    "paper_id": "2512.10382",
+    "paper_abstract": "Speech enhancement(SE) aims to recover clean speech from noisy recordings. Although generative approaches such as score matching and Schrodinger bridge have shown strong effectiveness, they are often computationally expensive. Flow matching offers a more efficient alternative by directly learning a velocity field that maps noise to data. In this work, we present a systematic study of flow matching for SE under three training objectives: velocity prediction, $x_1$ prediction, and preconditioned $x_1$ prediction. We analyze their impact on training dynamics and overall performance. Moreover, by introducing perceptual(PESQ) and signal-based(SI-SDR) objectives, we further enhance convergence efficiency and speech quality, yielding substantial improvements across evaluation metrics.",
+    "paper_abstract_zh": "语音增强(SE)旨在从嘈杂的录音中恢复干净的语音。尽管诸如分数匹配和薛定谔桥等生成式方法已显示出强大的有效性，但它们通常计算成本较高。流匹配通过直接学习一个从噪声映射到数据的速度场，提供了一种更高效的替代方案。在这项工作中，我们针对SE的流匹配，在三种训练目标下进行了系统研究：速度预测、x1预测和预调节x1预测。我们分析了它们对训练动态和整体性能的影响。此外，通过引入感知性(PESQ)和基于信号(SI-SDR)的目标，我们进一步提高了收敛效率和语音质量，在评估指标上取得了显著改进。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-12",
+    "paper_authors": "Liusha Yang, Ziru Ge, Gui Zhang, Junan Zhang, Zhizheng Wu",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "BRACE: A Benchmark for Robust Audio Caption Quality Evaluation",
+    "paper_title_zh": "BRACE: 用于鲁棒音频字幕质量评估的基准",
+    "paper_id": "2512.10403",
+    "paper_abstract": "Automatic audio captioning is essential for audio understanding, enabling applications such as accessibility and content indexing. However, evaluating the quality of audio captions remains a major challenge, especially in reference-free settings where high-quality ground-truth captions are unavailable. While CLAPScore is currently the most widely used reference-free Audio Caption Evaluation Metric(ACEM), its robustness under diverse conditions has not been systematically validated.\nTo address this gap, we introduce BRACE, a new benchmark designed to evaluate audio caption alignment quality in a reference-free setting. BRACE is primarily designed for assessing ACEMs, and can also be extended to measure the modality alignment abilities of Large Audio Language Model(LALM). BRACE consists of two sub-benchmarks: BRACE-Main for fine-grained caption comparison and BRACE-Hallucination for detecting subtle hallucinated content. We construct these datasets through high-quality filtering, LLM-based corruption, and human annotation.\nGiven the widespread adoption of CLAPScore as a reference-free ACEM and the increasing application of LALMs in audio-language tasks, we evaluate both approaches using the BRACE benchmark, testing CLAPScore across various CLAP model variants and assessing multiple LALMs.\nNotably, even the best-performing CLAP-based ACEM achieves only a 70.01 F1-score on the BRACE-Main benchmark, while the best LALM reaches just 63.19.\nBy revealing the limitations of CLAP models and LALMs, our BRACE benchmark offers valuable insights into the direction of future research.",
+    "paper_abstract_zh": "自动音频字幕对音频理解至关重要，可支持无障碍和内容索引等应用。然而，评估音频字幕的质量仍然是一个重大挑战，特别是在没有高质量真实字幕的参考自由设置中。虽然CLAPScore是目前最广泛使用的参考自由音频字幕评估指标(ACEM)，但其在不同条件下的鲁棒性尚未得到系统验证。为解决这一差距，我们引入了BRACE，这是一个新的基准，旨在以参考自由方式评估音频字幕的对齐质量。BRACE主要用于评估ACEM，也可扩展用于测量大型音频语言模型(LALM)的模态对齐能力。BRACE包含两个子基准：BRACE-Main用于细粒度字幕比较，BRACE-Hallucination用于检测微妙的幻觉内容。我们通过高质量过滤、基于LLM的损坏和人工注释构建这些数据集。鉴于CLAPScore作为参考自由ACEM的广泛采用以及LALMs在音频语言任务中日益增长的应用，我们使用BRACE基准评估了这两种方法，测试了各种CLAP模型变体的CLAPScore，并评估了多个LALMs。值得注意的是，即使表现最好的基于CLAP的ACEM在BRACE-Main基准上也仅实现了70.01的F1分数，而表现最好的LALM仅达到63.19。通过揭示CLAP模型和LALMs的局限性，我们的BRACE基准为未来研究方向提供了宝贵的见解。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-12-12",
+    "paper_authors": "Tianyu Guo, Hongyu Chen, Hao Liang, Meiyi Qiang, Bohan Zeng, Linzhuang Sun, Bin Cui, Wentao Zhang",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
