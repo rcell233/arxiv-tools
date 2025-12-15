@@ -1,0 +1,216 @@
+[
+  {
+    "paper_title": "All-in-One ASR: Unifying Encoder-Decoder Models of CTC, Attention, and Transducer in Dual-Mode ASR",
+    "paper_title_zh": "一体化ASR：在双模式ASR中统一CTC、注意力和Transducer的编码器-解码器模型",
+    "paper_id": "2512.11543",
+    "paper_abstract": "This paper proposes a unified framework, All-in-One ASR, that allows a single model to support multiple automatic speech recognition (ASR) paradigms, including connectionist temporal classification (CTC), attention-based encoder-decoder (AED), and Transducer, in both offline and streaming modes. While each ASR architecture offers distinct advantages and trade-offs depending on the application, maintaining separate models for each scenario incurs substantial development and deployment costs. To address this issue, we introduce a multi-mode joiner that enables seamless integration of various ASR modes within a single unified model. Experiments show that All-in-One ASR significantly reduces the total model footprint while matching or even surpassing the recognition performance of individually optimized ASR models. Furthermore, joint decoding leverages the complementary strengths of different ASR modes, yielding additional improvements in recognition accuracy.",
+    "paper_abstract_zh": "本文提出了一种统一框架All-in-One ASR，该框架允许单个模型支持多种自动语音识别(ASR)范式，包括连接主义时间分类(CTC)、基于注意力的编码器-解码器(AED)和Transducer，在离线和流式模式下均可使用。虽然每种ASR架构根据应用场景提供不同的优势和权衡，但为每种场景维护单独的模型会带来显著的开发和部署成本。为解决这一问题，我们引入了一种多模式连接器，使各种ASR模式能够在单个统一模型中无缝集成。实验表明，All-in-One ASR显著减少了总模型大小，同时匹配甚至超过了单独优化的ASR模型的识别性能。此外，联合解码利用了不同ASR模式的互补优势，进一步提高了识别准确率。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Takafumi Moriya, Masato Mimura, Tomohiro Tanaka, Hiroshi Sato, Ryo Masumura, Atsunori Ogawa",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "ASR Under the Stethoscope: Evaluating Biases in Clinical Speech Recognition across Indian Languages",
+    "paper_title_zh": "听诊器下的ASR：评估印度多种语言临床语音识别中的偏见",
+    "paper_id": "2512.10967",
+    "paper_abstract": "Automatic Speech Recognition (ASR) is increasingly used to document clinical encounters, yet its reliability in multilingual and demographically diverse Indian healthcare contexts remains largely unknown. In this study, we conduct the first systematic audit of ASR performance on real world clinical interview data spanning Kannada, Hindi, and Indian English, comparing leading models including Indic Whisper, Whisper, Sarvam, Google speech to text, Gemma3n, Omnilingual, Vaani, and Gemini. We evaluate transcription accuracy across languages, speakers, and demographic subgroups, with a particular focus on error patterns affecting patients vs. clinicians and gender based or intersectional disparities. Our results reveal substantial variability across models and languages, with some systems performing competitively on Indian English but failing on code mixed or vernacular speech. We also uncover systematic performance gaps tied to speaker role and gender, raising concerns about equitable deployment in clinical settings. By providing a comprehensive multilingual benchmark and fairness analysis, our work highlights the need for culturally and demographically inclusive ASR development for healthcare ecosystem in India.",
+    "paper_abstract_zh": "自动语音识别(ASR)越来越多地被用于记录临床 encounters，但在多语言和人口多样化的印度医疗环境中，其可靠性仍然 largely 未知。在这项研究中，我们对涵盖卡纳达语、印地语和印度英语的真实世界临床访谈数据进行了首次系统性审计，比较了包括 Indic Whisper、Whisper、Sarvam、Google speech to text、Gemma3n、Omnilingual、Vaani 和 Gemini 在内的领先模型。我们评估了跨语言、说话者和人口子组的转录准确性，特别关注影响患者与临床医生以及基于性别或交叉性差异的错误模式。我们的结果显示，不同模型和语言之间存在 substantial 变异性，一些系统在印度英语上表现具有竞争力，但在代码混合或方言语音上表现失败。我们还发现了与说话者角色和性别相关的系统性性能差距，引发了在临床环境中公平部署的担忧。通过提供全面的多语言基准和公平性分析，我们的工作强调了印度医疗生态系统需要文化和人口包容性的 ASR 开发。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Subham Kumar, Prakrithi Shivaprakash, Abhishek Manoharan, Astut Kurariya, Diptadhi Mukherjee, Lekhansh Shukla, Animesh Mukherjee, Prabhat Chand, Pratima Murthy",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Benchmarking Automatic Speech Recognition Models for African Languages",
+    "paper_title_zh": "非洲语言自动语音识别模型的基准测试",
+    "paper_id": "2512.10968",
+    "paper_abstract": "Automatic speech recognition (ASR) for African languages remains constrained by limited labeled data and the lack of systematic guidance on model selection, data scaling, and decoding strategies. Large pre-trained systems such as Whisper, XLS-R, MMS, and W2v-BERT have expanded access to ASR technology, but their comparative behavior in African low-resource contexts has not been studied in a unified and systematic way. In this work, we benchmark four state-of-the-art ASR models across 13 African languages, fine-tuning them on progressively larger subsets of transcribed data ranging from 1 to 400 hours. Beyond reporting error rates, we provide new insights into why models behave differently under varying conditions. We show that MMS and W2v-BERT are more data efficient in very low-resource regimes, XLS-R scales more effectively as additional data becomes available, and Whisper demonstrates advantages in mid-resource conditions. We also analyze where external language model decoding yields improvements and identify cases where it plateaus or introduces additional errors, depending on the alignment between acoustic and text resources. By highlighting the interaction between pre-training coverage, model architecture, dataset domain, and resource availability, this study offers practical and insights into the design of ASR systems for underrepresented languages.",
+    "paper_abstract_zh": "非洲语言的自动语音识别(ASR)仍然受限于有限的标记数据和缺乏关于模型选择、数据扩展和解码策略的系统性指导。像Whisper、XLS-R、MMS和W2v-BERT这样的大型预训练系统已经扩展了ASR技术的可及性，但它们在非洲低资源环境中的比较行为尚未得到统一和系统的研究。在这项工作中，我们在13种非洲语言上对四种最先进的ASR模型进行了基准测试，并在转录数据的逐步增大的子集(从1到400小时)上对它们进行了微调。除了报告错误率外，我们还提供了关于模型在不同条件下表现不同的新见解。我们表明，在极低资源情况下，MMS和W2v-BERT的数据效率更高；随着更多数据的可用，XLS-R的扩展效果更好；而在中等资源条件下，Whisper显示出优势。我们还分析了外部语言模型解码在哪些情况下能带来改进，并确定了在声学资源和文本资源对齐的情况下，它何时达到平台期或引入额外错误。通过强调预训练覆盖范围、模型架构、数据集领域和资源可用性之间的相互作用，这项研究为代表性不足语言的ASR系统设计提供了实用的见解。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Alvin Nahabwe, Sulaiman Kagumire, Denis Musinguzi, Bruno Beijuka, Jonah Mubuuke Kyagaba, Peter Nabende, Andrew Katumba, Joyce Nakatumba-Nabende",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Robust Detection of Underwater Target Against Non-Uniform Noise With Optical Fiber DAS Array",
+    "paper_title_zh": "基于光纤分布式声学传感阵列的非均匀噪声鲁棒水下目标检测",
+    "paper_id": "2512.11231",
+    "paper_abstract": "The detection of underwater targets is severely affected by the non-uniform spatial characteristics of marine environmental noise. Additionally, the presence of both natural and anthropogenic acoustic sources, including shipping traffic, marine life, and geological activity, further complicates the underwater acoustic landscape. Addressing these challenges requires advanced underwater sensors and robust signal processing techniques. In this paper, we present a novel approach that leverages an optical fiber distributed acoustic sensing (DAS) system combined with a broadband generalized sparse covariance-fitting framework for underwater target direction sensing, particularly focusing on robustness against non-uniform noise. The DAS system incorporates a newly developed spiral-sensitized optical cable, which significantly improves sensitivity compared to conventional submarine cables. This innovative design enables the system to capture acoustic signals with greater precision. Notably, the sensitivity of the spiral-wound sensitized cable is around -145.69 dB re: 1 rad / (uPa*m), as measured inside the standing-wave tube. Employing simulations, we assess the performance of the algorithm across diverse noise levels and target configurations, consistently revealing higher accuracy and reduced background noise compared to conventional beamforming techniques and other sparse techniques. In a controlled pool experiment, the correlation coefficient between waveforms acquired by the DAS system and a standard hydrophone reached 0.973, indicating high fidelity in signal capture.",
+    "paper_abstract_zh": "水下目标的检测受到海洋环境噪声非均匀空间特性的严重影响。此外，自然和人为声源的存在，包括航运交通、海洋生物和地质活动，进一步复杂化了水下声学环境。解决这些挑战需要先进的水下传感器和鲁棒的信号处理技术。本文提出了一种新颖的方法，利用光纤分布式声学传感(DAS)系统结合宽带广义稀疏协方差拟合框架进行水下目标方向感知，特别关注对非均匀噪声的鲁棒性。DAS系统采用新开发的螺旋敏感光缆，与传统海底光缆相比显著提高了灵敏度。这种创新设计使系统能够更精确地捕获声信号。值得注意的是，在驻波管内测量的螺旋缠绕敏感光缆的灵敏度约为-145.69 dB re: 1 rad/(uPa*m)。通过仿真，我们评估了算法在不同噪声水平和目标配置下的性能，与常规波束成形技术和其他稀疏技术相比，始终显示出更高的精度和降低的背景噪声。在受控水池实验中，DAS系统与标准水声器获取的波形之间的相关系数达到0.973，表明信号捕获具有高保真度。",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Siyuan Cang, Cong Liu, Xueli Sheng, Xiaoming Cui, Chao Li, Changxin Fa, Jiantong Chen, Chaoran Yang, Huayong Yang",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "The TCG CREST -- RKMVERI Submission for the NCIIPC Startup India AI Grand Challenge",
+    "paper_title_zh": "TCG CREST -- RKMVERI 提交给 NCIIPC Startup India AI 大赛的方案",
+    "paper_id": "2512.11009",
+    "paper_abstract": "In this report, we summarize the integrated multilingual audio processing pipeline developed by our team for the inaugural NCIIPC Startup India AI GRAND CHALLENGE, addressing Problem Statement 06: Language-Agnostic Speaker Identification and Diarisation, and subsequent Transcription and Translation System. Our primary focus was on advancing speaker diarization, a critical component for multilingual and code-mixed scenarios. The main intent of this work was to study the real-world applicability of our in-house speaker diarization (SD) systems. To this end, we investigated a robust voice activity detection (VAD) technique and fine-tuned speaker embedding models for improved speaker identification in low-resource settings. We leveraged our own recently proposed multi-kernel consensus spectral clustering framework, which substantially improved the diarization performance across all recordings in the training corpus provided by the organizers. Complementary modules for speaker and language identification, automatic speech recognition (ASR), and neural machine translation were integrated in the pipeline. Post-processing refinements further improved system robustness.",
+    "paper_abstract_zh": "在本报告中，我们总结了团队为首届 NCIIPC Startup India AI 大赛开发的集成多语言音频处理流程，该流程针对问题陈述 06：语言无关的说话人识别和分段，以及后续的转录和翻译系统。我们的主要重点是推进说话人分段技术，这是多语言和代码混合场景中的关键组成部分。本工作的主要目的是研究我们内部说话人分段（SD）系统在实际应用中的可行性。为此，我们研究了一种稳健的语音活动检测（VAD）技术，并对说话人嵌入模型进行了微调，以在资源有限的环境中改进说话人识别。我们利用了最近提出的多核共识谱聚类框架，该框架显著提高了组织者提供的训练语料库中所有录音的分段性能。流程中还集成了说话人识别、语言识别、自动语音识别（ASR）和神经机器翻译的补充模块。后处理改进进一步提高了系统的鲁棒性。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Nikhil Raghav, Arnab Banerjee, Janojit Chakraborty, Avisek Gupta, Swami Punyeshwarananda, Md Sahidullah",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Mitigation of multi-path propagation artefacts in acoustic targets with cepstral adaptive filtering",
+    "paper_title_zh": "倒谱自适应滤波减轻声学目标中的多径传播伪影",
+    "paper_id": "2512.11165",
+    "paper_abstract": "Passive acoustic sensing is a cost-effective solution for monitoring moving targets such as vessels and aircraft, but its performance is hindered by complex propagation effects like multi-path reflections and motion-induced artefacts. Existing filtering techniques do not properly incorporate the characteristics of the environment or account for variability in medium properties, limiting their effectiveness in separating source and reflection components. This paper proposes a method for separating target signals from their reflections in a spectrogram. Temporal filtering is applied to cepstral coefficients using an adaptive band-stop filter, which dynamically adjusts its bandwidth based on the relative intensity of the quefrency components. The method improved the signal-to-noise ratio (SNR), log-spectral distance (LSD), and Itakura-Saito (IS) distance across velocities ranging from 10 to 100 metres per second in aircraft noise with simulated motion. It also enhanced the performance of ship-type classification in underwater tasks by 2.28 and 2.62 Matthews Correlation Coefficient percentage points for the DeepShip and VTUAD v2 datasets, respectively. These results demonstrate the potential of the proposed pipeline to improve acoustic target classification and time-delay estimation in multi-path environments, with future work aimed at amplitude preservation and multi-sensor applications.",
+    "paper_abstract_zh": "被动声学监测是监测船舶和飞机等移动目标的经济有效解决方案，但其性能受到多径反射和运动引起的伪影等复杂传播效应的影响。现有的滤波技术未能适当结合环境特性或考虑介质特性的可变性，限制了它们在分离源信号和反射信号分量方面的有效性。本文提出了一种在频谱图中分离目标信号与其反射信号的方法。该方法使用自适应带阻滤波器对倒谱系数进行时域滤波，该滤波器根据倒谱分量的相对强度动态调整其带宽。在模拟运动的飞机噪声中，该方法将速度范围从10到100米/秒的信号噪声比（SNR）、对数谱距离（LSD）和板仓斋藤（IS）距离均得到了改善。此外，该方法还分别将DeepShip和VTUAD v2数据集在水下任务中的船舶类型分类性能提高了2.28和2.62马修斯相关系数（MCC）个百分点。这些结果表明，所提出的管道在多径环境中提高声学目标分类和时间延迟估计方面具有潜力，未来的工作将致力于幅度保持和多传感器应用。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computational Engineering, Finance, and Science (cs.CE)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Lucas C. F. Domingos, Russell S. A. Brinkworth, Paulo E. Santos, Karl Sammut",
+    "topic": [
+      "Audio Classification",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "The Affective Bridge: Unifying Feature Representations for Speech Deepfake Detection",
+    "paper_title_zh": "情感桥梁：统一语音深度伪造检测的特征表示",
+    "paper_id": "2512.11241",
+    "paper_abstract": "Speech deepfake detection has been widely explored using low-level acoustic descriptors. However, each study tends to select different feature sets, making it difficult to establish a unified representation for the task. Moreover, such features are not intuitive for humans to perceive, as the distinction between bona fide and synthesized speech becomes increasingly subtle with the advancement of deepfake generation techniques. Emotion, on the other hand, remains a unique human attribute that current deepfake generator struggles to fully replicate, reflecting the gap toward true artificial general intelligence. Interestingly, many existing acoustic and semantic features have implicit correlations with emotion. For instance, speech features recognized by automatic speech recognition systems often varies naturally with emotional expression. Based on this insight, we propose a novel training framework that leverages emotion as a bridge between conventional deepfake features and emotion-oriented representations. Experiments on the widely used FakeOrReal and In-the-Wild datasets demonstrate consistent and substantial improvements in accuracy, up to approximately 6% and 2% increases, respectively, and in equal error rate (EER), showing reductions of up to about 4% and 1%, respectively, while achieving comparable results on ASVspoof2019. This approach provides a unified training strategy for all features and interpretable feature direction for deepfake detection while improving model performance through emotion-informed learning.",
+    "paper_abstract_zh": "语音深度伪造检测已广泛使用低级声学描述符进行探索。然而，每项研究倾向于选择不同的特征集，难以为该任务建立统一的表示。此外，随着深度伪造生成技术的进步，真实语音与合成语音之间的差异变得越来越微妙，这些特征对人类来说并不直观。另一方面，情感仍然是当前深度伪造生成器难以完全复制的人类独特属性，反映了迈向真正通用人工智能的差距。有趣的是，许多现有的声学和语义特征与情感存在隐含相关性。例如，自动语音识别系统识别的语音特征通常随情感表达自然变化。基于这一见解，我们提出了一种新颖的训练框架，利用情感作为传统深度伪造特征与情感导向表示之间的桥梁。在广泛使用的FakeOrReal和In-the-Wild数据集上的实验表明，准确率有持续且显著的提高，分别增加了约6%和2%，等错误率（EER）也显示出降低，分别减少了约4%和1%，同时在ASVspoof2019上取得了可比的结果。该方法为所有特征提供了统一的训练策略，并为深度伪造检测提供了可解释的特征方向，同时通过情感感知学习提高了模型性能。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Yupei Li, Chenyang Lyu, Longyue Wang, Weihua Luo, Kaifu Zhang, Björn W. Schuller",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "PhraseVAE and PhraseLDM: Latent Diffusion for Full-Song Multitrack Symbolic Music Generation",
+    "paper_title_zh": "PhraseVAE和PhraseLDM：用于整首多轨符号音乐生成的潜在扩散模型",
+    "paper_id": "2512.11348",
+    "paper_abstract": "This technical report presents a new paradigm for full-song symbolic music generation. Existing symbolic models operate on note-attribute tokens and suffer from extremely long sequences, limited context length, and weak support for long-range structure. We address these issues by introducing PhraseVAE and PhraseLDM, the first latent diffusion framework designed for full-song multitrack symbolic music. PhraseVAE compresses variable-length polyphonic note sequences into compact 64-dimensional phrase-level representations with high reconstruction fidelity, allowing efficient training and a well-structured latent space. Built on this latent space, PhraseLDM generates an entire multi-track song in a single pass without any autoregressive components. The system eliminates bar-wise sequential modeling, supports up to 128 bars of music (8 minutes in 64 bpm), and produces complete songs with coherent local texture, idiomatic instrument patterns, and clear global structure. With only 45M parameters, our framework generates a full song within seconds while maintaining competitive musical quality and generation diversity. Together, these results show that phrase-level latent diffusion provides an effective and scalable solution to long-sequence modeling in symbolic music generation. We hope this work encourages future symbolic music research to move beyond note-attribute tokens and to consider phrase-level units as a more effective and musically meaningful modeling target.",
+    "paper_abstract_zh": "本技术报告提出了整首符号音乐生成的新范式。现有的符号模型基于音符属性令牌运行，并面临极长序列、有限上下文长度和弱长程结构支持等问题。我们通过引入PhraseVAE和PhraseLDM解决了这些问题，这是首个专为整首多轨符号音乐设计的潜在扩散框架。PhraseVAE将可变长度的复音音符序列压缩为具有高重建保真度的紧凑64维短语级表示，实现了高效训练和结构良好的潜在空间。基于此潜在空间，PhraseLDM无需任何自回归组件即可一次性生成完整的多轨歌曲。该系统消除了小节级顺序建模，支持最多128小节音乐（64 bpm下8分钟），并生成具有连贯局部纹理、惯用乐器模式和清晰全局结构的完整歌曲。仅需4500万参数，我们的框架即可在几秒内生成整首歌曲，同时保持具有竞争力的音乐质量和生成多样性。这些结果表明，短语级潜在扩散为符号音乐生成中的长序列建模提供了一种有效且可扩展的解决方案。我们希望这项工作能够鼓励未来的符号音乐研究超越音符属性令牌，并将短语级单元视为更有效且音乐上有意义的建模目标。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Longshen Ou, Ye Wang",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Graph Embedding with Mel-spectrograms for Underwater Acoustic Target Recognition",
+    "paper_title_zh": "基于梅尔频谱图的水下声学目标识别图嵌入",
+    "paper_id": "2512.11545",
+    "paper_abstract": "Underwater acoustic target recognition (UATR) is extremely challenging due to the complexity of ship-radiated noise and the variability of ocean environments. Although deep learning (DL) approaches have achieved promising results, most existing models implicitly assume that underwater acoustic data lie in a Euclidean space. This assumption, however, is unsuitable for the inherently complex topology of underwater acoustic signals, which exhibit non-stationary, non-Gaussian, and nonlinear characteristics. To overcome this limitation, this paper proposes the UATR-GTransformer, a non-Euclidean DL model that integrates Transformer architectures with graph neural networks (GNNs). The model comprises three key components: a Mel patchify block, a GTransformer block, and a classification head. The Mel patchify block partitions the Mel-spectrogram into overlapping patches, while the GTransformer block employs a Transformer Encoder to capture mutual information between split patches to generate Mel-graph embeddings. Subsequently, a GNN enhances these embeddings by modeling local neighborhood relationships, and a feed-forward network (FFN) further performs feature transformation. Experiments results based on two widely used benchmark datasets demonstrate that the UATR-GTransformer achieves performance competitive with state-of-the-art methods. In addition, interpretability analysis reveals that the proposed model effectively extracts rich frequency-domain information, highlighting its potential for applications in ocean engineering.",
+    "paper_abstract_zh": "由于船舶辐射噪声的复杂性和海洋环境的多变性，水下声学目标识别(UATR)极具挑战性。尽管深度学习(DL)方法已取得有前景的结果，但大多数现有模型隐含假设水下声学数据位于欧几里得空间中。然而，这一假设不适合水下声信号固有的复杂拓扑结构，这些信号表现出非平稳、非高斯和非线性特征。为克服这一局限，本文提出了UATR-GTransformer，一种非欧几里得深度学习模型，集成了Transformer架构与图神经网络(GNNs)。该模型包含三个关键组件：梅尔分块块、GTransformer块和分类头。梅尔分块块将梅尔频谱图划分为重叠块，而GTransformer块采用Transformer编码器捕获分割块间的互信息以生成梅尔图嵌入。随后，GNN通过建模局部邻域关系增强这些嵌入，前馈网络(FFN)进一步执行特征转换。基于两个广泛使用的基准数据集的实验结果表明，UATR-GTransformer的性能与最先进方法相当。此外，可解释性分析表明，所提模型能有效提取丰富的频域信息，突显了其在海洋工程应用中的潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Sheng Feng, Shuqing Ma, Xiaoqian Zhu",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "REST: Diffusion-based Real-time End-to-end Streaming Talking Head Generation via ID-Context Caching and Asynchronous Streaming Distillation",
+    "paper_title_zh": "REST：基于扩散模型的实时端到端流式说话人头部生成方法，通过ID上下文缓存和异步流式蒸馏",
+    "paper_id": "2512.11229",
+    "paper_abstract": "Diffusion models have significantly advanced the field of talking head generation. However, the slow inference speeds and non-autoregressive paradigms severely constrain the application of diffusion-based THG models. In this study, we propose REST, the first diffusion-based, real-time, end-to-end streaming audio-driven talking head generation framework. To support real-time end-to-end generation, a compact video latent space is first learned through high spatiotemporal VAE compression. Additionally, to enable autoregressive streaming within the compact video latent space, we introduce an ID-Context Cache mechanism, which integrates ID-Sink and Context-Cache principles to key-value caching for maintaining temporal consistency and identity coherence during long-time streaming generation. Furthermore, an Asynchronous Streaming Distillation (ASD) training strategy is proposed to mitigate error accumulation in autoregressive generation and enhance temporal consistency, which leverages a non-streaming teacher with an asynchronous noise schedule to supervise the training of the streaming student model. REST bridges the gap between autoregressive and diffusion-based approaches, demonstrating substantial value for applications requiring real-time talking head generation. Experimental results demonstrate that REST outperforms state-of-the-art methods in both generation speed and overall performance.",
+    "paper_abstract_zh": "扩散模型在说话人头部生成领域取得了显著进展。然而，缓慢的推理速度和非自回归范式严重限制了基于扩散模型的THG模型的应用。在本研究中，我们提出了REST，这是首个基于扩散模型的实时端到端流式音频驱动的说话人头部生成框架。为了支持实时端到端生成，首先通过高时空VAE压缩学习了一个紧凑的视频潜在空间。此外，为了在紧凑的视频潜在空间内实现自回归流式生成，我们引入了ID上下文缓存机制，该机制结合了ID-Sink和上下文缓存原则，通过键值缓存来维持长时间流式生成过程中的时间一致性和身份一致性。此外，我们还提出了一种异步流式蒸馏(ASD)训练策略，以减轻自回归生成中的误差累积并提高时间一致性，该策略利用非流式教师模型和异步噪声时间表来监督流式学生模型的训练。REST弥合了自回归方法和基于扩散方法之间的差距，展示了在需要实时说话人头部生成的应用中的巨大价值。实验结果表明，REST在生成速度和整体性能方面均优于最先进的方法。",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Haotian Wang, Yuzhe Weng, Xinyi Yu, Jun Du, Haoran Xu, Xiaoyan Wu, Shan He, Bing Yin, Cong Liu, Qingfeng Liu",
+    "topic": [
+      "Video Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Processing through encoding: Quantum circuit approaches for point-wise multiplication and convolution",
+    "paper_title_zh": "",
+    "paper_id": "2512.11457",
+    "paper_abstract": "This paper introduces quantum circuit methodologies for pointwise multiplication and convolution of complex functions, conceptualized as \"processing through encoding\". Leveraging known techniques, we describe an approach where multiple complex functions are encoded onto auxiliary qubits. Applying the proposed scheme for two functions $f$ and $g$, their pointwise product $f(x)g(x)$ is shown to naturally form as the coefficients of part of the resulting quantum state. Adhering to the convolution theorem, we then demonstrate how the convolution $f*g$ can be constructed. Similarly to related work, this involves the encoding of the Fourier coefficients $\\mathcal{F}[f]$ and $\\mathcal{F}[g]$, which facilitates their pointwise multiplication, followed by the inverse Quantum Fourier Transform. We discuss the simulation of these techniques, their integration into an extended \\verb|quantumaudio| package for audio signal processing, and present initial experimental validations. This work offers a promising avenue for quantum signal processing, with potential applications in areas such as quantum-enhanced audio manipulation and synthesis.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Quantum Physics (quant-ph)",
+      "Emerging Technologies (cs.ET)",
+      "Sound (cs.SD)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-12-15",
+    "paper_authors": "Andreas Papageorgiou, Paulo Vitor Itaborai, Kostas Blekos, Karl Jansen",
+    "topic": [],
+    "category": []
+  }
+]
