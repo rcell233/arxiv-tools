@@ -1,0 +1,234 @@
+[
+  {
+    "paper_title": "BUT Systems for WildSpoof Challenge: SASV in the Wild",
+    "paper_title_zh": "BUT系统用于WildSpoof挑战：野外场景下的SASV",
+    "paper_id": "2512.12851",
+    "paper_abstract": "This paper presents the BUT submission to the WildSpoof Challenge, focusing on the Spoofing-robust Automatic Speaker Verification (SASV) track. We propose a SASV framework designed to bridge the gap between general audio understanding and specialized speech analysis. Our subsystem integrates diverse Self-Supervised Learning front-ends ranging from general audio models (e.g., Dasheng) to speech-specific encoders (e.g., WavLM). These representations are aggregated via a lightweight Multi-Head Factorized Attention back-end for corresponding subtasks. Furthermore, we introduce a feature domain augmentation strategy based on Distribution Uncertainty to explicitly model and mitigate the domain shift caused by unseen neural vocoders and recording environments. By fusing these robust CM scores with state-of-the-art ASV systems, our approach achieves superior minimization of the a-DCFs and EERs.",
+    "paper_abstract_zh": "本文介绍了BUT团队在WildSpoof挑战中的提交方案，专注于欺骗鲁棒的自动说话人验证（SASV）赛道。我们提出了一种SASV框架，旨在弥合通用音频理解与专业语音分析之间的差距。我们的子系统集成了多种自监督学习前端，从通用音频模型（如Dasheng）到语音特定编码器（如WavLM）。这些表示通过轻量级多头分解注意力后端进行聚合，以应对相应的子任务。此外，我们引入了一种基于分布不确定性的特征域增强策略，用于显式建模和缓解由未见过的神经声码器和录音环境引起的域偏移。通过将这些鲁棒的CM分数与最先进的ASV系统融合，我们的方法在最小化a-DCFs和EER方面取得了优异性能。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Junyi Peng, Jin Li, Johan Rohdin, Lin Zhang, Miroslav Hlaváček, Oldrich Plchot",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "REVERB-FL: Server-Side Adversarial and Reserve-Enhanced Federated Learning for Robust Audio Classification",
+    "paper_title_zh": "REVERB-FL：用于鲁棒音频分类的服务器端对抗和增强型联邦学习",
+    "paper_id": "2512.13647",
+    "paper_abstract": "Federated learning (FL) enables a privacy-preserving training paradigm for audio classification but is highly sensitive to client heterogeneity and poisoning attacks, where adversarially compromised clients can bias the global model and hinder the performance of audio classifiers. To mitigate the effects of model poisoning for audio signal classification, we present REVERB-FL, a lightweight, server-side defense that couples a small reserve set (approximately 5%) with pre- and post-aggregation retraining and adversarial training. After each local training round, the server refines the global model on the reserve set with either clean or additional adversarially perturbed data, thereby counteracting non-IID drift and mitigating potential model poisoning without adding substantial client-side cost or altering the aggregation process. We theoretically demonstrate the feasibility of our framework, showing faster convergence and a reduced steady-state error relative to baseline federated averaging. We validate our framework on two open-source audio classification datasets with varying IID and Dirichlet non-IID partitions and demonstrate that REVERB-FL mitigates global model poisoning under multiple designs of local data poisoning.",
+    "paper_abstract_zh": "联邦学习(FL)为音频分类提供了一种隐私保护的训练范式，但对客户端异构性和中毒攻击高度敏感，其中被敌对破坏的客户端可能会使全局模型产生偏差并阻碍音频分类器的性能。为了减轻音频信号分类中的模型中毒影响，我们提出了REVERB-FL，这是一种轻量级的服务器端防御方法，它将一个小型保留集(约5%)与聚合前后的重新训练和对抗训练相结合。在每个本地训练轮次后，服务器使用干净或额外的对抗扰动数据在保留集上优化全局模型，从而对抗非IID漂移并减轻潜在的模型中毒，同时不会显著增加客户端成本或改变聚合过程。我们从理论上证明了我们框架的可行性，显示与基线联邦平均相比具有更快的收敛速度和更低的稳态误差。我们在两个开源音频分类数据集上验证了我们的框架，这些数据集具有不同的IID和Dirichlet非IID分区，并证明了REVERB-FL在多种本地数据中毒设计下能够减轻全局模型中毒。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Sathwika Peechara, Rajeev Sahay",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "AutoMV: An Automatic Multi-Agent System for Music Video Generation",
+    "paper_title_zh": "",
+    "paper_id": "2512.12196",
+    "paper_abstract": "Music-to-Video (M2V) generation for full-length songs faces significant challenges. Existing methods produce short, disjointed clips, failing to align visuals with musical structure, beats, or lyrics, and lack temporal consistency. We propose AutoMV, a multi-agent system that generates full music videos (MVs) directly from a song. AutoMV first applies music processing tools to extract musical attributes, such as structure, vocal tracks, and time-aligned lyrics, and constructs these features as contextual inputs for following agents. The screenwriter Agent and director Agent then use this information to design short script, define character profiles in a shared external bank, and specify camera instructions. Subsequently, these agents call the image generator for keyframes and different video generators for \"story\" or \"singer\" scenes. A Verifier Agent evaluates their output, enabling multi-agent collaboration to produce a coherent longform MV. To evaluate M2V generation, we further propose a benchmark with four high-level categories (Music Content, Technical, Post-production, Art) and twelve ine-grained criteria. This benchmark was applied to compare commercial products, AutoMV, and human-directed MVs with expert human raters: AutoMV outperforms current baselines significantly across all four categories, narrowing the gap to professional MVs. Finally, we investigate using large multimodal models as automatic MV judges; while promising, they still lag behind human expert, highlighting room for future work.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Sound (cs.SD)",
+      "Multimedia (cs.MM)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Xiaoxuan Tang, Xinping Lei, Chaoran Zhu, Shiyun Chen, Ruibin Yuan, Yizhi Li, Changjae Oh, Ge Zhang, Wenhao Huang, Emmanouil Benetos, Yang Liu, Jiaheng Liu, Yinghao Ma",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "A comparative study of generative models for child voice conversion",
+    "paper_title_zh": "用于儿童语音转换的生成模型比较研究",
+    "paper_id": "2512.12129",
+    "paper_abstract": "Generative models are a popular choice for adult-to-adult voice conversion (VC) because of their efficient way of modelling unlabelled data. To this point their usefulness in producing children speech and in particular adult to child VC has not been investigated. For adult to child VC, four generative models are compared: diffusion model, flow based model, variational autoencoders, and generative adversarial network. Results show that although converted speech outputs produce by those models appear plausible, they exhibit insufficient similarity with the target speaker characteristics. We introduce an efficient frequency warping technique that can be applied to the output of models, and which shows significant reduction of the mismatch between adult and child. The output of all the models are evaluated using both objective and subjective measures. In particular we compare specific speaker pairing using a unique corpus collected for dubbing of children speech.",
+    "paper_abstract_zh": "生成模型是成人到成人语音转换(VC)的热门选择，因为它们能够高效地建模未标记的数据。迄今为止，它们在生成儿童语音以及成人到儿童语音转换方面的实用性尚未得到研究。对于成人到儿童语音转换，我们比较了四种生成模型：扩散模型、基于流的模型、变分自编码器和生成对抗网络。结果表明，尽管这些模型生成的转换语音输出看似合理，但它们与目标说话人特征的相似性不足。我们引入了一种高效的频率扭曲技术，可应用于模型输出，并显著减少了成人语音和儿童语音之间的不匹配。所有模型的输出均通过客观和主观指标进行评估。特别是，我们使用为儿童语音配音收集的独特语料库，比较了特定的说话人配对。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Protima Nomo Sudro, Anton Ragni, Thomas Hain",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Privacy-Aware Ambient Audio Sensing for Healthy Indoor Spaces",
+    "paper_title_zh": "隐私感知的环境音频感应用于健康室内空间",
+    "paper_id": "2512.12471",
+    "paper_abstract": "Indoor airborne transmission poses a significant health risk, yet current monitoring solutions are invasive, costly, or fail to address it directly. My research explores the untapped potential of ambient audio sensing to estimate key transmission risk factors such as ventilation, aerosol emissions, and occupant distribution non-invasively and in real time. I develop privacy-preserving systems that leverage existing microphones to monitor the whole spectrum of indoor air quality which can have a significant effect on an individual's health. This work lays the foundation for privacy-aware airborne risk monitoring using everyday devices.",
+    "paper_abstract_zh": "室内空气传播构成重大健康风险，然而当前的监测方案具有侵入性、成本高昂或未能直接解决这一问题。我的研究探索了环境音频感应的未开发潜力，以非侵入式和实时方式估计关键传播风险因素，如通风、气溶胶排放和人员分布。我开发了隐私保护系统，利用现有麦克风监测室内空气质量的整个范围，这可能对个人健康产生重大影响。这项工作为使用日常设备进行隐私感知的空气传播风险监测奠定了基础。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Bhawana Chhaglani",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Adaptive Edge-Cloud Inference for Speech-to-Action Systems Using ASR and Large Language Models (ASTA)",
+    "paper_title_zh": "基于ASR和大语言模型的自适应边缘-云语音到动作系统(ASTA)",
+    "paper_id": "2512.12769",
+    "paper_abstract": "Voice-based interaction has emerged as a natural and intuitive modality for controlling IoT devices. However, speech-driven edge devices face a fundamental trade-off between cloud-based solutions, which offer stronger language understanding capabilities at the cost of latency, connectivity dependence, and privacy concerns, and edge-based solutions, which provide low latency and improved privacy but are limited by computational constraints. This paper presents ASTA, an adaptive speech-to-action solution that dynamically routes voice commands between edge and cloud inference to balance performance and system resource utilization. ASTA integrates on-device automatic speech recognition and lightweight offline language-model inference with cloud-based LLM processing, guided by real-time system metrics such as CPU workload, device temperature, and network latency. A metric-aware routing mechanism selects the inference path at runtime, while a rule-based command validation and repair component ensures successful end-to-end command execution. We implemented our solution on an NVIDIA Jetson-based edge platform and evaluated it using a diverse dataset of 80 spoken commands. Experimental results show that ASTA successfully routes all input commands for execution, achieving a balanced distribution between online and offline inference. The system attains an ASR accuracy of 62.5% and generates executable commands without repair for only 47.5% of inputs, highlighting the importance of the repair mechanism in improving robustness. These results suggest that adaptive edge-cloud orchestration is a viable approach for resilient and resource-aware voice-controlled IoT systems.",
+    "paper_abstract_zh": "基于语音的交互已成为控制物联网设备的一种自然直观的方式。然而，语音驱动的边缘设备面临着基于云的解决方案和基于边缘的解决方案之间的基本权衡：基于云的解决方案提供更强的语言理解能力，但代价是延迟、连接依赖性和隐私问题；而基于边缘的解决方案提供低延迟和改进的隐私，但受计算资源限制。本文提出了ASTA，一种自适应的语音到动作解决方案，动态地在边缘和云推理之间路由语音命令，以平衡性能和系统资源利用率。ASTA集成了设备端自动语音识别和轻量级离线语言模型推理与基于云的LLM处理，由实时系统指标（如CPU工作负载、设备温度和网络延迟）指导。一种指标感知的路由机制在运行时选择推理路径，而基于规则的命令验证和修复组件确保端到端命令执行成功。我们在基于NVIDIA Jetson的边缘平台上实现了我们的解决方案，并使用80个语音命令的多样化数据集对其进行了评估。实验结果表明，ASTA成功路由所有输入命令以执行，实现了在线和离线推理之间的平衡分布。系统达到62.5%的ASR准确率，仅对47.5%的输入生成无需修复的可执行命令，突显了修复机制在提高鲁棒性方面的重要性。这些结果表明，自适应边缘-云编排是具有弹性和资源感知能力的语音控制物联网系统的可行方法。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Mohammad Jalili Torkamani, Israt Zarin",
+    "topic": [
+      "Speech Recognition",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Procedural Music Generation Systems in Games",
+    "paper_title_zh": "游戏中的程序化音乐生成系统",
+    "paper_id": "2512.12834",
+    "paper_abstract": "Procedural Music Generation (PMG) is an emerging field that algorithmically creates music content for video games. By leveraging techniques from simple rule-based approaches to advanced machine learning algorithms, PMG has the potential to significantly improve development efficiency, provide richer musical experiences, and enhance player immersion. However, academic prototypes often diverge from applications due to differences in priorities such as novelty, reliability, and allocated resources. This paper bridges the gap between research and applications by presenting a systematic overview of current PMG techniques in both fields, offering a two-aspect taxonomy. Through a comparative analysis, this study identifies key research challenges in algorithm implementation, music quality and game integration. Finally, the paper outlines future research directions, emphasising task-oriented and context-aware design, more comprehensive quality evaluation methods, and improved research tool integration to provide actionable insights for developers, composers, and researchers seeking to advance PMG in game contexts.",
+    "paper_abstract_zh": "程序化音乐生成(PMG)是一个新兴领域，通过算法为视频游戏创建音乐内容。从简单的基于规则的方法到先进的机器学习算法，PMG有可能显著提高开发效率，提供更丰富的音乐体验，并增强玩家的沉浸感。然而，学术原型与应用之间存在差异，这是由于优先级、可靠性和分配资源的不同造成的。本文通过介绍两个领域中当前的PMG技术，并提供一个双方面分类法，弥合了研究与应用之间的差距。通过比较分析，本研究确定了算法实现、音乐质量和游戏集成中的关键研究挑战。最后，论文概述了未来的研究方向，强调任务导向和上下文感知的设计、更全面的质量评估方法以及改进的研究工具集成，为寻求在游戏环境中推进PMG的开发人员、作曲家和研究人员提供可行的见解。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Shangxuan Luo, Joshua Reiss",
+    "topic": [
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "HQ-MPSD: A Multilingual Artifact-Controlled Benchmark for Partial Deepfake Speech Detection",
+    "paper_title_zh": "HQ-MPSD: 一种用于部分深度伪造语音检测的多语言人工控制基准",
+    "paper_id": "2512.13012",
+    "paper_abstract": "Detecting partial deepfake speech is challenging because manipulations occur only in short regions while the surrounding audio remains authentic. However, existing detection methods are fundamentally limited by the quality of available datasets, many of which rely on outdated synthesis systems and generation procedures that introduce dataset-specific artifacts rather than realistic manipulation cues. To address this gap, we introduce HQ-MPSD, a high-quality multilingual partial deepfake speech dataset. HQ-MPSD is constructed using linguistically coherent splice points derived from fine-grained forced alignment, preserving prosodic and semantic continuity and minimizing audible and visual boundary artifacts. The dataset contains 350.8 hours of speech across eight languages and 550 speakers, with background effects added to better reflect real-world acoustic conditions. MOS evaluations and spectrogram analysis confirm the high perceptual naturalness of the samples. We benchmark state-of-the-art detection models through cross-language and cross-dataset evaluations, and all models experience performance drops exceeding 80% on HQ-MPSD. These results demonstrate that HQ-MPSD exposes significant generalization challenges once low-level artifacts are removed and multilingual and acoustic diversity are introduced, providing a more realistic and demanding benchmark for partial deepfake detection. The dataset can be found at: this https URL.",
+    "paper_abstract_zh": "检测部分深度伪造语音具有挑战性，因为篡改仅发生在短区域，而周围的音频保持真实。然而，现有的检测方法从根本上受到可用数据集质量的限制，其中许多依赖于过时的合成系统和生成程序，这些程序引入了特定于数据集的人工特征，而不是真实的篡改线索。为了解决这一差距，我们引入了HQ-MPSD，一个高质量的多语言部分深度伪造语音数据集。HQ-MPSD使用来自细粒度强制对齐的语言连贯拼接点构建，保留了韵律和语义连续性，并最小化了可听和视觉边界人工特征。该数据集包含八种语言和550名说话人的350.8小时语音，并添加了背景效果以更好地反映真实世界的声学条件。MOS评估和频谱图分析确认了样本的高感知自然度。我们通过跨语言和跨数据集评估对最先进的检测模型进行了基准测试，所有模型在HQ-MPSD上的性能下降都超过80%。这些结果表明，一旦低级人工特征被移除并引入多语言和声学多样性，HQ-MPSD就会暴露出显著的泛化挑战，为部分深度伪造检测提供了一个更现实和更具挑战性的基准。数据集可在以下网址找到：this https URL。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Menglu Li, Majd Alber, Ramtin Asgarianamiri, Lian Zhao, Xiao-Ping Zhang",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DisCo-Speech: Controllable Zero-Shot Speech Generation with A Disentangled Speech Codec",
+    "paper_title_zh": "DisCo-Speech: 基于解耦语音编解码器的可控零样本语音生成",
+    "paper_id": "2512.13251",
+    "paper_abstract": "Recent codec-based language models~(LMs) have revolutionized text-to-speech~(TTS). However, since standard codecs tightly couple timbre and prosody, continuation-based LMs inevitably replicate this entanglement, hindering independent control. Recent efforts attempt to break this entanglement via codec design, but insufficient decoupling remains a critical bottleneck. To tackle this challenge, we propose DisCo-Speech, a zero-shot controllable TTS framework that enables prosody control and voice cloning via a disentangled speech codec (DisCodec) and an LM-based generator. The core component, DisCodec, contains two core stages: 1) Tri-factor disentanglement, which explicitly factorizes speech into content, prosody, and timbre subspaces via parallel encoders and hybrid losses; and 2) Fusion and reconstruction, which fuses content and prosody into unified content-prosody tokens suitable for LM prediction, while jointly optimizing reconstruction quality to resolve the disentanglement-reconstruction trade-off. With this design, the LM performs prosodic continuation from a style prompt while the decoder handles target timbre injection, enabling flexible zero-shot control. Experiments show that DisCo-Speech matches state-of-the-art voice cloning performance while outperforming baselines in zero-shot prosody control. By resolving the core entanglement at the codec level, DisCo-Speech provides a robust foundation for controllable speech synthesis. Audio samples are available at this https URL, and the code and weights will be released at the same link.",
+    "paper_abstract_zh": "最近的基于编解码器的语言模型(LMs)彻底改变了文本到语音(TTS)技术。然而，由于标准编解码器紧密耦合音色和韵律，基于延续的LM不可避免地复制了这种耦合，阻碍了独立控制。最近的研究尝试通过编解码器设计来打破这种耦合，但解耦不足仍然是一个关键瓶颈。为了应对这一挑战，我们提出了DisCo-Speech，一个零样本可控TTS框架，它通过解耦语音编解码器(DisCodec)和基于LM的生成器实现韵律控制和语音克隆。核心组件DisCodec包含两个核心阶段：1) 三因子解耦，通过并行编码器和混合损失将语音明确分解为内容、韵律和音色子空间；2) 融合与重建，将内容和韵律融合为适合LM预测的统一内容-韵律标记，同时联合优化重建质量以解决解耦-重建的权衡。通过这种设计，LM从风格提示执行韵律延续，而解码器处理目标音色注入，实现灵活的零样本控制。实验表明，DisCo-Speech在语音克隆方面达到最先进性能，同时在零样本韵律控制上优于基线方法。通过在编解码器层面解决核心耦合问题，DisCo-Speech为可控语音合成提供了坚实基础。音频样本可在提供的URL获取，代码和权重将在同一链接发布。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Tao Li, Wengshuo Ge, Zhichao Wang, Zihao Cui, Yong Ma, Yingying Gao, Chao Deng, Shilei Zhang, Junlan Feng",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SAMAY: System for Acoustic Measurement and Analysis",
+    "paper_title_zh": "SAMAY: 声学测量与分析系统",
+    "paper_id": "2512.13284",
+    "paper_abstract": "This paper describes an automatic bird call recording system called SAMAY, which is developed to study bird species by creating a database of large amounts of bird acoustic data. By analysing the recorded bird call data, the system can also be used for automatic classification of bird species, monitoring bird populations and analysing the impact of environmental changes. The system is driven through a powerful STM32F407 series microcontroller, supports 4 microphones, is equipped with 128 GB of storage capacity, and is powered by a 10400 mAh battery pack interfaced with a solar charger. In addition, the device is user-configurable over USB and Wi-Fi during runtime, ensuring user-friendly operation during field deployment.",
+    "paper_abstract_zh": "本文描述了一个名为SAMAY的自动鸟类鸣叫录音系统，该系统旨在通过创建大量鸟类声学数据库来研究鸟类物种。通过分析录制的鸟类鸣叫数据，该系统还可用于鸟类物种的自动分类、监测鸟类种群以及分析环境变化的影响。该系统由强大的STM32F407系列微控制器驱动，支持4个麦克风，配备128 GB的存储容量，并由与太阳能充电器接口的10400 mAh电池组供电。此外，该设备在运行时可通过USB和Wi-Fi进行用户配置，确保在野外部署时操作友好。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Robotics (cs.RO)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Adheep Arya G R, Vaibhav Pratap Singh, Mayank Kumar, Niyathi Shenoy, Tejas Suryawanshi, Ruchi Juyal, Sangit Saha, Kaushik Nanda, Hari Babu Pasupuleti, S D Sudarsan",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Schrodinger Audio-Visual Editor: Object-Level Audiovisual Removal",
+    "paper_title_zh": "薛定谔音频视频编辑器：对象级音视频移除",
+    "paper_id": "2512.12875",
+    "paper_abstract": "Joint editing of audio and visual content is crucial for precise and controllable content creation. This new task poses challenges due to the limitations of paired audio-visual data before and after targeted edits, and the heterogeneity across modalities. To address the data and modeling challenges in joint audio-visual editing, we introduce SAVEBench, a paired audiovisual dataset with text and mask conditions to enable object-grounded source-to-target learning. With SAVEBench, we train the Schrodinger Audio-Visual Editor (SAVE), an end-to-end flow-matching model that edits audio and video in parallel while keeping them aligned throughout processing. SAVE incorporates a Schrodinger Bridge that learns a direct transport from source to target audiovisual mixtures. Our evaluation demonstrates that the proposed SAVE model is able to remove the target objects in audio and visual content while preserving the remaining content, with stronger temporal synchronization and audiovisual semantic correspondence compared with pairwise combinations of an audio editor and a video editor.",
+    "paper_abstract_zh": "音频和视觉内容的联合编辑对于精确和可控的内容创作至关重要。由于目标编辑前后配对的音视频数据的限制以及模态之间的异构性，这一新任务带来了挑战。为了解决联合音视频编辑中的数据和建模挑战，我们引入了SAVEBench，这是一个带有文本和掩码条件的配对音视频数据集，用于实现基于对象的目标到源学习。利用SAVEBench，我们训练了薛定谔音视频编辑器（SAVE），这是一个端到端的流匹配模型，能够并行编辑音频和视频，并在整个处理过程中保持它们对齐。SAVE包含一个薛定谔桥，用于学习从源到目标音视频混合物的直接传输。我们的评估表明，与音频编辑器和视频编辑器的组合相比，所提出的SAVE模型能够在保留剩余内容的同时移除音视频内容中的目标对象，并具有更强的时序同步和音视频语义对应关系。",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Weihan Xu, Kan Jen Cheng, Koichi Saito, Muhammad Jehanzeb Mirza, Tingle Li, Yisi Liu, Alexander H. Liu, Liming Wang, Masato Ishii, Takashi Shibuya, Yuki Mitsufuji, Gopala Anumanchipalli, Paul Pu Liang",
+    "topic": [
+      "Audio Representation Learning",
+      "Video Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Towards Unified Co-Speech Gesture Generation via Hierarchical Implicit Periodicity Learning",
+    "paper_title_zh": "通过分层隐式周期性学习实现统一语音手势生成",
+    "paper_id": "2512.13131",
+    "paper_abstract": "Generating 3D-based body movements from speech shows great potential in extensive downstream applications, while it still suffers challenges in imitating realistic human movements. Predominant research efforts focus on end-to-end generation schemes to generate co-speech gestures, spanning GANs, VQ-VAE, and recent diffusion models. As an ill-posed problem, in this paper, we argue that these prevailing learning schemes fail to model crucial inter- and intra-correlations across different motion units, i.e. head, body, and hands, thus leading to unnatural movements and poor coordination. To delve into these intrinsic correlations, we propose a unified Hierarchical Implicit Periodicity (HIP) learning approach for audio-inspired 3D gesture generation. Different from predominant research, our approach models this multi-modal implicit relationship by two explicit technique insights: i) To disentangle the complicated gesture movements, we first explore the gesture motion phase manifolds with periodic autoencoders to imitate human natures from realistic distributions while incorporating non-period ones from current latent states for instance-level diversities. ii) To model the hierarchical relationship of face motions, body gestures, and hand movements, driving the animation with cascaded guidance during learning. We exhibit our proposed approach on 3D avatars and extensive experiments show our method outperforms the state-of-the-art co-speech gesture generation methods by both quantitative and qualitative evaluations. Code and models will be publicly available.",
+    "paper_abstract_zh": "从语音生成基于3D的身体运动在广泛的下游应用中显示出巨大潜力，但在模仿真实人类运动方面仍面临挑战。主要的研究工作集中在端到端的生成方案上，用于生成语音伴随的手势，涵盖了GAN、VQ-VAE和最近的扩散模型。作为一个不适定问题，在本文中，我们认为这些主流的学习方案未能建模不同运动单元（即头部、身体和手部）之间的重要内部和相关性，从而导致不自然的运动和协调性差。为了探索这些内在相关性，我们提出了一种统一的分层隐式周期性（HIP）学习方法，用于音频驱动的3D手势生成。与主流研究不同，我们的方法通过两个明确的技术洞察来建模这种多模态隐式关系：i) 为了解复杂的手势运动，我们首先使用周期性自编码器探索手势运动相位流形，以从真实分布中模仿人类自然特性，同时从当前潜在状态中引入非周期性特性以实现实例级别的多样性。ii) 为了建模面部运动、身体手势和手部运动的层次关系，在学习过程中使用级联指导驱动动画。我们在3D虚拟角色上展示了我们提出的方法，大量实验表明，通过定量和定性评估，我们的方法优于最先进的语音伴随手势生成方法。代码和模型将公开提供。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Graphics (cs.GR)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-16",
+    "paper_authors": "Xin Guo, Yifan Zhao, Jia Li",
+    "topic": [
+      "Audio Representation Learning",
+      "Video Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  }
+]
