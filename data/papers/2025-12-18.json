@@ -1,0 +1,209 @@
+[
+  {
+    "paper_title": "On the Use of Self-Supervised Representation Learning for Speaker Diarization and Separation",
+    "paper_title_zh": "关于自监督表示学习在说话人分割与分离中的应用",
+    "paper_id": "2512.15224",
+    "paper_abstract": "Self-supervised speech models such as wav2vec2.0 and WavLM have been shown to significantly improve the performance of many downstream speech tasks, especially in low-resource settings, over the past few years. Despite this, evaluations on tasks such as Speaker Diarization and Speech Separation remain limited. This paper investigates the quality of recent self-supervised speech representations on these two speaker identity-related tasks, highlighting gaps in the current literature that stem from limitations in the existing benchmarks, particularly the lack of diversity in evaluation datasets and variety in downstream systems associated to both diarization and separation.",
+    "paper_abstract_zh": "近年来，wav2vec2.0和WavLM等自监督语音模型已被证明能够显著提升许多下游语音任务的性能，特别是在低资源场景下。尽管如此，这些模型在说话人分割和语音分离等任务上的评估仍然有限。本文研究了最新的自监督语音表示在这两个与说话人身份相关任务上的质量，指出了当前文献中存在的差距，这些差距源于现有基准的局限性，特别是评估数据集多样性的不足以及与分割和分离相关的下游系统 variety 的缺乏。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Séverin Baroudi, Hervé Bredin, Joseph Razik, Ricard Marxer",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Adaptive Multimodal Person Recognition: A Robust Framework for Handling Missing Modalities",
+    "paper_title_zh": "自适应多模态人员识别：一种处理缺失模态的鲁棒框架",
+    "paper_id": "2512.14961",
+    "paper_abstract": "Person recognition systems often rely on audio, visual, or behavioral cues, but real-world conditions frequently result in missing or degraded modalities. To address this challenge, we propose a Trimodal person identification framework that integrates voice, face, and gesture modalities, while remaining robust to modality loss. Our approach leverages multi-task learning to process each modality independently, followed by a cross-attention and gated fusion mechanisms to facilitate interaction across modalities. Moreover, a confidence-weighted fusion strategy dynamically adapts to missing and low-quality data, ensuring optimal classification even in Unimodal or Bimodal scenarios. We evaluate our method on CANDOR, a newly introduced interview-based multimodal dataset, which we benchmark for the first time. Our results demonstrate that the proposed Trimodal system achieves 99.18% Top-1 accuracy on person identification tasks, outperforming conventional Unimodal and late-fusion approaches. In addition, we evaluate our model on the VoxCeleb1 dataset as a benchmark and reach 99.92% accuracy in Bimodal mode. Moreover, we show that our system maintains high accuracy even when one or two modalities are unavailable, making it a robust solution for real-world person recognition applications. The code and data for this work are publicly available.",
+    "paper_abstract_zh": "人员识别系统通常依赖于音频、视觉或行为线索，但现实条件经常导致模态缺失或降级。为应对这一挑战，我们提出了一种三模态人员识别框架，整合了语音、面部和手势模态，同时保持对模态损失的鲁棒性。我们的方法利用多任务学习独立处理每个模态，然后通过交叉注意力和门控融合机制促进模态间的交互。此外，一种基于置信度的融合策略能够动态适应缺失和低质量数据，确保在单模态或双模态场景下实现最佳分类。我们在CANDOR（一种新引入的基于访谈的多模态数据集）上评估了我们的方法，这是首次对该数据集进行基准测试。结果表明，所提出的三模态系统在人员识别任务上达到了99.18%的Top-1准确率，优于传统的单模态和晚期融合方法。此外，我们在VoxCeleb1数据集上作为基准评估了我们的模型，在双模态模式下达到了99.92%的准确率。更重要的是，我们展示了即使当一个或两个模态不可用时，我们的系统仍能保持高准确率，使其成为现实世界人员识别应用的鲁棒解决方案。本工作的代码和数据已公开可获取。",
+    "subjects": [
+      "Image and Video Processing (eess.IV)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Aref Farhadipour, Teodora Vukovic, Volker Dellwo, Petr Motlicek, Srikanth Madikeri",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "A Conditioned UNet for Music Source Separation",
+    "paper_title_zh": "一种用于音乐源分离的条件UNet",
+    "paper_id": "2512.15532",
+    "paper_abstract": "In this paper we propose a conditioned UNet for Music Source Separation (MSS). MSS is generally performed by multi-output neural networks, typically UNets, with each output representing a particular stem from a predefined instrument vocabulary. In contrast, conditioned MSS networks accept an audio query related to a stem of interest alongside the signal from which that stem is to be extracted. Thus, a strict vocabulary is not required and this enables more realistic tasks in MSS. The potential of conditioned approaches for such tasks has been somewhat hidden due to a lack of suitable data, an issue recently addressed with the MoisesDb dataset. A recent method, Banquet, employs this dataset with promising results seen on larger vocabularies. Banquet uses Bandsplit RNN rather than a UNet and the authors state that UNets should not be suitable for conditioned MSS. We counter this argument and propose QSCNet, a novel conditioned UNet for MSS that integrates network conditioning elements in the Sparse Compressed Network for MSS. We find QSCNet to outperform Banquet by over 1dB SNR on a couple of MSS tasks, while using less than half the number of parameters.",
+    "paper_abstract_zh": "在本文中，我们提出了一种用于音乐源分离(MSS)的条件UNet。MSS通常由多输出神经网络执行，通常是UNet，每个输出代表来自预定义乐器词汇表的特定音轨。相比之下，条件MSS网络接受与感兴趣的音轨相关的音频查询，以及需要从中提取该音轨的信号。因此，不需要严格的词汇表，这使得MSS中的任务更加现实。由于缺乏合适的数据，条件方法在这些任务中的潜力在一定程度上被隐藏，这个问题最近通过MoisesDb数据集得到了解决。最近的一种方法Banquet使用这个数据集，并在更大的词汇表上看到了有希望的结果。Banquet使用Bandsplit RNN而不是UNet，作者指出UNet不适合条件MSS。我们反驳了这一论点，并提出了QSCNet，这是一种新颖的条件UNet，用于MSS，它将网络条件元素集成到MSS的稀疏压缩网络中。我们发现，在几个MSS任务上，QSCNet的性能比Banquet高出1dB以上的SNR，同时使用的参数数量不到一半。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Ken O'Hanlon, Basil Woods, Lin Wang, Mark Sandler",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Audio MultiChallenge: A Multi-Turn Evaluation of Spoken Dialogue Systems on Natural Human Interaction",
+    "paper_title_zh": "音频多挑战：自然人类交互中口语对话系统的多轮评估",
+    "paper_id": "2512.14865",
+    "paper_abstract": "End-to-end (E2E) spoken dialogue systems are increasingly replacing cascaded pipelines for voice-based human-AI interaction, processing raw audio directly without intermediate transcription. Existing benchmarks primarily evaluate these models on synthetic speech and single-turn tasks, leaving realistic multi-turn conversational ability underexplored. We introduce Audio MultiChallenge, an open-source benchmark to evaluate E2E spoken dialogue systems under natural multi-turn interaction patterns. Building on the text-based MultiChallenge framework, which evaluates Inference Memory, Instruction Retention, and Self Coherence, we introduce a new axis Voice Editing that tests robustness to mid-utterance speech repairs and backtracking. We further augment each axis to the audio modality, such as introducing Audio-Cue challenges for Inference Memory that require recalling ambient sounds and paralinguistic signals beyond semantic content. We curate 452 conversations from 47 speakers with 1,712 instance-specific rubrics through a hybrid audio-native agentic and human-in-the-loop pipeline that exposes model failures at scale while preserving natural disfluencies found in unscripted human speech. Our evaluation of proprietary and open-source models reveals that even frontier models struggle on our benchmark, with Gemini 3 Pro Preview (Thinking), our highest-performing model achieving a 54.65% pass rate. Error analysis shows that models fail most often on our new axes and that Self Coherence degrades with longer audio context. These failures reflect difficulty of tracking edits, audio cues, and long-range context in natural spoken dialogue. Audio MultiChallenge provides a reproducible testbed to quantify them and drive improvements in audio-native multi-turn interaction capability.",
+    "paper_abstract_zh": "端到端（E2E）口语对话系统正在逐步取代级联流水线，用于基于语音的人机交互，直接处理原始音频而无需中间转录。现有基准测试主要评估这些模型在合成语音和单轮任务上的表现，而对自然多轮对话能力的研究不足。我们引入了音频多挑战（Audio MultiChallenge），这是一个开源基准，用于评估E2E口语对话系统在自然多轮交互模式下的表现。基于文本多挑战框架（评估推理记忆、指令保持和自我一致性），我们引入了一个新维度语音编辑（Voice Editing），用于测试模型对中途语音修正和回溯的鲁棒性。我们进一步将每个维度扩展到音频模态，例如为推理记忆引入音频线索挑战（Audio-Cue challenges），要求模型回忆语义内容之外的 ambient 声音和副语言信号。我们通过混合音频原生代理和人在回路流程，从47位说话者中整理了452段对话，并配有1712个特定实例的评分标准，该流程在大规模暴露模型故障的同时，保留了即兴人类语音中自然的不流畅性。我们对专有和开源模型的评估显示，即使是前沿模型在我们的基准测试上也表现不佳，其中表现最好的Gemini 3 Pro Preview（Thinking）通过率仅为54.65%。错误分析表明，模型最常在我们新增的维度上失败，且自我一致性随着音频上下文长度的增加而下降。这些失败反映了在自然口语对话中跟踪编辑、音频线索和长程上下文的困难。音频多挑战提供了一个可重现的测试平台，用于量化这些问题并推动音频原生多轮交互能力的改进。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Advait Gosai, Tyler Vuong, Utkarsh Tyagi, Steven Li, Wenjia You, Miheer Bavare, Arda Uçar, Zhongwang Fang, Brian Jang, Bing Liu, Yunzhong He",
+    "topic": [
+      "Speech Recognition",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Synaspot: A Lightweight, Streaming Multi-modal Framework for Keyword Spotting with Audio-Text Synergy",
+    "paper_title_zh": "Synaspot: 一种轻量级、流式多模态框架，用于音频-文本协同的关键词检测",
+    "paper_id": "2512.15124",
+    "paper_abstract": "Open-vocabulary keyword spotting (KWS) in continuous speech streams holds significant practical value across a wide range of real-world applications. While increasing attention has been paid to the role of different modalities in KWS, their effectiveness has been acknowledged. However, the increased parameter cost from multimodal integration and the constraints of end-to-end deployment have limited the practical applicability of such models. To address these challenges, we propose a lightweight, streaming multi-modal framework. First, we focus on multimodal enrollment features and reduce speaker-specific (voiceprint) information in the speech enrollment to extract speaker-irrelevant characteristics. Second, we effectively fuse speech and text features. Finally, we introduce a streaming decoding framework that only requires the encoder to extract features, which are then mathematically decoded with our three modal representations. Experiments on LibriPhase and WenetPrase demonstrate the performance of our model. Compared to existing streaming approaches, our method achieves better performance with significantly fewer parameters.",
+    "paper_abstract_zh": "在连续语音流中进行开放词汇关键词检测（KWS）在广泛的真实世界应用中具有重要的实用价值。尽管越来越多的研究关注不同模态在KWS中的作用，并已证实其有效性，但多模态集成带来的参数成本增加以及端到端部署的限制，限制了这类模型的实际应用。为解决这些挑战，我们提出了一种轻量级、流式多模态框架。首先，我们关注多模态注册特征，并在语音注册中减少特定说话人（声纹）信息，以提取与说话人无关的特征。其次，我们有效融合语音和文本特征。最后，我们引入了一种流式解码框架，仅需编码器提取特征，然后使用我们的三种模态表示进行数学解码。在LibriPhase和WenetPrase上的实验验证了我们模型的性能。与现有流式方法相比，我们的方法在参数显著减少的情况下实现了更好的性能。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Kewei Li, Yinan Zhong, Xiaotao Liang, Tianchi Dai, Shaofei Xue",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "BEAT2AASIST model with layer fusion for ESDD 2026 Challenge",
+    "paper_title_zh": "用于ESDD 2026挑战赛的BEAT2AASIST模型与层融合方法",
+    "paper_id": "2512.15180",
+    "paper_abstract": "Recent advances in audio generation have increased the risk of realistic environmental sound manipulation, motivating the ESDD 2026 Challenge as the first large-scale benchmark for Environmental Sound Deepfake Detection (ESDD). We propose BEAT2AASIST which extends BEATs-AASIST by splitting BEATs-derived representations along frequency or channel dimension and processing them with dual AASIST branches. To enrich feature representations, we incorporate top-k transformer layer fusion using concatenation, CNN-gated, and SE-gated strategies. In addition, vocoder-based data augmentation is applied to improve robustness against unseen spoofing methods. Experimental results on the official test sets demonstrate that the proposed approach achieves competitive performance across the challenge tracks.",
+    "paper_abstract_zh": "音频生成的最新进展增加了真实环境声音操纵的风险，这促使ESDD 2026挑战赛成为首个环境声音深度伪造检测(ESDD)的大规模基准。我们提出了BEAT2AASIST，它通过沿频率或通道维度分割BEATs派生的表示，并使用双AASIST分支进行处理来扩展BEATs-AASIST。为了丰富特征表示，我们采用了基于top-k的transformer层融合策略，包括连接、CNN门控和SE门控方法。此外，基于声码器的数据增强被应用于提高对未知欺骗方法的鲁棒性。在官方测试集上的实验结果表明，所提出的方法在挑战赛的各项赛道中均取得了具有竞争力的性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Sanghyeok Chung, Eujin Kim, Donggun Kim, Gaeun Heo, Jeongbin You, Nahyun Lee, Sunmook Choi, Soyul Han, Seungsang Oh, Il-Youp Kwak",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Time-Varying Audio Effect Modeling by End-to-End Adversarial Training",
+    "paper_title_zh": "通过端到端对抗训练对时变音频效果进行建模",
+    "paper_id": "2512.15313",
+    "paper_abstract": "Deep learning has become a standard approach for the modeling of audio effects, yet strictly black-box modeling remains problematic for time-varying systems. Unlike time-invariant effects, training models on devices with internal modulation typically requires the recording or extraction of control signals to ensure the time-alignment required by standard loss functions. This paper introduces a Generative Adversarial Network (GAN) framework to model such effects using only input-output audio recordings, removing the need for modulation signal extraction. We propose a convolutional-recurrent architecture trained via a two-stage strategy: an initial adversarial phase allows the model to learn the distribution of the modulation behavior without strict phase constraints, followed by a supervised fine-tuning phase where a State Prediction Network (SPN) estimates the initial internal states required to synchronize the model with the target. Additionally, a new objective metric based on chirp-train signals is developed to quantify modulation accuracy. Experiments modeling a vintage hardware phaser demonstrate the method's ability to capture time-varying dynamics in a fully black-box context.",
+    "paper_abstract_zh": "深度学习已成为音频效果建模的标准方法，但对于时变系统的严格黑盒建模仍然存在问题。与时不变效果不同，在具有内部调制的设备上训练模型通常需要录制或提取控制信号，以确保标准损失函数所需的时间对齐。本文引入了一种生成对抗网络（GAN）框架，仅使用输入-输出音频录音来建模此类效果，无需调制信号提取。我们提出了一种卷积-循环架构，通过两阶段策略进行训练：初始对抗阶段允许模型在无严格相位约束的情况下学习调制行为的分布，随后是监督微调阶段，其中状态预测网络（SPN）估计将模型与目标同步所需的初始内部状态。此外，还开发了一种基于啁啾序列信号的新目标指标，用于量化调制精度。对复古硬件相位器的建模实验展示了该方法在完全黑盒背景下捕获时变动态的能力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Yann Bourdin, Pierrick Legrand, Fanny Roche",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Improving Underwater Acoustic Classification Through Learnable Gabor Filter Convolution and Attention Mechanisms",
+    "paper_title_zh": "通过可学习的Gabor滤波器卷积和注意力机制提高水下声学分类",
+    "paper_id": "2512.14714",
+    "paper_abstract": "Remotely detecting and classifying underwater acoustic targets is critical for environmental monitoring and defence. However, the complex nature of ship-radiated and environmental underwater noise poses significant challenges to accurate signal processing. While recent advancements in machine learning have improved classification accuracy, issues such as limited dataset availability and a lack of standardised experimentation hinder generalisation and robustness. This paper introduces GSE ResNeXt, a deep learning architecture integrating learnable Gabor convolutional layers with a ResNeXt backbone enhanced by squeeze-and-excitation attention mechanisms. The Gabor filters serve as two-dimensional adaptive band-pass filters, extending the feature channel representation. Its combination with channel attention improves training stability and convergence while enhancing the model's ability to extract discriminative features. The model is evaluated on three classification tasks of increasing complexity. In particular, the impact of temporal differences between the training and testing data is explored, revealing that the distance between the vessel and sensor significantly affects performance. Results show that, GSE ResNeXt consistently outperforms baseline models like Xception, ResNet, and MobileNetV2, in terms of classification performance. Regarding stability and convergence, the addition of Gabor convolutions in the initial layers of the model represents a 28% reduction in training time. These results emphasise the importance of signal processing strategies in improving the reliability and generalisation of models under different environmental conditions, especially in data-limited underwater acoustic classification scenarios. Future developments should focus on mitigating the impact of environmental factors on input signals.",
+    "paper_abstract_zh": "远程探测和分类水下声学目标对环境监测和国防至关重要。然而，船舶辐射和环境水下噪声的复杂性给准确的信号处理带来了重大挑战。尽管机器学习的最新进展提高了分类准确性，但数据集可用性有限和缺乏标准化实验等问题阻碍了泛化和鲁棒性。本文介绍了GSE ResNeXt，这是一种深度学习架构，集成了可学习的Gabor卷积层和通过挤压-激励注意力机制增强的ResNeXt骨干网络。Gabor滤波器作为二维自适应带通滤波器，扩展了特征通道表示。它与通道注意力的组合提高了训练稳定性和收敛性，同时增强了模型提取判别性特征的能力。该模型在三个复杂度递增的分类任务上进行了评估。特别是，探索了训练和测试数据之间的时间差异的影响，揭示船舶与传感器之间的距离显著影响性能。结果表明，在分类性能方面，GSE ResNeXt持续优于Xception、ResNet和MobileNetV2等基线模型。在稳定性和收敛性方面，在模型初始层添加Gabor卷积使训练时间减少了28%。这些结果强调了信号处理策略在提高模型在不同环境条件下的可靠性和泛化性的重要性，特别是在数据有限的水下声学分类场景中。未来的发展应侧重于减轻环境因素对输入信号的影响。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Lucas Cesar Ferreira Domingos, Russell Brinkworth, Paulo Eduardo Santos, Karl Sammut",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "TalkVerse: Democratizing Minute-Long Audio-Driven Video Generation",
+    "paper_title_zh": "TalkVerse：普及分钟级音频驱动视频生成",
+    "paper_id": "2512.14938",
+    "paper_abstract": "We introduce TalkVerse, a large-scale, open corpus for single-person, audio-driven talking video generation designed to enable fair, reproducible comparison across methods. While current state-of-the-art systems rely on closed data or compute-heavy models, TalkVerse offers 2.3 million high-resolution (720p/1080p) audio-video synchronized clips totaling 6.3k hours. These are curated from over 60k hours of video via a transparent pipeline that includes scene-cut detection, aesthetic assessment, strict audio-visual synchronization checks, and comprehensive annotations including 2D skeletons and structured visual/audio-style captions. Leveraging TalkVerse, we present a reproducible 5B DiT baseline built on Wan2.2-5B. By utilizing a video VAE with a high downsampling ratio and a sliding window mechanism with motion-frame context, our model achieves minute-long generation with low drift. It delivers comparable lip-sync and visual quality to the 14B Wan-S2V model but with 10$\\times$ lower inference cost. To enhance storytelling in long videos, we integrate an MLLM director to rewrite prompts based on audio and visual cues. Furthermore, our model supports zero-shot video dubbing via controlled latent noise injection. We open-source the dataset, training recipes, and 5B checkpoints to lower barriers for research in audio-driven human video generation. Project Page: this https URL",
+    "paper_abstract_zh": "我们介绍了TalkVerse，这是一个大规模的开放语料库，用于单人音频驱动说话视频生成，旨在实现方法间的公平、可重复比较。虽然当前最先进的系统依赖于封闭的数据或计算密集型模型，但TalkVerse提供了230万个高分辨率（720p/1080p）的音视频同步片段，总计6.3千小时。这些片段通过透明流程筛选自超过60千小时的视频，包括场景切分检测、美学评估、严格的音视频同步检查以及全面的标注，包括2D骨架和结构化的视觉/音频风格描述。利用TalkVerse，我们提出了一个基于Wan2.2-5B构建的可重复的50亿参数DiT基线模型。通过使用具有高下采样比的视频VAE和带有运动帧上下文的滑动窗口机制，我们的模型实现了低漂移的分钟级生成。其口型同步和视觉质量与140亿参数的Wan-S2V模型相当，但推理成本低10倍。为了增强长视频的叙事能力，我们集成了一个MLLM导演，可根据音频和视觉线索重写提示。此外，我们的模型通过受控的潜在噪声注入支持零样本视频配音。我们开源了数据集、训练配方和50亿参数检查点，以降低音频驱动人类视频生成研究的门槛。项目页面：this https URL",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Artificial Intelligence (cs.AI)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Zhenzhi Wang, Jian Wang, Ke Ma, Dahua Lin, Bing Zhou",
+    "topic": [
+      "Video Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "O-EENC-SD: Efficient Online End-to-End Neural Clustering for Speaker Diarization",
+    "paper_title_zh": "O-EENC-SD: 高效的在线端到端神经聚类说话人分离系统",
+    "paper_id": "2512.15229",
+    "paper_abstract": "We introduce O-EENC-SD: an end-to-end online speaker diarization system based on EEND-EDA, featuring a novel RNN-based stitching mechanism for online prediction. In particular, we develop a novel centroid refinement decoder whose usefulness is assessed through a rigorous ablation study. Our system provides key advantages over existing methods: a hyperparameter-free solution compared to unsupervised clustering approaches, and a more efficient alternative to current online end-to-end methods, which are computationally costly. We demonstrate that O-EENC-SD is competitive with the state of the art in the two-speaker conversational telephone speech domain, as tested on the CallHome dataset. Our results show that O-EENC-SD provides a great trade-off between DER and complexity, even when working on independent chunks with no overlap, making the system extremely efficient.",
+    "paper_abstract_zh": "我们介绍了O-EENC-SD：一个基于EEND-EDA的端到端在线说话人分离系统，具有一种新颖的基于RNN的拼接机制用于在线预测。特别是，我们开发了一种新颖的质心细化解码器，并通过严格的消融研究评估了其有效性。与现有方法相比，我们的系统提供了关键优势：与无监督聚类方法相比，它是一个超参数自由的解决方案；与当前计算成本高昂的在线端到端方法相比，它是一种更高效的替代方案。我们在CallHome数据集上测试表明，O-EENC-SD在两人对话电话语音领域具有与最先进方法相竞争的性能。我们的结果显示，即使在没有重叠的独立块上工作，O-EENC-SD也在错误率和复杂度之间提供了很好的权衡，使系统极其高效。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-12-18",
+    "paper_authors": "Elio Gruttadauria, Mathieu Fontaine, Jonathan Le Roux, Slim Essid",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
