@@ -1,0 +1,201 @@
+[
+  {
+    "paper_title": "Zero-Shot Recognition of Dysarthric Speech Using Commercial Automatic Speech Recognition and Multimodal Large Language Models",
+    "paper_title_zh": "使用商业自动语音识别和多模态大语言模型进行构音障碍语音的零样本识别",
+    "paper_id": "2512.17474",
+    "paper_abstract": "Voice-based human-machine interaction is a primary modality for accessing intelligent systems, yet individuals with dysarthria face systematic exclusion due to recognition performance gaps. Whilst automatic speech recognition (ASR) achieves word error rates (WER) below 5% on typical speech, performance degrades dramatically for dysarthric speakers. Multimodal large language models (MLLMs) offer potential for leveraging contextual reasoning to compensate for acoustic degradation, yet their zero-shot capabilities remain uncharacterised. This study evaluates eight commercial speech-to-text services on the TORGO dysarthric speech corpus: four conventional ASR systems (AssemblyAI, Whisper large-v3, Deepgram Nova-3, Nova-3 Medical) and four MLLM-based systems (GPT-4o, GPT-4o Mini, Gemini 2.5 Pro, Gemini 2.5 Flash). Evaluation encompasses lexical accuracy, semantic preservation, and cost-latency trade-offs. Results demonstrate severity-dependent degradation: mild dysarthria achieves 3-5% WER approaching typical-speech benchmarks, whilst severe dysarthria exceeds 49% WER across all systems. A verbatim-transcription prompt yields architecture-specific effects: GPT-4o achieves 7.36 percentage point WER reduction with consistent improvement across all tested speakers, whilst Gemini variants exhibit degradation. Semantic metrics indicate that communicative intent remains partially recoverable despite elevated lexical error rates. These findings establish empirical baselines enabling evidence-based technology selection for assistive voice interface deployment.",
+    "paper_abstract_zh": "基于语音的人机交互是访问智能系统的主要方式，但由于识别性能差距，构音障碍者面临系统性排斥。虽然自动语音识别(ASR)在正常语音上的词错误率(WER)低于5%，但对构音障碍说话者的性能会急剧下降。多模态大语言模型(MLLMs)有可能利用上下文推理来补偿声学退化，但其零样本能力尚未被表征。本研究在TORGO构音障碍语音语料库上评估了八种商业语音转文本服务：四种传统ASR系统(AssemblyAI、Whisper large-v3、Deepgram Nova-3、Nova-3 Medical)和四种基于MLLM的系统(GPT-4o、GPT-4o Mini、Gemini 2.5 Pro、Gemini 2.5 Flash)。评估包括词汇准确性、语义保持以及成本-延迟权衡。结果表明性能下降与严重程度相关：轻度构音障碍的WER达到3-5%，接近正常语音基准，而重度构音障碍在所有系统中的WER均超过49%。逐字转录提示产生特定于架构的效果：GPT-4o实现了7.36百分点的WER降低，并在所有测试的说话者中保持一致改进，而Gemini变体则表现出性能下降。语义指标表明，尽管词汇错误率较高，但交际意图仍可部分恢复。这些研究结果建立了经验基线，为辅助语音界面的部署提供了基于技术的选择依据。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Ali Alsayegh, Tariq Masood",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Review of MEMS Speakers for Audio Applications",
+    "paper_title_zh": "用于音频应用的MEMS扬声器综述",
+    "paper_id": "2512.17708",
+    "paper_abstract": "Microelectromechanical systems (MEMS) speakers are compact, scalable alternatives to traditional voice coil speakers, promising improved sound quality through precise semiconductor manufacturing. This review provides an overview of the research landscape, including ultrasound pulse-based and thermoacoustic sound generation, classifying MEMS speakers by actuation principle: electrodynamic, piezoelectric, and electrostatic. A comparative analysis of performance indicators from 1990-2025 highlights the dominance of piezoelectric MEMS with direct air displacement, focusing on miniaturization and efficiency. The review outlines upcoming research challenges and identifies potential candidates for achieving full-spectrum audio performance. A focus on innovative approaches could lead to wideband adoption of MEMS-only speakers.",
+    "paper_abstract_zh": "微机电系统(MEMS)扬声器是传统音圈扬声器的紧凑型、可扩展替代方案，通过精确的半导体制造技术有望提高音质。本综述概述了研究现状，包括基于超声脉冲的热声发声技术，并根据驱动原理将MEMS扬声器分为电磁式、压电式和静电式。对1990-2025年性能指标的对比分析突显了直接空气位移压电MEMS的主导地位，重点研究了小型化和效率。综述概述了未来的研究挑战，并确定了实现全频段音频性能的潜在候选技术。关注创新方法可能导致MEMS-only扬声器的宽带应用。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Nils Wittek, Anton Melnikov, Bert Kaiser, André Zimmermann",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Do Foundational Audio Encoders Understand Music Structure?",
+    "paper_title_zh": "基础音频编码器是否理解音乐结构？",
+    "paper_id": "2512.17209",
+    "paper_abstract": "In music information retrieval (MIR) research, the use of pretrained foundational audio encoders (FAEs) has recently become a trend. FAEs pretrained on large amounts of music and audio data have been shown to improve performance on MIR tasks such as music tagging and automatic music transcription. However, their use for music structure analysis (MSA) remains underexplored. Although many open-source FAE models are available, only a small subset has been examined for MSA, and the impact of factors such as learning methods, training data, and model context length on MSA performance remains unclear. In this study, we conduct comprehensive experiments on 11 types of FAEs to investigate how these factors affect MSA performance. Our results demonstrate that FAEs using selfsupervised learning with masked language modeling on music data are particularly effective for MSA. These findings pave the way for future research in MSA.",
+    "paper_abstract_zh": "在音乐信息检索(MIR)研究中，使用预训练的基础音频编码器(FAEs)已成为一种趋势。在大量音乐和音频数据上预训练的FAEs已被证明可以提高音乐标注和自动音乐转录等MIR任务的性能。然而，它们在音乐结构分析(MSA)中的应用仍未得到充分探索。尽管许多开源FAE模型可用，但只有一小部分被用于MSA研究，而且学习方法、训练数据和模型上下文长度等因素对MSA性能的影响仍不清楚。在本研究中，我们对11种类型的FAEs进行了全面实验，以研究这些因素如何影响MSA性能。我们的结果表明，使用基于音乐数据的掩码语言模型进行自监督学习的FAEs对MSA特别有效。这些发现为未来的MSA研究铺平了道路。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Keisuke Toyama, Zhi Zhong, Akira Takahashi, Shusuke Takahashi, Yuki Mitsufuji",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "When De-noising Hurts: A Systematic Study of Speech Enhancement Effects on Modern Medical ASR Systems",
+    "paper_title_zh": "当去噪有害时：语音增强对现代医疗ASR系统影响的系统性研究",
+    "paper_id": "2512.17562",
+    "paper_abstract": "Speech enhancement methods are commonly believed to improve the performance of automatic speech recognition (ASR) in noisy environments. However, the effectiveness of these techniques cannot be taken for granted in the case of modern large-scale ASR models trained on diverse, noisy data. We present a systematic evaluation of MetricGAN-plus-voicebank denoising on four state-of-the-art ASR systems: OpenAI Whisper, NVIDIA Parakeet, Google Gemini Flash 2.0, Parrotlet-a using 500 medical speech recordings under nine noise conditions. ASR performance is measured using semantic WER (semWER), a normalized word error rate (WER) metric accounting for domain-specific normalizations. Our results reveal a counterintuitive finding: speech enhancement preprocessing degrades ASR performance across all noise conditions and models. Original noisy audio achieves lower semWER than enhanced audio in all 40 tested configurations (4 models x 10 conditions), with degradations ranging from 1.1% to 46.6% absolute semWER increase. These findings suggest that modern ASR models possess sufficient internal noise robustness and that traditional speech enhancement may remove acoustic features critical for ASR. For practitioners deploying medical scribe systems in noisy clinical environments, our results indicate that preprocessing audio with noise reduction techniques might not just be computationally wasteful but also be potentially harmful to the transcription accuracy.",
+    "paper_abstract_zh": "语音增强方法通常被认为能提高自动语音识别(ASR)在嘈杂环境中的性能。然而，对于在多样化、嘈杂数据上训练的现代大规模ASR模型，这些技术的有效性不能想当然。我们对MetricGAN-plus-voicebank去噪方法在四种最先进的ASR系统（OpenAI Whisper、NVIDIA Parakeet、Google Gemini Flash 2.0、Parrotlet-a）上进行了系统性评估，使用了500条医疗语音记录，涵盖九种噪声条件。ASR性能使用语义词错误率(semWER)进行衡量，这是一种考虑领域特定规范归一化的词错误率(WER)指标。我们的结果揭示了一个反直觉的发现：在所有噪声条件和模型中，语音增强预处理都会降低ASR性能。在所有40种测试配置（4个模型×10种条件）中，原始嘈杂音频的semWER都低于增强音频，性能下降幅度从semWER绝对值增加1.1%到46.6%不等。这些发现表明，现代ASR模型具有足够的内部噪声鲁棒性，传统语音增强可能会移除对ASR至关重要的声学特征。对于在嘈杂临床环境中部署医疗抄写系统的实践者，我们的结果表明使用降噪技术预处理音频不仅可能计算资源浪费，还可能对转录准确性产生潜在危害。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Sujal Chondhekar, Vasanth Murukuri, Rushabh Vasani, Sanika Goyal, Rajshree Badami, Anushree Rana, Sanjana SN, Karthik Pandia, Sulabh Katiyar, Neha Jagadeesh, Sankalp Gulati",
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "InstructDubber: Instruction-based Alignment for Zero-shot Movie Dubbing",
+    "paper_title_zh": "InstructDubber: 基于指令对齐的零样本电影配音方法",
+    "paper_id": "2512.17154",
+    "paper_abstract": "Movie dubbing seeks to synthesize speech from a given script using a specific voice, while ensuring accurate lip synchronization and emotion-prosody alignment with the character's visual performance. However, existing alignment approaches based on visual features face two key limitations: (1)they rely on complex, handcrafted visual preprocessing pipelines, including facial landmark detection and feature extraction; and (2) they generalize poorly to unseen visual domains, often resulting in degraded alignment and dubbing quality. To address these issues, we propose InstructDubber, a novel instruction-based alignment dubbing method for both robust in-domain and zero-shot movie dubbing. Specifically, we first feed the video, script, and corresponding prompts into a multimodal large language model to generate natural language dubbing instructions regarding the speaking rate and emotion state depicted in the video, which is robust to visual domain variations. Second, we design an instructed duration distilling module to mine discriminative duration cues from speaking rate instructions to predict lip-aligned phoneme-level pronunciation duration. Third, for emotion-prosody alignment, we devise an instructed emotion calibrating module, which finetunes an LLM-based instruction analyzer using ground truth dubbing emotion as supervision and predicts prosody based on the calibrated emotion analysis. Finally, the predicted duration and prosody, together with the script, are fed into the audio decoder to generate video-aligned dubbing. Extensive experiments on three major benchmarks demonstrate that InstructDubber outperforms state-of-the-art approaches across both in-domain and zero-shot scenarios.",
+    "paper_abstract_zh": "电影配音旨在使用特定声音合成给定脚本的语音，同时确保与角色视觉表演的准确口型同步和情感-韵律对齐。然而，基于视觉特征的现有对齐方法面临两个关键限制：(1)它们依赖于复杂的手工视觉预处理流程，包括面部关键点检测和特征提取；(2)它们对未见过的视觉领域泛化能力差，通常导致对齐和配音质量下降。为解决这些问题，我们提出了InstructDubber，一种新颖的基于指令的对齐配音方法，适用于鲁棒的领域内和零样本电影配音。具体而言，我们首先将视频、脚本和相应的提示输入到多模态大语言模型中，生成关于视频中说话速率和情感状态的自然语言配音指令，这些指令对视觉域变化具有鲁棒性。其次，我们设计了一个指令驱动的时长蒸馏模块，从说话速率指令中挖掘判别性时长线索，以预测口型对齐的音素级发音时长。第三，对于情感-韵律对齐，我们设计了一个指令驱动的情感校准模块，使用真实配音情感作为监督微调基于LLM的指令分析器，并根据校准后的情感分析预测韵律。最后，将预测的时长和韵律与脚本一起输入音频解码器，生成视频对齐的配音。在三个主要基准上的大量实验表明，InstructDubber在领域内和零样本场景下均优于最先进的方法。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Zhedong Zhang, Liang Li, Gaoxiang Cong, Chunshan Liu, Yuhan Gao, Xiaowan Wang, Tao Gu, Yuankai Qi",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "LibriVAD: A Scalable Open Dataset with Deep Learning Benchmarks for Voice Activity Detection",
+    "paper_title_zh": "LibriVAD：一个用于语音活动检测的可扩展开放数据集及深度学习基准",
+    "paper_id": "2512.17281",
+    "paper_abstract": "Robust Voice Activity Detection (VAD) remains a challenging task, especially under noisy, diverse, and unseen acoustic conditions. Beyond algorithmic development, a key limitation in advancing VAD research is the lack of large-scale, systematically controlled, and publicly available datasets. To address this, we introduce LibriVAD - a scalable open-source dataset derived from LibriSpeech and augmented with diverse real-world and synthetic noise sources. LibriVAD enables systematic control over speech-to-noise ratio, silence-to-speech ratio (SSR), and noise diversity, and is released in three sizes (15 GB, 150 GB, and 1.5 TB) with two variants (LibriVAD-NonConcat and LibriVAD-Concat) to support different experimental setups. We benchmark multiple feature-model combinations, including waveform, Mel-Frequency Cepstral Coefficients (MFCC), and Gammatone filter bank cepstral coefficients, and introduce the Vision Transformer (ViT) architecture for VAD. Our experiments show that ViT with MFCC features consistently outperforms established VAD models such as boosted deep neural network and convolutional long short-term memory deep neural network across seen, unseen, and out-of-distribution (OOD) conditions, including evaluation on the real-world VOiCES dataset. We further analyze the impact of dataset size and SSR on model generalization, experimentally showing that scaling up dataset size and balancing SSR noticeably and consistently enhance VAD performance under OOD conditions. All datasets, trained models, and code are publicly released to foster reproducibility and accelerate progress in VAD research.",
+    "paper_abstract_zh": "稳健的语音活动检测(VAD)仍然是一项具有挑战性的任务，特别是在嘈杂、多样且未见过的声学条件下。除了算法开发之外，推动VAD研究进展的一个主要限制是缺乏大规模、系统控制且公开可用的数据集。为此，我们引入了LibriVAD——一个从LibriSpeech衍生并增加了多种真实世界和合成噪声源的可扩展开源数据集。LibriVAD能够系统控制信噪比、静音语音比(SSR)和噪声多样性，并以三种规模(15 GB、150 GB和1.5 TB)和两种变体(LibriVAD-NonConcat和LibriVAD-Concat)发布，以支持不同的实验设置。我们对多种特征-模型组合进行了基准测试，包括波形、梅尔频率倒谱系数(MFCC)和伽马通带倒谱系数，并引入了Vision Transformer (ViT)架构用于VAD。我们的实验表明，使用MFCC特征的ViT在已见、未见和分布外(OOD)条件下，持续优于既有的VAD模型，如提升深度神经网络和卷积长短期记忆深度神经网络，包括在真实世界VOiCES数据集上的评估。我们进一步分析了数据集规模和SSR对模型泛化的影响，实验证明扩大数据集规模和平衡SSR在OOD条件下显著且一致地提高了VAD性能。所有数据集、训练好的模型和代码均已公开发布，以促进可重复性并加速VAD研究的进展。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Ioannis Stylianou, Achintya kr. Sarkar, Nauman Dawalatabad, James Glass, Zheng-Hua Tan",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Robust TTS Training via Self-Purifying Flow Matching for the WildSpoof 2026 TTS Track",
+    "paper_title_zh": "基于自净化流匹配的鲁棒TTS训练方法用于WildSpoof 2026 TTS赛道",
+    "paper_id": "2512.17293",
+    "paper_abstract": "This paper presents a lightweight text-to-speech (TTS) system developed for the WildSpoof Challenge TTS Track. Our approach fine-tunes the recently released open-weight TTS model, \\textit{Supertonic}\\footnote{\\url{this https URL}}, with Self-Purifying Flow Matching (SPFM) to enable robust adaptation to in-the-wild speech. SPFM mitigates label noise by comparing conditional and unconditional flow matching losses on each sample, routing suspicious text--speech pairs to unconditional training while still leveraging their acoustic information. The resulting model achieves the lowest Word Error Rate (WER) among all participating teams, while ranking second in perceptual metrics such as UTMOS and DNSMOS. These findings demonstrate that efficient, open-weight architectures like Supertonic can be effectively adapted to diverse real-world speech conditions when combined with explicit noise-handling mechanisms such as SPFM.",
+    "paper_abstract_zh": "本文为WildSpoof挑战赛TTS赛道开发了一个轻量级文本转语音(TTS)系统。我们的方法通过自净化流匹配(SPFM)对最近发布的开源TTS模型Supertonic进行微调，以实现对野外语音的鲁棒适应。SPFM通过比较每个样本上的条件流匹配损失和无条件流匹配损失来缓解标签噪声，将可疑的文本-语音对路由到无条件训练，同时仍利用其声学信息。最终模型在所有参赛队伍中实现了最低的词错误率(WER)，并在UTMOS和DNSMOS等感知指标中排名第二。这些研究结果表明，当与SPFM等显式噪声处理机制相结合时，像Supertonic这样的高效开源架构可以有效适应多样化的真实语音条件。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "June Young Yi, Hyeongju Kim, Juheon Lee",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Training Text-to-Speech Model with Purely Synthetic Data: Feasibility, Sensitivity, and Generalization Capability",
+    "paper_title_zh": "使用纯合成数据训练文本转语音模型：可行性、敏感性和泛化能力",
+    "paper_id": "2512.17356",
+    "paper_abstract": "The potential of synthetic data in text-to-speech (TTS) model training has gained increasing attention, yet its rationality and effectiveness require systematic validation. In this study, we systematically investigate the feasibility of using purely synthetic data for TTS training and explore how various factors--including text richness, speaker diversity, noise levels, and speaking styles--affect model performance. Our experiments reveal that increasing speaker and text diversity significantly enhances synthesis quality and robustness. Cleaner training data with minimal noise further improves performance. Moreover, we find that standard speaking styles facilitate more effective model learning. Our experiments indicate that models trained on synthetic data have great potential to outperform those trained on real data under similar conditions, due to the absence of real-world imperfections and noise.",
+    "paper_abstract_zh": "合成数据在文本转语音（TTS）模型训练中的潜力日益受到关注，但其合理性和有效性需要系统性验证。在本研究中，我们系统性地调查了使用纯合成数据进行TTS训练的可行性，并探讨了各种因素（包括文本丰富度、说话人多样性、噪声水平和说话风格）如何影响模型性能。我们的实验表明，增加说话人和文本多样性显著提高了合成质量和鲁棒性。更清洁、噪声最少的训练数据进一步提升了性能。此外，我们发现标准的说话风格有助于更有效的模型学习。我们的实验表明，在相似条件下，使用合成数据训练的模型有可能优于使用真实数据训练的模型，因为真实数据中不存在现实世界的不完美和噪声。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Tingxiao Zhou, Leying Zhang, Zhengyang Chen, Yanmin Qian",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speech-FT: Merging Pre-trained And Fine-Tuned Speech Representation Models For Cross-Task Generalization",
+    "paper_title_zh": "Speech-FT: 合并预训练和微调语音表征模型以实现跨任务泛化",
+    "paper_id": "2502.12672",
+    "paper_abstract": "Fine-tuning speech representation models can enhance performance on specific tasks but often compromises their cross-task generalization ability. This degradation is often caused by excessive changes in the representations, making it difficult to retain information learned during pre-training. Existing approaches, such as regularizing weight changes during fine-tuning, may fail to maintain sufficiently high feature similarity with the pre-trained model, and thus could possibly lose cross-task generalization. To address this issue, we propose Speech-FT, a novel two-stage fine-tuning framework designed to maintain cross-task generalization while benefiting from fine-tuning. Speech-FT first applies fine-tuning specifically designed to reduce representational drift, followed by weight-space interpolation with the pre-trained model to restore cross-task generalization. Extensive experiments on HuBERT, wav2vec 2.0, DeCoAR 2.0, and WavLM Base+ demonstrate that Speech-FT consistently improves performance across a wide range of supervised, unsupervised, and multitask fine-tuning scenarios. Moreover, Speech-FT achieves superior cross-task generalization compared to fine-tuning baselines that explicitly constrain weight changes, such as weight-space regularization and LoRA fine-tuning. Our analysis reveals that Speech-FT maintains higher feature similarity to the pre-trained model compared to alternative strategies, despite allowing larger weight-space updates. Notably, Speech-FT achieves significant improvements on the SUPERB benchmark. For example, when fine-tuning HuBERT on automatic speech recognition, Speech-FT is able to reduce phone error rate from 5.17% to 3.94%, lower word error rate from 6.38% to 5.75%, and increase speaker identification accuracy from 81.86% to 84.11%. Speech-FT provides a simple yet powerful solution for further refining speech representation models after pre-training.",
+    "paper_abstract_zh": "微调语音表征模型可以提高特定任务上的性能，但往往会损害其跨任务泛化能力。这种退化通常是由于表征的过度变化造成的，使得难以保留预训练期间学习到的信息。现有方法，如微调过程中对权重变化进行正则化，可能无法保持与预训练模型足够高的特征相似性，从而可能失去跨任务泛化能力。为解决这一问题，我们提出了Speech-FT，一种新颖的两阶段微调框架，旨在保持跨任务泛化能力的同时受益于微调。Speech-FT首先应用专门设计的微调来减少表征漂移，然后与预训练模型进行权重空间插值以恢复跨任务泛化能力。在HuBERT、wav2vec 2.0、DeCoAR 2.0和WavLM Base+上的大量实验表明，Speech-FT在广泛的监督、无监督和多任务微调场景中 consistently提高了性能。此外，与明确约束权重变化的微调基线（如权重空间正则化和LoRA微调）相比，Speech-FT实现了更好的跨任务泛化能力。我们的分析揭示，尽管允许更大的权重空间更新，Speech-FT与预训练模型保持了更高的特征相似性。值得注意的是，Speech-FT在SUPERB基准上取得了显著改进。例如，在自动语音识别任务上微调HuBERT时，Speech-FT能够将音素错误率从5.17%降低到3.94%，将词错误率从6.38%降低到5.75%，并将说话人识别准确率从81.86%提高到84.11%。Speech-FT为预训练后进一步优化语音表征模型提供了一种简单而强大的解决方案。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Tzu-Quan Lin, Wei-Ping Huang, Hao Tang, Hung-yi Lee",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "When Pamplona sounds different: the soundscape transformation of San Fermin through intelligent acoustic sensors and a sound repository",
+    "paper_title_zh": "当潘普洛纳的声音不同时：通过智能声学传感器和声音库实现圣费尔明节的声音景观转变",
+    "paper_id": "2512.17740",
+    "paper_abstract": "This study presents a use-case of a network of low-cost acoustic smart sensors deployed in the city of Pamplona to analyse changes in the urban soundscape during the San Fermin Festival. The sensors were installed in different areas of the city before, during, and after the event, capturing continuous acoustic data. Our analysis reveals a significant transformation in the city's sonic environment during the festive period: overall sound pressure levels increase significantly, soundscape patterns change, and the acoustic landscape becomes dominated by sounds associated with human activity. These findings highlight the potential of distributed smart acoustic monitoring systems to characterize the temporal dynamics of urban soundscapes and underscore how the large-scale event of San Fermin drastically reshapes the overall acoustic dynamics of the city of Pamplona. Additionally, to complement the objective measurements, a curated collection of real San Fermin sound recordings has been created and made publicly available, preserving the festival's unique sonic heritage.",
+    "paper_abstract_zh": "本研究介绍了在潘普洛纳市部署的低成本智能声学传感器网络的一个用例，用于分析圣费尔明节期间城市声音景观的变化。传感器在活动前、活动和活动后安装在城市不同区域，捕捉连续的声学数据。我们的分析显示，在节日期间，城市的声学环境发生了显著转变：整体声压水平显著增加，声音景观模式发生变化，声学景观被与人类活动相关的声音主导。这些研究结果突出了分布式智能声学监测系统表征城市声音景观时间动态的潜力，并强调了圣费尔明节这一大规模活动如何彻底重塑潘普洛纳市的整体声学动态。此外，为了补充客观测量，我们创建并公开了一个精选的圣费尔明节真实声音录音集合，保留了该节日独特的声学遗产。",
+    "subjects": [
+      "Computers and Society (cs.CY)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-22",
+    "paper_authors": "Amaia Sagasti, Frederic Font",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
