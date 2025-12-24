@@ -1,0 +1,294 @@
+[
+  {
+    "paper_title": "ASK: Adaptive Self-improving Knowledge Framework for Audio Text Retrieval",
+    "paper_title_zh": "ASK: 用于音频文本检索的自适应自改进知识框架",
+    "paper_id": "2512.19703",
+    "paper_abstract": "The dominant paradigm for Audio-Text Retrieval (ATR) relies on mini-batch-based contrastive learning. This process, however, is inherently limited by what we formalize as the Gradient Locality Bottleneck (GLB), which structurally prevents models from leveraging out-of-batch knowledge and thus impairs fine-grained and long-tail learning. While external knowledge-enhanced methods can alleviate the GLB, we identify a critical, unaddressed side effect: the Representation-Drift Mismatch (RDM), where a static knowledge base becomes progressively misaligned with the evolving model, turning guidance into noise. To address this dual challenge, we propose the Adaptive Self-improving Knowledge (ASK) framework, a model-agnostic, plug-and-play solution. ASK breaks the GLB via multi-grained knowledge injection, systematically mitigates RDM through dynamic knowledge refinement, and introduces a novel adaptive reliability weighting scheme to ensure consistent knowledge contributes to optimization. Experimental results on two benchmark datasets with superior, state-of-the-art performance justify the efficacy of our proposed ASK framework.",
+    "paper_abstract_zh": "音频文本检索(ATR)的主导范式依赖于基于小批量的对比学习。然而，这个过程本质上受到我们形式化的梯度局部瓶颈(GLB)的限制，该瓶颈结构上阻止了模型利用批次外的知识，从而损害了细粒度和长尾学习。虽然外部知识增强方法可以缓解GLB，但我们发现了一个关键但尚未解决的副作用：表示漂移不匹配(RDM)，其中静态知识库与不断演进的模型逐渐失准，将指导转化为噪声。为了解决这一双重挑战，我们提出了自适应自改进知识(ASK)框架，这是一个与模型无关的即插即用解决方案。ASK通过多粒度知识注入打破GLB，通过动态知识细化系统性地缓解RDM，并引入了一种新颖的自适应可靠性加权方案，以确保一致的知识有助于优化。在两个基准数据集上的实验结果以优越的最先进性能证明了我们提出的ASK框架的有效性。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Information Retrieval (cs.IR)",
+      "Audio and Speech Processing (eess.AS)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Siyuan Fu, Xuchen Guo, Mingjun Liu, Hongxiang Li, Boyin Tan, Gongxi Zhu, Xianwei Zhuang, Jinghan Ru, Yuxin Xie, Yuguo Yin",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SpatialNet with Binaural Loss Function for Correcting Binaural Signal Matching Outputs under Head Rotations",
+    "paper_title_zh": "带有双耳损失函数的SpatialNet用于修正头部旋转下的双耳信号匹配输出",
+    "paper_id": "2512.20122",
+    "paper_abstract": "Binaural reproduction is gaining increasing attention with the rise of devices such as virtual reality headsets, smart glasses, and head-tracked headphones. Achieving accurate binaural signals with these systems is challenging, as they often employ arbitrary microphone arrays with limited spatial resolution. The Binaural Signals Matching with Magnitude Least-Squares (BSM-MagLS) method was developed to address limitations of earlier BSM formulations, improving reproduction at high frequencies and under head rotation. However, its accuracy still degrades as head rotation increases, resulting in spatial and timbral artifacts, particularly when the virtual listener's ear moves farther from the nearest microphones. In this work, we propose the integration of deep learning with BSM-MagLS to mitigate these degradations. A post-processing framework based on the SpatialNet network is employed, leveraging its ability to process spatial information effectively and guided by both signal-level loss and a perceptually motivated binaural loss derived from a theoretical model of human binaural hearing. The effectiveness of the approach is investigated in a simulation study with a six-microphone semicircular array, showing its ability to perform robustly across head rotations. These findings are further studied in a listening experiment across different reverberant acoustic environments and head rotations, demonstrating that the proposed framework effectively mitigates BSM-MagLS degradations and provides robust correction across substantial head rotations.",
+    "paper_abstract_zh": "随着虚拟现实头显、智能眼镜和头部跟踪耳机等设备的兴起，双耳再现技术正获得越来越多的关注。在这些系统中实现准确的双耳信号具有挑战性，因为它们通常采用具有有限空间分辨率的任意麦克风阵列。双耳信号幅度最小二乘匹配(BSM-MagLS)方法是为了解决早期BSM公式的局限性而开发的，提高了在高频和头部旋转情况下的再现效果。然而，随着头部旋转角度的增加，其准确性仍然会下降，导致空间和音色失真，特别是当虚拟听众的耳朵离最近的麦克风越来越远时。在这项工作中，我们提出将深度学习与BSM-MagLS相结合，以减轻这些退化。采用基于SpatialNet网络的后处理框架，利用其有效处理空间信息的能力，并由信号级损失和基于人类双耳听觉理论模型推导出的感知动机双耳损失共同指导。在六麦克风半圆形阵列的模拟研究中，调查了该方法的有效性，显示其在头部旋转情况下具有稳健的性能。在不同混响声学环境和头部旋转条件下的听音实验中进一步研究了这些发现，证明所提出的框架能有效减轻BSM-MagLS的退化，并在大幅度的头部旋转下提供稳健的修正。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Dor Shamay, Boaz Rafaely",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "QuarkAudio Technical Report",
+    "paper_title_zh": "QuarkAudio技术报告",
+    "paper_id": "2512.20151",
+    "paper_abstract": "Many existing audio processing and generation models rely on task-specific architectures, resulting in fragmented development efforts and limited extensibility. It is therefore promising to design a unified framework capable of handling multiple tasks, while providing robust instruction and audio understanding and high-quality audio generation. This requires a compatible paradigm design, a powerful backbone, and a high-fidelity audio reconstruction module. To meet these requirements, this technical report introduces QuarkAudio, a decoder-only autoregressive (AR) LM-based generative framework that unifies multiple tasks. The framework includes a unified discrete audio tokenizer, H-Codec, which incorporates self-supervised learning (SSL) representations into the tokenization and reconstruction process. We further propose several improvements to H-Codec, such as a dynamic frame-rate mechanism and extending the audio sampling rate to 48 kHz. QuarkAudio unifies tasks by using task-specific conditional information as the conditioning sequence of the decoder-only LM, and predicting discrete target audio tokens in an AR manner. The framework supports a wide range of audio processing and generation tasks, including speech restoration (SR), target speaker extraction (TSE), speech separation (SS), voice conversion (VC), and language-queried audio source separation (LASS). In addition, we extend downstream tasks to universal free-form audio editing guided by natural language instructions (including speech semantic editing and audio event editing). Experimental results show that H-Codec achieves high-quality audio reconstruction with a low frame rate, improving both the efficiency and performance of downstream audio generation, and that QuarkAudio delivers competitive or comparable performance to state-of-the-art task-specific or multi-task systems across multiple tasks.",
+    "paper_abstract_zh": "许多现有的音频处理和生成模型依赖于特定任务的架构，导致开发工作分散且可扩展性有限。因此，设计一个能够处理多种任务、同时提供强大的指令和音频理解以及高质量音频生成的统一框架具有广阔前景。这需要兼容的范式设计、强大的骨干网络和高保真音频重建模块。为满足这些需求，本技术报告介绍了QuarkAudio，这是一个基于仅解码器自回归（AR）语言模型的生成框架，能够统一多种任务。该框架包含一个统一的离散音频标记器H-Codec，它将自监督学习（SSL）表示整合到标记化和重建过程中。我们进一步对H-Codec提出了多项改进，如动态帧率机制和将音频采样率扩展到48 kHz。QuarkAudio通过使用特定任务的条件信息作为仅解码器语言模型的条件序列，并以自回归方式预测离散目标音频标记，从而统一多种任务。该框架支持广泛的音频处理和生成任务，包括语音修复（SR）、目标说话人提取（TSE）、语音分离（SS）、语音转换（VC）以及语言查询的音频源分离（LASS）。此外，我们将下游任务扩展到由自然语言指令引导的通用自由形式音频编辑（包括语音语义编辑和音频事件编辑）。实验结果表明，H-Codec在低帧率下实现了高质量的音频重建，提高了下游音频生成的效率和性能，并且QuarkAudio在多个任务上与最先进的特定任务或多任务系统相比具有竞争力或相当的性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Chengwei Liu, Haoyin Yan, Shaofei Xue, Xiaotao Liang, Xiaofu Chen, Bin Gong, Zheng Xue, Gang Song",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Codec",
+      "Speech Enhancement",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "LP-CFM: Perceptual Invariance-Aware Conditional Flow Matching for Speech Modeling",
+    "paper_title_zh": "LP-CFM: 感知不变性感知的条件流匹配用于语音建模",
+    "paper_id": "2512.20314",
+    "paper_abstract": "The goal of this paper is to provide a new perspective on speech modeling by incorporating perceptual invariances such as amplitude scaling and temporal shifts. Conventional generative formulations often treat each dataset sample as a fixed representative of the target distribution. From a generative standpoint, however, such samples are only one among many perceptually equivalent variants within the true speech distribution. To address this, we propose Linear Projection Conditional Flow Matching (LP-CFM), which models targets as projection-aligned elongated Gaussians along perceptually equivalent variants. We further introduce Vector Calibrated Sampling (VCS) to keep the sampling process aligned with the line-projection path. In neural vocoding experiments across model sizes, data scales, and sampling steps, the proposed approach consistently improves over the conventional optimal transport CFM, with particularly strong gains in low-resource and few-step scenarios. These results highlight the potential of LP-CFM and VCS to provide more robust and perceptually grounded generative modeling of speech.",
+    "paper_abstract_zh": "本文的目标是通过结合感知不变性（如幅度缩放和时间偏移）为语音建模提供新的视角。传统的生成公式通常将每个数据集样本视为目标分布的固定代表。然而，从生成的角度来看，这些样本只是真实语音分布中许多感知等变变体中的一个。为解决这一问题，我们提出了线性投影条件流匹配（LP-CFM），它将目标建模为沿感知等变变体的投影对齐的拉长高斯分布。我们进一步引入了向量校准采样（VCS），以使采样过程与线投影路径保持一致。在各种模型规模、数据规模和采样步骤的神经声码实验中，所提出的方法始终优于传统的最优传输CFM，特别是在低资源和少步骤场景中表现出显著优势。这些结果突显了LP-CFM和VCS在提供更稳健和感知基础的语音生成建模方面的潜力。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Doyeop Kwak, Youngjoon Jang, Joon Son Chung",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DDAVS: Disentangled Audio Semantics and Delayed Bidirectional Alignment for Audio-Visual Segmentation",
+    "paper_title_zh": "DDAVS: 用于音频-视觉分割的解耦音频语义和延迟双向对齐",
+    "paper_id": "2512.20117",
+    "paper_abstract": "Audio-Visual Segmentation (AVS) aims to localize sound-producing objects at the pixel level by jointly leveraging auditory and visual information. However, existing methods often suffer from multi-source entanglement and audio-visual misalignment, which lead to biases toward louder or larger objects while overlooking weaker, smaller, or co-occurring sources. To address these challenges, we propose DDAVS, a Disentangled Audio Semantics and Delayed Bidirectional Alignment framework. To mitigate multi-source entanglement, DDAVS employs learnable queries to extract audio semantics and anchor them within a structured semantic space derived from an audio prototype memory bank. This is further optimized through contrastive learning to enhance discriminability and robustness. To alleviate audio-visual misalignment, DDAVS introduces dual cross-attention with delayed modality interaction, improving the robustness of multimodal alignment. Extensive experiments on the AVS-Objects and VPO benchmarks demonstrate that DDAVS consistently outperforms existing approaches, exhibiting strong performance across single-source, multi-source, and multi-instance scenarios. These results validate the effectiveness and generalization ability of our framework under challenging real-world audio-visual segmentation conditions. Project page: this https URL",
+    "paper_abstract_zh": "音频-视觉分割（AVS）旨在通过联合利用听觉和视觉信息，在像素级别定位发声物体。然而，现有方法常常面临多源纠缠和音频-视觉不对齐的问题，导致对声音更大或物体更大的对象产生偏见，同时忽略了声音较弱、较小或共现的源。为解决这些挑战，我们提出了DDAVS，一种解耦音频语义和延迟双向对齐的框架。为减轻多源纠缠，DDAVS采用可学习的查询来提取音频语义，并将其锚定在从音频原型存储库派生的结构化语义空间中。这通过对比学习进一步优化，以增强判别性和鲁棒性。为缓解音频-视觉不对齐，DDAVS引入了具有延迟模态交互的双向交叉注意力，提高了多模态对齐的鲁棒性。在AVS-Objects和VPO基准上的大量实验表明，DDAVS始终优于现有方法，在单源、多源和多实例场景中展现出强大的性能。这些结果验证了我们的框架在具有挑战性的真实世界音频-视觉分割条件下的有效性和泛化能力。项目页面：this https URL",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Jingqi Tian, Yiheng Du, Haoji Zhang, Yuji Wang, Isaac Ning Lee, Xulong Bai, Tianrui Zhu, Jingxuan Niu, Yansong Tang",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Fun-Audio-Chat Technical Report",
+    "paper_title_zh": "Fun-Audio-Chat 技术报告",
+    "paper_id": "2512.20156",
+    "paper_abstract": "Recent advancements in joint speech-text models show great potential for seamless voice interactions. However, existing models face critical challenges: temporal resolution mismatch between speech tokens (25Hz) and text tokens (~3Hz) dilutes semantic information, incurs high computational costs, and causes catastrophic forgetting of text LLM knowledge. We introduce Fun-Audio-Chat, a Large Audio Language Model addressing these limitations via two innovations from our previous work DrVoice. First, Dual-Resolution Speech Representations (DRSR): the Shared LLM processes audio at efficient 5Hz (via token grouping), while the Speech Refined Head generates high-quality tokens at 25Hz, balancing efficiency (~50% GPU reduction) and quality. Second, Core-Cocktail Training, a two-stage fine-tuning with intermediate merging that mitigates catastrophic forgetting. We then apply Multi-Task DPO Training to enhance robustness, audio understanding, instruction-following and voice empathy. This multi-stage post-training enables Fun-Audio-Chat to retain text LLM knowledge while gaining powerful audio understanding, reasoning, and generation. Unlike recent LALMs requiring large-scale audio-text pre-training, Fun-Audio-Chat leverages pre-trained models and extensive post-training. Fun-Audio-Chat 8B and MoE 30B-A3B achieve competitive performance on Speech-to-Text and Speech-to-Speech tasks, ranking top among similar-scale models on Spoken QA benchmarks. They also achieve competitive to superior performance on Audio Understanding, Speech Function Calling, Instruction-Following and Voice Empathy. We develop Fun-Audio-Chat-Duplex, a full-duplex variant with strong performance on Spoken QA and full-duplex interactions. We open-source Fun-Audio-Chat-8B with training and inference code, and provide an interactive demo.",
+    "paper_abstract_zh": "最近的语音-文本联合模型进展展示了无缝语音交互的巨大潜力。然而，现有模型面临关键挑战：语音标记（25Hz）与文本标记（~3Hz）之间的时间分辨率不匹配稀释了语义信息，导致高计算成本，并引起文本大语言模型知识的灾难性遗忘。我们引入了Fun-Audio-Chat，这是一个大型音频语言模型，通过我们之前的工作DrVoice中的两项创新来解决这些局限性。首先，双分辨率语音表示（DRSR）：共享大语言模型通过标记分组以高效的5Hz处理音频，而语音精炼头则以25Hz生成高质量标记，平衡效率（减少约50%的GPU使用）和质量。其次，核心鸡尾酒训练（Core-Cocktail Training），这是一种带有中间合并的两阶段微调，可以减轻灾难性遗忘。然后，我们应用多任务DPO训练来增强鲁棒性、音频理解、指令遵循和语音共情能力。这种多阶段后训练使Fun-Audio-Chat能够保留文本大语言模型知识，同时获得强大的音频理解、推理和生成能力。与最近需要大规模音频-文本预训练的大型音频语言模型不同，Fun-Audio-Chat利用预训练模型和广泛的后训练。Fun-Audio-Chat 8B和MoE 30B-A3B在语音到文本和语音到语音任务上取得了具有竞争力的性能，在口语问答基准测试中排名类似规模模型的前列。它们在音频理解、语音函数调用、指令遵循和语音共情方面也取得了具有竞争力甚至更优的性能。我们开发了Fun-Audio-Chat-Duplex，这是一个全双工变体，在口语问答和全双工交互方面表现出色。我们开源了Fun-Audio-Chat-8B及其训练和推理代码，并提供了一个交互式演示。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Qian Chen, Luyao Cheng, Chong Deng, Xiangang Li, Jiaqing Liu, Chao-Hong Tan, Wen Wang, Junhao Xu, Jieping Ye, Qinglin Zhang, Qiquan Zhang, Jingren Zhou",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Spectral or spatial? Leveraging both for speaker extraction in challenging data conditions",
+    "paper_title_zh": "频谱还是空间？在具有挑战性的数据条件下利用两者进行说话人提取",
+    "paper_id": "2512.20165",
+    "paper_abstract": "This paper presents a robust multi-channel speaker extraction algorithm designed to handle inaccuracies in reference information. While existing approaches often rely solely on either spatial or spectral cues to identify the target speaker, our method integrates both sources of information to enhance robustness. A key aspect of our approach is its emphasis on stability, ensuring reliable performance even when one of the features is degraded or misleading. Given a noisy mixture and two potentially unreliable cues, a dedicated network is trained to dynamically balance their contributions-or disregard the less informative one when necessary. We evaluate the system under challenging conditions by simulating inference-time errors using a simple direction of arrival (DOA) estimator and a noisy spectral enrollment process. Experimental results demonstrate that the proposed model successfully extracts the desired speaker even in the presence of substantial reference inaccuracies.",
+    "paper_abstract_zh": "本文提出了一种鲁棒的多通道说话人提取算法，用于处理参考信息中的不准确性问题。虽然现有方法通常仅依赖频谱或空间线索来识别目标说话人，但我们的方法整合了这两种信息来源以增强鲁棒性。我们方法的一个关键方面是强调稳定性，确保即使其中一个特征降级或具有误导性时也能保持可靠的性能。给定一个 noisy 混合信号和两个可能不可靠的线索，我们训练了一个专用网络来动态平衡它们的贡献——或在必要时忽略信息量较少的那个线索。我们通过使用简单的到达方向(DOA)估计器和 noisy 频谱注册过程模拟推理时间误差，在具有挑战性的条件下评估系统。实验结果表明，即使在存在大量参考不准确性的情况下，所提出的模型也能成功提取所需的说话人。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Aviad Eisenberg, Sharon Gannot, Shlomo E. Chazan",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Aliasing-Free Neural Audio Synthesis",
+    "paper_title_zh": "无混叠神经音频合成",
+    "paper_id": "2512.20211",
+    "paper_abstract": "Neural vocoders and codecs reconstruct waveforms from acoustic representations, which directly impact the audio quality. Among existing methods, upsampling-based time-domain models are superior in both inference speed and synthesis quality, achieving state-of-the-art performance. Still, despite their success in producing perceptually natural sound, their synthesis fidelity remains limited due to the aliasing artifacts brought by the inadequately designed model architectures. In particular, the unconstrained nonlinear activation generates an infinite number of harmonics that exceed the Nyquist frequency, resulting in ``folded-back'' aliasing artifacts. The widely used upsampling layer, ConvTranspose, copies the mirrored low-frequency parts to fill the empty high-frequency region, resulting in ``mirrored'' aliasing artifacts. Meanwhile, the combination of its inherent periodicity and the mirrored DC bias also brings ``tonal artifact,'' resulting in constant-frequency ringing. This paper aims to solve these issues from a signal processing perspective. Specifically, we apply oversampling and anti-derivative anti-aliasing to the activation function to obtain its anti-aliased form, and replace the problematic ConvTranspose layer with resampling to avoid the ``tonal artifact'' and eliminate aliased components. Based on our proposed anti-aliased modules, we introduce Pupu-Vocoder and Pupu-Codec, and release high-quality pre-trained checkpoints to facilitate audio generation research. We build a test signal benchmark to illustrate the effectiveness of the anti-aliased modules, and conduct experiments on speech, singing voice, music, and audio to validate our proposed models. Experimental results confirm that our lightweight Pupu-Vocoder and Pupu-Codec models can easily outperform existing systems on singing voice, music, and audio, while achieving comparable performance on speech.",
+    "paper_abstract_zh": "神经声码器和编解码器从声学表示中重建波形，直接影响音频质量。在现有方法中，基于上采样的时域模型在推理速度和合成质量方面都表现出色，达到了最先进的性能。尽管如此，尽管它们在产生感知上自然的声音方面取得了成功，但由于设计不当的模型架构带来的混叠伪影，其合成保真度仍然有限。特别是，无约束的非线性激活会产生无限数量的谐波，这些谐波超过奈奎斯特频率，导致\"折叠\"混叠伪影。广泛使用的上采样层ConvTranspose将镜像的低频部分复制到空白的高频区域，导致\"镜像\"混叠伪影。同时，其固有的周期性与镜像DC偏置的组合也会带来\"音调伪影\"，导致恒定频率的振铃。本文旨在从信号处理的角度解决这些问题。具体而言，我们对激活函数应用过采样和反导数抗混叠技术，以获得其抗混叠形式，并用重采样替换有问题的ConvTranspose层，以避免\"音调伪影\"并消除混叠分量。基于我们提出的抗混叠模块，我们引入了Pupu-Vocoder和Pupu-Codec，并发布了高质量预训练检查点，以促进音频生成研究。我们构建了一个测试信号基准来说明抗混叠模块的有效性，并在语音、歌唱声音、音乐和音频上进行了实验，以验证我们提出的模型。实验结果证实，我们轻量级的Pupu-Vocoder和Pupu-Codec模型可以轻松在歌唱声音、音乐和音频上超越现有系统，同时在语音上实现可比的性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Yicheng Gu, Junan Zhang, Chaoren Wang, Jerry Li, Zhizheng Wu, Lauri Juvela",
+    "topic": [
+      "Speech Synthesis",
+      "Music Generation",
+      "Audio Codec"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "TAVID: Text-Driven Audio-Visual Interactive Dialogue Generation",
+    "paper_title_zh": "TAVID：基于文本的视听交互式对话生成",
+    "paper_id": "2512.20296",
+    "paper_abstract": "The objective of this paper is to jointly synthesize interactive videos and conversational speech from text and reference images. With the ultimate goal of building human-like conversational systems, recent studies have explored talking or listening head generation as well as conversational speech generation. However, these works are typically studied in isolation, overlooking the multimodal nature of human conversation, which involves tightly coupled audio-visual interactions. In this paper, we introduce TAVID, a unified framework that generates both interactive faces and conversational speech in a synchronized manner. TAVID integrates face and speech generation pipelines through two cross-modal mappers (i.e., a motion mapper and a speaker mapper), which enable bidirectional exchange of complementary information between the audio and visual modalities. We evaluate our system across four dimensions: talking face realism, listening head responsiveness, dyadic interaction fluency, and speech quality. Extensive experiments demonstrate the effectiveness of our approach across all these aspects.",
+    "paper_abstract_zh": "本文的目标是从文本和参考图像中联合生成交互式视频和对话语音。以构建类人对话系统为最终目标，最近的研究已经探索了说话或倾听头部生成以及对话语音生成。然而，这些工作通常被孤立地研究，忽视了人类对话的多模态特性，这涉及到紧密耦合的视听交互。在本文中，我们介绍了TAVID，这是一个统一框架，能够同步生成交互式面部和对话语音。TAVID通过两个跨模态映射器（即运动映射器和说话人映射器）整合了面部和语音生成管道，这些映射器实现了音频和视觉模态之间互补信息的双向交换。我们从四个维度评估了我们的系统：说话面部的真实感、倾听头部的响应性、双向交互的流畅度以及语音质量。大量实验证明了我们的方法在所有这些方面的有效性。",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Image and Video Processing (eess.IV)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Ji-Hoon Kim, Junseok Ahn, Doyeop Kwak, Joon Son Chung, Shinji Watanabe",
+    "topic": [
+      "Video Generation",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "SpidR: Learning Fast and Stable Linguistic Units for Spoken Language Models Without Supervision",
+    "paper_title_zh": "SpidR：无需监督学习快速稳定的语音语言模型的语言单元",
+    "paper_id": "2512.20308",
+    "paper_abstract": "The parallel advances in language modeling and speech representation learning have raised the prospect of learning language directly from speech without textual intermediates. This requires extracting semantic representations directly from speech. Our contributions are threefold. First, we introduce SpidR, a self-supervised speech representation model that efficiently learns representations with highly accessible phonetic information, which makes it particularly suited for textless spoken language modeling. It is trained on raw waveforms using a masked prediction objective combined with self-distillation and online clustering. The intermediate layers of the student model learn to predict assignments derived from the teacher's intermediate layers. This learning objective stabilizes the online clustering procedure compared to previous approaches, resulting in higher quality codebooks. SpidR outperforms wav2vec 2.0, HuBERT, WavLM, and DinoSR on downstream language modeling benchmarks (sWUGGY, sBLIMP, tSC). Second, we systematically evaluate across models and layers the correlation between speech unit quality (ABX, PNMI) and language modeling performance, validating these metrics as reliable proxies. Finally, SpidR significantly reduces pretraining time compared to HuBERT, requiring only one day of pretraining on 16 GPUs, instead of a week. This speedup is enabled by the pretraining method and an efficient codebase, which allows faster iteration and easier experimentation. We open-source the training code and model checkpoints at this https URL.",
+    "paper_abstract_zh": "语言建模和语音表征学习的并行进展，使得无需文本中间环节直接从语音中学习语言成为可能。这需要直接从语音中提取语义表征。我们的贡献有三方面。首先，我们介绍了SpidR，一种自监督语音表征模型，它能高效学习包含高度可及语音信息的表征，使其特别适合无文本语音语言建模。该模型在原始波形上训练，结合了掩码预测目标、自蒸馏和在线聚类。学生模型的中间层学习预测来自教师模型中间层的分配。与以往方法相比，这种学习目标稳定了在线聚类过程，从而产生更高质量的码本。SpidR在下游语言建模基准测试（sWUGGY、sBLIMP、tSC）上优于wav2vec 2.0、HuBERT、WavLM和DinoSR。其次，我们系统评估了不同模型和层中语音单元质量（ABX、PNMI）与语言建模性能之间的相关性，验证了这些指标作为可靠代理的有效性。最后，与HuBERT相比，SpidR显著减少了预训练时间，仅需16 GPU上一天的预训练，而非一周。这种加速得益于预训练方法和高效的代码库，使迭代更快、实验更容易。我们在https URL开源了训练代码和模型检查点。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Maxime Poli, Mahi Luthra, Youssef Benchekroun, Yosuke Higuchi, Martin Gleize, Jiayi Shen, Robin Algayres, Yu-An Chung, Mido Assran, Juan Pino, Emmanuel Dupoux",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "EnvSSLAM-FFN: Lightweight Layer-Fused System for ESDD 2026 Challenge",
+    "paper_title_zh": "EnvSSLAM-FFN：用于ESDD 2026挑战赛的轻量级层融合系统",
+    "paper_id": "2512.20369",
+    "paper_abstract": "Recent advances in generative audio models have enabled high-fidelity environmental sound synthesis, raising serious concerns for audio security. The ESDD 2026 Challenge therefore addresses environmental sound deepfake detection under unseen generators (Track 1) and black-box low-resource detection (Track 2) conditions. We propose EnvSSLAM-FFN, which integrates a frozen SSLAM self-supervised encoder with a lightweight FFN back-end. To effectively capture spoofing artifacts under severe data imbalance, we fuse intermediate SSLAM representations from layers 4-9 and adopt a class-weighted training objective. Experimental results show that the proposed system consistently outperforms the official baselines on both tracks, achieving Test Equal Error Rates (EERs) of 1.20% and 1.05%, respectively.",
+    "paper_abstract_zh": "生成式音频模型的最新进展使得高保真环境声音合成成为可能，引发了人们对音频安全的严重担忧。因此，ESDD 2026挑战赛旨在解决在未见过的生成器（赛道1）和黑盒低资源检测（赛道2）条件下的环境声音深度伪造检测问题。我们提出了EnvSSLAM-FFN，它将冻结的SSLAM自监督编码器与轻量级FFN后端相结合。为了在严重数据不平衡的情况下有效捕获欺骗性伪影，我们融合了第4-9层的中间SSLAM表示，并采用了类别加权的训练目标。实验结果表明，所提出的系统在两个赛道上都持续优于官方基线，分别实现了1.20%和1.05%的测试等错误率（EER）。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Xiaoxuan Guo, Hengyan Huang, Jiayi Zhou, Renhe Sun, Jian Liu, Haonan Cheng, Long Ye, Qin Zhang",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "MMEDIT: A Unified Framework for Multi-Type Audio Editing via Audio Language Model",
+    "paper_title_zh": "MMEDIT: 基于音频语言模型的多类型音频编辑统一框架",
+    "paper_id": "2512.20339",
+    "paper_abstract": "Text-guided audio editing aims to modify specific acoustic events while strictly preserving non-target content. Despite recent progress, existing approaches remain fundamentally limited. Training-free methods often suffer from signal degradation caused by diffusion inversion, while training-based methods, although achieving higher generation quality, are severely constrained by the scarcity of high-quality paired data and task formulations that cover only a narrow subset of editing operations. In addition, standard architectures typically decouple text and audio processing, limiting the ability to align instructions with specific acoustic contexts.\nTo address these challenges, we propose MMEdit, an audio-language-model-driven framework for unified audio editing. We systematically extend task definitions to cover a comprehensive range of editing operations, including addition, replacement, removal, reordering, and attribute modification. Furthermore, we design a scalable data synthesis pipeline to construct large-scale paired datasets with fine-grained event-level annotations. To capture complex editing semantics, we integrate a Qwen2-Audio encoder with an MMDiT-based generator, enabling precise cross-modal alignment and localized editing.\nExperimental results demonstrate that our method achieves superior editing localization accuracy, robust instruction following, and high fidelity in non-edited regions.",
+    "paper_abstract_zh": "文本引导的音频编辑旨在修改特定的声学事件，同时严格保留非目标内容。尽管最近取得了进展，但现有方法仍然存在根本性限制。无需训练的方法通常因扩散反转而导致信号退化，而基于训练的方法虽然能实现更高的生成质量，却受到高质量配对数据稀缺的严重限制，并且任务定义仅涵盖编辑操作的狭窄子集。此外，标准架构通常将文本和音频处理解耦，限制了指令与特定声学上下文对齐的能力。为解决这些挑战，我们提出了MMEdit，一个由音频语言模型驱动的统一音频编辑框架。我们系统性地扩展了任务定义，以涵盖全面的编辑操作，包括添加、替换、移除、重新排序和属性修改。此外，我们设计了一个可扩展的数据合成流程，用于构建具有细粒度事件级标注的大规模配对数据集。为捕捉复杂的编辑语义，我们将Qwen2-Audio编码器与基于MMDiT的生成器相结合，实现了精确的跨模态对齐和局部编辑。实验结果表明，我们的方法在编辑定位精度、指令遵循的鲁棒性以及未编辑区域的高保真度方面均表现出优越性能。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Ye Tao, Xuenan Xu, Wen Wu, Shuai Wang, Mengyue Wu, Chao Zhang",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "AUDRON: A Deep Learning Framework with Fused Acoustic Signatures for Drone Type Recognition",
+    "paper_title_zh": "AUDRON：一种融合声学特征的深度学习框架用于无人机类型识别",
+    "paper_id": "2512.20407",
+    "paper_abstract": "Unmanned aerial vehicles (UAVs), commonly known as drones, are increasingly used across diverse domains, including logistics, agriculture, surveillance, and defense. While these systems provide numerous benefits, their misuse raises safety and security concerns, making effective detection mechanisms essential. Acoustic sensing offers a low-cost and non-intrusive alternative to vision or radar-based detection, as drone propellers generate distinctive sound patterns. This study introduces AUDRON (AUdio-based Drone Recognition Network), a hybrid deep learning framework for drone sound detection, employing a combination of Mel-Frequency Cepstral Coefficients (MFCC), Short-Time Fourier Transform (STFT) spectrograms processed with convolutional neural networks (CNNs), recurrent layers for temporal modeling, and autoencoder-based representations. Feature-level fusion integrates complementary information before classification. Experimental evaluation demonstrates that AUDRON effectively differentiates drone acoustic signatures from background noise, achieving high accuracy while maintaining generalizability across varying conditions. AUDRON achieves 98.51 percent and 97.11 percent accuracy in binary and multiclass classification. The results highlight the advantage of combining multiple feature representations with deep learning for reliable acoustic drone detection, suggesting the framework's potential for deployment in security and surveillance applications where visual or radar sensing may be limited.",
+    "paper_abstract_zh": "无人机（UAVs），通常被称为无人机，正被广泛应用于物流、农业、监视和国防等多个领域。虽然这些系统提供了诸多好处，但其滥用引发的安全和担忧问题使得有效的检测机制变得至关重要。声学 sensing 提供了一种低成本且非侵入性的替代方案，相较于基于视觉或雷达的检测，因为无人机螺旋桨会产生独特的声音模式。本研究介绍了 AUDRON（基于音频的无人机识别网络），这是一种用于无人机声音检测的混合深度学习框架，它结合了梅尔频率倒谱系数（MFCC）、通过卷积神经网络（CNNs）处理的短时傅里叶变换（STFT）频谱图、用于时间建模的循环层以及基于自编码器的表示。特征级融合在分类前整合互补信息。实验评估表明，AUDRON 能够有效区分无人机声学特征与背景噪声，在保持不同条件下泛化能力的同时实现高精度。AUDRON 在二进制和多类分类中分别达到了 98.51% 和 97.11% 的准确率。结果强调了结合多种特征表示与深度学习进行可靠声学无人机检测的优势，表明该框架在视觉或雷达传感可能受限的安全和监视应用中具有部署潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Rajdeep Chatterjee, Sudip Chakrabarty, Trishaani Acharjee, Deepanjali Mishra",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "OASI: Objective-Aware Surrogate Initialization for Multi-Objective Bayesian Optimization in TinyML Keyword Spotting",
+    "paper_title_zh": "OASI：面向TinyML关键词识别的多目标贝叶斯优化中目标感知的代理初始化",
+    "paper_id": "2512.19739",
+    "paper_abstract": "Voice assistants utilize Keyword Spotting (KWS) to enable efficient, privacy-friendly activation. However, realizing accurate KWS models on ultra-low-power TinyML devices (often with less than $<2$ MB of flash memory) necessitates a delicate balance between accuracy with strict resource constraints. Multi-objective Bayesian Optimization (MOBO) is an ideal candidate for managing such a trade-off but is highly initialization-dependent, especially under the budgeted black-box setting. Existing methods typically fall back to naive, ad-hoc sampling routines (e.g., Latin Hypercube Sampling (LHS), Sobol sequences, or Random search) that are adapted to neither the Pareto front nor undergo rigorous statistical comparison. To address this, we propose Objective-Aware Surrogate Initialization (OASI), a novel initialization strategy that leverages Multi-Objective Simulated Annealing (MOSA) to generate a seed Pareto set of high-performing and diverse configurations that explicitly balance accuracy and model size. Evaluated in a TinyML KWS setting, OASI outperforms LHS, Sobol, and Random initialization, achieving the highest hypervolume (0.0627) and the lowest generational distance (0.0) across multiple runs, with only a modest increase in computation time (1934 s vs. $\\sim$1500 s). A non-parametric statistical analysis using the Kruskal-Wallis test ($H = 5.40$, $p = 0.144$, $\\eta^2 = 0.0007$) and Dunn's post-hoc test confirms OASI's superior consistency despite the non-significant overall difference with respect to the $\\alpha=0.05$ threshold.",
+    "paper_abstract_zh": "语音助手利用关键词识别（KWS）来实现高效、隐私友好的激活。然而，在超低功耗的TinyML设备上（通常闪存小于2MB）实现准确的KWS模型，需要在准确性与严格的资源限制之间取得微妙的平衡。多目标贝叶斯优化（MOBO）是管理这种权衡的理想选择，但它高度依赖于初始化，特别是在预算化的黑盒设置下。现有方法通常退回到简单、即兴的采样程序（如拉丁超立方采样（LHS）、Sobol序列或随机搜索），这些方法既不适应帕累托前沿，也未经过严格的统计比较。为此，我们提出了目标感知的代理初始化（OASI），这是一种新颖的初始化策略，利用多目标模拟退火（MOSA）生成高性能且多样化的配置种子集，这些配置明确平衡了准确性和模型大小。在TinyML KWS设置中评估，OASI优于LHS、Sobol和随机初始化，在多次运行中实现了最高的超体积（0.0627）和最低的代际距离（0.0），且计算时间仅适度增加（1934秒对比约1500秒）。使用Kruskal-Wallis检验（H = 5.40，p = 0.144，η² = 0.0007）和Dunn事后检验的非参数统计分析证实，尽管在α=0.05阈值下整体差异不显著，但OASI具有更好的一致性。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-24",
+    "paper_authors": "Soumen Garai, Suman Samui",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
