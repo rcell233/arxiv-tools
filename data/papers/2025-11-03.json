@@ -150,10 +150,10 @@
   },
   {
     "paper_title": "Audio-Visual Speech Enhancement In Complex Scenarios With Separation And Dereverberation Joint Modeling",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于分离与去混响联合建模的复杂场景下的视听语音增强",
     "paper_id": "2510.26825",
     "paper_abstract": "Audio-visual speech enhancement (AVSE) is a task that uses visual auxiliary information to extract a target speaker's speech from mixed audio. In real-world scenarios, there often exist complex acoustic environments, accompanied by various interfering sounds and reverberation. Most previous methods struggle to cope with such complex conditions, resulting in poor perceptual quality of the extracted speech. In this paper, we propose an effective AVSE system that performs well in complex acoustic environments. Specifically, we design a \"separation before dereverberation\" pipeline that can be extended to other AVSE networks. The 4th COGMHEAR Audio-Visual Speech Enhancement Challenge (AVSEC) aims to explore new approaches to speech processing in multimodal complex environments. We validated the performance of our system in AVSEC-4: we achieved excellent results in the three objective metrics on the competition leaderboard, and ultimately secured first place in the human subjective listening test.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "视听语音增强（AVSE）是一种利用视觉辅助信息从混合音频中提取目标语音的任务。在现实场景中，通常存在复杂的声学环境，伴随着各种干扰声音和混响。大多数先前的方法难以应对这种复杂条件，导致提取的语音感知质量较差。在本文中，我们提出了一种在复杂声学环境中表现良好的有效AVSE系统。具体而言，我们设计了一个“先分离后去混响”的流程，可以扩展到其他AVSE网络。第四届COGMHEAR视听语音增强挑战赛（AVSEC）旨在探索多模态复杂环境下的语音处理新方法。我们在AVSEC-4中验证了我们系统的性能：在竞赛排行榜的三个客观指标上取得了优异结果，并最终在人类主观听力测试中获得了第一名。",
     "subjects": [
       "Computer Vision and Pattern Recognition (cs.CV)",
       "Audio and Speech Processing (eess.AS)",
@@ -162,8 +162,12 @@
     ],
     "update_time": "2025-11-03",
     "paper_authors": "Jiarong Du, Zhan Jin, Peijun Yang, Juan Liu, Zhuo Li, Xin Liu, Ming Li",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Expressive Range Characterization of Open Text-to-Audio Models",

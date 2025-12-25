@@ -1,0 +1,96 @@
+[
+  {
+    "paper_title": "GenTSE: Enhancing Target Speaker Extraction via a Coarse-to-Fine Generative Language Model",
+    "paper_title_zh": "GenTSE: 通过粗到细生成式语言模型增强目标说话人提取",
+    "paper_id": "2512.20978",
+    "paper_abstract": "Language Model (LM)-based generative modeling has emerged as a promising direction for TSE, offering potential for improved generalization and high-fidelity speech. We present GenTSE, a two-stage decoder-only generative LM approach for TSE: Stage-1 predicts coarse semantic tokens, and Stage-2 generates fine acoustic tokens. Separating semantics and acoustics stabilizes decoding and yields more faithful, content-aligned target speech. Both stages use continuous SSL or codec embeddings, offering richer context than discretized-prompt methods. To reduce exposure bias, we employ a Frozen-LM Conditioning training strategy that conditions the LMs on predicted tokens from earlier checkpoints to reduce the gap between teacher-forcing training and autoregressive inference. We further employ DPO to better align outputs with human perceptual preferences. Experiments on Libri2Mix show that GenTSE surpasses previous LM-based systems in speech quality, intelligibility, and speaker consistency.",
+    "paper_abstract_zh": "基于语言模型(LM)的生成式建模已成为目标说话人提取(TSE)的一个有前景的方向，有望提高泛化能力和高保真语音。我们提出了GenTSE，一种用于TSE的两阶段仅解码器生成式LM方法：第一阶段预测粗粒度语义标记，第二阶段生成细粒度声学标记。将语义和声学分离可以稳定解码过程，并产生更忠实、内容对齐的目标语音。两个阶段都使用连续的SSL或codec嵌入，比离散提示方法提供更丰富的上下文。为了减少暴露偏差，我们采用了冻结语言模型条件训练策略，该策略将LM基于先前检查点预测的标记进行条件化，以减少教师强制训练和自回归推理之间的差距。我们还进一步采用DPO来更好地使输出与人类感知偏好保持一致。在Libri2Mix上的实验表明，GenTSE在语音质量、可懂度和说话人一致性方面超越了以往的基于LM的系统。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-25",
+    "paper_authors": "Haoyang Li, Xuyi Zhuang, Azmat Adnan, Ye Ni, Wei Rao, Shreyas Gopal, Eng Siong Chng",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "USE: A Unified Model for Universal Sound Separation and Extraction",
+    "paper_title_zh": "USE：一种用于通用声音分离和提取的统一模型",
+    "paper_id": "2512.21215",
+    "paper_abstract": "Sound separation (SS) and target sound extraction (TSE) are fundamental techniques for addressing complex acoustic scenarios. While existing SS methods struggle with determining the unknown number of sound sources, TSE approaches require precisely specified clues to achieve optimal performance. This paper proposes a unified framework that synergistically combines SS and TSE to overcome their individual limitations. Our architecture employs two complementary components: 1) An Encoder-Decoder Attractor (EDA) network that automatically infers both the source count and corresponding acoustic clues for SS, and 2) A multi-modal fusion network that precisely interprets diverse user-provided clues (acoustic, semantic, or visual) for TSE. Through joint training with cross-task consistency constraints, we establish a unified latent space that bridges both paradigms. During inference, the system adaptively operates in either fully autonomous SS mode or clue-driven TSE mode. Experiments demonstrate remarkable performance in both tasks, with notable improvements of 1.4 dB SDR improvement in SS compared to baseline and 86\\% TSE accuracy.",
+    "paper_abstract_zh": "声音分离（SS）和目标声音提取（TSE）是解决复杂声学场景的基本技术。虽然现有的SS方法难以确定未知数量的声源，但TSE方法需要精确指定的线索才能实现最佳性能。本文提出了一种统一框架，协同结合SS和TSE以克服各自的局限性。我们的架构采用两个互补组件：1）一种自动推断源数量和相应声学线索的编码器-解码器吸引子（EDA）网络，用于SS；2）一种多模态融合网络，精确解释用户提供的多样化线索（声学、语义或视觉），用于TSE。通过跨任务一致性约束的联合训练，我们建立了连接两种范式的统一潜在空间。在推理过程中，系统自适应地以完全自主的SS模式或线索驱动的TSE模式运行。实验表明，两项任务均表现出卓越的性能，与基线相比，SS有1.4 dB SDR的显著提升，TSE准确率达到86%。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-25",
+    "paper_authors": "Hongyu Wang, Chenda Li, Xin Zhou, Shuai Wang, Yanmin Qian",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SACodec: Asymmetric Quantization with Semantic Anchoring for Low-Bitrate High-Fidelity Neural Speech Codecs",
+    "paper_title_zh": "",
+    "paper_id": "2512.20944",
+    "paper_abstract": "Neural Speech Codecs face a fundamental trade-off at low bitrates: preserving acoustic fidelity often compromises semantic richness. To address this, we introduce SACodec, a novel codec built upon an asymmetric dual-quantizer that employs our proposed Semantic Anchoring mechanism. This design strategically decouples the quantization of Semantic and Acoustic details. The semantic anchoring is achieved via a lightweight projector that aligns acoustic features with a frozen, large-scale mHuBERT codebook, injecting linguistic priors while guaranteeing full codebook utilization. Sequentially, for acoustic details, a residual activation module with SimVQ enables a single-layer quantizer (acoustic path) to faithfully recover fine-grained information. At just 1.5 kbps, SACodec establishes a new state of the art by excelling in both fidelity and semantics: subjective listening tests confirm that its reconstruction quality is perceptually highly comparable to ground-truth audio, while its tokens demonstrate substantially improved semantic richness in downstream tasks.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-25",
+    "paper_authors": "Zhongren Dong, Bin Wang, Jing Han, Haotian Guo, Xiaojun Mo, Yimin Cao, Zixing Zhang",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Towards Practical Automatic Piano Reduction using BERT with Semi-supervised Learning",
+    "paper_title_zh": "使用半监督学习和BERT实现实用的自动钢琴简化",
+    "paper_id": "2512.21324",
+    "paper_abstract": "In this study, we present a novel automatic piano reduction method with semi-supervised machine learning. Piano reduction is an important music transformation process, which helps musicians and composers as a musical sketch for performances and analysis. The automation of such is a highly challenging research problem but could bring huge conveniences as manually doing a piano reduction takes a lot of time and effort. While supervised machine learning is often a useful tool for learning input-output mappings, it is difficult to obtain a large quantity of labelled data. We aim to solve this problem by utilizing semi-supervised learning, so that the abundant available data in classical music can be leveraged to perform the task with little or no labelling effort. In this regard, we formulate a two-step approach of music simplification followed by harmonization. We further propose and implement two possible solutions making use of an existing machine learning framework -- MidiBERT. We show that our solutions can output practical and realistic samples with an accurate reduction that needs only small adjustments in post-processing. Our study forms the groundwork for the use of semi-supervised learning in automatic piano reduction, where future researchers can take reference to produce more state-of-the-art results.",
+    "paper_abstract_zh": "在本研究中，我们提出了一种基于半监督机器学习的新型自动钢琴简化方法。钢琴简化是一种重要的音乐转换过程，它为音乐家和作曲家提供了表演和分析的音乐草图。这种自动化的实现是一个极具挑战性的研究问题，但可以带来巨大的便利，因为手动进行钢琴简化需要大量的时间和精力。虽然监督机器学习通常是学习输入输出映射的有用工具，但获取大量标记数据很困难。我们旨在通过利用半监督学习解决这个问题，以便充分利用古典音乐中丰富的可用数据，以最小的标记努力完成这项任务。为此，我们提出了一个两步方法：先进行音乐简化，再进行和声处理。我们进一步提出并实现了两种可能的解决方案，利用现有的机器学习框架——MidiBERT。我们证明，我们的解决方案能够输出实用且真实的样本，其简化结果准确，只需在后处理中进行少量调整。我们的研究为半监督学习在自动钢琴简化中的应用奠定了基础，未来的研究人员可以参考此研究，以取得更先进的结果。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Symbolic Computation (cs.SC)"
+    ],
+    "update_time": "2025-12-25",
+    "paper_authors": "Wan Ki Wong, Ka Ho To, Chuck-jee Chau, Lucas Wong, Kevin Y. Yip, Irwin King",
+    "topic": [
+      "Music Information Retrieval",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Foundation Model-based Evaluation of Neuropsychiatric Disorders: A Lifespan-Inclusive, Multi-Modal, and Multi-Lingual Study",
+    "paper_title_zh": "基于基础模型的精神障碍评估：一项涵盖全生命周期、多模态和多语言的研究",
+    "paper_id": "2512.20948",
+    "paper_abstract": "Neuropsychiatric disorders, such as Alzheimer's disease (AD), depression, and autism spectrum disorder (ASD), are characterized by linguistic and acoustic abnormalities, offering potential biomarkers for early detection. Despite the promise of multi-modal approaches, challenges like multi-lingual generalization and the absence of a unified evaluation framework persist. To address these gaps, we propose FEND (Foundation model-based Evaluation of Neuropsychiatric Disorders), a comprehensive multi-modal framework integrating speech and text modalities for detecting AD, depression, and ASD across the lifespan. Leveraging 13 multi-lingual datasets spanning English, Chinese, Greek, French, and Dutch, we systematically evaluate multi-modal fusion performance. Our results show that multi-modal fusion excels in AD and depression detection but underperforms in ASD due to dataset heterogeneity. We also identify modality imbalance as a prevalent issue, where multi-modal fusion fails to surpass the best mono-modal models. Cross-corpus experiments reveal robust performance in task- and language-consistent scenarios but noticeable degradation in multi-lingual and task-heterogeneous settings. By providing extensive benchmarks and a detailed analysis of performance-influencing factors, FEND advances the field of automated, lifespan-inclusive, and multi-lingual neuropsychiatric disorder assessment. We encourage researchers to adopt the FEND framework for fair comparisons and reproducible research.",
+    "paper_abstract_zh": "神经精神障碍，如阿尔茨海默病(AD)、抑郁症和自闭症谱系障碍(ASD)，其特征在于语言和声学异常，为早期检测提供了潜在的生物标志物。尽管多模态方法具有潜力，但多语言泛化和缺乏统一评估框架等挑战仍然存在。为解决这些差距，我们提出了FEND（基于基础模型的精神障碍评估），这是一个全面的多模态框架，整合了语音和文本模态，用于在全生命周期内检测AD、抑郁症和ASD。利用涵盖英语、中文、希腊语、法语和荷兰语的13个多语言数据集，我们系统评估了多模态融合性能。结果表明，多模态融合在AD和抑郁症检测中表现出色，但由于数据集异质性，在ASD检测中表现不佳。我们还发现模态不平衡是一个普遍问题，多模态融合未能超越最佳单模态模型。跨语料库实验显示，在任务和语言一致的场景中表现稳健，但在多语言和任务异质设置中性能明显下降。通过提供广泛的基准测试和性能影响因素的详细分析，FEND推动了自动化、全生命周期包容性和多语言神经精神障碍评估领域的发展。我们鼓励研究人员采用FEND框架进行公平比较和可重复研究。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-25",
+    "paper_authors": "Zhongren Dong, Haotian Guo, Weixiang Xu, Huan Zhao, Zixing Zhang",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]

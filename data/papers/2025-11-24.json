@@ -65,18 +65,23 @@
   },
   {
     "paper_title": "AI in Music and Sound: Pedagogical Reflections, Post-Structuralist Approaches and Creative Outcomes in Seminar Practice",
-    "paper_title_zh": "",
+    "paper_title_zh": "音乐与声音中的AI：教学反思、后结构主义方法与研讨实践中的创造性成果",
     "paper_id": "2511.17425",
     "paper_abstract": "This paper presents a pedagogical and conceptual account of the course AI in Music and Sound: Modalities, Tools and Creative Applications, offered within the Music Informatics and Media Art module of an this http URL. in Audio Communication. The course engaged students with a range of AI modalities such as symbolic composition, voice synthesis, timbre transfer, neural audio synthesis, and text-to-audio systems, combining theoretical reflection with practice-based experimentation. Its central pedagogical move is a paired-études design: each modality is approached first through its intended affordances and then through a deliberately reframed or \"misused\" exercise that surfaces representational limits and alternative behaviours. Framed by medium theory and post-structuralist inquiry, we treated AI as a transmodal conduit-a system that translates and perturbs musical signs across textual, symbolic, timbral and audio domains. Evidence from student work and reflection indicates growth in technical fluency, medium awareness, and critical literacy, alongside the cultivation of experimental method and process-oriented listening. The paper outlines the course architecture, assessment design, and representative projects, and distils a set of design patterns for AI-music pedagogy (eg., prompt-conditioned interplays and semantic destabilisation in text-to-audio; latent space materialism in timbre transfer). It concludes with pedagogical recommendations that integrate creative practice with medium awareness and with cultural-epistemic analysis of AI technologies, preparing students to participate in how AI is understood, developed, and deployed with creative communities.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本文介绍了课程《音乐与声音中的AI：模态、工具与创造性应用》的教学与概念性概述，该课程是音频传播硕士项目中音乐信息学与媒体艺术模块的一部分。课程引导学生接触多种AI模态，如符号作曲、语音合成、音色迁移、神经音频合成和文本到音频系统，结合理论反思与实践实验。其核心教学设计是“双练习”模式：首先通过预期功能探索每种模态，然后通过刻意重构或“误用”练习揭示其表征局限和替代行为。基于媒介理论和后结构主义探究，我们将AI视为跨模态通道——在文本、符号、音色和音频领域之间翻译和扰动音乐符号的系统。学生作品和反思的证据显示，学生在技术熟练度、媒介意识和批判性素养方面有所提升，同时培养了实验方法和过程导向的倾听能力。本文概述了课程架构、评估设计和代表性项目，并提炼出一套AI音乐教学的设计模式（例如，文本到音频中的提示条件交互和语义不稳定；音色迁移中的潜在空间唯物主义）。最后，本文提出了将创造性实践与媒介意识及AI技术的文化-认识论分析相结合的教学建议，帮助学生参与AI在创意社区中的理解、开发和部署。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-11-24",
     "paper_authors": "Guilherme Coelho",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Semantic and Semiotic Interplays in Text-to-Audio AI: Exploring Cognitive Dynamics and Musical Interactions",

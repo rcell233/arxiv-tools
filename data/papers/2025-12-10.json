@@ -1,17 +1,21 @@
 [
   {
     "paper_title": "An Adaptive Method for Target Curve Selection",
-    "paper_title_zh": "",
+    "paper_title_zh": "一种目标曲线选择的自适应方法",
     "paper_id": "2512.08313",
     "paper_abstract": "In this paper, we introduce an adaptation of the \"Interactive Differential Evolution\" (IDE) algorithm to the audio domain for the task of identifying the preferred over-the-ear headphone frequency response target among consumers. The method is based on data collection using an adaptive paired rating listening test paradigm (paired comparison with a scale). The IDE algorithm and its parameters are explained in detail. Additionally, data collected from three listening experiments with more than 20 consumers is presented, and the algorithm's performance in this untested domain is investigated on the basis of two convergence measures. The results indicate that this method can converge and may ease the task of 'extracting' frequency response preference from untrained consumers.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本文介绍了将“交互式差分进化”（IDE）算法应用于音频领域，用于识别消费者偏好的头戴式耳机频率响应目标。该方法基于使用自适应配对评分听力测试范式（带量表的配对比较）的数据收集。详细解释了IDE算法及其参数。此外，展示了来自三个听力实验的数据，涉及超过20名消费者，并基于两个收敛性指标研究了该算法在这一未测试领域的性能。结果表明，该方法可以收敛，并可能简化从未经训练的消费者中“提取”频率响应偏好的任务。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-12-10",
     "paper_authors": "Gabriele Ravizza, Julián Villegas, Christer P. Volk, Tore Stegenborg-Andersen, Yan Pei",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "BUT Systems for Environmental Sound Deepfake Detection in the ESDD 2026 Challenge",
