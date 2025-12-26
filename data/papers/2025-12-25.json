@@ -41,17 +41,22 @@
   },
   {
     "paper_title": "SACodec: Asymmetric Quantization with Semantic Anchoring for Low-Bitrate High-Fidelity Neural Speech Codecs",
-    "paper_title_zh": "",
+    "paper_title_zh": "SACodec: 基于语义锚定的非对称量化用于低比特率高保真神经语音编解码器",
     "paper_id": "2512.20944",
     "paper_abstract": "Neural Speech Codecs face a fundamental trade-off at low bitrates: preserving acoustic fidelity often compromises semantic richness. To address this, we introduce SACodec, a novel codec built upon an asymmetric dual-quantizer that employs our proposed Semantic Anchoring mechanism. This design strategically decouples the quantization of Semantic and Acoustic details. The semantic anchoring is achieved via a lightweight projector that aligns acoustic features with a frozen, large-scale mHuBERT codebook, injecting linguistic priors while guaranteeing full codebook utilization. Sequentially, for acoustic details, a residual activation module with SimVQ enables a single-layer quantizer (acoustic path) to faithfully recover fine-grained information. At just 1.5 kbps, SACodec establishes a new state of the art by excelling in both fidelity and semantics: subjective listening tests confirm that its reconstruction quality is perceptually highly comparable to ground-truth audio, while its tokens demonstrate substantially improved semantic richness in downstream tasks.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "神经语音编解码器在低比特率下面临一个基本的权衡：保持声学保真度往往会牺牲语义丰富性。为解决这一问题，我们提出了SACodec，一种基于非对称双量化器的新型编解码器，该量化器采用了我们提出的语义锚定机制。该设计战略性地解耦了语义和声学细节的量化。语义锚定通过一个轻量级投影器实现，该投影器将声学特征与冻结的大规模mHuBERT码本对齐，在保证码本完全利用的同时注入语言先验。随后，对于声学细节，采用具有SimVQ的残差激活模块，使单层量化器（声学路径）能够忠实地恢复细粒度信息。在仅1.5 kbps的比特率下，SACodec在保真度和语义方面均建立了新的最先进水平：主观听测证实其重建质量在感知上与真实音频高度可比，而其标记在下游任务中表现出显著改善的语义丰富性。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-12-25",
     "paper_authors": "Zhongren Dong, Bin Wang, Jing Han, Haotian Guo, Xiaojun Mo, Yimin Cao, Zixing Zhang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Codec",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Towards Practical Automatic Piano Reduction using BERT with Semi-supervised Learning",
