@@ -21,17 +21,21 @@
   },
   {
     "paper_title": "Train Short, Infer Long: Speech-LLM Enables Zero-Shot Streamable Joint ASR and Diarization on Long Audio",
-    "paper_title_zh": "",
+    "paper_title_zh": "短时训练，长时推理：语音大模型实现长音频上的零样本流式联合ASR和说话人日志",
     "paper_id": "2511.16046",
     "paper_abstract": "Joint automatic speech recognition (ASR) and speaker diarization aim to answer the question \"who spoke what\" in multi-speaker scenarios. In this paper, we present an end-to-end speech large language model (Speech-LLM) for Joint strEamable DIarization and aSr (JEDIS-LLM). The model is trained only on short audio under 20s but is capable of streamable inference on long-form audio without additional training. This is achieved by introducing a Speaker Prompt Cache (SPC) with an on-the-fly update mechanism during chunk-wise streaming inference, inspired by the autoregressive nature of LLMs. The SPC also allows the seamless use of pre-enrolled speaker profiles which is common in many scenarios like meeting transcription. To further enhance diarization capability, we incorporate word-level speaker supervision into the speech encoder during training. Experimental results demonstrate that our system outperforms strong baselines, including Sortformer and Meta-Cat in the local setting on audio up to 20s, and DiarizationLM on long-form audio, despite being fully end-to-end and streamable while DiarizationLM follows a cascaded offline pipeline. To the best of our knowledge, this is the first work enabling zero-shot streamable joint ASR and diarization on long audio using a Speech-LLM trained only on short audio, achieving state-of-the-art performance.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "联合自动语音识别（ASR）和说话人日志旨在回答多说话人场景中的“谁说了什么”的问题。在本文中，我们提出了一个端到端的语音大语言模型（Speech-LLM），用于联合流式说话人日志和语音识别（JEDIS-LLM）。该模型仅在20秒以下的短音频上训练，但能够在无需额外训练的情况下对长音频进行流式推理。这是通过引入说话人提示缓存（SPC）并在分块流式推理过程中实现实时更新机制来实现的，这一机制受到了LLM自回归特性的启发。SPC还允许无缝使用预注册的说话人档案，这在会议转录等许多场景中很常见。为了进一步增强说话人日志能力，我们在训练过程中将词级说话人监督纳入语音编码器。实验结果表明，我们的系统在20秒以下的音频上优于Sortformer和Meta-Cat等强基线，在长音频上优于DiarizationLM，尽管它是完全端到端且可流式的，而DiarizationLM采用级联离线流水线。据我们所知，这是首个利用仅在短音频上训练的Speech-LLM实现长音频上零样本流式联合ASR和说话人日志的工作，并达到了最先进的性能。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-11-21",
     "paper_authors": "Mohan Shi, Xiong Xiao, Ruchao Fan, Shaoshi Ling, Jinyu Li",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "SUNAC: Source-aware Unified Neural Audio Codec",

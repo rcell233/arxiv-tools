@@ -38,10 +38,10 @@
   },
   {
     "paper_title": "AutoMV: An Automatic Multi-Agent System for Music Video Generation",
-    "paper_title_zh": "",
+    "paper_title_zh": "AutoMV：一个用于音乐视频生成的自动多智能体系统",
     "paper_id": "2512.12196",
     "paper_abstract": "Music-to-Video (M2V) generation for full-length songs faces significant challenges. Existing methods produce short, disjointed clips, failing to align visuals with musical structure, beats, or lyrics, and lack temporal consistency. We propose AutoMV, a multi-agent system that generates full music videos (MVs) directly from a song. AutoMV first applies music processing tools to extract musical attributes, such as structure, vocal tracks, and time-aligned lyrics, and constructs these features as contextual inputs for following agents. The screenwriter Agent and director Agent then use this information to design short script, define character profiles in a shared external bank, and specify camera instructions. Subsequently, these agents call the image generator for keyframes and different video generators for \"story\" or \"singer\" scenes. A Verifier Agent evaluates their output, enabling multi-agent collaboration to produce a coherent longform MV. To evaluate M2V generation, we further propose a benchmark with four high-level categories (Music Content, Technical, Post-production, Art) and twelve ine-grained criteria. This benchmark was applied to compare commercial products, AutoMV, and human-directed MVs with expert human raters: AutoMV outperforms current baselines significantly across all four categories, narrowing the gap to professional MVs. Finally, we investigate using large multimodal models as automatic MV judges; while promising, they still lag behind human expert, highlighting room for future work.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "针对全长歌曲的音乐到视频（M2V）生成面临重大挑战。现有方法生成的短片片段不连贯，无法与音乐结构、节拍或歌词对齐，且缺乏时间一致性。我们提出了AutoMV，这是一个能够直接从歌曲生成完整音乐视频（MV）的多智能体系统。AutoMV首先应用音乐处理工具提取音乐属性，如结构、音轨和时间对齐的歌词，并将这些特征构建为后续智能体的上下文输入。编剧智能体和导演智能体随后利用这些信息设计简短剧本，在共享外部存储库中定义角色档案，并指定摄像机指令。接着，这些智能体调用图像生成器生成关键帧，并调用不同的视频生成器生成“故事”或“歌手”场景。验证器智能体评估其输出，实现多智能体协作以生成连贯的长篇MV。为了评估M2V生成，我们进一步提出了一个包含四个高级类别（音乐内容、技术、后期制作、艺术）和十二个细粒度标准的基准。该基准用于比较商业产品、AutoMV和人类导演的MV，并由专家人类评分员进行评估：AutoMV在所有四个类别中显著优于当前基线，缩小了与专业MV的差距。最后，我们探讨了使用大型多模态模型作为自动MV评估器；虽然前景广阔，但仍落后于人类专家，突显了未来工作的改进空间。",
     "subjects": [
       "Computer Vision and Pattern Recognition (cs.CV)",
       "Sound (cs.SD)",
@@ -50,8 +50,14 @@
     ],
     "update_time": "2025-12-16",
     "paper_authors": "Xiaoxuan Tang, Xinping Lei, Chaoran Zhu, Shiyun Chen, Ruibin Yuan, Yizhi Li, Changjae Oh, Ge Zhang, Wenhao Huang, Emmanouil Benetos, Yang Liu, Jiaheng Liu, Yinghao Ma",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Information Retrieval",
+      "Video Generation",
+      "Image Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
   },
   {
     "paper_title": "A comparative study of generative models for child voice conversion",
