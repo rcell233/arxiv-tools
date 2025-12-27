@@ -204,10 +204,10 @@
   },
   {
     "paper_title": "IMSE: Efficient U-Net-based Speech Enhancement using Inception Depthwise Convolution and Amplitude-Aware Linear Attention",
-    "paper_title_zh": "",
+    "paper_title_zh": "IMSE：基于Inception深度卷积和幅度感知线性注意力的高效U-Net语音增强",
     "paper_id": "2511.14515",
     "paper_abstract": "Achieving a balance between lightweight design and high performance remains a significant challenge for speech enhancement (SE) tasks on resource-constrained devices. Existing state-of-the-art methods, such as MUSE, have established a strong baseline with only 0.51M parameters by introducing a Multi-path Enhanced Taylor (MET) transformer and Deformable Embedding (DE). However, an in-depth analysis reveals that MUSE still suffers from efficiency bottlenecks: the MET module relies on a complex \"approximate-compensate\" mechanism to mitigate the limitations of Taylor-expansion-based attention, while the offset calculation for deformable embedding introduces additional computational burden. This paper proposes IMSE, a systematically optimized and ultra-lightweight network. We introduce two core innovations: 1) Replacing the MET module with Amplitude-Aware Linear Attention (MALA). MALA fundamentally rectifies the \"amplitude-ignoring\" problem in linear attention by explicitly preserving the norm information of query vectors in the attention calculation, achieving efficient global modeling without an auxiliary compensation branch. 2) Replacing the DE module with Inception Depthwise Convolution (IDConv). IDConv borrows the Inception concept, decomposing large-kernel operations into efficient parallel branches (square, horizontal, and vertical strips), thereby capturing spectrogram features with extremely low parameter redundancy. Extensive experiments on the VoiceBank+DEMAND dataset demonstrate that, compared to the MUSE baseline, IMSE significantly reduces the parameter count by 16.8\\% (from 0.513M to 0.427M) while achieving competitive performance comparable to the state-of-the-art on the PESQ metric (3.373). This study sets a new benchmark for the trade-off between model size and speech quality in ultra-lightweight speech enhancement.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "在资源受限设备上实现轻量级设计与高性能之间的平衡仍然是语音增强（SE）任务面临的重要挑战。现有的最先进方法，如MUSE，通过引入多路径增强泰勒（MET）变换器和可变形嵌入（DE），仅用0.51M参数就建立了强大的基准。然而，深入分析表明，MUSE仍存在效率瓶颈：MET模块依赖复杂的“近似-补偿”机制来缓解基于泰勒展开注意力的局限性，而可变形嵌入的偏移计算引入了额外的计算负担。本文提出了IMSE，一个系统优化且超轻量级的网络。我们引入了两个核心创新：1）用幅度感知线性注意力（MALA）替换MET模块。MALA通过在注意力计算中显式保留查询向量的范数信息，从根本上纠正了线性注意力中的“忽略幅度”问题，实现了无需辅助补偿分支的高效全局建模。2）用Inception深度卷积（IDConv）替换DE模块。IDConv借鉴Inception概念，将大核操作分解为高效的并行分支（方形、水平和垂直条），从而以极低的参数冗余捕获语谱图特征。在VoiceBank+DEMAND数据集上的大量实验表明，与MUSE基准相比，IMSE将参数量显著减少了16.8%（从0.513M降至0.427M），同时在PESQ指标上实现了与最先进方法相当的性能（3.373）。本研究为超轻量级语音增强中模型大小与语音质量之间的权衡树立了新标杆。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -215,8 +215,12 @@
     ],
     "update_time": "2025-11-19",
     "paper_authors": "Xinxin Tang, Bin Qin, Yufang Li",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "A Controllable Perceptual Feature Generative Model for Melody Harmonization via Conditional Variational Autoencoder",
