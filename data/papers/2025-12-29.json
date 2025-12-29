@@ -1,0 +1,77 @@
+[
+  {
+    "paper_title": "Contextual Biasing for LLM-Based ASR with Hotword Retrieval and Reinforcement Learning",
+    "paper_title_zh": "基于热词检索和强化学习的LLM语音识别上下文偏置",
+    "paper_id": "2512.21828",
+    "paper_abstract": "Large language model (LLM)-based automatic speech recognition (ASR) has recently achieved strong performance across diverse tasks, yet contextual biasing for named entities and hotwords under large vocabularies remains challenging. In this work, we propose a scalable two-stage framework that integrates hotword retrieval with LLM-ASR adaptation. First, we extend the Global-Local Contrastive Language-Audio pre-trained model (GLCLAP) to retrieve a compact top-k set of hotword candidates from a large vocabulary via robustness-aware data augmentation and fuzzy matching. Second, we inject the retrieved candidates as textual prompts into an LLM-ASR model and fine-tune it with Generative Rejection-Based Policy Optimization (GRPO), using a task-driven reward that jointly optimizes hotword recognition and overall transcription accuracy. Experiments on hotword-focused test sets show substantial keyword error rate (KER) reductions while maintaining sentence accuracy on general ASR benchmarks, demonstrating the effectiveness of the proposed framework for large-vocabulary contextual biasing.",
+    "paper_abstract_zh": "基于大型语言模型(LLM)的自动语音识别(ASR)最近在多样化任务中取得了强大的性能，但在大词汇表下对命名实体和热词进行上下文偏置仍然具有挑战性。在这项工作中，我们提出了一种可扩展的两阶段框架，将热词检索与LLM-ASR适配相结合。首先，我们扩展了全局-局部对比语言-音频预训练模型(GLCLAP)，通过鲁棒性感知数据增强和模糊匹配从大词汇表中检索紧凑的前k个热词候选集。其次，我们将检索到的候选集作为文本提示注入到LLM-ASR模型中，并使用基于生成拒绝的策略优化(GRPO)对其进行微调，采用任务驱动的奖励函数，联合优化热词识别和整体转录准确性。在针对热词的测试集上的实验表明，在保持通用ASR基准上的句子准确率的同时，显著降低了关键词错误率(KER)，证明了所提框架在大词汇表上下文偏置方面的有效性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2025-12-29",
+    "paper_authors": "YuXiang Kong, JunFeng Hou, Jian Tang, Bingqing Zhu, Jicheng Zhang, Shaofei Xue",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Rare Word Recognition and Translation Without Fine-Tuning via Task Vector in Speech Models",
+    "paper_title_zh": "基于任务向量的语音模型中无需微调的罕见词识别与翻译",
+    "paper_id": "2512.21894",
+    "paper_abstract": "Rare words remain a critical bottleneck for speech-to-text systems. While direct fine-tuning improves recognition of target words, it often incurs high cost, catastrophic forgetting, and limited scalability. To address these challenges, we propose a training-free paradigm based on task vectors for rare word recognition and translation. By defining task vectors as parameter differences and introducing word-level task vector arithmetic, our approach enables flexible composition of rare-word capabilities, greatly enhancing scalability and reusability. Extensive experiments across multiple domains show that the proposed method matches or surpasses fine-tuned models on target words, improves general performance by about 5 BLEU, and mitigates catastrophic forgetting.",
+    "paper_abstract_zh": "罕见词仍然是语音转文本系统的关键瓶颈。虽然直接微调可以提高目标词的识别率，但它通常会导致高成本、灾难性遗忘和有限的扩展性。为解决这些挑战，我们提出了一种基于任务向量的无需微调的罕见词识别与翻译范式。通过将任务向量定义为参数差异，并引入词级任务向量算术，我们的方法能够灵活组合罕见词能力，极大地提高了扩展性和可重用性。在多个领域的广泛实验表明，所提出的方法在目标词上匹配或超越了微调模型的性能，将通用性能提高了约5个BLEU分数，并减轻了灾难性遗忘。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2025-12-29",
+    "paper_authors": "Ruihao Jing, Cheng Gong, Yu Jiang, Boyu Zhu, Shansong Liu, Chi Zhang, Xiao-Lei Zhang, Xuelong Li",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Semantic Codebooks as Effective Priors for Neural Speech Compression",
+    "paper_title_zh": "语义码本作为神经语音压缩的有效先验",
+    "paper_id": "2512.21653",
+    "paper_abstract": "Speech codecs are traditionally optimized for waveform fidelity, allocating bits to preserve acoustic detail even when much of it can be inferred from linguistic structure. This leads to inefficient compression and suboptimal performance on downstream recognition tasks. We propose SemDAC, a semantic-aware neural audio codec that leverages semantic codebooks as effective priors for speech compression. In SemDAC, the first quantizer in a residual vector quantization (RVQ) stack is distilled from HuBERT features to produce semantic tokens that capture phonetic content, while subsequent quantizers model residual acoustics. A FiLM-conditioned decoder reconstructs audio conditioned on the semantic tokens, improving efficiency in the use of acoustic codebooks. Despite its simplicity, this design proves highly effective: SemDAC outperforms DAC across perceptual metrics and achieves lower WER when running Whisper on reconstructed speech, all while operating at substantially lower bitrates (e.g., 0.95 kbps vs. 2.5 kbps for DAC). These results demonstrate that semantic codebooks provide an effective inductive bias for neural speech compression, producing compact yet recognition-friendly representations.",
+    "paper_abstract_zh": "语音编解码器传统上针对波形保真度进行优化，分配比特来保留声学细节，即使其中大部分可以从语言结构中推断出来。这导致压缩效率低下，并在下游识别任务中表现不佳。我们提出了SemDAC，一种语义感知的神经音频编解码器，它利用语义码本作为语音压缩的有效先验。在SemDAC中，残差矢量量化(RVQ)堆栈中的第一个量化器从HuBERT特征中蒸馏，生成捕获音素内容的语义令牌，而后续的量化器建模残差声学。FiLM调节的解码器基于语义令牌重建音频，提高了声学码本的使用效率。尽管设计简单，这种方法被证明非常有效：SemDAC在感知指标上优于DAC，并且在重建语音上运行Whisper时实现更低的词错误率(WER)，同时以显著更低的比特率运行（例如，DAC为2.5kbps，SemDAC为0.95kbps）。这些结果表明，语义码本为神经语音压缩提供了有效的归纳偏置，产生了紧凑且识别友好的表示。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2025-12-29",
+    "paper_authors": "Liuyang Bai, Weiyi Lu, Li Guo",
+    "topic": [
+      "Audio Codec",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Zero-Shot to Zero-Lies: Detecting Bengali Deepfake Audio through Transfer Learning",
+    "paper_title_zh": "",
+    "paper_id": "2512.21702",
+    "paper_abstract": "The rapid growth of speech synthesis and voice conversion systems has made deepfake audio a major security concern. Bengali deepfake detection remains largely unexplored. In this work, we study automatic detection of Bengali audio deepfakes using the BanglaFake dataset. We evaluate zeroshot inference with several pretrained models. These include Wav2Vec2-XLSR-53, Whisper, PANNsCNN14, WavLM and Audio Spectrogram Transformer. Zero-shot results show limited detection ability. The best model, Wav2Vec2-XLSR-53, achieves 53.80% accuracy, 56.60% AUC and 46.20% EER. We then f ine-tune multiple architectures for Bengali deepfake detection. These include Wav2Vec2-Base, LCNN, LCNN-Attention, ResNet18, ViT-B16 and CNN-BiLSTM. Fine-tuned models show strong performance gains. ResNet18 achieves the highest accuracy of 79.17%, F1 score of 79.12%, AUC of 84.37% and EER of 24.35%. Experimental results confirm that fine-tuning significantly improves performance over zero-shot inference. This study provides the first systematic benchmark of Bengali deepfake audio detection. It highlights the effectiveness of f ine-tuned deep learning models for this low-resource language.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2025-12-29",
+    "paper_authors": "Most. Sharmin Sultana Samu, Md. Rakibul Islam, Md. Zahid Hossain, Md. Kamrozzaman Bhuiyan, Farhad Uz Zaman",
+    "topic": [],
+    "category": []
+  }
+]
