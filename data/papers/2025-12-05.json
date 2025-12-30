@@ -220,18 +220,24 @@
   },
   {
     "paper_title": "Contract-Driven QoE Auditing for Speech and Singing Services: From MOS Regression to Service Graphs",
-    "paper_title_zh": "",
+    "paper_title_zh": "面向语音和歌唱服务的契约驱动QoE审计：从MOS回归到服务图谱",
     "paper_id": "2512.04827",
     "paper_abstract": "Subjective mean opinion scores (MOS) remain the de-facto target for non-intrusive speech and singing quality assessment. However, MOS is a scalar that collapses heterogeneous user expectations, ignores service-level objectives, and is difficult to compare across deployment graphs. We propose a contract-driven QoE auditing framework: each service graph G is evaluated under a set of human-interpretable experience contracts C, yielding a contract-level satisfaction vector Q(G, C). We show that (i) classical MOS regression is a special case with a degenerate contract set, (ii) contract-driven quality is more stable than MOS under graph view transformations (e.g., pooling by system vs. by system type), and (iii) the effective sample complexity of learning contracts is governed by contract semantics rather than merely the dimensionality of C. We instantiate the framework on URGENT2024 MOS (6.9k speech utterances with raw rating vectors) and SingMOS v1 (7,981 singing clips; 80 systems). On URGENT, we train a contract-aware neural auditor on self-supervised WavLM embeddings; on SingMOS, we perform contract-driven graph auditing using released rating vectors and metadata without decoding audio. Empirically, our auditor matches strong MOS predictors in MOS accuracy while providing calibrated contract probabilities; on SingMOS, Q(G, C) exhibits substantially smaller cross-view drift than raw MOS and graph-only baselines; on URGENT, difficulty curves reveal that mis-specified \"simple\" contracts can be harder to learn than richer but better aligned contract sets.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "主观平均意见得分(MOS)仍然是语音和歌唱质量非侵入式评估的实际标准。然而，MOS是一个标量，它掩盖了异构的用户期望，忽略了服务级目标，并且难以在不同的部署图谱之间进行比较。我们提出了一种契约驱动的QoE审计框架：每个服务图谱G在一系列人类可解释的经验契约C下进行评估，产生契约级别的满意度向量Q(G, C)。我们证明：(i)经典的MOS回归是一种具有退化契约集的特殊情况，(ii)在图谱视图变换下(例如按系统或系统类型进行池化)，契约驱动的质量比MOS更稳定，(iii)学习契约的有效样本复杂度由契约语义而非仅仅是C的维度决定。我们在URGENT2024 MOS(6.9k语音片段，带有原始评分向量)和SingMOS v1(7,981个歌唱片段；80个系统)上实例化了该框架。在URGENT上，我们在自监督的WavLM嵌入上训练了一个契约感知的神经审计器；在SingMOS上，我们使用发布的评分向量和元数据进行了契约驱动的图谱审计，无需解码音频。实验表明，我们的审计器在MOS准确性上与强大的MOS预测器相匹配，同时提供了校准的契约概率；在SingMOS上，Q(G, C)比原始MOS和仅基于图谱的基线表现出显著更小的跨视图漂移；在URGENT上，难度曲线显示，误指定的'简单'契约可能比更丰富但更好对齐的契约集更难学习。",
     "subjects": [
       "Sound (cs.SD)",
       "Machine Learning (cs.LG)"
     ],
     "update_time": "2025-12-05",
     "paper_authors": "Wenzhang Du",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Language Models as Semantic Teachers: Post-Training Alignment for Medical Audio Understanding",
