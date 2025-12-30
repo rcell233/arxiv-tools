@@ -61,17 +61,22 @@
   },
   {
     "paper_title": "Zero-Shot to Zero-Lies: Detecting Bengali Deepfake Audio through Transfer Learning",
-    "paper_title_zh": "",
+    "paper_title_zh": "从零样本到零谎言：通过迁移学习检测孟加拉语深度伪造音频",
     "paper_id": "2512.21702",
     "paper_abstract": "The rapid growth of speech synthesis and voice conversion systems has made deepfake audio a major security concern. Bengali deepfake detection remains largely unexplored. In this work, we study automatic detection of Bengali audio deepfakes using the BanglaFake dataset. We evaluate zeroshot inference with several pretrained models. These include Wav2Vec2-XLSR-53, Whisper, PANNsCNN14, WavLM and Audio Spectrogram Transformer. Zero-shot results show limited detection ability. The best model, Wav2Vec2-XLSR-53, achieves 53.80% accuracy, 56.60% AUC and 46.20% EER. We then f ine-tune multiple architectures for Bengali deepfake detection. These include Wav2Vec2-Base, LCNN, LCNN-Attention, ResNet18, ViT-B16 and CNN-BiLSTM. Fine-tuned models show strong performance gains. ResNet18 achieves the highest accuracy of 79.17%, F1 score of 79.12%, AUC of 84.37% and EER of 24.35%. Experimental results confirm that fine-tuning significantly improves performance over zero-shot inference. This study provides the first systematic benchmark of Bengali deepfake audio detection. It highlights the effectiveness of f ine-tuned deep learning models for this low-resource language.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "语音合成和语音转换系统的快速增长使深度伪造音频成为主要的安全隐患。孟加拉语深度伪造检测在很大程度上仍未被探索。在这项工作中，我们使用BanglaFake数据集研究了孟加拉语音频深度伪造的自动检测。我们评估了几个预训练模型的零样本推理，包括Wav2Vec2-XLSR-53、Whisper、PANNsCNN14、WavLM和音频频谱图变换器。零样本结果显示了有限的检测能力。最佳模型Wav2Vec2-XLSR-53达到了53.80%的准确率、56.60%的AUC和46.20%的EER。随后，我们对多种架构进行了微调以进行孟加拉语深度伪造检测，包括Wav2Vec2-Base、LCNN、LCNN-Attention、ResNet18、ViT-B16和CNN-BiLSTM。微调模型显示出显著的性能提升。ResNet18达到了最高的79.17%准确率、79.12%的F1分数、84.37%的AUC和24.35%的EER。实验结果证实，微调显著优于零样本推理的性能。本研究提供了孟加拉语深度伪造音频检测的第一个系统基准，并强调了微调后的深度学习模型在低资源语言中的有效性。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-12-29",
     "paper_authors": "Most. Sharmin Sultana Samu, Md. Rakibul Islam, Md. Zahid Hossain, Md. Kamrozzaman Bhuiyan, Farhad Uz Zaman",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   }
 ]
