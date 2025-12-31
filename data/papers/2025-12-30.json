@@ -56,112 +56,146 @@
   },
   {
     "paper_title": "Single Channel Blind Dereverberation of Speech Signals",
-    "paper_title_zh": "",
+    "paper_title_zh": "语音信号的单通道盲去混响",
     "paper_id": "2512.23322",
     "paper_abstract": "Dereverberation of recorded speech signals is one of the most pertinent problems in speech processing. In the present work, the objective is to understand and implement dereverberation techniques that aim at enhancing the magnitude spectrogram of reverberant speech signals to remove the reverberant effects introduced. An approach to estimate a clean speech spectrogram from the reverberant speech spectrogram is proposed. This is achieved through non-negative matrix factor deconvolution(NMFD). Further, this approach is extended using the NMF representation for speech magnitude spectrograms. To exploit temporal dependencies, a convolutive NMF-based representation and a frame-stacked model are incorporated into the NMFD framework for speech. A novel approach for dereverberation by applying NMFD to the activation matrix of the reverberated magnitude spectrogram is also proposed. Finally, a comparative analysis of the performance of the listed techniques, using sentence recordings from the TIMIT database and recorded room impulse responses from the Reverb 2014 challenge, is presented based on two key objective measures - PESQ and Cepstral Distortion.\\\\ Although we were qualitatively able to verify the claims made in literature regarding these techniques, exact results could not be matched. The novel approach, as it is suggested, provides improvement in quantitative metrics, but is not consistent",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "对录制的语音信号进行去混响是语音处理中最相关的问题之一。在本工作中，目标是理解和实现旨在增强混响语音信号的幅度谱图以去除引入的混响效果的去混响技术。提出了一种从混响语音谱图估计干净语音谱图的方法。这是通过非负矩阵反卷积(NMFD)实现的。此外，该方法使用语音幅度谱图的NMF表示进行了扩展。为了利用时间依赖性，将卷积NMF表示和帧堆叠模型整合到语音的NMFD框架中。还提出了一种新颖的去混响方法，即将NMFD应用于混响幅度谱图的激活矩阵。最后，基于两个关键客观指标——PESQ和倒谱失真，使用TIMIT数据库中的句子录制和Reverb 2014挑战中的房间脉冲响应录制，对所列技术的性能进行了比较分析。尽管我们能够从质量上验证文献中关于这些技术的声明，但无法匹配确切的结果。所提出的新方法在定量指标上有所改进，但并不一致。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Dhruv Nigam",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "AudioGAN: A Compact and Efficient Framework for Real-Time High-Fidelity Text-to-Audio Generation",
-    "paper_title_zh": "",
+    "paper_title_zh": "AudioGAN：一种用于实时高保真文本到音频生成的紧凑高效框架",
     "paper_id": "2512.22166",
     "paper_abstract": "Text-to-audio (TTA) generation can significantly benefit the media industry by reducing production costs and enhancing work efficiency. However, most current TTA models (primarily diffusion-based) suffer from slow inference speeds and high computational costs. In this paper, we introduce AudioGAN, the first successful Generative Adversarial Networks (GANs)-based TTA framework that generates audio in a single pass, thereby reducing model complexity and inference time. To overcome the inherent difficulties in training GANs, we integrate multiple ,contrastive losses and propose innovative components Single-Double-Triple (SDT) Attention and Time-Frequency Cross-Attention (TF-CA). Extensive experiments on the AudioCaps dataset demonstrate that AudioGAN achieves state-of-the-art performance while using 90% fewer parameters and running 20 times faster, synthesizing audio in under one second. These results establish AudioGAN as a practical and powerful solution for real-time TTA.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "文本到音频(TTA)生成可以通过降低生产成本和提高工作效率显著受益于媒体行业。然而，大多数当前的TTA模型（主要是基于扩散的）存在推理速度慢和计算成本高的问题。在本文中，我们介绍了AudioGAN，这是第一个基于生成对抗网络(GANs)的TTA框架，能够一次性生成音频，从而降低模型复杂度和推理时间。为了克服训练GANs的固有困难，我们整合了多种对比损失，并提出了创新组件单-双-三(SDT)注意力和时频交叉注意力(TF-CA)。在AudioCaps数据集上的大量实验表明，AudioGAN在使用90%更少参数和运行速度快20倍的情况下，实现了最先进的性能，合成音频时间不到一秒。这些结果确立了AudioGAN作为实时TTA的实用且强大的解决方案。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "HaeChun Chung",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Rethinking Leveraging Pre-Trained Multi-Layer Representations for Speaker Verification",
-    "paper_title_zh": "",
+    "paper_title_zh": "重新思考利用预训练多层表示进行说话人验证",
     "paper_id": "2512.22148",
     "paper_abstract": "Recent speaker verification studies have achieved notable success by leveraging layer-wise output from pre-trained Transformer models. However, few have explored the advancements in aggregating these multi-level features beyond the static weighted average. We present Layer Attentive Pooling (LAP), a novel strategy for aggregating inter-layer representations from pre-trained speech models for speaker verification. LAP assesses the significance of each layer from multiple perspectives time-dynamically, and employs max pooling instead of averaging. Additionally, we propose a lightweight backend speaker model comprising LAP and Attentive Statistical Temporal Pooling (ASTP) to extract speaker embeddings from pre-trained model output. Experiments on the VoxCeleb benchmark reveal that our compact architecture achieves state-of-the-art performance while greatly reducing the training time. We further analyzed LAP design and its dynamic weighting mechanism for capturing speaker characteristics.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "最近的说话人验证研究通过利用预训练Transformer模型的逐层输出取得了显著成功。然而，很少有人探索超越静态加权平均的聚合这些多级特征的进展。我们提出了层注意力池化(LAP)，这是一种新颖的策略，用于聚合预训练语音模型的多层表示以进行说话人验证。LAP从多个角度动态评估每一层的重要性，并采用最大池化而非平均池化。此外，我们提出了一个轻量级的后端说话人模型，包含LAP和注意力统计时间池化(ASTP)，用于从预训练模型输出中提取说话人嵌入。在VoxCeleb基准测试上的实验表明，我们的紧凑架构实现了最先进的性能，同时大大减少了训练时间。我们进一步分析了LAP设计及其动态加权机制，以捕捉说话人特征。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Jin Sob Kim, Hyun Joon Park, Wooseok Shin, Sung Won Han",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "A Robust framework for sound event localization and detection on real recordings",
-    "paper_title_zh": "",
+    "paper_title_zh": "一种用于真实录音中声音事件定位与检测的鲁棒框架",
     "paper_id": "2512.22156",
     "paper_abstract": "This technical report describes the systems submitted to the DCASE2022 challenge task 3: sound event localization and detection (SELD). The task aims to detect occurrences of sound events and specify their class, furthermore estimate their position. Our system utilizes a ResNet-based model under a proposed robust framework for SELD. To guarantee the generalized performance on the real-world sound scenes, we design the total framework with augmentation techniques, a pipeline of mixing datasets from real-world sound scenes and emulations, and test time augmentation. Augmentation techniques and exploitation of external sound sources enable training diverse samples and keeping the opportunity to train the real-world context enough by maintaining the number of the real recording samples in the batch. In addition, we design a test time augmentation and a clustering-based model ensemble method to aggregate confident predictions. Experimental results show that the model under a proposed framework outperforms the baseline methods and achieves competitive performance in real-world sound recordings.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本技术报告描述了提交给DCASE2022挑战赛任务3：声音事件定位与检测（SELD）的系统。该任务旨在检测声音事件的发生并指定其类别，同时估计其位置。我们的系统在提出的SELD鲁棒框架下利用了基于ResNet的模型。为保证在真实世界声音场景中的泛化性能，我们设计了包含增强技术、混合真实世界声音场景和仿真数据集的流程以及测试时增强的完整框架。增强技术和外部声音源的利用能够训练多样化的样本，同时通过保持批次中真实录音样本的数量，确保充分训练真实世界上下文。此外，我们设计了测试时增强和基于聚类的模型集成方法来聚合高置信度的预测。实验结果表明，在提出的框架下，模型优于基线方法，并在真实世界声音录音中取得了具有竞争力的性能。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Jin Sob Kim, Hyun Joon Park, Wooseok Shin, Sung Won Han",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "Marco-ASR: A Principled and Metric-Driven Framework for Fine-Tuning Large-Scale ASR Models for Domain Adaptation",
-    "paper_title_zh": "",
+    "paper_title_zh": "Marco-ASR：一种基于原则和指标驱动的框架，用于大规模ASR模型的领域自适应微调",
     "paper_id": "2512.22165",
     "paper_abstract": "Automatic Speech Recognition (ASR) models have achieved remarkable accuracy in general settings, yet their performance often degrades in domain-specific applications due to data mismatch and linguistic variability. This challenge is amplified for modern Large Language Model (LLM)-based ASR systems, whose massive scale and complex training dynamics make effective fine-tuning non-trivial. To address this gap, this paper proposes a principled and metric-driven fine-tuning framework for adapting both traditional and LLM-based ASR models to specialized domains. The framework emphasizes learning rate optimization based on performance metrics, combined with domain-specific data transformation and augmentation. We empirically evaluate our framework on state-of-the-art models, including Whisper, Whisper-Turbo, and Qwen2-Audio, across multi-domain, multilingual, and multi-length datasets. Our results not only validate the proposed framework but also establish practical protocols for improving domain-specific ASR performance while preventing overfitting.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "自动语音识别(ASR)模型在通用场景中已取得了显著的准确性，但由于数据不匹配和语言变异性，其在特定领域应用中的性能往往会下降。对于现代基于大型语言模型(LLM)的ASR系统，这一挑战尤为突出，因为其巨大的规模和复杂的训练动态使得有效的微调变得非同寻常。为解决这一差距，本文提出了一种基于原则和指标驱动的微调框架，用于将传统和基于LLM的ASR模型适应到专业领域。该框架强调基于性能指标的学习率优化，并结合领域特定的数据转换和增强。我们在最先进的模型上对我们的框架进行了实证评估，包括Whisper、Whisper-Turbo和Qwen2-Audio，涵盖了多领域、多语言和多长度数据集。我们的结果不仅验证了所提出的框架，还建立了实用的协议，用于提高特定领域ASR性能的同时防止过拟合。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Xuanfan Ni, Fei Yang, Fengping Tian, Qingjuan Li, Chenyang Lyu, Yichao Du, Longyue Wang, Weihua Luo, Kaifu Zhang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Chord Recognition with Deep Learning",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于深度学习的和弦识别",
     "paper_id": "2512.22621",
     "paper_abstract": "Progress in automatic chord recognition has been slow since the advent of deep learning in the field. To understand why, I conduct experiments on existing methods and test hypotheses enabled by recent developments in generative models. Findings show that chord classifiers perform poorly on rare chords and that pitch augmentation boosts accuracy. Features extracted from generative models do not help and synthetic data presents an exciting avenue for future work. I conclude by improving the interpretability of model outputs with beat detection, reporting some of the best results in the field and providing qualitative analysis. Much work remains to solve automatic chord recognition, but I hope this thesis will chart a path for others to try.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "自从深度学习进入该领域以来，自动和弦识别的进展一直很缓慢。为了理解原因，我对现有方法进行了实验，并测试了由生成模型最新发展所支持的假设。研究结果表明，和弦分类器在罕见和弦上的表现较差，而音高增强提高了准确性。从生成模型中提取的特征没有帮助，而合成数据为未来工作提供了令人兴奋的方向。我通过节拍检测改进了模型输出的可解释性，报告了该领域的一些最佳结果，并提供了定性分析。要解决自动和弦识别问题，仍有大量工作要做，但我希望这篇论文能为他人尝试指明道路。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Pierre Mackenzie",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Mobile-Efficient Speech Emotion Recognition Using DistilHuBERT: A Cross-Corpus Validation Study",
-    "paper_title_zh": "",
+    "paper_title_zh": "使用DistilHuBERT实现移动高效语音情感识别：跨语料库验证研究",
     "paper_id": "2512.23435",
     "paper_abstract": "Speech Emotion Recognition (SER) has significant potential for mobile applications, yet deployment remains constrained by the computational demands of state-of-the-art transformer architectures. This paper presents a mobile-efficient SER system based on DistilHuBERT, a distilled and 8-bit quantized transformer that achieves 92% parameter reduction compared to full-scale Wav2Vec 2.0 models while maintaining competitive accuracy. We conduct a rigorous 5-fold Leave-One-Session-Out (LOSO) cross-validation on the IEMOCAP dataset to ensure speaker independence, augmented with cross-corpus training on CREMA-D to enhance generalization. Cross-corpus training with CREMA-D yields a 1.2% improvement in Weighted Accuracy, a 1.4% gain in Macro F1-score, and a 32% reduction in cross-fold variance, with the Neutral class showing the most substantial benefit at 5.4% F1-score improvement. Our approach achieves an Unweighted Accuracy of 61.4% with a quantized model footprint of only 23 MB, representing approximately 91% of full-scale baseline performance. Cross-corpus evaluation on RAVDESS reveals that the theatrical nature of acted emotions causes predictions to cluster by arousal level rather than valence: happiness is systematically confused with anger due to acoustic saturation in high-energy expressions. Despite this theatricality effect reducing overall RAVDESS accuracy to 43.29%, the model maintains robust arousal detection with 97% recall for anger and 64% for sadness. These findings establish a Pareto-optimal tradeoff between model size and accuracy, enabling practical affect recognition on resource-constrained mobile devices.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "语音情感识别(SER)在移动应用方面具有巨大潜力，然而最先进的Transformer架构的计算需求限制了其部署。本文提出了一种基于DistilHuBERT的移动高效SER系统，这是一种蒸馏和8位量化的Transformer，与全尺寸Wav2Vec 2.0模型相比实现了92%的参数减少，同时保持了有竞争力的准确性。我们在IEMOCAP数据集上进行了严格的5折留一会话外(LOSO)交叉验证，以确保说话人独立性，并使用CREMA-D进行跨语料库训练以增强泛化能力。使用CREMA-D进行跨语料库训练使加权准确率提高了1.2%，宏F1分数提高了1.4%，跨折方差减少了32%，其中中性类别获益最大，F1分数提高了5.4%。我们的方法在量化模型大小仅为23MB的情况下实现了61.4%的非加权准确率，代表了全尺寸基线性能的约91%。在RAVDESS上的跨语料库评估显示，表演性质的情感导致预测按唤醒水平而非效价聚类：由于高能量表达中的声学饱和，快乐系统性地被误判为愤怒。尽管这种表演效应使RAVDESS的整体准确率降至43.29%，但该模型仍保持稳健的唤醒检测能力，对愤怒的召回率为97%，对悲伤的召回率为64%。这些研究结果建立了模型大小和准确性之间的帕累托最优权衡，使在资源受限的移动设备上实现实用的情感识别成为可能。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Saifelden M. Ismail",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "EEG-to-Voice Decoding of Spoken and Imagined speech Using Non-Invasive EEG",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于非侵入式脑电的口语和想象语音的脑电到语音解码",
     "paper_id": "2512.22146",
     "paper_abstract": "Restoring speech communication from neural signals is a central goal of brain-computer interface research, yet EEG-based speech reconstruction remains challenging due to limited spatial resolution, susceptibility to noise, and the absence of temporally aligned acoustic targets in imagined speech. In this study, we propose an EEG-to-Voice paradigm that directly reconstructs speech from non-invasive EEG signals without dynamic time warping (DTW) or explicit temporal alignment. The proposed pipeline generates mel-spectrograms from EEG in an open-loop manner using a subject-specific generator, followed by pretrained vocoder and automatic speech recognition (ASR) modules to synthesize speech waveforms and decode text. Separate generators were trained for spoken speech and imagined speech, and transfer learning-based domain adaptation was applied by pretraining on spoken speech and adapting to imagined speech. A minimal language model-based correction module was optionally applied to correct limited ASR errors while preserving semantic structure. The framework was evaluated under 2 s and 4 s speech conditions using acoustic-level metrics (PCC, RMSE, MCD) and linguistic-level metrics (CER, WER). Stable acoustic reconstruction and comparable linguistic accuracy were observed for both spoken speech and imagined speech. While acoustic similarity decreased for longer utterances, text-level decoding performance was largely preserved, and word-position analysis revealed a mild increase in decoding errors toward later parts of sentences. The language model-based correction consistently reduced CER and WER without introducing semantic distortion. These results demonstrate the feasibility of direct, open-loop EEG-to-Voice reconstruction for spoken speech and imagined speech without explicit temporal alignment.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "从神经信号中恢复语音交流是脑机接口研究的核心目标，但由于脑电空间分辨率有限、易受噪声影响以及想象语音中缺乏时间对齐的声学目标，基于脑电的语音重建仍然具有挑战性。在本研究中，我们提出了一种脑电到语音的范式，无需动态时间规整(DTW)或显式时间对齐，直接从非侵入式脑电信号重建语音。所提出的管道使用特定于受试者的生成器以开环方式从脑电生成梅尔频谱图，然后通过预训练的声码器和自动语音识别(ASR)模块合成语音波形并解码文本。针对口语和想象语音分别训练了生成器，并通过在口语上进行预训练并适应想象语音，应用了基于迁移学习的域适应。可选地应用了基于最小语言模型的校正模块，以校正有限的ASR错误，同时保留语义结构。在2秒和4秒语音条件下，使用声学级指标(PCC、RMSE、MCD)和语言学级指标(CER、WER)对该框架进行了评估。对于口语和想象语音，均观察到稳定的声学重建和相当的语言学准确性。虽然较长语句的声学相似性有所降低，但文本级解码性能基本保持不变，词位置分析显示解码错误在句子后部分略有增加。基于语言模型的校正持续降低了CER和WER，而没有引入语义失真。这些结果证明了直接、开环的脑电到语音重建在口语和想象语音中的可行性，无需显式时间对齐。",
     "subjects": [
       "Signal Processing (eess.SP)",
       "Machine Learning (cs.LG)",
@@ -169,8 +203,14 @@
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Hanbeot Park, Yunjeong Cho, Hunhee Kim",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Style Amnesia: Investigating Speaking Style Degradation and Mitigation in Multi-Turn Spoken Language Models",
@@ -194,17 +234,21 @@
   },
   {
     "paper_title": "PROFASR-BENCH: A Benchmark for Context-Conditioned ASR in High-Stakes Professional Speech",
-    "paper_title_zh": "",
+    "paper_title_zh": "PROFASR-BENCH：高风险专业语音中上下文条件ASR的基准测试",
     "paper_id": "2512.23686",
     "paper_abstract": "Automatic Speech Recognition (ASR) in professional settings faces challenges that existing benchmarks underplay: dense domain terminology, formal register variation, and near-zero tolerance for critical entity errors. We present ProfASR-Bench, a professional-talk evaluation suite for high-stakes applications across finance, medicine, legal, and technology. Each example pairs a natural-language prompt (domain cue and/or speaker profile) with an entity-rich target utterance, enabling controlled measurement of context-conditioned recognition. The corpus supports conventional ASR metrics alongside entity-aware scores and slice-wise reporting by accent and gender. Using representative families Whisper (encoder-decoder ASR) and Qwen-Omni (audio language models) under matched no-context, profile, domain+profile, oracle, and adversarial conditions, we find a consistent pattern: lightweight textual context produces little to no change in average word error rate (WER), even with oracle prompts, and adversarial prompts do not reliably degrade performance. We term this the context-utilization gap (CUG): current systems are nominally promptable yet underuse readily available side information. ProfASR-Bench provides a standardized context ladder, entity- and slice-aware reporting with confidence intervals, and a reproducible testbed for comparing fusion strategies across model families.\nDataset: this https URL\nCode: this https URL",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "专业环境中的自动语音识别(ASR)面临着现有基准测试未充分重视的挑战：密集的领域术语、正式语域变化以及对关键实体错误的零容忍。我们提出了ProfASR-Bench，一个面向金融、医学、法律和技术等高风险应用的专业语音评估套件。每个示例将自然语言提示（领域线索和/或说话人特征）与实体丰富的目标语音配对，从而实现对上下文条件识别的受控测量。该语料库支持传统的ASR指标以及实体感知评分和按口音和性别进行的切片报告。在匹配的无上下文、特征、领域+特征、预言性和对抗性条件下，使用代表性的Whisper（编码器-解码器ASR）和Qwen-Omni（音频语言模型）模型族，我们发现了一个一致的模式：即使使用预言性提示，轻量级文本上下文对平均词错误率(WER)的影响也微乎其微，且对抗性提示并不能可靠地降低性能。我们将此称为上下文利用差距(CUG)：当前系统名义上可提示，但未充分利用 readily available 的辅助信息。ProfASR-Bench提供了标准化的上下文阶梯、实体和切片感知的带置信区间的报告，以及一个可复现的测试平台，用于比较不同模型族的融合策略。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Sound (cs.SD)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Deepak Babu Piskala",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   }
 ]
