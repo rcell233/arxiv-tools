@@ -42,17 +42,22 @@
   },
   {
     "paper_title": "Flow2GAN: Hybrid Flow Matching and GAN with Multi-Resolution Network for Few-step High-Fidelity Audio Generation",
-    "paper_title_zh": "",
+    "paper_title_zh": "Flow2GAN：结合流匹配和生成对抗网络的多分辨率网络用于少步高保真音频生成",
     "paper_id": "2512.23278",
     "paper_abstract": "Existing dominant methods for audio generation include Generative Adversarial Networks (GANs) and diffusion-based methods like Flow Matching. GANs suffer from slow convergence and potential mode collapse during training, while diffusion methods require multi-step inference that introduces considerable computational overhead. In this work, we introduce Flow2GAN, a two-stage framework that combines Flow Matching training for learning generative capabilities with GAN fine-tuning for efficient few-step inference. Specifically, given audio's unique properties, we first improve Flow Matching for audio modeling through: 1) reformulating the objective as endpoint estimation, avoiding velocity estimation difficulties when involving empty regions; 2) applying spectral energy-based loss scaling to emphasize perceptually salient quieter regions. Building on these Flow Matching adaptations, we demonstrate that a further stage of lightweight GAN fine-tuning enables us to obtain one-step generator that produces high-quality audio. In addition, we develop a multi-branch network architecture that processes Fourier coefficients at different time-frequency resolutions, which improves the modeling capabilities compared to prior single-resolution designs. Experimental results indicate that our Flow2GAN delivers high-fidelity audio generation from Mel-spectrograms or discrete audio tokens, achieving better quality-efficiency trade-offs than existing state-of-the-art GAN-based and Flow Matching-based methods. Online demo samples are available at this https URL, and the source code is released at this https URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "现有音频生成的主导方法包括生成对抗网络（GAN）和基于扩散的方法，如流匹配（Flow Matching）。GAN在训练过程中存在收敛缓慢和潜在模式崩溃的问题，而扩散方法需要多步推理，引入了相当大的计算开销。在这项工作中，我们引入了Flow2GAN，这是一个两阶段框架，结合了流匹配训练来学习生成能力，以及GAN微调以实现高效的少步推理。具体而言，考虑到音频的独特属性，我们首先通过以下方式改进用于音频建模的流匹配：1）将目标重新表述为端点估计，避免了涉及空区域时的速度估计困难；2）应用基于频谱能量的损失缩放，以强调感知上显著的 quieter 区域。基于这些流匹配的改进，我们证明进一步的轻量级GAN微调阶段使我们能够获得生成高质量音频的单步生成器。此外，我们开发了一个多分支网络架构，在不同时频分辨率上处理傅里叶系数，与先前的单分辨率设计相比，提高了建模能力。实验结果表明，我们的Flow2GAN能够从梅尔频谱图或离散音频令牌生成高保真音频，实现了比现有最先进的基于GAN和流匹配的方法更好的质量-效率权衡。在线演示样本可在提供的URL获取，源代码已在提供的URL发布。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-12-30",
     "paper_authors": "Zengwei Yao, Wei Kang, Han Zhu, Liyong Guo, Lingxuan Ye, Fangjun Kuang, Weiji Zhuang, Zhaoqing Li, Zhifeng Han, Long Lin, Daniel Povey",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Single Channel Blind Dereverberation of Speech Signals",

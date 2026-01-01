@@ -1,0 +1,160 @@
+[
+  {
+    "paper_title": "MiMo-Audio: Audio Language Models are Few-Shot Learners",
+    "paper_title_zh": "MiMo-Audio: 音频语言模型是小样本学习者",
+    "paper_id": "2512.23808",
+    "paper_abstract": "Existing audio language models typically rely on task-specific fine-tuning to accomplish particular audio tasks. In contrast, humans are able to generalize to new audio tasks with only a few examples or simple instructions. GPT-3 has shown that scaling next-token prediction pretraining enables strong generalization capabilities in text, and we believe this paradigm is equally applicable to the audio domain. By scaling MiMo-Audio's pretraining data to over one hundred million of hours, we observe the emergence of few-shot learning capabilities across a diverse set of audio tasks. We develop a systematic evaluation of these capabilities and find that MiMo-Audio-7B-Base achieves SOTA performance on both speech intelligence and audio understanding benchmarks among open-source models. Beyond standard metrics, MiMo-Audio-7B-Base generalizes to tasks absent from its training data, such as voice conversion, style transfer, and speech editing. MiMo-Audio-7B-Base also demonstrates powerful speech continuation capabilities, capable of generating highly realistic talk shows, recitations, livestreaming and debates. At the post-training stage, we curate a diverse instruction-tuning corpus and introduce thinking mechanisms into both audio understanding and generation. MiMo-Audio-7B-Instruct achieves open-source SOTA on audio understanding benchmarks (MMSU, MMAU, MMAR, MMAU-Pro), spoken dialogue benchmarks (Big Bench Audio, MultiChallenge Audio) and instruct-TTS evaluations, approaching or surpassing closed-source models. Model checkpoints and full evaluation suite are available at this https URL.",
+    "paper_abstract_zh": "现有的音频语言模型通常依赖于任务特定的微调来完成特定的音频任务。相比之下，人类仅凭几个例子或简单的指令就能推广到新的音频任务。GPT-3已经表明，扩展下一词预测的预训练能够在文本领域实现强大的泛化能力，我们相信这一范式同样适用于音频领域。通过将MiMo-Audio的预训练数据扩展到超过一亿小时，我们观察到在多样化的音频任务中出现了小样本学习能力。我们系统地评估了这些能力，发现MiMo-Audio-7B-Base在开源模型中在语音智能和音频理解基准测试上达到了最先进的性能。除了标准指标外，MiMo-Audio-7B-Base还能推广到训练数据中不存在的任务，如语音转换、风格迁移和语音编辑。MiMo-Audio-7B-Base还展示了强大的语音续写能力，能够生成高度真实的脱口秀、朗诵、直播和辩论。在后训练阶段，我们整理了多样化的指令微调语料库，并将思维机制引入到音频理解和生成中。MiMo-Audio-7B-Instruct在音频理解基准测试（MMSU、MMAU、MMAR、MMAU-Pro）、语音对话基准测试（Big Bench Audio、MultiChallenge Audio）和指令-TTS评估中达到了开源最先进的性能，接近或超过了闭源模型。模型检查点和完整评估套件可在提供的URL获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-01",
+    "paper_authors": "Xiaomi LLM-Core Team, Dong Zhang, Gang Wang, Jinlong Xue, Kai Fang, Liang Zhao, Rui Ma, Shuhuai Ren, Shuo Liu, Tao Guo, Weiji Zhuang, Xin Zhang, Xingchen Song, Yihan Yan, Yongzhe He, Cici, Bowen Shen, Chengxuan Zhu, Chong Ma, Chun Chen, Heyu Chen, Jiawei Li, Lei Li, Menghang Zhu, Peidian Li, Qiying Wang, Sirui Deng, Weimin Xiong, Wenshan Huang, Wenyu Yang, Yilin Jiang, Yixin Yang, Yuanyuan Tian, Yue Ma, Yue Yu, Zihan Zhang, Zihao Yue, Bangjun Xiao, Bingquan Xia, Bofei Gao, Bowen Ye, Can Cai, Chang Liu, Chenhong He, Chunan Li, Dawei Zhu, Duo Zhang, Fengyuan Shi, Guoan Wang, Hailin Zhang, Hanglong Lv, Hanyu Li, Hao Tian, Heng Qu, Hongshen Xu, Houbin Zhang, Huaqiu Liu, Jiangshan Duo, Jianguang Zuo, Jianyu Wei, Jiebao Xiao, Jinhao Dong, Jun Shi, Junhao Hu, Kainan Bao, Kang Zhou, Linghao Zhang, Meng Chen, Nuo Chen, Peng Zhang, Qianli Chen, Qiantong Wang, Rang Li, Shaohui Liu, Shengfan Wang, Shicheng Li, Shihua Yu, Shijie Cao, Shimao Chen, Shuhao Gu, Weikun Wang, Wenhan Ma, Xiangwei Deng, Xing Yong, Xing Zhang, Xu Wang, Yifan Song, Yihao Zhao, Yingbo Zhao, Yizhao Gao, Yu Cheng, Yu Tu, Yudong Wang, Zhaojun Huang, Zhengju Tang, Zhenru Lin, Zhichao Song, Zhipeng Xu, Zhixian Zheng, Zihan Jiang",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Breaking Audio Large Language Models by Attacking Only the Encoder: A Universal Targeted Latent-Space Audio Attack",
+    "paper_title_zh": "",
+    "paper_id": "2512.23881",
+    "paper_abstract": "Audio-language models combine audio encoders with large language models to enable multimodal reasoning, but they also introduce new security vulnerabilities. We propose a universal targeted latent space attack, an encoder-level adversarial attack that manipulates audio latent representations to induce attacker-specified outputs in downstream language generation. Unlike prior waveform-level or input-specific attacks, our approach learns a universal perturbation that generalizes across inputs and speakers and does not require access to the language model. Experiments on Qwen2-Audio-7B-Instruct demonstrate consistently high attack success rates with minimal perceptual distortion, revealing a critical and previously underexplored attack surface at the encoder level of multimodal systems.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Cryptography and Security (cs.CR)"
+    ],
+    "update_time": "2026-01-01",
+    "paper_authors": "Roee Ziv, Raz Lapid, Moshe Sipper",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "PhyAVBench: A Challenging Audio Physics-Sensitivity Benchmark for Physically Grounded Text-to-Audio-Video Generation",
+    "paper_title_zh": "PhyAVBench：用于物理感知文本到音视频生成的挑战性音频物理敏感性基准",
+    "paper_id": "2512.23994",
+    "paper_abstract": "Text-to-audio-video (T2AV) generation underpins a wide range of applications demanding realistic audio-visual content, including virtual reality, world modeling, gaming, and filmmaking. However, existing T2AV models remain incapable of generating physically plausible sounds, primarily due to their limited understanding of physical principles. To situate current research progress, we present PhyAVBench, a challenging audio physics-sensitivity benchmark designed to systematically evaluate the audio physics grounding capabilities of existing T2AV models. PhyAVBench comprises 1,000 groups of paired text prompts with controlled physical variables that implicitly induce sound variations, enabling a fine-grained assessment of models' sensitivity to changes in underlying acoustic conditions. We term this evaluation paradigm the Audio-Physics Sensitivity Test (APST). Unlike prior benchmarks that primarily focus on audio-video synchronization, PhyAVBench explicitly evaluates models' understanding of the physical mechanisms underlying sound generation, covering 6 major audio physics dimensions, 4 daily scenarios (music, sound effects, speech, and their mix), and 50 fine-grained test points, ranging from fundamental aspects such as sound diffraction to more complex phenomena, e.g., Helmholtz resonance. Each test point consists of multiple groups of paired prompts, where each prompt is grounded by at least 20 newly recorded or collected real-world videos, thereby minimizing the risk of data leakage during model pre-training. Both prompts and videos are iteratively refined through rigorous human-involved error correction and quality control to ensure high quality. We argue that only models with a genuine grasp of audio-related physical principles can generate physically consistent audio-visual content. We hope PhyAVBench will stimulate future progress in this critical yet largely unexplored domain.",
+    "paper_abstract_zh": "文本到音视频（T2AV）生成支撑着虚拟现实、世界建模、游戏制作和电影制作等需要逼真视听内容的广泛应用。然而，现有的T2AV模型仍无法生成物理上合理的声音，主要原因是它们对物理原理的理解有限。为了定位当前的研究进展，我们提出了PhyAVBench，这是一个具有挑战性的音频物理敏感性基准，旨在系统评估现有T2AV模型的音频物理接地能力。PhyAVBench包含1000组配对的文本提示，这些提示具有受控的物理变量，这些变量隐式地诱导声音变化，从而能够对模型对底层声学条件变化的敏感性进行细粒度评估。我们将这种评估范式称为音频物理敏感性测试（APST）。与主要关注音视频同步的先前基准不同，PhyAVBench明确评估了模型对声音生成背后物理机制的理解，涵盖6个主要音频物理维度、4个日常场景（音乐、音效、语音及其混合）以及50个细粒度测试点，范围从基本方面如声音衍射到更复杂的现象，例如亥姆霍兹共振。每个测试点包含多组配对提示，每个提示至少基于20个新录制或收集的真实世界视频，从而最大限度地减少模型预训练期间数据泄露的风险。提示和视频都通过严格的人工参与错误修正和质量控制进行迭代改进，以确保高质量。我们认为，只有真正掌握音频相关物理原理的模型才能生成物理上一致的视听内容。我们希望PhyAVBench能够促进这一关键但 largely 未探索领域的未来进展。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-01",
+    "paper_authors": "Tianxin Xie, Wentao Lei, Guanjie Huang, Pengfei Zhang, Kai Jiang, Chunhui Zhang, Fengji Ma, Haoyu He, Han Zhang, Jiangshan He, Jinting Wang, Linghan Fang, Lufei Gao, Orkesh Ablet, Peihua Zhang, Ruolin Hu, Shengyu Li, Weilin Lin, Xiaoyang Feng, Xinyue Yang, Yan Rong, Yanyun Wang, Zihang Shao, Zelin Zhao, Chenxing Li, Shan Yang, Wenfu Wang, Meng Yu, Dong Yu, Li Liu",
+    "topic": [
+      "Video Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "AHA: Aligning Large Audio-Language Models for Reasoning Hallucinations via Counterfactual Hard Negatives",
+    "paper_title_zh": "AHA: 通过反事实硬负样本对齐大型音频语言模型以解决推理幻觉问题",
+    "paper_id": "2512.24052",
+    "paper_abstract": "Although Large Audio-Language Models (LALMs) deliver state-of-the-art (SOTA) performance, they frequently suffer from hallucinations, e.g. generating text not grounded in the audio input. We analyze these grounding failures and identify a distinct taxonomy: Event Omission, False Event Identity, Temporal Relation Error, and Quantitative Temporal Error. To address this, we introduce the AHA (Audio Hallucination Alignment) framework. By leveraging counterfactual hard negative mining, our pipeline constructs a high-quality preference dataset that forces models to distinguish strict acoustic evidence from linguistically plausible fabrications. Additionally, we establish AHA-Eval, a diagnostic benchmark designed to rigorously test these fine-grained temporal reasoning capabilities. We apply this data to align Qwen2.5-Omni. The resulting model, Qwen-Audio-AHA, achieves a 13.7% improvement on AHA-Eval. Crucially, this benefit generalizes beyond our diagnostic set. Our model shows substantial gains on public benchmarks, including 1.3% on MMAU-Test and 1.6% on MMAR, outperforming latest SOTA methods.",
+    "paper_abstract_zh": "尽管大型音频语言模型(LALMs)能够实现最先进的(SOTA)性能，但它们经常遭受幻觉问题，例如生成与音频输入无关的文本。我们分析了这些基础性失败，并确定了一个独特的分类法：事件遗漏、错误事件身份、时间关系错误和定量时间错误。为解决这一问题，我们引入了AHA(音频幻觉对齐)框架。通过利用反事实硬负样本挖掘，我们的流程构建了一个高质量偏好数据集，迫使模型区分严格的声学证据和语言上合理的虚构内容。此外，我们建立了AHA-Eval，这是一个旨在严格测试这些细粒度时间推理能力的诊断基准。我们将此数据用于对齐Qwen2.5-Omni。 resulting模型Qwen-Audio-AHA在AHA-Eval上实现了13.7%的改进。重要的是，这种益处超越了我们的诊断集。我们的模型在公共基准上显示出显著提升，包括在MMAU-Test上提升1.3%，在MMAR上提升1.6%，超越了最新的SOTA方法。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2026-01-01",
+    "paper_authors": "Yanxi Chen, Wenhui Zhu, Xiwen Chen, Zhipeng Wang, Xin Li, Peijie Qiu, Hao Wang, Xuanzhao Dong, Yujian Xiong, Anderson Schneider, Yuriy Nevmyvaka, Yalin Wang",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Environmental Sound Deepfake Detection Challenge: An Overview",
+    "paper_title_zh": "环境声音深度伪造检测挑战：概述",
+    "paper_id": "2512.24140",
+    "paper_abstract": "Recent progress in audio generation models has made it possible to create highly realistic and immersive soundscapes, which are now widely used in film and virtual-reality-related applications. However, these audio generators also raise concerns about potential misuse, such as producing deceptive audio for fabricated videos or spreading misleading information. Therefore, it is essential to develop effective methods for detecting fake environmental sounds. Existing datasets for environmental sound deepfake detection (ESDD) remain limited in both scale and the diversity of sound categories they cover. To address this gap, we introduced EnvSDD, the first large-scale curated dataset designed for ESDD. Based on EnvSDD, we launched the ESDD Challenge, recognized as one of the ICASSP 2026 Grand Challenges. This paper presents an overview of the ESDD Challenge, including a detailed analysis of the challenge results.",
+    "paper_abstract_zh": "音频生成模型的最新进展使得创建高度逼真和沉浸式的声景成为可能，这些声景现在已广泛应用于电影和虚拟现实相关应用中。然而，这些音频生成器也引发了潜在滥用的担忧，例如为伪造视频制作欺骗性音频或传播误导性信息。因此，开发有效的方法来检测伪造的环境声音至关重要。现有的用于环境声音深度伪造检测(ESDD)数据集在规模和覆盖的声音类别多样性方面仍然有限。为解决这一差距，我们引入了EnvSDD，这是首个专为ESDD设计的大型精选数据集。基于EnvSDD，我们发起了ESDD挑战赛，该挑战赛被认可为ICASSP 2026重大挑战之一。本文概述了ESDD挑战赛，包括对挑战赛结果的详细分析。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-01",
+    "paper_authors": "Han Yin, Yang Xiao, Rohan Kumar Das, Jisheng Bai, Ting Dang",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "AI-Driven Acoustic Voice Biomarker-Based Hierarchical Classification of Benign Laryngeal Voice Disorders from Sustained Vowels",
+    "paper_title_zh": "基于AI驱动的声学语音生物标志物的良性喉部声音障碍分层分类",
+    "paper_id": "2512.24628",
+    "paper_abstract": "Benign laryngeal voice disorders affect nearly one in five individuals and often manifest as dysphonia, while also serving as non-invasive indicators of broader physiological dysfunction. We introduce a clinically inspired hierarchical machine learning framework for automated classification of eight benign voice disorders alongside healthy controls, using acoustic features extracted from short, sustained vowel phonations. Experiments utilized 15,132 recordings from 1,261 speakers in the Saarbruecken Voice Database, covering vowels /a/, /i/, and /u/ at neutral, high, low, and gliding pitches. Mirroring clinical triage workflows, the framework operates in three sequential stages: Stage 1 performs binary screening of pathological versus non-pathological voices by integrating convolutional neural network-derived mel-spectrogram features with 21 interpretable acoustic biomarkers; Stage 2 stratifies voices into Healthy, Functional or Psychogenic, and Structural or Inflammatory groups using a cubic support vector machine; Stage 3 achieves fine-grained classification by incorporating probabilistic outputs from prior stages, improving discrimination of structural and inflammatory disorders relative to functional conditions. The proposed system consistently outperformed flat multi-class classifiers and pre-trained self-supervised models, including META HuBERT and Google HeAR, whose generic objectives are not optimized for sustained clinical phonation. By combining deep spectral representations with interpretable acoustic features, the framework enhances transparency and clinical alignment. These results highlight the potential of quantitative voice biomarkers as scalable, non-invasive tools for early screening, diagnostic triage, and longitudinal monitoring of vocal health.",
+    "paper_abstract_zh": "良性喉部声音障碍影响近五分之一的人群，通常表现为声音嘶哑，同时也是更广泛生理功能障碍的无创指标。我们引入了一个受临床启发的分层机器学习框架，用于自动化分类八种良性声音障碍以及健康对照组，使用从短时持续元音发音中提取的声学特征。实验使用了Saarbruecken声音数据库中1,261名说话者的15,132条录音，涵盖了中性、高、低和滑音音高下的/a/、/i/和/u/元音。模仿临床分诊工作流程，该框架在三个顺序阶段运行：第一阶段通过整合卷积神经网络提取的mel频谱图特征和21种可解释的声学生物标志物，对病理性和非病理性声音进行二元筛查；第二阶段使用三次支持向量机将声音分为健康、功能性或心因性以及结构性或炎症性组；第三阶段通过结合先前阶段概率输出来实现细粒度分类，提高了相对于功能性条件的结构和炎症性障碍的区分能力。所提出的系统在性能上始终优于扁平多类分类器和预训练的自监督模型，包括META HuBERT和Google HeAR，这些模型的通用目标未针对持续临床发音进行优化。通过结合深度频谱表示和可解释的声学特征，该框架提高了透明度和临床一致性。这些结果强调了定量语音生物标志物作为可扩展、无创工具在早期筛查、诊断分诊和嗓音健康纵向监测中的潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-01",
+    "paper_authors": "Mohsen Annabestani, Samira Aghadoost, Anais Rameau, Olivier Elemento, Gloria Chia-Yi Chiang",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "AudioFab: Building A General and Intelligent Audio Factory through Tool Learning",
+    "paper_title_zh": "AudioFab: 通过工具学习构建通用智能音频工厂",
+    "paper_id": "2512.24645",
+    "paper_abstract": "Currently, artificial intelligence is profoundly transforming the audio domain; however, numerous advanced algorithms and tools remain fragmented, lacking a unified and efficient framework to unlock their full potential. Existing audio agent frameworks often suffer from complex environment configurations and inefficient tool collaboration. To address these limitations, we introduce AudioFab, an open-source agent framework aimed at establishing an open and intelligent audio-processing ecosystem. Compared to existing solutions, AudioFab's modular design resolves dependency conflicts, simplifying tool integration and extension. It also optimizes tool learning through intelligent selection and few-shot learning, improving efficiency and accuracy in complex audio tasks. Furthermore, AudioFab provides a user-friendly natural language interface tailored for non-expert users. As a foundational framework, AudioFab's core contribution lies in offering a stable and extensible platform for future research and development in audio and multimodal AI. The code is available at this https URL.",
+    "paper_abstract_zh": "目前，人工智能正在深刻改变音频领域；然而，众多先进算法和工具仍然分散，缺乏统一高效的框架来释放其全部潜力。现有的音频智能框架通常面临复杂的环境配置和低效的工具协作问题。为解决这些限制，我们推出了AudioFab，一个开源智能框架，旨在建立开放智能的音频处理生态系统。与现有解决方案相比，AudioFab的模块化设计解决了依赖冲突，简化了工具集成和扩展。它还通过智能选择和小样本学习优化工具学习，提高了复杂音频任务的效率和准确性。此外，AudioFab为非专业用户提供了友好的自然语言界面。作为基础框架，AudioFab的核心贡献在于为音频和多模态AI的未来研发提供稳定可扩展的平台。代码可通过此https URL获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-01",
+    "paper_authors": "Cheng Zhu, Jing Han, Qianshuai Xue, Kehan Wang, Huan Zhao, Zixing Zhang",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "SLM-TTA: A Framework for Test-Time Adaptation of Generative Spoken Language Models",
+    "paper_title_zh": "SLM-TTA：一种用于生成式语音语言模型测试时适应的框架",
+    "paper_id": "2512.24739",
+    "paper_abstract": "Spoken Language Models (SLMs) are increasingly central to modern speech-driven applications, but performance degrades under acoustic shift - real-world noise, reverberation, and microphone variation. Prior solutions rely on offline domain adaptation, which is post-hoc, data-intensive, and slow. We introduce the first test-time adaptation (TTA) framework for generative SLMs that process interleaved audio-text prompts. Our method updates a small, targeted subset of parameters during inference using only the incoming utterance, requiring no source data or labels. This stabilizes token distributions and improves robustness to acoustic variability without degrading core task accuracy. Evaluated on automatic speech recognition, speech translation, and 19 audio understanding tasks from AIR-Bench, our approach yields consistent gains under diverse corruptions. Because adaptation touches only a small fraction of weights, it is both compute- and memory-efficient, supporting deployment on resource-constrained platforms. This work enhances the robustness and adaptability of generative SLMs for real-world speech-driven applications.",
+    "paper_abstract_zh": "语音语言模型(SLMs)在现代语音驱动应用中日益重要，但在声学偏移（现实世界中的噪声、混响和麦克风变化）下性能会下降。先前的解决方案依赖于离线领域适应，这种方法是事后的、数据密集型的且缓慢的。我们引入了首个用于处理交错音频-文本提示的生成式SLMs的测试时适应(TTA)框架。我们的方法仅使用传入的话语在推理过程中更新一小部分有针对性的参数，无需源数据或标签。这稳定了token分布并提高了对声学变化的鲁棒性，同时不会降低核心任务准确性。在自动语音识别、语音翻译以及来自AIR-Bench的19个音频理解任务上的评估表明，我们的方法在各种损坏情况下都能带来一致的增益。由于适应只涉及一小部分权重，因此计算和内存效率都很高，支持在资源受限平台上部署。这项工作增强了生成式SLMs在现实世界语音驱动应用中的鲁棒性和适应性。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-01",
+    "paper_authors": "Yuan-Kuei Wu, Yang Liu, Yiteng Huang, Zhaojun Yang, Haibin Wu, Ruizhe Huang, Yi-Te, Shuyu Kong, Ming Sun, Florian Metze, Li Wan",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
