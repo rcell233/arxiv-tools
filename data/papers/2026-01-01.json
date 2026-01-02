@@ -24,10 +24,10 @@
   },
   {
     "paper_title": "Breaking Audio Large Language Models by Attacking Only the Encoder: A Universal Targeted Latent-Space Audio Attack",
-    "paper_title_zh": "",
+    "paper_title_zh": "仅通过攻击编码器突破音频大语言模型：一种通用的目标潜在空间音频攻击",
     "paper_id": "2512.23881",
     "paper_abstract": "Audio-language models combine audio encoders with large language models to enable multimodal reasoning, but they also introduce new security vulnerabilities. We propose a universal targeted latent space attack, an encoder-level adversarial attack that manipulates audio latent representations to induce attacker-specified outputs in downstream language generation. Unlike prior waveform-level or input-specific attacks, our approach learns a universal perturbation that generalizes across inputs and speakers and does not require access to the language model. Experiments on Qwen2-Audio-7B-Instruct demonstrate consistently high attack success rates with minimal perceptual distortion, revealing a critical and previously underexplored attack surface at the encoder level of multimodal systems.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "音频-语言模型将音频编码器与大语言模型相结合，以实现多模态推理，但同时也引入了新的安全漏洞。我们提出了一种通用的目标潜在空间攻击，这是一种编码器级别的对抗性攻击，通过操纵音频潜在表示，在下游语言生成中诱导攻击者指定的输出。与先前基于波形或输入特定的攻击不同，我们的方法学习了一种通用扰动，能够跨输入和说话者泛化，并且无需访问语言模型。在Qwen2-Audio-7B-Instruct上的实验表明，该方法以最小的感知失真实现了持续的高攻击成功率，揭示了多模态系统编码器级别一个关键且先前未被充分探索的攻击面。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -35,8 +35,13 @@
     ],
     "update_time": "2026-01-01",
     "paper_authors": "Roee Ziv, Raz Lapid, Moshe Sipper",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "PhyAVBench: A Challenging Audio Physics-Sensitivity Benchmark for Physically Grounded Text-to-Audio-Video Generation",
