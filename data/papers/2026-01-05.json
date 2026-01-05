@@ -1,0 +1,158 @@
+[
+  {
+    "paper_title": "Learning Speech Representations with Variational Predictive Coding",
+    "paper_title_zh": "使用变分预测编码学习语音表示",
+    "paper_id": "2601.00100",
+    "paper_abstract": "Despite being the best known objective for learning speech representations, the HuBERT objective has not been further developed and improved. We argue that it is the lack of an underlying principle that stalls the development, and, in this paper, we show that predictive coding under a variational view is the principle behind the HuBERT objective. Due to its generality, our formulation provides opportunities to improve parameterization and optimization, and we show two simple modifications that bring immediate improvements to the HuBERT objective. In addition, the predictive coding formulation has tight connections to various other objectives, such as APC, CPC, wav2vec, and BEST-RQ. Empirically, the improvement in pre-training brings significant improvements to four downstream tasks: phone classification, f0 tracking, speaker recognition, and automatic speech recognition, highlighting the importance of the predictive coding interpretation.",
+    "paper_abstract_zh": "尽管HuBERT目标函数是学习语音表示的最佳已知方法，但它并未得到进一步的发展和改进。我们认为，缺乏基本原理阻碍了其发展，在本文中，我们展示了在变分视角下的预测编码是HuBERT目标背后的原理。由于其通用性，我们的公式提供了改进参数化和优化的机会，我们展示了两个简单的修改，这些修改立即改进了HuBERT目标。此外，预测编码公式与其他各种目标函数（如APC、CPC、wav2vec和BEST-RQ）有紧密的联系。实验表明，预训练的改进为四个下游任务带来了显著的提升：音素分类、基频跟踪、说话人识别和自动语音识别，这突显了预测编码解释的重要性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-05",
+    "paper_authors": "Sung-Lin Yeh, Peter Bell, Hao Tang",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Neural Brain Fields: A NeRF-Inspired Approach for Generating Nonexistent EEG Electrodes",
+    "paper_title_zh": "",
+    "paper_id": "2601.00012",
+    "paper_abstract": "Electroencephalography (EEG) data present unique modeling challenges because recordings vary in length, exhibit very low signal to noise ratios, differ significantly across participants, drift over time within sessions, and are rarely available in large and clean datasets. Consequently, developing deep learning methods that can effectively process EEG signals remains an open and important research problem. To tackle this problem, this work presents a new method inspired by Neural Radiance Fields (NeRF). In computer vision, NeRF techniques train a neural network to memorize the appearance of a 3D scene and then uses its learned parameters to render and edit the scene from any viewpoint. We draw an analogy between the discrete images captured from different viewpoints used to learn a continuous 3D scene in NeRF, and EEG electrodes positioned at different locations on the scalp, which are used to infer the underlying representation of continuous neural activity. Building on this connection, we show that a neural network can be trained on a single EEG sample in a NeRF style manner to produce a fixed size and informative weight vector that encodes the entire signal. Moreover, via this representation we can render the EEG signal at previously unseen time steps and spatial electrode positions. We demonstrate that this approach enables continuous visualization of brain activity at any desired resolution, including ultra high resolution, and reconstruction of raw EEG signals. Finally, our empirical analysis shows that this method can effectively simulate nonexistent electrodes data in EEG recordings, allowing the reconstructed signal to be fed into standard EEG processing networks to improve performance.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Artificial Intelligence (cs.AI)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-05",
+    "paper_authors": "Shahar Ain Kedem, Itamar Zimerman, Eliya Nachmani",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "IKFST: IOO and KOO Algorithms for Accelerated and Precise WFST-based End-to-End Automatic Speech Recognition",
+    "paper_title_zh": "IKFST: 用于加速和精确的基于WFST的端到端自动语音识别的IOO和KOO算法",
+    "paper_id": "2601.00160",
+    "paper_abstract": "End-to-end automatic speech recognition has become the dominant paradigm in both academia and industry. To enhance recognition performance, the Weighted Finite-State Transducer (WFST) is widely adopted to integrate acoustic and language models through static graph composition, providing robust decoding and effective error correction. However, WFST decoding relies on a frame-by-frame autoregressive search over CTC posterior probabilities, which severely limits inference efficiency. Motivated by establishing a more principled compatibility between WFST decoding and CTC modeling, we systematically study the two fundamental components of CTC outputs, namely blank and non-blank frames, and identify a key insight: blank frames primarily encode positional information, while non-blank frames carry semantic content. Building on this observation, we introduce Keep-Only-One and Insert-Only-One, two decoding algorithms that explicitly exploit the structural roles of blank and non-blank frames to achieve significantly faster WFST-based inference without compromising recognition accuracy. Experiments on large-scale in-house, AISHELL-1, and LibriSpeech datasets demonstrate state-of-the-art recognition accuracy with substantially reduced decoding latency, enabling truly efficient and high-performance WFST decoding in modern speech recognition systems.",
+    "paper_abstract_zh": "端到端自动语音识别已成为学术界和工业界的主导范式。为了提高识别性能，加权有限状态转换器(WFST)被广泛采用，通过静态图组合集成声学模型和语言模型，提供稳健的解码和有效的错误纠正。然而，WFST解码依赖于对CTC后验概率的逐帧自回归搜索，这严重限制了推理效率。受建立WFST解码与CTC建模之间更合理兼容性的启发，我们系统地研究了CTC输出的两个基本组成部分，即空白帧和非空白帧，并确定了一个关键见解：空白帧主要编码位置信息，而非空白帧携带语义内容。基于这一观察，我们引入了Keep-Only-One和Insert-Only-One两种解码算法，这些算法明确利用空白帧和非空白帧的结构作用，在显著提高WFST推理速度的同时不降低识别精度。在大型内部数据集、AISHELL-1和LibriSpeech数据集上的实验表明，该算法实现了最先进的识别精度，同时大幅降低了解码延迟，使现代语音识别系统能够实现真正高效且高性能的WFST解码。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-05",
+    "paper_authors": "Zhuoran Zhuang, Ye Chen, Chao Luo, Tian-Hao Zhang, Xuewei Zhang, Jian Ma, Jiatong Shi, Wei Zhang",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Latent Flow Matching for Expressive Singing Voice Synthesis",
+    "paper_title_zh": "用于表现力歌唱语音合成的潜在流匹配",
+    "paper_id": "2601.00217",
+    "paper_abstract": "Conditional variational autoencoder (cVAE)-based singing voice synthesis provides efficient inference and strong audio quality by learning a score-conditioned prior and a recording-conditioned posterior latent space. However, because synthesis relies on prior samples while training uses posterior latents inferred from real recordings, imperfect distribution matching can cause a prior-posterior mismatch that degrades fine-grained expressiveness such as vibrato and micro-prosody. We propose FM-Singer, which introduces conditional flow matching (CFM) in latent space to learn a continuous vector field transporting prior latents toward posterior latents along an optimal-transport-inspired path. At inference time, the learned latent flow refines a prior sample by solving an ordinary differential equation (ODE) before waveform generation, improving expressiveness while preserving the efficiency of parallel decoding. Experiments on Korean and Chinese singing datasets demonstrate consistent improvements over strong baselines, including lower mel-cepstral distortion and fundamental-frequency error and higher perceptual scores on the Korean dataset. Code, pretrained checkpoints, and audio demos are available at this https URL",
+    "paper_abstract_zh": "基于条件变分自编码器(cVAE)的歌唱语音合成通过学习一个分数条件先验和一个录音条件后验潜在空间，提供了高效的推理和强大的音频质量。然而，由于合成依赖于先验样本，而训练使用从真实录音推断的后验潜在变量，不完美的分布匹配可能导致先验-后验不匹配，从而降低精细的表现力，如颤音和微观韵律。我们提出了FM-Singer，它在潜在空间中引入条件流匹配(CFM)，学习一个连续向量场，沿着受最优传输启发的路径将先验潜在变量传输到后验潜在变量。在推理时，学习的潜在流通过求解常微分方程(ODE)来优化先验样本，然后再进行波形生成，在保持并行解码效率的同时提高了表现力。在韩语和汉语歌唱数据集上的实验表明，与强大的基线相比取得了持续改进，包括在韩语数据集上降低了梅尔倒谱失真和基频误差，并提高了感知评分。代码、预训练检查点和音频演示可在提供的URL获取。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-05",
+    "paper_authors": "Minhyeok Yun, Yong-Hoon Choi",
+    "topic": [
+      "Speech Synthesis",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "MR-DAW: Towards Collaborative Digital Audio Workstations in Mixed Reality",
+    "paper_title_zh": "MR-DAW：迈向混合现实中的协作式数字音频工作站",
+    "paper_id": "2601.00326",
+    "paper_abstract": "Digital Audio Workstations (DAWs) are central to modern music production but often encumber the musician's workflow, tethering them to a desk and hindering natural interaction with their instrument. Furthermore, effective remote collaboration remains a significant challenge, with existing solutions hampered by network latency and asynchronous file sharing. This paper investigates the potential of Mixed Reality (MR) to overcome these barriers, creating an intuitive environment for real-time, remote musical collaboration. We employ qualitative and speculative design techniques to better understand: 1) how players currently use DAWs, and 2) to imagine a speculative future of collaborative MR-DAWs. To facilitate this discussion, we developed and evaluated the usability of a design probe, MR-DAW. An MR system enabling multiple, geographically dispersed users to control a single, shared DAW instance while moving freely in their local spaces. Our networked system enables each remote musician to use a physical foot pedal for collaborative looping, merging a familiar, hands-free interaction with a shared virtual session. Based on interviews and system evaluations with 20 musicians, we analyze current practices, report on the user experience with our MR system, and speculate on the future of musical collaboration in MR. Our results highlight the affordances of MR for unencumbered musical interaction and provide a speculative outlook on the future of remote collaborative DAWs in the Musical Metaverse.",
+    "paper_abstract_zh": "数字音频工作站（DAWs）是现代音乐制作的核心，但常常束缚音乐家的工作流程，将他们固定在桌前，阻碍了他们与乐器的自然互动。此外，有效的远程协作仍然是一个重大挑战，现有解决方案因网络延迟和异步文件共享而受到限制。本文探讨了混合现实（MR）克服这些障碍的潜力，为实时、远程的音乐协作创造了一个直观的环境。我们采用定性和推测性设计技术，以更好地理解：1）音乐家目前如何使用DAWs，以及2）想象协作式MR-DAWs的推测性未来。为促进这一讨论，我们开发并评估了一个设计探针MR-DAW的可用性。这是一个MR系统，使多个地理位置分散的用户能够控制一个共享的DAW实例，同时在他们本地空间中自由移动。我们的联网系统使每位远程音乐家能够使用物理踏板进行协作循环录制，将熟悉的免提交互与共享虚拟会话相结合。基于对20位音乐家的访谈和系统评估，我们分析了当前实践，报告了用户使用我们MR系统的体验，并推测了MR中音乐协作的未来。我们的研究结果突出了MR在无束缚音乐互动方面的潜力，并为音乐元宇宙中远程协作DAWs的未来提供了推测性展望。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Human-Computer Interaction (cs.HC)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2026-01-05",
+    "paper_authors": "Torin Hopkins, Shih-Yu Ma, Suibi Che-Chuan Weng, Ming-Yuan Pai, Ellen Yi-Luen Do, Luca Turchet",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "A Language-Agnostic Hierarchical LoRA-MoE Architecture for CTC-based Multilingual ASR",
+    "paper_title_zh": "一种基于CTC的多语言ASR的语言无关分层LoRA-MoE架构",
+    "paper_id": "2601.00557",
+    "paper_abstract": "Large-scale multilingual ASR (mASR) models such as Whisper achieve strong performance but incur high computational and latency costs, limiting their deployment on resource-constrained edge devices. In this study, we propose a lightweight and language-agnostic multilingual ASR system based on a CTC architecture with domain adaptation. Specifically, we introduce a Language-agnostic Hierarchical LoRA-MoE (HLoRA) framework integrated into an mHuBERT-CTC model, enabling end-to-end decoding via LID-posterior-driven LoRA routing. The hierarchical design consists of a multilingual shared LoRA for learning language-invariant acoustic representations and language-specific LoRA experts for modeling language-dependent characteristics. The proposed routing mechanism removes the need for prior language identity information or explicit language labels during inference, achieving true language-agnostic decoding. Experiments on MSR-86K and the MLC-SLM 2025 Challenge datasets demonstrate that HLoRA achieves competitive performance with state-of-the-art two-stage inference methods using only single-pass decoding, significantly improving decoding efficiency for low-resource mASR applications.",
+    "paper_abstract_zh": "大规模多语言自动语音识别(mASR)模型如Whisper虽能实现强大性能，但会带来高昂的计算和延迟成本，限制了其在资源受限的边缘设备上的部署。本研究提出了一种轻量级且语言无关的多语言ASR系统，基于具有领域适应性的CTC架构。具体而言，我们引入了一种语言无关的分层LoRA-MoE(HLoRA)框架，集成到mHuBERT-CTC模型中，通过LID后验驱动的LoRA路由实现端到端解码。分层设计包括一个用于学习语言不变声学表示的多语言共享LoRA，以及用于建模语言相关特性的语言特定LoRA专家。所提出的路由机制在推理过程中无需先验语言身份信息或显式语言标签，实现了真正的语言无关解码。在MSR-86K和MLC-SLM 2025 Challenge数据集上的实验表明，HLoRA仅使用单次解码即可与最先进的两阶段推理方法实现竞争性性能，显著提高了低资源mASR应用的解码效率。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-05",
+    "paper_authors": "Yuang Zheng, Yuxiang Mei, Dongxing Xu, Jie Chen, Yanhua Long",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Timed text extraction from Taiwanese Kua-á-hì TV series",
+    "paper_title_zh": "",
+    "paper_id": "2601.00299",
+    "paper_abstract": "Taiwanese opera (Kua-á-hì), a major form of local theatrical tradition, underwent extensive television adaptation notably by pioneers like Iûnn Lē-hua. These videos, while potentially valuable for in-depth studies of Taiwanese opera, often have low quality and require substantial manual effort during data preparation. To streamline this process, we developed an interactive system for real-time OCR correction and a two-step approach integrating OCR-driven segmentation with Speech and Music Activity Detection (SMAD) to efficiently identify vocal segments from archival episodes with high precision. The resulting dataset, consisting of vocal segments and corresponding lyrics, can potentially supports various MIR tasks such as lyrics identification and tune retrieval. Code is available at this https URL .",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2026-01-05",
+    "paper_authors": "Tzu-Hung Huang, Yun-En Tsai, Yun-Ning Hung, Chih-Wei Wu, I-Chieh Wei, Li Su",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Investigating the Viability of Employing Multi-modal Large Language Models in the Context of Audio Deepfake Detection",
+    "paper_title_zh": "研究在音频深度伪造检测中采用多模态大型语言模型的可行性",
+    "paper_id": "2601.00777",
+    "paper_abstract": "While Vision-Language Models (VLMs) and Multimodal Large Language Models (MLLMs) have shown strong generalisation in detecting image and video deepfakes, their use for audio deepfake detection remains largely unexplored. In this work, we aim to explore the potential of MLLMs for audio deepfake detection. Combining audio inputs with a range of text prompts as queries to find out the viability of MLLMs to learn robust representations across modalities for audio deepfake detection. Therefore, we attempt to explore text-aware and context-rich, question-answer based prompts with binary decisions. We hypothesise that such a feature-guided reasoning will help in facilitating deeper multimodal understanding and enable robust feature learning for audio deepfake detection. We evaluate the performance of two MLLMs, Qwen2-Audio-7B-Instruct and SALMONN, in two evaluation modes: (a) zero-shot and (b) fine-tuned. Our experiments demonstrate that combining audio with a multi-prompt approach could be a viable way forward for audio deepfake detection. Our experiments show that the models perform poorly without task-specific training and struggle to generalise to out-of-domain data. However, they achieve good performance on in-domain data with minimal supervision, indicating promising potential for audio deepfake detection.",
+    "paper_abstract_zh": "尽管视觉语言模型(VLMs)和多模态大型语言模型(MLLMs)在检测图像和视频深度伪造方面表现出强大的泛化能力，但它们在音频深度伪造检测中的应用仍 largely 未被探索。在这项工作中，我们旨在探索MLLMs在音频深度伪造检测中的潜力。将音频输入与多种文本提示相结合作为查询，以确定MLLMs是否能够学习跨模态的鲁棒表示用于音频深度伪造检测。因此，我们尝试使用文本感知和上下文丰富的基于问答的提示，并结合二元决策。我们假设这种特征引导的推理将有助于促进更深层次的多模态理解，并实现音频深度伪造检测的鲁棒特征学习。我们评估了两种MLLMs（Qwen2-Audio-7B-Instruct和SALMONN）在两种评估模式下的性能：(a)零样本和(b)微调。我们的实验表明，将音频与多提示方法相结合可能是音频深度伪造检测的一种可行途径。实验显示，模型在没有任务特定训练的情况下表现不佳，并且难以泛化到域外数据。然而，它们在域内数据上以最少的监督实现了良好的性能，这表明音频深度伪造检测具有 promising 的潜力。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)"
+    ],
+    "update_time": "2026-01-05",
+    "paper_authors": "Akanksha Chuchra, Shukesh Reddy, Sudeepta Mishra, Abhijit Das, Abhinav Dhall",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
