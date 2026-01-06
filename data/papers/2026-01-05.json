@@ -21,10 +21,10 @@
   },
   {
     "paper_title": "Neural Brain Fields: A NeRF-Inspired Approach for Generating Nonexistent EEG Electrodes",
-    "paper_title_zh": "",
+    "paper_title_zh": "神经脑场：一种受NeRF启发的不存在EEG电极生成方法",
     "paper_id": "2601.00012",
     "paper_abstract": "Electroencephalography (EEG) data present unique modeling challenges because recordings vary in length, exhibit very low signal to noise ratios, differ significantly across participants, drift over time within sessions, and are rarely available in large and clean datasets. Consequently, developing deep learning methods that can effectively process EEG signals remains an open and important research problem. To tackle this problem, this work presents a new method inspired by Neural Radiance Fields (NeRF). In computer vision, NeRF techniques train a neural network to memorize the appearance of a 3D scene and then uses its learned parameters to render and edit the scene from any viewpoint. We draw an analogy between the discrete images captured from different viewpoints used to learn a continuous 3D scene in NeRF, and EEG electrodes positioned at different locations on the scalp, which are used to infer the underlying representation of continuous neural activity. Building on this connection, we show that a neural network can be trained on a single EEG sample in a NeRF style manner to produce a fixed size and informative weight vector that encodes the entire signal. Moreover, via this representation we can render the EEG signal at previously unseen time steps and spatial electrode positions. We demonstrate that this approach enables continuous visualization of brain activity at any desired resolution, including ultra high resolution, and reconstruction of raw EEG signals. Finally, our empirical analysis shows that this method can effectively simulate nonexistent electrodes data in EEG recordings, allowing the reconstructed signal to be fed into standard EEG processing networks to improve performance.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "脑电图(EEG)数据存在独特的建模挑战，因为记录的长度不同，信噪比极低，参与者间差异显著，在会话内随时间漂移，并且很少以大型和干净的数据集形式存在。因此，开发能有效处理EEG信号的深度学习方法仍然是一个开放且重要的研究问题。为了解决这个问题，本文提出了一种受神经辐射场(NeRF)启发的新方法。在计算机视觉中，NeRF技术训练一个神经网络来记忆3D场景的外观，然后利用其学习到的参数从任何视角渲染和编辑场景。我们将NeRF中用于学习连续3D场景的不同视角捕获的离散图像，与位于头皮不同位置的EEG电极进行类比，这些电极用于推断连续神经活动的底层表示。基于这一联系，我们展示了一种神经网络可以以NeRF风格在单个EEG样本上训练，生成一个固定大小且信息丰富的权重向量，该向量编码了整个信号。此外，通过这种表示，我们可以在先前未见的时间步和空间电极位置上渲染EEG信号。我们证明这种方法能够以任何期望的分辨率（包括超高分辨率）实现脑活动的连续可视化，并重建原始EEG信号。最后，我们的经验分析表明，这种方法可以有效模拟EEG记录中不存在的电极数据，使重建的信号可以输入到标准的EEG处理网络中以提高性能。",
     "subjects": [
       "Signal Processing (eess.SP)",
       "Artificial Intelligence (cs.AI)",
@@ -34,8 +34,13 @@
     ],
     "update_time": "2026-01-05",
     "paper_authors": "Shahar Ain Kedem, Itamar Zimerman, Eliya Nachmani",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Image Generation",
+      "Other"
+    ],
+    "category": [
+      "Image&Video"
+    ]
   },
   {
     "paper_title": "IKFST: IOO and KOO Algorithms for Accelerated and Precise WFST-based End-to-End Automatic Speech Recognition",
@@ -122,18 +127,23 @@
   },
   {
     "paper_title": "Timed text extraction from Taiwanese Kua-á-hì TV series",
-    "paper_title_zh": "",
+    "paper_title_zh": "从台湾歌仔戏电视剧中提取时序文本",
     "paper_id": "2601.00299",
     "paper_abstract": "Taiwanese opera (Kua-á-hì), a major form of local theatrical tradition, underwent extensive television adaptation notably by pioneers like Iûnn Lē-hua. These videos, while potentially valuable for in-depth studies of Taiwanese opera, often have low quality and require substantial manual effort during data preparation. To streamline this process, we developed an interactive system for real-time OCR correction and a two-step approach integrating OCR-driven segmentation with Speech and Music Activity Detection (SMAD) to efficiently identify vocal segments from archival episodes with high precision. The resulting dataset, consisting of vocal segments and corresponding lyrics, can potentially supports various MIR tasks such as lyrics identification and tune retrieval. Code is available at this https URL .",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "台湾歌仔戏是一种重要的地方传统戏剧形式，由杨丽花等先驱进行了广泛的电视改编。这些视频虽然可能对深入研究台湾歌仔戏有价值，但通常质量较低，且在数据准备过程中需要大量人工工作。为简化此过程，我们开发了一个交互式系统用于实时OCR校正，并采用两步法结合OCR驱动的分割与语音和音乐活动检测(SMAD)，以高效地从存档剧集中精确识别语音片段。 resulting数据集包含语音片段和相应歌词，可支持多种音乐信息检索(MIR)任务，如歌词识别和曲调检索。代码可在提供的https URL获取。",
     "subjects": [
       "Sound (cs.SD)",
       "Multimedia (cs.MM)"
     ],
     "update_time": "2026-01-05",
     "paper_authors": "Tzu-Hung Huang, Yun-En Tsai, Yun-Ning Hung, Chih-Wei Wu, I-Chieh Wei, Li Su",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Investigating the Viability of Employing Multi-modal Large Language Models in the Context of Audio Deepfake Detection",
