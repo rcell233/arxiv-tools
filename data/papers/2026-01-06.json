@@ -1,10 +1,10 @@
 [
   {
     "paper_title": "Speak the Art: A Direct Speech to Image Generation Framework",
-    "paper_title_zh": "",
+    "paper_title_zh": "Speak the Art: 一种直接语音到图像生成框架",
     "paper_id": "2601.00827",
     "paper_abstract": "Direct speech-to-image generation has recently shown promising results. However, compared to text-to-image generation, there is still a large gap to enclose. Current approaches use two stages to tackle this task: speech encoding network and image generative adversarial network (GAN). The speech encoding networks in these approaches produce embeddings that do not capture sufficient linguistic information to semantically represent the input speech. GANs suffer from issues such as non-convergence, mode collapse, and diminished gradient, which result in unstable model parameters, limited sample diversity, and ineffective generator learning, respectively. To address these weaknesses, we introduce a framework called \\textbf{Speak the Art (STA)} which consists of a speech encoding network and a VQ-Diffusion network conditioned on speech embeddings. To improve speech embeddings, the speech encoding network is supervised by a large pre-trained image-text model during training. Replacing GANs with diffusion leads to more stable training and the generation of diverse images. Additionally, we investigate the feasibility of extending our framework to be multilingual. As a proof of concept, we trained our framework with two languages: English and Arabic. Finally, we show that our results surpass state-of-the-art models by a large margin.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "直接语音到图像生成最近显示出有前景的结果。然而，与文本到图像生成相比，仍然存在很大差距。当前方法采用两个阶段来处理此任务：语音编码网络和图像生成对抗网络（GAN）。这些方法中的语音编码网络生成的嵌入无法捕获足够的语言信息来语义上表示输入语音。GANs存在不收敛、模式崩溃和梯度消失等问题，分别导致模型参数不稳定、样本多样性有限和生成器学习无效。为了解决这些弱点，我们引入了一个名为Speak the Art (STA)的框架，该框架包含一个语音编码网络和一个基于语音嵌入条件的VQ-Diffusion网络。为了改进语音嵌入，语音编码网络在训练过程中由大型预训练图像-文本模型监督。用扩散模型替代GANs可以带来更稳定的训练和多样化的图像生成。此外，我们还研究了将我们的框架扩展为多语言的可行性。作为概念验证，我们使用两种语言训练了我们的框架：英语和阿拉伯语。最后，我们的结果显示大幅超越了最先进的模型。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Artificial Intelligence (cs.AI)",
@@ -12,8 +12,13 @@
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Mariam Saeed, Manar Amr, Farida Adel, Nada Hassan, Nour Walid, Eman Mohamed, Mohamed Hussein, Marwan Torki",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Image Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
   },
   {
     "paper_title": "Improving Code-Switching Speech Recognition with TTS Data Augmentation",
@@ -219,18 +224,22 @@
   },
   {
     "paper_title": "OV-InstructTTS: Towards Open-Vocabulary Instruct Text-to-Speech",
-    "paper_title_zh": "",
+    "paper_title_zh": "OV-InstructTTS: 朝向开放词汇指令文本转语音",
     "paper_id": "2601.01459",
     "paper_abstract": "Instruct Text-to-Speech (InstructTTS) leverages natural language descriptions as style prompts to guide speech synthesis. However, existing InstructTTS methods mainly rely on a direct combination of audio-related labels or their diverse rephrasings, making it difficult to handle flexible, high-level instructions. Such rigid control is insufficient for users such as content creators who wish to steer generation with descriptive instructions. To address these constraints, we introduce OV-InstructTTS, a new paradigm for open-vocabulary InstructTTS. We propose a comprehensive solution comprising a newly curated dataset, OV-Speech, and a novel reasoning-driven framework. The OV-Speech dataset pairs speech with open-vocabulary instructions, each augmented with a reasoning process that connects high-level instructions to acoustic features. The reasoning-driven framework infers emotional, acoustic, and paralinguistic information from open-vocabulary instructions before synthesizing speech. Evaluations show that this reasoning-driven approach significantly improves instruction-following fidelity and speech expressiveness. We believe this work can inspire the next user-friendly InstructTTS systems with stronger generalization and real-world applicability. The dataset and demos are publicly available on our project page.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "指令文本转语音（InstructTTS）利用自然语言描述作为风格提示来指导语音合成。然而，现有的InstructTTS方法主要依赖于音频相关标签的直接组合或其多样化的重新表述，这使得处理灵活的高级指令变得困难。这种严格的控制对于希望使用描述性指令引导生成的内容创作者等用户来说是不够的。为了解决这些限制，我们引入了OV-InstructTTS，这是一种开放词汇InstructTTS的新范式。我们提出了一个全面的解决方案，包括一个新策划的数据集OV-Speech和一个新颖的推理驱动框架。OV-Speech数据集将语音与开放词汇指令配对，每个指令都附有一个推理过程，该过程将高级指令与声学特征联系起来。推理驱动框架在合成语音之前，从开放词汇指令中推断情感、语言副特征等信息。评估表明，这种推理驱动的方法显著提高了指令遵循的保真度和语音表现力。我们相信这项工作可以启发下一代具有更强泛化能力和实际应用性的用户友好型InstructTTS系统。数据集和演示在我们的项目页面上公开提供。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Yong Ren, Jiangyan Yi, Jianhua Tao, Haiyang Sun, Zhengqi Wen, Hao Gu, Le Xu, Ye Bai",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Bridging the gap: A comparative exploration of Speech-LLM and end-to-end architecture for multilingual conversational ASR",
@@ -290,18 +299,23 @@
   },
   {
     "paper_title": "Towards Multi-Level Transcript Segmentation: LoRA Fine-Tuning for Table-of-Contents Generation",
-    "paper_title_zh": "",
+    "paper_title_zh": "迈向多级文本分段：用于目录生成的LoRA微调",
     "paper_id": "2601.02128",
     "paper_abstract": "Segmenting speech transcripts into thematic sections benefits both downstream processing and users who depend on written text for accessibility. We introduce a novel approach to hierarchical topic segmentation in transcripts, generating multi-level tables of contents that capture both topic and subtopic boundaries. We compare zero-shot prompting and LoRA fine-tuning on large language models, while also exploring the integration of high-level speech pause features. Evaluations on English meeting recordings and multilingual lecture transcripts (Portuguese, German) show significant improvements over established topic segmentation baselines. Additionally, we adapt a common evaluation measure for multi-level segmentation, taking into account all hierarchical levels within one metric.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "将语音转录文本分割成主题部分有利于下游处理以及依赖书面文本的可访问性用户。我们引入了一种新颖的转录文本层次主题分段方法，生成捕获主题和子主题边界的多级目录。我们比较了大型语言模型上的零样本提示和LoRA微调，同时探索了高级语音停顿特征的集成。在英语会议录音和多语言讲座转录（葡萄牙语、德语）上的评估显示，与既定的主题分段基线相比有显著改进。此外，我们调整了一种常见的多级分段评估指标，在一个指标中考虑了所有层次级别。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Steffen Freisinger, Philipp Seeberger, Thomas Ranzenberger, Tobias Bocklet, Korbinian Riedhammer",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "DARC: Drum accompaniment generation with fine-grained rhythm control",

@@ -1,0 +1,350 @@
+[
+  {
+    "paper_title": "Vclip: Face-based Speaker Generation by Face-voice Association Learning",
+    "paper_title_zh": "",
+    "paper_id": "2601.02753",
+    "paper_abstract": "This paper discusses the task of face-based speech synthesis, a kind of personalized speech synthesis where the synthesized voices are con- strained to perceptually match with a reference face image. Due to the lack of TTS-quality audio-visual corpora, previous approaches suffer from either low synthesis quality or domain mismatch induced by a knowledge transfer scheme. This paper proposes a new approach called Vclip that utilizes the facial-semantic knowledge of the CLIP encoder on noisy audio-visual data to learn the association between face and voice efficiently, achieving 89.63% cross-modal verification AUC score on Voxceleb testset. The proposed method then uses a retrieval-based strategy, combined with GMM-based speaker generation module for a downstream TTS system, to produce probable target speakers given reference images. Experimental results demonstrate that the proposed Vclip system in conjunction with the retrieval step can bridge the gap between face and voice features for face-based speech synthesis. And using the feedback information distilled from downstream TTS helps to synthesize voices that match closely with reference faces. Demos available at this http URL.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Yao Shi, Yunfei Xu, Hongbin Suo, Yulong Wan, Haifeng Liu",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "XLSR-MamBo: Scaling the Hybrid Mamba-Attention Backbone for Audio Deepfake Detection",
+    "paper_title_zh": "XLSR-MamBo：扩展混合Mamba-Attention主干网络用于音频深度伪造检测",
+    "paper_id": "2601.02944",
+    "paper_abstract": "Advanced speech synthesis technologies have enabled highly realistic speech generation, posing security risks that motivate research into audio deepfake detection (ADD). While state space models (SSMs) offer linear complexity, pure causal SSMs architectures often struggle with the content-based retrieval required to capture global frequency-domain artifacts. To address this, we explore the scaling properties of hybrid architectures by proposing XLSR-MamBo, a modular framework integrating an XLSR front-end with synergistic Mamba-Attention backbones. We systematically evaluate four topological designs using advanced SSM variants, Mamba, Mamba2, Hydra, and Gated DeltaNet. Experimental results demonstrate that the MamBo-3-Hydra-N3 configuration achieves competitive performance compared to other state-of-the-art systems on the ASVspoof 2021 LA, DF, and In-the-Wild benchmarks. This performance benefits from Hydra's native bidirectional modeling, which captures holistic temporal dependencies more efficiently than the heuristic dual-branch strategies employed in prior works. Furthermore, evaluations on the DFADD dataset demonstrate robust generalization to unseen diffusion- and flow-matching-based synthesis methods. Crucially, our analysis reveals that scaling backbone depth effectively mitigates the performance variance and instability observed in shallower models. These results demonstrate the hybrid framework's ability to capture artifacts in spoofed speech signals, providing an effective method for ADD.",
+    "paper_abstract_zh": "先进的语音合成技术使得高度逼真的语音生成成为可能，带来了安全风险，从而推动了音频深度伪造检测（ADD）的研究。虽然状态空间模型（SSMs）具有线性复杂度，但纯因果SSM架构通常难以捕捉全局频域伪影所需的内容检索能力。为此，我们通过提出XLSR-MamBo（一个将XLSR前端与协同Mamba-Attention主干网络集成的模块化框架）来探索混合架构的可扩展性。我们使用先进的SSM变体（Mamba、Mamba2、Hydra和Gated DeltaNet）系统地评估了四种拓扑设计。实验结果表明，在ASVspoof 2021 LA、DF和In-the-Wild基准测试中，MamBo-3-Hydra-N3配置与其他最先进系统相比具有竞争力。这种性能得益于Hydra的原生双向建模，它比先前工作中使用的启发式双分支策略更有效地捕捉整体时间依赖关系。此外，在DFADD数据集上的评估表明，该方法对未见过的基于扩散和流匹配的合成方法具有强大的泛化能力。关键的是，我们的分析表明，扩展主干深度可以有效缓解较浅模型中观察到的性能差异和不稳定性。这些结果证明了混合框架捕捉伪造语音信号中伪影的能力，为ADD提供了一种有效方法。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Kwok-Ho Ng, Tingting Song, Yongdong WU, Zhihua Xia",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Towards Fine-Grained and Multi-Granular Contrastive Language-Speech Pre-training",
+    "paper_title_zh": "",
+    "paper_id": "2601.03065",
+    "paper_abstract": "Modeling fine-grained speaking styles remains challenging for language-speech representation pre-training, as existing speech-text models are typically trained with coarse captions or task-specific supervision, and scalable fine-grained style annotations are unavailable. We present FCaps, a large-scale dataset with fine-grained free-text style descriptions, encompassing 47k hours of speech and 19M fine-grained captions annotated via a novel end-to-end pipeline that directly grounds detailed captions in audio, thereby avoiding the error propagation caused by LLM-based rewriting in existing cascaded pipelines. Evaluations using LLM-as-a-judge demonstrate that our annotations surpass existing cascaded annotations in terms of correctness, coverage, and naturalness. Building on FCaps, we propose CLSP, a contrastive language-speech pre-trained model that integrates global and fine-grained supervision, enabling unified representations across multiple granularities. Extensive experiments demonstrate that CLSP learns fine-grained and multi-granular speech-text representations that perform reliably across global and fine-grained speech-text retrieval, zero-shot paralinguistic classification, and speech style similarity scoring, with strong alignment to human judgments. All resources will be made publicly available.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Yifan Yang, Bing Han, Hui Wang, Wei Wang, Ziyang Ma, Long Zhou, Zengrui Jin, Guanrou Yang, Tianrui Wang, Xu Tan, Xie Chen",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "WearVox: An Egocentric Multichannel Voice Assistant Benchmark for Wearables",
+    "paper_title_zh": "WearVox：面向可穿戴设备的以人为中心的多通道语音助手基准测试",
+    "paper_id": "2601.02391",
+    "paper_abstract": "Wearable devices such as AI glasses are transforming voice assistants into always-available, hands-free collaborators that integrate seamlessly with daily life, but they also introduce challenges like egocentric audio affected by motion and noise, rapid micro-interactions, and the need to distinguish device-directed speech from background conversations. Existing benchmarks largely overlook these complexities, focusing instead on clean or generic conversational audio. To bridge this gap, we present WearVox, the first benchmark designed to rigorously evaluate voice assistants in realistic wearable scenarios. WearVox comprises 3,842 multi-channel, egocentric audio recordings collected via AI glasses across five diverse tasks including Search-Grounded QA, Closed-Book QA, Side-Talk Rejection, Tool Calling, and Speech Translation, spanning a wide range of indoor and outdoor environments and acoustic conditions. Each recording is accompanied by rich metadata, enabling nuanced analysis of model performance under real-world constraints. We benchmark leading proprietary and open-source speech Large Language Models (SLLMs) and find that most real-time SLLMs achieve accuracies on WearVox ranging from 29% to 59%, with substantial performance degradation on noisy outdoor audio, underscoring the difficulty and realism of the benchmark. Additionally, we conduct a case study with two new SLLMs that perform inference with single-channel and multi-channel audio, demonstrating that multi-channel audio inputs significantly enhance model robustness to environmental noise and improve discrimination between device-directed and background speech. Our results highlight the critical importance of spatial audio cues for context-aware voice assistants and establish WearVox as a comprehensive testbed for advancing wearable voice AI research.",
+    "paper_abstract_zh": "AI眼镜等可穿戴设备正在将语音助手转变为随时可用、免提的协作伙伴，能够无缝融入日常生活，但它们也带来了诸如受运动和噪声影响的以人为中心的音频、快速微交互以及需要区分设备定向语音与背景对话等挑战。现有的基准测试大多忽略了这些复杂性，而是专注于清洁或通用对话音频。为了弥补这一差距，我们提出了WearVox，这是首个旨在严格评估可穿戴设备现实场景中语音助手的基准测试。WearVox包含3,842个多通道、以人为中心的音频记录，这些记录通过AI眼镜在五个多样化任务中收集，包括基于搜索的问答、闭卷问答、侧向对话拒绝、工具调用和语音翻译，涵盖了广泛的室内外环境和声学条件。每条记录都附带丰富的元数据，能够对模型在现实世界约束下的性能进行细致分析。我们对领先的专有和开源语音大语言模型（SLLMs）进行了基准测试，发现大多数实时SLLM在WearVox上的准确率在29%到59%之间，在嘈杂的户外音频上性能显著下降，凸显了该基准测试的难度和真实性。此外，我们对两个使用单通道和多通道音频进行推理的新SLLMs进行了案例研究，证明多通道音频输入显著增强了模型对环境噪声的鲁棒性，并提高了设备定向语音与背景语音之间的区分能力。我们的研究结果强调了空间音频线索对上下文感知语音助手的关键重要性，并将WearVox确立为推进可穿戴语音AI研究的全面测试平台。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Zhaojiang Lin, Yong Xu, Kai Sun, Jing Zheng, Yin Huang, Surya Teja Appini, Krish Narang, Renjie Tao, Ishan Kapil Jain, Siddhant Arora, Ruizhi Li, Yiteng Huang, Kaushik Patnaik, Wenfang Xu, Suwon Shon, Yue Liu, Ahmed A Aly, Anuj Kumar, Florian Metze, Xin Luna Dong",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Quantifying Quanvolutional Neural Networks Robustness for Speech in Healthcare Applications",
+    "paper_title_zh": "",
+    "paper_id": "2601.02432",
+    "paper_abstract": "Speech-based machine learning systems are sensitive to noise, complicating reliable deployment in emotion recognition and voice pathology detection. We evaluate the robustness of a hybrid quantum machine learning model, quanvolutional neural networks (QNNs) against classical convolutional neural networks (CNNs) under four acoustic corruptions (Gaussian noise, pitch shift, temporal shift, and speed variation) in a clean-train/corrupted-test regime. Using AVFAD (voice pathology) and TESS (speech emotion), we compare three QNN models (Random, Basic, Strongly) to a simple CNN baseline (CNN-Base), ResNet-18 and VGG-16 using accuracy and corruption metrics (CE, mCE, RCE, RmCE), and analyze architectural factors (circuit complexity or depth, convergence) alongside per-emotion robustness. QNNs generally outperform the CNN-Base under pitch shift, temporal shift, and speed variation (up to 22% lower CE/RCE at severe temporal shift), while the CNN-Base remains more resilient to Gaussian noise. Among quantum circuits, QNN-Basic achieves the best overall robustness on AVFAD, and QNN-Random performs strongest on TESS. Emotion-wise, fear is most robust (80-90% accuracy under severe corruptions), neutral can collapse under strong Gaussian noise (5.5% accuracy), and happy is most vulnerable to pitch, temporal, and speed distortions. QNNs also converge up to six times faster than the CNN-Base. To our knowledge, this is a systematic study of QNN robustness for speech under common non-adversarial acoustic corruptions, indicating that shallow entangling quantum front-ends can improve noise resilience while sensitivity to additive noise remains a challenge.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Ha Tran, Bipasha Kashyap, Pubudu N. Pathirana",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "VocalBridge: Latent Diffusion-Bridge Purification for Defeating Perturbation-Based Voiceprint Defenses",
+    "paper_title_zh": "",
+    "paper_id": "2601.02444",
+    "paper_abstract": "The rapid advancement of speech synthesis technologies, including text-to-speech (TTS) and voice conversion (VC), has intensified security and privacy concerns related to voice cloning. Recent defenses attempt to prevent unauthorized cloning by embedding protective perturbations into speech to obscure speaker identity while maintaining intelligibility. However, adversaries can apply advanced purification techniques to remove these perturbations, recover authentic acoustic characteristics, and regenerate cloneable voices. Despite the growing realism of such attacks, the robustness of existing defenses under adaptive purification remains insufficiently studied.\nMost existing purification methods are designed to counter adversarial noise in automatic speech recognition (ASR) systems rather than speaker verification or voice cloning pipelines. As a result, they fail to suppress the fine-grained acoustic cues that define speaker identity and are often ineffective against speaker verification attacks (SVA). To address these limitations, we propose Diffusion-Bridge (VocalBridge), a purification framework that learns a latent mapping from perturbed to clean speech in the EnCodec latent space. Using a time-conditioned 1D U-Net with a cosine noise schedule, the model enables efficient, transcript-free purification while preserving speaker-discriminative structure. We further introduce a Whisper-guided phoneme variant that incorporates lightweight temporal guidance without requiring ground-truth transcripts. Experimental results show that our approach consistently outperforms existing purification methods in recovering cloneable voices from protected speech. Our findings demonstrate the fragility of current perturbation-based defenses and highlight the need for more robust protection mechanisms against evolving voice-cloning and speaker verification threats.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Cryptography and Security (cs.CR)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Maryam Abbasihafshejani, AHM Nazmus Sakib, Murtuza Jadliwala",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Dynamic Quantization Error Propagation in Encoder-Decoder ASR Quantization",
+    "paper_title_zh": "",
+    "paper_id": "2601.02455",
+    "paper_abstract": "Running Automatic Speech Recognition (ASR) models on memory-constrained edge devices requires efficient compression. While layer-wise post-training quantization is effective, it suffers from error accumulation, especially in encoder-decoder architectures. Existing solutions like Quantization Error Propagation (QEP) are suboptimal for ASR due to the model's heterogeneity, processing acoustic features in the encoder while generating text in the decoder. To address this, we propose Fine-grained Alpha for Dynamic Quantization Error Propagation (FADE), which adaptively controls the trade-off between cross-layer error correction and local quantization. Experiments show that FADE significantly improves stability by reducing performance variance across runs, while simultaneously surpassing baselines in mean WER.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Xinyu Wang, Yajie Luo, Yihong Wu, Liheng Ma, Ziyu Zhao, Jingrui Tian, Lei Ding, Yufei Cui, Xiao-Wen Chang",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "SPO-CLAPScore: Enhancing CLAP-based alignment prediction system with Standardize Preference Optimization, for the first XACLE Challenge",
+    "paper_title_zh": "",
+    "paper_id": "2601.02900",
+    "paper_abstract": "The first XACLE Challenge (x-to-audio alignment challenge) addresses the critical need for automatic evaluation metrics that correlate with human perception of audio-text semantic alignment. In this paper, we describe the \"Takano_UTokyo_03\" system submitted to XACLE Challenge. Our approach leverages a CLAPScore-based architecture integrated with a novel training method called Standardized Preference Optimization (SPO). SPO standardizes the raw alignment scores provided by each listener, enabling the model to learn relative preferences and mitigate the impact of individual scoring biases. Additionally, we employ listener screening to exclude listeners with inconsistent ratings. Experimental evaluations demonstrate that both SPO and listener screening effectively improve the correlation with human judgment. Our system achieved 6th place in the challenge with a Spearman's rank correlation coefficient (SRCC) of 0.6142, demonstrating competitive performance within a marginal gap from the top-ranked systems. The code is available at this https URL.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Taisei Takano, Ryoya Yoshida",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "MoE Adapter for Large Audio Language Models: Sparsity, Disentanglement, and Gradient-Conflict-Free",
+    "paper_title_zh": "用于大型音频语言模型的MoE适配器：稀疏性、解耦与无梯度冲突",
+    "paper_id": "2601.02967",
+    "paper_abstract": "Extending the input modality of Large Language Models~(LLMs) to the audio domain is essential for achieving comprehensive multimodal perception. However, it is well-known that acoustic information is intrinsically \\textit{heterogeneous}, entangling attributes such as speech, music, and environmental context. Existing research is limited to a dense, parameter-shared adapter to model these diverse patterns, which induces \\textit{gradient conflict} during optimization, as parameter updates required for distinct attributes contradict each other. To address this limitation, we introduce the \\textit{\\textbf{MoE-Adapter}}, a sparse Mixture-of-Experts~(MoE) architecture designed to decouple acoustic information. Specifically, it employs a dynamic gating mechanism that routes audio tokens to specialized experts capturing complementary feature subspaces while retaining shared experts for global context, thereby mitigating gradient conflicts and enabling fine-grained feature learning. Comprehensive experiments show that the MoE-Adapter achieves superior performance on both audio semantic and paralinguistic tasks, consistently outperforming dense linear baselines with comparable computational costs. Furthermore, we will release the related code and models to facilitate future research.",
+    "paper_abstract_zh": "将大型语言模型（LLMs）的输入模态扩展到音频领域对于实现全面的多模态感知至关重要。然而，众所周知，声学信息本质上是异构的，融合了语音、音乐和环境背景等属性。现有研究仅限于使用密集的参数共享适配器来建模这些多样化的模式，这会在优化过程中引发梯度冲突，因为不同属性所需的参数更新相互矛盾。为解决这一局限，我们引入了MoE适配器，这是一种稀疏的专家混合（MoE）架构，旨在解耦声学信息。具体而言，它采用动态门控机制，将音频令牌路由到捕获互补特征子空间的专业专家，同时保留共享专家以处理全局上下文，从而缓解梯度冲突并实现细粒度的特征学习。全面的实验表明，MoE适配器在音频语义和副语言任务上均取得了卓越的性能，以可比的计算成本持续优于密集线性基线。此外，我们将发布相关代码和模型以促进未来的研究。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Yishu Lei, Shuwei He, Jing Hu, Dan Zhang, Xianlong Luo, Danxiang Zhu, Shikun Feng, Rui Liu, Jingzhou He, Yu Sun, Hua Wu, Haifeng Wang",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Discovering and Causally Validating Emotion-Sensitive Neurons in Large Audio-Language Models",
+    "paper_title_zh": "",
+    "paper_id": "2601.03115",
+    "paper_abstract": "Emotion is a central dimension of spoken communication, yet, we still lack a mechanistic account of how modern large audio-language models (LALMs) encode it internally. We present the first neuron-level interpretability study of emotion-sensitive neurons (ESNs) in LALMs and provide causal evidence that such units exist in Qwen2.5-Omni, Kimi-Audio, and Audio Flamingo 3. Across these three widely used open-source models, we compare frequency-, entropy-, magnitude-, and contrast-based neuron selectors on multiple emotion recognition benchmarks. Using inference-time interventions, we reveal a consistent emotion-specific signature: ablating neurons selected for a given emotion disproportionately degrades recognition of that emotion while largely preserving other classes, whereas gain-based amplification steers predictions toward the target emotion. These effects arise with modest identification data and scale systematically with intervention strength. We further observe that ESNs exhibit non-uniform layer-wise clustering with partial cross-dataset transfer. Taken together, our results offer a causal, neuron-level account of emotion decisions in LALMs and highlight targeted neuron interventions as an actionable handle for controllable affective behaviors.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Xiutian Zhao, Björn Schuller, Berrak Sisman",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Understanding Human Perception of Music Plagiarism Through a Computational Approach",
+    "paper_title_zh": "",
+    "paper_id": "2601.02586",
+    "paper_abstract": "There is a wide variety of music similarity detection algorithms, while discussions about music plagiarism in the real world are often based on audience perceptions. Therefore, we aim to conduct a study to examine the key criteria of human perception of music plagiarism, focusing on the three commonly used musical features in similarity analysis: melody, rhythm, and chord progression. After identifying the key features and levels of variation humans use in perceiving musical similarity, we propose a LLM-as-a-judge framework that applies a systematic, step-by-step approach, drawing on modules that extract such high-level attributes.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Information Retrieval (cs.IR)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Daeun Hwang, Hyeonbin Hwang",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "A Music Information Retrieval Approach to Classify Sub-Genres in Role Playing Games",
+    "paper_title_zh": "",
+    "paper_id": "2601.02591",
+    "paper_abstract": "Video game music (VGM) is often studied under the same lens as film music, which largely focuses on its theoretical functionality with relation to the identified genres of the media. However, till date, we are unaware of any systematic approach that analyzes the quantifiable musical features in VGM across several identified game genres. Therefore, we extracted musical features from VGM in games from three sub-genres of Role-Playing Games (RPG), and then hypothesized how different musical features are correlated to the perceptions and portrayals of each genre. This observed correlation may be used to further suggest such features are relevant to the expected storytelling elements or play mechanics associated with the sub-genre.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Information Retrieval (cs.IR)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Daeun Hwang, Xuyuan Cai, Edward F. Melcer, Elin Carstensdottir",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Multi-channel multi-speaker transformer for speech recognition",
+    "paper_title_zh": "",
+    "paper_id": "2601.02688",
+    "paper_abstract": "With the development of teleconferencing and in-vehicle voice assistants, far-field multi-speaker speech recognition has become a hot research topic. Recently, a multi-channel transformer (MCT) has been proposed, which demonstrates the ability of the transformer to model far-field acoustic environments. However, MCT cannot encode high-dimensional acoustic features for each speaker from mixed input audio because of the interference between speakers. Based on these, we propose the multi-channel multi-speaker transformer (M2Former) for far-field multi-speaker ASR in this paper. Experiments on the SMS-WSJ benchmark show that the M2Former outperforms the neural beamformer, MCT, dual-path RNN with transform-average-concatenate and multi-channel deep clustering based end-to-end systems by 9.2%, 14.3%, 24.9%, and 52.2% respectively, in terms of relative word error rate reduction.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Guo Yifan, Tian Yao, Suo Hongbin, Wan Yulong",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Omni2Sound: Towards Unified Video-Text-to-Audio Generation",
+    "paper_title_zh": "Omni2Sound：迈向统一视频-文本到音频生成",
+    "paper_id": "2601.02731",
+    "paper_abstract": "Training a unified model integrating video-to-audio (V2A), text-to-audio (T2A), and joint video-text-to-audio (VT2A) generation offers significant application flexibility, yet faces two unexplored foundational challenges: (1) the scarcity of high-quality audio captions with tight A-V-T alignment, leading to severe semantic conflict between multimodal conditions, and (2) cross-task and intra-task competition, manifesting as an adverse V2A-T2A performance trade-off and modality bias in the VT2A task. First, to address data scarcity, we introduce SoundAtlas, a large-scale dataset (470k pairs) that significantly outperforms existing benchmarks and even human experts in quality. Powered by a novel agentic pipeline, it integrates Vision-to-Language Compression to mitigate visual bias of MLLMs, a Junior-Senior Agent Handoff for a 5 times cost reduction, and rigorous Post-hoc Filtering to ensure fidelity. Consequently, SoundAtlas delivers semantically rich and temporally detailed captions with tight V-A-T alignment. Second, we propose Omni2Sound, a unified VT2A diffusion model supporting flexible input modalities. To resolve the inherent cross-task and intra-task competition, we design a three-stage multi-task progressive training schedule that converts cross-task competition into joint optimization and mitigates modality bias in the VT2A task, maintaining both audio-visual alignment and off-screen audio generation faithfulness. Finally, we construct VGGSound-Omni, a comprehensive benchmark for unified evaluation, including challenging off-screen tracks. With a standard DiT backbone, Omni2Sound achieves unified SOTA performance across all three tasks within a single model, demonstrating strong generalization across benchmarks with heterogeneous input conditions. The project page is at this https URL.",
+    "paper_abstract_zh": "训练一个集成了视频到音频(V2A)、文本到音频(T2A)和联合视频-文本到音频(VT2A)生成的统一模型，提供了显著的应用灵活性，但面临着两个尚未探索的基础性挑战：(1) 高质量且具有紧密A-V-T对齐的音频字幕稀缺，导致多模态条件之间存在严重的语义冲突；(2) 跨任务和任务内竞争，表现为不利的V2A-T2A性能权衡和VT2A任务中的模态偏差。首先，为解决数据稀缺问题，我们引入了SoundAtlas，这是一个大规模数据集(47万对)，在质量上显著优于现有基准，甚至超过了人类专家。通过一种新颖的智能体流水线，它集成了视觉到语言压缩以减轻MLLM的视觉偏差，初级-高级智能体交接实现了5倍的成本降低，以及严格的后期过滤以确保保真度。因此，SoundAtlas提供了语义丰富且时间细节丰富的字幕，具有紧密的V-A-T对齐。其次，我们提出了Omni2Sound，一个支持灵活输入模态的统一VT2A扩散模型。为解决固有的跨任务和任务内竞争，我们设计了一个三阶段多任务渐进式训练计划，将跨任务竞争转化为联合优化，并减轻了VT2A任务中的模态偏差，同时保持音频-视觉对齐和屏幕外音频生成的保真度。最后，我们构建了VGGSound-Omni，一个用于统一评估的综合基准，包括具有挑战性的屏幕外音轨。使用标准的DiT主干，Omni2Sound在单个模型中实现了所有三个任务的统一SOTA性能，展示了在具有异构输入条件的基准上的强大泛化能力。项目页面位于此https URL。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Yusheng Dai, Zehua Chen, Yuxuan Jiang, Baolong Gao, Qiuhong Ke, Jun Zhu, Jianfei Cai",
+    "topic": [
+      "Video Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "UniSRCodec: Unified and Low-Bitrate Single Codebook Codec with Sub-Band Reconstruction",
+    "paper_title_zh": "UniSRCodec: 统一且低比特率的单码本编解码器与子带重建",
+    "paper_id": "2601.02776",
+    "paper_abstract": "Neural Audio Codecs (NACs) can reduce transmission overhead by performing compact compression and reconstruction, which also aim to bridge the gap between continuous and discrete signals. Existing NACs can be divided into two categories: multi-codebook and single-codebook codecs. Multi-codebook codecs face challenges such as structural complexity and difficulty in adapting to downstream tasks, while single-codebook codecs, though structurally simpler, suffer from low-fidelity, ineffective modeling of unified audio, and an inability to support modeling of high-frequency audio. We propose the UniSRCodec, a single-codebook codec capable of supporting high sampling rate, low-bandwidth, high fidelity, and unified. We analyze the inefficiency of waveform-based compression and introduce the time and frequency compression method using the Mel-spectrogram, and cooperate with a Vocoder to recover the phase information of the original audio. Moreover, we propose a sub-band reconstruction technique to achieve high-quality compression across both low and high frequency bands. Subjective and objective experimental results demonstrate that UniSRCodec achieves state-of-the-art (SOTA) performance among cross-domain single-codebook codecs with only a token rate of 40, and its reconstruction quality is comparable to that of certain multi-codebook methods. Our demo page is available at this https URL.",
+    "paper_abstract_zh": "神经音频编解码器（NACs）通过执行紧凑的压缩和重建来减少传输开销，同时也旨在弥合连续信号和离散信号之间的差距。现有的NACs可分为两类：多码本编解码器和单码本编解码器。多码本编解码器面临结构复杂性和难以适应下游任务等挑战，而单码本编解码器虽然结构更简单，但存在保真度低、统一音频建模效果不佳以及无法支持高频音频建模等问题。我们提出了UniSRCodec，这是一种单码本编解码器，能够支持高采样率、低带宽、高保真度和统一性。我们分析了基于波形的压缩效率低下的问题，并引入了使用Mel频谱图的时间-频率压缩方法，并与Vocoder合作恢复原始音频的相位信息。此外，我们提出了一种子带重建技术，以实现低频和高频带的高质量压缩。主观和客观实验结果表明，UniSRCodec在跨域单码本编解码器中实现了最先进的（SOTA）性能，仅使用40的token速率，其重建质量可与某些多码本方法相媲美。我们的演示页面可通过此https URL访问。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Zhisheng Zhang, Xiang Li, Yixuan Zhou, Jing Peng, Shengbo Cai, Guoyang Zeng, Zhiyong Wu",
+    "topic": [
+      "Audio Codec",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Vulnerabilities of Audio-Based Biometric Authentication Systems Against Deepfake Speech Synthesis",
+    "paper_title_zh": "基于音频的生物识别认证系统对深度伪造语音合成的脆弱性",
+    "paper_id": "2601.02914",
+    "paper_abstract": "As audio deepfakes transition from research artifacts to widely available commercial tools, robust biometric authentication faces pressing security threats in high-stakes industries. This paper presents a systematic empirical evaluation of state-of-the-art speaker authentication systems based on a large-scale speech synthesis dataset, revealing two major security vulnerabilities: 1) modern voice cloning models trained on very small samples can easily bypass commercial speaker verification systems; and 2) anti-spoofing detectors struggle to generalize across different methods of audio synthesis, leading to a significant gap between in-domain performance and real-world robustness. These findings call for a reconsideration of security measures and stress the need for architectural innovations, adaptive defenses, and the transition towards multi-factor authentication.",
+    "paper_abstract_zh": "随着音频深度伪造技术从研究产物转变为广泛可用的商业工具，稳健的生物识别认证在高风险行业面临着紧迫的安全威胁。本文基于大规模语音合成数据集，对最先进的说话人认证系统进行了系统的实证评估，揭示了两个主要的安全漏洞：1) 使用极小样本训练的现代语音克隆模型可以轻易绕过商业说话人验证系统；2) 反欺骗探测器难以泛化到不同的音频合成方法，导致领域内性能与实际鲁棒性之间存在显著差距。这些发现呼吁重新考虑安全措施，并强调需要架构创新、自适应防御以及向多因素认证的转变。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Cryptography and Security (cs.CR)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Mengze Hong, Di Jiang, Zeying Xie, Weiwei Zhao, Guan Wang, Chen Jason Zhang",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "The World is Not Mono: Enabling Spatial Understanding in Large Audio-Language Models",
+    "paper_title_zh": "世界并非单一：在大音频语言模型中实现空间理解",
+    "paper_id": "2601.02954",
+    "paper_abstract": "Existing large audio-language models perceive the world as \"mono\" -- a single stream of audio that ignores the critical spatial dimension (\"where\") required for universal acoustic scene analysis. To bridge this gap, we first introduce a hierarchical framework for Auditory Scene Analysis (ASA). Guided by this framework, we introduce a system that enables models like Qwen2-Audio to understand and reason about the complex acoustic world. Our framework achieves this through three core contributions: First, we build a large-scale, synthesized binaural audio dataset to provide the rich spatial cues. Second, we design a hybrid feature projector, which leverages parallel semantic and spatial encoders to extract decoupled representations. These distinct streams are integrated via a dense fusion mechanism, ensuring the model receives a holistic view of the acoustic scene. Finally, we employ a progressive training curriculum, advancing from supervised fine-tuning (SFT) to reinforcement learning via Group Relative Policy Optimization (GRPO), to explicitly evolve the model's capabilities towards reasoning. On our comprehensive benchmark, the model demonstrates comparatively strong capability for spatial understanding. By enabling this spatial perception, our work provides a clear pathway for leveraging the powerful reasoning abilities of large models towards holistic acoustic scene analysis, advancing from \"mono\" semantic recognition to spatial intelligence.",
+    "paper_abstract_zh": "现有的大型音频语言模型将世界视为'单一'——一个忽略通用声场分析所需关键空间维度（'位置'）的单一音频流。为了弥合这一差距，我们首先引入了一个用于听觉场景分析（ASA）的分层框架。在该框架的指导下，我们引入了一个系统，使Qwen2-Audio等模型能够理解和推理复杂的声学世界。我们的框架通过三个核心贡献实现这一目标：首先，我们构建了一个大规模的合成双耳音频数据集，以提供丰富的空间线索。其次，我们设计了一个混合特征投影器，利用并行的语义和空间编码器提取解耦表示。这些不同的流通过密集融合机制集成，确保模型获得声场场景的整体视图。最后，我们采用渐进式训练课程，从监督微调（SFT）发展到通过组相对策略优化（GRPO）进行强化学习，明确将模型的能力推向推理方向。在我们全面的基准测试中，该模型展示了较强的空间理解能力。通过实现这种空间感知，我们的工作为利用大型模型的强大推理能力进行全面声场分析提供了明确途径，从'单一'语义识别迈向空间智能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Yuhuan You, Lai Wei, Xihong Wu, Tianshu Qu",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Interpretable All-Type Audio Deepfake Detection with Audio LLMs via Frequency-Time Reinforcement Learning",
+    "paper_title_zh": "",
+    "paper_id": "2601.02983",
+    "paper_abstract": "Recent advances in audio large language models (ALLMs) have made high-quality synthetic audio widely accessible, increasing the risk of malicious audio deepfakes across speech, environmental sounds, singing voice, and music. Real-world audio deepfake detection (ADD) therefore requires all-type detectors that generalize across heterogeneous audio and provide interpretable decisions. Given the strong multi-task generalization ability of ALLMs, we first investigate their performance on all-type ADD under both supervised fine-tuning (SFT) and reinforcement fine-tuning (RFT). However, SFT using only binary real/fake labels tends to reduce the model to a black-box classifier, sacrificing interpretability. Meanwhile, vanilla RFT under sparse supervision is prone to reward hacking and can produce hallucinated, ungrounded rationales. To address this, we propose an automatic annotation and polishing pipeline that constructs Frequency-Time structured chain-of-thought (CoT) rationales, producing ~340K cold-start demonstrations. Building on CoT data, we propose Frequency Time-Group Relative Policy Optimization (FT-GRPO), a two-stage training paradigm that cold-starts ALLMs with SFT and then applies GRPO under rule-based frequency-time constraints. Experiments demonstrate that FT-GRPO achieves state-of-the-art performance on all-type ADD while producing interpretable, FT-grounded rationales. The data and code are available online.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Yuankun Xie, Xiaoxuan Guo, Jiayi Zhou, Tao Wang, Jian Liu, Ruibo Fu, Xiaopeng Wang, Haonan Cheng, Long Ye",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Segment-Aware Conditioning for Training-Free Intra-Utterance Emotion and Duration Control in Text-to-Speech",
+    "paper_title_zh": "用于文本转语音的无训练段内情感和时长控制的分段感知条件生成",
+    "paper_id": "2601.03170",
+    "paper_abstract": "While controllable Text-to-Speech (TTS) has achieved notable progress, most existing methods remain limited to inter-utterance-level control, making fine-grained intra-utterance expression challenging due to their reliance on non-public datasets or complex multi-stage training. In this paper, we propose a training-free controllable framework for pretrained zero-shot TTS to enable intra-utterance emotion and duration expression. Specifically, we propose a segment-aware emotion conditioning strategy that combines causal masking with monotonic stream alignment filtering to isolate emotion conditioning and schedule mask transitions, enabling smooth intra-utterance emotion shifts while preserving global semantic coherence. Based on this, we further propose a segment-aware duration steering strategy to combine local duration embedding steering with global EOS logit modulation, allowing local duration adjustment while ensuring globally consistent termination. To eliminate the need for segment-level manual prompt engineering, we construct a 30,000-sample multi-emotion and duration-annotated text dataset to enable LLM-based automatic prompt construction. Extensive experiments demonstrate that our training-free method not only achieves state-of-the-art intra-utterance consistency in multi-emotion and duration control, but also maintains baseline-level speech quality of the underlying TTS model. Audio samples are available at this https URL.",
+    "paper_abstract_zh": "尽管可控文本转语音（TTS）已取得显著进展，但大多数现有方法仍局限于语句级控制，由于依赖非公开数据集或复杂的多阶段训练，使得细粒度的段内情感表达变得困难。本文提出了一种无需训练的可控框架，用于预训练的零样本TTS，以实现段内情感和时长表达。具体而言，我们提出了一种分段感知情感条件生成策略，该策略结合了因果掩码与单调流对齐过滤，以隔离情感条件生成并调度掩码转换，从而实现平滑的段内情感过渡，同时保持全局语义连贯性。基于此，我们进一步提出了一种分段感知时长控制策略，将局部时长嵌入控制与全局EOS（语句结束）对数调制相结合，允许局部时长调整，同时确保全局一致的终止。为消除段级手动提示工程的必要性，我们构建了一个包含30,000个样本的多情感和时长标注文本数据集，以支持基于大型语言模型（LLM）的自动提示构建。大量实验表明，我们的无需训练方法不仅在多情感和时长控制方面实现了最先进的段内一致性，而且保持了底层TTS模型的基线级语音质量。音频样本可通过提供的链接获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Qifan Liang, Yuansen Liu, Ruixin Wei, Nan Lu, Junchuan Zhao, Ye Wang",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "The Sonar Moment: Benchmarking Audio-Language Models in Audio Geo-Localization",
+    "paper_title_zh": "声呐时刻：在音频地理定位中评估音频语言模型",
+    "paper_id": "2601.03227",
+    "paper_abstract": "Geo-localization aims to infer the geographic origin of a given signal. In computer vision, geo-localization has served as a demanding benchmark for compositional reasoning and is relevant to public safety. In contrast, progress on audio geo-localization has been constrained by the lack of high-quality audio-location pairs. To address this gap, we introduce AGL1K, the first audio geo-localization benchmark for audio language models (ALMs), spanning 72 countries and territories. To extract reliably localizable samples from a crowd-sourced platform, we propose the Audio Localizability metric that quantifies the informativeness of each recording, yielding 1,444 curated audio clips. Evaluations on 16 ALMs show that ALMs have emerged with audio geo-localization capability. We find that closed-source models substantially outperform open-source models, and that linguistic clues often dominate as a scaffold for prediction. We further analyze ALMs' reasoning traces, regional bias, error causes, and the interpretability of the localizability metric. Overall, AGL1K establishes a benchmark for audio geo-localization and may advance ALMs with better geospatial reasoning capability.",
+    "paper_abstract_zh": "地理定位旨在推断给定信号的地理来源。在计算机视觉领域，地理定位已成为组合推理的严格基准，并与公共安全相关。相比之下，音频地理定位的进展因缺乏高质量的音频-位置对而受到限制。为解决这一差距，我们引入了AGL1K，这是首个面向音频语言模型(ALMs)的音频地理定位基准，涵盖72个国家和地区。为了从众包平台中提取可可靠定位的样本，我们提出了音频可定位性指标，用于量化每条录音的信息量，从而获得1,444条精选音频片段。对16个ALMs的评估表明，ALMs已展现出音频地理定位能力。我们发现闭源模型显著优于开源模型，且语言线索通常作为预测的支架。我们进一步分析了ALMs的推理轨迹、区域偏差、错误原因以及可定位性指标的可解释性。总体而言，AGL1K为音频地理定位建立了基准，并可能推动具有更好地理空间推理能力的ALMs的发展。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-07",
+    "paper_authors": "Ruixing Zhang, Zihan Liu, Leilei Sun, Tongyu Zhu, Weifeng Lv",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
