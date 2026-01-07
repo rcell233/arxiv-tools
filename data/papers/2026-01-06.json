@@ -133,10 +133,10 @@
   },
   {
     "paper_title": "IO-RAE: Information-Obfuscation Reversible Adversarial Example for Audio Privacy Protection",
-    "paper_title_zh": "",
+    "paper_title_zh": "IO-RAE：用于音频隐私保护的信息混淆可逆对抗样本",
     "paper_id": "2601.01239",
     "paper_abstract": "The rapid advancements in artificial intelligence have significantly accelerated the adoption of speech recognition technology, leading to its widespread integration across various applications. However, this surge in usage also highlights a critical issue: audio data is highly vulnerable to unauthorized exposure and analysis, posing significant privacy risks for businesses and individuals. This paper introduces an Information-Obfuscation Reversible Adversarial Example (IO-RAE) framework, the pioneering method designed to safeguard audio privacy using reversible adversarial examples. IO-RAE leverages large language models to generate misleading yet contextually coherent content, effectively preventing unauthorized eavesdropping by humans and Automatic Speech Recognition (ASR) systems. Additionally, we propose the Cumulative Signal Attack technique, which mitigates high-frequency noise and enhances attack efficacy by targeting low-frequency signals. Our approach ensures the protection of audio data without degrading its quality or our ability. Experimental evaluations demonstrate the superiority of our method, achieving a targeted misguidance rate of 96.5% and a remarkable 100% untargeted misguidance rate in obfuscating target keywords across multiple ASR models, including a commercial black-box system from Google. Furthermore, the quality of the recovered audio, measured by the Perceptual Evaluation of Speech Quality score, reached 4.45, comparable to high-quality original recordings. Notably, the recovered audio processed by ASR systems exhibited an error rate of 0%, indicating nearly lossless recovery. These results highlight the practical applicability and effectiveness of our IO-RAE framework in protecting sensitive audio privacy.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "人工智能的快速发展显著加速了语音识别技术的采用，导致其在各种应用中得到广泛集成。然而，这种使用激增也凸显了一个关键问题：音频数据极易受到未授权的暴露和分析，给企业和个人带来重大的隐私风险。本文介绍了一种信息混淆可逆对抗样本（IO-RAE）框架，这是首个旨在使用可逆对抗样本来保护音频隐私的方法。IO-RAE利用大型语言模型生成具有误导性但上下文连贯的内容，有效防止人类和自动语音识别（ASR）系统的未授权窃听。此外，我们提出了累积信号攻击技术，通过针对低频信号来减轻高频噪声并提高攻击效果。我们的方法确保在保护音频数据的同时不会降低其质量或我们的能力。实验评估证明了我们方法的优越性，在多个ASR模型（包括谷歌的商业黑盒系统）中混淆目标关键词时，实现了96.5%的定向误导率和100%的非定向误导率。此外，通过语音质量感知评估（PESQ）分数测量的恢复音频质量达到4.45，与高质量原始录音相当。值得注意的是，经过ASR系统处理的恢复音频显示出0%的错误率，表明几乎无损恢复。这些结果突显了我们的IO-RAE框架在保护敏感音频隐私方面的实际应用性和有效性。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -145,15 +145,19 @@
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Jiajie Zhu, Xia Du, Xiaoyuan Liu, Jizhe Zhou, Qizhen Xu, Zheng Lin, Chi-Man Pun",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Diffusion Timbre Transfer Via Mutual Information Guided Inpainting",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于互信息引导修复的音色迁移扩散模型",
     "paper_id": "2601.01294",
     "paper_abstract": "We study timbre transfer as an inference-time editing problem for music audio. Starting from a strong pre-trained latent diffusion model, we introduce a lightweight procedure that requires no additional training: (i) a dimension-wise noise injection that targets latent channels most informative of instrument identity, and (ii) an early-step clamping mechanism that re-imposes the input's melodic and rhythmic structure during reverse diffusion. The method operates directly on audio latents and is compatible with text/audio conditioning (e.g., CLAP). We discuss design choices,analyze trade-offs between timbral change and structural preservation, and show that simple inference-time controls can meaningfully steer pre-trained models for style-transfer use cases.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们将音色迁移研究作为音乐音频的推理时编辑问题。从一个强大的预训练潜在扩散模型出发，我们引入了一个轻量级程序，无需额外训练：(i) 一种针对最能体现乐器身份的潜在通道的逐维度噪声注入，以及(ii) 一种在反向扩散过程中重新施加输入旋律和节奏结构的早期步长钳制机制。该方法直接在音频潜在空间上操作，并与文本/音频条件（如CLAP）兼容。我们讨论了设计选择，分析了音色变化与结构保存之间的权衡，并表明简单的推理时控制可以有效地引导预训练模型用于风格迁移用例。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -161,8 +165,13 @@
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Ching Ho Lee, Javier Nistal, Stefan Lattner, Marco Pasini, George Fazekas",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "UltraEval-Audio: A Unified Framework for Comprehensive Evaluation of Audio Foundation Models",
@@ -189,10 +198,10 @@
   },
   {
     "paper_title": "SAFE-QAQ: End-to-End Slow-Thinking Audio-Text Fraud Detection via Reinforcement Learning",
-    "paper_title_zh": "",
+    "paper_title_zh": "SAFE-QAQ：基于强化学习的端到端慢思考音频文本欺诈检测",
     "paper_id": "2601.01392",
     "paper_abstract": "Existing fraud detection methods predominantly rely on transcribed text, suffering from ASR errors and missing crucial acoustic cues like vocal tone and environmental context. This limits their effectiveness against complex deceptive strategies. To address these challenges, we first propose \\textbf{SAFE-QAQ}, an end-to-end comprehensive framework for audio-based slow-thinking fraud detection. First, the SAFE-QAQ framework eliminates the impact of transcription errors on detection performance. Secondly, we propose rule-based slow-thinking reward mechanisms that systematically guide the system to identify fraud-indicative patterns by accurately capturing fine-grained audio details, through hierarchical reasoning processes. Besides, our framework introduces a dynamic risk assessment framework during live calls, enabling early detection and prevention of fraud. Experiments on the TeleAntiFraud-Bench demonstrate that SAFE-QAQ achieves dramatic improvements over existing methods in multiple key dimensions, including accuracy, inference efficiency, and real-time processing capabilities. Currently deployed and analyzing over 70,000 calls daily, SAFE-QAQ effectively automates complex fraud detection, reducing human workload and financial losses. Code: this https URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "现有的欺诈检测方法主要依赖转录文本，这导致ASR错误并缺失了重要的声学线索，如语音语调和环境上下文。这限制了它们应对复杂欺骗策略的有效性。为解决这些挑战，我们首先提出了SAFE-QAQ，这是一个基于音频的慢思考欺诈检测的端到端综合框架。首先，SAFE-QAQ框架消除了转录错误对检测性能的影响。其次，我们提出了基于规则的慢思考奖励机制，通过分层推理过程准确捕捉细粒度音频细节，系统性地指导识别欺诈指示模式。此外，我们的框架在实时通话中引入了动态风险评估框架，能够及早检测和预防欺诈。在TeleAntiFraud-Bench上的实验表明，SAFE-QAQ在准确性、推理效率和实时处理能力等多个关键维度上显著优于现有方法。目前，SAFE-QAQ已部署并每天分析超过70,000次通话，有效自动化了复杂欺诈检测，减少了人工工作量和财务损失。代码：this https URL。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -200,8 +209,13 @@
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Peidong Wang, Zhiming Ma, Xin Dai, Yongkang Liu, Shi Feng, Xiaocui Yang, Wenxing Hu, Zhihao Wang, Mingjun Pan, Li Yuan, Daling Wang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "OV-InstructTTS: Towards Open-Vocabulary Instruct Text-to-Speech",
@@ -330,17 +344,22 @@
   },
   {
     "paper_title": "A Mamba-Based Model for Automatic Chord Recognition",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于Mamba的自动和弦识别模型",
     "paper_id": "2601.02101",
     "paper_abstract": "In this work, we propose a new efficient solution, which is a Mamba-based model named BMACE (Bidirectional Mamba-based network, for Automatic Chord Estimation), which utilizes selective structured state-space models in a bidirectional Mamba layer to effectively model temporal dependencies. Our model achieves high prediction performance comparable to state-of-the-art models, with the advantage of requiring fewer parameters and lower computational resources",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "在这项工作中，我们提出了一种新的高效解决方案，名为BMACE（基于双向Mamba网络的自动和弦估计模型），该模型利用双向Mamba层中的选择性结构化状态空间模型来有效建模时间依赖性。我们的模型实现了与最先进模型相当的高预测性能，同时具有参数更少和计算资源需求更低的优点。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Chunyu Yuan, Johanna Devaney",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "HyperCLOVA X 8B Omni",
