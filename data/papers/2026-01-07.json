@@ -1,17 +1,22 @@
 [
   {
     "paper_title": "Vclip: Face-based Speaker Generation by Face-voice Association Learning",
-    "paper_title_zh": "",
+    "paper_title_zh": "Vclip：基于面部-语音关联学习的面部语音生成",
     "paper_id": "2601.02753",
     "paper_abstract": "This paper discusses the task of face-based speech synthesis, a kind of personalized speech synthesis where the synthesized voices are con- strained to perceptually match with a reference face image. Due to the lack of TTS-quality audio-visual corpora, previous approaches suffer from either low synthesis quality or domain mismatch induced by a knowledge transfer scheme. This paper proposes a new approach called Vclip that utilizes the facial-semantic knowledge of the CLIP encoder on noisy audio-visual data to learn the association between face and voice efficiently, achieving 89.63% cross-modal verification AUC score on Voxceleb testset. The proposed method then uses a retrieval-based strategy, combined with GMM-based speaker generation module for a downstream TTS system, to produce probable target speakers given reference images. Experimental results demonstrate that the proposed Vclip system in conjunction with the retrieval step can bridge the gap between face and voice features for face-based speech synthesis. And using the feedback information distilled from downstream TTS helps to synthesize voices that match closely with reference faces. Demos available at this http URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本文讨论了基于面部的语音合成任务，这是一种个性化语音合成，其中合成的语音在感知上与参考面部图像相匹配。由于缺乏TTS质量的视听语料库，先前的方法要么合成质量低，要么由知识转移方案引起的领域不匹配。本文提出了一种名为Vclip的新方法，该方法利用CLIP编码器在嘈杂视听数据上的面部语义知识，高效学习面部与语音之间的关联，在Voxceleb测试集上实现了89.63%的跨模态验证AUC分数。然后，该方法采用基于检索的策略，结合基于GMM的说话人生成模块用于下游TTS系统，根据参考图像生成可能的目标说话人。实验结果表明，所提出的Vclip系统与检索步骤相结合可以弥合面部与语音特征之间的差距，用于基于面部的语音合成。并且使用从下游TTS中提取的反馈信息有助于合成与参考面部紧密匹配的语音。演示可在http URL获取。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Yao Shi, Yunfei Xu, Hongbin Suo, Yulong Wan, Haifeng Liu",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "XLSR-MamBo: Scaling the Hybrid Mamba-Attention Backbone for Audio Deepfake Detection",
@@ -69,10 +74,10 @@
   },
   {
     "paper_title": "Quantifying Quanvolutional Neural Networks Robustness for Speech in Healthcare Applications",
-    "paper_title_zh": "",
+    "paper_title_zh": "量化量子卷积神经网络在医疗语音应用中的鲁棒性",
     "paper_id": "2601.02432",
     "paper_abstract": "Speech-based machine learning systems are sensitive to noise, complicating reliable deployment in emotion recognition and voice pathology detection. We evaluate the robustness of a hybrid quantum machine learning model, quanvolutional neural networks (QNNs) against classical convolutional neural networks (CNNs) under four acoustic corruptions (Gaussian noise, pitch shift, temporal shift, and speed variation) in a clean-train/corrupted-test regime. Using AVFAD (voice pathology) and TESS (speech emotion), we compare three QNN models (Random, Basic, Strongly) to a simple CNN baseline (CNN-Base), ResNet-18 and VGG-16 using accuracy and corruption metrics (CE, mCE, RCE, RmCE), and analyze architectural factors (circuit complexity or depth, convergence) alongside per-emotion robustness. QNNs generally outperform the CNN-Base under pitch shift, temporal shift, and speed variation (up to 22% lower CE/RCE at severe temporal shift), while the CNN-Base remains more resilient to Gaussian noise. Among quantum circuits, QNN-Basic achieves the best overall robustness on AVFAD, and QNN-Random performs strongest on TESS. Emotion-wise, fear is most robust (80-90% accuracy under severe corruptions), neutral can collapse under strong Gaussian noise (5.5% accuracy), and happy is most vulnerable to pitch, temporal, and speed distortions. QNNs also converge up to six times faster than the CNN-Base. To our knowledge, this is a systematic study of QNN robustness for speech under common non-adversarial acoustic corruptions, indicating that shallow entangling quantum front-ends can improve noise resilience while sensitivity to additive noise remains a challenge.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "基于语音的机器学习系统对噪声敏感，这使得在情感识别和语音病理检测中可靠部署变得复杂。我们评估了一种混合量子机器学习模型——量子卷积神经网络（QNNs）在四种声学失真（高斯噪声、音高偏移、时间偏移和速度变化）下的鲁棒性，并与经典卷积神经网络（CNNs）在干净训练/失真测试的条件下进行比较。使用AVFAD（语音病理）和TESS（语音情感）数据集，我们比较了三种QNN模型（随机、基础、强）与简单CNN基线（CNN-Base）、ResNet-18和VGG-16在准确率和失真指标（CE、mCE、RCE、RmCE）上的表现，并分析了架构因素（电路复杂度或深度、收敛性）以及每种情感的鲁棒性。在音高偏移、时间偏移和速度变化下，QNNs通常优于CNN-Base（在严重时间偏移下CE/RCE低至22%），而CNN-Base对高斯噪声更具抵抗力。在量子电路中，QNN-Basic在AVFAD上实现了最佳的整体鲁棒性，而QNN-Random在TESS上表现最强。从情感角度看，恐惧是最鲁棒的（在严重失真下准确率为80-90%），中性在强高斯噪声下可能崩溃（准确率为5.5%），而快乐对音高、时间和速度失真最敏感。QNNs的收敛速度比CNN-Base快六倍。据我们所知，这是对QNN在常见非对抗性声学失真下语音鲁棒性的系统性研究，表明浅层纠缠量子前端可以提高噪声鲁棒性，但对加性噪声的敏感性仍然是一个挑战。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Audio and Speech Processing (eess.AS)",
@@ -80,15 +85,20 @@
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Ha Tran, Bipasha Kashyap, Pubudu N. Pathirana",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "VocalBridge: Latent Diffusion-Bridge Purification for Defeating Perturbation-Based Voiceprint Defenses",
-    "paper_title_zh": "",
+    "paper_title_zh": "VocalBridge: 基于潜在扩散桥净化的抗扰动语音指纹防御方法",
     "paper_id": "2601.02444",
     "paper_abstract": "The rapid advancement of speech synthesis technologies, including text-to-speech (TTS) and voice conversion (VC), has intensified security and privacy concerns related to voice cloning. Recent defenses attempt to prevent unauthorized cloning by embedding protective perturbations into speech to obscure speaker identity while maintaining intelligibility. However, adversaries can apply advanced purification techniques to remove these perturbations, recover authentic acoustic characteristics, and regenerate cloneable voices. Despite the growing realism of such attacks, the robustness of existing defenses under adaptive purification remains insufficiently studied.\nMost existing purification methods are designed to counter adversarial noise in automatic speech recognition (ASR) systems rather than speaker verification or voice cloning pipelines. As a result, they fail to suppress the fine-grained acoustic cues that define speaker identity and are often ineffective against speaker verification attacks (SVA). To address these limitations, we propose Diffusion-Bridge (VocalBridge), a purification framework that learns a latent mapping from perturbed to clean speech in the EnCodec latent space. Using a time-conditioned 1D U-Net with a cosine noise schedule, the model enables efficient, transcript-free purification while preserving speaker-discriminative structure. We further introduce a Whisper-guided phoneme variant that incorporates lightweight temporal guidance without requiring ground-truth transcripts. Experimental results show that our approach consistently outperforms existing purification methods in recovering cloneable voices from protected speech. Our findings demonstrate the fragility of current perturbation-based defenses and highlight the need for more robust protection mechanisms against evolving voice-cloning and speaker verification threats.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "语音合成技术的快速发展，包括文本到语音（TTS）和语音转换（VC），加剧了与语音克隆相关的安全和隐私问题。最近的防御尝试通过在语音中嵌入保护性扰动来模糊说话人身份，同时保持可懂度，从而防止未经授权的克隆。然而，攻击者可以应用先进的净化技术来移除这些扰动，恢复真实的声学特征，并重新生成可克隆的语音。尽管此类攻击的真实性不断提高，但现有防御在自适应净化下的鲁棒性仍未得到充分研究。\n大多数现有的净化方法旨在对抗自动语音识别（ASR）系统中的对抗性噪声，而非说话人验证或语音克隆管道。因此，它们无法抑制定义说话人身份的细粒度声学线索，并且对说话人验证攻击（SVA）通常无效。为解决这些局限性，我们提出了扩散桥（VocalBridge），一种在EnCodec潜在空间中学习从扰动语音到干净语音的潜在映射的净化框架。使用具有余弦噪声调度的时间条件1D U-Net，该模型实现了高效的无脚本净化，同时保留了说话人区分性结构。我们进一步引入了一种Whisper引导的音素变体，它集成了轻量级的时间引导，而无需真实转录。实验结果表明，我们的方法在从受保护语音中恢复可克隆语音方面始终优于现有的净化方法。我们的研究结果证明了当前基于扰动的防御的脆弱性，并强调了需要更强大的保护机制来应对不断发展的语音克隆和说话人验证威胁。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Sound (cs.SD)",
@@ -98,8 +108,14 @@
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Maryam Abbasihafshejani, AHM Nazmus Sakib, Murtuza Jadliwala",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Enhancement",
+      "Audio Codec",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Dynamic Quantization Error Propagation in Encoder-Decoder ASR Quantization",
@@ -119,18 +135,23 @@
   },
   {
     "paper_title": "SPO-CLAPScore: Enhancing CLAP-based alignment prediction system with Standardize Preference Optimization, for the first XACLE Challenge",
-    "paper_title_zh": "",
+    "paper_title_zh": "SPO-CLAPScore: 通过标准化偏好优化增强基于CLAP的对齐预测系统，用于首届XACLE挑战赛",
     "paper_id": "2601.02900",
     "paper_abstract": "The first XACLE Challenge (x-to-audio alignment challenge) addresses the critical need for automatic evaluation metrics that correlate with human perception of audio-text semantic alignment. In this paper, we describe the \"Takano_UTokyo_03\" system submitted to XACLE Challenge. Our approach leverages a CLAPScore-based architecture integrated with a novel training method called Standardized Preference Optimization (SPO). SPO standardizes the raw alignment scores provided by each listener, enabling the model to learn relative preferences and mitigate the impact of individual scoring biases. Additionally, we employ listener screening to exclude listeners with inconsistent ratings. Experimental evaluations demonstrate that both SPO and listener screening effectively improve the correlation with human judgment. Our system achieved 6th place in the challenge with a Spearman's rank correlation coefficient (SRCC) of 0.6142, demonstrating competitive performance within a marginal gap from the top-ranked systems. The code is available at this https URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "首届XACLE挑战赛（文本到音频对齐挑战赛）解决了自动评估指标与人类对音频-文本语义对齐感知之间的相关性这一关键需求。在本文中，我们描述了提交给XACLE挑战赛的\"Takano_UTokyo_03\"系统。我们的方法基于CLAPScore架构，并结合了一种名为标准化偏好优化（SPO）的新型训练方法。SPO标准化了每位听众提供的原始对齐分数，使模型能够学习相对偏好并减轻个人评分偏差的影响。此外，我们采用听众筛选来排除评分不一致的听众。实验评估表明，SPO和听众筛选都有效提高了与人类判断的相关性。我们的系统在挑战赛中排名第六，Spearman等级相关系数（SRCC）为0.6142，展示了与排名靠前的系统相比具有竞争力的性能。代码可在提供的URL获取。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Taisei Takano, Ryoya Yoshida",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "MoE Adapter for Large Audio Language Models: Sparsity, Disentanglement, and Gradient-Conflict-Free",
@@ -155,33 +176,43 @@
   },
   {
     "paper_title": "Discovering and Causally Validating Emotion-Sensitive Neurons in Large Audio-Language Models",
-    "paper_title_zh": "",
+    "paper_title_zh": "在大规模音频语言模型中发现并因果验证情感敏感神经元",
     "paper_id": "2601.03115",
     "paper_abstract": "Emotion is a central dimension of spoken communication, yet, we still lack a mechanistic account of how modern large audio-language models (LALMs) encode it internally. We present the first neuron-level interpretability study of emotion-sensitive neurons (ESNs) in LALMs and provide causal evidence that such units exist in Qwen2.5-Omni, Kimi-Audio, and Audio Flamingo 3. Across these three widely used open-source models, we compare frequency-, entropy-, magnitude-, and contrast-based neuron selectors on multiple emotion recognition benchmarks. Using inference-time interventions, we reveal a consistent emotion-specific signature: ablating neurons selected for a given emotion disproportionately degrades recognition of that emotion while largely preserving other classes, whereas gain-based amplification steers predictions toward the target emotion. These effects arise with modest identification data and scale systematically with intervention strength. We further observe that ESNs exhibit non-uniform layer-wise clustering with partial cross-dataset transfer. Taken together, our results offer a causal, neuron-level account of emotion decisions in LALMs and highlight targeted neuron interventions as an actionable handle for controllable affective behaviors.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "情感是口语交流的核心维度，然而，我们仍然缺乏对现代大规模音频语言模型（LALMs）如何内部编码情感的机制性解释。我们首次对LALMs中的情感敏感神经元（ESNs）进行了神经元级别的可解释性研究，并提供了因果证据，证明此类单元存在于Qwen2.5-Omni、Kimi-Audio和Audio Flamingo 3这三个广泛使用的开源模型中。在这三个模型中，我们在多个情感识别基准上比较了基于频率、熵、幅度和对比度的神经元选择器。通过推理时干预，我们揭示了一致的情感特异性特征：针对特定情感选择的神经元消融会不成比例地降低该情感的识别能力，同时 largely 保持其他类别不变，而基于增益的放大则使预测向目标情感方向偏移。这些效应在适中的识别数据下出现，并随干预强度系统性地增强。我们进一步观察到ESNs表现出非均匀的层间聚类，并具有部分跨数据集迁移能力。综上所述，我们的研究结果为LALMs中的情感决策提供了因果性的神经元级别解释，并突出了靶向神经元干预作为可控情感行为的可行手段。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Xiutian Zhao, Björn Schuller, Berrak Sisman",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Understanding Human Perception of Music Plagiarism Through a Computational Approach",
-    "paper_title_zh": "",
+    "paper_title_zh": "通过计算方法理解人类对音乐抄袭的感知",
     "paper_id": "2601.02586",
     "paper_abstract": "There is a wide variety of music similarity detection algorithms, while discussions about music plagiarism in the real world are often based on audience perceptions. Therefore, we aim to conduct a study to examine the key criteria of human perception of music plagiarism, focusing on the three commonly used musical features in similarity analysis: melody, rhythm, and chord progression. After identifying the key features and levels of variation humans use in perceiving musical similarity, we propose a LLM-as-a-judge framework that applies a systematic, step-by-step approach, drawing on modules that extract such high-level attributes.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "存在多种音乐相似性检测算法，而现实世界中关于音乐抄袭的讨论通常基于观众的感知。因此，我们旨在进行研究，以检验人类感知音乐抄袭的关键标准，重点关注相似性分析中常用的三个音乐特征：旋律、节奏和和弦进行。在确定人类用于感知音乐相似性的关键特征和变化水平后，我们提出了一个LLM-as-a-judge框架，该框架采用系统化的分步方法，借鉴提取这些高级属性的模块。",
     "subjects": [
       "Sound (cs.SD)",
       "Information Retrieval (cs.IR)"
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Daeun Hwang, Hyeonbin Hwang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "A Music Information Retrieval Approach to Classify Sub-Genres in Role Playing Games",

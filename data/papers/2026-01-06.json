@@ -243,10 +243,10 @@
   },
   {
     "paper_title": "Bridging the gap: A comparative exploration of Speech-LLM and end-to-end architecture for multilingual conversational ASR",
-    "paper_title_zh": "",
+    "paper_title_zh": "弥合差距：Speech-LLM与端到端架构在多语言对话ASR中的比较探索",
     "paper_id": "2601.01461",
     "paper_abstract": "The INTERSPEECH 2025 Challenge on Multilingual Conversational Speech Language Models (MLC-SLM) promotes multilingual conversational ASR with large language models (LLMs). Our previous SHNU-mASR system adopted a competitive parallel-speech-encoder architecture that integrated Whisper and mHuBERT with an LLM. However, it faced two challenges: simple feature concatenation may not fully exploit complementary information, and the performance gap between LLM-based ASR and end-to-end(E2E) encoder-decoder ASR remained unexplored. In this work, we present an enhanced LLM-based ASR framework that combines fine-tuned Whisper and mHuBERT encoders with an LLM to enrich speech representations. We first evaluate E2E Whisper models with LoRA and full fine-tuning on the MLC-SLM ASR task, and then propose cross-attention-based fusion mechanisms for the parallel-speech-encoder. On the official evaluation set of the MLC-SLM Challenge, our system achieves a CER/WER of 10.69%, ranking on par with the top-ranked Track 1 systems, even though it uses only 1,500 hours of baseline training data compared with their large-scale training sets. Nonetheless, we find that our final LLM-based ASR still does not match the performance of a fine-tuned E2E Whisper model, providing valuable empirical guidance for future Speech-LLM design. Our code is publicly available at this https URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "INTERSPEECH 2025多语言对话语音语言模型(MLC-SLM)挑战赛旨在通过大型语言模型(LLMs)促进多语言对话自动语音识别(ASR)。我们之前的SHNU-mASR系统采用了一种具有竞争力的并行语音编码器架构，将Whisper和mHuBERT与LLM集成。然而，它面临两个挑战：简单的特征连接可能无法充分利用互补信息，并且基于LLM的ASR与端到端(E2E)编码器-解码器ASR之间的性能差距仍未被探索。在这项工作中，我们提出了一个增强的基于LLM的ASR框架，结合了微调的Whisper和mHuBERT编码器与LLM，以丰富语音表示。我们首先在MLC-SLM ASR任务上使用LoRA和完全微调评估E2E Whisper模型，然后提出了基于交叉注意力的并行语音编码器融合机制。在MLC-SLM挑战赛的官方评估集上，我们的系统实现了10.69%的CER/WER，与排名第一的Track 1系统并列，尽管与它们的大规模训练集相比，我们仅使用了1500小时的基线训练数据。尽管如此，我们发现我们最终的基于LLM的ASR仍然无法与微调的E2E Whisper模型相匹配，为未来的Speech-LLM设计提供了宝贵的经验指导。我们的代码已在提供的URL上公开。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -254,8 +254,13 @@
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Yuxiang Mei, Dongxing Xu, Jiaen Liang, Yanhua Long",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "MOSS Transcribe Diarize: Accurate Transcription with Speaker Diarization",
