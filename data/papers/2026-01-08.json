@@ -1,0 +1,255 @@
+[
+  {
+    "paper_title": "Discriminating real and synthetic super-resolved audio samples using embedding-based classifiers",
+    "paper_title_zh": "基于嵌入分类器的真实与合成超分辨率音频样本鉴别",
+    "paper_id": "2601.03443",
+    "paper_abstract": "Generative adversarial networks (GANs) and diffusion models have recently achieved state-of-the-art performance in audio super-resolution (ADSR), producing perceptually convincing wideband audio from narrowband inputs. However, existing evaluations primarily rely on signal-level or perceptual metrics, leaving open the question of how closely the distributions of synthetic super-resolved and real wideband audio match. Here we address this problem by analyzing the separability of real and super-resolved audio in various embedding spaces. We consider both middle-band ($4\\to 16$~kHz) and full-band ($16\\to 48$~kHz) upsampling tasks for speech and music, training linear classifiers to distinguish real from synthetic samples based on multiple types of audio embeddings. Comparisons with objective metrics and subjective listening tests reveal that embedding-based classifiers achieve near-perfect separation, even when the generated audio attains high perceptual quality and state-of-the-art metric scores. This behavior is consistent across datasets and models, including recent diffusion-based approaches, highlighting a persistent gap between perceptual quality and true distributional fidelity in ADSR models.",
+    "paper_abstract_zh": "生成对抗网络(GANs)和扩散模型最近在音频超分辨率(ADSR)方面取得了最先进的性能，能够从窄带输入生成感知上令人信服的宽带音频。然而，现有的评估主要依赖于信号级或感知指标，这留下了合成超分辨率音频与真实宽带音频的分布匹配程度如何的问题。我们通过分析各种嵌入空间中真实和超分辨率音频的可分性来解决这个问题。我们考虑了语音和音乐的中频段(4→16 kHz)和全频段(16→48 kHz)上采样任务，训练线性分类器基于多种类型的音频嵌入来区分真实和合成样本。与客观指标和主观听音测试的比较表明，基于嵌入的分类器实现了近乎完美的分离，即使生成的音频获得了高感知质量和最先进的指标分数。这种行为在数据集和模型中是一致的，包括最近的基于扩散的方法，这突显了ADSR模型中感知质量和真实分布保真度之间的持续差距。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Mikhail Silaev, Konstantinos Drossos, Tuomas Virtanen",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Learning from Limited Labels: Transductive Graph Label Propagation for Indian Music Analysis",
+    "paper_title_zh": "",
+    "paper_id": "2601.03626",
+    "paper_abstract": "Supervised machine learning frameworks rely on extensive labeled datasets for robust performance on real-world tasks. However, there is a lack of large annotated datasets in audio and music domains, as annotating such recordings is resource-intensive, laborious, and often require expert domain knowledge. In this work, we explore the use of label propagation (LP), a graph-based semi-supervised learning technique, for automatically labeling the unlabeled set in an unsupervised manner. By constructing a similarity graph over audio embeddings, we propagate limited label information from a small annotated subset to a larger unlabeled corpus in a transductive, semi-supervised setting. We apply this method to two tasks in Indian Art Music (IAM): Raga identification and Instrument classification. For both these tasks, we integrate multiple public datasets along with additional recordings we acquire from Prasar Bharati Archives to perform LP. Our experiments demonstrate that LP significantly reduces labeling overhead and produces higher-quality annotations compared to conventional baseline methods, including those based on pretrained inductive models. These results highlight the potential of graph-based semi-supervised learning to democratize data annotation and accelerate progress in music information retrieval.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Parampreet Singh, Akshay Raina, Sayeedul Islam Sheikh, Vipul Arora",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "ReStyle-TTS: Relative and Continuous Style Control for Zero-Shot Speech Synthesis",
+    "paper_title_zh": "",
+    "paper_id": "2601.03632",
+    "paper_abstract": "Zero-shot text-to-speech models can clone a speaker's timbre from a short reference audio, but they also strongly inherit the speaking style present in the reference. As a result, synthesizing speech with a desired style often requires carefully selecting reference audio, which is impractical when only limited or mismatched references are available. While recent controllable TTS methods attempt to address this issue, they typically rely on absolute style targets and discrete textual prompts, and therefore do not support continuous and reference-relative style control. We propose ReStyle-TTS, a framework that enables continuous and reference-relative style control in zero-shot TTS. Our key insight is that effective style control requires first reducing the model's implicit dependence on reference style before introducing explicit control mechanisms. To this end, we introduce Decoupled Classifier-Free Guidance (DCFG), which independently controls text and reference guidance, reducing reliance on reference style while preserving text fidelity. On top of this, we apply style-specific LoRAs together with Orthogonal LoRA Fusion to enable continuous and disentangled multi-attribute control, and introduce a Timbre Consistency Optimization module to mitigate timbre drift caused by weakened reference guidance. Experiments show that ReStyle-TTS enables user-friendly, continuous, and relative control over pitch, energy, and multiple emotions while maintaining intelligibility and speaker timbre, and performs robustly in challenging mismatched reference-target style scenarios.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Haitao Li, Chunxiang Jin, Chenglin Li, Wenhao Guan, Zhengxing Huang, Xie Chen",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "TellWhisper: Tell Whisper Who Speaks When",
+    "paper_title_zh": "",
+    "paper_id": "2601.03712",
+    "paper_abstract": "Multi-speaker automatic speech recognition (MASR) aims to predict ''who spoke when and what'' from multi-speaker speech, a key technology for multi-party dialogue understanding. However, most existing approaches decouple temporal modeling and speaker modeling when addressing ''when'' and ''who'': some inject speaker cues before encoding (e.g., speaker masking), which can cause irreversible information loss; others fuse identity by mixing speaker posteriors after encoding, which may entangle acoustic content with speaker identity. This separation is brittle under rapid turn-taking and overlapping speech, often leading to degraded performance. To address these limitations, we propose TellWhisper, a unified framework that jointly models speaker identity and temporal within the speech encoder. Specifically, we design TS-RoPE, a time-speaker rotary positional encoding: time coordinates are derived from frame indices, while speaker coordinates are derived from speaker activity and pause cues. By applying region-specific rotation angles, the model explicitly captures per-speaker continuity, speaker-turn transitions, and state dynamics, enabling the attention mechanism to simultaneously attend to ''when'' and ''who''. Moreover, to estimate frame-level speaker activity, we develop Hyper-SD, which casts speaker classification in hyperbolic space to enhance inter-class separation and refine speaker-activity estimates. Extensive experiments demonstrate the effectiveness of the proposed approach.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Yifan Hu, Peiji Yang, Zhisheng Wang, Yicheng Zhong, Rui Liu",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Sound Event Detection with Boundary-Aware Optimization and Inference",
+    "paper_title_zh": "",
+    "paper_id": "2601.04178",
+    "paper_abstract": "Temporal detection problems appear in many fields including time-series estimation, activity recognition and sound event detection (SED). In this work, we propose a new approach to temporal event modeling by explicitly modeling event onsets and offsets, and by introducing boundary-aware optimization and inference strategies that substantially enhance temporal event detection. The presented methodology incorporates new temporal modeling layers - Recurrent Event Detection (RED) and Event Proposal Network (EPN) - which, together with tailored loss functions, enable more effective and precise temporal event detection. We evaluate the proposed method in the SED domain using a subset of the temporally-strongly annotated portion of AudioSet. Experimental results show that our approach not only outperforms traditional frame-wise SED models with state-of-the-art post-processing, but also removes the need for post-processing hyperparameter tuning, and scales to achieve new state-of-the-art performance across all AudioSet Strong classes.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Florian Schmid, Chi Ian Tang, Sanjeel Parekh, Vamsi Krishna Ithapu, Juan Azcarreta Ortiz, Giacomo Ferroni, Yijun Qian, Arnoldas Jasonas, Cosmin Frateanu, Camilla Clark, Gerhard Widmer, Çağdaş Bilen",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Investigation into respiratory sound classification for an imbalanced data set using hybrid LSTM-KAN architectures",
+    "paper_title_zh": "",
+    "paper_id": "2601.03610",
+    "paper_abstract": "Respiratory sounds captured via auscultation contain critical clues for diagnosing pulmonary conditions. Automated classification of these sounds faces challenges due to subtle acoustic differences and severe class imbalance in clinical datasets. This study investigates respiratory sound classification with a focus on mitigating pronounced class imbalance. We propose a hybrid deep learning model that combines a Long Short-Term Memory (LSTM) network for sequential feature encoding with a Kolmogorov-Arnold Network (KAN) for classification. The model is integrated with a comprehensive feature extraction pipeline and targeted imbalance mitigation strategies. Experiments were conducted on a public respiratory sound database comprising six classes with a highly skewed distribution. Techniques such as focal loss, class-specific data augmentation, and Synthetic Minority Over-sampling Technique (SMOTE) were employed to enhance minority class recognition. The proposed Hybrid LSTM-KAN model achieves an overall accuracy of 94.6 percent and a macro-averaged F1 score of 0.703, despite the dominant COPD class accounting for over 86 percent of the data. Improved detection performance is observed for minority classes compared to baseline approaches, demonstrating the effectiveness of the proposed architecture for imbalanced respiratory sound classification.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Nithinkumar K.V, Anand R",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Mathematical Foundations of Polyphonic Music Generation via Structural Inductive Bias",
+    "paper_title_zh": "",
+    "paper_id": "2601.03612",
+    "paper_abstract": "This monograph introduces a novel approach to polyphonic music generation by addressing the \"Missing Middle\" problem through structural inductive bias. Focusing on Beethoven's piano sonatas as a case study, we empirically verify the independence of pitch and hand attributes using normalized mutual information (NMI=0.167) and propose the Smart Embedding architecture, achieving a 48.30% reduction in parameters. We provide rigorous mathematical proofs using information theory (negligible loss bounded at 0.153 bits), Rademacher complexity (28.09% tighter generalization bound), and category theory to demonstrate improved stability and generalization. Empirical results show a 9.47% reduction in validation loss, confirmed by SVD analysis and an expert listening study (N=53). This dual theoretical and applied framework bridges gaps in AI music generation, offering verifiable insights for mathematically grounded deep learning.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Joonwon Seo",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Analyzing Reasoning Shifts in Audio Deepfake Detection under Adversarial Attacks: The Reasoning Tax versus Shield Bifurcation",
+    "paper_title_zh": "",
+    "paper_id": "2601.03615",
+    "paper_abstract": "Audio Language Models (ALMs) offer a promising shift towards explainable audio deepfake detections (ADDs), moving beyond \\textit{black-box} classifiers by providing some level of transparency into their predictions via reasoning traces. This necessitates a new class of model robustness analysis: robustness of the predictive reasoning under adversarial attacks, which goes beyond existing paradigm that mainly focuses on the shifts of the final predictions (e.g., fake v.s. real). To analyze such reasoning shifts, we introduce a forensic auditing framework to evaluate the robustness of ALMs' reasoning under adversarial attacks in three inter-connected dimensions: acoustic perception, cognitive coherence, and cognitive dissonance. Our systematic analysis reveals that explicit reasoning does not universally enhance robustness. Instead, we observe a bifurcation: for models exhibiting robust acoustic perception, reasoning acts as a defensive \\textit{``shield''}, protecting them from adversarial attacks. However, for others, it imposes a performance \\textit{``tax''}, particularly under linguistic attacks which reduce cognitive coherence and increase attack success rate. Crucially, even when classification fails, high cognitive dissonance can serve as a \\textit{silent alarm}, flagging potential manipulation. Overall, this work provides a critical evaluation of the role of reasoning in forensic audio deepfake analysis and its vulnerabilities.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Binh Nguyen, Thai Le",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Objective comparison of auditory profiles using manifold learning and intrinsic measures",
+    "paper_title_zh": "",
+    "paper_id": "2601.03827",
+    "paper_abstract": "Assigning individuals with hearing impairment to auditory profiles can support a better understanding of the causes and consequences of hearing loss and facilitate profile-based hearing-aid fitting. However, the factors influencing auditory profile generation remain insufficiently understood, and existing profiling frameworks have rarely been compared systematically. This study therefore investigated the impact of two key factors - the clustering method and the number of profiles - on auditory profile generation. In addition, eight established auditory profiling frameworks were systematically reviewed and compared using intrinsic statistical measures and manifold learning techniques. Frameworks were evaluated with respect to internal consistency (i.e., grouping similar individuals) and cluster separation (i.e., clear differentiation between groups). To ensure comparability, all analyses were conducted on a common open-access dataset, the extended Oldenburg Hearing Health Record (OHHR), comprising 1,127 participants (mean age = 67.2 years, SD = 12.0). Results showed that both the clustering method and the chosen number of profiles substantially influenced the resulting auditory profiles. Among purely audiogram-based approaches, the Bisgaard auditory profiles demonstrated the strongest clustering performance, whereas audiometric phenotypes performed worst. Among frameworks incorporating supra-threshold information in addition to the audiogram, the Hearing4All auditory profiles were advantageous, combining a near-optimal number of profile classes (N = 13) with high clustering quality, as indicated by a low Davies-Bouldin index. In conclusion, manifold learning and intrinsic measures enable systematic comparison of auditory profiling frameworks and identify the Hearing4All auditory profile as a promising approach for future research.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Medical Physics (physics.med-ph)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Chen Xu, Birger Kollmeier, Lena Schell-Majoor",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Domain Adaptation of the Pyannote Diarization Pipeline for Conversational Indonesian Audio",
+    "paper_title_zh": "",
+    "paper_id": "2601.03684",
+    "paper_abstract": "This study presents a domain adaptation approach for speaker diarization targeting conversational Indonesian audio. We address the challenge of adapting an English-centric diarization pipeline to a low-resource language by employing synthetic data generation using neural Text-to-Speech technology. Experiments were conducted with varying training configurations, a small dataset (171 samples) and a large dataset containing 25 hours of synthetic speech. Results demonstrate that the baseline \\texttt{pyannote/segmentation-3.0} model, trained on the AMI Corpus, achieves a Diarization Error Rate (DER) of 53.47\\% when applied zero-shot to Indonesian. Domain adaptation significantly improves performance, with the small dataset models reducing DER to 34.31\\% (1 epoch) and 34.81\\% (2 epochs). The model trained on the 25-hour dataset achieves the best performance with a DER of 29.24\\%, representing a 13.68\\% absolute improvement over the baseline while maintaining 99.06\\% Recall and 87.14\\% F1-Score.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Muhammad Daffa'i Rafi Prasetyo, Ramadhan Andika Putra, Zaidan Naufal Ilmi, Kurniawati Azizah",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "IndexTTS 2.5 Technical Report",
+    "paper_title_zh": "",
+    "paper_id": "2601.03888",
+    "paper_abstract": "In prior work, we introduced IndexTTS 2, a zero-shot neural text-to-speech foundation model comprising two core components: a transformer-based Text-to-Semantic (T2S) module and a non-autoregressive Semantic-to-Mel (S2M) module, which together enable faithful emotion replication and establish the first autoregressive duration-controllable generative paradigm. Building upon this, we present IndexTTS 2.5, which significantly enhances multilingual coverage, inference speed, and overall synthesis quality through four key improvements: 1) Semantic Codec Compression: we reduce the semantic codec frame rate from 50 Hz to 25 Hz, halving sequence length and substantially lowering both training and inference costs; 2) Architectural Upgrade: we replace the U-DiT-based backbone of the S2M module with a more efficient Zipformer-based modeling architecture, achieving notable parameter reduction and faster mel-spectrogram generation; 3) Multilingual Extension: We propose three explicit cross-lingual modeling strategies, boundary-aware alignment, token-level concatenation, and instruction-guided generation, establishing practical design principles for zero-shot multilingual emotional TTS that supports Chinese, English, Japanese, and Spanish, and enables robust emotion transfer even without target-language emotional training data; 4) Reinforcement Learning Optimization: we apply GRPO in post-training of the T2S module, improving pronunciation accuracy and natrualness. Experiments show that IndexTTS 2.5 not only supports broader language coverage but also replicates emotional prosody in unseen languages under the same zero-shot setting. IndexTTS 2.5 achieves a 2.28 times improvement in RTF while maintaining comparable WER and speaker similarity to IndexTTS 2.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Yunpei Li, Xun Zhou, Jinchao Wang, Lu Wang, Yong Wu, Siyi Zhou, Yiquan Zhou, Jingchen Shu",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Lightweight and perceptually-guided voice conversion for electro-laryngeal speech",
+    "paper_title_zh": "",
+    "paper_id": "2601.03892",
+    "paper_abstract": "Electro-laryngeal (EL) speech is characterized by constant pitch, limited prosody, and mechanical noise, reducing naturalness and intelligibility. We propose a lightweight adaptation of the state-of-the-art StreamVC framework to this setting by removing pitch and energy modules and combining self-supervised pretraining with supervised fine-tuning on parallel EL and healthy (HE) speech data, guided by perceptual and intelligibility losses. Objective and subjective evaluations across different loss configurations confirm their influence: the best model variant, based on WavLM features and human-feedback predictions (+WavLM+HF), drastically reduces character error rate (CER) of EL inputs, raises naturalness mean opinion score (nMOS) from 1.1 to 3.3, and consistently narrows the gap to HE ground-truth speech in all evaluated metrics. These findings demonstrate the feasibility of adapting lightweight voice conversion architectures to EL voice rehabilitation while also identifying prosody generation and intelligibility improvements as the main remaining bottlenecks.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Benedikt Mayrhofer, Franz Pernkopf, Philipp Aichinger, Martin Hagmüller",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Muse: Towards Reproducible Long-Form Song Generation with Fine-Grained Style Control",
+    "paper_title_zh": "",
+    "paper_id": "2601.03973",
+    "paper_abstract": "Recent commercial systems such as Suno demonstrate strong capabilities in long-form song generation, while academic research remains largely non-reproducible due to the lack of publicly available training data, hindering fair comparison and progress. To this end, we release a fully open-source system for long-form song generation with fine-grained style conditioning, including a licensed synthetic dataset, training and evaluation pipelines, and Muse, an easy-to-deploy song generation model. The dataset consists of 116k fully licensed synthetic songs with automatically generated lyrics and style descriptions paired with audio synthesized by SunoV5. We train Muse via single-stage supervised finetuning of a Qwen-based language model extended with discrete audio tokens using MuCodec, without task-specific losses, auxiliary objectives, or additional architectural components. Our evaluations find that although Muse is trained with a modest data scale and model size, it achieves competitive performance on phoneme error rate, text--music style similarity, and audio aesthetic quality, while enabling controllable segment-level generation across different musical structures. All data, model weights, and training and evaluation pipelines will be publicly released, paving the way for continued progress in controllable long-form song generation research. The project repository is available at this https URL.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Changhao Jiang, Jiahao Chen, Zhenghao Xiang, Zhixiong Yang, Hanchen Wang, Jiabao Zhuang, Xinmeng Che, Jiajun Sun, Hui Li, Yifei Cao, Shihan Dou, Ming Zhang, Junjie Ye, Tao Ji, Tao Gui, Qi Zhang, Xuanjing Huang",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Listen to Rhythm, Choose Movements: Autoregressive Multimodal Dance Generation via Diffusion and Mamba with Decoupled Dance Dataset",
+    "paper_title_zh": "",
+    "paper_id": "2601.03323",
+    "paper_abstract": "Advances in generative models and sequence learning have greatly promoted research in dance motion generation, yet current methods still suffer from coarse semantic control and poor coherence in long sequences. In this work, we present Listen to Rhythm, Choose Movements (LRCM), a multimodal-guided diffusion framework supporting both diverse input modalities and autoregressive dance motion generation. We explore a feature decoupling paradigm for dance datasets and generalize it to the Motorica Dance dataset, separating motion capture data, audio rhythm, and professionally annotated global and local text descriptions. Our diffusion architecture integrates an audio-latent Conformer and a text-latent Cross-Conformer, and incorporates a Motion Temporal Mamba Module (MTMM) to enable smooth, long-duration autoregressive synthesis. Experimental results indicate that LRCM delivers strong performance in both functional capability and quantitative metrics, demonstrating notable potential in multimodal input scenarios and extended sequence generation. We will release the full codebase, dataset, and pretrained models publicly upon acceptance.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Cryptography and Security (cs.CR)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Oran Duan, Yinghua Shen, Yingzhu Lv, Luyang Jie, Yaxin Liu, Qiong Wu",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "ASVspoof 5: Evaluation of Spoofing, Deepfake, and Adversarial Attack Detection Using Crowdsourced Speech",
+    "paper_title_zh": "",
+    "paper_id": "2601.03944",
+    "paper_abstract": "ASVspoof 5 is the fifth edition in a series of challenges which promote the study of speech spoofing and deepfake detection solutions. A significant change from previous challenge editions is a new crowdsourced database collected from a substantially greater number of speakers under diverse recording conditions, and a mix of cutting-edge and legacy generative speech technology. With the new database described elsewhere, we provide in this paper an overview of the ASVspoof 5 challenge results for the submissions of 53 participating teams. While many solutions perform well, performance degrades under adversarial attacks and the application of neural encoding/compression schemes. Together with a review of post-challenge results, we also report a study of calibration in addition to other principal challenges and outline a road-map for the future of ASVspoof.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Xin Wang, Héctor Delgado, Nicholas Evans, Xuechen Liu, Tomi Kinnunen, Hemlata Tak, Kong Aik Lee, Ivan Kukanov, Md Sahidullah, Massimiliano Todisco, Junichi Yamagishi",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Klear: Unified Multi-Task Audio-Video Joint Generation",
+    "paper_title_zh": "",
+    "paper_id": "2601.04151",
+    "paper_abstract": "Audio-video joint generation has progressed rapidly, yet substantial challenges still remain. Non-commercial approaches still suffer audio-visual asynchrony, poor lip-speech alignment, and unimodal degradation, which can be stemmed from weak audio-visual correspondence modeling, limited generalization, and scarce high-quality dense-caption data. To address these issues, we introduce Klear and delve into three axes--model architecture, training strategy, and data curation. Architecturally, we adopt a single-tower design with unified DiT blocks and an Omni-Full Attention mechanism, achieving tight audio-visual alignment and strong scalability. Training-wise, we adopt a progressive multitask regime--random modality masking to joint optimization across tasks, and a multistage curriculum, yielding robust representations, strengthening A-V aligned world knowledge, and preventing unimodal collapse. For datasets, we present the first large-scale audio-video dataset with dense captions, and introduce a novel automated data-construction pipeline which annotates and filters millions of diverse, high-quality, strictly aligned audio-video-caption triplets. Building on this, Klear scales to large datasets, delivering high-fidelity, semantically and temporally aligned, instruction-following generation in both joint and unimodal settings while generalizing robustly to out-of-distribution scenarios. Across tasks, it substantially outperforms prior methods by a large margin and achieves performance comparable to Veo 3, offering a unified, scalable path toward next-generation audio-video synthesis.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Artificial Intelligence (cs.AI)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-08",
+    "paper_authors": "Jun Wang, Chunyu Qiang, Yuxin Guo, Yiran Wang, Xijuan Zeng, Chen Zhang, Pengfei Wan",
+    "topic": [],
+    "category": []
+  }
+]

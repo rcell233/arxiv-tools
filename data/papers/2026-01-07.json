@@ -119,10 +119,10 @@
   },
   {
     "paper_title": "Dynamic Quantization Error Propagation in Encoder-Decoder ASR Quantization",
-    "paper_title_zh": "",
+    "paper_title_zh": "编码器-解码器ASR量化中的动态量化误差传播",
     "paper_id": "2601.02455",
     "paper_abstract": "Running Automatic Speech Recognition (ASR) models on memory-constrained edge devices requires efficient compression. While layer-wise post-training quantization is effective, it suffers from error accumulation, especially in encoder-decoder architectures. Existing solutions like Quantization Error Propagation (QEP) are suboptimal for ASR due to the model's heterogeneity, processing acoustic features in the encoder while generating text in the decoder. To address this, we propose Fine-grained Alpha for Dynamic Quantization Error Propagation (FADE), which adaptively controls the trade-off between cross-layer error correction and local quantization. Experiments show that FADE significantly improves stability by reducing performance variance across runs, while simultaneously surpassing baselines in mean WER.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "在内存受限的边缘设备上运行自动语音识别(ASR)模型需要高效的压缩。虽然逐层后训练量化是有效的，但它存在误差累积问题，特别是在编码器-解码器架构中。现有的量化误差传播(QEP)解决方案由于模型的异构性（编码器处理声学特征，解码器生成文本）在ASR中表现不佳。为此，我们提出了用于动态量化误差传播的细粒度Alpha(FADE)，该方法自适应地控制跨层误差校正与局部量化之间的权衡。实验表明，FADE通过减少运行间的性能方差显著提高了稳定性，同时在平均词错误率(WER)上超越了基线方法。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Sound (cs.SD)",
@@ -130,8 +130,12 @@
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Xinyu Wang, Yajie Luo, Yihong Wu, Liheng Ma, Ziyu Zhao, Jingrui Tian, Lei Ding, Yufei Cui, Xiao-Wen Chang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "SPO-CLAPScore: Enhancing CLAP-based alignment prediction system with Standardize Preference Optimization, for the first XACLE Challenge",
@@ -231,18 +235,23 @@
   },
   {
     "paper_title": "Multi-channel multi-speaker transformer for speech recognition",
-    "paper_title_zh": "",
+    "paper_title_zh": "多通道多说话人Transformer用于语音识别",
     "paper_id": "2601.02688",
     "paper_abstract": "With the development of teleconferencing and in-vehicle voice assistants, far-field multi-speaker speech recognition has become a hot research topic. Recently, a multi-channel transformer (MCT) has been proposed, which demonstrates the ability of the transformer to model far-field acoustic environments. However, MCT cannot encode high-dimensional acoustic features for each speaker from mixed input audio because of the interference between speakers. Based on these, we propose the multi-channel multi-speaker transformer (M2Former) for far-field multi-speaker ASR in this paper. Experiments on the SMS-WSJ benchmark show that the M2Former outperforms the neural beamformer, MCT, dual-path RNN with transform-average-concatenate and multi-channel deep clustering based end-to-end systems by 9.2%, 14.3%, 24.9%, and 52.2% respectively, in terms of relative word error rate reduction.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "随着远程会议和车载语音助手的发展，远场多说话人语音识别已成为一个热门研究课题。最近，多通道Transformer(MCT)被提出，展示了Transformer建模远场声学环境的能力。然而，由于说话人之间的干扰，MCT无法从混合输入音频中为每个说话人编码高维声学特征。基于此，本文提出了用于远场多说话人ASR的多通道多说话人Transformer(M2Former)。在SMS-WSJ基准测试上的实验表明，M2Former在相对词错误率降低方面分别比波束成形器、MCT、双路径RNN与变换-平均-连接相结合的系统以及基于多通道深度聚类的端到端系统高出9.2%、14.3%、24.9%和52.2%。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Guo Yifan, Tian Yao, Suo Hongbin, Wan Yulong",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Omni2Sound: Towards Unified Video-Text-to-Audio Generation",
