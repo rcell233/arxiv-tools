@@ -264,10 +264,10 @@
   },
   {
     "paper_title": "MOSS Transcribe Diarize: Accurate Transcription with Speaker Diarization",
-    "paper_title_zh": "",
+    "paper_title_zh": "MOSS Transcribe Diarize: 带说话人分离的准确转录",
     "paper_id": "2601.01554",
     "paper_abstract": "Speaker-Attributed, Time-Stamped Transcription (SATS) aims to transcribe what is said and to precisely determine the timing of each speaker, which is particularly valuable for meeting transcription. Existing SATS systems rarely adopt an end-to-end formulation and are further constrained by limited context windows, weak long-range speaker memory, and the inability to output timestamps. To address these limitations, we present MOSS Transcribe Diarize, a unified multimodal large language model that jointly performs Speaker-Attributed, Time-Stamped Transcription in an end-to-end paradigm. Trained on extensive real wild data and equipped with a 128k context window for up to 90-minute inputs, MOSS Transcribe Diarize scales well and generalizes robustly. Across comprehensive evaluations, it outperforms state-of-the-art commercial systems on multiple public and in-house benchmarks.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "说话人属性时间戳转录(SATS)旨在转录所说的内容并精确确定每个说话人的时间点，这对会议转录特别有价值。现有的SATS系统很少采用端到端的公式，并且受到有限上下文窗口、弱长程说话人记忆和无法输出时间戳的限制。为解决这些局限性，我们提出了MOSS Transcribe Diarize，这是一个统一的 multimodal 大型语言模型，以端到端范式联合执行说话人属性时间戳转录。该模型在大量真实野外数据上进行训练，并配备了128k上下文窗口，可处理长达90分钟的输入，MOSS Transcribe Diarize扩展性好且泛化能力强。在全面评估中，它在多个公共和内部基准测试上优于最先进的商业系统。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)",
@@ -275,8 +275,13 @@
     ],
     "update_time": "2026-01-06",
     "paper_authors": "Donghua Yu, Zhengyuan Lin, Chen Yang, Yiyang Zhang, Zhaoye Fei, Hanfu Chen, Jingqi Chen, Ke Chen, Qinyuan Cheng, Liwei Fan, Yi Jiang, Jie Zhu, Muchen Li, Shimin Li, Wenxuan Wang, Yang Wang, Zhe Xu, Yitian Gong, Yuqian Zhang",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "MM-Sonate: Multimodal Controllable Audio-Video Generation with Zero-Shot Voice Cloning",

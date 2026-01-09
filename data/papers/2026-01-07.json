@@ -39,17 +39,22 @@
   },
   {
     "paper_title": "Towards Fine-Grained and Multi-Granular Contrastive Language-Speech Pre-training",
-    "paper_title_zh": "",
+    "paper_title_zh": "迈向细粒度和多粒度对比语言语音预训练",
     "paper_id": "2601.03065",
     "paper_abstract": "Modeling fine-grained speaking styles remains challenging for language-speech representation pre-training, as existing speech-text models are typically trained with coarse captions or task-specific supervision, and scalable fine-grained style annotations are unavailable. We present FCaps, a large-scale dataset with fine-grained free-text style descriptions, encompassing 47k hours of speech and 19M fine-grained captions annotated via a novel end-to-end pipeline that directly grounds detailed captions in audio, thereby avoiding the error propagation caused by LLM-based rewriting in existing cascaded pipelines. Evaluations using LLM-as-a-judge demonstrate that our annotations surpass existing cascaded annotations in terms of correctness, coverage, and naturalness. Building on FCaps, we propose CLSP, a contrastive language-speech pre-trained model that integrates global and fine-grained supervision, enabling unified representations across multiple granularities. Extensive experiments demonstrate that CLSP learns fine-grained and multi-granular speech-text representations that perform reliably across global and fine-grained speech-text retrieval, zero-shot paralinguistic classification, and speech style similarity scoring, with strong alignment to human judgments. All resources will be made publicly available.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "为语言语音表征预训练建模细粒度说话风格仍然具有挑战性，因为现有的语音文本模型通常使用粗略的标题或任务特定的监督进行训练，且可扩展的细粒度风格标注不可用。我们提出了FCaps，这是一个包含细粒度自由文本风格描述的大规模数据集，涵盖47,000小时的语音和1,900万条细粒度标题，这些标题通过一种新颖的端到端流程进行标注，直接将详细标题锚定在音频中，从而避免了现有级联流程中基于大型语言模型重写导致的错误传播。使用大型语言模型作为评估者的评估表明，我们的标注在正确性、覆盖范围和自然度方面超越了现有的级联标注。基于FCaps，我们提出了CLSP，一种对比语言语音预训练模型，它整合了全局和细粒度监督，实现了跨多粒度的统一表征。大量实验证明，CLSP学习到的细粒度和多粒度语音文本表征在全局和细粒度语音文本检索、零次语言分类和语音风格相似度评分方面表现可靠，且与人类判断高度一致。所有资源将公开提供。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Yifan Yang, Bing Han, Hui Wang, Wei Wang, Ziyang Ma, Long Zhou, Zengrui Jin, Guanrou Yang, Tianrui Wang, Xu Tan, Xie Chen",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "WearVox: An Egocentric Multichannel Voice Assistant Benchmark for Wearables",
@@ -220,18 +225,23 @@
   },
   {
     "paper_title": "A Music Information Retrieval Approach to Classify Sub-Genres in Role Playing Games",
-    "paper_title_zh": "",
+    "paper_title_zh": "一种用于角色扮演游戏子流派分类的音乐信息检索方法",
     "paper_id": "2601.02591",
     "paper_abstract": "Video game music (VGM) is often studied under the same lens as film music, which largely focuses on its theoretical functionality with relation to the identified genres of the media. However, till date, we are unaware of any systematic approach that analyzes the quantifiable musical features in VGM across several identified game genres. Therefore, we extracted musical features from VGM in games from three sub-genres of Role-Playing Games (RPG), and then hypothesized how different musical features are correlated to the perceptions and portrayals of each genre. This observed correlation may be used to further suggest such features are relevant to the expected storytelling elements or play mechanics associated with the sub-genre.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "电子游戏音乐（VGM）通常与电影音乐在同一框架下进行研究，这主要关注其与媒体已识别流派相关的理论功能。然而，迄今为止，我们尚不清楚任何系统性的方法能够分析跨多个已识别游戏流派的VGM中的可量化音乐特征。因此，我们从三个角色扮演游戏（RPG）子流派的游戏中提取了VGM的音乐特征，然后假设不同的音乐特征如何与每个流派的感知和表现相关联。这种观察到的相关性可用于进一步表明这些特征与子流派相关的预期叙事元素或游戏机制相关。",
     "subjects": [
       "Sound (cs.SD)",
       "Information Retrieval (cs.IR)"
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Daeun Hwang, Xuyuan Cai, Edward F. Melcer, Elin Carstensdottir",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Multi-channel multi-speaker transformer for speech recognition",
@@ -336,18 +346,24 @@
   },
   {
     "paper_title": "Interpretable All-Type Audio Deepfake Detection with Audio LLMs via Frequency-Time Reinforcement Learning",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于频率-时间强化学习的音频大语言模型可解释全类型音频深度伪造检测",
     "paper_id": "2601.02983",
     "paper_abstract": "Recent advances in audio large language models (ALLMs) have made high-quality synthetic audio widely accessible, increasing the risk of malicious audio deepfakes across speech, environmental sounds, singing voice, and music. Real-world audio deepfake detection (ADD) therefore requires all-type detectors that generalize across heterogeneous audio and provide interpretable decisions. Given the strong multi-task generalization ability of ALLMs, we first investigate their performance on all-type ADD under both supervised fine-tuning (SFT) and reinforcement fine-tuning (RFT). However, SFT using only binary real/fake labels tends to reduce the model to a black-box classifier, sacrificing interpretability. Meanwhile, vanilla RFT under sparse supervision is prone to reward hacking and can produce hallucinated, ungrounded rationales. To address this, we propose an automatic annotation and polishing pipeline that constructs Frequency-Time structured chain-of-thought (CoT) rationales, producing ~340K cold-start demonstrations. Building on CoT data, we propose Frequency Time-Group Relative Policy Optimization (FT-GRPO), a two-stage training paradigm that cold-starts ALLMs with SFT and then applies GRPO under rule-based frequency-time constraints. Experiments demonstrate that FT-GRPO achieves state-of-the-art performance on all-type ADD while producing interpretable, FT-grounded rationales. The data and code are available online.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "音频大语言模型（ALLMs）的最新进展使得高质量合成音频变得广泛可及，增加了语音、环境声音、歌唱声音和音乐中恶意音频深度伪造的风险。因此，现实世界的音频深度伪造检测（ADD）需要能够跨异构音频泛化并提供可解释决策的全类型检测器。鉴于ALLMs强大的多任务泛化能力，我们首先研究了它们在监督微调（SFT）和强化微调（RFT）下对全类型ADD的性能。然而，仅使用二元真实/伪造标签的SFT往往会将模型简化为黑盒分类器，牺牲了可解释性。同时，在稀疏监督下的原始RFT容易出现奖励黑客攻击，并可能产生幻觉的、无依据的推理。为解决这一问题，我们提出了一种自动标注和润色流程，构建频率-时间结构化的思维链（CoT）推理，生成了约34万个冷启动演示。基于CoT数据，我们提出了频率-时间组相对策略优化（FT-GRPO），这是一种两阶段训练范式，先用SFT冷启动ALLMs，然后在基于规则的频率-时间约束下应用GRPO。实验表明，FT-GRPO在全类型ADD上实现了最先进的性能，同时产生了可解释的、基于频率-时间的推理。数据和代码已在线公开。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2026-01-07",
     "paper_authors": "Yuankun Xie, Xiaoxuan Guo, Jiayi Zhou, Tao Wang, Jian Liu, Ruibo Fu, Xiaopeng Wang, Haonan Cheng, Long Ye",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Segment-Aware Conditioning for Training-Free Intra-Utterance Emotion and Duration Control in Text-to-Speech",
