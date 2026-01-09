@@ -1,0 +1,370 @@
+[
+  {
+    "paper_title": "Latent-Level Enhancement with Flow Matching for Robust Automatic Speech Recognition",
+    "paper_title_zh": "基于流匹配的潜在层增强用于鲁棒自动语音识别",
+    "paper_id": "2601.04459",
+    "paper_abstract": "Noise-robust automatic speech recognition (ASR) has been commonly addressed by applying speech enhancement (SE) at the waveform level before recognition. However, speech-level enhancement does not always translate into consistent recognition improvements due to residual distortions and mismatches with the latent space of the ASR encoder. In this letter, we introduce a complementary strategy termed latent-level enhancement, where distorted representations are refined during ASR inference. Specifically, we propose a plug-and-play Flow Matching Refinement module (FM-Refiner) that operates on the output latents of a pretrained CTC-based ASR encoder. Trained to map imperfect latents-either directly from noisy inputs or from enhanced-but-imperfect speech-toward their clean counterparts, the FM-Refiner is applied only at inference, without fine-tuning ASR parameters. Experiments show that FM-Refiner consistently reduces word error rate, both when directly applied to noisy inputs and when combined with conventional SE front-ends. These results demonstrate that latent-level refinement via flow matching provides a lightweight and effective complement to existing SE approaches for robust ASR.",
+    "paper_abstract_zh": "噪声鲁棒的自动语音识别(ASR)通常通过在识别前对波形进行语音增强(SE)来解决。然而，语音级别的增强并不总能转化为识别性能的一致提升，这是由于残留失真与ASR编码器潜在空间的不匹配。在本研究中，我们引入了一种称为潜在层增强的互补策略，即在ASR推理过程中优化失真表示。具体而言，我们提出了一种即插即用的流匹配优化模块(FM-Refiner)，该模块在预训练的基于CTC的ASR编码器的输出潜在表示上运行。FM-Refiner被训练为将不完美的潜在表示(直接来自噪声输入或来自增强但不完美的语音)映射到其对应的干净表示，仅在推理时应用，无需微调ASR参数。实验表明，无论是直接应用于噪声输入还是与传统SE前端结合，FM-Refiner都能持续降低词错误率。这些结果证明，通过流匹配进行潜在层优化为现有SE方法提供了一种轻量级且有效的补充，用于鲁棒ASR。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Da-Hee Yang, Joon-Hyuk Chang",
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "LLMs-Integrated Automatic Hate Speech Recognition Using Controllable Text Generation Models",
+    "paper_title_zh": "基于可控文本生成模型的LLMs集成自动仇恨言论识别",
+    "paper_id": "2601.04654",
+    "paper_abstract": "This paper proposes an automatic speech recognition (ASR) model for hate speech using large language models (LLMs). The proposed method integrates the encoder of the ASR model with the decoder of the LLMs, enabling simultaneous transcription and censorship tasks to prevent the exposure of harmful content. Instruction tuning of the LLM to mask hate-related words with specific tokens requires an annotated hate speech dataset, which is limited. We generate text samples using an LLM with the Chain-of-Thought (CoT) prompting technique guided by cultural context and examples and then convert them into speech samples using a text-to-speech (TTS) system. However, some of them contain non-hate speech samples with hate-related words, which degrades the censorship performance. This paper filters the samples which text classification models correctly label as hate content. By adjusting the threshold for the number of correct answer models, we can control the level of hate in the generated dataset, allowing us to train the LLMs through curriculum learning in a gradual manner. Experimental results show that the proposed method achieves a masking accuracy of 58.6\\% for hate-related words, surpassing previous baselines. We also confirm that the curriculum training contributes to the efficiency of both transcription and censorship tasks.",
+    "paper_abstract_zh": "本文提出了一种使用大型语言模型（LLMs）的自动仇恨言论识别（ASR）模型。该方法将ASR模型的编码器与LLMs的解码器集成，实现转录和审查任务的同步进行，以防止有害内容的暴露。对LLMs进行指令调优，使其用特定标记屏蔽仇恨相关词汇，需要标注的仇恨言论数据集，而这种数据集有限。我们使用具有思维链（CoT）提示技术的LLMs，在文化背景和示例的指导下生成文本样本，然后通过文本转语音（TTS）系统将其转换为语音样本。然而，其中一些样本包含带有仇恨相关词汇的非仇恨言论样本，这降低了审查性能。本文筛选了文本分类模型正确标记为仇恨内容的样本。通过调整正确答案模型数量的阈值，我们可以控制生成数据集中仇恨的程度，从而能够通过课程学习逐步训练LLMs。实验结果表明，该方法对仇恨相关词汇的屏蔽准确率达到58.6%，超过了之前的基线。我们还确认，课程学习有助于提高转录和审查任务的效率。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Ryutaro Oshima, Yuya Hosoda, Youji Iiguni",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Gradient-based Optimisation of Modulation Effects",
+    "paper_title_zh": "基于梯度的调制效果优化",
+    "paper_id": "2601.04867",
+    "paper_abstract": "Modulation effects such as phasers, flangers and chorus effects are heavily used in conjunction with the electric guitar. Machine learning based emulation of analog modulation units has been investigated in recent years, but most methods have either been limited to one class of effect or suffer from a high computational cost or latency compared to canonical digital implementations. Here, we build on previous work and present a framework for modelling flanger, chorus and phaser effects based on differentiable digital signal processing. The model is trained in the time-frequency domain, but at inference operates in the time-domain, requiring zero latency. We investigate the challenges associated with gradient-based optimisation of such effects, and show that low-frequency weighting of loss functions avoids convergence to local minima when learning delay times. We show that when trained against analog effects units, sound output from the model is in some cases perceptually indistinguishable from the reference, but challenges still remain for effects with long delay times and feedback.",
+    "paper_abstract_zh": "诸如相位器、镶边和合唱等调制效果常与电吉他结合使用。近年来，基于机器学习的模拟调制单元已被研究，但大多数方法要么局限于某一类效果，要么与经典数字实现相比存在高计算成本或延迟问题。本文基于先前工作，提出了一种基于可微分数字信号处理的镶边、合唱和相位器效果建模框架。该模型在时频域进行训练，但在推理时在时域运行，实现零延迟。我们研究了与基于梯度的调制效果优化相关的挑战，并证明损失函数的低频加权可以避免在学习延迟时间时陷入局部最小值。我们证明，当针对模拟调制单元进行训练时，模型的输出在某些情况下在感知上与参考信号无法区分，但对于具有长延迟时间和反馈的效果仍存在挑战。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Alistair Carson, Alec Wright, Stefan Bilbao",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Predictive Controlled Music",
+    "paper_title_zh": "预测控制音乐",
+    "paper_id": "2601.04221",
+    "paper_abstract": "This paper presents a new approach to algorithmic composition, called predictive controlled music (PCM), which combines model predictive control (MPC) with music generation. PCM uses dynamic models to predict and optimize the music generation process, where musical notes are computed in a manner similar to an MPC problem by optimizing a performance measure. A feedforward neural network-based assessment function is used to evaluate the generated musical score, which serves as the objective function of the PCM optimization problem. Furthermore, a recurrent neural network model is employed to capture the relationships among the variables in the musical notes, and this model is then used to define the constraints in the PCM. Similar to MPC, the proposed PCM computes musical notes in a receding-horizon manner, leading to feedback controlled prediction. Numerical examples are presented to illustrate the PCM generation method.",
+    "paper_abstract_zh": "本文提出了一种算法作曲的新方法，称为预测控制音乐（PCM），该方法将模型预测控制（MPC）与音乐生成相结合。PCM使用动态模型来预测和优化音乐生成过程，其中音符的计算方式类似于MPC问题，通过优化性能指标来实现。基于前馈神经网络的评估函数用于评估生成的乐谱，作为PCM优化问题的目标函数。此外，采用循环神经网络模型来捕捉音符中变量之间的关系，然后该模型被用于定义PCM的约束条件。类似于MPC，所提出的PCM以滚动时域的方式计算音符，从而实现反馈控制预测。通过数值示例来说明PCM生成方法。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Systems and Control (eess.SY)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Midhun T. Augustine",
+    "topic": [
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "From Imitation to Innovation: The Divergent Paths of Techno in Germany and the USA",
+    "paper_title_zh": "从模仿到创新：德国和美国Techno音乐的分化路径",
+    "paper_id": "2601.04222",
+    "paper_abstract": "Many documentaries on early house and techno music exist. Here, protagonists from the scenes describe key elements and events that affected the evolution of the music. In the research community, there is consensus that such descriptions have to be examined critically. Yet, there have not been attempts to validate such statements on the basis of audio analyses. In this study, over 9,000 early house and techno tracks from Germany and the United States of America are analyzed using recording studio features, machine learning and inferential statistics. Three observations can be made: 1.) German and US house/techno music are distinct, 2.) US styles are much more alike, and 3.) scarcely evolved over time compared to German house/techno regarding the recording studio features. These findings are in agreement with documented statements and thus provide an audio-based perspective on why techno became a mass phenomenon in Germany but remained a fringe phenomenon in the USA. Observations like these can help the music industry estimate whether new trends will experience a breakthrough or disappear.",
+    "paper_abstract_zh": "关于早期House和Techno音乐的纪录片有很多。在这些纪录片中，场景中的主角描述了影响音乐演变的关键元素和事件。在研究界，人们一致认为这些描述需要经过批判性检验。然而，还没有尝试基于音频分析来验证这些说法。在本研究中，通过使用录音室特征、机器学习和推断统计学，分析了来自德国和美国的9000多首早期House和Techno曲目。可以得出三个观察结果：1）德国和美国的House/Techno音乐有明显区别，2）美国风格更加相似，3）与德国House/Techno相比，美国的录音室特征随时间演变较少。这些发现与已有文献中的陈述一致，从而提供了基于音频的视角，解释了为什么Techno音乐在德国成为大众现象，而在美国却 remained a 边缘现象。类似的观察可以帮助音乐行业估计新趋势是否会取得突破或消失。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Tim Ziemer, Simon Linke",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Defense Against Synthetic Speech: Real-Time Detection of RVC Voice Conversion Attacks",
+    "paper_title_zh": "防御合成语音：实时检测RVC语音转换攻击",
+    "paper_id": "2601.04227",
+    "paper_abstract": "Generative audio technologies now enable highly realistic voice cloning and real-time voice conversion, increasing the risk of impersonation, fraud, and misinformation in communication channels such as phone and video calls. This study investigates real-time detection of AI-generated speech produced using Retrieval-based Voice Conversion (RVC), evaluated on the DEEP-VOICE dataset, which includes authentic and voice-converted speech samples from multiple well-known speakers. To simulate realistic conditions, deepfake generation is applied to isolated vocal components, followed by the reintroduction of background ambiance to suppress trivial artifacts and emphasize conversion-specific cues. We frame detection as a streaming classification task by dividing audio into one-second segments, extracting time-frequency and cepstral features, and training supervised machine learning models to classify each segment as real or voice-converted. The proposed system enables low-latency inference, supporting both segment-level decisions and call-level aggregation. Experimental results show that short-window acoustic features can reliably capture discriminative patterns associated with RVC speech, even in noisy backgrounds. These findings demonstrate the feasibility of practical, real-time deepfake speech detection and underscore the importance of evaluating under realistic audio mixing conditions for robust deployment.",
+    "paper_abstract_zh": "生成式音频技术现在能够实现高度逼真的语音克隆和实时语音转换，增加了电话和视频通话等通信渠道中冒充、欺诈和虚假信息传播的风险。本研究调查了使用基于检索的语音转换（RVC）生成的AI语音的实时检测，并在DEEP-VOICE数据集上进行了评估，该数据集包含来自多个知名演讲者的真实和语音转换的语音样本。为了模拟真实条件，深度伪造生成被应用于独立的语音成分，然后重新引入背景环境以抑制琐碎的伪影并强调转换特定的线索。我们将检测框定为流式分类任务，将音频分割成一秒的片段，提取时频和倒谱特征，并训练监督机器学习模型将每个片段分类为真实或语音转换。所提出的系统支持低延迟推理，支持片段级决策和通话级聚合。实验结果表明，短窗口声学特征可以可靠地捕获与RVC语音相关的判别模式，即使在嘈杂的背景下也是如此。这些研究结果证明了实用、实时的深度伪造语音检测的可行性，并强调了在稳健部署下在真实音频混合条件下评估的重要性。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Prajwal Chinchmalatpure, Suyash Chinchmalatpure, Siddharth Chavan",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "LEMAS: Large A 150K-Hour Large-scale Extensible Multilingual Audio Suite with Generative Speech Models",
+    "paper_title_zh": "LEMAS: 一个包含生成式语音模型的大规模可扩展多语言语音套件，时长超过15万小时",
+    "paper_id": "2601.04233",
+    "paper_abstract": "We present the LEMAS-Dataset, which, to our knowledge, is currently the largest open-source multilingual speech corpus with word-level timestamps. Covering over 150,000 hours across 10 major languages, LEMAS-Dataset is constructed via a efficient data processing pipeline that ensures high-quality data and annotations. To validate the effectiveness of LEMAS-Dataset across diverse generative paradigms, we train two benchmark models with distinct architectures and task specializations on this dataset. LEMAS-TTS, built upon a non-autoregressive flow-matching framework, leverages the dataset's massive scale and linguistic diversity to achieve robust zero-shot multilingual synthesis. Our proposed accent-adversarial training and CTC loss mitigate cross-lingual accent issues, enhancing synthesis stability. Complementarily, LEMAS-Edit employs an autoregressive decoder-only architecture that formulates speech editing as a masked token infilling task. By exploiting precise word-level alignments to construct training masks and adopting adaptive decoding strategies, it achieves seamless, smooth-boundary speech editing with natural transitions. Experimental results demonstrate that models trained on LEMAS-Dataset deliver high-quality synthesis and editing performance, confirming the dataset's quality. We envision that this richly timestamp-annotated, fine-grained multilingual corpus will drive future advances in prompt-based speech generation systems.",
+    "paper_abstract_zh": "我们介绍了LEMAS-Dataset，据我们所知，这是目前最大的开源带词级时间戳的多语言语音语料库。该数据集涵盖10种主要语言的超过15万小时语音，通过高效的数据处理流程构建，确保了高质量的数据和标注。为了验证LEMAS-Dataset在不同生成范式中的有效性，我们使用该数据集训练了两个具有不同架构和任务专业化的基准模型。LEMAS-TTS基于非自回归流匹配框架构建，利用数据集的巨大规模和语言多样性实现了强大的零样本多语言合成。我们提出的口音对抗训练和CTC损失减轻了跨语言口音问题，提高了合成稳定性。此外，LEMAS-Edit采用自回归仅解码器架构，将语音编辑表述为掩码标记填充任务。通过利用精确的词级对齐来构建训练掩码，并采用自适应解码策略，它实现了无缝、平滑边界的语音编辑，具有自然的过渡效果。实验结果表明，在LEMAS-Dataset上训练的模型提供了高质量的合成和编辑性能，证实了该数据集的质量。我们设想这个富含时间戳标注的细粒度多语言语料库将推动基于提示的语音生成系统的未来发展。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Zhiyuan Zhao, Lijian Lin, Ye Zhu, Kai Xie, Yunfei Liu, Yu Li",
+    "topic": [
+      "Speech Synthesis",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SmoothSync: Dual-Stream Diffusion Transformers for Jitter-Robust Beat-Synchronized Gesture Generation from Quantized Audio",
+    "paper_title_zh": "SmoothSync: 用于量化音频的抗抖动节拍同步手势生成的双流扩散变换器",
+    "paper_id": "2601.04236",
+    "paper_abstract": "Co-speech gesture generation is a critical area of research aimed at synthesizing speech-synchronized human-like gestures. Existing methods often suffer from issues such as rhythmic inconsistency, motion jitter, foot sliding and limited multi-sampling diversity. In this paper, we present SmoothSync, a novel framework that leverages quantized audio tokens in a novel dual-stream Diffusion Transformer (DiT) architecture to synthesis holistic gestures and enhance sampling variation. Specifically, we (1) fuse audio-motion features via complementary transformer streams to achieve superior synchronization, (2) introduce a jitter-suppression loss to improve temporal smoothness, (3) implement probabilistic audio quantization to generate distinct gesture sequences from identical inputs. To reliably evaluate beat synchronization under jitter, we introduce Smooth-BC, a robust variant of the beat consistency metric less sensitive to motion noise. Comprehensive experiments on the BEAT2 and SHOW datasets demonstrate SmoothSync's superiority, outperforming state-of-the-art methods by -30.6% FGD, 10.3% Smooth-BC, and 8.4% Diversity on BEAT2, while reducing jitter and foot sliding by -62.9% and -17.1% respectively. The code will be released to facilitate future research.",
+    "paper_abstract_zh": "语音同步手势生成是一个关键研究领域，旨在合成与语音同步类人手势。现有方法常常存在节奏不一致、运动抖动、脚部滑动和有限的多采样多样性等问题。在本文中，我们提出了SmoothSync，一种新颖的框架，利用量化音频标记在双流扩散变换器(DiT)架构中合成整体手势并增强采样变化。具体而言，我们(1)通过互补的变换器流融合音频-运动特征以实现 superior 同步，(2)引入抖动抑制损失以提高时间平滑性，(3)实现概率音频量化以从相同输入生成不同的手势序列。为了在抖动下可靠评估节拍同步，我们引入了Smooth-BC，一种对运动噪声不太敏感的节拍一致性指标的鲁棒变体。在BEAT2和SHOW数据集上的综合实验证明了SmoothSync的优越性，在BEAT2上比最先进的方法分别实现了-30.6% FGD、10.3% Smooth-BC和8.4% Diversity的提升，同时分别减少了-62.9%和-17.1%的抖动和脚部滑动。代码将发布以促进未来研究。",
+    "subjects": [
+      "Robotics (cs.RO)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Yujiao Jiang, Qingmin Liao, Zongqing Lu",
+    "topic": [
+      "Audio Representation Learning",
+      "Video Generation"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Summary of The Inaugural Music Source Restoration Challenge",
+    "paper_title_zh": "首届音乐源修复挑战赛总结",
+    "paper_id": "2601.04343",
+    "paper_abstract": "Music Source Restoration (MSR) aims to recover original, unprocessed instrument stems from professionally mixed and degraded audio, requiring the reversal of both production effects and real-world degradations. We present the inaugural MSR Challenge, which features objective evaluation on studio-produced mixtures using Multi-Mel-SNR, Zimtohrli, and FAD-CLAP, alongside subjective evaluation on real-world degraded recordings. Five teams participated in the challenge. The winning system achieved 4.46 dB Multi-Mel-SNR and 3.47 MOS-Overall, corresponding to relative improvements of 91% and 18% over the second-place system, respectively. Per-stem analysis reveals substantial variation in restoration difficulty across instruments, with bass averaging 4.59 dB across all teams, while percussion averages only 0.29 dB. The dataset, evaluation protocols, and baselines are available at this https URL.",
+    "paper_abstract_zh": "音乐源修复(MSR)旨在从专业混音和降级音频中恢复原始、未处理的乐器音轨，需要同时逆转制作效果和真实世界的降级因素。我们介绍了首届MSR挑战赛，该挑战赛使用Multi-Mel-SNR、Zimtohrli和FAD-CLAP对工作室制作的混合物进行客观评估，同时对真实世界降级录音进行主观评估。共有五支队伍参加了此次挑战赛。获胜系统实现了4.46 dB的Multi-Mel-SNR和3.47的MOS-Overall，分别比第二名系统提升了91%和18%。按音轨分析显示，不同乐器的修复难度存在显著差异，低音音轨在所有团队中的平均值为4.59 dB，而打击乐仅为0.29 dB。数据集、评估协议和基线可在提供的URL获取。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Yongyi Zang, Jiarui Hai, Wanying Ge, Qiuqiang Kong, Zheqi Dai, Helin Wang, Yuki Mitsufuji, Mark D. Plumbley",
+    "topic": [
+      "Speech Enhancement",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "When Tone and Words Disagree: Towards Robust Speech Emotion Recognition under Acoustic-Semantic Conflict",
+    "paper_title_zh": "当语调和词语不一致时：迈向声学-语义冲突下的鲁棒语音情感识别",
+    "paper_id": "2601.04564",
+    "paper_abstract": "Speech Emotion Recognition (SER) systems often assume congruence between vocal emotion and lexical semantics. However, in real-world interactions, acoustic-semantic conflict is common yet overlooked, where the emotion conveyed by tone contradicts the literal meaning of spoken words. We show that state-of-the-art SER models, including ASR-based, self-supervised learning (SSL) approaches and Audio Language Models (ALMs), suffer performance degradation under such conflicts due to semantic bias or entangled acoustic-semantic representations. To address this, we propose the Fusion Acoustic-Semantic (FAS) framework, which explicitly disentangles acoustic and semantic pathways and bridges them through a lightweight, query-based attention module. To enable systematic evaluation, we introduce the Conflict in Acoustic-Semantic Emotion (CASE), the first dataset dominated by clear and interpretable acoustic-semantic conflicts in varied scenarios. Extensive experiments demonstrate that FAS consistently outperforms existing methods in both in-domain and zero-shot settings. Notably, on the CASE benchmark, conventional SER models fail dramatically, while FAS sets a new SOTA with 59.38% accuracy. Our code and datasets is available at this https URL.",
+    "paper_abstract_zh": "语音情感识别(SER)系统通常假设语音情感和词汇语义之间的一致性。然而，在现实世界的交互中，声学-语义冲突很常见但被忽视，即语调所传达的情感与 spoken words 的字面意义相矛盾。我们表明，最先进的SER模型，包括基于ASR的、自监督学习(SSL)方法和音频语言模型(ALMs)，由于语义偏差或纠缠的声学-语义表示，在这种冲突下性能会下降。为了解决这个问题，我们提出了融合声学-语义(FAS)框架，该框架明确分离声学和语义路径，并通过轻量级的基于查询的注意力模块将它们连接起来。为了实现系统评估，我们引入了声学-语义情感冲突(CASE)数据集，这是第一个以清晰可解释的声学-语义冲突为主、涵盖多种场景的数据集。大量实验表明，FAS在领域内和零样本设置下都 consistently 超过现有方法。值得注意的是，在CASE基准测试中，传统SER模型表现极差，而FAS以59.38%的准确率设立了新的SOTA。我们的代码和数据集可在提供的URL获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Dawei Huang, Yongjie Lv, Ruijie Xiong, Chunxiang Jin, Xiaojiang Peng",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "FlexiVoice: Enabling Flexible Style Control in Zero-Shot TTS with Natural Language Instructions",
+    "paper_title_zh": "FlexiVoice: 通过自然语言指令实现零样本TTS中的灵活风格控制",
+    "paper_id": "2601.04656",
+    "paper_abstract": "This study proposes FlexiVoice, a text-to-speech (TTS) synthesis system capable of flexible style control with zero-shot voice cloning. The speaking style is controlled by a natural-language instruction and the voice timbre is provided by a speech reference in zero-shot manner. FlexiVoice is built with an LLM core, which takes text as input, and also takes an optional natural language instruction and an optional speech reference to control style and timbre, respectively. FlexiVoice is equipped with a novel Progressive Post-Training (PPT) scheme that progressively unlocks accurate and flexible controllability. In particular, it first employs Direct Preference Optimization (DPO) to enable FlexiVoice to accurately follow both natural language instruction and speech reference simultaneously. It then uses a multi-objective Group Relative Policy Optimization (GRPO) to disentangle style instruction, reference timbre, and textual content. Finally, it adapts instruction GRPO for more advanced instruction following. Experimental results show that FlexiVoice surpasses competing baselines and demonstrates strong capability in decoupling control factors. Human evaluations further confirm its naturalness, controllability, and robustness. Audio samples are available at this https URL.",
+    "paper_abstract_zh": "本研究提出了FlexiVoice，一个文本转语音(TTS)合成系统，能够通过零样本语音克隆实现灵活的风格控制。说话风格由自然语言指令控制，音色通过零样本方式由语音参考提供。FlexiVoice基于LLM核心构建，输入为文本，同时接受可选的自然语言指令和可选的语音参考，分别用于控制风格和音色。FlexiVoice配备了一种新颖的渐进式后训练(PPT)方案，逐步解锁准确且灵活的控制能力。具体而言，它首先采用直接偏好优化(DPO)使FlexiVoice能够同时准确遵循自然语言指令和语音参考。然后使用多目标组相对策略优化(GRPO)来解耦风格指令、参考音色和文本内容。最后，它调整指令GRPO以实现更高级的指令遵循能力。实验结果表明，FlexiVoice超越了竞争基线，并在解耦控制因素方面展现出强大能力。人工评估进一步证实了其自然性、可控性和鲁棒性。音频样本可通过此https URL获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Dekun Chen, Xueyao Zhang, Yuancheng Wang, Kenan Dai, Li Ma, Zhizheng Wu",
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "LAMB: LLM-based Audio Captioning with Modality Gap Bridging via Cauchy-Schwarz Divergence",
+    "paper_title_zh": "LAMB：基于Cauchy-Schwarz散度桥接模态间隙的LLM音频描述",
+    "paper_id": "2601.04658",
+    "paper_abstract": "Automated Audio Captioning aims to describe the semantic content of input audio. Recent works have employed large language models (LLMs) as a text decoder to leverage their reasoning capabilities. However, prior approaches that project audio features into the LLM embedding space without considering cross-modal alignment fail to fully utilize these capabilities. To address this, we propose LAMB, an LLM-based audio captioning framework that bridges the modality gap between audio embeddings and the LLM text embedding space. LAMB incorporates a Cross-Modal Aligner that minimizes Cauchy-Schwarz divergence while maximizing mutual information, yielding tighter alignment between audio and text at both global and token levels. We further design a Two-Stream Adapter that extracts semantically enriched audio embeddings, thereby delivering richer information to the Cross-Modal Aligner. Finally, leveraging the aligned audio embeddings, a proposed Token Guide directly computes scores within the LLM text embedding space to steer the output logits of generated captions. Experimental results confirm that our framework strengthens the reasoning capabilities of the LLM decoder, achieving state-of-the-art performance on AudioCaps.",
+    "paper_abstract_zh": "自动化音频描述旨在描述输入音频的语义内容。近期研究采用大型语言模型（LLM）作为文本解码器，以利用其推理能力。然而，先前不考虑跨模态对齐而将音频特征投影到LLM嵌入空间的方法，未能充分利用这些能力。为此，我们提出LAMB，一种基于LLM的音频描述框架，桥接音频嵌入与LLM文本嵌入空间之间的模态间隙。LAMB包含一个跨模态对齐器，通过最小化Cauchy-Schwarz散度并最大化互信息，实现音频与文本在全局和标记层面的紧密对齐。我们进一步设计了双流适配器，提取语义丰富的音频嵌入，从而为跨模态对齐器提供更丰富的信息。最后，利用对齐后的音频嵌入，提出的标记引导器直接在LLM文本嵌入空间内计算分数，以引导生成描述的输出logits。实验结果证实，我们的框架增强了LLM解码器的推理能力，在AudioCaps数据集上实现了最先进的性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Hyeongkeun Lee, Jongmin Choi, KiHyun Nam, Joon Son Chung",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Semi-Supervised Diseased Detection from Speech Dialogues with Multi-Level Data Modeling",
+    "paper_title_zh": "基于多级数据建模的语音对话半监督疾病检测",
+    "paper_id": "2601.04744",
+    "paper_abstract": "Detecting medical conditions from speech acoustics is fundamentally a weakly-supervised learning problem: a single, often noisy, session-level label must be linked to nuanced patterns within a long, complex audio recording. This task is further hampered by severe data scarcity and the subjective nature of clinical annotations. While semi-supervised learning (SSL) offers a viable path to leverage unlabeled data, existing audio methods often fail to address the core challenge that pathological traits are not uniformly expressed in a patient's speech. We propose a novel, audio-only SSL framework that explicitly models this hierarchy by jointly learning from frame-level, segment-level, and session-level representations within unsegmented clinical dialogues. Our end-to-end approach dynamically aggregates these multi-granularity features and generates high-quality pseudo-labels to efficiently utilize unlabeled data. Extensive experiments show the framework is model-agnostic, robust across languages and conditions, and highly data-efficient-achieving, for instance, 90\\% of fully-supervised performance using only 11 labeled samples. This work provides a principled approach to learning from weak, far-end supervision in medical speech analysis.",
+    "paper_abstract_zh": "从语音声学中检测医疗状况本质上是一个弱监督学习问题：一个通常带有噪声的会话级标签必须与长而复杂的音频记录中的细微模式相关联。由于数据严重稀缺和临床注释的主观性，这一任务进一步受到阻碍。虽然半监督学习(SSL)为利用未标记数据提供了一条可行路径，但现有的音频方法往往未能解决病理特征在患者语音中表达不均匀这一核心挑战。我们提出了一种新颖的纯音频SSL框架，通过在未分割的临床对话中联合学习帧级、片段级和会话级表示，明确地建模这种层次结构。我们的端到端方法动态聚合这些多粒度特征，并生成高质量的伪标签，以有效利用未标记数据。大量实验表明，该框架与模型无关，在不同语言和条件下具有鲁棒性，并且数据效率极高——例如，仅使用11个标记样本即可达到全监督性能的90%。这项工作为在医疗语音分析中从弱远端监督学习提供了原则性的方法。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Xingyuan Li, Mengyue Wu",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "ChronosAudio: A Comprehensive Long-Audio Benchmark for Evaluating Audio-Large Language Models",
+    "paper_title_zh": "ChronosAudio：用于评估音频大语言模型的长音频综合基准",
+    "paper_id": "2601.04876",
+    "paper_abstract": "Although Audio Large Language Models (ALLMs) have witnessed substantial advancements, their long audio understanding capabilities remain unexplored. A plethora of benchmarks have been proposed for general audio tasks, they predominantly focus on short-form clips, leaving without a consensus on evaluating ALLMs over extended durations. This paper proposes ChronosAudio, the first multi-task benchmark tailored for long-audio understanding in ALLMs. It encompasses six major task categories and comprises 36,000 test instances totaling over 200 hours audio, stratified into short, middle, and long-form categories to comprehensively evaluate length generalization. Extensive experiments on 16 state-of-the-art models using ChronosAudio yield three critical findings: this http URL Long-Context Collapse: ALLMs exhibit a severe inability to sustain performance, with the transition from short to long contexts triggering a staggering performance degradation of over 90% in specific tasks. this http URL Attention Dilution: Performance degradation stems from a fundamental failure in maintaining temporal locality; attention mechanisms suffer from significant diffusion in later sequences. this http URL Ceiling of Mitigation: Current strategies only offer 50% recovery. These findings reveal significant challenges in long-audio, underscoring the urgent need for approaches to achieve robust, document-level audio reasoning.",
+    "paper_abstract_zh": "尽管音频大语言模型（ALLMs）取得了显著进展，但其长音频理解能力仍未得到充分探索。虽然已有大量针对通用音频任务的基准被提出，但它们主要关注短片段音频，对于如何评估ALLM在长时间音频上的表现尚未达成共识。本文提出了ChronosAudio，这是首个专为ALLM长音频理解设计的多任务基准。该基准包含六个主要任务类别，总计36,000个测试实例，音频总时长超过200小时，并根据短、中、长片段进行分层，以全面评估模型的长度泛化能力。通过在ChronosAudio上对16个最先进模型的广泛实验，我们得出了三个关键发现：1）长上下文崩溃：ALLM在维持性能方面存在严重缺陷，从短上下文过渡到长上下文会导致特定任务性能下降超过90%；2）注意力稀释：性能下降源于无法维持时间局部性的根本性失败，注意力机制在后续序列中显著扩散；3）缓解效果上限：当前缓解策略仅能恢复50%的性能。这些发现揭示了长音频领域面临的重大挑战，强调了开发能够实现稳健文档级音频推理方法的迫切需求。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Kaiwen Luo, Liang Lin, Yibo Zhang, Moayad Aloqaily, Dexian Wang, Zhenhong Zhou, Junwei Zhang, Kun Wang, Li Sun, Qingsong Wen",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Leveraging Prediction Entropy for Automatic Prompt Weighting in Zero-Shot Audio-Language Classification",
+    "paper_title_zh": "利用预测熵进行零样本音频语言分类中的自动提示权重分配",
+    "paper_id": "2601.05011",
+    "paper_abstract": "Audio-language models have recently demonstrated strong zero-shot capabilities by leveraging natural-language supervision to classify audio events without labeled training data. Yet, their performance is highly sensitive to the wording of text prompts, with small variations leading to large fluctuations in accuracy. Prior work has mitigated this issue through prompt learning or prompt ensembling. However, these strategies either require annotated data or fail to account for the fact that some prompts may negatively impact performance. In this work, we present an entropy-guided prompt weighting approach that aims to find a robust combination of prompt contributions to maximize prediction confidence. To this end, we formulate a tailored objective function that minimizes prediction entropy to yield new prompt weights, utilizing low-entropy as a proxy for high confidence. Our approach can be applied to individual samples or a batch of audio samples, requiring no additional labels and incurring negligible computational overhead. Experiments on five audio classification datasets covering environmental, urban, and vocal sounds, demonstrate consistent gains compared to classical prompt ensembling methods in a zero-shot setting, with accuracy improvements 5-times larger across the whole benchmark.",
+    "paper_abstract_zh": "音频语言模型最近通过利用自然语言监督，无需标记的训练数据即可对音频事件进行分类，展示了强大的零样本能力。然而，它们的性能对文本提示的措辞高度敏感，微小的变化会导致准确率的巨大波动。先前的工作通过提示学习或提示集成来缓解这一问题。然而，这些策略要么需要标注数据，要么未能考虑某些提示可能对性能产生负面影响的事实。在这项工作中，我们提出了一种基于熵引导的提示权重分配方法，旨在找到一种稳健的提示组合贡献，以最大化预测置信度。为此，我们制定了一个定制化的目标函数，通过最小化预测熵来生成新的提示权重，将低熵作为高置信度的代理。我们的方法可以应用于单个样本或一批音频样本，无需额外的标签，且计算开销可忽略不计。在涵盖环境、城市和声音的五个音频分类数据集上的实验表明，与经典的提示集成方法相比，在零样本设置下取得了持续的性能提升，在整个基准测试中准确率提高了5倍。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Karim El Khoury, Maxime Zanella, Tiffanie Godelaine, Christophe De Vleeschouwer, Benoit Macq",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "WESR: Scaling and Evaluating Word-level Event-Speech Recognition",
+    "paper_title_zh": "WESR：扩展和评估词级别事件语音识别",
+    "paper_id": "2601.04508",
+    "paper_abstract": "Speech conveys not only linguistic information but also rich non-verbal vocal events such as laughing and crying. While semantic transcription is well-studied, the precise localization of non-verbal events remains a critical yet under-explored challenge. Current methods suffer from insufficient task definitions with limited category coverage and ambiguous temporal granularity. They also lack standardized evaluation frameworks, hindering the development of downstream applications. To bridge this gap, we first develop a refined taxonomy of 21 vocal events, with a new categorization into discrete (standalone) versus continuous (mixed with speech) types. Based on the refined taxonomy, we introduce WESR-Bench, an expert-annotated evaluation set (900+ utterances) with a novel position-aware protocol that disentangles ASR errors from event detection, enabling precise localization measurement for both discrete and continuous events. We also build a strong baseline by constructing a 1,700+ hour corpus, and train specialized models, surpassing both open-source audio-language models and commercial APIs while preserving ASR quality. We anticipate that WESR will serve as a foundational resource for future research in modeling rich, real-world auditory scenes.",
+    "paper_abstract_zh": "语音不仅传递语言信息，还包含丰富的非语言声音事件，如笑声和哭泣。虽然语义转录已被广泛研究，但非语言事件的精确定位仍然是一个关键但尚未充分探索的挑战。当前方法存在任务定义不足、类别覆盖有限和时间粒度模糊的问题，同时缺乏标准化的评估框架，阻碍了下游应用的发展。为填补这一空白，我们首先开发了一个包含21种声音事件的精细分类法，并将其分为离散（独立）和连续（与语音混合）两种新类型。基于这一分类法，我们引入了WESR-Bench，这是一个由专家注释的评估数据集（包含900多条语音），采用了一种新颖的位置感知协议，该协议能够将ASR错误与事件检测分离，从而实现对离散和连续事件的精确定位测量。我们还构建了一个包含1700多小时语料的基准，并训练了专门的模型，在保持ASR质量的同时，超越了开源音频语言模型和商业API的性能。我们预计WESR将成为未来研究丰富现实听觉场景建模的基础资源。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Chenchen Yang, Kexin Huang, Liwei Fan, Qian Tu, Botian Jiang, Dong Zhang, Linqi Yin, Shimin Li, Zhaoye Fei, Qinyuan Cheng, Xipeng Qiu",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Density Matrix RNN (DM-RNN): A Quantum Information Theoretic Framework for Modeling Musical Context and Polyphony",
+    "paper_title_zh": "密度矩阵循环神经网络（DM-RNN）：一种用于建模音乐语境和复调的量子信息理论框架",
+    "paper_id": "2601.04592",
+    "paper_abstract": "Classical Recurrent Neural Networks (RNNs) summarize musical context into a deterministic hidden state vector, imposing an information bottleneck that fails to capture the inherent ambiguity in music. We propose the Density Matrix RNN (DM-RNN), a novel theoretical architecture utilizing the Density Matrix. This allows the model to maintain a statistical ensemble of musical interpretations (a mixed state), capturing both classical probabilities and quantum coherences. We rigorously define the temporal dynamics using Quantum Channels (CPTP maps). Crucially, we detail a parameterization strategy based on the Choi-Jamiolkowski isomorphism, ensuring the learned dynamics remain physically valid (CPTP) by construction. We introduce an analytical framework using Von Neumann Entropy to quantify musical uncertainty and Quantum Mutual Information (QMI) to measure entanglement between voices. The DM-RNN provides a mathematically rigorous framework for modeling complex, ambiguous musical structures.",
+    "paper_abstract_zh": "传统循环神经网络（RNN）将音乐语境总结为确定性隐藏状态向量，这造成了信息瓶颈，无法捕捉音乐中固有的模糊性。我们提出了密度矩阵循环神经网络（DM-RNN），这是一种利用密度矩阵的新型理论架构。这使得模型能够保持音乐解释的统计集合（混合态），同时捕捉经典概率和量子相干性。我们使用量子信道（CPTP映射）严格定义了时间动态。关键的是，我们详细阐述了一种基于Choi-Jamiolkowski同构的参数化策略，确保学习到的动态在构造上保持物理有效性（CPTP）。我们引入了使用冯诺依曼熵量化音乐不确定性的分析框架，以及使用量子互信息（QMI）测量声部间纠缠的方法。DM-RNN为建模复杂、模糊的音乐结构提供了数学严谨的框架。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
+      "Mathematical Physics (math-ph)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Joonwon Seo, Mariana Montiel",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "A Unified Spoken Language Model with Injected Emotional-Attribution Thinking for Human-like Interaction",
+    "paper_title_zh": "一种注入情感归因思维的人机交互统一口语语言模型",
+    "paper_id": "2601.04960",
+    "paper_abstract": "This paper presents a unified spoken language model for emotional intelligence, enhanced by a novel data construction strategy termed Injected Emotional-Attribution Thinking (IEAT). IEAT incorporates user emotional states and their underlying causes into the model's internal reasoning process, enabling emotion-aware reasoning to be internalized rather than treated as explicit supervision. The model is trained with a two-stage progressive strategy. The first stage performs speech-text alignment and emotional attribute modeling via self-distillation, while the second stage conducts end-to-end cross-modal joint optimization to ensure consistency between textual and spoken emotional expressions. Experiments on the Human-like Spoken Dialogue Systems Challenge (HumDial) Emotional Intelligence benchmark demonstrate that the proposed approach achieves top-ranked performance across emotional trajectory modeling, emotional reasoning, and empathetic response generation under both LLM-based and human evaluations.",
+    "paper_abstract_zh": "本文提出了一种用于情感智能的统一口语语言模型，通过一种名为注入情感归因思维(IEAT)的新型数据构建策略进行增强。IEAT将用户情感状态及其潜在原因融入模型的内部推理过程，使情感感知推理被内化处理，而非作为显式监督。该模型采用两阶段渐进式训练策略：第一阶段通过自蒸馏进行语音-文本对齐和情感属性建模；第二阶段进行端到端的跨模态联合优化，确保文本和口语情感表达的一致性。在类人对话系统挑战赛(HumDial)情感智能基准测试上的实验表明，所提出的方法在基于大语言模型和人工评估的情感轨迹建模、情感推理和共情回应生成任务中均取得了顶尖性能。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-09",
+    "paper_authors": "Qing Wang, Zehan Li, Yaodong Song, Hongjie Chen, Jian Kang, Jie Lian, Jie Li, Yongxiang Li, Xuelong Li",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
