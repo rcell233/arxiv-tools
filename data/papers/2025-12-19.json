@@ -140,17 +140,21 @@
   },
   {
     "paper_title": "DPDFNet: Boosting DeepFilterNet2 via Dual-Path RNN",
-    "paper_title_zh": "",
+    "paper_title_zh": "DPDFNet：通过双路径RNN增强DeepFilterNet2",
     "paper_id": "2512.16420",
     "paper_abstract": "We present DPDFNet, a causal single-channel speech enhancement model that extends DeepFilterNet2 architecture with dual-path blocks in the encoder, strengthening long-range temporal and cross-band modeling while preserving the original enhancement framework. In addition, we demonstrate that adding a loss component to mitigate over-attenuation in the enhanced speech, combined with a fine-tuning phase tailored for \"always-on\" applications, leads to substantial improvements in overall model performance. To compare our proposed architecture with a variety of causal open-source models, we created a new evaluation set comprising long, low-SNR recordings in 12 languages across everyday noise scenarios, better reflecting real-world conditions than commonly used benchmarks. On this evaluation set, DPDFNet delivers superior performance to other causal open-source models, including some that are substantially larger and more computationally demanding. We also propose an holistic metric named PRISM, a composite, scale-normalized aggregate of intrusive and non-intrusive metrics, which demonstrates clear scalability with the number of dual-path blocks. We further demonstrate on-device feasibility by deploying DPDFNet on Ceva-NeuPro-Nano edge NPUs. Results indicate that DPDFNet-4, our second-largest model, achieves real-time performance on NPN32 and runs even faster on NPN64, confirming that state-of-the-art quality can be sustained within strict embedded power and latency constraints.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们提出了DPDFNet，一种因果单通道语音增强模型，它在DeepFilterNet2架构的编码器中加入了双路径模块，在保持原始增强框架的同时，增强了长时程和跨频带建模能力。此外，我们证明在增强语音中添加一个损失组件来减轻过度衰减，并结合针对'常开'应用场景的微调阶段，可以显著提升整体模型性能。为了将我们的架构与各种因果开源模型进行比较，我们创建了一个新的评估集，包含12种语言在日常噪声场景下的长时低信噪比录音，这比常用基准更能反映真实世界条件。在这个评估集上，DPDFNet的性能优于其他因果开源模型，包括一些规模更大、计算需求更高的模型。我们还提出了一个名为PRISM的综合指标，它是一个侵入性和非侵入性指标的复合、归一化聚合，显示出与双路径模块数量明显的可扩展性。我们进一步通过将DPDFNet部署在Ceva-NeuPro-Nano边缘NPU上证明了其设备可行性。结果表明，我们的第二大模型DPDFNet-4在NPN32上实现了实时性能，在NPN64上运行速度更快，证实了在严格的嵌入式功耗和延迟限制内可以维持最先进的性能。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2025-12-19",
     "paper_authors": "Daniel Rika, Nino Sapir, Ido Gus",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Hearing to Translate: The Effectiveness of Speech Modality Integration into LLMs",
