@@ -1,0 +1,101 @@
+[
+  {
+    "paper_title": "Discriminative-Generative Target Speaker Extraction with Decoder-Only Language Models",
+    "paper_title_zh": "基于仅解码器语言模型的判别式-生成式目标说话人提取",
+    "paper_id": "2601.06006",
+    "paper_abstract": "Target speaker extraction (TSE) aims to recover the speech signal of a desired speaker from a mixed audio recording, given a short enrollment utterance. Most existing TSE approaches are based on discriminative modeling paradigms. Although effective at suppressing interfering speakers, these methods often struggle to produce speech with high perceptual quality and naturalness. To address this limitation, we first propose LauraTSE, a generative TSE model built upon an auto-regressive decoder-only language model. However, purely generative approaches may suffer from hallucinations, content drift, and limited controllability, which may undermine their reliability in complex acoustic scenarios. To overcome these challenges, we further introduce a discriminative-generative TSE framework. In this framework, a discriminative front-end is employed to robustly extract the target speaker's speech, yielding stable and controllable intermediate representations. A generative back-end then operates in the neural audio codec representation space to reconstruct fine-grained speech details and enhance perceptual quality. This two-stage design effectively combines the robustness and controllability of discriminative models with the superior naturalness and quality enhancement capabilities of generative models. Moreover, we systematically investigate collaborative training strategies for the proposed framework, including freezing or fine-tuning the front-end, incorporating an auxiliary SI-SDR loss, and exploring both auto-regressive and non-auto-regressive inference mechanisms. Experimental results demonstrate that the proposed framework achieves a more favorable trade-off among speech quality, intelligibility, and speaker consistency.",
+    "paper_abstract_zh": "目标说话人提取（TSE）旨在从混合音频录音中恢复期望说话人的语音信号，给定一段简短的注册语音片段。大多数现有的TSE方法基于判别式建模范式。尽管这些方法在抑制干扰说话人方面有效，但它们往往难以产生具有高感知质量和自然度的语音。为解决这一局限性，我们首先提出了LauraTSE，这是一种基于自回归仅解码器语言模型的生成式TSE模型。然而，纯粹的生成式方法可能存在幻觉、内容漂移和可控性有限等问题，这可能会降低它们在复杂声学场景中的可靠性。为克服这些挑战，我们进一步引入了一种判别式-生成式TSE框架。在该框架中，判别式前端被用于稳健地提取目标说话人的语音，产生稳定且可控的中间表示。然后，生成式后端在神经音频编解码器表示空间中操作，以重建细粒度的语音细节并增强感知质量。这种两阶段设计有效地结合了判别式模型的稳健性和可控性以及生成式模型的卓越自然度和质量增强能力。此外，我们系统地研究了所提出框架的协作训练策略，包括冻结或微调前端、引入辅助SI-SDR损失，以及探索自回归和非自回归推理机制。实验结果表明，所提出的框架在语音质量、可懂度和说话人一致性之间实现了更有利的权衡。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-12",
+    "paper_authors": "Bang Zeng, Beilong Tang, Wang Xiang, Ming Li",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "CosyEdit: Unlocking End-to-End Speech Editing Capability from Zero-Shot Text-to-Speech Models",
+    "paper_title_zh": "CosyEdit：从零样本文本到语音模型中解锁端到端语音编辑能力",
+    "paper_id": "2601.05329",
+    "paper_abstract": "Automatic speech editing aims to modify spoken content based on textual instructions, yet traditional cascade systems suffer from complex preprocessing pipelines and a reliance on explicit external temporal alignment. Addressing these limitations, we propose CosyEdit, an end-to-end speech editing model adapted from CosyVoice through task-specific fine-tuning and an optimized inference procedure, which internalizes speech-text alignment while ensuring high consistency between the speech before and after editing. By fine-tuning on only 250 hours of supervised data from our curated GigaEdit dataset, our 400M-parameter model achieves reliable speech editing performance. Experiments on the RealEdit benchmark indicate that CosyEdit not only outperforms several billion-parameter language model baselines but also matches the performance of state-of-the-art cascade approaches. These results demonstrate that, with task-specific fine-tuning and inference optimization, robust and efficient speech editing capabilities can be unlocked from a zero-shot TTS model, yielding a novel and cost-effective end-to-end solution for high-quality speech editing.",
+    "paper_abstract_zh": "自动语音编辑旨在根据文本指令修改语音内容，然而传统的级联系统存在复杂的预处理流程和对显式外部时间对齐的依赖。为解决这些局限性，我们提出了CosyEdit，这是一个通过任务特定微调和优化推理过程从CosyVoice改编而来的端到端语音编辑模型，它内部化了语音-文本对齐，同时确保编辑前后语音的高度一致性。仅在我们精心策划的GigaEdit数据集上的250小时监督数据进行微调后，我们400M参数的模型实现了可靠的语音编辑性能。在RealEdit基准测试上的实验表明，CosyEdit不仅优于多个十亿参数的语言模型基线，而且达到了最先进级联方法的性能水平。这些结果表明，通过任务特定的微调和推理优化，可以从零样本TTS模型中解锁强大而高效的语音编辑能力，为高质量语音编辑提供了一种新颖且经济高效的端到端解决方案。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-12",
+    "paper_authors": "Junyang Chen, Yuhang Jia, Hui Wang, Jiaming Zhou, Yaxin Han, Mengying Feng, Yong Qin",
+    "topic": [
+      "Speech Synthesis",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Closing the Modality Reasoning Gap for Speech Large Language Models",
+    "paper_title_zh": "缩小语音大语言模型的模态推理差距",
+    "paper_id": "2601.05543",
+    "paper_abstract": "Although speech large language models have achieved notable progress, a substantial modality reasoning gap remains: their reasoning performance on speech inputs is markedly weaker than on text. This gap could be associated with representational drift across Transformer layers and behavior deviations in long-chain reasoning. To address this issue, we introduce TARS, a reinforcement-learning framework that aligns text-conditioned and speech-conditioned trajectories through an asymmetric reward design. The framework employs two dense and complementary signals: representation alignment, which measures layer-wise hidden-state similarity between speech- and text-conditioned trajectories, and behavior alignment, which evaluates semantic consistency between generated outputs and reference text completions. Experiments on challenging reasoning benchmarks, including MMSU and OBQA, show that our approach significantly narrows the modality reasoning gap and achieves state-of-the-art performance among 7B-scale Speech LLMs.",
+    "paper_abstract_zh": "尽管语音大语言模型已取得显著进展，但仍存在一个较大的模态推理差距：它们在语音输入上的推理性能明显弱于文本输入。这一差距可能与Transformer层之间的表示漂移和长链推理中的行为偏差有关。为解决这一问题，我们引入了TARS，一个通过非对称奖励设计对齐文本条件和语音条件轨迹的强化学习框架。该框架采用两个密集且互补的信号：表示对齐，用于测量语音和文本条件轨迹之间的层级隐藏状态相似性；以及行为对齐，用于评估生成输出与参考文本补全之间的语义一致性。在MMSU和OBQA等具有挑战性的推理基准上的实验表明，我们的方法显著缩小了模态推理差距，并在7B规模的语音大语言模型中取得了最先进的性能。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-12",
+    "paper_authors": "Chaoren Wang, Heng Lu, Xueyao Zhang, Shujie Liu, Yan Lu, Jinyu Li, Zhizheng Wu",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SPAM: Style Prompt Adherence Metric for Prompt-based TTS",
+    "paper_title_zh": "SPAM：基于提示的文本转语音的风格提示遵循指标",
+    "paper_id": "2601.05554",
+    "paper_abstract": "Prompt-based text-to-speech (TTS) aims to generate speech that adheres to fine-grained style cues provided in a text prompt. However, most prior works depend on neither plausible nor faithful measures to evaluate prompt adherence. That is, they cannot ensure whether the evaluation is grounded on the prompt and is similar to a human. Thus, we present a new automatic metric, the Style Prompt Adherence Metric, which explicitly satisfies both plausibility and faithfulness. Inspired by the CLAP, our approach factorizes speech into acoustic attributes and aligns them with the style prompt. Also, we trained the scorer with a supervised contrastive loss, which could provide a clearer distinction between different semantics. We conducted two experiments on two perspectives. The plausibility experiment showed that SPAM achieved a strong correlation with the mean opinion score (MOS). Also, the faithfulness experiment demonstrated that SPAM is successfully grounded to the given style prompt, as it can discriminate different semantics of the prompt. We believe that SPAM can provide a viable automatic solution for evaluating style prompt adherence of synthesized speech.",
+    "paper_abstract_zh": "基于提示的文本转语音（TTS）旨在生成遵循文本提示中提供的细粒度风格线索的语音。然而，大多数先前的工作既不依赖于合理的也不依赖于忠实的措施来评估提示遵循性。也就是说，它们无法确保评估是否基于提示并且与人类评估相似。因此，我们提出了一个新的自动指标——风格提示遵循指标（SPAM），它明确满足合理性和忠实性。受CLAP的启发，我们的方法将语音分解为声学属性，并将其与风格提示对齐。此外，我们使用监督对比损失训练评分器，这可以提供不同语义之间更清晰的区分。我们从两个角度进行了两个实验。合理性实验表明，SPAM与平均意见评分（MOS）具有强相关性。此外，忠实性实验证明，SPAM成功地基于给定的风格提示，因为它可以区分提示的不同语义。我们相信SPAM可以为评估合成语音的风格提示遵循性提供可行的自动解决方案。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-12",
+    "paper_authors": "Chanhee Cho, Nayeon Kim, Bugeun Kim",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "The ICASSP 2026 HumDial Challenge: Benchmarking Human-like Spoken Dialogue Systems in the LLM Era",
+    "paper_title_zh": "",
+    "paper_id": "2601.05564",
+    "paper_abstract": "Driven by the rapid advancement of Large Language Models (LLMs), particularly Audio-LLMs and Omni-models, spoken dialogue systems have evolved significantly, progressively narrowing the gap between human-machine and human-human interactions. Achieving truly ``human-like'' communication necessitates a dual capability: emotional intelligence to perceive and resonate with users' emotional states, and robust interaction mechanisms to navigate the dynamic, natural flow of conversation, such as real-time turn-taking. Therefore, we launched the first Human-like Spoken Dialogue Systems Challenge (HumDial) at ICASSP 2026 to benchmark these dual capabilities. Anchored by a sizable dataset derived from authentic human conversations, this initiative establishes a fair evaluation platform across two tracks: (1) Emotional Intelligence, targeting long-term emotion understanding and empathetic generation; and (2) Full-Duplex Interaction, systematically evaluating real-time decision-making under `` listening-while-speaking'' conditions. This paper summarizes the dataset, track configurations, and the final results.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Human-Computer Interaction (cs.HC)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-12",
+    "paper_authors": "Zhixian Zhao, Shuiyuan Wang, Guojian Li, Hongfei Xue, Chengyou Wang, Shuai Wang, Longshuai Xiao, Zihan Zhang, Hui Bu, Xin Xu, Xinsheng Wang, Hexin Liu, Eng Siong Chng, Hung-yi Lee, Haizhou Li, Lei Xie",
+    "topic": [],
+    "category": []
+  }
+]
