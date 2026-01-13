@@ -83,10 +83,10 @@
   },
   {
     "paper_title": "The ICASSP 2026 HumDial Challenge: Benchmarking Human-like Spoken Dialogue Systems in the LLM Era",
-    "paper_title_zh": "",
+    "paper_title_zh": "ICASSP 2026 HumDial 挑战：在 LLM 时代类人口语对话系统的基准测试",
     "paper_id": "2601.05564",
     "paper_abstract": "Driven by the rapid advancement of Large Language Models (LLMs), particularly Audio-LLMs and Omni-models, spoken dialogue systems have evolved significantly, progressively narrowing the gap between human-machine and human-human interactions. Achieving truly ``human-like'' communication necessitates a dual capability: emotional intelligence to perceive and resonate with users' emotional states, and robust interaction mechanisms to navigate the dynamic, natural flow of conversation, such as real-time turn-taking. Therefore, we launched the first Human-like Spoken Dialogue Systems Challenge (HumDial) at ICASSP 2026 to benchmark these dual capabilities. Anchored by a sizable dataset derived from authentic human conversations, this initiative establishes a fair evaluation platform across two tracks: (1) Emotional Intelligence, targeting long-term emotion understanding and empathetic generation; and (2) Full-Duplex Interaction, systematically evaluating real-time decision-making under `` listening-while-speaking'' conditions. This paper summarizes the dataset, track configurations, and the final results.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "受大型语言模型（LLMs），特别是音频-LLMs 和多模态模型的快速发展推动，口语对话系统已显著发展，逐步缩小了人机交互与人际交互之间的差距。实现真正\"类人\"的沟通需要双重能力：情感智能，以感知和共鸣用户的情感状态；以及强大的交互机制，以驾驭对话的动态、自然流动，例如实时轮流发言。因此，我们在 ICASSP 2026 上启动了首届类人口语对话系统挑战赛（HumDial），以基准测试这两种能力。基于源自真实人类对话的大型数据集，该倡议在两个赛道上建立了公平的评估平台：（1）情感智能，针对长期情感理解和共情生成；（2）全双工交互，系统性地评估在\"边听边说\"条件下的实时决策制定。本文总结了数据集、赛道配置和最终结果。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Sound (cs.SD)",
@@ -95,7 +95,12 @@
     ],
     "update_time": "2026-01-12",
     "paper_authors": "Zhixian Zhao, Shuiyuan Wang, Guojian Li, Hongfei Xue, Chengyou Wang, Shuai Wang, Longshuai Xiao, Zihan Zhang, Hui Bu, Xin Xu, Xinsheng Wang, Hexin Liu, Eng Siong Chng, Hung-yi Lee, Haizhou Li, Lei Xie",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   }
 ]
