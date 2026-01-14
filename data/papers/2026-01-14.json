@@ -1,0 +1,210 @@
+[
+  {
+    "paper_title": "Tuberculosis Screening from Cough Audio: Baseline Models, Clinical Variables, and Uncertainty Quantification",
+    "paper_title_zh": "基于咳嗽音频的结核病筛查：基线模型、临床变量和不确定性量化",
+    "paper_id": "2601.07969",
+    "paper_abstract": "In this paper, we propose a standardized framework for automatic tuberculosis (TB) detection from cough audio and routinely collected clinical data using machine learning. While TB screening from audio has attracted growing interest, progress is difficult to measure because existing studies vary substantially in datasets, cohort definitions, feature representations, model families, validation protocols, and reported metrics. Consequently, reported gains are often not directly comparable, and it remains unclear whether improvements stem from modeling advances or from differences in data and evaluation. We address this gap by establishing a strong, well-documented baseline for TB prediction using cough recordings and accompanying clinical metadata from a recently compiled dataset from several countries. Our pipeline is reproducible end-to-end, covering feature extraction, multimodal fusion, cougher-independent evaluation, and uncertainty quantification, and it reports a consistent suite of clinically relevant metrics to enable fair comparison. We further quantify performance for cough audio-only and fused (audio + clinical metadata) models, and release the full experimental protocol to facilitate benchmarking. This baseline is intended to serve as a common reference point and to reduce methodological variance that currently holds back progress in the field.",
+    "paper_abstract_zh": "本文提出了一种标准化框架，用于从咳嗽音频和常规收集的临床数据中通过机器学习自动检测结核病(TB)。尽管基于音频的TB筛查已引起越来越多的关注，但由于现有研究在数据集、队列定义、特征表示、模型族、验证协议和报告指标方面存在显著差异，进展难以衡量。因此，报告的增益通常无法直接比较，且尚不清楚改进是源于建模进步还是数据和评估的差异。我们通过使用最近从多个国家汇编的数据集中的咳嗽录音和相关临床元数据建立了一个强大、文档完善的TB预测基线来解决这一差距。我们的管道端到端可重现，涵盖特征提取、多模态融合、咳嗽者独立评估和不确定性量化，并报告了一致的临床相关指标套件，以实现公平比较。我们进一步量化了仅使用咳嗽音频和融合(音频+临床元数据)模型的性能，并发布了完整的实验协议以促进基准测试。该基线旨在作为共同参考点，并减少当前阻碍该领域进展的方法学变异。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "George P. Kafentzis, Efstratios Selisios",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Quantitative Analysis of Proxy Tasks for Anomalous Sound Detection",
+    "paper_title_zh": "代理任务在异常声音检测中的定量分析",
+    "paper_id": "2601.08480",
+    "paper_abstract": "Anomalous sound detection (ASD) typically involves self-supervised proxy tasks to learn feature representations from normal sound data, owing to the scarcity of anomalous samples. In ASD research, proxy tasks such as AutoEncoders operate under the explicit assumption that models trained on normal data will increase the reconstruction errors related to anomalies. A natural extension suggests that improved proxy task performance should improve ASD capability; however, this relationship has received little systematic attention. This study addresses this research gap by quantitatively analyzing the relationship between proxy task metrics and ASD performance across five configurations, namely, AutoEncoders, classification, source separation, contrastive learning, and pre-trained models. We evaluate the learned representations using linear probe (linear separability) and Mahalanobis distance (distributional compactness). Our experiments reveal that strong proxy performance does not necessarily improve anomalous sound detection performance. Specifically, classification tasks experience performance saturation owing to insufficient task difficulty, whereas contrastive learning fails to learn meaningful features owing to limited data diversity. Notably, source separation is the only task demonstrating a strong positive correlation, such that improved separation consistently improves anomaly detection. Based on these findings, we highlight the critical importance of task difficulty and objective alignment. Finally, we propose a three-stage alignment verification protocol to guide the design of highly effective proxy tasks for ASD systems.",
+    "paper_abstract_zh": "异常声音检测(ASD)通常涉及自监督代理任务，用于从正常声音数据中学习特征表示，这是因为异常样本的稀缺性。在ASD研究中，如自编码器(AutoEncoders)等代理任务在明确假设下运行，即基于正常数据训练的模型会增加与异常相关的重建误差。一个自然的推论是，改进的代理任务性能应该能提升ASD能力；然而，这种关系尚未得到系统性关注。本研究通过定量分析五种配置（自编码器、分类、源分离、对比学习和预训练模型）下代理任务指标与ASD性能之间的关系，填补了这一研究空白。我们使用线性探测（线性可分性）和马氏距离（分布紧凑性）来评估学习到的表示。实验表明，强大的代理性能并不一定能提升异常声音检测性能。具体而言，分类任务因任务难度不足而出现性能饱和，而对比学习因数据多样性有限而无法学习有意义的特征。值得注意的是，源分离是唯一表现出强正相关性的任务，即改进分离性能持续提升异常检测能力。基于这些发现，我们强调了任务难度和目标对齐的关键重要性。最后，我们提出了一个三阶段对齐验证协议，以指导ASD系统高效代理任务的设计。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "Seunghyeon Shin, Seokjin Lee",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Weakly Supervised Tabla Stroke Transcription via TI-SDRM: A Rhythm-Aware Lattice Rescoring Framework",
+    "paper_title_zh": "基于TI-SDRM的弱监督塔布拉打击乐转录：一种节奏感知的格子重评分框架",
+    "paper_id": "2601.08537",
+    "paper_abstract": "Tabla Stroke Transcription (TST) is central to the analysis of rhythmic structure in Hindustani classical music, yet remains challenging due to complex rhythmic organization and the scarcity of strongly annotated data. Existing approaches largely rely on fully supervised learning with onset-level annotations, which are costly and impractical at scale. This work addresses TST in a weakly supervised setting, using only symbolic stroke sequences without temporal alignment. We propose a framework that combines a CTC-based acoustic model with sequence-level rhythmic rescoring. The acoustic model produces a decoding lattice, which is refined using a \\textbf{$T\\bar{a}la$}-Independent Static--Dynamic Rhythmic Model (TI-SDRM) that integrates long-term rhythmic structure with short-term adaptive dynamics through an adaptive interpolation mechanism. We curate a new real-world tabla solo dataset and a complementary synthetic dataset, establishing the first benchmark for weakly supervised TST in Hindustani classical music. Experiments demonstrate consistent and substantial reductions in stroke error rate over acoustic-only decoding, confirming the importance of explicit rhythmic structure for accurate transcription.",
+    "paper_abstract_zh": "塔布拉打击乐转录(TST)是分析印度斯坦古典音乐节奏结构的核心，但由于复杂的节奏组织和强标注数据的稀缺性，这一任务仍然具有挑战性。现有方法主要依赖于具有起始点级别标注的完全监督学习，这种方法在大规模应用中成本高昂且不切实际。本文在弱监督环境下解决TST问题，仅使用未进行时间对齐的符号化打击乐序列。我们提出了一种结合基于CTC的声学模型和序列级别节奏重评分的框架。声学模型生成解码格子，然后通过一种塔布拉无关的静态-动态节奏模型(TI-SDRM)进行优化，该模型通过自适应插值机制整合长期节奏结构与短期自适应动态。我们整理了一个新的真实世界塔布拉独奏数据集和一个互补的合成数据集，建立了印度斯坦古典音乐中弱监督TST的第一个基准。实验表明，与仅使用声学解码相比，该方法在打击乐错误率上实现了持续且显著的降低，证实了明确节奏结构对准确转录的重要性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "Rahul Bapusaheb Kodag, Vipul Arora",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "LJ-Spoof: A Generatively Varied Corpus for Audio Anti-Spoofing and Synthesis Source Tracing",
+    "paper_title_zh": "LJ-Spoof：用于音频反欺骗和合成源追踪的生成多样化语料库",
+    "paper_id": "2601.07958",
+    "paper_abstract": "Speaker-specific anti-spoofing and synthesis-source tracing are central challenges in audio anti-spoofing. Progress has been hampered by the lack of datasets that systematically vary model architectures, synthesis pipelines, and generative parameters. To address this gap, we introduce LJ-Spoof, a speaker-specific, generatively diverse corpus that systematically varies prosody, vocoders, generative hyperparameters, bona fide prompt sources, training regimes, and neural post-processing. The corpus spans one speakers-including studio-quality recordings-30 TTS families, 500 generatively variant subsets, 10 bona fide neural-processing variants, and more than 3 million utterances. This variation-dense design enables robust speaker-conditioned anti-spoofing and fine-grained synthesis-source tracing. We further position this dataset as both a practical reference training resource and a benchmark evaluation suite for anti-spoofing and source tracing.",
+    "paper_abstract_zh": "针对特定说话者的音频反欺骗和合成源追踪是音频反欺骗领域的核心挑战。由于缺乏系统化改变模型架构、合成流程和生成参数的数据集，研究进展受到阻碍。为解决这一空白，我们引入了LJ-Spoof，这是一个针对特定说话者、生成多样化的语料库，系统性地改变了韵律、声码器、生成超参数、真实提示源、训练方案和神经后处理。该语料库涵盖一位说话者（包括录音室质量录音）、30个TTS家族、500个生成变体子集、10个真实神经处理变体以及超过300万条语音。这种高密度变化的设计能够实现稳健的说话者条件反欺骗和细粒度的合成源追踪。我们进一步将此数据集定位为反欺骗和源追踪的实际参考训练资源和基准评估套件。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "Surya Subramani, Hashim Ali, Hafiz Malik",
+    "topic": [
+      "Audio Classification",
+      "Speech Synthesis",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "VoxCog: Towards End-to-End Multilingual Cognitive Impairment Classification through Dialectal Knowledge",
+    "paper_title_zh": "VoxCog：通过方言知识实现端到端多语言认知障碍分类",
+    "paper_id": "2601.07999",
+    "paper_abstract": "In this work, we present a novel perspective on cognitive impairment classification from speech by integrating speech foundation models that explicitly recognize speech dialects. Our motivation is based on the observation that individuals with Alzheimer's Disease (AD) or mild cognitive impairment (MCI) often produce measurable speech characteristics, such as slower articulation rate and lengthened sounds, in a manner similar to dialectal phonetic variations seen in speech. Building on this idea, we introduce VoxCog, an end-to-end framework that uses pre-trained dialect models to detect AD or MCI without relying on additional modalities such as text or images. Through experiments on multiple multilingual datasets for AD and MCI detection, we demonstrate that model initialization with a dialect classifier on top of speech foundation models consistently improves the predictive performance of AD or MCI. Our trained models yield similar or often better performance compared to previous approaches that ensembled several computational methods using different signal modalities. Particularly, our end-to-end speech-based model achieves 87.5% and 85.9% accuracy on the ADReSS 2020 challenge and ADReSSo 2021 challenge test sets, outperforming existing solutions that use multimodal ensemble-based computation or LLMs.",
+    "paper_abstract_zh": "在这项工作中，我们提出了一种新颖的认知障碍分类视角，通过整合能够明确识别语音方言的语音基础模型来实现。我们的动机基于一个观察：阿尔茨海默病(AD)或轻度认知障碍(MCI)患者往往表现出可测量的语音特征，如较慢的发音速度和延长的声音，这与语音中看到的方言语音变异方式相似。基于这一想法，我们引入了VoxCog，这是一个端到端框架，使用预训练的方言模型来检测AD或MCI，而不依赖于文本或图像等其他模态。通过在多个用于AD和MCI检测的多语言数据集上进行实验，我们证明使用方言分类器对语音基础模型进行初始化可以持续提高AD或MCI的预测性能。与之前使用不同信号模态组合多种计算方法的方法相比，我们训练的模型取得了相似或更好的性能。特别是，我们的端到端语音模型在ADReSS 2020挑战赛和ADReSSo 2021挑战赛测试集上分别达到了87.5%和85.9%的准确率，超过了使用多模态集成计算或LLM的现有解决方案。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "Tiantian Feng, Anfeng Xu, Jinkook Lee, Shrikanth Narayanan",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Elastic overtones: an equal temperament 12 tone music system with \"perfect\" fifths",
+    "paper_title_zh": "弹性泛音：一种具有'完美'五度音程的十二平均律音乐系统",
+    "paper_id": "2601.08074",
+    "paper_abstract": "The impossibility of a transposable 12 semitone tuning of the octave arises from the mathematical fact that $2 \\times 2^{7/12} \\neq 3$ i.e., the second harmonic of the fifth can not exactly match the third harmonic of the fundamental. This in turn, stems from the whole number harmonic structure of western music, and the subsequent fundamental character of the octave interval as multiples of 2 in frequency, a property inherited by our music system from the physics of instruments with vibrating elements being to a good approximation one dimensional. In the current era of electronic music, one can relax the above assumptions to construct an analogous music system where all the structural properties of the standard music system are preserved, but where harmonics are not whole number multiples of the fundamental frequency, and the octave is no longer a factor of 2 in frequency. This now allows to construct a transposable 12 semitone music system where the second harmonic of the fifth exactly matches the third harmonic of the fundamental. The enhanced harmonic qualities of this system recover to a good approximation the musical qualities of Just Intonation, whilst retaining by construction all the versatility and modulating ability of 12TET.",
+    "paper_abstract_zh": "可移调的十二半音音阶调音的不可能性源于一个数学事实：2 × 2^(7/12) ≠ 3，即五度音程的第二谐波无法与基频的第三谐波精确匹配。这反过来又源于西方音乐的全数谐波结构，以及八度音程作为频率倍数的根本特性，这一特性是从具有振动元素的乐器的物理学中继承而来的，这些乐器在一维近似下表现良好。在当今的电子音乐时代，我们可以放宽上述假设，构建一个类似的音乐系统，其中保留了标准音乐系统的所有结构特性，但谐波不再是基频的整数倍，且八度音程不再是频率的2倍因子。现在可以构建一个可移调的十二半音音乐系统，其中五度音程的第二谐波与基频的第三谐波精确匹配。该系统增强的谐波品质很好地近似了纯律的音乐品质，同时通过构造保留了十二平均律(12TET)的所有多功能性和调谐能力。",
+    "subjects": [
+      "Physics and Society (physics.soc-ph)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Popular Physics (physics.pop-ph)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "X. Hernandez, Luis Nasser, Pablo Garcia-Valenzuela",
+    "topic": [
+      "Music Generation",
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Decodable but not structured: linear probing enables Underwater Acoustic Target Recognition with pretrained audio embeddings",
+    "paper_title_zh": "可解码但非结构化：线性探测使预训练音频嵌入能够实现水下声学目标识别",
+    "paper_id": "2601.08358",
+    "paper_abstract": "Increasing levels of anthropogenic noise from ships contribute significantly to underwater sound pollution, posing risks to marine ecosystems. This makes monitoring crucial to understand and quantify the impact of the ship radiated noise. Passive Acoustic Monitoring (PAM) systems are widely deployed for this purpose, generating years of underwater recordings across diverse soundscapes. Manual analysis of such large-scale data is impractical, motivating the need for automated approaches based on machine learning. Recent advances in automatic Underwater Acoustic Target Recognition (UATR) have largely relied on supervised learning, which is constrained by the scarcity of labeled data. Transfer Learning (TL) offers a promising alternative to mitigate this limitation. In this work, we conduct the first empirical comparative study of transfer learning for UATR, evaluating multiple pretrained audio models originating from diverse audio domains. The pretrained model weights are frozen, and the resulting embeddings are analyzed through classification, clustering, and similarity-based evaluations. The analysis shows that the geometrical structure of the embedding space is largely dominated by recording-specific characteristics. However, a simple linear probe can effectively suppress this recording-specific information and isolate ship-type features from these embeddings. As a result, linear probing enables effective automatic UATR using pretrained audio models at low computational cost, significantly reducing the need for a large amounts of high-quality labeled ship recordings.",
+    "paper_abstract_zh": "日益增加的船只人为噪音对水下声音污染贡献显著，对海洋生态系统构成威胁。这使得监测对于理解和量化船只辐射噪音的影响至关重要。被动声学监测（PAM）系统被广泛部署用于此目的，在各种声景中生成多年的水下录音记录。对这种大规模数据进行手动分析是不切实际的，这促使需要基于机器学习的自动化方法。水下声学目标识别（UATR）的最新进展主要依赖于监督学习，但受限于标记数据的稀缺性。迁移学习（TL）为缓解这一限制提供了有希望的替代方案。在这项工作中，我们进行了针对UATR的迁移学习首次实证比较研究，评估了来自不同音频领域的多种预训练音频模型。预训练模型权重被冻结，并通过分类、聚类和基于相似性的评估来分析得到的嵌入。分析表明，嵌入空间的几何结构主要受录音特定特征的主导。然而，一个简单的线性探测可以有效抑制这种录音特定信息，并从这些嵌入中分离出船只类型特征。因此，线性探测能够以低计算成本使用预训练音频模型实现有效的自动UATR，显著减少了对大量高质量标记船只录音的需求。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "Hilde I. Hummel, Sandjai Bhulai, Rob D. van der Mei, Burooj Ghani",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Decoding Order Matters in Autoregressive Speech Synthesis",
+    "paper_title_zh": "自回归语音合成中的解码顺序很重要",
+    "paper_id": "2601.08450",
+    "paper_abstract": "Autoregressive speech synthesis often adopts a left-to-right order, yet generation order is a modelling choice. We investigate decoding order through masked diffusion framework, which progressively unmasks positions and allows arbitrary decoding orders during training and inference. By interpolating between identity and random permutations, we show that randomness in decoding order affects speech quality. We further compare fixed strategies, such as \\texttt{l2r} and \\texttt{r2l} with adaptive ones, such as Top-$K$, finding that fixed-order decoding, including the dominating left-to-right approach, is suboptimal, while adaptive decoding yields better performance. Finally, since masked diffusion requires discrete inputs, we quantise acoustic representations and find that even 1-bit quantisation can support reasonably high-quality speech.",
+    "paper_abstract_zh": "自回归语音合成通常采用从左到右的顺序，但生成顺序是一种建模选择。我们通过掩码扩散框架研究解码顺序，该框架逐步取消掩码位置，并在训练和推理期间允许任意解码顺序。通过在恒等排列和随机排列之间进行插值，我们表明解码顺序中的随机性会影响语音质量。我们进一步比较了固定策略（如从左到右l2r和从右到左r2l）与自适应策略（如Top-K），发现包括主导的从左到右方法在内的固定顺序解码次优，而自适应解码能获得更好的性能。最后，由于掩码扩散需要离散输入，我们对声学表示进行量化，发现即使1位量化也能支持高质量的语音。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "Minghui Zhao, Anton Ragni",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Robust CAPTCHA Using Audio Illusions in the Era of Large Language Models: from Evaluation to Advances",
+    "paper_title_zh": "基于音频错觉的鲁棒CAPTCHA：从评估到进展——在大语言模型时代",
+    "paper_id": "2601.08516",
+    "paper_abstract": "CAPTCHAs are widely used by websites to block bots and spam by presenting challenges that are easy for humans but difficult for automated programs to solve. To improve accessibility, audio CAPTCHAs are designed to complement visual ones. However, the robustness of audio CAPTCHAs against advanced Large Audio Language Models (LALMs) and Automatic Speech Recognition (ASR) models remains unclear.\nIn this paper, we introduce AI-CAPTCHA, a unified framework that offers (i) an evaluation framework, ACEval, which includes advanced LALM- and ASR-based solvers, and (ii) a novel audio CAPTCHA approach, IllusionAudio, leveraging audio illusions. Through extensive evaluations of seven widely deployed audio CAPTCHAs, we show that most existing methods can be solved with high success rates by advanced LALMs and ASR models, exposing critical security weaknesses.\nTo address these vulnerabilities, we design a new audio CAPTCHA approach, IllusionAudio, which exploits perceptual illusion cues rooted in human auditory mechanisms. Extensive experiments demonstrate that our method defeats all tested LALM- and ASR-based attacks while achieving a 100% human pass rate, significantly outperforming existing audio CAPTCHA methods.",
+    "paper_abstract_zh": "CAPTCHA被网站广泛用于通过呈现对人类容易但对自动化程序难以解决的挑战来阻止机器人和垃圾信息。为了提高可访问性，音频CAPTCHA被设计为视觉CAPTCHA的补充。然而，音频CAPTCHA对先进的大型音频语言模型(LALMs)和自动语音识别(ASR)模型的鲁棒性仍不清楚。在本文中，我们介绍了AI-CAPTCHA，这是一个统一框架，提供(i)一个评估框架ACEval，包括基于先进LALM和ASR的求解器，以及(ii)一种新颖的音频CAPTCHA方法IllusionAudio，利用音频错觉。通过对七种广泛部署的音频CAPTCHA进行广泛评估，我们表明大多数现有方法可以被先进的LALM和ASR模型以高成功率解决，暴露了关键的安全弱点。为了解决这些漏洞，我们设计了一种新的音频CAPTCHA方法IllusionAudio，它利用人类听觉机制中感知错觉的线索。广泛的实验证明，我们的方法击败了所有测试的基于LALM和ASR的攻击，同时实现了100%的人类通过率，显著优于现有的音频CAPTCHA方法。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computers and Society (cs.CY)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "Ziqi Ding, Yunfeng Wan, Wei Song, Yi Liu, Gelei Deng, Nan Sun, Huadong Mo, Jingling Xue, Shidong Pan, Yuekang Li",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "FusID: Modality-Fused Semantic IDs for Generative Music Recommendation",
+    "paper_title_zh": "FusID: 用于生成式音乐推荐的模态融合语义ID",
+    "paper_id": "2601.08764",
+    "paper_abstract": "Generative recommendation systems have achieved significant advances by leveraging semantic IDs to represent items. However, existing approaches that tokenize each modality independently face two critical limitations: (1) redundancy across modalities that reduces efficiency, and (2) failure to capture inter-modal interactions that limits item representation. We introduce FusID, a modality-fused semantic ID framework that addresses these limitations through three key components: (i) multimodal fusion that learns unified representations by jointly encoding information across modalities, (ii) representation learning that brings frequently co-occurring item embeddings closer while maintaining distinctiveness and preventing feature redundancy, and (iii) product quantization that converts the fused continuous embeddings into multiple discrete tokens to mitigate ID conflict. Evaluated on a multimodal next-song recommendation (i.e., playlist continuation) benchmark, FusID achieves zero ID conflicts, ensuring that each token sequence maps to exactly one song, mitigates codebook underutilization, and outperforms baselines in terms of MRR and Recall@k (k = 1, 5, 10, 20).",
+    "paper_abstract_zh": "通过利用语义ID表示物品，生成式推荐系统已经取得了显著进展。然而，现有独立对每个模态进行标记化的方法面临两个关键局限：(1) 模态间的冗余降低了效率，(2) 无法捕获模态间交互，限制了物品表示能力。我们引入了FusID，一种模态融合语义ID框架，通过三个关键组件解决这些局限：(i) 多模态融合通过联合编码跨模态信息学习统一表示，(ii) 表示学习将频繁共现的物品嵌入拉近，同时保持区分性并防止特征冗余，(iii) 乘数量化将融合的连续嵌入转换为多个离散标记以缓解ID冲突。在多模态下一首歌曲推荐（即播放列表续接）基准上评估，FusID实现了零ID冲突，确保每个标记序列精确映射到一首歌曲，缓解了码本利用率不足的问题，并在MRR和Recall@k（k = 1, 5, 10, 20）指标上优于基线方法。",
+    "subjects": [
+      "Information Retrieval (cs.IR)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-14",
+    "paper_authors": "Haven Kim, Yupeng Hou, Julian McAuley",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
