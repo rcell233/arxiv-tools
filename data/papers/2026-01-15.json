@@ -1,0 +1,204 @@
+[
+  {
+    "paper_title": "Semantic visually-guided acoustic highlighting with large vision-language models",
+    "paper_title_zh": "基于大型视觉语言模型的语义视觉引导音频高亮",
+    "paper_id": "2601.08871",
+    "paper_abstract": "Balancing dialogue, music, and sound effects with accompanying video is crucial for immersive storytelling, yet current audio mixing workflows remain largely manual and labor-intensive. While recent advancements have introduced the visually guided acoustic highlighting task, which implicitly rebalances audio sources using multimodal guidance, it remains unclear which visual aspects are most effective as conditioning this http URL address this gap through a systematic study of whether deep video understanding improves audio remixing. Using textual descriptions as a proxy for visual analysis, we prompt large vision-language models to extract six types of visual-semantic aspects, including object and character appearance, emotion, camera focus, tone, scene background, and inferred sound-related cues. Through extensive experiments, camera focus, tone, and scene background consistently yield the largest improvements in perceptual mix quality over state-of-the-art baselines. Our findings (i) identify which visual-semantic cues most strongly support coherent and visually aligned audio remixing, and (ii) outline a practical path toward automating cinema-grade sound design using lightweight guidance derived from large vision-language models.",
+    "paper_abstract_zh": "平衡对话、音乐和音效与伴随的视频对于沉浸式叙事至关重要，然而当前的音频混音工作流程仍然主要依赖手动且劳动密集型的方法。虽然最近的进展引入了视觉引导的音频高亮任务，该任务使用多模态指导隐式地重新平衡音频源，但尚不清楚哪些视觉方面作为条件最为有效。我们通过一项系统性研究来解决这个问题，研究深度视觉理解是否能改善音频混音。使用文本描述作为视觉分析的代理，我们提示大型视觉语言模型提取六种类型的视觉语义方面，包括对象和角色外观、情感、相机焦点、色调、场景背景和推断的与声音相关的线索。通过大量实验，相机焦点、色调和场景背景在感知混音质量上始终比最先进的基线方法带来最大的改进。我们的发现(i)确定了哪些视觉语义线索最能支持连贯且视觉对齐的音频混音，以及(ii)概述了一条使用从大型视觉语言模型派生的轻量级指导来实现电影级声音设计自动化的实用路径。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Junhua Huang, Chao Huang, Chenliang Xu",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval",
+      "Other"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Echoes of Ideology: Toward an Audio Analysis Pipeline to Unveil Character Traits in Historical Nazi Propaganda Films",
+    "paper_title_zh": "意识形态的回响：迈向揭示历史纳粹宣传电影中角色特征的音频分析流程",
+    "paper_id": "2601.08879",
+    "paper_abstract": "This study investigates the use of computational audio analysis to examine ideological narratives in Nazi propaganda films. Employing a three-step pipeline, speaker diarization, audio transcription and psycholinguistic analysis, it reveals ideological patterns in characters. Despite current issues with speaker diarization, the methodology provides insights into character traits and propaganda narratives, suggesting scalable applications.",
+    "paper_abstract_zh": "本研究探讨了使用计算音频分析来检查纳粹宣传电影中的意识形态叙事。采用三步流程：说话人分离、音频转录和心理语言学分析，揭示了角色中的意识形态模式。尽管当前说话人分离存在问题，但该方法提供了关于角色特征和宣传叙事的见解，表明其具有可扩展的应用前景。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Nicolas Ruth, Manuel Burghardt",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speech-Hands: A Self-Reflection Voice Agentic Approach to Speech Recognition and Audio Reasoning with Omni Perception",
+    "paper_title_zh": "Speech-Hands: 一种具有全方位感知能力的自反思语音智能体方法用于语音识别和音频推理",
+    "paper_id": "2601.09413",
+    "paper_abstract": "We introduce a voice-agentic framework that learns one critical omni-understanding skill: knowing when to trust itself versus when to consult external audio perception. Our work is motivated by a crucial yet counterintuitive finding: naively fine-tuning an omni-model on both speech recognition and external sound understanding tasks often degrades performance, as the model can be easily misled by noisy hypotheses. To address this, our framework, Speech-Hands, recasts the problem as an explicit self-reflection decision. This learnable reflection primitive proves effective in preventing the model from being derailed by flawed external candidates. We show that this agentic action mechanism generalizes naturally from speech recognition to complex, multiple-choice audio reasoning. Across the OpenASR leaderboard, Speech-Hands consistently outperforms strong baselines by 12.1% WER on seven benchmarks. The model also achieves 77.37% accuracy and high F1 on audio QA decisions, showing robust generalization and reliability across diverse audio question answering datasets. By unifying perception and decision-making, our work offers a practical path toward more reliable and resilient audio intelligence.",
+    "paper_abstract_zh": "我们介绍了一种语音智能体框架，它学习一项关键的全方位理解技能：知道何时信任自己，何时咨询外部音频感知。我们的工作源于一个关键但违反直觉的发现：简单地将全方位模型同时用于语音识别和外部声音理解任务的微调通常会降低性能，因为模型很容易被有噪声的假设误导。为解决这一问题，我们的框架Speech-Hands将问题重新表述为一个明确的自反思决策。这种可学习的反思机制被证明能有效防止模型被有缺陷的外部候选方案误导。我们展示，这种智能体行动机制可以自然地从语音识别推广到复杂的多选音频推理。在OpenASR排行榜上，Speech-Hands在七个基准测试上始终比强基线模型高出12.1%的词错误率(WER)。该模型在音频问答决策上还达到了77.37%的准确率和较高的F1分数，显示出在多样化音频问答数据集上的强大泛化能力和可靠性。通过统一感知和决策，我们的工作为构建更可靠、更具韧性的音频智能提供了实用路径。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Multiagent Systems (cs.MA)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Zhen Wan, Chao-Han Huck Yang, Jinchuan Tian, Hanrong Ye, Ankita Pasad, Szu-wei Fu, Arushi Goel, Ryo Hachiuma, Shizhe Diao, Kunal Dhawan, Sreyan Ghosh, Yusuke Hirota, Zhehuai Chen, Rafael Valle, Ehsan Hosseini Asl, Chenhui Chu, Shinji Watanabe, Yu-Chiang Frank Wang, Boris Ginsburg",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DSA-Tokenizer: Disentangled Semantic-Acoustic Tokenization via Flow Matching-based Hierarchical Fusion",
+    "paper_title_zh": "DSA-Tokenizer：基于流匹配层次融合的解耦语义-声学标记化",
+    "paper_id": "2601.09239",
+    "paper_abstract": "Speech tokenizers serve as the cornerstone of discrete Speech Large Language Models (Speech LLMs). Existing tokenizers either prioritize semantic encoding, fuse semantic content with acoustic style inseparably, or achieve incomplete semantic-acoustic disentanglement. To achieve better disentanglement, we propose DSA-Tokenizer, which explicitly disentangles speech into discrete semantic and acoustic tokens via distinct optimization constraints. Specifically, semantic tokens are supervised by ASR to capture linguistic content, while acoustic tokens focus on mel-spectrograms restoration to encode style. To eliminate rigid length constraints between the two sequences, we introduce a hierarchical Flow-Matching decoder that further improve speech generation this http URL, We employ a joint reconstruction-recombination training strategy to enforce this separation. DSA-Tokenizer enables high fidelity reconstruction and flexible recombination through robust disentanglement, facilitating controllable generation in speech LLMs. Our analysis highlights disentangled tokenization as a pivotal paradigm for future speech modeling. Audio samples are avaialble at this https URL. The code and model will be made publicly available after the paper has been accepted.",
+    "paper_abstract_zh": "语音标记化器作为离散语音大语言模型（Speech LLMs）的基石。现有的标记化器要么优先考虑语义编码，要么将语义内容与声学风格不可分离地融合，要么实现不完整的语义-声学解耦。为了实现更好的解耦，我们提出了DSA-Tokenizer，它通过不同的优化约束明确地将语音解耦为离散的语义标记和声学标记。具体而言，语义标记由ASR监督以捕获语言内容，而声学标记则专注于梅尔频谱图恢复以编码风格。为了消除两个序列之间的刚性长度约束，我们引入了一种层次化的流匹配解码器，进一步改进了语音生成。我们采用联合重建-重组训练策略来强制执行这种分离。DSA-Tokenizer通过强大的解耦能力实现高保真重建和灵活重组，促进了语音LLMs中的可控生成。我们的分析强调了解耦标记化作为未来语音建模的关键范式。音频样本可在提供的链接中获取。代码和模型将在论文被接受后公开提供。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Hanlin Zhang, Daxin Tan, Dehua Tao, Xiao Chen, Haochen Tan, Yunhe Li, Yuchen Cao, Jianping Wang, Linqi Song",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Research on Piano Timbre Transformation System Based on Diffusion Model",
+    "paper_title_zh": "基于扩散模型的钢琴音色转换系统研究",
+    "paper_id": "2601.09333",
+    "paper_abstract": "We propose a timbre conversion model based on the Diffusion architecture de-signed to precisely translate music played by various instruments into piano ver-sions. The model employs a Pitch Encoder and Loudness Encoder to extract pitch and loudness features of the music, which serve as conditional inputs to the Dif-fusion Model's decoder, generating high-quality piano timbres. Case analysis re-sults show that the model performs excellently in terms of pitch accuracy and timbral similarity, maintaining stable conversion across different musical styles (classical, jazz, pop) and lengths (from short clips to full pieces). Particularly, the model maintains high sound quality and accuracy even when dealing with rapidly changing notes and complex musical structures, demonstrating good generaliza-tion capability. Additionally, the model has the potential for real-time musical conversion and is suitable for live performances and digital music creation tools. Future research will focus on enhancing the handling of loudness dynamics and incorporating additional musical features (such as timbral variations and rhythmic complexity) to improve the model's adaptability and expressiveness. We plan to explore the model's application potential in other timbre conversion tasks, such as converting vocals to instrumental sounds or integration with MIDI digital pianos, further expanding the application scope of the Diffusion-based timbre conversion model in the field of music generation.",
+    "paper_abstract_zh": "我们提出了一种基于扩散架构的音色转换模型，旨在精确地将各种乐器演奏的音乐转换为钢琴版本。该模型采用音高编码器和响度编码器提取音乐的音高和响度特征，这些特征作为扩散模型解码器的条件输入，生成高质量的钢琴音色。案例分析结果表明，该模型在音高准确性和音色相似性方面表现出色，能够在不同音乐风格（古典、爵士、流行）和长度（从短片段到完整作品）下保持稳定的转换。特别是在处理快速变化的音符和复杂的音乐结构时，该模型仍能保持高音质和准确性，展现出良好的泛化能力。此外，该模型具有实时音乐转换的潜力，适用于现场表演和数字音乐创作工具。未来的研究将重点增强对响度动态的处理，并融入额外的音乐特征（如音色变化和节奏复杂性），以提高模型的适应性和表现力。我们计划探索该模型在其他音色转换任务中的应用潜力，例如将人声转换为乐器声音，或与MIDI数字钢琴集成，进一步扩展基于扩散的音色转换模型在音乐生成领域的应用范围。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Chun-Chieh Hsu, Tsai-Ling Hsu, Chen-Chen Yeh, Shao-Chien Lu, Cheng-Han Wu, Bing-Ze Liu, Timothy K. Shih, Yu-Cheng Lin",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "SLAM-LLM: A Modular, Open-Source Multimodal Large Language Model Framework and Best Practice for Speech, Language, Audio and Music Processing",
+    "paper_title_zh": "SLAM-LLM：一种用于语音、语言、音频和音乐处理的模块化、开源多模态大语言模型框架与最佳实践",
+    "paper_id": "2601.09385",
+    "paper_abstract": "The recent surge in open-source Multimodal Large Language Models (MLLM) frameworks, such as LLaVA, provides a convenient kickoff for artificial intelligence developers and researchers. However, most of the MLLM frameworks take vision as the main input modality, and provide limited in-depth support for the modality of speech, audio, and music. This situation hinders the development of audio-language models, and forces researchers to spend a lot of effort on code writing and hyperparameter tuning. We present SLAM-LLM, an open-source deep learning framework designed to train customized MLLMs, focused on speech, language, audio, and music processing. SLAM-LLM provides a modular configuration of different encoders, projectors, LLMs, and parameter-efficient fine-tuning plugins. SLAM-LLM also includes detailed training and inference recipes for mainstream tasks, along with high-performance checkpoints like LLM-based Automatic Speech Recognition (ASR), Automated Audio Captioning (AAC), and Music Captioning (MC). Some of these recipes have already reached or are nearing state-of-the-art performance, and some relevant techniques have also been accepted by academic papers. We hope SLAM-LLM will accelerate iteration, development, data engineering, and model training for researchers. We are committed to continually pushing forward audio-based MLLMs through this open-source framework, and call on the community to contribute to the LLM-based speech, audio and music processing.",
+    "paper_abstract_zh": "最近，像LLaVA这样的开源多模态大语言模型(MLLM)框架激增，为人工智能开发者和研究人员提供了便捷的起点。然而，大多数MLLM框架以视觉为主要输入模ality，对语音、音频和音乐模态的深入支持有限。这种情况阻碍了音频语言模型的发展，迫使研究人员花费大量精力进行代码编写和超参数调优。我们提出了SLAM-LLM，一个开源深度学习框架，旨在训练专注于语音、语言、音频和音乐处理的定制化MLLM。SLAM-LLM提供了不同编码器、投影器、LLM和参数高效微插件的模块化配置。SLAM-LLM还包括主流任务的详细训练和推理配方，以及基于LLM的高性能检查点，如自动语音识别(ASR)、自动音频字幕(AAC)和音乐字幕(MC)。其中一些配方已达到或接近最先进性能，一些相关技术已被学术论文接受。我们希望SLAM-LLM能加速研究人员的迭代、开发、数据工程和模型训练。我们致力于通过这个开源框架不断推动基于音频的MLLM发展，并呼吁社区为基于LLM的语音、音频和音乐处理做出贡献。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Ziyang Ma, Guanrou Yang, Wenxi Chen, Zhifu Gao, Yexing Du, Xiquan Li, Zhisheng Zheng, Haina Zhu, Jianheng Zhuo, Zheshu Song, Ruiyang Xu, Tiranrui Wang, Yifan Yang, Yanqiao Zhu, Zhikang Niu, Liumeng Xue, Yinghao Ma, Ruibin Yuan, Shiliang Zhang, Kai Yu, Eng Siong Chng, Xie Chen",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Population-Aligned Audio Reproduction With LLM-Based Equalizers",
+    "paper_title_zh": "",
+    "paper_id": "2601.09448",
+    "paper_abstract": "Conventional audio equalization is a static process that requires manual and cumbersome adjustments to adapt to changing listening contexts (e.g., mood, location, or social setting). In this paper, we introduce a Large Language Model (LLM)-based alternative that maps natural language text prompts to equalization settings. This enables a conversational approach to sound system control. By utilizing data collected from a controlled listening experiment, our models exploit in-context learning and parameter-efficient fine-tuning techniques to reliably align with population-preferred equalization settings. Our evaluation methods, which leverage distributional metrics that capture users' varied preferences, show statistically significant improvements in distributional alignment over random sampling and static preset baselines. These results indicate that LLMs could function as \"artificial equalizers,\" contributing to the development of more accessible, context-aware, and expert-level audio tuning methods.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Ioannis Stylianou, Jon Francombe, Pablo Martinez-Nuevo, Sven Ewan Shepstone, Zheng-Hua Tan",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Analysis of the Maximum Prediction Gain of Short-Term Prediction on Sustained Speech",
+    "paper_title_zh": "持续语音短期预测最大预测增益分析",
+    "paper_id": "2601.09461",
+    "paper_abstract": "Signal prediction is widely used in, e.g., economic forecasting, echo cancellation and in data compression, particularly in predictive coding of speech and music. Predictive coding algorithms reduce the bit-rate required for data transmission or storage by signal prediction. The prediction gain is a classic measure in applied signal coding of the quality of a predictor, as it links the mean-squared prediction error to the signal-to-quantization-noise of predictive coders. To evaluate predictor models, knowledge about the maximum achievable prediction gain independent of a predictor model is desirable. In this manuscript, Nadaraya-Watson kernel-regression (NWKR) and an information theoretic upper bound are applied to analyze the upper bound of the prediction gain on a newly recorded dataset of sustained speech/phonemes. It was found that for unvoiced speech a linear predictor always achieves the maximum prediction gain within at most 0.3 dB. On voiced speech, the optimum one-tap predictor was found to be linear but starting with two taps, the maximum achievable prediction gain was found to be about 2 dB to 6 dB above the prediction gain of the linear predictor. Significant differences between speakers/subjects were observed.\nThe created dataset as well as the code can be obtained for research purpose upon request.",
+    "paper_abstract_zh": "信号预测广泛应用于经济预测、回声消除和数据压缩等领域，特别是在语音和音乐的预测编码中。预测编码算法通过信号预测降低数据传输或存储所需的比特率。预测增益是衡量预测器质量的经典指标，它将均方预测误差与预测编码器的量化信噪比联系起来。为了评估预测器模型，了解独立于预测器模型的最大可实现预测增益是必要的。本文应用Nadaraya-Watson核回归(NWKR)和信息论上界，对新录制的持续语音/音素数据集上的预测增益上界进行了分析。研究发现，对于清音语音，线性预测器最多在0.3 dB内始终能实现最大预测增益。对于浊音语音，最佳单抽头预测器被证明是线性的，但从两个抽头开始，最大可实现预测增益比线性预测器的预测增益高约2 dB至6 dB。观察到不同说话者/受试者之间存在显著差异。所创建的数据集和代码可用于研究目的，可根据要求获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Reemt Hinrichs, Muhamad Fadli Damara, Stephan Preihs, Jörn Ostermann",
+    "topic": [
+      "Audio Codec",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Towards Realistic Synthetic Data for Automatic Drum Transcription",
+    "paper_title_zh": "面向真实感合成数据的自动鼓转录",
+    "paper_id": "2601.09520",
+    "paper_abstract": "Deep learning models define the state-of-the-art in Automatic Drum Transcription (ADT), yet their performance is contingent upon large-scale, paired audio-MIDI datasets, which are scarce. Existing workarounds that use synthetic data often introduce a significant domain gap, as they typically rely on low-fidelity SoundFont libraries that lack acoustic diversity. While high-quality one-shot samples offer a better alternative, they are not available in a standardized, large-scale format suitable for training. This paper introduces a new paradigm for ADT that circumvents the need for paired audio-MIDI training data. Our primary contribution is a semi-supervised method to automatically curate a large and diverse corpus of one-shot drum samples from unlabeled audio sources. We then use this corpus to synthesize a high-quality dataset from MIDI files alone, which we use to train a sequence-to-sequence transcription model. We evaluate our model on the ENST and MDB test sets, where it achieves new state-of-the-art results, significantly outperforming both fully supervised methods and previous synthetic-data approaches. The code for reproducing our experiments is publicly available at this https URL",
+    "paper_abstract_zh": "深度学习模型在自动鼓转录(ADT)领域定义了最先进的性能，但其性能依赖于大规模的配对音频-MIDI数据集，而这些数据集却十分稀缺。现有使用合成数据的解决方案通常引入显著领域差距，因为它们通常依赖于缺乏声学多样性的低保真SoundFont库。虽然高质量的单次采样样本提供了更好的替代方案，但它们并非以标准化的大规模格式提供，不适合训练。本文介绍了一种新的ADT范式，绕过了对配对音频-MIDI训练数据的需求。我们的主要贡献是一种半监督方法，可从未标记的音频源自动策划大型多样的单次鼓采样语料库。然后，我们使用该语料库仅从MIDI文件合成高质量数据集，用于训练序列到序列的转录模型。我们在ENST和MDB测试集上评估了我们的模型，取得了新的最先进结果，显著优于全监督方法和之前的合成数据方法。重现我们实验的代码已在提供的URL公开。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Pierfrancesco Melucci, Paolo Merialdo, Taketo Akama",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Linear Complexity Self-Supervised Learning for Music Understanding with Random Quantizer",
+    "paper_title_zh": "基于随机量化的线性复杂度自监督音乐理解学习",
+    "paper_id": "2601.09603",
+    "paper_abstract": "In recent years, foundation models have become very popular due to their exceptional performance, mainly in natural language (NLP) tasks where they were first introduced. These models usually consist of hundreds of millions, or even billions, of parameters, making them resource-intensive during training and in production systems, leading to increased costs. This paper focuses on the reduction of a foundation's model size when applied to music information retrieval (MIR) tasks. Our research combines the Branchformer architecture with SummaryMixing, which were first applied in speech recognition, along with a random quantization process. To facilitate reproducibility, we conduct pre-training on publicly available datasets, complemented by a proprietary dataset comparable in scale to other private datasets reported in the literature. We ensure robust evaluation by using a framework consisting of a variety of downstream MIR tasks. Our results show that our architecture achieves competitive performance when compared with other state-of-the-art models that use multi-head self-attention, while reducing the model size from 8.5% up to 12.3%.",
+    "paper_abstract_zh": "近年来，基础模型因其卓越的性能而变得非常流行，这些模型最初主要在自然语言处理(NLP)任务中引入。这些模型通常包含数亿甚至数十亿个参数，导致在训练和生产系统中资源密集，从而增加了成本。本文重点研究将基础模型应用于音乐信息检索(MIR)任务时减小模型尺寸的方法。我们的研究结合了最初应用于语音识别的Branchformer架构和SummaryMixing，以及一个随机量化过程。为了便于复现，我们在公开可用的数据集上进行预训练，并补充了一个规模与文献中报道的其他私有数据集相当的专有数据集。我们使用包含多种下游MIR任务的评估框架确保评估的稳健性。我们的结果表明，与使用多头自注意力的其他最先进模型相比，我们的架构在减少模型尺寸8.5%至12.3%的同时，实现了具有竞争力的性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-15",
+    "paper_authors": "Petros Vavaroutsos, Theodoros Palamas, Pantelis Vikatos",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
