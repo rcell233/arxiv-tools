@@ -1,0 +1,186 @@
+[
+  {
+    "paper_title": "Multi-Level Embedding Conformer Framework for Bengali Automatic Speech Recognition",
+    "paper_title_zh": "孟加拉语自动语音识别的多级嵌入Conformer框架",
+    "paper_id": "2601.09710",
+    "paper_abstract": "Bengali, spoken by over 300 million people, is a morphologically rich and lowresource language, posing challenges for automatic speech recognition (ASR). This research presents an end-to-end framework for Bengali ASR, building on a Conformer-CTC backbone with a multi-level embedding fusion mechanism that incorporates phoneme, syllable, and wordpiece representations. By enriching acoustic features with these linguistic embeddings, the model captures fine-grained phonetic cues and higher-level contextual patterns. The architecture employs early and late Conformer stages, with preprocessing steps including silence trimming, resampling, Log-Mel spectrogram extraction, and SpecAugment augmentation. The experimental results demonstrate the strong potential of the model, achieving a word error rate (WER) of 10.01% and a character error rate (CER) of 5.03%. These results demonstrate the effectiveness of combining multi-granular linguistic information with acoustic modeling, providing a scalable approach for low-resource ASR development.",
+    "paper_abstract_zh": "孟加拉语是超过3亿人使用的语言，是一种形态丰富且资源匮乏的语言，给自动语音识别(ASR)带来了挑战。本研究提出了一种用于孟加拉语ASR的端到端框架，基于Conformer-CTC主干，并采用多级嵌入融合机制，融合了音素、音节和词片表示。通过将这些语言嵌入与声学特征相结合，模型能够捕获细粒度的语音线索和更高层次的上下文模式。该架构采用早期和晚期Conformer阶段，预处理步骤包括静音修剪、重采样、对数梅尔频谱图提取和SpecAugment增强。实验结果表明该模型具有强大的潜力，词错误率(WER)达到10.01%，字符错误率(CER)达到5.03%。这些结果证明了将多粒度语言信息与声学建模相结合的有效性，为低资源ASR开发提供了一种可扩展的方法。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Md. Nazmus Sakib, Golam Mahmud, Md. Maruf Bangabashi, Umme Ara Mahinur Istia, Md. Jahidul Islam, Partha Sarker, Afra Yeamini Prity",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Nearest Kronecker Product Decomposition Based Subband Adaptive Filter: Algorithms and Applications",
+    "paper_title_zh": "基于最近Kronecker积分解的子带自适应滤波器：算法与应用",
+    "paper_id": "2601.10078",
+    "paper_abstract": "Recently, the nearest Kronecker product (NKP) decomposition-based normalized least mean square (NLMS-NKP) algorithm has demonstrated superior convergence performance compared to the conventional NLMS algorithm. However, its convergence rate exhibits significant degradation when processing highly correlated input signals. To address this problem, we propose a type-I NKP-based normalized subband adaptive filter (NSAF) algorithm, namely NSAF-NKP-I. Nevertheless, this algorithm incurs substantially higher computational overhead than the NLMS-NKP algorithm. Remarkably, our enhanced type-II NKP-based NSAF (NSAF-NKP-II) algorithm achieves equivalent convergence performance while substantially reducing computational complexity. Furthermore, to enhance robustness against impulsive noise interference, we develop two robust variants: the maximum correntropy criterion-based robust NSAF-NKP (RNSAF-NKP-MCC) and logarithmic criterion-based robust NSAF-NKP (RNSAF-NKP-LC) algorithms. Additionally, detailed analyses of computational complexity, step-size range, and theoretical steady-state performance are provided for theproposed algorithms. To enhance the practicability of the NSAF-NKP-II algorithm in complex nonlinear environments, we further devise two nonlinear implementations: the trigonometric functional link network-based NKP-NSAF (TFLN-NSAF-NKP) and Volterra series expansion-based NKP-NSAF (Volterra-NKP-NSAF) algorithms. In active noise control (ANC) systems, we further propose the filtered-x NSAF-NKP-II (NKP-FxNSAF) algorithm. Simulation experiments in echo cancellation, sparse system identification, nonlinear processing, and ANC scenarios are conducted to validate the superiority of the proposed algorithms over existing state-of-the-art counterparts.",
+    "paper_abstract_zh": "最近，基于最近Kronecker积(NKP)分解的归一化最小均方(NLMS-NKP)算法相比传统NLMS算法表现出更好的收敛性能。然而，在处理高度相关的输入信号时，其收敛速率显著下降。为解决这一问题，我们提出了一种基于I型NKP的归一化子带自适应滤波器(NSAF)算法，即NSAF-NKP-I。然而，该算法的计算开销远高于NLMS-NKP算法。值得注意的是，我们改进的II型NKP基NSAF(NSAF-NKP-II)算法在显著降低计算复杂度的同时实现了等效的收敛性能。此外，为了增强对脉冲噪声干扰的鲁棒性，我们开发了两种鲁棒变体：基于最大互相关准则的鲁棒NSAF-NKP(RNSAF-NKP-MCC)和基于对数准则的鲁棒NSAF-NKP(RNSAF-NKP-LC)算法。此外，还提供了所提出算法的计算复杂度、步长范围和理论稳态性能的详细分析。为了提高NSAF-NKP-II算法在复杂非线性环境中的实用性，我们进一步设计了两种非线性实现：基于三角函数链接网络的NKP-NSAF(TFLN-NSAF-NKP)和基于Volterra级数展开的NKP-NSAF(Volterra-NKP-NSAF)算法。在主动噪声控制(ANC)系统中，我们进一步提出了filtered-x NSAF-NKP-II(NKP-FxNSAF)算法。在回声消除、稀疏系统识别、非线性处理和ANC场景中进行了仿真实验，以验证所提出算法优于现有最先进算法的优越性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Information Theory (cs.IT)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Jianhong Ye, Haiquan Zhao",
+    "topic": [
+      "Speech Enhancement",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "VoiceSculptor: Your Voice, Designed By You",
+    "paper_title_zh": "VoiceSculptor：您的声音，由您设计",
+    "paper_id": "2601.10629",
+    "paper_abstract": "Despite rapid progress in text-to-speech (TTS), open-source systems still lack truly instruction-following, fine-grained control over core speech attributes (e.g., pitch, speaking rate, age, emotion, and style). We present VoiceSculptor, an open-source unified system that bridges this gap by integrating instruction-based voice design and high-fidelity voice cloning in a single framework. It generates controllable speaker timbre directly from natural-language descriptions, supports iterative refinement via Retrieval-Augmented Generation (RAG), and provides attribute-level edits across multiple dimensions. The designed voice is then rendered into a prompt waveform and fed into a cloning model to enable high-fidelity timbre transfer for downstream speech synthesis. VoiceSculptor achieves open-source state-of-the-art (SOTA) on InstructTTSEval-Zh, and is fully open-sourced, including code and pretrained models, to advance reproducible instruction-controlled TTS research.",
+    "paper_abstract_zh": "尽管文本转语音（TTS）技术发展迅速，但开源系统仍然缺乏对核心语音属性（如音高、语速、年龄、情感和风格）的真正遵循指令的细粒度控制。我们提出了VoiceSculptor，一个开源的统一系统，它通过在单一框架中集成基于指令的声音设计和高保真声音克隆来弥合这一差距。它可以直接从自然语言描述生成可控的说话人音色，支持通过检索增强生成（RAG）进行迭代优化，并提供跨多个维度的属性级编辑。然后，设计好的声音被渲染为提示波形，并输入到克隆模型中，以实现下游语音合成的高保真音色迁移。VoiceSculptor在InstructTTSEval-Zh上达到了开源领域的最先进（SOTA）水平，并完全开源了代码和预训练模型，以推动可复现的指令控制TTS研究。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Jingbin Hu, Huakang Chen, Linhan Ma, Dake Guo, Qirui Zhan, Wenhao Li, Haoyu Zhang, Kangxiang Xia, Ziyu Zhang, Wenjie Tian, Chengyou Wang, Jinrui Liang, Shuhan Guo, Zihang Yang, Bengu Wu, Binbin Zhang, Pengcheng Zhu, Pengyuan Xie, Chuan Xie, Qiang Zhang, Jie Liu, Lei Xie",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Stable Differentiable Modal Synthesis for Learning Nonlinear Dynamics",
+    "paper_title_zh": "用于学习非线性动力学的稳定可微分模态合成",
+    "paper_id": "2601.10453",
+    "paper_abstract": "Modal methods are a long-standing approach to physical modelling synthesis. Extensions to nonlinear problems are possible, including the case of a high-amplitude vibration of a string. A modal decomposition leads to a densely coupled nonlinear system of ordinary differential equations. Recent work in scalar auxiliary variable techniques has enabled construction of explicit and stable numerical solvers for such classes of nonlinear systems. On the other hand, machine learning approaches (in particular neural ordinary differential equations) have been successful in modelling nonlinear systems automatically from data. In this work, we examine how scalar auxiliary variable techniques can be combined with neural ordinary differential equations to yield a stable differentiable model capable of learning nonlinear dynamics. The proposed approach leverages the analytical solution for linear vibration of system's modes so that physical parameters of a system remain easily accessible after the training without the need for a parameter encoder in the model architecture. As a proof of concept, we generate synthetic data for the nonlinear transverse vibration of a string and show that the model can be trained to reproduce the nonlinear dynamics of the system. Sound examples are presented.",
+    "paper_abstract_zh": "模态方法是物理建模合成的一种长期方法。可以将其扩展到非线性问题，包括弦的高幅振动情况。模态分解会导致一个紧密耦合的非线性常微分方程组。最近在标量辅助变量技术方面的工作使得为这类非线性系统构建显式且稳定的数值求解器成为可能。另一方面，机器学习方法（特别是神经常微分方程）在从数据自动建模非线性系统方面取得了成功。在这项工作中，我们研究了如何将标量辅助变量技术与神经常微分方程相结合，以产生一个能够学习非线性动力学的稳定可微分模型。所提出的方法利用了系统模态线性振动的解析解，使得系统的物理参数在训练后仍然易于访问，而无需在模型架构中使用参数编码器。作为概念验证，我们生成了弦非线性横向振动的合成数据，并展示了该模型可以被训练以重现系统的非线性动力学。文中提供了声音示例。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Computational Physics (physics.comp-ph)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Victor Zheleznov, Stefan Bilbao, Alec Wright, Simon King",
+    "topic": [
+      "Music Generation",
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Diffusion-based Frameworks for Unsupervised Speech Enhancement",
+    "paper_title_zh": "基于扩散的无监督语音增强框架",
+    "paper_id": "2601.09931",
+    "paper_abstract": "This paper addresses $\\textit{unsupervised}$ diffusion-based single-channel speech enhancement (SE). Prior work in this direction combines a score-based diffusion model trained on clean speech with a Gaussian noise model whose covariance is structured by non-negative matrix factorization (NMF). This combination is used within an iterative expectation-maximization (EM) scheme, in which a diffusion-based posterior-sampling E-step estimates the clean speech. We first revisit this framework and propose to explicitly model both speech and acoustic noise as latent variables, jointly sampling them in the E-step instead of sampling speech alone as in previous approaches. We then introduce a new unsupervised SE framework that replaces the NMF noise prior with a diffusion-based noise model, learned jointly with the speech prior in a single conditional score model. Within this framework, we derive two variants: one that implicitly accounts for noise and one that explicitly treats noise as a latent variable. Experiments on WSJ0-QUT and VoiceBank-DEMAND show that explicit noise modeling systematically improves SE performance for both NMF-based and diffusion-based noise priors. Under matched conditions, the diffusion-based noise model attains the best overall quality and intelligibility among unsupervised methods, while under mismatched conditions the proposed NMF-based explicit-noise framework is more robust and suffers less degradation than several supervised baselines. Our code will be publicly available on this $\\href{this https URL}{URL}$.",
+    "paper_abstract_zh": "本文解决了基于扩散的无监督单通道语音增强（SE）问题。该方向的前期工作结合了在干净语音上训练的基于分数的扩散模型和由非负矩阵分解（NMF）构建协方差的高斯噪声模型。这种组合在迭代期望最大化（EM）方案中使用，其中基于扩散的后验采样E步骤用于估计干净语音。我们首先重新审视这一框架，并提出将语音和声学噪声都明确建模为潜在变量，在E步骤中联合采样它们，而不是像以前的方法那样仅采样语音。然后，我们引入了一种新的无监督SE框架，用基于扩散的噪声模型替代NMF噪声先验，该噪声模型与语音先验在单个条件分数模型中联合学习。在此框架内，我们推导出两种变体：一种隐式考虑噪声，另一种将噪声明确视为潜在变量。在WSJ0-QUT和VoiceBank-DEMAND上的实验表明，对于基于NMF和基于扩散的噪声先验，显式噪声建模系统性地提高了SE性能。在匹配条件下，基于扩散的噪声模型在无监督方法中获得了最佳的整体质量和可懂度；在不匹配条件下，所提出的基于NMF的显式噪声框架比几个监督基线方法更具鲁棒性，性能下降更少。我们的代码将在此URL上公开提供。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Jean-Eudes Ayilo, Mostafa Sadeghi, Romain Serizel, Xavier Alameda-Pineda",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Self-supervised restoration of singing voice degraded by pitch shifting using shallow diffusion",
+    "paper_title_zh": "使用浅层扩散模型进行音高移位导致的歌声自监督修复",
+    "paper_id": "2601.10345",
+    "paper_abstract": "Pitch shifting has been an essential feature in singing voice production. However, conventional signal processing approaches exhibit well known trade offs such as formant shifts and robotic coloration that becomes more severe at larger transposition jumps. This paper targets high quality pitch shifting for singing by reframing it as a restoration problem: given an audio track that has been pitch shifted (and thus contaminated by artifacts), we recover a natural sounding performance while preserving its melody and timing. Specifically, we use a lightweight, mel space diffusion model driven by frame level acoustic features such as f0, volume, and content features. We construct training pairs in a self supervised manner by applying pitch shifts and reversing them to simulate realistic artifacts while retaining ground truth. On a curated singing set, the proposed approach substantially reduces pitch shift artifacts compared to representative classical baselines, as measured by both statistical metrics and pairwise acoustic measures. The results suggest that restoration based pitch shifting could be a viable approach towards artifact resistant transposition in vocal production workflows.",
+    "paper_abstract_zh": "音高移位是歌声制作中的一个重要特性。然而，传统的信号处理方法存在众所周知的权衡问题，如共振峰偏移和机械感色彩，这些问题在更大的音高跳跃时变得更加严重。本文通过将音高移位重新构建为修复问题，旨在实现高质量的歌声音高移位：给定一个已被音高移位（因此受到伪影污染）的音轨，我们恢复自然的声音表现，同时保留其旋律和时间。具体而言，我们使用一个轻量级的、基于梅尔空间的扩散模型，该模型由帧级别的声学特征（如f0、音量和内容特征）驱动。我们通过应用音高移位并反转它们以模拟真实的伪影，同时保留真实数据，以自监督的方式构建训练对。在一个精心挑选的歌声数据集上，与代表性的经典基线相比，所提出的方法显著减少了音高移位伪影，这通过统计指标和成对声学测量都得到了验证。结果表明，基于修复的音高移位可能是声乐制作工作流中抗伪影移位的一种可行方法。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Yunyi Liu, Taketo Akama",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "RSA-Bench: Benchmarking Audio Large Models in Real-World Acoustic Scenarios",
+    "paper_title_zh": "RSA-Bench：在真实声学场景中评估音频大模型",
+    "paper_id": "2601.10384",
+    "paper_abstract": "While Audio Large Models (ALMs) have achieved remarkable proficiency, their robustness remains brittle in real-world deployment. Existing evaluations largely rely on synthetic Gaussian noise or simplistic single-source interference, failing to capture the intricate, multi-layered acoustic dynamics -- or ``Acoustic Ecology'' -- that characterize authentic physical environments. To bridge this ecological gap, we introduce \\textbf{RSA-Bench}, a comprehensive robustness benchmark designed to stress-test ALLMs through high-fidelity auditory scene simulations. Unlike traditional methods, we construct evaluation samples by naturally superimposing diverse environmental soundscapes -- spanning \\textit{Pasture}, \\textit{Extreme Weather}, \\textit{Classroom}, and \\textit{Outdoors} -- onto clean speech signals across a spectrum of interference intensities. By evaluating models on six core tasks ranging from fundamental perception to complex reasoning, our study unveils three macro-level insights: \\textbf{(I) The Perception-Cognition Gap:} Models maintain relative resilience in low-level recognition but suffer a \\textbf{functional collapse} in high-order reasoning tasks under stress; \\textbf{(II) Scenario Sensitivity:} ``Vocal-like'' interference (e.g., background laughter) proves significantly more destructive than mechanical noise, challenging the model's auditory attention mechanisms; and \\textbf{(III) The Denoising Paradox:} Standard speech enhancement often exacerbates performance degradation, as ALLMs prove highly sensitive to the semantic distortions introduced by denoising artifacts.",
+    "paper_abstract_zh": "尽管音频大模型（ALMs）已展现出卓越的能力，但在实际部署中其鲁棒性仍然脆弱。现有的评估主要依赖于合成的高斯噪声或简单的单源干扰，无法捕捉真实物理环境中复杂的、多层次的声学动态——即\"声学生态\"。为了弥合这一生态差距，我们引入了RSA-Bench，这是一个全面的鲁棒性基准，旨在通过高保真的听觉场景模拟来严格测试ALMs。与传统方法不同，我们通过将多样化的环境声景——包括\"牧场\"、\"极端天气\"、\"教室\"和\"户外\"——自然叠加到干净的语音信号上，构建了评估样本，并覆盖了不同强度的干扰范围。通过从基础感知到复杂推理的六项核心任务对模型进行评估，我们的研究揭示了三个宏观层面的见解：(I) 感知-认知差距：模型在低级识别中保持相对韧性，但在压力下高级推理任务中遭受功能性崩溃；(II) 场景敏感性：\"类语音\"干扰（如背景笑声）比机械噪声更具破坏性，挑战了模型的听觉注意力机制；(III) 降噪悖论：标准的语音增强往往会加剧性能下降，因为ALMs对降噪引入的语义失真高度敏感。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Yibo Zhang, Liang Lin, Kaiwen Luo, Shilinlu Yan, Jin Wang, Yaoqi Guo, Yitian Chen, Yalan Qin, Zhenhong Zhou, Kun Wang, Li Sun",
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "HeartMuLa: A Family of Open Sourced Music Foundation Models",
+    "paper_title_zh": "HeartMuLa: 一个开源音乐基础模型家族",
+    "paper_id": "2601.10547",
+    "paper_abstract": "We present a family of open-source Music Foundation Models designed to advance large-scale music understanding and generation across diverse tasks and modalities. Our framework consists of four major components: (1) HeartCLAP, an audio-text alignment model; (2) HeartTranscriptor, a robust lyric recognition model optimized for real-world music scenarios; and (3) HeartCodec, a low-frame-rate (12.5 Hz) yet high-fidelity music codec tokenizer that captures long-range musical structure while preserving fine-grained acoustic details and enabling efficient autoregressive modeling; (4) HeartMuLa, an LLM-based song generation model capable of synthesizing high-fidelity music under rich, user-controllable conditions (e.g., textual style descriptions, lyrics, and reference audio). In addition, it provides two specialized modes: (i) fine-grained musical attribute control, which allows users to specify the style of different song sections (e.g., intro, verse, chorus) using natural language prompts; and (ii) short, engaging music generation, which is suitable as background music for short videos. Lastly, HeartMuLa improves significantly when scaled to 7B parameters. For the first time, we show that a Suno-level, commercial-grade system can be reproduced using academic-scale data and GPU resources. We expect these foundation models to serve as strong baselines for future research and to facilitate practical applications in multimodal content production.",
+    "paper_abstract_zh": "我们提出了一系列开源的音乐基础模型，旨在推进大规模音乐理解和生成，涵盖多样化的任务和模态。我们的框架包含四个主要组件：(1) HeartCLAP，一个音频-文本对齐模型；(2) HeartTranscriptor，一个针对真实音乐场景优化的稳健歌词识别模型；(3) HeartCodec，一个低帧率（12.5 Hz）但高保真度的音乐编解码器标记器，能够捕获长程音乐结构同时保留细粒度声学细节，并支持高效的自回归建模；(4) HeartMuLa，一个基于LLM的歌曲生成模型，能够在丰富且用户可控制的条件（如文本风格描述、歌词和参考音频）下合成高保真度音乐。此外，它还提供两种专门模式：(i) 细粒度音乐属性控制，允许用户使用自然语言提示指定不同歌曲段落（如前奏、主歌、副歌）的风格；(ii) 短小且引人入胜的音乐生成，适合作为短视频的背景音乐。最后，当扩展到70亿参数时，HeartMuLa的性能显著提升。我们首次证明，使用学术规模的数据和GPU资源可以复现Suno级别的商业级系统。我们期望这些基础模型能成为未来研究的强有力基准，并促进多模态内容制作的实际应用。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Dongchao Yang, Yuxin Xie, Yuguo Yin, Zheyu Wang, Xiaoyu Yi, Gongxi Zhu, Xiaolong Weng, Zihan Xiong, Yingzhe Ma, Dading Cong, Jingliang Liu, Zihang Huang, Jinghan Ru, Rongjie Huang, Haoran Wan, Peixu Wang, Kuoxi Yu, Helin Wang, Liming Liang, Xianwei Zhuang, Yuanyuan Wang, Haohan Guo, Junjie Cao, Zeqian Ju, Songxiang Liu, Yuewen Cao, Heming Weng, Yuexian Zou",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning",
+      "Music Information Retrieval",
+      "Audio Codec"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "MoST: Mixing Speech and Text with Modality-Aware Mixture of Experts",
+    "paper_title_zh": "MoST：通过模态感知专家混合模型混合语音和文本",
+    "paper_id": "2601.10272",
+    "paper_abstract": "We present MoST (Mixture of Speech and Text), a novel multimodal large language model that seamlessly integrates speech and text processing through our proposed Modality-Aware Mixture of Experts (MAMoE) architecture. While current multimodal models typically process diverse modality representations with identical parameters, disregarding their inherent representational differences, we introduce specialized routing pathways that direct tokens to modality-appropriate experts based on input type. MAMoE simultaneously enhances modality-specific learning and cross-modal understanding through two complementary components: modality-specific expert groups that capture domain-specific patterns and shared experts that facilitate information transfer between modalities. Building on this architecture, we develop an efficient transformation pipeline that adapts the pretrained MoE language model through strategic post-training on ASR and TTS datasets, followed by fine-tuning with a carefully curated speech-text instruction dataset. A key feature of this pipeline is that it relies exclusively on fully accessible, open-source datasets to achieve strong performance and data efficiency. Comprehensive evaluations across ASR, TTS, audio language modeling, and spoken question answering benchmarks show that MoST consistently outperforms existing models of comparable parameter counts. Our ablation studies confirm that the modality-specific routing mechanism and shared experts design significantly contribute to performance gains across all tested domains. To our knowledge, MoST represents the first fully open-source speech-text LLM built on a Mixture of Experts architecture. \\footnote{We release MoST model, training code, inference code, and training data at this https URL",
+    "paper_abstract_zh": "我们提出了MoST（语音和文本的混合模型），这是一种新颖的多模态大语言模型，通过我们提出的模态感知专家混合（MAMoE）架构无缝集成语音和文本处理。虽然当前的多模态模型通常使用相同参数处理不同模态的表示，忽视了它们固有的表示差异，但我们引入了专门的路由路径，根据输入类型将令牌引导到适当的专家。MAMoE通过两个互补组件同时增强模态特定学习和跨模态理解：捕获领域特定模式的模态特定专家组和促进模态间信息传输的共享专家。基于此架构，我们开发了一个高效的转换管道，通过在ASR和TTS数据集上进行战略后训练来预训练MoE语言模型，然后使用精心策划的语音文本指令数据集进行微调。该管道的一个关键特点是它完全依赖可访问的开源数据集来实现强大的性能和数据效率。在ASR、TTS、音频语言建模和口语问答基准上的全面评估表明，MoST在可比参数数量的现有模型中 consistently 表现更优。我们的消融研究证实，模态特定路由机制和共享专家设计在所有测试领域中对性能提升有显著贡献。据我们所知，MoST是基于专家混合架构构建的第一个完全开源的语音文本大语言模型。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-16",
+    "paper_authors": "Yuxuan Lou, Kai Yang, Yang You",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
