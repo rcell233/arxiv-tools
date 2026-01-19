@@ -1,0 +1,128 @@
+[
+  {
+    "paper_title": "DSA-Tokenizer: Disentangled Semantic-Acoustic Tokenization via Flow Matching-based Hierarchical Fusion",
+    "paper_title_zh": "DSA-Tokenizer：基于流匹配层次融合的解耦语义-声学标记化",
+    "paper_id": "2601.09239",
+    "paper_abstract": "Speech tokenizers serve as the cornerstone of discrete Speech Large Language Models (Speech LLMs). Existing tokenizers either prioritize semantic encoding, fuse semantic content with acoustic style inseparably, or achieve incomplete semantic-acoustic disentanglement. To achieve better disentanglement, we propose DSA-Tokenizer, which explicitly disentangles speech into discrete semantic and acoustic tokens via distinct optimization constraints. Specifically, semantic tokens are supervised by ASR to capture linguistic content, while acoustic tokens focus on mel-spectrograms restoration to encode style. To eliminate rigid length constraints between the two sequences, we introduce a hierarchical Flow-Matching decoder that further improve speech generation quality. Furthermore, We employ a joint reconstruction-recombination training strategy to enforce this separation. DSA-Tokenizer enables high fidelity reconstruction and flexible recombination through robust disentanglement, facilitating controllable generation in speech LLMs. Our analysis highlights disentangled tokenization as a pivotal paradigm for future speech modeling. Audio samples are avaialble at this https URL. The code and model will be made publicly available after the paper has been accepted.",
+    "paper_abstract_zh": "语音标记化器作为离散语音大语言模型（Speech LLMs）的基石。现有的标记化器要么优先考虑语义编码，要么将语义内容与声学风格不可分离地融合，或者实现不完整的语义-声学解耦。为了实现更好的解耦，我们提出了DSA-Tokenizer，它通过不同的优化约束明确地将语音解耦为离散的语义标记和声学标记。具体而言，语义标记由ASR监督以捕获语言内容，而声学标记则专注于梅尔频谱图恢复以编码风格。为了消除两个序列之间的刚性长度约束，我们引入了层次化流匹配解码器，进一步提高了语音生成质量。此外，我们采用联合重建-重组训练策略来强制执行这种分离。DSA-Tokenizer通过强大的解耦能力实现高保真重建和灵活重组，促进语音LLMs中的可控生成。我们的分析强调解耦标记化是未来语音建模的关键范式。音频样本可在提供的URL处获取。代码和模型将在论文被接受后公开提供。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-19",
+    "paper_authors": "Hanlin Zhang, Daxin Tan, Dehua Tao, Xiao Chen, Haochen Tan, Yunhe Li, Yuchen Cao, Jianping Wang, Linqi Song",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Unifying Speech Recognition, Synthesis and Conversion with Autoregressive Transformers",
+    "paper_title_zh": "使用自回归Transformer统一语音识别、合成和转换",
+    "paper_id": "2601.10770",
+    "paper_abstract": "Traditional speech systems typically rely on separate, task-specific models for text-to-speech (TTS), automatic speech recognition (ASR), and voice conversion (VC), resulting in fragmented pipelines that limit scalability, efficiency, and cross-task generalization. In this paper, we present General-Purpose Audio (GPA), a unified audio foundation model that integrates multiple core speech tasks within a single large language model (LLM) architecture. GPA operates on a shared discrete audio token space and supports instruction-driven task induction, enabling a single autoregressive model to flexibly perform TTS, ASR, and VC without architectural modifications. This unified design combines a fully autoregressive formulation over discrete speech tokens, joint multi-task training across speech domains, and a scalable inference pipeline that achieves high concurrency and throughput. The resulting model family supports efficient multi-scale deployment, including a lightweight 0.3B-parameter variant optimized for edge and resource-constrained environments. Together, these design choices demonstrate that a unified autoregressive architecture can achieve competitive performance across diverse speech tasks while remaining viable for low-latency, practical deployment.",
+    "paper_abstract_zh": "传统的语音系统通常依赖独立的、特定任务模型用于文本转语音(TTS)、自动语音识别(ASR)和语音转换(VC)，导致碎片化的流水线，限制了可扩展性、效率和跨任务泛化能力。在本文中，我们提出了通用音频(GPA)，这是一个统一的音频基础模型，它将多个核心语音任务集成在单一的大型语言模型(LLM)架构中。GPA在共享的离散音频令牌空间上运行，支持指令驱动的任务归纳，使单个自回归模型无需架构修改即可灵活执行TTS、ASR和VC。这种统一设计结合了离散语音令牌上的完全自回归公式、跨语音领域的联合多任务训练，以及实现高并发和吞吐量的可扩展推理流水线。 resulting模型家族支持高效的多尺度部署，包括针对边缘和资源受限环境优化的轻量级0.3B参数变体。这些设计选择共同表明，统一的自回归架构可以在多样化的语音任务中实现具有竞争力的性能，同时保持低延迟和实际部署的可行性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-19",
+    "paper_authors": "Runyuan Cai, Yu Lin, Yiming Wang, Chunlin Fu, Xiaodong Zeng",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "FlashLabs Chroma 1.0: A Real-Time End-to-End Spoken Dialogue Model with Personalized Voice Cloning",
+    "paper_title_zh": "FlashLabs Chroma 1.0: 一个具有个性化语音克隆的实时端到端口语对话模型",
+    "paper_id": "2601.11141",
+    "paper_abstract": "Recent end-to-end spoken dialogue systems leverage speech tokenizers and neural audio codecs to enable LLMs to operate directly on discrete speech representations. However, these models often exhibit limited speaker identity preservation, hindering personalized voice interaction. In this work, we present Chroma 1.0, the first open-source, real-time, end-to-end spoken dialogue model that achieves both low-latency interaction and high-fidelity personalized voice cloning. Chroma achieves sub-second end-to-end latency through an interleaved text-audio token schedule (1:2) that supports streaming generation, while maintaining high-quality personalized voice synthesis across multi-turn conversations. Our experimental results demonstrate that Chroma achieves a 10.96% relative improvement in speaker similarity over the human baseline, with a Real-Time Factor (RTF) of 0.43, while maintaining strong reasoning and dialogue capabilities. Our code and models are publicly available at this https URL and this https URL .",
+    "paper_abstract_zh": "最近的端到端口语对话系统利用语音标记器和神经音频编解码器，使大语言模型能够直接在离散语音表示上运行。然而，这些模型通常表现出有限的说话人身份保留能力，阻碍了个性化语音交互。在这项工作中，我们提出了Chroma 1.0，这是第一个开源的、实时的、端到端的口语对话模型，它实现了低延迟交互和高保真个性化语音克隆。Chroma通过交错文本-音频标记调度(1:2)实现了亚秒级的端到端延迟，支持流式生成，同时在多轮对话中保持高质量的个性化语音合成。我们的实验结果表明，Chroma在说话人相似性方面比人类基线提高了10.96%，实时因子(RTF)为0.43，同时保持了强大的推理和对话能力。我们的代码和模型可在提供的https URL和https URL上公开获取。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-19",
+    "paper_authors": "Tanyu Chen, Tairan Chen, Kai Shen, Zhenghua Bao, Zhihui Zhang, Man Yuan, Yi Shi",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "WenetSpeech-Wu: Datasets, Benchmarks, and Models for a Unified Chinese Wu Dialect Speech Processing Ecosystem",
+    "paper_title_zh": "WenetSpeech-Wu：吴语语音处理的统一数据集、基准和模型",
+    "paper_id": "2601.11027",
+    "paper_abstract": "Speech processing for low-resource dialects remains a fundamental challenge in developing inclusive and robust speech technologies. Despite its linguistic significance and large speaker population, the Wu dialect of Chinese has long been hindered by the lack of large-scale speech data, standardized evaluation benchmarks, and publicly available models. In this work, we present WenetSpeech-Wu, the first large-scale, multi-dimensionally annotated open-source speech corpus for the Wu dialect, comprising approximately 8,000 hours of diverse speech data. Building upon this dataset, we introduce WenetSpeech-Wu-Bench, the first standardized and publicly accessible benchmark for systematic evaluation of Wu dialect speech processing, covering automatic speech recognition (ASR), Wu-to-Mandarin translation, speaker attribute prediction, speech emotion recognition, text-to-speech (TTS) synthesis, and instruction-following TTS (instruct TTS). Furthermore, we release a suite of strong open-source models trained on WenetSpeech-Wu, establishing competitive performance across multiple tasks and empirically validating the effectiveness of the proposed dataset. Together, these contributions lay the foundation for a comprehensive Wu dialect speech processing ecosystem, and we open-source proposed datasets, benchmarks, and models to support future research on dialectal speech intelligence.",
+    "paper_abstract_zh": "低资源方言的语音处理仍然是开发包容性和鲁棒性语音技术的基本挑战。尽管吴语具有重要的语言学意义和庞大的说话者群体，但长期以来一直受到大规模语音数据、标准化评估基准和公开可用模型缺乏的阻碍。在这项工作中，我们提出了WenetSpeech-Wu，这是第一个大规模、多维度标注的吴语开源语音语料库，包含约8000小时的多样化语音数据。基于此数据集，我们引入了WenetSpeech-Wu-Bench，这是第一个用于系统评估吴语语音处理的标准化公开可访问基准，涵盖了自动语音识别（ASR）、吴语到普通话翻译、说话者属性预测、语音情感识别、文本到语音（TTS）合成以及指令遵循TTS（instruct TTS）。此外，我们发布了一套在WenetSpeech-Wu上训练的强大开源模型，在多个任务上建立了具有竞争力的性能，并实证验证了所提出数据集的有效性。这些共同贡献为全面的吴语语音处理生态系统奠定了基础，我们开源了所提出的数据集、基准和模型，以支持未来方言语音智能的研究。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-19",
+    "paper_authors": "Chengyou Wang, Mingchen Shao, Jingbin Hu, Zeyu Zhu, Hongfei Xue, Bingshen Mu, Xin Xu, Xingyi Duan, Binbin Zhang, Pengcheng Zhu, Chuang Ding, Xiaojun Zhang, Hui Bu, Lei Xie",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SonicBench: Dissecting the Physical Perception Bottleneck in Large Audio Language Models",
+    "paper_title_zh": "SonicBench: 解析大型音频语言模型中的物理感知瓶颈",
+    "paper_id": "2601.11039",
+    "paper_abstract": "Large Audio Language Models (LALMs) excel at semantic and paralinguistic tasks, yet their ability to perceive the fundamental physical attributes of audio such as pitch, loudness, and spatial location remains under-explored. To bridge this gap, we introduce SonicBench, a psychophysically grounded benchmark that systematically evaluates 12 core physical attributes across five perceptual dimensions. Unlike previous datasets, SonicBench uses a controllable generation toolbox to construct stimuli for two complementary paradigms: recognition (absolute judgment) and comparison (relative judgment). This design allows us to probe not only sensory precision but also relational reasoning capabilities, a domain where humans typically exhibit greater proficiency. Our evaluation reveals a substantial deficiency in LALMs' foundational auditory understanding; most models perform near random guessing and, contrary to human patterns, fail to show the expected advantage on comparison tasks. Furthermore, explicit reasoning yields minimal gains. However, our linear probing analysis demonstrates crucially that frozen audio encoders do successfully capture these physical cues (accuracy at least 60%), suggesting that the primary bottleneck lies in the alignment and decoding stages, where models fail to leverage the sensory signals they have already captured.",
+    "paper_abstract_zh": "大型音频语言模型(LALMs)在语义和副语言任务上表现出色，但它们感知音频基本物理属性（如音高、响度和空间位置）的能力尚未得到充分探索。为了填补这一空白，我们引入了SonicBench，这是一个基于心理物理学基础的基准，系统地评估了五个感知维度上的12个核心物理属性。与先前数据集不同，SonicBench使用可控生成工具箱为两种互补范式构建刺激：识别（绝对判断）和比较（相对判断）。这种设计使我们能够不仅探测感官精度，还能探测关系推理能力，而人类通常在这一领域表现出更强的能力。我们的评估揭示了LALMs基础听觉理解的重大缺陷；大多数模型的表现接近随机猜测，并且与人类模式相反，在比较任务上未能显示出预期的优势。此外，显式推理带来的收益微乎其微。然而，我们的线性探测分析关键地证明了冻结的音频编码器确实成功捕捉了这些物理线索（准确率至少为60%），这表明主要瓶颈在于对齐和解码阶段，模型无法利用已经捕捉到的感官信号。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-19",
+    "paper_authors": "Yirong Sun, Yanjun Chen, Xin Qiu, Gang Zhang, Hongyu Chen, Daokuan Wu, Chengming Li, Min Yang, Dawei Zhu, Wei Zhang, Xiaoyu Shen",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Scalable Music Cover Retrieval Using Lyrics-Aligned Audio Embeddings",
+    "paper_title_zh": "基于歌词对齐音频嵌入的可扩展音乐翻唱检索",
+    "paper_id": "2601.11262",
+    "paper_abstract": "Music Cover Retrieval, also known as Version Identification, aims to recognize distinct renditions of the same underlying musical work, a task central to catalog management, copyright enforcement, and music retrieval. State-of-the-art approaches have largely focused on harmonic and melodic features, employing increasingly complex audio pipelines designed to be invariant to musical attributes that often vary widely across covers. While effective, these methods demand substantial training time and computational resources. By contrast, lyrics constitute a strong invariant across covers, though their use has been limited by the difficulty of extracting them accurately and efficiently from polyphonic audio. Early methods relied on simple frameworks that limited downstream performance, while more recent systems deliver stronger results but require large models integrated within complex multimodal architectures. We introduce LIVI (Lyrics-Informed Version Identification), an approach that seeks to balance retrieval accuracy with computational efficiency. First, LIVI leverages supervision from state-of-the-art transcription and text embedding models during training to achieve retrieval accuracy on par with--or superior to--harmonic-based systems. Second, LIVI remains lightweight and efficient by removing the transcription step at inference, challenging the dominance of complexity-heavy pipelines.",
+    "paper_abstract_zh": "音乐翻唱检索（也称为版本识别）旨在识别同一基础音乐作品的不同演绎版本，这是目录管理、版权执行和音乐检索的核心任务。最先进的方法主要关注和声与旋律特征，采用日益复杂的音频管道，设计为对音乐属性具有不变性，而这些属性在翻唱版本中往往差异很大。尽管这些方法有效，但它们需要大量的训练时间和计算资源。相比之下，歌词在翻唱版本中是一种强不变性特征，但其在多声道音频中准确高效提取的难度限制了其应用。早期方法依赖于简单框架，限制了下游性能，而最近的系统虽然能提供更好的结果，但需要集成在复杂的多模态架构中的大型模型。我们提出了LIVI（歌词信息版本识别）方法，旨在平衡检索准确性和计算效率。首先，LIVI在训练过程中利用最先进的转录和文本嵌入模型的监督，实现与基于和声的系统相当或更优的检索准确性。其次，LIVI通过在推理时移除转录步骤，保持轻量化和高效性，挑战了复杂管道的主导地位。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Information Retrieval (cs.IR)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-19",
+    "paper_authors": "Joanne Affolter, Benjamin Martin, Elena V. Epure, Gabriel Meseguer-Brocal, Frédéric Kaplan",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
