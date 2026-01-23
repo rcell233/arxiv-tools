@@ -1,0 +1,321 @@
+[
+  {
+    "paper_title": "DynamicSound simulator for simulating moving sources and microphone arrays",
+    "paper_title_zh": "DynamicSound：用于模拟移动声源和麦克风阵列的动态声音模拟器",
+    "paper_id": "2601.15433",
+    "paper_abstract": "Developing algorithms for sound classification, detection, and localization requires large amounts of flexible and realistic audio data, especially when leveraging modern machine learning and beamforming techniques. However, most existing acoustic simulators are tailored for indoor environments and are limited to static sound sources, making them unsuitable for scenarios involving moving sources, moving microphones, or long-distance propagation. This paper presents DynamicSound an open-source acoustic simulation framework for generating multichannel audio from one or more sound sources with the possibility to move them continuously in three-dimensional space and recorded by arbitrarily configured microphone arrays. The proposed model explicitly accounts for finite sound propagation delays, Doppler effects, distance-dependent attenuation, air absorption, and first-order reflections from planar surfaces, yielding temporally consistent spatial audio signals. Unlike conventional mono or stereo simulators, the proposed system synthesizes audio for an arbitrary number of virtual microphones, accurately reproducing inter-microphone time delays, level differences, and spectral coloration induced by the environment. Comparative evaluations with existing open-source tools demonstrate that the generated signals preserve high spatial fidelity across varying source positions and acoustic conditions. By enabling the generation of realistic multichannel audio under controlled and repeatable conditions, the proposed open framework provides a flexible and reproducible tool for the development, training, and evaluation of modern spatial audio and sound-source localization algorithms.",
+    "paper_abstract_zh": "开发用于声音分类、检测和定位的算法需要大量灵活且真实的音频数据，特别是在利用现代机器学习和波束成形技术时。然而，大多数现有的声学模拟器都是为室内环境量身定制的，并且仅限于静态声源，这使得它们不适用于涉及移动声源、移动麦克风或远距离传播的场景。本文提出了DynamicSound，一个开源的声学模拟框架，用于从一个或多个声源生成多通道音频，并允许它们在三维空间中连续移动，由任意配置的麦克风阵列进行录制。所提出的模型明确考虑了有限的声音传播延迟、多普勒效应、距离相关的衰减、空气吸收以及来自平面表面的一阶反射，从而产生时间一致的空间音频信号。与传统的单声道或立体声模拟器不同，所提出的系统为任意数量的虚拟麦克风合成音频，准确再现了麦克风之间的时间延迟、电平差异以及由环境引起的频谱着色。与现有开源工具的比较评估表明，生成的信号在不同的声源位置和声学条件下保持了高空间保真度。通过能够在可控和可重复的条件下生成真实的多通道音频，所提出的开源框架为现代空间音频和声源定位算法的开发、训练和评估提供了一个灵活且可复现的工具。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Luca Barbisan, Marco Levorato, Fabrizio Riente",
+    "topic": [
+      "Audio Classification",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Distributed Multichannel Active Noise Control with Asynchronous Communication",
+    "paper_title_zh": "异步通信分布式多通道有源噪声控制",
+    "paper_id": "2601.15653",
+    "paper_abstract": "Distributed multichannel active noise control (DMCANC) offers effective noise reduction across large spatial areas by distributing the computational load of centralized control to multiple low-cost nodes. Conventional DMCANC methods, however, typically assume synchronous communication and require frequent data exchange, resulting in high communication overhead. To enhance efficiency and adaptability, this work proposes an asynchronous communication strategy where each node executes a weight-constrained filtered-x LMS (WCFxLMS) algorithm and independently requests communication only when its local noise reduction performance degrades. Upon request, other nodes transmit the weight difference between their local control filter and the center point in WCFxLMS, which are then integrated to update both the control filter and the center point. This design enables nodes to operate asynchronously while preserving cooperative behavior. Simulation results demonstrate that the proposed asynchronous communication DMCANC (ACDMCANC) system maintains effective noise reduction with significantly reduced communication load, offering improved scalability for heterogeneous networks.",
+    "paper_abstract_zh": "分布式多通道有源噪声控制(DMCANC)通过将集中式控制的计算负载分配到多个低成本节点，在大空间范围内实现有效的噪声抑制。然而，传统的DMCANC方法通常假设同步通信并需要频繁的数据交换，导致通信开销过高。为了提高效率和适应性，本文提出了一种异步通信策略，其中每个节点执行权重约束的滤波-x LMS(WCFxLMS)算法，仅在本地噪声抑制性能下降时才独立请求通信。在请求时，其他节点传输其本地控制滤波器与WCFxLMS中心点之间的权重差异，然后这些差异被整合以更新控制滤波器和中心点。这种设计使节点能够在保持协作行为的同时异步运行。仿真结果表明，所提出的异步通信DMCANC(ACDMCANC)系统在显著减少通信负载的同时保持了有效的噪声抑制，为异构网络提供了更好的可扩展性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Signal Processing (eess.SP)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Junwei Ji, Dongyuan Shi, Boxiang Wang, Ziyi Yang, Haowen Li, Woon-Seng Gan",
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "A Stabilized Hybrid Active Noise Control Algorithm of GFANC and FxNLMS with Online Clustering",
+    "paper_title_zh": "一种结合GFANC和FxNLMS的混合有源噪声控制算法，具有在线聚类功能",
+    "paper_id": "2601.15889",
+    "paper_abstract": "The Filtered-x Normalized Least Mean Square (FxNLMS) algorithm suffers from slow convergence and a risk of divergence, although it can achieve low steady-state errors after sufficient adaptation. In contrast, the Generative Fixed-Filter Active Noise Control (GFANC) method offers fast response speed, but its lack of adaptability may lead to large steady-state errors. This paper proposes a hybrid GFANC-FxNLMS algorithm to leverage the complementary advantages of both approaches. In the hybrid GFANC-FxNLMS algorithm, GFANC provides a frame-level control filter as an initialization for FxNLMS, while FxNLMS performs continuous adaptation at the sampling rate. Small variations in the GFANC-generated filter may repeatedly reinitialize FxNLMS, interrupting its adaptation process and destabilizing the system. An online clustering module is introduced to avoid unnecessary re-initializations and improve system stability. Simulation results show that the proposed algorithm achieves fast response, very low steady-state error, and high stability, requiring only one pre-trained broadband filter.",
+    "paper_abstract_zh": "尽管经过充分适应后，滤波-x归一化最小均方(FxNLMS)算法可以实现较低的稳态误差，但它存在收敛速度慢和发散风险的问题。相比之下，生成固定滤波器有源噪声控制(GFANC)方法响应速度快，但其缺乏适应性可能导致较大的稳态误差。本文提出了一种混合GFANC-FxNLMS算法，以利用这两种方法的互补优势。在混合GFANC-FxNLMS算法中，GFANC提供帧级控制滤波器作为FxNLMS的初始化，而FxNLMS以采样率执行连续适应。GFANC生成的滤波器的微小变化可能会重复重新初始化FxNLMS，从而中断其适应过程并导致系统不稳定。引入了在线聚类模块以避免不必要的重新初始化并提高系统稳定性。仿真结果表明，所提出的算法实现了快速响应、极低的稳态误差和高稳定性，仅需一个预训练的宽带滤波器。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Zhengding Luo, Haozhe Ma, Boxiang Wang, Ziyi Yang, Dongyuan Shi, Woon-Seng Gan",
+    "topic": [
+      "Speech Enhancement",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Timbre-Aware LLM-based Direct Speech-to-Speech Translation Extendable to Multiple Language Pairs",
+    "paper_title_zh": "基于音色感知的大语言模型直接语音到语音翻译系统及其多语言对扩展",
+    "paper_id": "2601.16023",
+    "paper_abstract": "Direct Speech-to-Speech Translation (S2ST) has gained increasing attention for its ability to translate speech from one language to another, while reducing error propagation and latency inherent in traditional cascaded pipelines. However, existing direct S2ST systems continue to face notable challenges, including instability in semantic-acoustic alignment when parallel speech data is scarce, difficulty in preserving speaker identity, and limited multilingual scalability. In this work, we introduce DS2ST-LM, a scalable, single-stage direct S2ST framework leveraging a multilingual Large Language Model (LLM). The architecture integrates a Whisper speech encoder, a learnable projection module, a Qwen2-0.5B LLM, and a timbre-controlled vocoder. We construct GigaS2S-1000, a 1000-hour bilingual corpus by extending the GigaST dataset with high-fidelity synthetic target speech, and show that this synthetic data alleviates data scarcity to some extent. We investigate two semantic token generation strategies: speech-derived S3 tokens and text-derived tokens generated by a pre-trained LLM, and analyze their impact on training stability and semantic consistency. We further evaluate three projection architectures (Linear, Conv1D-Linear, and Q-Former) and observe that while higher-capacity projectors converge faster, the simple Linear projector achieves higher performance. Extensive experiments demonstrate that DS2ST-LM outperforms traditional cascaded and ST (Qwen-Audio) + TTS baselines across both lexical (BLEU, METEOR) and semantic (BLEURT, COMET) metrics, while extending to multiple language pairs, including French, Spanish, German, Hindi, Bengali, and Urdu. Furthermore, we incorporate timbre-aware speech synthesis to preserve speaker information, enabling DS2ST-LM to surpass prior direct S2ST systems in both speaker similarity and perceptual naturalness.",
+    "paper_abstract_zh": "直接语音到语音翻译(S2ST)因其能够将一种语言的语音翻译成另一种语言，同时减少传统级联流水线中固有的错误传播和延迟问题，而日益受到关注。然而，现有的直接S2ST系统仍面临显著挑战，包括并行语音数据稀缺时语义-声学对齐的不稳定、保持说话人身份的困难以及有限的多语言扩展性。在这项工作中，我们引入了DS2ST-LM，一个可扩展的单阶段直接S2ST框架，利用多语言大语言模型(LLM)。该架构集成了Whisper语音编码器、可学习投影模块、Qwen2-0.5B LLM和音色控制声码器。我们通过扩展GigaST数据集，添加高保真合成目标语音，构建了GigaS2S-1000，一个1000小时的双语语料库，并证明这种合成数据在一定程度上缓解了数据稀缺问题。我们研究了两种语义令牌生成策略：语音衍生的S3令牌和预训练LLM生成的文本衍生的令牌，并分析了它们对训练稳定性和语义一致性的影响。我们进一步评估了三种投影架构(线性、Conv1D-线性和Q-Former)，并观察到虽然更高容量的投影器收敛更快，但简单的线性投影器实现了更高的性能。大量实验表明，DS2ST-LM在词汇(BLEU、METEOR)和语义(BLEURT、COMET)指标上均优于传统的级联和ST(Qwen-Audio)+TTS基线，并扩展到包括法语、西班牙语、德语、印地语、孟加拉语和乌尔都语在内的多种语言对。此外，我们集成了音色感知的语音合成来保留说话人信息，使DS2ST-LM在说话人相似性和感知自然度方面超越了先前的直接S2ST系统。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Human-Computer Interaction (cs.HC)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Lalaram Arya, Mrinmoy Bhattacharjee, Adarsh C. R., S. R. Mahadeva Prasanna",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Loose coupling of spectral and spatial models for multi-channel diarization and enhancement of meetings in dynamic environments",
+    "paper_title_zh": "用于动态环境中会议多通道说话人分离和增强的频谱与空间模型松耦合",
+    "paper_id": "2601.16077",
+    "paper_abstract": "Sound capture by microphone arrays opens the possibility to exploit spatial, in addition to spectral, information for diarization and signal enhancement, two important tasks in meeting transcription. However, there is no one-to-one mapping of positions in space to speakers if speakers move. Here, we address this by proposing a novel joint spatial and spectral mixture model, whose two submodels are loosely coupled by modeling the relationship between speaker and position index probabilistically. Thus, spatial and spectral information can be jointly exploited, while at the same time allowing for speakers speaking from different positions. Experiments on the LibriCSS data set with simulated speaker position changes show great improvements over tightly coupled subsystems.",
+    "paper_abstract_zh": "麦克风阵列的声波捕获为说话人分离和信号增强这两个会议转录中的重要任务提供了利用空间信息和频谱信息的可能性。然而，如果说话人移动，空间位置与说话人之间并不存在一一对应的关系。为此，我们提出了一种新颖的联合空间和频谱混合模型，其两个子模型通过概率建模说话人与位置索引之间的关系实现松耦合。这样，可以同时利用空间和频谱信息，同时允许说话人从不同位置发言。在LibriCSS数据集上模拟说话人位置变化的实验表明，与紧密耦合的子系统相比，该方法取得了显著改进。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Adrian Meise, Tobias Cord-Landwehr, Christoph Boeddeker, Marc Delcroix, Tomohiro Nakatani, Reinhold Haeb-Umbach",
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DeepASMR: LLM-Based Zero-Shot ASMR Speech Generation for Anyone of Any Voice",
+    "paper_title_zh": "DeepASMR：基于大语言模型的零样本ASMR语音生成，适用于任何人的任何声音",
+    "paper_id": "2601.15596",
+    "paper_abstract": "While modern Text-to-Speech (TTS) systems achieve high fidelity for read-style speech, they struggle to generate Autonomous Sensory Meridian Response (ASMR), a specialized, low-intensity speech style essential for relaxation. The inherent challenges include ASMR's subtle, often unvoiced characteristics and the demand for zero-shot speaker adaptation. In this paper, we introduce DeepASMR, the first framework designed for zero-shot ASMR generation. We demonstrate that a single short snippet of a speaker's ordinary, read-style speech is sufficient to synthesize high-fidelity ASMR in their voice, eliminating the need for whispered training data from the target speaker. Methodologically, we first identify that discrete speech tokens provide a soft factorization of ASMR style from speaker timbre. Leveraging this insight, we propose a two-stage pipeline incorporating a Large Language Model (LLM) for content-style encoding and a flow-matching acoustic decoder for timbre reconstruction. Furthermore, we contribute DeepASMR-DB, a comprehensive 670-hour English-Chinese multi-speaker ASMR speech corpus, and introduce a novel evaluation protocol integrating objective metrics, human listening tests, LLM-based scoring and unvoiced speech analysis. Extensive experiments confirm that DeepASMR achieves state-of-the-art naturalness and style fidelity in ASMR generation for anyone of any voice, while maintaining competitive performance on normal speech synthesis.",
+    "paper_abstract_zh": "虽然现代文本转语音（TTS）系统能够实现高保真的朗读风格语音生成，但在生成自主感觉经络反应（ASMR）这种用于放松的专业低强度语音风格时却面临挑战。ASMR固有的挑战包括其细微的、常常是无声的特性以及对零样本说话人适应的需求。在本文中，我们介绍了DeepASMR，这是首个专为零样本ASMR生成设计的框架。我们证明，仅使用说话人一段简短的普通朗读语音片段，就足以合成其声音的高保真ASMR，无需目标说话人的 whispered 训练数据。在方法上，我们首先发现离散语音标记能够将ASMR风格与说话人音色进行软分解。利用这一见解，我们提出了一个两阶段流水线，包含用于内容风格编码的大语言模型（LLM）和用于音色重建的流匹配声学解码器。此外，我们贡献了DeepASMR-DB，这是一个包含670小时英汉多说话人ASMR语音的综合语料库，并引入了一种新颖的评估协议，整合了客观指标、人工听感测试、基于大语言模型的评分和无声语音分析。大量实验证实，DeepASMR在为任何人生成任何声音的ASMR时，实现了最自然的风格保真度，同时在正常语音合成方面保持了竞争性的性能。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Leying Zhang, Tingxiao Zhou, Haiyang Sun, Mengxiao Bi, Yanmin Qian",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Qwen3-TTS Technical Report",
+    "paper_title_zh": "Qwen3-TTS技术报告",
+    "paper_id": "2601.15621",
+    "paper_abstract": "In this report, we present the Qwen3-TTS series, a family of advanced multilingual, controllable, robust, and streaming text-to-speech models. Qwen3-TTS supports state-of-the-art 3-second voice cloning and description-based control, allowing both the creation of entirely novel voices and fine-grained manipulation over the output speech. Trained on over 5 million hours of speech data spanning 10 languages, Qwen3-TTS adopts a dual-track LM architecture for real-time synthesis, coupled with two speech tokenizers: 1) Qwen-TTS-Tokenizer-25Hz is a single-codebook codec emphasizing semantic content, which offers seamlessly integration with Qwen-Audio and enables streaming waveform reconstruction via a block-wise DiT. 2) Qwen-TTS-Tokenizer-12Hz achieves extreme bitrate reduction and ultra-low-latency streaming, enabling immediate first-packet emission ($97\\,\\mathrm{ms}$) through its 12.5 Hz, 16-layer multi-codebook design and a lightweight causal ConvNet. Extensive experiments indicate state-of-the-art performance across diverse objective and subjective benchmark (e.g., TTS multilingual test set, InstructTTSEval, and our long speech test set). To facilitate community research and development, we release both tokenizers and models under the Apache 2.0 license.",
+    "paper_abstract_zh": "在本报告中，我们介绍了Qwen3-TTS系列，这是一类先进的多语言、可控、鲁棒和流式文本转语音模型。Qwen3-TTS支持最先进的3秒语音克隆和基于描述的控制，既能创建全新的语音，又能对输出语音进行细粒度操作。该模型在超过500万小时的10种语言语音数据上进行训练，采用双轨语言模型架构实现实时合成，并配备两种语音标记器：1) Qwen-TTS-Tokenizer-25Hz是一个强调语义内容的单码本编解码器，可与Qwen-Audio无缝集成，并通过块级DiT实现流式波形重建。2) Qwen-TTS-Tokenizer-12Hz实现极低比特率降低和超低延迟流式传输，通过其12.5 Hz、16层多码本设计和轻量级因果卷积网络，能够立即发送首包数据（97毫秒）。大量实验表明，在多样化的客观和主观基准测试（如TTS多语言测试集、InstructTTSEval和我们的长语音测试集）中，该模型达到了最先进的性能。为促进社区研究和开发，我们在Apache 2.0许可证下发布了这两种标记器和模型。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Hangrui Hu, Xinfa Zhu, Ting He, Dake Guo, Bin Zhang, Xiong Wang, Zhifang Guo, Ziyue Jiang, Hongkun Hao, Zishan Guo, Xinyu Zhang, Pei Zhang, Baosong Yang, Jin Xu, Jingren Zhou, Junyang Lin",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Bridging the Perception Gap: A Lightweight Coarse-to-Fine Architecture for Edge Audio Systems",
+    "paper_title_zh": "弥合感知差距：面向边缘音频系统的轻量级粗到细架构",
+    "paper_id": "2601.15676",
+    "paper_abstract": "Deploying Audio-Language Models (Audio-LLMs) on edge infrastructure exposes a persistent tension between perception depth and computational efficiency. Lightweight local models tend to produce passive perception - generic summaries that miss the subtle evidence required for multi-step audio reasoning - while indiscriminate cloud offloading incurs unacceptable latency, bandwidth cost, and privacy risk. We propose CoFi-Agent (Tool-Augmented Coarse-to-Fine Agent), a hybrid architecture targeting edge servers and gateways. It performs fast local perception and triggers conditional forensic refinement only when uncertainty is detected. CoFi-Agent runs an initial single-pass on a local 7B Audio-LLM, then a cloud controller gates difficult cases and issues lightweight plans for on-device tools such as temporal re-listening and local ASR. On the MMAR benchmark, CoFi-Agent improves accuracy from 27.20% to 53.60%, while achieving a better accuracy-efficiency trade-off than an always-on investigation pipeline. Overall, CoFi-Agent bridges the perception gap via tool-enabled, conditional edge-cloud collaboration under practical system constraints.",
+    "paper_abstract_zh": "在边缘基础设施上部署音频语言模型(Audio-LLMs)暴露了感知深度与计算效率之间的持续张力。轻量级本地模型往往产生被动感知——通用摘要，这些摘要缺少多步音频推理所需的细微证据；而无差别的云卸载则会带来不可接受的延迟、带宽成本和隐私风险。我们提出了CoFi-Agent（工具增强的粗到细代理），一种针对边缘服务器和网关的混合架构。它执行快速本地感知，仅在检测到不确定性时触发条件性法医式细化。CoFi-Agent首先在本地7B Audio-LLM上运行初始单次处理，然后云控制器筛选困难案例并为设备端工具（如时间重听和本地ASR）发布轻量级计划。在MMAR基准测试中，CoFi-Agent将准确率从27.20%提高到53.60%，同时实现了比持续调查管道更好的准确率-效率权衡。总体而言，CoFi-Agent通过工具支持的、条件性的边缘-云协作，在实际系统约束下弥合了感知差距。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Hengfan Zhang, Yueqian Lin, Hai Helen Li, Yiran Chen",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "PF-D2M: A Pose-free Diffusion Model for Universal Dance-to-Music Generation",
+    "paper_title_zh": "PF-D2M: 一种无姿态的扩散模型用于通用舞蹈到音乐生成",
+    "paper_id": "2601.15872",
+    "paper_abstract": "Dance-to-music generation aims to generate music that is aligned with dance movements. Existing approaches typically rely on body motion features extracted from a single human dancer and limited dance-to-music datasets, which restrict their performance and applicability to real-world scenarios involving multiple dancers and non-human dancers. In this paper, we propose PF-D2M, a universal diffusion-based dance-to-music generation model that incorporates visual features extracted from dance videos. PF-D2M is trained with a progressive training strategy that effectively addresses data scarcity and generalization challenges. Both objective and subjective evaluations show that PF-D2M achieves state-of-the-art performance in dance-music alignment and music quality.",
+    "paper_abstract_zh": "舞蹈到音乐生成旨在生成与舞蹈动作相匹配的音乐。现有方法通常依赖于从单一舞者提取的身体运动特征和有限的舞蹈到音乐数据集，这限制了它们在涉及多个舞者和非人类舞者的现实场景中的性能和适用性。在本文中，我们提出了PF-D2M，一种通用的基于扩散的舞蹈到音乐生成模型，该模型融合了从舞蹈视频中提取的视觉特征。PF-D2M采用渐进式训练策略进行训练，有效解决了数据稀缺性和泛化挑战。客观和主观评估均表明，PF-D2M在舞蹈音乐对齐和音乐质量方面达到了最先进的性能。",
+    "subjects": [
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)",
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Jaekwon Im, Natalia Polouliakh, Taketo Akama",
+    "topic": [
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Abusive music and song transformation using GenAI and LLMs",
+    "paper_title_zh": "",
+    "paper_id": "2601.15348",
+    "paper_abstract": "Repeated exposure to violence and abusive content in music and song content can influence listeners' emotions and behaviours, potentially normalising aggression or reinforcing harmful stereotypes. In this study, we explore the use of generative artificial intelligence (GenAI) and Large Language Models (LLMs) to automatically transform abusive words (vocal delivery) and lyrical content in popular music. Rather than simply muting or replacing a single word, our approach transforms the tone, intensity, and sentiment, thus not altering just the lyrics, but how it is expressed. We present a comparative analysis of four selected English songs and their transformed counterparts, evaluating changes through both acoustic and sentiment-based lenses. Our findings indicate that Gen-AI significantly reduces vocal aggressiveness, with acoustic analysis showing improvements in Harmonic to Noise Ratio, Cepstral Peak Prominence, and Shimmer. Sentiment analysis reduced aggression by 63.3-85.6\\% across artists, with major improvements in chorus sections (up to 88.6\\% reduction). The transformed versions maintained musical coherence while mitigating harmful content, offering a promising alternative to traditional content moderation that avoids triggering the \"forbidden fruit\" effect, where the censored content becomes more appealing simply because it is restricted. This approach demonstrates the potential for GenAI to create safer listening experiences while preserving artistic expression.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Jiyang Choi, Rohitash Chandra",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "EmotionThinker: Prosody-Aware Reinforcement Learning for Explainable Speech Emotion Reasoning",
+    "paper_title_zh": "EmotionThinker：韵律感知的强化学习用于可解释的语音情感推理",
+    "paper_id": "2601.15668",
+    "paper_abstract": "Emotional information in speech plays a unique role in multimodal perception. However, current Speech Large Language Models (SpeechLLMs), similar to conventional speech emotion recognition (SER) systems, still treat emotion understanding as a simple classification problem. This provides limited interpretability of predictions, while leaving the LLMs' expressive and reasoning capabilities underutilized. In this work, we take the first step to reformulate SER as a deep reasoning problem through reinforcement learning (RL). We propose EmotionThinker, which is designed to generate accurate emotion predictions with interpretable explanations grounded in fine-grained acoustic cues. To achieve this, we first construct EmotionCoT-35K, an emotional reasoning dataset with Chain-of-Thought annotations and detailed captions. Second, we observe that current SpeechLLMs exhibit weak prosody perception, whereas prosodic cues constitute fundamental signals for interpreting emotions. To address this, we develop the prosody-enhanced foundation model EmotionThinker-Base, and demonstrate that prosody enhancement improves emotion understanding. Third, we introduce Group-Relative-Policy-Optimization with Progressive-Trust-aware-Reasoning-Reward (GRPO-PTR) for RL. Different from standard GRPO, which relies only on rule-based outcome rewards, GRPO-PTR progressively introduces reasoning reward, dynamically adjusts it with a trustworthiness weight reflecting the alignment between reasoning and outcome, and evaluates the overall reasoning quality with a reward model based on multi-dimensional criteria. EmotionThinker outperforms previous state-of-the-art evaluation models both in emotion accuracy and explanation quality, advancing SER toward interpretable multimodal reasoning. Project page: this https URL",
+    "paper_abstract_zh": "语音中的情感信息在多模态感知中扮演着独特角色。然而，当前的语音大语言模型（SpeechLLMs）与传统的语音情感识别（SER）系统类似，仍将情感理解视为一个简单的分类问题。这限制了预测的可解释性，同时未能充分利用LLMs的表达和推理能力。在这项工作中，我们首次通过强化学习（RL）将SER重新构建为一个深度推理问题。我们提出了EmotionThinker，旨在生成基于细粒度声学线索的可解释解释的准确情感预测。为此，我们首先构建了EmotionCoT-35K，这是一个带有思维链注释和详细描述的情感推理数据集。其次，我们观察到当前的SpeechLLMs表现出较弱的韵律感知能力，而韵律线索是解释情感的基本信号。为解决这一问题，我们开发了韵律增强的基础模型EmotionThinker-Base，并证明韵律增强能够提高情感理解能力。第三，我们引入了基于渐进信任感知推理奖励的组相对策略优化（GRPO-PTR）用于强化学习。与仅依赖基于规则的结果奖励的标准GRPO不同，GRPO-PTR逐步引入推理奖励，并根据推理与结果之间的对齐情况动态调整信任度权重，并使用基于多维标准的奖励模型评估整体推理质量。EmotionThinker在情感准确性和解释质量方面均优于之前的最先进评估模型，推动SER向可解释的多模态推理发展。项目页面：this https URL",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Dingdong Wang, Shujie Liu, Tianhua Zhang, Youjun Chen, Jinyu Li, Helen Meng",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "U3-xi: Pushing the Boundaries of Speaker Recognition via Incorporating Uncertainty",
+    "paper_title_zh": "U3-xi：通过整合不确定性推动说话人识别的边界",
+    "paper_id": "2601.15719",
+    "paper_abstract": "An utterance-level speaker embedding is typically obtained by aggregating a sequence of frame-level representations. However, in real-world scenarios, individual frames encode not only speaker-relevant information but also various nuisance factors. As a result, different frames contribute unequally to the final utterance-level speaker representation for Automatic Speaker Verification systems. To address this issue, we propose to estimate the inherent uncertainty of each frame and assign adaptive weights accordingly, where frames with higher uncertainty receive lower attention. Based on this idea, we present U3-xi, a comprehensive framework designed to produce more reliable and interpretable uncertainty estimates for speaker embeddings. Specifically, we introduce several strategies for uncertainty supervision. First, we propose speaker-level uncertainty supervision via a Stochastic Variance Loss, where the distance between an utterance embedding and its corresponding speaker centroid serves as a pseudo ground truth for uncertainty learning. Second, we incorporate global-level uncertainty supervision by injecting the predicted uncertainty into the sof tmax scale during training. This adaptive scaling mechanism adjusts the sharpness of the decision boundary according to sample difficulty, providing global guidance. Third, we redesign the uncertainty estimation module by integrating a Transformer encoder with multi-view self-attention, enabling the model to capture rich local and long-range temporal dependencies. Comprehensive experiments demonstrate that U3-xi is model-agnostic and can be seamlessly applied to various speaker encoders. In particular, when applied to ECAPA-TDNN, it achieves 21.1% and 15.57% relative improvements on the VoxCeleb1 test sets in terms of EER and minDCF, respectively.",
+    "paper_abstract_zh": "语句级别的说话人嵌入通常是通过聚合一系列帧级别表示来获得的。然而，在现实场景中，单个帧不仅编码与说话人相关的信息，还包含各种干扰因素。因此，对于自动说话人验证系统，不同的帧对最终语句级别说话人表示的贡献不均等。为解决这一问题，我们提出估计每个帧的固有不确定性并相应地分配自适应权重，其中不确定性较高的帧获得较低的注意力权重。基于这一理念，我们提出了U3-xi，这是一个全面的框架，旨在为说话人嵌入生成更可靠且可解释的不确定性估计。具体而言，我们引入了几种不确定性监督策略。首先，我们通过随机方差损失提出语句级别的不确定性监督，其中语句嵌入与其对应的说话人质心之间的距离作为不确定性学习的伪真实值。其次，我们通过在训练期间将预测的不确定性注入softmax尺度来整合全局级别的不确定性监督。这种自适应缩放机制根据样本难度调整决策边界的锐度，提供全局指导。第三，我们通过集成具有多视图自注意力的Transformer编码器重新设计了不确定性估计模块，使模型能够捕获丰富的局部和长程时间依赖关系。全面的实验表明，U3-xi与模型无关，可以无缝应用于各种说话人编码器。特别是，当应用于ECAPA-TDNN时，在VoxCeleb1测试集上，EER和minDCF分别实现了21.1%和15.57%的相对改进。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Junjie Li, Kong Aik Lee",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Distillation-based Layer Dropping (DLD) Effective End-to-end Framework for Dynamic Speech Networks",
+    "paper_title_zh": "基于蒸馏的层丢弃（DLD）：动态语音网络的有效端到端框架",
+    "paper_id": "2601.16117",
+    "paper_abstract": "Edge devices operate in constrained and varying resource settings, requiring dynamic architectures that can adapt to limitations of the available resources. To meet such demands, layer dropping ($\\mathcal{LD}$) approach is typically used to transform static models into dynamic ones by skipping parts of the network along with reducing overall computational complexity. However, existing $\\mathcal{LD}$ methods greatly impact the dynamic model's performance for low and high dropping cases, deteriorating the performance-computation trade-off. To this end, we propose a distillation-based layer dropping (DLD) framework that effectively combines the capabilities of knowledge distillation and $\\mathcal{LD}$ in an end-to-end fashion, thereby achieving state-of-the-art performance for dynamic speech networks. Comprehensive experimentation utilizing well-known speech recognition methods, including conformer and WavLM, on three public benchmarks demonstrates the effectiveness of our framework, reducing the word error rate by $9.32\\%$ and $2.25\\%$ for high and no dropping cases with $33.3\\%$ reduction in training time.",
+    "paper_abstract_zh": "边缘设备在受限制且不断变化的资源环境中运行，需要能够适应可用资源限制的动态架构。为满足此类需求，通常采用层丢弃（LD）方法，通过跳过网络部分来将静态模型转换为动态模型，同时降低整体计算复杂度。然而，现有的LD方法对低丢弃和高丢弃情况下的动态模型性能影响很大，恶化了性能与计算之间的权衡。为此，我们提出了一种基于蒸馏的层丢弃（DLD）框架，以端到端方式有效结合知识蒸馏和LD的能力，从而实现动态语音网络的最新性能。在三个公共基准上使用知名语音识别方法（包括Conformer和WavLM）进行的全面实验证明了我们框架的有效性，在高丢弃和无丢弃情况下，词错误率分别降低了9.32%和2.25%，同时训练时间减少了33.3%。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Abdul Hannan, Daniele Falavigna, Shah Nawaz, Mubashir Noman, Markus Schedl, Alessio Brutti",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Pay (Cross) Attention to the Melody: Curriculum Masking for Single-Encoder Melodic Harmonization",
+    "paper_title_zh": "关注旋律：单编码器旋律和声的课程掩码",
+    "paper_id": "2601.16150",
+    "paper_abstract": "Melodic harmonization, the task of generating harmonic accompaniments for a given melody, remains a central challenge in computational music generation. Recent single encoder transformer approaches have framed harmonization as a masked sequence modeling problem, but existing training curricula inspired by discrete diffusion often result in weak (cross) attention between melody and harmony. This leads to limited exploitation of melodic cues, particularly in out-of-domain contexts. In this work, we introduce a training curriculum, FF (full-to-full), which keeps all harmony tokens masked for several training steps before progressively unmasking entire sequences during training to strengthen melody-harmony interactions. We systematically evaluate this approach against prior curricula across multiple experimental axes, including temporal quantization (quarter vs. sixteenth note), bar-level vs. time-signature conditioning, melody representation (full range vs. pitch class), and inference-time unmasking strategies. Models are trained on the HookTheory dataset and evaluated both in-domain and on a curated collection of jazz standards, using a comprehensive set of metrics that assess chord progression structure, harmony-melody alignment, and rhythmic coherence. Results demonstrate that the proposed FF curriculum consistently outperforms baselines in nearly all metrics, with particularly strong gains in out-of-domain evaluations where harmonic adaptability to novel melodic queues is crucial. We further find that quarter-note quantization, intertwining of bar tokens, and pitch-class melody representations are advantageous in the FF setting. Our findings highlight the importance of training curricula in enabling effective melody conditioning and suggest that full-to-full unmasking offers a robust strategy for single encoder harmonization.",
+    "paper_abstract_zh": "旋律和声，即为给定旋律生成和声伴奏的任务，在计算音乐生成中仍然是一个核心挑战。最近的单编码器Transformer方法将和声建模视为一个掩码序列建模问题，但受离散扩散启发的现有训练课程往往导致旋律和声之间的弱交叉注意力。这限制了旋律线索的利用，特别是在领域外上下文中。在这项工作中，我们引入了一种训练课程FF（full-to-full），它在训练过程中将所有和声令牌保持掩码状态数个训练步骤，然后逐步取消整个序列的掩码，以增强旋律-和声交互。我们在多个实验轴上系统评估了这种方法，包括时间量化（四分音符 vs 十六分音符）、小节级 vs 拍号条件、旋律表示（全音域 vs 音高类别）以及推理时取消掩码策略。模型在HookTheory数据集上训练，并在领域内和精选的爵士标准集合上评估，使用了一套全面的指标来评估和弦进行结构、和声-旋律对齐和节奏连贯性。结果表明，所提出的FF课程在几乎所有指标上都 consistently优于基线，特别是在领域外评估中，其中对新旋律线索的和声适应性至关重要。我们进一步发现，四分音符量化、小节令牌的交织以及音高类别的旋律表示在FF设置中是有利的。我们的研究结果强调了训练课程在实现有效旋律条件方面的重要性，并表明full-to-full取消掩码为单编码器和声提供了一种稳健的策略。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Maximos Kaliakatsos-Papakostas, Dimos Makris, Konstantinos Soiledis, Konstantinos-Theodoros Tsamis, Vassilis Katsouros, Emilios Cambouropoulos",
+    "topic": [
+      "Music Generation",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Domain-Incremental Continual Learning for Robust and Efficient Keyword Spotting in Resource Constrained Systems",
+    "paper_title_zh": "面向资源受限系统的鲁棒高效关键词检测的领域增量持续学习",
+    "paper_id": "2601.16158",
+    "paper_abstract": "Keyword Spotting (KWS) systems with small footprint models deployed on edge devices face significant accuracy and robustness challenges due to domain shifts caused by varying noise and recording conditions. To address this, we propose a comprehensive framework for continual learning designed to adapt to new domains while maintaining computational efficiency. The proposed pipeline integrates a dual-input Convolutional Neural Network, utilizing both Mel Frequency Cepstral Coefficients (MFCC) and Mel-spectrogram features, supported by a multi-stage denoising process, involving discrete wavelet transform and spectral subtraction techniques, plus model and prototype update blocks. Unlike prior methods that restrict updates to specific layers, our approach updates the complete quantized model, made possible due to compact model architecture. A subset of input samples are selected during runtime using class prototypes and confidence-driven filtering, which are then pseudo-labeled and combined with rehearsal buffer for incremental model retraining. Experimental results on noisy test dataset demonstrate the framework's effectiveness, achieving 99.63\\% accuracy on clean data and maintaining robust performance (exceeding 94\\% accuracy) across diverse noisy environments, even at -10 dB Signal-to-Noise Ratio. The proposed framework work confirms that integrating efficient denoising with prototype-based continual learning enables KWS models to operate autonomously and robustly in resource-constrained, dynamic environments.",
+    "paper_abstract_zh": "在边缘设备上部署的小型关键词检测（KWS）系统，由于不同噪声和录音条件导致的领域偏移，面临着显著的准确性和鲁棒性挑战。为解决这一问题，我们提出了一种全面的持续学习框架，旨在适应新领域同时保持计算效率。该框架集成了一个双输入卷积神经网络，利用梅尔频率倒谱系数（MFCC）和梅尔谱图特征，并采用多阶段去噪过程，包括离散小波变换和谱减技术，以及模型和原型更新模块。与仅更新特定层的前期方法不同，我们的方法更新完整的量化模型，这得益于紧凑的模型架构。运行时使用类原型和置信度驱动的过滤选择部分输入样本，然后进行伪标记并与重放缓冲区结合，用于增量模型重训练。在嘈杂测试数据集上的实验结果证明了该框架的有效性，在干净数据上达到99.63%的准确率，并在各种嘈杂环境下保持鲁棒性能（准确率超过94%），甚至在-10分贝信噪比条件下也是如此。该框架证实，将高效去噪与基于原型的持续学习相结合，使KWS模型能够在资源受限的动态环境中自主且鲁棒地运行。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Prakash Dhungana, Sayed Ahmad Salehi",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Beyond Prompting: Efficient and Robust Contextual Biasing for Speech LLMs via Logit-Space Integration (LOGIC)",
+    "paper_title_zh": "超越提示：通过对数空间集成实现语音大语言模型的高效鲁棒上下文偏置（LOGIC）",
+    "paper_id": "2601.15397",
+    "paper_abstract": "The rapid emergence of new entities -- driven by cultural shifts, evolving trends, and personalized user data -- poses a significant challenge for existing Speech Large Language Models (Speech LLMs). While these models excel at general conversational tasks, their static training knowledge limits their ability to recognize domain-specific terms such as contact names, playlists, or technical jargon. Existing solutions primarily rely on prompting, which suffers from poor scalability: as the entity list grows, prompting encounters context window limitations, increased inference latency, and the \"lost-in-the-middle\" phenomenon. An alternative approach, Generative Error Correction (GEC), attempts to rewrite transcripts via post-processing but frequently suffers from \"over-correction\", introducing hallucinations of entities that were never spoken.\nIn this work, we introduce LOGIC (Logit-Space Integration for Contextual Biasing), an efficient and robust framework that operates directly in the decoding layer. Unlike prompting, LOGIC decouples context injection from input processing, ensuring constant-time complexity relative to prompt length. Extensive experiments using the Phi-4-MM model across 11 multilingual locales demonstrate that LOGIC achieves an average 9% relative reduction in Entity WER with a negligible 0.30% increase in False Alarm Rate.",
+    "paper_abstract_zh": "新实体的快速涌现——由文化变迁、不断演变的趋势和个性化用户数据驱动——对现有的语音大语言模型（Speech LLMs）构成了重大挑战。虽然这些模型在通用对话任务上表现出色，但其静态训练知识限制了它们识别领域特定术语（如联系人名称、播放列表或技术术语）的能力。现有解决方案主要依赖于提示（prompting），但这种方法的可扩展性较差：随着实体列表的增长，提示会遇到上下文窗口限制、推理延迟增加以及“中间丢失”现象等问题。另一种方法是生成式错误纠正（GEC），它试图通过后处理重写转录文本，但经常出现“过度纠正”问题，引入了从未被提及的实体的幻觉。在这项工作中，我们介绍了LOGIC（上下文偏置的对数空间集成），这是一个直接在解码层运行的高效且鲁棒的框架。与提示不同，LOGIC将上下文注入与输入处理解耦，确保相对于提示长度的恒定时间复杂度。在Phi-4-MM模型上跨11种多语言区域的广泛实验表明，LOGIC实现了实体词错误率（Entity WER）平均9%的相对降低，同时误报率仅增加了可忽略的0.30%。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-23",
+    "paper_authors": "Peidong Wang",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
