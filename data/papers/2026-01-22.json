@@ -80,10 +80,10 @@
   },
   {
     "paper_title": "AQAScore: Evaluating Semantic Alignment in Text-to-Audio Generation via Audio Question Answering",
-    "paper_title_zh": "",
+    "paper_title_zh": "AQAScore: 通过音频问答评估文本到音频生成的语义对齐",
     "paper_id": "2601.14728",
     "paper_abstract": "Although text-to-audio generation has made remarkable progress in realism and diversity, the development of evaluation metrics has not kept pace. Widely-adopted approaches, typically based on embedding similarity like CLAPScore, effectively measure general relevance but remain limited in fine-grained semantic alignment and compositional reasoning. To address this, we introduce AQAScore, a backbone-agnostic evaluation framework that leverages the reasoning capabilities of audio-aware large language models (ALLMs). AQAScore reformulates assessment as a probabilistic semantic verification task; rather than relying on open-ended text generation, it estimates alignment by computing the exact log-probability of a \"Yes\" answer to targeted semantic queries. We evaluate AQAScore across multiple benchmarks, including human-rated relevance, pairwise comparison, and compositional reasoning tasks. Experimental results show that AQAScore consistently achieves higher correlation with human judgments than similarity-based metrics and generative prompting baselines, showing its effectiveness in capturing subtle semantic inconsistencies and scaling with the capability of underlying ALLMs.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "尽管文本到音频生成在真实性和多样性方面取得了显著进展，但评估指标的发展却未能跟上步伐。广泛采用的方法通常基于嵌入相似性（如CLAPScore），能有效衡量一般相关性，但在细粒度语义对齐和组合推理方面仍然有限。为此，我们引入了AQAScore，一个与骨干模型无关的评估框架，它利用了音频感知大语言模型（ALLMs）的推理能力。AQAScore将评估重新表述为概率语义验证任务；它不依赖开放式的文本生成，而是通过计算针对语义查询的'是'答案的确切对数概率来估计对齐程度。我们在多个基准上评估了AQAScore，包括人类相关性评分、成对比较和组合推理任务。实验结果表明，AQAScore与基于相似性的指标和生成式提示基线相比，始终能实现与人类判断更高的相关性，显示出其在捕捉细微语义不一致性以及随着底层ALLMs能力扩展方面的有效性。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Machine Learning (cs.LG)",
@@ -93,8 +93,14 @@
     ],
     "update_time": "2026-01-22",
     "paper_authors": "Chun-Yi Kuan, Kai-Wei Chang, Hung-yi Lee",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "Inverse-Hessian Regularization for Continual Learning in ASR",
