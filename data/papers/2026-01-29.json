@@ -1,0 +1,396 @@
+[
+  {
+    "paper_title": "MK-SGC-SC: Multiple Kernel guided Sparse Graph Construction in Spectral Clustering for Unsupervised Speaker Diarization",
+    "paper_title_zh": "MK-SGC-SC: 多核引导的无监督说话人分段中的稀疏图构建",
+    "paper_id": "2601.19946",
+    "paper_abstract": "Speaker diarization aims to segment audio recordings into regions corresponding to individual speakers. Although unsupervised speaker diarization is inherently challenging, the prospect of identifying speaker regions without pretraining or weak supervision motivates research on clustering techniques. In this work, we share the notable observation that measuring multiple kernel similarities of speaker embeddings to thereafter craft a sparse graph for spectral clustering in a principled manner is sufficient to achieve state-of-the-art performances in a fully unsupervised setting. Specifically, we consider four polynomial kernels and a degree one arccosine kernel to measure similarities in speaker embeddings, using which sparse graphs are constructed in a principled manner to emphasize local similarities. Experiments show the proposed approach excels in unsupervised speaker diarization over a variety of challenging environments in the DIHARD-III, AMI, and VoxConverse corpora. To encourage further research, our implementations are available at this https URL.",
+    "paper_abstract_zh": "说话人分段旨在将音频录音分割成对应于各个说话人的区域。尽管无监督说话人分段本质上具有挑战性，但无需预训练或弱监督即可识别说话人区域的前景激励了对聚类技术的研究。在这项工作中，我们分享了一个显著的观察：以原则性方式测量说话人嵌入的多个核相似性，然后为谱聚类构建稀疏图，足以在完全无监督设置下实现最先进的性能。具体而言，我们考虑了四个多项式核和一个一阶反余弦核来测量说话人嵌入的相似性，并以此原则性地构建稀疏图，以强调局部相似性。实验表明，在DIHARD-III、AMI和VoxConverse语料库的各种挑战性环境中，所提出的方法在无监督说话人分段方面表现出色。为了鼓励进一步研究，我们的实现可在提供的URL上获取。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Nikhil Raghav, Avisek Gupta, Swagatam Das, Md Sahidullah",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "RIR-Mega-Speech: A Reverberant Speech Corpus with Comprehensive Acoustic Metadata and Reproducible Evaluation",
+    "paper_title_zh": "RIR-Mega-Speech：一个包含全面声学元数据和可重现评估的混响语音语料库",
+    "paper_id": "2601.19949",
+    "paper_abstract": "Despite decades of research on reverberant speech, comparing methods remains difficult because most corpora lack per-file acoustic annotations or provide limited documentation for reproduction. We present RIR-Mega-Speech, a corpus of approximately 117.5 hours created by convolving LibriSpeech utterances with roughly 5,000 simulated room impulse responses from the RIR-Mega collection. Every file includes RT60, direct-to-reverberant ratio (DRR), and clarity index ($C_{50}$) computed from the source RIR using clearly defined, reproducible procedures. We also provide scripts to rebuild the dataset and reproduce all evaluation results.\nUsing Whisper small on 1,500 paired utterances, we measure 5.20% WER (95% CI: 4.69--5.78) on clean speech and 7.70% (7.04--8.35) on reverberant versions, corresponding to a paired increase of 2.50 percentage points (2.06--2.98). This represents a 48% relative degradation. WER increases monotonically with RT60 and decreases with DRR, consistent with prior perceptual studies. While the core finding that reverberation harms recognition is well established, we aim to provide the community with a standardized resource where acoustic conditions are transparent and results can be verified independently. The repository includes one-command rebuild instructions for both Windows and Linux environments.",
+    "paper_abstract_zh": "尽管混响语音研究已有数十年的历史，但由于大多数语料库缺乏每个文件的声学注释或提供有限的可重现文档，比较方法仍然困难。我们提出了RIR-Mega-Speech，这是一个包含约117.5小时的语料库，通过将LibriSpeech语音与RIR-Mega集合中的约5000个模拟房间脉冲响应卷积创建而成。每个文件都包含使用明确定义且可重现的程序从源RIR计算出的RT60、直达混响比（DRR）和清晰度指数（C₅₀）。我们还提供了重建数据集和重现所有评估结果的脚本。在1500对语音上使用Whisper small模型，我们在干净语音上测得5.20%的词错误率（95%置信区间：4.69-5.78），在混响版本上测得7.70%（7.04-8.35），对应2.50个百分点（2.06-2.98）的成对增加，这表示48%的相对退化。WER随RT60单调增加，随DRR降低，这与先前的感知研究一致。虽然混响损害识别这一核心发现已得到充分证实，但我们的目标是向社区提供一个标准化资源，其中声学条件透明，结果可以独立验证。该存储库包含Windows和Linux环境的一键式重建说明。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)",
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Mandip Goswami",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "VoxPrivacy: A Benchmark for Evaluating Interactional Privacy of Speech Language Models",
+    "paper_title_zh": "VoxPrivacy: 评估语音语言模型交互隐私的基准",
+    "paper_id": "2601.19956",
+    "paper_abstract": "As Speech Language Models (SLMs) transition from personal devices to shared, multi-user environments such as smart homes, a new challenge emerges: the model is expected to distinguish between users to manage information flow appropriately. Without this capability, an SLM could reveal one user's confidential schedule to another, a privacy failure we term interactional privacy. Thus, the ability to generate speaker-aware responses becomes essential for SLM safe deployment. Current SLM benchmarks test dialogue ability but overlook speaker identity. Multi-speaker benchmarks check who said what without assessing whether SLMs adapt their responses. Privacy benchmarks focus on globally sensitive data (e.g., bank passwords) while neglecting contextual privacy-sensitive information (e.g., a user's private appointment). To address this gap, we introduce VoxPrivacy, the first benchmark designed to evaluate interactional privacy in SLMs. VoxPrivacy spans three tiers of increasing difficulty, from following direct secrecy commands to proactively protecting privacy. Our evaluation of nine SLMs on a 32-hour bilingual dataset reveals a widespread vulnerability: most open-source models perform close to random chance (around 50% accuracy) on conditional privacy decisions, while even strong closed-source systems fall short on proactive privacy inference. We further validate these findings on Real-VoxPrivacy, a human-recorded subset, confirming that failures observed on synthetic data persist in real speech. Finally, we demonstrate a viable path forward: by fine-tuning on a new 4,000-hour training set, we improve privacy-preserving abilities while maintaining robustness. To support future work, we release the VoxPrivacy benchmark, the large-scale training set, and the fine-tuned model to foster the development of safer and more context-aware SLMs.",
+    "paper_abstract_zh": "随着语音语言模型(SLMs)从个人设备转向共享的多用户环境(如智能家居)，一个新的挑战出现了：模型需要区分不同用户以适当管理信息流。如果没有这种能力，SLM可能会将一个用户的机密日程泄露给另一个用户，这是一种我们称之为交互隐私的隐私失败。因此，生成说话者感知响应的能力对于SLM的安全部署变得至关重要。当前的SLM基准测试对话能力，但忽略了说话者身份。多说话者基准测试检查谁说了什么，但没有评估SLM是否调整其响应。隐私基准测试侧重于全局敏感数据(如银行密码)，而忽略了上下文隐私敏感信息(如用户的私人约会)。为了解决这一差距，我们引入了VoxPrivacy，这是第一个旨在评估SLM交互隐私的基准。VoxPrivacy包含三个难度递增的层次，从遵循直接保密命令到主动保护隐私。我们在一个32小时的双语数据集上对九个SLM进行的评估揭示了一个普遍存在的漏洞：大多数开源模型在条件隐私决策上的表现接近随机水平(约50%的准确率)，而即使是强大的闭源系统在主动隐私推理方面也存在不足。我们在Real-VoxPrivacy(一个人类录制子集)上进一步验证了这些发现，确认了在合成数据上观察到的失败在真实语音中仍然存在。最后，我们展示了一条可行的前进路径：通过在一个新的4000小时训练集上进行微调，我们提高了隐私保护能力，同时保持了鲁棒性。为了支持未来的工作，我们发布了VoxPrivacy基准测试、大规模训练集和微调模型，以促进更安全和更具上下文感知能力的SLM的发展。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Yuxiang Wang, Hongyu Liu, Dekun Chen, Xueyao Zhang, Zhizheng Wu",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Do we really need Self-Attention for Streaming Automatic Speech Recognition?",
+    "paper_title_zh": "我们真的需要自注意力机制用于流式自动语音识别吗？",
+    "paper_id": "2601.19960",
+    "paper_abstract": "Transformer-based architectures are the most used architectures in many deep learning fields like Natural Language Processing, Computer Vision or Speech processing. It may encourage the direct use of Transformers in the constrained tasks, without questioning whether it will yield the same benefits as in standard tasks.  Given specific constraints, it is essential to evaluate the relevance of transformer models. This work questions the suitability of transformers for specific domains. We argue that the high computational requirements and latency issues associated with these models do not align well with streaming applications. Our study promotes the search for alternative strategies to improve efficiency without sacrificing performance.  In light of this observation, our paper critically examines the usefulness of transformer architecture in such constrained environments. As a first attempt, we show that the computational cost for Streaming Automatic Speech Recognition (ASR) can be reduced using deformable convolution instead of Self-Attention. Furthermore, we show that Self-Attention mechanisms can be entirely removed and not replaced, without observing significant degradation in the Word Error Rate.",
+    "paper_abstract_zh": "基于Transformer的架构在许多深度学习领域（如自然语言处理、计算机视觉或语音处理）中被广泛使用。这可能会鼓励在受限任务中直接使用Transformer架构，而无需质疑它是否能像在标准任务中带来同样的好处。考虑到特定的约束条件，评估Transformer模型的相关性至关重要。这项工作质疑了Transformer在特定领域的适用性。我们认为，这些模型的高计算需求和延迟问题与流式应用不太匹配。我们的研究提倡寻找替代策略，以提高效率而不牺牲性能。基于这一观察，我们的论文严格审视了Transformer架构在受限环境中的有用性。作为初步尝试，我们表明在流式自动语音识别（ASR）中，可以使用可变形卷积代替自注意力机制来降低计算成本。此外，我们还表明，完全移除而不替换自注意力机制，不会导致词错误率（WER）出现显著下降。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Youness Dkhissi, Valentin Vielzeuf, Elys Allesiardo, Anthony Larcher",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "T-Mimi: A Transformer-based Mimi Decoder for Real-Time On-Phone TTS",
+    "paper_title_zh": "T-Mimi: 一种基于Transformer的Mimi解码器用于实时手机端TTS",
+    "paper_id": "2601.20094",
+    "paper_abstract": "Neural audio codecs provide promising acoustic features for speech synthesis, with representative streaming codecs like Mimi providing high-quality acoustic features for real-time Text-to-Speech (TTS) applications. However, Mimi's decoder, which employs a hybrid transformer and convolution architecture, introduces significant latency bottlenecks on edge devices due to the the compute intensive nature of deconvolution layers which are not friendly for mobile-CPUs, such as the most representative framework XNNPACK. This paper introduces T-Mimi, a novel modification of the Mimi codec decoder that replaces its convolutional components with a purely transformer-based decoder, inspired by the TS3-Codec architecture. This change dramatically reduces on-device TTS latency from 42.1ms to just 4.4ms. Furthermore, we conduct quantization aware training and derive a crucial finding: the final two transformer layers and the concluding linear layers of the decoder, which are close to the waveform, are highly sensitive to quantization and must be preserved at full precision to maintain audio quality.",
+    "paper_abstract_zh": "神经音频编解码器为语音合成提供了有前景的声学特征，其中代表性的流式编解码器如Mimi为实时文本转语音(TTS)应用提供了高质量的声学特征。然而，Mimi的解码器采用了混合Transformer和卷积架构，由于反卷积层的计算密集特性且对移动CPU(如最具代表性的框架XNNPACK)不友好，在边缘设备上引入了显著的延迟瓶颈。本文介绍了T-Mimi，这是对Mimi编解码器解码器的一种新颖修改，受TS3-Codec架构启发，用纯基于Transformer的解码器替换了其卷积组件。这一改变显著将设备端TTS延迟从42.1ms降低到仅4.4ms。此外，我们进行了量化感知训练，并得出了一个关键发现：解码器中靠近波形的最后两个Transformer层和最后的线性层对量化高度敏感，必须保持全精度以维持音频质量。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Haibin Wu, Bach Viet Do, Naveen Suda, Julian Chan, Madhavan C R, Gene-Ping Yang, Yi-Chiao Wu, Naoyuki Kanda, Yossef Adi, Xin Lei, Yue Liu, Florian Metze, Yuzong Liu",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "ASR for Affective Speech: Investigating Impact of Emotion and Speech Generative Strategy",
+    "paper_title_zh": "情感语音的ASR：研究情感和语音生成策略的影响",
+    "paper_id": "2601.20319",
+    "paper_abstract": "This work investigates how emotional speech and generative strategies affect ASR performance. We analyze speech synthesized from three emotional TTS models and find that substitution errors dominate, with emotional expressiveness varying across models. Based on these insights, we introduce two generative strategies: one using transcription correctness and another using emotional salience, to construct fine-tuning subsets. Results show consistent WER improvements on real emotional datasets without noticeable degradation on clean LibriSpeech utterances. The combined strategy achieves the strongest gains, particularly for expressive speech. These findings highlight the importance of targeted augmentation for building emotion-aware ASR systems.",
+    "paper_abstract_zh": "这项工作研究了情感语音和生成策略如何影响ASR性能。我们分析了从三种情感TTS模型合成的语音，发现替换错误占主导地位，且情感表达性在不同模型间有所差异。基于这些见解，我们引入了两种生成策略：一种使用转录正确性，另一种使用情感显著性，来构建微调子集。结果表明，在真实情感数据集上实现了稳定的WER改进，同时在干净的LibriSpeech语音上没有明显性能下降。组合策略实现了最强的增益，特别是在表达性语音方面。这些发现强调了针对性增强对于构建情感感知ASR系统的重要性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Ya-Tse Wu, Chi-Chun Lee",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Erasing Your Voice Before It's Heard: Training-free Speaker Unlearning for Zero-shot Text-to-Speech",
+    "paper_title_zh": "",
+    "paper_id": "2601.20481",
+    "paper_abstract": "Modern zero-shot text-to-speech (TTS) models offer unprecedented expressivity but also pose serious crime risks, as they can synthesize voices of individuals who never consented. In this context, speaker unlearning aims to prevent the generation of specific speaker identities upon request. Existing approaches, reliant on retraining, are costly and limited to speakers seen in the training set. We present TruS, a training-free speaker unlearning framework that shifts the paradigm from data deletion to inference-time control. TruS steers identity-specific hidden activations to suppress target speakers while preserving other attributes (e.g., prosody and emotion). Experimental results show that TruS effectively prevents voice generation on both seen and unseen opt-out speakers, establishing a scalable safeguard for speech synthesis. The demo and code are available on this http URL.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Myungjin Lee, Eunji Shin, Jiyoung Lee",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Decoding Speech Envelopes from Electroencephalogram with a Contrastive Pearson Correlation Coefficient Loss",
+    "paper_title_zh": "",
+    "paper_id": "2601.20542",
+    "paper_abstract": "Recent advances in reconstructing speech envelopes from Electroencephalogram (EEG) signals have enabled continuous auditory attention decoding (AAD) in multi-speaker environments. Most Deep Neural Network (DNN)-based envelope reconstruction models are trained to maximize the Pearson correlation coefficients (PCC) between the attended envelope and the reconstructed envelope (attended PCC). While the difference between the attended PCC and the unattended PCC plays an essential role in auditory attention decoding, existing methods often focus on maximizing the attended PCC. We therefore propose a contrastive PCC loss which represents the difference between the attended PCC and the unattended PCC. The proposed approach is evaluated on three public EEG AAD datasets using four DNN architectures. Across many settings, the proposed objective improves envelope separability and AAD accuracy, while also revealing dataset- and architecture-dependent failure cases.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Yayun Liang, Yuanming Zhang, Fei Chen, Jing Lu, Zhibin Lin",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Pianoroll-Event: A Novel Score Representation for Symbolic Music",
+    "paper_title_zh": "Pianoroll-Event：一种用于符号音乐的新型乐谱表示方法",
+    "paper_id": "2601.19951",
+    "paper_abstract": "Symbolic music representation is a fundamental challenge in computational musicology. While grid-based representations effectively preserve pitch-time spatial correspondence, their inherent data sparsity leads to low encoding efficiency. Discrete-event representations achieve compact encoding but fail to adequately capture structural invariance and spatial locality. To address these complementary limitations, we propose Pianoroll-Event, a novel encoding scheme that describes pianoroll representations through events, combining structural properties with encoding efficiency while maintaining temporal dependencies and local spatial patterns. Specifically, we design four complementary event types: Frame Events for temporal boundaries, Gap Events for sparse regions, Pattern Events for note patterns, and Musical Structure Events for musical metadata. Pianoroll-Event strikes an effective balance between sequence length and vocabulary size, improving encoding efficiency by 1.36\\times to 7.16\\times over representative discrete sequence methods. Experiments across multiple autoregressive architectures show models using our representation consistently outperform baselines in both quantitative and human evaluations.",
+    "paper_abstract_zh": "符号音乐表示是计算音乐学中的一个基本挑战。虽然基于网格的表示方法能够有效保持音高-时间空间对应关系，但其固有的数据稀疏性导致编码效率低下。离散事件表示方法实现了紧凑编码，但未能充分捕捉结构不变性和空间局部性。为了解决这些互补的局限性，我们提出了Pianoroll-Event，一种新型编码方案，它通过事件描述钢琴卷帘表示，结合了结构特性和编码效率，同时保持了时间依赖性和局部空间模式。具体来说，我们设计了四种互补的事件类型：帧事件用于时间边界，间隙事件用于稀疏区域，模式事件用于音符模式，以及音乐结构事件用于音乐元数据。Pianoroll-Event在序列长度和词汇量大小之间实现了有效平衡，与代表性的离散序列方法相比，编码效率提高了1.36倍至7.16倍。在多种自回归架构上的实验表明，使用我们表示的模型在定量评估和人工评估中均 consistently优于基线方法。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Lekai Qian, Haoyu Gu, Dehan Li, Boyu Cao, Qi Liu",
+    "topic": [
+      "Music Information Retrieval",
+      "Music Generation",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "LTS-VoiceAgent: A Listen-Think-Speak Framework for Efficient Streaming Voice Interaction via Semantic Triggering and Incremental Reasoning",
+    "paper_title_zh": "LTS-VoiceAgent：一种通过语义触发和增量推理实现高效流式语音交互的听-思-说框架",
+    "paper_id": "2601.19952",
+    "paper_abstract": "Real-time voice agents face a dilemma: end-to-end models often lack deep reasoning, while cascaded pipelines incur high latency by executing ASR, LLM reasoning, and TTS strictly in sequence, unlike human conversation where listeners often start thinking before the speaker finishes. Since cascaded architectures remain the dominant choice for complex tasks, existing cascaded streaming strategies attempt to reduce this latency via mechanical segmentation (e.g., fixed chunks, VAD-based splitting) or speculative generation, but they frequently either break semantic units or waste computation on predictions that must be rolled back. To address these challenges, we propose LTS-VoiceAgent, a Listen-Think-Speak framework that explicitly separates when to think from how to reason incrementally. It features a Dynamic Semantic Trigger to detect meaningful prefixes, and a Dual-Role Stream Orchestrator that coordinates a background Thinker (for state maintenance) and a foreground Speaker (for speculative solving). This parallel design enables \"thinking while speaking\" without blocking responses. We also introduce a Pause-and-Repair benchmark containing natural disfluencies to stress-test streaming robustness. Experiments across VERA, Spoken-MQA, BigBenchAudio, and our benchmark show that LTS-VoiceAgent achieves a stronger accuracy-latency-efficiency trade-off than serial cascaded baselines and existing streaming strategies.",
+    "paper_abstract_zh": "实时语音助手面临一个困境：端到端模型通常缺乏深度推理能力，而级联流水线通过严格顺序执行ASR、LLM推理和TTS导致高延迟，这与人类对话中听者常在说话者结束前就开始思考的情况不同。由于级联架构仍是复杂任务的主流选择，现有的流式级联策略尝试通过机械分割（如固定块、基于VAD的分割）或推测生成来降低这种延迟，但它们经常要么破坏语义单元，要么浪费在必须回滚的预测上的计算资源。为解决这些挑战，我们提出了LTS-VoiceAgent，一个听-思-说框架，明确区分何时思考与如何增量推理。它包含动态语义触发器用于检测有意义的前缀，以及双角色流式协调器来协调后台思考者（用于状态维护）和前台说话者（用于推测性解决）。这种并行设计实现了'边说边想'而不会阻塞响应。我们还引入了一个包含自然不流畅现象的暂停-修复基准测试，以对流式鲁棒性进行压力测试。在VERA、Spoken-MQA、BigBenchAudio和我们自己的基准测试上的实验表明，LTS-VoiceAgent实现了比串行级联基线和现有流式策略更强的准确性-延迟-效率权衡。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Wenhao Zou, Yuwei Miao, Zhanyu Ma, Jun Xu, Jiuchong Gao, Jinghua Hao, Renqing He, Jingwen Xu",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Mind the Shift: Using Delta SSL Embeddings to Enhance Child ASR",
+    "paper_title_zh": "关注转变：使用Delta SSL嵌入增强儿童ASR",
+    "paper_id": "2601.20142",
+    "paper_abstract": "Self-supervised learning (SSL) models have achieved impressive results across many speech tasks, yet child automatic speech recognition (ASR) remains challenging due to limited data and pretraining domain mismatch. Fine-tuning SSL models on child speech induces shifts in the representation space. We hypothesize that delta SSL embeddings, defined as the differences between embeddings from a finetuned model and those from its pretrained counterpart, encode task-specific information that complements finetuned features from another SSL model. We evaluate multiple fusion strategies on the MyST childrens corpus using different models. Results show that delta embedding fusion with WavLM yields up to a 10 percent relative WER reduction for HuBERT and a 4.4 percent reduction for W2V2, compared to finetuned embedding fusion. Notably, fusing WavLM with delta W2V2 embeddings achieves a WER of 9.64, setting a new state of the art among SSL models on the MyST corpus. These findings demonstrate the effectiveness of delta embeddings and highlight feature fusion as a promising direction for advancing child ASR.",
+    "paper_abstract_zh": "自监督学习(SSL)模型在许多语音任务中已取得了令人印象深刻的结果，但由于数据有限和预训练域不匹配，儿童自动语音识别(ASR)仍然具有挑战性。在儿童语音上微调SSL模型会导致表示空间的转变。我们假设Delta SSL嵌入（定义为微调模型与预训练模型嵌入之间的差异）编码了任务特定信息，补充了来自另一个SSL模型的微调特征。我们在MyST儿童语料库上使用不同模型评估了多种融合策略。结果表明，与微调嵌入融合相比，Delta嵌入融合与WavLM结合使用，使HuBERT的相对词错误率(WER)降低了10%，W2V2降低了4.4%。值得注意的是，将WavLM与Delta W2V2嵌入融合实现了9.64的WER，在MyST语料库上的SSL模型中创造了新的最先进水平。这些研究结果证明了Delta嵌入的有效性，并突显了特征融合作为推进儿童ASR的有前途的方向。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Zilai Wang, Natarajan Balaji Shankar, Kaiyuan Zhang, Zihan Wang, Abeer Alwan",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "MiLorE-SSL: Scaling Multilingual Capabilities in Self-Supervised Models without Forgetting",
+    "paper_title_zh": "MiLorE-SSL：在自监督模型中扩展多语言能力而不遗忘",
+    "paper_id": "2601.20300",
+    "paper_abstract": "Self-supervised learning (SSL) has greatly advanced speech representation learning, but multilingual SSL models remain constrained to languages encountered during pretraining. Retraining from scratch to incorporate new languages is computationally expensive, while sequential training without migitation strategies often leads to catastrophic forgetting. To address this, we propose MiLorE-SSL, a lightweight framework that combines LoRA modules with a soft mixture-of-experts (MoE) mechanism for efficient continual multilingual training. LoRA provides efficient low-rank adaptation, while soft MoE promotes flexible expert sharing across languages, reducing cross-lingual interference. To further mitigate forgetting, we introduce limited replay data from existing languages, avoiding reliance on large historical corpora. Experiments on ML-SUPERB demonstrate that MiLorE-SSL achieves strong performance in new languages and improves the ability in existing ones with only 2.14% trainable parameters.",
+    "paper_abstract_zh": "自监督学习（SSL）极大地推进了语音表征学习的发展，但多语言SSL模型仍然局限于预训练过程中遇到的语言。从头开始重新训练以纳入新语言在计算上成本高昂，而无缓解策略的顺序训练通常会导致灾难性遗忘。为解决这一问题，我们提出了MiLorE-SSL，这是一个轻量级框架，结合了LoRA模块和软混合专家（MoE）机制，用于高效的多语言持续训练。LoRA提供高效的低秩适应，而软MoE促进语言间的灵活专家共享，减少跨语言干扰。为了进一步减轻遗忘，我们引入了来自现有语言的有限回放数据，避免了对大型历史语料库的依赖。在ML-SUPERB上的实验表明，MiLorE-SSL仅使用2.14%的可训练参数，就在新语言上取得了强大的性能，并提高了现有语言的能力。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Jing Xu, Minglin Wu, Xueyuan Chen, Xixin Wu, Helen Meng",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Audio Deepfake Detection in the Age of Advanced Text-to-Speech models",
+    "paper_title_zh": "先进文本转语音模型时代的音频深度伪造检测",
+    "paper_id": "2601.20510",
+    "paper_abstract": "Recent advances in Text-to-Speech (TTS) systems have substantially increased the realism of synthetic speech, raising new challenges for audio deepfake detection. This work presents a comparative evaluation of three state-of-the-art TTS models--Dia2, Maya1, and MeloTTS--representing streaming, LLM-based, and non-autoregressive architectures. A corpus of 12,000 synthetic audio samples was generated using the Daily-Dialog dataset and evaluated against four detection frameworks, including semantic, structural, and signal-level approaches. The results reveal significant variability in detector performance across generative mechanisms: models effective against one TTS architecture may fail against others, particularly LLM-based synthesis. In contrast, a multi-view detection approach combining complementary analysis levels demonstrates robust performance across all evaluated models. These findings highlight the limitations of single-paradigm detectors and emphasize the necessity of integrated detection strategies to address the evolving landscape of audio deepfake threats.",
+    "paper_abstract_zh": "最近文本转语音(TTS)系统的进步显著提高了合成语音的真实性，给音频深度伪造检测带来了新的挑战。这项工作对三种最先进的TTS模型——Dia2、Maya1和MeloTTS进行了比较评估，这些模型分别代表流式、基于LLM和非自回归架构。使用Daily-Dialog数据集生成了12,000个合成音频样本，并针对包括语义、结构和信号级方法在内的四种检测框架进行了评估。结果表明，检测器性能在不同生成机制之间存在显著差异：对一种TTS架构有效的模型可能对其他架构（特别是基于LLM的合成）无效。相比之下，结合互补分析级别的多视图检测方法在所有评估模型中表现出稳健的性能。这些发现强调了单一范式检测器的局限性，并强调需要采用集成检测策略来应对不断变化的音频深度伪造威胁。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Robin Singh, Aditya Yogesh Nair, Fabio Palumbo, Florian Barbaro, Anna Dyka, Lohith Rachakonda",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Switchcodec: Adaptive residual-expert sparse quantization for high-fidelity neural audio coding",
+    "paper_title_zh": "SwitchCodec: 用于高保真神经音频编码的自适应残差专家稀疏量化",
+    "paper_id": "2601.20362",
+    "paper_abstract": "Recent neural audio compression models often rely on residual vector quantization for high-fidelity coding, but using a fixed number of per-frame codebooks is suboptimal for the wide variability of audio content-especially for signals that are either very simple or highly complex. To address this limitation, we propose SwitchCodec, a neural audio codec based on Residual Experts Vector Quantization (REVQ). REVQ combines a shared quantizer with dynamically routed expert quantizers that are activated according to the input audio, decoupling bitrate from codebook capacity and improving compression efficiency. This design ensures full training and utilization of each quantizer. In addition, a variable-bitrate mechanism adjusts the number of active expert quantizers at inference, enabling multi-bitrate operation without retraining. Experiments demonstrate that SwitchCodec surpasses existing baselines on both objective metrics and subjective listening tests.",
+    "paper_abstract_zh": "最近的神经音频压缩模型通常依赖残差矢量量化进行高保真编码，但使用固定数量的每帧码本对于音频内容的广泛变化来说并非最优方案——特别是对于非常简单或高度复杂的信号。为解决这一局限，我们提出了SwitchCodec，一种基于残差专家矢量量化（REVQ）的神经音频编解码器。REVQ结合了一个共享量化器和根据输入音频动态路由的专家量化器，解除了比特率与码本容量之间的关联，提高了压缩效率。这种设计确保了每个量化器的充分训练和利用。此外，可变比特率机制在推理时调整活跃专家量化器的数量，实现了无需重新训练的多比特率操作。实验表明，SwitchCodec在客观指标和主观听感测试中均优于现有基线模型。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Xiangbo Wang, Wenbin Jiang, Jin Wang, Yubo You, Sheng Fang, Fei Wen",
+    "topic": [
+      "Audio Codec",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Mix2Morph: Learning Sound Morphing from Noisy Mixes",
+    "paper_title_zh": "Mix2Morph: 从嘈杂混合中学习声音变形",
+    "paper_id": "2601.20426",
+    "paper_abstract": "We introduce Mix2Morph, a text-to-audio diffusion model fine-tuned to perform sound morphing without a dedicated dataset of morphs. By finetuning on noisy surrogate mixes at higher diffusion timesteps, Mix2Morph yields stable, perceptually coherent morphs that convincingly integrate qualities of both sources. We specifically target sound infusions, a practically and perceptually motivated subclass of morphing in which one sound acts as the dominant primary source, providing overall temporal and structural behavior, while a secondary sound is infused throughout, enriching its timbral and textural qualities. Objective evaluations and listening tests show that Mix2Morph outperforms prior baselines and produces high-quality sound infusions across diverse categories, representing a step toward more controllable and concept-driven tools for sound design. Sound examples are available at this https URL .",
+    "paper_abstract_zh": "我们介绍了Mix2Morph，这是一个文本到音频的扩散模型，经过微调后可以在没有专用变形数据集的情况下执行声音变形。通过在更高的扩散时间步上对嘈杂的代理混合进行微调，Mix2Morph能够产生稳定、感知连贯的变形，这些变形能够令人信服地融合两个来源的特性。我们特别针对声音注入，这是变形的一个实际和感知驱动的子类，其中一个声音作为主导的主要来源，提供整体时间和结构行为，而另一个次要声音则贯穿其中，丰富其音色和质感特性。客观评估和听力测试表明，Mix2Morph优于先前的基线方法，并能跨不同类别产生高质量的声音注入，代表了向声音设计领域更可控和概念驱动的工具迈进的一步。声音示例可在提供的URL中获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Annie Chu, Hugo Flores García, Oriol Nieto, Justin Salamon, Bryan Pardo, Prem Seetharaman",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Self Voice Conversion as an Attack against Neural Audio Watermarking",
+    "paper_title_zh": "自我语音转换作为针对神经音频水印的攻击",
+    "paper_id": "2601.20432",
+    "paper_abstract": "Audio watermarking embeds auxiliary information into speech while maintaining speaker identity, linguistic content, and perceptual quality. Although recent advances in neural and digital signal processing-based watermarking methods have improved imperceptibility and embedding capacity, robustness is still primarily assessed against conventional distortions such as compression, additive noise, and resampling. However, the rise of deep learning-based attacks introduces novel and significant threats to watermark security. In this work, we investigate self voice conversion as a universal, content-preserving attack against audio watermarking systems. Self voice conversion remaps a speaker's voice to the same identity while altering acoustic characteristics through a voice conversion model. We demonstrate that this attack severely degrades the reliability of state-of-the-art watermarking approaches and highlight its implications for the security of modern audio watermarking techniques.",
+    "paper_abstract_zh": "音频水印将辅助信息嵌入到语音中，同时保持说话人身份、语言内容和感知质量。尽管最近基于神经和数字信号处理的水印方法在不可感知性和嵌入容量方面取得了进展，但其鲁棒性主要仍针对传统失真（如压缩、加性噪声和重采样）进行评估。然而，基于深度学习的攻击的出现为水印安全带来了新颖且重大的威胁。在这项工作中，我们研究了自我语音转换作为一种针对音频水印系统的通用、内容保持攻击。自我语音转换通过语音转换模型将说话人的声音重新映射到同一身份，同时改变声学特征。我们证明了这种攻击会严重降低最先进水印方法的可靠性，并强调了其对现代音频水印技术安全性的影响。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Yigitcan Özer, Wanying Ge, Zhe Zhang, Xin Wang, Junichi Yamagishi",
+    "topic": [
+      "Speech Synthesis",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "On Every Note a Griff: Looking for a Useful Representation of Basso Continuo Performance Style",
+    "paper_title_zh": "论每一个格里夫：寻找低音持续伴奏表演风格的有用表示",
+    "paper_id": "2601.20478",
+    "paper_abstract": "Basso continuo is a baroque improvisatory accompaniment style which involves improvising multiple parts above a given bass line in a musical score on a harpsichord or organ. Basso continuo is not merely a matter of history; moreover, it is a historically inspired living practice, and The Aligned Continuo Dataset (ACoRD) records the first sample of modern-day basso continuo playing in the symbolic domain. This dataset, containing 175 MIDI recordings of 5 basso continuo scores performed by 7 players, allows us to start observing and analyzing the variety that basso continuo improvisation brings. A recently proposed basso continuo performance-to-score alignment system provides a way of mapping improvised performance notes to score notes. In order to study aligned basso continuo performances, we need an appropriate feature representation. We propose griff, a representation inspired by historical basso continuo treatises. It enables us to encode both pitch content and structure of a basso continuo realization in a transposition-invariant way. Griffs are directly extracted from aligned basso continuo performances by grouping together performance notes aligned to the same score note in a onset-time ordered way, and they provide meaningful tokens that form a feature space in which we can analyze basso continuo performance styles. We statistically describe griffs extracted from the ACoRD dataset recordings, and show in two experiments how griffs can be used for statistical analysis of individuality of different players' basso continuo performance styles. We finally present an argument why it is desirable to preserve the structure of a basso continuo improvisation in order to conduct a refined analysis of personal performance styles of individual basso continuo practitioners, and why griffs can provide a meaningful historically informed feature space worthy of a more robust empirical validation.",
+    "paper_abstract_zh": "低音持续伴奏是一种巴洛克即兴伴奏风格，涉及在羽管键琴或管风琴上根据乐谱中给定的低音线即兴演奏多个声部。低音持续伴奏不仅仅是历史问题；它更是一种受历史启发的活态实践，而《对齐持续数据集》(ACoRD)记录了现代低音持续伴奏演奏在符号域的首个样本。该数据集包含7位演奏家演奏的5首低音持续伴奏乐谱的175个MIDI录音，使我们能够开始观察和分析低音持续伴奏即兴带来的多样性。最近提出的一种低音持续伴奏表演到乐谱对齐系统提供了一种将即兴表演音符映射到乐谱音符的方法。为了研究对齐的低音持续伴奏表演，我们需要适当的特征表示。我们提出了格里夫(griff)，这是一种受历史低音持续伴奏论文启发的表示方法。它能够以移位不变的方式编码低音持续伴奏实现的音高内容和结构。格里夫通过对齐到同一乐谱音符的表演音符按起始时间顺序分组直接从对齐的低音持续伴奏表演中提取，它们提供了有意义的标记，形成了一个特征空间，我们可以在其中分析低音持续伴奏表演风格。我们统计描述了从ACoRD数据集录音中提取的格里夫，并通过两个实验展示了如何使用格里夫来分析不同演奏家低音持续伴奏表演风格的个体性。最后，我们论证了为什么在分析个体低音持续伴奏实践者的个人表演风格时保留低音持续伴奏即兴的结构是可取的，以及为什么格里夫可以提供一个有意义的历史知情特征空间，值得进行更稳健的实证验证。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Information Retrieval (cs.IR)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Adam Štefunko, Carlos Eduardo Cancino-Chacón, Jan Hajič jr",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Gen-SER: When the generative model meets speech emotion recognition",
+    "paper_title_zh": "Gen-SER: 当生成模型遇见语音情感识别",
+    "paper_id": "2601.20573",
+    "paper_abstract": "Speech emotion recognition (SER) is crucial in speech understanding and generation. Most approaches are based on either classification models or large language models. Different from previous methods, we propose Gen-SER, a novel approach that reformulates SER as a distribution shift problem via generative models. We propose to project discrete class labels into a continuous space, and obtain the terminal distribution via sinusoidal taxonomy encoding. The target-matching-based generative model is adopted to transform the initial distribution into the terminal distribution efficiently. The classification is achieved by calculating the similarity of the generated terminal distribution and ground truth terminal distribution. The experimental results confirm the efficacy of the proposed method, demonstrating its extensibility to various speech-understanding tasks and suggesting its potential applicability to a broader range of classification tasks.",
+    "paper_abstract_zh": "语音情感识别(SER)在语音理解和生成中至关重要。大多数方法基于分类模型或大型语言模型。与以往方法不同，我们提出了Gen-SER，一种新颖的方法，通过生成模型将SER重新表述为分布偏移问题。我们提出将离散类标签投影到连续空间，并通过正弦分类编码获得终端分布。采用基于目标匹配的生成模型将初始分布高效转换为终端分布。分类是通过计算生成的终端分布与真实终端分布的相似性来实现的。实验结果证实了所提出方法的有效性，展示了其扩展到各种语音理解任务的能力，并暗示了其在更广泛分类任务中的潜在适用性。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Taihui Wang, Jinzheng Zhao, Rilin Chen, Tong Lei, Wenwu Wang, Dong Yu",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "FastWhisper: Adaptive Self-knowledge Distillation for Real-time Automatic Speech Recognition",
+    "paper_title_zh": "FastWhisper: 用于实时自动语音识别的自适应自知识蒸馏",
+    "paper_id": "2601.19919",
+    "paper_abstract": "Knowledge distillation is one of the most effective methods for model compression. Previous studies have focused on the student model effectively training the predictive distribution of the teacher model. However, during training, the student model may inherit the shortcomings of the teacher model, which can lead to a decline in generalization capacity. To mitigate this issue, we propose adaptive self-knowledge distillation (ASKD), which dynamically reduces the dependence of the teacher model to improve the self-training capacity, and performs the self-knowledge distillation method to improve the generalization capacity of the student model. We further distill the Whisper model into a smaller variant, called FastWhisper. In our post-training setting, FastWhisper achieved a word error rate of 1.07% lower than the teacher model Whisper, and its relative inference time was 5 times faster.",
+    "paper_abstract_zh": "知识蒸馏是模型压缩中最有效的方法之一。先前的研究主要集中在让学生模型有效学习教师模型的预测分布。然而，在训练过程中，学生模型可能会继承教师模型的缺点，这可能导致泛化能力下降。为缓解这一问题，我们提出了自适应自知识蒸馏(ASKD)，该方法动态减少对教师模型的依赖，以提高自训练能力，并采用自知识蒸馏方法来提升学生模型的泛化能力。我们进一步将Whisper模型蒸馏为一个更小的变体，称为FastWhisper。在我们的后训练设置中，FastWhisper的词错误率比教师模型Whisper低1.07%，且其相对推理速度快5倍。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Junseok Lee, Nahoon Kim, Sangyong Lee, Chang-Jae Chun",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Improving X-Codec-2.0 for Multi-Lingual Speech: 25 Hz Latent Rate and 24 kHz Sampling",
+    "paper_title_zh": "改进X-Codec-2.0以支持多语言语音：25 Hz潜在速率和24 kHz采样率",
+    "paper_id": "2601.20185",
+    "paper_abstract": "X-Codec-2.0 has shown strong performance in neural audio compression and multilingual speech modeling, operating at a 50 Hz latent rate and a 16 kHz sampling rate using frozen HuBERT features. While effective, this configuration limits temporal efficiency and audio fidelity. In this work, we explore a simple and effective modification by introducing additional pooling and increasing the decoder hop size. This reduces the latent rate from 50 Hz to 25 Hz and simultaneously raises the output sampling rate from 16 kHz to 24 kHz, improving efficiency and perceptual quality without altering the core architecture. Evaluated on the multilingual Common Voice 17 test set, the proposed configuration achieves a 0.29 MOS improvement over the original X-Codec-2.0 baseline based on UTMOSv2, and attains the best reported performance among all codecs operating at 25 Hz. The source code, checkpoints, and generation comparisons are released at \\href{this https URL}{this https URL}.",
+    "paper_abstract_zh": "X-Codec-2.0在神经音频压缩和多语言语音建模方面表现出色，它使用冻结的HuBERT特征，以50 Hz的潜在速率和16 kHz的采样率运行。虽然这种方法有效，但这种配置限制了时间效率和音频保真度。在这项工作中，我们探索了一种简单而有效的改进方法，即引入额外的池化操作并增加解码器的跳跃大小。这使潜在速率从50 Hz降低到25 Hz，同时将输出采样率从16 kHz提高到24 kHz，在不改变核心架构的情况下提高了效率和感知质量。在多语言Common Voice 17测试集上的评估表明，基于UTMOSv2，所提出的配置比原始X-Codec-2.0基线提高了0.29 MOS，并且在所有以25 Hz运行的编解码器中取得了最佳报告性能。源代码、检查点和生成比较已在提供的URL中发布。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-29",
+    "paper_authors": "Husein Zolkepli",
+    "topic": [
+      "Audio Codec",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
