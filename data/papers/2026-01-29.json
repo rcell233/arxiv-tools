@@ -123,32 +123,41 @@
   },
   {
     "paper_title": "Erasing Your Voice Before It's Heard: Training-free Speaker Unlearning for Zero-shot Text-to-Speech",
-    "paper_title_zh": "",
+    "paper_title_zh": "在声音被听到之前将其抹去：面向零样本文本到语音的无训练说话人遗忘",
     "paper_id": "2601.20481",
     "paper_abstract": "Modern zero-shot text-to-speech (TTS) models offer unprecedented expressivity but also pose serious crime risks, as they can synthesize voices of individuals who never consented. In this context, speaker unlearning aims to prevent the generation of specific speaker identities upon request. Existing approaches, reliant on retraining, are costly and limited to speakers seen in the training set. We present TruS, a training-free speaker unlearning framework that shifts the paradigm from data deletion to inference-time control. TruS steers identity-specific hidden activations to suppress target speakers while preserving other attributes (e.g., prosody and emotion). Experimental results show that TruS effectively prevents voice generation on both seen and unseen opt-out speakers, establishing a scalable safeguard for speech synthesis. The demo and code are available on this http URL.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "现代零样本文本到语音（TTS）模型提供了前所未有的表现力，但也带来了严重的犯罪风险，因为它们可以合成从未同意过的个人的声音。在此背景下，说话人遗忘旨在防止在请求时生成特定的说话人身份。现有方法依赖于重新训练，成本高昂且仅限于训练集中见过的说话人。我们提出了TruS，一个无训练的说话人遗忘框架，它将范式从数据删除转变为推理时控制。TruS引导身份特定的隐藏激活来抑制目标说话人，同时保留其他属性（如韵律和情感）。实验结果表明，TruS能够有效防止对已见和未见的退出选择说话人的声音生成，为语音合成建立了可扩展的保障措施。演示和代码可在http URL上获取。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Sound (cs.SD)"
     ],
     "update_time": "2026-01-29",
     "paper_authors": "Myungjin Lee, Eunji Shin, Jiyoung Lee",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Decoding Speech Envelopes from Electroencephalogram with a Contrastive Pearson Correlation Coefficient Loss",
-    "paper_title_zh": "",
+    "paper_title_zh": "使用对比皮尔逊相关系数损失从脑电图解码语音包络",
     "paper_id": "2601.20542",
     "paper_abstract": "Recent advances in reconstructing speech envelopes from Electroencephalogram (EEG) signals have enabled continuous auditory attention decoding (AAD) in multi-speaker environments. Most Deep Neural Network (DNN)-based envelope reconstruction models are trained to maximize the Pearson correlation coefficients (PCC) between the attended envelope and the reconstructed envelope (attended PCC). While the difference between the attended PCC and the unattended PCC plays an essential role in auditory attention decoding, existing methods often focus on maximizing the attended PCC. We therefore propose a contrastive PCC loss which represents the difference between the attended PCC and the unattended PCC. The proposed approach is evaluated on three public EEG AAD datasets using four DNN architectures. Across many settings, the proposed objective improves envelope separability and AAD accuracy, while also revealing dataset- and architecture-dependent failure cases.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "最近从脑电图(EEG)信号重建语音包络的进展使得在多说话人环境中进行连续听觉注意力解码(AAD)成为可能。大多数基于深度神经网络(DNN)的包络重建模型被训练以最大化目标包络与重建包络之间的皮尔逊相关系数(PCC)(目标PCC)。虽然目标PCC与非目标PCC之间的差异在听觉注意力解码中起着至关重要的作用，但现有方法往往专注于最大化目标PCC。因此，我们提出了一种对比PCC损失，它表示目标PCC与非目标PCC之间的差异。所提出的方法在三个公共EEG AAD数据集上使用四种DNN架构进行了评估。在多种设置下，所提出的改进目标提高了包络可分离性和AAD准确性，同时揭示了数据集和架构相关的失败案例。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-01-29",
     "paper_authors": "Yayun Liang, Yuanming Zhang, Fei Chen, Jing Lu, Zhibin Lin",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Pianoroll-Event: A Novel Score Representation for Symbolic Music",
