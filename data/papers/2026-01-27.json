@@ -767,18 +767,23 @@
   },
   {
     "paper_title": "Reflecting Twice before Speaking with Empathy: Self-Reflective Alternating Inference for Empathy-Aware End-to-End Spoken Dialogue",
-    "paper_title_zh": "",
+    "paper_title_zh": "说话前两次反思并怀有同理心：用于同理心感知的端到端口语对话的自反思交替推理",
     "paper_id": "2601.18281",
     "paper_abstract": "End-to-end Spoken Language Models (SLMs) hold great potential for paralinguistic perception, and numerous studies have aimed to enhance their capabilities, particularly for empathetic dialogue. However, current approaches largely depend on rigid supervised signals, such as ground-truth response in supervised fine-tuning or preference scores in reinforcement learning. Such reliance is fundamentally limited for modeling complex empathy, as there is no single \"correct\" response and a simple numerical score cannot fully capture the nuances of emotional expression or the appropriateness of empathetic behavior. To address these limitations, we sequentially introduce EmpathyEval, a descriptive natural-language-based evaluation model for assessing empathetic quality in spoken dialogues. Building upon EmpathyEval, we propose ReEmpathy, an end-to-end SLM that enhances empathetic dialogue through a novel Empathetic Self-Reflective Alternating Inference mechanism, which interleaves spoken response generation with free-form, empathy-related reflective reasoning. Extensive experiments demonstrate that ReEmpathy substantially improves empathy-sensitive spoken dialogue by enabling reflective reasoning, offering a promising approach toward more emotionally intelligent and empathy-aware human-computer interactions.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "端到端口语语言模型（SLMs）在副语言感知方面具有巨大潜力，许多研究致力于提升其能力，特别是在同理心对话方面。然而，当前方法主要依赖于严格的监督信号，如监督微调中的真实响应或强化学习中的偏好评分。这种依赖性在建模复杂同理心方面存在根本性局限，因为没有单一的'正确'响应，简单的数值评分也无法完全捕捉情感表达的细微差别或同理心行为的适当性。为解决这些局限，我们依次介绍了EmpathyEval，一种基于描述性自然语言的评估模型，用于评估口语对话中的同理心质量。基于EmpathyEval，我们提出了ReEmpathy，一种端到端SLM，通过新颖的同理心自反思交替推理机制增强同理心对话，该机制将口语响应生成与自由形式的、与同理心相关的反思推理交替进行。大量实验表明，ReEmpathy通过启用反思推理显著提升了同理心敏感的口语对话，为更具情感智能和同理心感知的人机交互提供了有前景的方法。",
     "subjects": [
       "Computation and Language (cs.CL)",
       "Sound (cs.SD)"
     ],
     "update_time": "2026-01-27",
     "paper_authors": "Yuhang Jia, Pei Liu, Haoqin Sun, Jiaming Zhou, Xuxin Cheng, Cao Liu, Ke Zeng, Xunliang Cai, Yong Qin",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "3DGesPolicy: Phoneme-Aware Holistic Co-Speech Gesture Generation Based on Action Control",

@@ -1,0 +1,514 @@
+[
+  {
+    "paper_title": "Reducing Prompt Sensitivity in LLM-based Speech Recognition Through Learnable Projection",
+    "paper_title_zh": "通过可学习投影降低基于LLM的语音识别中的提示敏感性",
+    "paper_id": "2601.20898",
+    "paper_abstract": "LLM-based automatic speech recognition (ASR), a well-established approach, connects speech foundation models to large language models (LLMs) through a speech-to-LLM projector, yielding promising results. A common design choice in these architectures is the use of a fixed, manually defined prompt during both training and inference. This setup not only enables applicability across a range of practical scenarios, but also helps maximize model performance. However, the impact of prompt design remains underexplored. This paper presents a comprehensive analysis of commonly used prompts across diverse datasets, showing that prompt choice significantly affects ASR performance and introduces instability, with no single prompt performing best across all cases. Inspired by the speech-to-LLM projector, we propose a prompt projector module, a simple, model-agnostic extension that learns to project prompt embeddings to more effective regions of the LLM input space, without modifying the underlying LLM-based ASR model. Experiments on four datasets show that the addition of a prompt projector consistently improves performance, reduces variability, and outperforms the best manually selected prompts.",
+    "paper_abstract_zh": "基于大型语言模型(LLM)的自动语音识别(ASR)是一种成熟的方法，它通过语音到LLM的投影器将语音基础模型与大型语言模型连接起来，取得了有前景的结果。这些架构中的一个常见设计选择是在训练和推理过程中使用固定的、手动定义的提示。这种设置不仅适用于各种实际场景，还有助于最大化模型性能。然而，提示设计的影响尚未得到充分探索。本文对跨多个数据集的常用提示进行了全面分析，表明提示选择显著影响ASR性能并引入不稳定性，没有单一的提示在所有情况下都能表现最佳。受语音到LLM投影器的启发，我们提出了一个提示投影器模块，这是一个简单、与模型无关的扩展，它学习将提示嵌入投影到LLM输入空间中更有效的区域，而无需修改底层的基于LLM的ASR模型。在四个数据集上的实验表明，添加提示投影器可以持续提高性能，减少变异性，并优于最佳手动选择的提示。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Sergio Burdisso, Esaú Villatoro-Tello, Shashi Kumar, Srikanth Madikeri, Andrés Carofilis, Pradeep Rangappa, Manjunath K E, Kadri Hacioglu, Petr Motlicek, Andreas Stolcke",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Unseen but not Unknown: Using Dataset Concealment to Robustly Evaluate Speech Quality Estimation Models",
+    "paper_title_zh": "未见但非未知：使用数据集隐藏方法稳健评估语音质量估计模型",
+    "paper_id": "2601.21110",
+    "paper_abstract": "We introduce Dataset Concealment (DSC), a rigorous new procedure for evaluating and interpreting objective speech quality estimation models. DSC quantifies and decomposes the performance gap between research results and real-world application requirements, while offering context and additional insights into model behavior and dataset characteristics. We also show the benefits of addressing the corpus effect by using the dataset Aligner from AlignNet when training models with multiple datasets. We demonstrate DSC and the improvements from the Aligner using nine training datasets and nine unseen datasets with three well-studied models: MOSNet, NISQA, and a Wav2Vec2.0-based model. DSC provides interpretable views of the generalization capabilities and limitations of models, while allowing all available data to be used at training. An additional result is that adding the 1000 parameter dataset Aligner to the 94 million parameter Wav2Vec model during training does significantly improve the resulting model's ability to estimate speech quality for unseen data.",
+    "paper_abstract_zh": "我们引入了数据集隐藏（DSC）方法，这是一种用于评估和解释客观语音质量估计模型的严格新程序。DSC量化并分解了研究结果与实际应用需求之间的性能差距，同时提供了关于模型行为和数据集特征的上下文和额外见解。我们还展示了在使用AlignNet的数据集对齐器训练多数据集模型时，解决语料库效应的好处。我们使用九个训练数据集和九个未见数据集，结合三个经过充分研究的模型（MOSNet、NISQA和基于Wav2Vec2.0的模型）来演示DSC和数据集对齐器的改进效果。DSC提供了模型泛化能力和局限性的可解释视图，同时允许在训练中使用所有可用数据。一个额外的结果是，在训练中将1000参数的数据集对齐器添加到9400万参数的WavVec模型中，可以显著提高模型对未见数据估计语音质量的能力。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Jaden Pieper, Stephen D. Voran",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DNN-Based Online Source Counting Based on Spatial Generalized Magnitude Squared Coherence",
+    "paper_title_zh": "基于空间广义幅度平方相干的DNN在线声源计数方法",
+    "paper_id": "2601.21114",
+    "paper_abstract": "The number of active sound sources is a key parameter in many acoustic signal processing tasks, such as source localization, source separation, and multi-microphone speech enhancement. This paper proposes a novel method for online source counting by detecting changes in the number of active sources based on spatial coherence. The proposed method exploits the fact that a single coherent source in spatially white background noise yields high spatial coherence, whereas only noise results in low spatial coherence. By applying a spatial whitening operation, the source counting problem is reformulated as a change detection task, aiming to identify the time frames when the number of active sources changes. The method leverages the generalized magnitude-squared coherence as a measure to quantify spatial coherence, providing features for a compact neural network trained to detect source count changes framewise. Simulation results with binaural hearing aids in reverberant acoustic scenes with up to 4 speakers and background noise demonstrate the effectiveness of the proposed method for online source counting.",
+    "paper_abstract_zh": "活跃声源的数量是许多声信号处理任务中的关键参数，例如声源定位、声源分离和多麦克风语音增强。本文提出了一种新颖的在线声源计数方法，通过基于空间相干性检测活跃声源数量的变化。该方法利用了在空间白噪声背景下，单个相干声源会产生高空间相干性，而仅有噪声则导致低空间相干性的特性。通过应用空间白化操作，声源计数问题被重新表述为变化检测任务，旨在识别活跃声源数量发生变化的时间帧。该方法利用广义幅度平方相干作为量化空间相干的度量，为训练用于逐帧检测声源计数变化的紧凑神经网络提供特征。在双耳助听器模拟中，针对具有多达4个说话人和背景噪声的混响声学场景，结果证明了所提方法在在线声源计数中的有效性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Henri Gode, Simon Doclo",
+    "topic": [
+      "Audio Classification",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Towards Robust Dysarthric Speech Recognition: LLM-Agent Post-ASR Correction Beyond WER",
+    "paper_title_zh": "迈向健壮的构音障碍语音识别：超越词错误率的LLM-Agent后ASR校正",
+    "paper_id": "2601.21347",
+    "paper_abstract": "While Automatic Speech Recognition (ASR) is typically benchmarked by word error rate (WER), real-world applications ultimately hinge on semantic fidelity. This mismatch is particularly problematic for dysarthric speech, where articulatory imprecision and disfluencies can cause severe semantic distortions. To bridge this gap, we introduce a Large Language Model (LLM)-based agent for post-ASR correction: a Judge-Editor over the top-k ASR hypotheses that keeps high-confidence spans, rewrites uncertain segments, and operates in both zero-shot and fine-tuned modes. In parallel, we release SAP-Hypo5, the largest benchmark for dysarthric speech correction, to enable reproducibility and future exploration. Under multi-perspective evaluation, our agent achieves a 14.51% WER reduction alongside substantial semantic gains, including a +7.59 pp improvement in MENLI and +7.66 pp in Slot Micro F1 on challenging samples. Our analysis further reveals that WER is highly sensitive to domain shift, whereas semantic metrics correlate more closely with downstream task performance.",
+    "paper_abstract_zh": "虽然自动语音识别(ASR)通常通过词错误率(WER)进行基准测试，但实际应用最终依赖于语义保真度。这种不匹配对于构音障碍语音尤其成问题，因为发音不精确和流利度问题可能导致严重的语义失真。为了弥合这一差距，我们引入了一种基于大型语言模型(LLM)的代理进行后ASR校正：一个在top-k ASR假设上的Judge-Editor，它保留高置信度片段，重写不确定部分，并以零样本和微调模式运行。同时，我们发布了SAP-Hypo5，这是构音障碍语音校正领域最大的基准数据集，以实现可复现性和未来探索。在多角度评估下，我们的代理实现了14.51%的WER降低，同时获得了显著的语义提升，包括在具有挑战性的样本上MENLI提高了7.59个百分点，Slot Micro F1提高了7.66个百分点。我们的进一步分析表明，WER对领域转移高度敏感，而语义指标与下游任务性能的相关性更为密切。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Xiuwen Zheng, Sixun Dong, Bornali Phukon, Mark Hasegawa-Johnson, Chang D. Yoo",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SemanticAudio: Audio Generation and Editing in Semantic Space",
+    "paper_title_zh": "SemanticAudio: 语义空间中的音频生成与编辑",
+    "paper_id": "2601.21402",
+    "paper_abstract": "In recent years, Text-to-Audio Generation has achieved remarkable progress, offering sound creators powerful tools to transform textual inspirations into vivid audio. However, existing models predominantly operate directly in the acoustic latent space of a Variational Autoencoder (VAE), often leading to suboptimal alignment between generated audio and textual descriptions. In this paper, we introduce SemanticAudio, a novel framework that conducts both audio generation and editing directly in a high-level semantic space. We define this semantic space as a compact representation capturing the global identity and temporal sequence of sound events, distinct from fine-grained acoustic details. SemanticAudio employs a two-stage Flow Matching architecture: the Semantic Planner first generates these compact semantic features to sketch the global semantic layout, and the Acoustic Synthesizer subsequently produces high-fidelity acoustic latents conditioned on this semantic plan. Leveraging this decoupled design, we further introduce a training-free text-guided editing mechanism that enables precise attribute-level modifications on general audio without retraining. Specifically, this is achieved by steering the semantic generation trajectory via the difference of velocity fields derived from source and target text prompts. Extensive experiments demonstrate that SemanticAudio surpasses existing mainstream approaches in semantic alignment. Demo available at: this https URL",
+    "paper_abstract_zh": "近年来，文本到音频生成(Text-to-Audio Generation)取得了显著进展，为声音创作者提供了将文本灵感转化为生动音频的强大工具。然而，现有模型主要在变分自编码器(VAE)的声学潜在空间中直接操作，这常常导致生成的音频与文本描述之间的次优对齐。在本文中，我们介绍了SemanticAudio，一个新颖的框架，直接在高层次语义空间中进行音频生成和编辑。我们将这个语义空间定义为一种紧凑的表示，能够捕捉声音事件的全球身份和时间序列，这与细粒度的声学细节不同。SemanticAudio采用两阶段Flow Matching架构：语义规划器(Semantic Planner)首先生成这些紧凑的语义特征，勾勒出全局语义布局；然后，声学合成器(Acoustic Synthesizer)基于此语义计划生成高保真声学潜在表示。利用这种解耦设计，我们进一步引入了一种无需训练的文本引导编辑机制，能够在不重新训练的情况下对一般音频进行精确的属性级修改。具体而言，这是通过引导语义生成轨迹实现的，该轨迹源自源文本提示和目标文本提示导出的速度场差异。大量实验表明，SemanticAudio在语义对齐方面超越了现有主流方法。演示可在以下网址获取：this https URL",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Zheqi Dai, Guangyan Zhang, Haolin He, Xiquan Li, Jingyu Li, Chunyat Wu, Yiwen Guo, Qiuqiang Kong",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Representation-Regularized Convolutional Audio Transformer for Audio Understanding",
+    "paper_title_zh": "表示正则化的卷积音频变换器用于音频理解",
+    "paper_id": "2601.21612",
+    "paper_abstract": "Bootstrap-based Self-Supervised Learning (SSL) has achieved remarkable progress in audio understanding. However, existing methods typically operate at a single level of granularity, limiting their ability to model the diverse temporal and spectral structures inherent in complex audio signals. Furthermore, bootstrapping representations from scratch is computationally expensive, often requiring extensive training to converge. In this work, we propose the Convolutional Audio Transformer (CAT), a unified framework designed to address these challenges. First, to capture hierarchical audio features, CAT incorporates a Multi-resolution Block that aggregates information across varying granularities. Second, to enhance training efficiency, we introduce a Representation Regularization objective. Drawing inspiration from generative modeling, this auxiliary task guides the student model by aligning its predictions with high-quality semantic representations from frozen, pre-trained external encoders. Experimental results demonstrate that CAT significantly outperforms baselines on audio understanding benchmarks. Notably, it achieves competitive performance on the AudioSet 20k dataset with 5 times faster convergence than existing methods. Codes and checkpoints will be released soon at this https URL.",
+    "paper_abstract_zh": "基于自举的监督学习(SSL)在音频理解方面取得了显著进展。然而，现有方法通常在单一粒度级别上操作，限制了它们对复杂音频信号中固有的多样时序和频谱结构进行建模的能力。此外，从头开始引导表示计算成本高昂，通常需要大量训练才能收敛。在这项工作中，我们提出了卷积音频变换器(CAT)，这是一个旨在解决这些挑战的统一框架。首先，为了捕获分层音频特征，CAT集成了一个多分辨率块，用于聚合不同粒度的信息。其次，为了提高训练效率，我们引入了表示正则化目标。受生成式建模的启发，这个辅助任务通过将学生模型的预测与来自冻结的预训练外部编码器的高质量语义表示对齐来指导学生模型。实验结果表明，CAT在音频理解基准上显著优于基线方法。值得注意的是，在AudioSet 20k数据集上，它实现了与现有方法相当的性能，且收敛速度提高了5倍。代码和检查点将在https URL上很快发布。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Bing Han, Chushu Zhou, Yifan Yang, Wei Wang, Chenda Li, Wangyou Zhang, Yanmin Qian",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Speech Quality-Based Localization of Low-Quality Speech and Text-to-Speech Synthesis Artefacts",
+    "paper_title_zh": "基于语音质量的低质量语音和文本到语音合成伪影定位",
+    "paper_id": "2601.21886",
+    "paper_abstract": "A large number of works view the automatic assessment of speech from an utterance- or system-level perspective. While such approaches are good in judging overall quality, they cannot adequately explain why a certain score was assigned to an utterance. frame-level scores can provide better interpretability, but models predicting them are harder to tune and regularize since no strong targets are available during training. In this work, we show that utterance-level speech quality predictors can be regularized with a segment-based consistency constraint which notably reduces frame-level stochasticity. We then demonstrate two applications involving frame-level scores: The partial spoof scenario and the detection of synthesis artefacts in two state-of-the-art text-to-speech systems. For the latter, we perform listening tests and confirm that listeners rate segments to be of poor quality more often in the set defined by low frame-level scores than in a random control set.",
+    "paper_abstract_zh": "大量工作从语句级或系统级的角度看待语音的自动评估。虽然这些方法在判断整体质量方面表现良好，但无法充分解释为什么给某个语句分配了特定的分数。帧级分数可以提供更好的可解释性，但由于训练期间没有强目标可用，预测这些分数的模型更难调整和正则化。在这项工作中，我们表明，语句级语音质量预测器可以通过基于段的一致性约束进行正则化，这显著降低了帧级的随机性。然后，我们展示了涉及帧级分数的两个应用：部分欺骗场景和检测两个最先进的文本到语音系统中的合成伪影。对于后者，我们进行了听力测试，并确认听众在由低帧级分数定义的集中，比在随机对照集中更频繁地将片段评为低质量。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Michael Kuhlmann, Alexander Werning, Thilo von Neumann, Reinhold Haeb-Umbach",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "DisContSE: Single-Step Diffusion Speech Enhancement Based on Joint Discrete and Continuous Embeddings",
+    "paper_title_zh": "DisContSE: 基于联合离散和连续嵌入的单步扩散语音增强",
+    "paper_id": "2601.21940",
+    "paper_abstract": "Diffusion speech enhancement on discrete audio codec features gain immense attention due to their improved speech component reconstruction capability. However, they usually suffer from high inference computational complexity due to multiple reverse process iterations. Furthermore, they generally achieve promising results on non-intrusive metrics but show poor performance on intrusive metrics, as they may struggle in reconstructing the correct phones. In this paper, we propose DisContSE, an efficient diffusion-based speech enhancement model on joint discrete codec tokens and continuous embeddings. Our contributions are three-fold. First, we formulate both a discrete and a continuous enhancement module operating on discrete audio codec tokens and continuous embeddings, respectively, to achieve improved fidelity and intelligibility simultaneously. Second, a semantic enhancement module is further adopted to achieve optimal phonetic accuracy. Third, we achieve a single-step efficient reverse process in inference with a novel quantization error mask initialization strategy, which, according to our knowledge, is the first successful single-step diffusion speech enhancement based on an audio codec. Trained and evaluated on URGENT 2024 Speech Enhancement Challenge data splits, the proposed DisContSE excels top-reported time- and frequency-domain diffusion baseline methods in PESQ, POLQA, UTMOS, and in a subjective ITU-T P.808 listening test, clearly achieving an overall top rank.",
+    "paper_abstract_zh": "基于离散音频编解码器特征的扩散语音增强因其改进的语音组件重建能力而受到广泛关注。然而，由于多个反向过程迭代的计算复杂度高，它们通常面临推理计算复杂度高的问题。此外，它们在非侵入式指标上通常取得有前景的结果，但在侵入式指标上表现不佳，因为它们可能难以正确重建音素。在本文中，我们提出了DisContSE，一种基于联合离散编解码器令牌和连续嵌入的高效扩散语音增强模型。我们的贡献有三方面。首先，我们提出了一个离散增强模块和一个连续增强模块，分别处理离散音频编解码器令牌和连续嵌入，以同时提高保真度和可懂度。其次，我们进一步采用语义增强模块以实现最佳的音素准确性。第三，通过一种新颖的量化误差掩码初始化策略，我们在推理中实现了单步高效反向过程，据我们所知，这是首个基于音频编解码器的单步扩散语音增强。在URGENT 2024语音增强挑战赛的数据集上进行训练和评估，所提出的DisContSE在PESQ、POLQA、UTMOS以及ITU-T P.808主观听力测试中明显优于当前报道的时间域和频率域扩散基线方法，总体上取得了最高排名。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Yihui Fu, Tim Fingscheidt",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "TidyVoice 2026 Challenge Evaluation Plan",
+    "paper_title_zh": "TidyVoice 2026挑战评估计划",
+    "paper_id": "2601.21960",
+    "paper_abstract": "The performance of speaker verification systems degrades significantly under language mismatch, a critical challenge exacerbated by the field's reliance on English-centric data. To address this, we propose the TidyVoice Challenge for cross-lingual speaker verification. The challenge leverages the TidyVoiceX dataset from the novel TidyVoice benchmark, a large-scale, multilingual corpus derived from Mozilla Common Voice, and specifically curated to isolate the effect of language switching across approximately 40 languages. Participants will be tasked with building systems robust to this mismatch, with performance primarily evaluated using the Equal Error Rate on cross-language trials. By providing standardized data, open-source baselines, and a rigorous evaluation protocol, this challenge aims to drive research towards fairer, more inclusive, and language-independent speaker recognition technologies, directly aligning with the Interspeech 2026 theme, \"Speaking Together.\"",
+    "paper_abstract_zh": "在语言不匹配的情况下，说话人验证系统的性能会显著下降，这是一个关键挑战，由于该领域对英语中心数据的依赖而加剧。为解决这一问题，我们提出了跨语言说话人验证的TidyVoice挑战。该挑战利用了来自新型TidyVoice基准的TidyVoiceX数据集，这是一个从Mozilla Common Voice衍生的大规模多语言语料库，并经过专门策划，以隔离约40种语言间切换的影响。参与者将被要求构建对此类不匹配具有鲁棒性的系统，性能主要通过跨语言试验的等错误率进行评估。通过提供标准化数据、开源基线和严格的评估协议，这一挑战旨在推动研究朝着更公平、更具包容性和语言独立的说话人识别技术发展，直接呼应Interspeech 2026的主题'共同说话'。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Aref Farhadipour, Jan Marquenie, Srikanth Madikeri, Teodora Vukovic, Volker Dellwo, Kathy Reid, Francis M. Tyers, Ingo Siegert, Eleanor Chodroff",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Generalizable Prompt Tuning for Audio-Language Models via Semantic Expansion",
+    "paper_title_zh": "通过语义扩展实现音频语言模型的通用提示调优",
+    "paper_id": "2601.20867",
+    "paper_abstract": "Prompt tuning has achieved remarkable progress in vision-language models (VLMs) and is recently being adopted for audio-language models (ALMs). However, its generalization ability in ALMs remains largely underexplored. We observe that conventional prompt tuning for ALMs also suffers from the Base-New Tradeoff, and we identify that this issue stems from the disrupted semantic structure of the embedding space. To address this issue, we propose Semantically Expanded Prompt Tuning (SEPT)-a plug-and-play framework that explicitly regularizes the prompt embedding space by incorporating semantic neighbors generated by large language models. SEPT introduces a novel semantic expansion loss with margin constraints that promote intra-class compactness and inter-class separability, thereby enhancing the semantic structure of the prompt embedding space. For comprehensive evaluation, we establish the first benchmark setup for prompt generalization in ALMs, covering both base-to-new generalization and cross-dataset transferability. Extensive experiments demonstrate that SEPT consistently improves generalization performance across multiple prompt tuning baselines, while maintaining computational cost during inference. Codes are available in this https URL.",
+    "paper_abstract_zh": "提示调优在视觉语言模型(VLMs)中取得了显著进展，并最近被应用于音频语言模型(ALMs)。然而，其在ALMs中的泛化能力在很大程度上仍未被充分探索。我们观察到，传统的ALMs提示调优也面临基础-新类别权衡问题，并且我们确定这一问题源于嵌入空间语义结构的破坏。为解决这一问题，我们提出了语义扩展提示调优(SEPT)—一个即插即用的框架，通过整合由大型语言模型生成的语义邻居，明确地规范提示嵌入空间。SEPT引入了一种具有边界约束的新型语义扩展损失，促进类内紧凑性和类间可分离性，从而增强提示嵌入空间的语义结构。为了全面评估，我们建立了ALMs提示泛化的首个基准设置，涵盖了基础到新类别的泛化和跨数据集的可迁移性。大量实验表明，SEPT在多个提示调优基线上持续提高了泛化性能，同时保持了推理时的计算成本。代码可在提供的https URL获取。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Jaehyuk Jang, Wonjun Lee, Kangwook Ko, Changick Kim",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "VoxMorph: Scalable Zero-shot Voice Identity Morphing via Disentangled Embeddings",
+    "paper_title_zh": "VoxMorph：通过解耦嵌入实现可扩展的零样本语音身份变换",
+    "paper_id": "2601.20883",
+    "paper_abstract": "Morphing techniques generate artificial biometric samples that combine features from multiple individuals, allowing each contributor to be verified against a single enrolled template. While extensively studied in face recognition, this vulnerability remains largely unexplored in voice biometrics. Prior work on voice morphing is computationally expensive, non-scalable, and limited to acoustically similar identity pairs, constraining practical deployment. Moreover, existing sound-morphing methods target audio textures, music, or environmental sounds and are not transferable to voice identity manipulation. We propose VoxMorph, a zero-shot framework that produces high-fidelity voice morphs from as little as five seconds of audio per subject without model retraining. Our method disentangles vocal traits into prosody and timbre embeddings, enabling fine-grained interpolation of speaking style and identity. These embeddings are fused via Spherical Linear Interpolation (Slerp) and synthesized using an autoregressive language model coupled with a Conditional Flow Matching network. VoxMorph achieves state-of-the-art performance, delivering a 2.6x gain in audio quality, a 73% reduction in intelligibility errors, and a 67.8% morphing attack success rate on automated speaker verification systems under strict security thresholds. This work establishes a practical and scalable paradigm for voice morphing with significant implications for biometric security. The code and dataset are available on our project page: this https URL",
+    "paper_abstract_zh": "变换技术生成结合了多个人物特征的人工生物特征样本，使得每个贡献者都可以通过单个注册模板进行验证。虽然在人脸识别领域得到了广泛研究，但这种脆弱性在语音生物特征识别领域仍然 largely 未被探索。先前关于语音变换的工作计算成本高、不可扩展，并且仅限于声学相似的身份对，限制了实际部署。此外，现有的声音变换方法针对音频纹理、音乐或环境声音，不适用于语音身份操作。我们提出了 VoxMorph，这是一个零样本框架，可以在每个主体仅需 5 秒音频的情况下生成高保真的语音变换，无需重新训练模型。我们的方法将语音特征解耦为韵律和音色嵌入，实现了说话风格和身份的细粒度插值。这些嵌入通过球面线性插值（Slerp）融合，并使用自回归语言模型结合条件流匹配网络进行合成。VoxMorph 在严格的安全阈值下实现了最先进的性能，在音频质量上提高了 2.6 倍，可懂度错误减少了 73%，并在自动说话人验证系统上达到了 67.8% 的变换攻击成功率。这项工作为语音变换建立了一个实用且可扩展的范式，对生物特征安全具有重要意义。代码和数据集可在我们的项目页面上获取：this https URL",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)",
+      "Cryptography and Security (cs.CR)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Bharath Krishnamurthy, Ajita Rattani",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "SW-ASR: A Context-Aware Hybrid ASR Pipeline for Robust Single Word Speech Recognition",
+    "paper_title_zh": "SW-ASR：一种用于鲁棒单字语音识别的上下文感知混合ASR流水线",
+    "paper_id": "2601.20890",
+    "paper_abstract": "Single-word Automatic Speech Recognition (ASR) is a challenging task due to the lack of linguistic context and sensitivity to noise, pronunciation variation, and channel artifacts, especially in low-resource, communication-critical domains such as healthcare and emergency response. This paper reviews recent deep learning approaches and proposes a modular framework for robust single-word detection. The system combines denoising and normalization with a hybrid ASR front end (Whisper + Vosk) and a verification layer designed to handle out-of-vocabulary words and degraded audio. The verification layer supports multiple matching strategies, including embedding similarity, edit distance, and LLM-based matching with optional contextual guidance. We evaluate the framework on the Google Speech Commands dataset and a curated real-world dataset collected from telephony and messaging platforms under bandwidth-limited conditions. Results show that while the hybrid ASR front end performs well on clean audio, the verification layer significantly improves accuracy on noisy and compressed channels. Context-guided and LLM-based matching yield the largest gains, demonstrating that lightweight verification and context mechanisms can substantially improve single-word ASR robustness without sacrificing latency required for real-time telephony applications.",
+    "paper_abstract_zh": "单字自动语音识别（ASR）是一项具有挑战性的任务，由于缺乏语言上下文以及对噪声、发音变化和信道失真的敏感性，尤其是在医疗和应急响应等资源受限、通信关键领域。本文回顾了最近的深度学习方法，并提出了一种用于鲁棒单字检测的模块化框架。该系统结合了去噪和归一化处理，以及一个混合ASR前端（Whisper + Vosk）和一个用于处理词汇表外单词和降级音频的验证层。验证层支持多种匹配策略，包括嵌入相似度、编辑距离和基于LLM的匹配，并可选择性地使用上下文指导。我们在Google Speech Commands数据集和一个从带宽受限条件下的电话和消息平台收集的精选真实世界数据集上评估了该框架。结果表明，虽然混合ASR前端在干净音频上表现良好，但验证层在噪声和压缩信道上显著提高了准确性。上下文引导和基于LLM的匹配带来了最大的性能提升，证明了轻量级验证和上下文机制可以在不牺牲实时电话应用所需延迟的情况下，显著提高单字ASR的鲁棒性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Manali Sharma, Riya Naik, Buvaneshwari G",
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "A Study of Data Selection Strategies for Pre-training Self-Supervised Speech Models",
+    "paper_title_zh": "自监督语音模型预训练数据选择策略研究",
+    "paper_id": "2601.20896",
+    "paper_abstract": "Self-supervised learning (SSL) has transformed speech processing, yet its reliance on massive pre-training datasets remains a bottleneck. While robustness is often attributed to scale and diversity, the role of the data distribution is less understood. We systematically examine how curated subsets of pre-training data influence Automatic Speech Recognition (ASR) performance. Surprisingly, optimizing for acoustic, speaker, or linguistic diversity yields no clear improvements over random sampling. Instead, we find that prioritizing the longest utterances achieves superior ASR results while using only half the original dataset, reducing pre-training time by 24% on a large corpora. These findings suggest that for pre-training speech SSL models, data length is a more critical factor than either data diversity or overall data quantity for performance and efficiency, offering a new perspective for data selection strategies in SSL speech processing.",
+    "paper_abstract_zh": "自监督学习（SSL）已经改变了语音处理领域，但其对大规模预训练数据集的依赖仍然是一个瓶颈。虽然鲁棒性通常归因于数据的规模和多样性，但数据分布的作用尚未得到充分理解。我们系统地研究了预训练数据的精选子集如何影响自动语音识别（ASR）性能。令人惊讶的是，针对声学、说话人或语言多样性的优化并未比随机采样带来明显的改进。相反，我们发现优先选择最长的语音片段可以在仅使用原始数据集一半的情况下获得更优的ASR结果，并在大型语料库上将预训练时间减少了24%。这些发现表明，对于预训练语音SSL模型而言，数据长度比数据多样性或总体数据量对性能和效率更为关键，为SSL语音处理中的数据选择策略提供了新的视角。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Ryan Whetten, Titouan Parcollet, Marco Dinarelli, Yannick Estève",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Text-only adaptation in LLM-based ASR through text denoising",
+    "paper_title_zh": "基于LLM的ASR系统中的纯文本适配：通过文本去噪实现",
+    "paper_id": "2601.20900",
+    "paper_abstract": "Adapting automatic speech recognition (ASR) systems based on large language models (LLMs) to new domains using text-only data is a significant yet underexplored challenge. Standard fine-tuning of the LLM on target-domain text often disrupts the critical alignment between speech and text modalities learned by the projector, degrading performance. We introduce a novel text-only adaptation method that emulates the audio projection task by treating it as a text denoising task. Our approach thus trains the LLM to recover clean transcripts from noisy inputs. This process effectively adapts the model to a target domain while preserving cross-modal alignment. Our solution is lightweight, requiring no architectural changes or additional parameters. Extensive evaluation on two datasets demonstrates up to 22.1% relative improvement, outperforming recent state-of-the-art text-only adaptation methods.",
+    "paper_abstract_zh": "仅使用文本数据将基于大型语言模型(LLM)的自动语音识别(ASR)系统适配到新领域是一个重要但尚未充分探索的挑战。在目标领域文本上对LLM进行标准微调通常会破坏投影仪学习的语音和文本模态之间的关键对齐，从而降低性能。我们引入了一种新颖的纯文本适配方法，通过将音频投影任务视为文本去噪任务来模拟该过程。我们的方法因此训练LLM从噪声输入中恢复干净的转录。这个过程有效地将模型适配到目标领域，同时保持跨模态对齐。我们的解决方案轻量级，无需架构更改或额外参数。在两个数据集上的广泛评估显示相对性能提升高达22.1%，优于最近的先进纯文本适配方法。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Sergio Burdisso, Esaú Villatoro-Tello, Andrés Carofilis, Shashi Kumar, Kadri Hacioglu, Srikanth Madikeri, Pradeep Rangappa, Manjunath K E, Petr Motlicek, Shankar Venkatesan, Andreas Stolcke",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "asr_eval: Algorithms and tools for multi-reference and streaming speech recognition evaluation",
+    "paper_title_zh": "asr_eval：用于多参考流式语音识别评估的算法与工具",
+    "paper_id": "2601.20992",
+    "paper_abstract": "We propose several improvements to the speech recognition evaluation. First, we propose a string alignment algorithm that supports both multi-reference labeling, arbitrary-length insertions and better word alignment. This is especially useful for non-Latin languages, those with rich word formation, to label cluttered or longform speech. Secondly, we collect a novel test set DiverseSpeech-Ru of longform in-the-wild Russian speech with careful multi-reference labeling. We also perform multi-reference relabeling of popular Russian tests set and study fine-tuning dynamics on its corresponding train set. We demonstrate that the model often adopts to dataset-specific labeling, causing an illusion of metric improvement. Based on the improved word alignment, we develop tools to evaluate streaming speech recognition and to align multiple transcriptions to compare them visually. Additionally, we provide uniform wrappers for many offline and streaming speech recognition models. Our code will be made publicly available.",
+    "paper_abstract_zh": "我们提出了一系列语音识别评估的改进方法。首先，我们提出了一种字符串对齐算法，该算法支持多参考标注、任意长度插入和更好的词对齐。这对于非拉丁语言、具有丰富词形构成的语言，以及标注杂乱或长篇语音特别有用。其次，我们收集了一个名为DiverseSpeech-Ru的新测试集，包含经过仔细多参考标注的野外俄语长篇语音。我们还对流行的俄语测试集进行了多参考重新标注，并研究了在其对应训练集上的微调动态。我们证明模型通常会适应数据集特定的标注，导致指标改进的假象。基于改进的词对齐，我们开发了评估流式语音识别的工具，以及对齐多个转录以进行可视化比较的工具。此外，我们为许多离线和流式语音识别模型提供了统一的封装接口。我们的代码将公开发布。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Oleg Sedukhin, Andrey Kostin",
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Position-invariant Fine-tuning of Speech Enhancement Models with Self-supervised Speech Representations",
+    "paper_title_zh": "基于自监督语音表示的语音增强模型的位置不变微调",
+    "paper_id": "2601.21084",
+    "paper_abstract": "Integrating front-end speech enhancement (SE) models with self-supervised learning (SSL)-based speech models is effective for downstream tasks in noisy conditions. SE models are commonly fine-tuned using SSL representations with mean squared error (MSE) loss between enhanced and clean speech. However, MSE is prone to exploiting positional embeddings in SSL models, allowing the objective to be minimised through positional correlations instead of content-related information. This work frames the problem as a general limitation of self-supervised representation fine-tuning and investigates it through representation-guided SE. Two strategies are considered: (1) zero-padding, previously explored in SSL pre-training but here examined in the fine-tuning setting, and (2) speed perturbations with a soft-DTW loss. Experiments show that the soft-DTW-based approach achieves faster convergence and improved downstream performance, underscoring the importance of position-invariant fine-tuning in SSL-based speech modelling.",
+    "paper_abstract_zh": "将前端语音增强(SE)模型与基于自监督学习(SSL)的语音模型相结合，在嘈杂条件下对下游任务是有效的。SE模型通常使用增强语音和干净语音之间的均方误差(MSE)损失进行微调。然而，MSE容易利用SSL模型中的位置嵌入，使得目标可以通过位置相关性而非内容相关信息最小化。本研究将此问题视为自监督表示微调的普遍局限性，并通过表示引导的SE进行研究。考虑了两种策略：(1)零填充，先前在SSL预训练中探索，但在此处检查微调设置；(2)使用软-DTW损失的速度扰动。实验表明，基于软-DTW的方法实现了更快的收敛和改进的下游性能，强调了位置不变微调在基于SSL的语音建模中的重要性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Amit Meghanani, Thomas Hain",
+    "topic": [
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "PhaseCoder: Microphone Geometry-Agnostic Spatial Audio Understanding for Multimodal LLMs",
+    "paper_title_zh": "PhaseCoder: 面向多模态大模型的麦克风几何无关空间音频理解",
+    "paper_id": "2601.21124",
+    "paper_abstract": "Current multimodal LLMs process audio as a mono stream, ignoring the rich spatial information essential for embodied AI. Existing spatial audio models, conversely, are constrained to fixed microphone geometries, preventing deployment across diverse devices. We present PhaseCoder, a transformer-only spatial audio encoder that is agnostic to microphone geometry. PhaseCoder takes raw multichannel audio and microphone coordinates as inputs to perform localization and produces robust spatial embeddings. We demonstrate that Gemma 3n LLM can be fine-tuned to reason over \"Spatial Audio Tokens\" produced by PhaseCoder. We show our encoder achieves state-of-the-art results on microphone-invariant localization benchmarks and, for the first time, enables an LLM to perform complex spatial reasoning and targeted transcription tasks from an arbitrary microphone array.",
+    "paper_abstract_zh": "当前的多模态大模型将音频作为单声道流处理，忽略了具身人工智能中必需的丰富空间信息。而现有的空间音频模型则受限于固定的麦克风几何结构，无法在不同设备上部署。我们提出了PhaseCoder，这是一个仅基于transformer的空间音频编码器，它对麦克风几何结构无关。PhaseCoder接收原始多通道音频和麦克风坐标作为输入，执行定位任务并生成鲁棒的空间嵌入。我们证明Gemma 3n大模型可以通过微调来处理由PhaseCoder生成的'空间音频标记'。我们的编码器在麦克风不变的定位基准测试中取得了最先进的结果，并且首次使大模型能够从任意麦克风阵列执行复杂的空间推理和目标转录任务。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Artem Dementyev, Wazeer Zulfikar, Sinan Hersek, Pascal Getreuer, Anurag Kumar, Vivek Kumar",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Multilingual Dysarthric Speech Assessment Using Universal Phone Recognition and Language-Specific Phonemic Contrast Modeling",
+    "paper_title_zh": "基于通用语音识别和语言特定音素对比建模的多语言构音障碍语音评估",
+    "paper_id": "2601.21205",
+    "paper_abstract": "The growing prevalence of neurological disorders associated with dysarthria motivates the need for automated intelligibility assessment methods that are applicalbe across languages. However, most existing approaches are either limited to a single language or fail to capture language-specific factors shaping intelligibility. We present a multilingual phoneme-production assessment framework that integrates universal phone recognition with language-specific phoneme interpretation using contrastive phonological feature distances for phone-to-phoneme mapping and sequence alignment. The framework yields three metrics: phoneme error rate (PER), phonological feature error rate (PFER), and a newly proposed alignment-free measure, phoneme coverage (PhonCov). Analysis on English, Spanish, Italian, and Tamil show that PER benefits from the combination of mapping and alignment, PFER from alignment alone, and PhonCov from mapping. Further analyses demonstrate that the proposed framework captures clinically meaningful patterns of intelligibility degradation consistent with established observations of dysarthric speech.",
+    "paper_abstract_zh": "与构音障碍相关的神经系统疾病日益普遍，这促使需要开发适用于多种语言的自动化可懂度评估方法。然而，大多数现有方法要么仅限于单一语言，要么无法塑造可懂度的语言特定因素。我们提出了一种多语言音素生产评估框架，该框架结合了通用语音识别和语言特定音素解释，使用对比音韵特征距离进行音素到音素的映射和序列对齐。该框架产生三个指标：音素错误率（PER）、音韵特征错误率（PFER）以及新提出的无需对齐的度量指标音素覆盖率（PhonCov）。对英语、西班牙语、意大利语和泰米尔语的分析表明，PER受益于映射和对齐的结合，PFER仅受益于对齐，而PhonCov受益于映射。进一步的分析表明，所提出的框架捕捉了与构音障碍语音可懂度退化相关的临床有意义模式，与已观察到的构音障碍语音特征一致。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Eunjung Yeo, Julie M. Liss, Visar Berisha, David R. Mortensen",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Music Plagiarism Detection: Problem Formulation and a Segment-based Solution",
+    "paper_title_zh": "音乐抄袭检测：问题定义与基于片段的解决方案",
+    "paper_id": "2601.21260",
+    "paper_abstract": "Recently, the problem of music plagiarism has emerged as an even more pressing social issue. As music information retrieval research advances, there is a growing effort to address issues related to music plagiarism. However, many studies, including our previous work, have conducted research without clearly defining what the music plagiarism detection task actually involves. This lack of a clear definition has slowed research progress and made it hard to apply results to real-world scenarios. To fix this situation, we defined how Music Plagiarism Detection is different from other MIR tasks and explained what problems need to be solved. We introduce the Similar Music Pair dataset to support this newly defined task. In addition, we propose a method based on segment transcription as one way to solve the task. Our demo and dataset are available at this https URL.",
+    "paper_abstract_zh": "最近，音乐抄袭问题已成为一个更加紧迫的社会问题。随着音乐信息检索研究的进步，越来越多的努力被投入到解决与音乐抄袭相关的问题中。然而，包括我们之前工作在内的许多研究在进行研究时，没有明确定义音乐抄袭检测任务实际涉及的内容。这种缺乏明确定义的情况减缓了研究进展，并使得结果难以应用于实际场景。为了解决这个问题，我们定义了音乐抄袭检测与其他MIR任务的区别，并解释了需要解决的问题。我们引入了相似音乐对数据集来支持这个新定义的任务。此外，我们提出了一种基于片段转录的方法作为解决该任务的一种方式。我们的演示和数据集可通过此https URL获取。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Seonghyeon Go, Yumin Kim",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Classification"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Evaluating Spatialized Auditory Cues for Rapid Attention Capture in XR",
+    "paper_title_zh": "评估XR中用于快速注意力捕获的空间化听觉线索",
+    "paper_id": "2601.21264",
+    "paper_abstract": "In time-critical eXtended reality (XR) scenarios where users must rapidly reorient their attention to hazards, alerts, or instructions while engaged in a primary task, spatial audio can provide an immediate directional cue without occupying visual bandwidth. However, such scenarios can afford only a brief auditory exposure, requiring users to interpret sound direction quickly and without extended listening or head-driven refinement. This paper reports a controlled exploratory study of rapid spatial-audio localization in XR. Using HRTF-rendered broadband stimuli presented from a semi-dense set of directions around the listener, we quantify how accurately users can infer coarse direction from brief audio alone. We further examine the effects of short-term visuo-auditory feedback training as a lightweight calibration mechanism. Our findings show that brief spatial cues can convey coarse directional information, and that even short calibration can improve users' perception of aural signals. While these results highlight the potential of spatial audio for rapid attention guidance, they also show that auditory cues alone may not provide sufficient precision for complex or high-stakes tasks, and that spatial audio may be most effective when complemented by other sensory modalities or visual cues, without relying on head-driven refinement. We leverage this study on spatial audio as a preliminary investigation into a first-stage attention-guidance channel for wearable XR (e.g., VR head-mounted displays and AR smart glasses), and provide design insights on stimulus selection and calibration for time-critical use.",
+    "paper_abstract_zh": "在用户必须同时执行主要任务并快速重新将注意力转向危险、警报或指令的时间关键型扩展现实(XR)场景中，空间音频可以在不占用视觉带宽的情况下提供即时的方向线索。然而，这类场景只能提供短暂的听觉暴露，要求用户快速解读声音方向，无需长时间聆听或头部驱动的精细调整。本文报告了一项关于XR中快速空间音频定位的受控探索性研究。使用从听众周围半密集方向呈现的HRTF渲染宽带刺激，我们量化了用户仅凭短暂音频推断粗略方向的准确性。我们进一步研究了短期视听反馈训练作为轻量级校准机制的效果。我们的研究结果表明，短暂的空间线索可以传达粗略的方向信息，即使短暂的校准也能提高用户对听觉信号的感知能力。尽管这些结果突显了空间音频在快速注意力引导方面的潜力，但也表明听觉线索单独可能无法为复杂或高风险任务提供足够的精确度，空间音频在与其他感官模态或视觉线索结合使用时最为有效，而不依赖于头部驱动的精细调整。我们利用这项空间音频研究作为可穿戴XR（如VR头戴式显示器和AR智能眼镜）第一阶段注意力引导通道的初步调查，并为时间关键应用中的刺激选择和校准提供了设计见解。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Human-Computer Interaction (cs.HC)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Yoonsang Kim, Swapnil Dey, Arie Kaufman",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Qwen3-ASR Technical Report",
+    "paper_title_zh": "Qwen3-ASR技术报告",
+    "paper_id": "2601.21337",
+    "paper_abstract": "In this report, we introduce Qwen3-ASR family, which includes two powerful all-in-one speech recognition models and a novel non-autoregressive speech forced alignment model. Qwen3-ASR-1.7B and Qwen3-ASR-0.6B are ASR models that support language identification and ASR for 52 languages and dialects. Both of them leverage large-scale speech training data and the strong audio understanding ability of their foundation model Qwen3-Omni. We conduct comprehensive internal evaluation besides the open-sourced benchmarks as ASR models might differ little on open-sourced benchmark scores but exhibit significant quality differences in real-world scenarios. The experiments reveal that the 1.7B version achieves SOTA performance among open-sourced ASR models and is competitive with the strongest proprietary APIs while the 0.6B version offers the best accuracy-efficiency trade-off. Qwen3-ASR-0.6B can achieve an average TTFT as low as 92ms and transcribe 2000 seconds speech in 1 second at a concurrency of 128. Qwen3-ForcedAligner-0.6B is an LLM based NAR timestamp predictor that is able to align text-speech pairs in 11 languages. Timestamp accuracy experiments show that the proposed model outperforms the three strongest force alignment models and takes more advantages in efficiency and versatility. To further accelerate the community research of ASR and audio understanding, we release these models under the Apache 2.0 license.",
+    "paper_abstract_zh": "在本报告中，我们介绍了Qwen3-ASR系列，其中包括两个功能强大的全语音识别模型和一个新颖的非自回归语音强制对齐模型。Qwen3-ASR-1.7B和Qwen3-ASR-0.6B是支持52种语言和方言的语言识别和自动语音识别的ASR模型。两者都利用了大规模语音训练数据及其基础模型Qwen3-Omni的强大音频理解能力。除了开源基准测试外，我们还进行了全面的内部评估，因为ASR模型在开源基准测试分数上可能差异不大，但在实际场景中可能表现出显著的质量差异。实验表明，1.7B版本在开源ASR模型中实现了最先进的性能，并与最强的专有API相媲美，而0.6B版本则提供了最佳的准确率-效率权衡。Qwen3-ASR-0.6B可以实现低至92ms的平均TTFT，并在128并发下1秒内转录2000秒的语音。Qwen3-ForcedAligner-0.6B是基于LLM的非自回归时间戳预测器，能够在11种语言中对齐文本-语音对。时间戳准确性实验表明，所提出的模型优于三个最强的强制对齐模型，并在效率和通用性方面具有更多优势。为了进一步加速ASR和音频理解的社区研究，我们根据Apache 2.0许可证发布了这些模型。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Xian Shi, Xiong Wang, Zhifang Guo, Yongqi Wang, Pei Zhang, Xinyu Zhang, Zishan Guo, Hongkun Hao, Yu Xi, Baosong Yang, Jin Xu, Jingren Zhou, Junyang Lin",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Understanding Frechet Speech Distance for Synthetic Speech Quality Evaluation",
+    "paper_title_zh": "理解用于合成语音质量评估的Fréchet语音距离",
+    "paper_id": "2601.21386",
+    "paper_abstract": "Objective evaluation of synthetic speech quality remains a critical challenge. Human listening tests are the gold standard, but costly and impractical at scale. Fréchet Distance has emerged as a promising alternative, yet its reliability depends heavily on the choice of embeddings and experimental settings. In this work, we comprehensively evaluate Fréchet Speech Distance (FSD) and its variant Speech Maximum Mean Discrepancy (SMMD) under varied embeddings and conditions. We further incorporate human listening evaluations alongside TTS intelligibility and synthetic-trained ASR WER to validate the perceptual relevance of these metrics. Our findings show that WavLM Base+ features yield the most stable alignment with human ratings. While FSD and SMMD cannot fully replace subjective evaluation, we show that they can serve as complementary, cost-efficient, and reproducible measures, particularly useful when large-scale or direct listening assessments are infeasible. Code is available at this https URL.",
+    "paper_abstract_zh": "合成语音质量的客观评估仍然是一个关键挑战。人类听音测试是黄金标准，但在大规模应用中成本高昂且不切实际。Fréchet距离已成为一种有前景的替代方案，但其可靠性严重依赖于嵌入和实验设置的选择。在这项工作中，我们在不同的嵌入和条件下全面评估了Fréchet语音距离（FSD）及其变体语音最大均值差异（SMMD）。我们进一步结合人类听音评估、TTS可懂度和合成训练的ASR WER来验证这些指标与感知的相关性。我们的研究结果表明，WavLM Base+特征与人类评分的稳定性最为一致。虽然FSD和SMMD无法完全替代主观评估，但我们表明它们可以作为补充的、成本效益高的且可重复的度量标准，特别是在大规模或直接听音评估不可行的情况下。代码可在提供的URL获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "June-Woo Kim, Dhruv Agarwal, Federica Cerina",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Unifying Speech Editing Detection and Content Localization via Prior-Enhanced Audio LLMs",
+    "paper_title_zh": "通过先验增强的音频大模型统一语音编辑检测与内容定位",
+    "paper_id": "2601.21463",
+    "paper_abstract": "Speech editing achieves semantic inversion by performing fine-grained segment-level manipulation on original utterances, while preserving global perceptual naturalness. Existing detection studies mainly focus on manually edited speech with explicit splicing artifacts, and therefore struggle to cope with emerging end-to-end neural speech editing techniques that generate seamless acoustic transitions. To address this challenge, we first construct a large-scale bilingual dataset, AiEdit, which leverages large language models to drive precise semantic tampering logic and employs multiple advanced neural speech editing methods for data synthesis, thereby filling the gap of high-quality speech editing datasets. Building upon this foundation, we propose PELM (Prior-Enhanced Audio Large Language Model), the first large-model framework that unifies speech editing detection and content localization by formulating them as an audio question answering task. To mitigate the inherent forgery bias and semantic-priority bias observed in existing audio large models, PELM incorporates word-level probability priors to provide explicit acoustic cues, and further designs a centroid-aggregation-based acoustic consistency perception loss to explicitly enforce the modeling of subtle local distribution anomalies. Extensive experimental results demonstrate that PELM significantly outperforms state-of-the-art methods on both the HumanEdit and AiEdit datasets, achieving equal error rates (EER) of 0.57\\% and 9.28\\% (localization), respectively.",
+    "paper_abstract_zh": "语音编辑通过对原始语音进行细粒度的片段级操作来实现语义反转，同时保持全局感知的自然性。现有的检测研究主要关注具有明显拼接伪影的手动编辑语音，因此难以应对能够生成无缝声学转换的新兴端到端神经语音编辑技术。为应对这一挑战，我们首先构建了一个大规模双语数据集AiEdit，该数据集利用大语言模型驱动精确的语义篡改逻辑，并采用多种先进的神经语音编辑方法进行数据合成，从而填补了高质量语音编辑数据集的空白。基于此基础，我们提出了PELM（先验增强的音频大模型），这是首个将语音编辑检测和内容定位统一为音频问答任务的大模型框架。为缓解现有音频大模型中固有的伪造偏差和语义优先偏差，PELM集成了词级概率先验以提供明确的声学线索，并进一步设计了一种基于质心聚合的声学一致性感知损失，以明确强制对细微局部分布异常的建模。大量实验结果表明，PELM在HumanEdit和AiEdit数据集上均显著优于最先进的方法，分别实现了0.57%和9.28%（定位）的等错误率（EER）。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Jun Xue, Yi Chai, Yanzhen Ren, Jinshen He, Zhiqiang Tang, Zhuolin Yi, Yihuan Huang, Yuankun Xie, Yujie Chen",
+    "topic": [
+      "Speech Recognition",
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Localizing Speech Deepfakes Beyond Transitions via Segment-Aware Learning",
+    "paper_title_zh": "通过分段感知学习定位语音深度伪造",
+    "paper_id": "2601.21925",
+    "paper_abstract": "Localizing partial deepfake audio, where only segments of speech are manipulated, remains challenging due to the subtle and scattered nature of these modifications. Existing approaches typically rely on frame-level predictions to identify spoofed segments, and some recent methods improve performance by concentrating on the transitions between real and fake audio. However, we observe that these models tend to over-rely on boundary artifacts while neglecting the manipulated content that follows. We argue that effective localization requires understanding the entire segments beyond just detecting transitions. Thus, we propose Segment-Aware Learning (SAL), a framework that encourages models to focus on the internal structure of segments. SAL introduces two core techniques: Segment Positional Labeling, which provides fine-grained frame supervision based on relative position within a segment; and Cross-Segment Mixing, a data augmentation method that generates diverse segment patterns. Experiments across multiple deepfake localization datasets show that SAL consistently achieves strong performance in both in-domain and out-of-domain settings, with notable gains in non-boundary regions and reduced reliance on transition artifacts. The code is available at this https URL.",
+    "paper_abstract_zh": "定位部分深度伪造音频（其中只有语音片段被操纵）仍然具有挑战性，因为这些修改具有微妙和分散的特性。现有方法通常依赖于帧级预测来识别欺骗性片段，而一些最近的方法通过专注于真实和虚假音频之间的过渡来提高性能。然而，我们观察到这些模型倾向于过度依赖边界伪影，而忽略了后续的操纵内容。我们认为有效的定位需要理解整个片段，而不仅仅是检测过渡。因此，我们提出了分段感知学习（SAL），这是一个鼓励模型专注于片段内部结构的框架。SAL引入了两种核心技术：分段位置标记，它基于片段内的相对位置提供细粒度的帧监督；以及分段混合，这是一种生成多样化片段模式的数据增强方法。在多个深度伪造定位数据集上的实验表明，SAL在领域内和领域外设置中均表现出强大的性能，在非边界区域取得了显著提升，并减少了对过渡伪影的依赖。代码可在提供的URL获取。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Yuchen Mao, Wen Huang, Yanmin Qian",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "MIDI-LLaMA: An Instruction-Following Multimodal LLM for Symbolic Music Understanding",
+    "paper_title_zh": "MIDI-LLaMA：一种用于符号音乐理解的指令跟随多模态大语言模型",
+    "paper_id": "2601.21740",
+    "paper_abstract": "Recent advances in multimodal large language models (MLLM) for audio music have demonstrated strong capabilities in music understanding, yet symbolic music, a fundamental representation of musical structure, remains unexplored. In this work, we introduce MIDI-LLaMA, the first instruction-following MLLM for symbolic music understanding. Our approach aligns the MIDI encoder MusicBERT and Llama-3-8B via a two-stage pipeline comprising feature alignment and instruction tuning. To support training, we design a scalable annotation pipeline that annotates GiantMIDI-Piano with fine-grained metadata, resulting in a MIDI-text dataset. Compared with the baseline trained on converting MIDI into ABC notation under the same instruction-tuning procedure, MIDI-LLaMA substantially outperforms in captioning and semantic alignment in question answering. Human evaluation further confirms the advantages of MIDI-LLaMA in music understanding, emotion recognition, creativity, and overall preference. These findings demonstrate that incorporating symbolic music into large language models enhances their capacity for musical understanding.",
+    "paper_abstract_zh": "最近在音频音乐多模态大语言模型(MLLM)方面的进展展示了强大的音乐理解能力，但作为音乐结构基本表示的符号音乐仍未被探索。在这项工作中，我们介绍了MIDI-LLaMA，这是第一个用于符号音乐理解的指令跟随MLLM。我们的方法通过一个包含特征对齐和指令调整的两阶段流程，将MIDI编码器MusicBERT和Llama-3-8B进行对齐。为了支持训练，我们设计了一个可扩展的注释流程，用细粒度元数据注释GiantMIDI-Piano，生成了一个MIDI-文本数据集。与在相同指令调整过程中将MIDI转换为ABC记谱法进行训练的基线相比，MIDI-LLaMA在问答中的标题生成和语义对齐方面表现显著更好。人工评估进一步证实了MIDI-LLaMA在音乐理解、情感识别、创造力和整体偏好方面的优势。这些研究结果表明，将符号音乐整合到大语言模型中可以增强其音乐理解能力。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-01-30",
+    "paper_authors": "Meng Yang, Jon McCormack, Maria Teresa Llano, Wanchao Su, Chao Lei",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  }
+]
