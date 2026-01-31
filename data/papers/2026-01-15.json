@@ -127,18 +127,22 @@
   },
   {
     "paper_title": "Population-Aligned Audio Reproduction With LLM-Based Equalizers",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于大语言模型均衡器的群体对齐音频重放",
     "paper_id": "2601.09448",
     "paper_abstract": "Conventional audio equalization is a static process that requires manual and cumbersome adjustments to adapt to changing listening contexts (e.g., mood, location, or social setting). In this paper, we introduce a Large Language Model (LLM)-based alternative that maps natural language text prompts to equalization settings. This enables a conversational approach to sound system control. By utilizing data collected from a controlled listening experiment, our models exploit in-context learning and parameter-efficient fine-tuning techniques to reliably align with population-preferred equalization settings. Our evaluation methods, which leverage distributional metrics that capture users' varied preferences, show statistically significant improvements in distributional alignment over random sampling and static preset baselines. These results indicate that LLMs could function as \"artificial equalizers,\" contributing to the development of more accessible, context-aware, and expert-level audio tuning methods.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "传统的音频均衡是一个静态过程，需要手动进行繁琐的调整以适应不断变化的聆听情境（例如情绪、位置或社交环境）。在本文中，我们提出了一种基于大语言模型（LLM）的替代方案，该方案将自然语言文本提示映射到均衡器设置。这实现了一种对话式的音响系统控制方法。通过利用从受控听音实验中收集的数据，我们的模型利用上下文学习和参数高效微调技术，可靠地与群体偏好的均衡器设置保持一致。我们的评估方法利用了捕捉用户多样化偏好的分布指标，显示在分布对齐方面，相比随机采样和静态预设基线具有统计学上的显著改进。这些结果表明，LLM可以作为“人工均衡器”，有助于开发更易于访问、具有情境感知和专家级的音频调谐方法。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)"
     ],
     "update_time": "2026-01-15",
     "paper_authors": "Ioannis Stylianou, Jon Francombe, Pablo Martinez-Nuevo, Sven Ewan Shepstone, Zheng-Hua Tan",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Analysis of the Maximum Prediction Gain of Short-Term Prediction on Sustained Speech",
