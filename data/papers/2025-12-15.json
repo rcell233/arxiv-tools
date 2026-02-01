@@ -198,10 +198,10 @@
   },
   {
     "paper_title": "Processing through encoding: Quantum circuit approaches for point-wise multiplication and convolution",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于编码的处理：用于逐点乘法和卷积的量子电路方法",
     "paper_id": "2512.11457",
     "paper_abstract": "This paper introduces quantum circuit methodologies for pointwise multiplication and convolution of complex functions, conceptualized as \"processing through encoding\". Leveraging known techniques, we describe an approach where multiple complex functions are encoded onto auxiliary qubits. Applying the proposed scheme for two functions $f$ and $g$, their pointwise product $f(x)g(x)$ is shown to naturally form as the coefficients of part of the resulting quantum state. Adhering to the convolution theorem, we then demonstrate how the convolution $f*g$ can be constructed. Similarly to related work, this involves the encoding of the Fourier coefficients $\\mathcal{F}[f]$ and $\\mathcal{F}[g]$, which facilitates their pointwise multiplication, followed by the inverse Quantum Fourier Transform. We discuss the simulation of these techniques, their integration into an extended \\verb|quantumaudio| package for audio signal processing, and present initial experimental validations. This work offers a promising avenue for quantum signal processing, with potential applications in areas such as quantum-enhanced audio manipulation and synthesis.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本文介绍了用于复数函数逐点乘法和卷积的量子电路方法，将其概念化为“基于编码的处理”。利用已知技术，我们描述了一种将多个复数函数编码到辅助量子比特上的方法。将所提出的方案应用于两个函数 f 和 g，它们的逐点乘积 f(x)g(x) 被证明自然地形成为所得量子状态一部分的系数。遵循卷积定理，我们随后演示了如何构建卷积 f*g。与相关工作类似，这涉及对傅里叶系数 F[f] 和 F[g] 的编码，从而促进它们的逐点相乘，随后进行逆量子傅里叶变换。我们讨论了这些技术的模拟，将其集成到用于音频信号处理的扩展 quantumaudio 包中，并展示了初步的实验验证。这项工作为量子信号处理提供了一条有希望的途径，在量子增强音频处理和合成等领域具有潜在应用。",
     "subjects": [
       "Quantum Physics (quant-ph)",
       "Emerging Technologies (cs.ET)",
@@ -210,7 +210,11 @@
     ],
     "update_time": "2025-12-15",
     "paper_authors": "Andreas Papageorgiou, Paulo Vitor Itaborai, Kostas Blekos, Karl Jansen",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
   }
 ]

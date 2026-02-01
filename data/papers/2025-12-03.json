@@ -270,17 +270,22 @@
   },
   {
     "paper_title": "WhAM: Towards A Translative Model of Sperm Whale Vocalization",
-    "paper_title_zh": "",
+    "paper_title_zh": "WhAM：迈向抹香鲸发声的转换模型",
     "paper_id": "2512.02206",
     "paper_abstract": "Sperm whales communicate in short sequences of clicks known as codas. We present WhAM (Whale Acoustics Model), the first transformer-based model capable of generating synthetic sperm whale codas from any audio prompt. WhAM is built by finetuning VampNet, a masked acoustic token model pretrained on musical audio, using 10k coda recordings collected over the past two decades. Through iterative masked token prediction, WhAM generates high-fidelity synthetic codas that preserve key acoustic features of the source recordings. We evaluate WhAM's synthetic codas using Fréchet Audio Distance and through perceptual studies with expert marine biologists. On downstream classification tasks including rhythm, social unit, and vowel classification, WhAM's learned representations achieve strong performance, despite being trained for generation rather than classification. Our code is available at this https URL",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "抹香鲸通过被称为“短句（codas）”的短促咔哒声序列进行交流。我们提出了WhAM（鲸鱼声学模型），这是首个能够根据任意音频提示生成合成抹香鲸短句的基于Transformer的模型。WhAM是通过微调VampNet构建的，VampNet是一种在音乐音频上预训练的掩蔽声学令牌模型，微调使用了过去二十年中收集的1万条短句录音。通过迭代掩蔽令牌预测，WhAM生成高保真合成短句，保留了源录音的关键声学特征。我们使用Fréchet Audio Distance以及海洋生物学家的感知研究来评估WhAM的合成短句。在包括节奏、社会单元和元音分类等下游分类任务中，WhAM的学习到的表征取得了强劲的性能，尽管它是为生成而非分类训练的。我们的代码在此HTTPS URL可用",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Sound (cs.SD)"
     ],
     "update_time": "2025-12-03",
     "paper_authors": "Orr Paradise, Pranav Muralikrishnan, Liangyuan Chen, Hugo Flores García, Bryan Pardo, Roee Diamant, David F. Gruber, Shane Gero, Shafi Goldwasser",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Other"
+    ]
   }
 ]
