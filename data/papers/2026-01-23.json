@@ -185,10 +185,10 @@
   },
   {
     "paper_title": "Abusive music and song transformation using GenAI and LLMs",
-    "paper_title_zh": "",
+    "paper_title_zh": "使用生成式人工智能和大语言模型进行音乐和歌曲的 abusive 内容转换",
     "paper_id": "2601.15348",
     "paper_abstract": "Repeated exposure to violence and abusive content in music and song content can influence listeners' emotions and behaviours, potentially normalising aggression or reinforcing harmful stereotypes. In this study, we explore the use of generative artificial intelligence (GenAI) and Large Language Models (LLMs) to automatically transform abusive words (vocal delivery) and lyrical content in popular music. Rather than simply muting or replacing a single word, our approach transforms the tone, intensity, and sentiment, thus not altering just the lyrics, but how it is expressed. We present a comparative analysis of four selected English songs and their transformed counterparts, evaluating changes through both acoustic and sentiment-based lenses. Our findings indicate that Gen-AI significantly reduces vocal aggressiveness, with acoustic analysis showing improvements in Harmonic to Noise Ratio, Cepstral Peak Prominence, and Shimmer. Sentiment analysis reduced aggression by 63.3-85.6\\% across artists, with major improvements in chorus sections (up to 88.6\\% reduction). The transformed versions maintained musical coherence while mitigating harmful content, offering a promising alternative to traditional content moderation that avoids triggering the \"forbidden fruit\" effect, where the censored content becomes more appealing simply because it is restricted. This approach demonstrates the potential for GenAI to create safer listening experiences while preserving artistic expression.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "反复接触音乐和歌曲内容中的暴力和 abusive 内容可能会影响听众的情绪和行为，可能使正常化攻击性或强化有害刻板印象。在本研究中，我们探索使用生成式人工智能（GenAI）和大语言模型（LLMs）来自动转换流行音乐中的 abusive 词汇（声音表达）和歌词内容。我们不是简单地静音或替换单个单词，而是转换语调、强度和情感，从而不仅改变歌词，还改变其表达方式。我们呈现了四首选定英文歌曲及其转换版本的比较分析，通过声学和基于情感的角度评估变化。我们的研究结果表明，Gen-AI 显著降低了声音的攻击性，声学分析显示谐波噪声比、倒谱峰突出度和微颤度有所改善。情感分析显示，不同艺术家的攻击性降低了 63.3-85.6%，副歌部分有显著改善（最多降低 88.6%）。转换后的版本保持了音乐连贯性，同时减轻了有害内容，为传统内容审核提供了一种有希望的替代方案，避免了'禁果效应'，即被审查的内容仅仅因为受到限制而变得更具吸引力。这种方法展示了 GenAI 在创造更安全的聆听体验的同时保持艺术表达的潜力。",
     "subjects": [
       "Sound (cs.SD)",
       "Artificial Intelligence (cs.AI)",
@@ -196,8 +196,13 @@
     ],
     "update_time": "2026-01-23",
     "paper_authors": "Jiyang Choi, Rohitash Chandra",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Enhancement",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "EmotionThinker: Prosody-Aware Reinforcement Learning for Explainable Speech Emotion Reasoning",

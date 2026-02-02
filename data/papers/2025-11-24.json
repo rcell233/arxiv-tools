@@ -85,18 +85,22 @@
   },
   {
     "paper_title": "Semantic and Semiotic Interplays in Text-to-Audio AI: Exploring Cognitive Dynamics and Musical Interactions",
-    "paper_title_zh": "",
+    "paper_title_zh": "文本转音频人工智能中的语义与符号学互动：探索认知动力学与音乐交互",
     "paper_id": "2511.17429",
     "paper_abstract": "This paper investigates the emerging text-to-audio paradigm in artificial intelligence (AI), examining its transformative implications for musical creation, interpretation, and cognition. I explore the complex semantic and semiotic interplays that occur when descriptive natural language prompts are translated into nuanced sound objects across the text-to-audio modality. Drawing from structuralist and post-structuralist perspectives, as well as cognitive theories of schema dynamics and metacognition, the paper explores how these AI systems reconfigure musical signification processes and navigate established cognitive frameworks. The research analyzes some of the cognitive dynamics at play in AI-mediated musicking, including processes of schema assimilation and accommodation, metacognitive reflection, and constructive perception. The paper argues that text-to-audio AI models function as quasi-objects of musical signification, simultaneously stabilizing and destabilizing conventional forms while fostering new modes of listening and aesthetic this http URL Udio as a primary case study, this study explores how these models navigate the liminal spaces between linguistic prompts and sonic outputs. This process not only generates novel musical expressions but also prompts listeners to engage in forms of critical and \"structurally-aware listening.\", encouraging a deeper understanding of music's structures, semiotic nuances, and the socio-cultural contexts that shape our musical cognition. The paper concludes by reflecting on the potential of text-to-audio AI models to serve as epistemic tools and quasi-objects, facilitating a significant shift in musical interactions and inviting users to develop a more nuanced comprehension of the cognitive and cultural foundations of music.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "本文研究了人工智能（AI）中新兴的文本转音频范式，考察了其对音乐创作、阐释和认知的变革性影响。我探讨了当描述性自然语言提示在文本转音频模态中被转化为细腻的声音对象时发生的复杂语义和符号学互动。借鉴结构主义和后结构主义视角，以及图式动力学和元认知的认知理论，本文探讨了这些AI系统如何重构音乐意指过程并驾驭既定的认知框架。研究分析了AI中介音乐行为中起作用的一些认知动力学，包括图式同化与顺应过程、元认知反思和建构性感知。本文认为，文本转音频AI模型充当了音乐意指的“准对象”，在稳定和 destabilizing（动摇）传统形式的同时，培育了新的聆听和审美体验模式。以Udio为主要案例研究，本研究探讨了这些模型如何在语言提示和声音输出之间的阈限空间中导航。这一过程不仅产生了新颖的音乐表达，还促使听众参与到批判性和“结构感知聆听”的形式中，鼓励人们更深入地理解音乐的结构、符号细微差别以及塑造我们音乐认知的社会文化背景。文章最后反思了文本转音频AI模型作为认知工具和准对象的潜力，促进了音乐交互的重大转变，并邀请用户对音乐的认知和文化基础发展出更细致的理解。",
     "subjects": [
       "Sound (cs.SD)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2025-11-24",
     "paper_authors": "Guilherme Coelho",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
   },
   {
     "paper_title": "Device-Guided Music Transfer",
