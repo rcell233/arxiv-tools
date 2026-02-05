@@ -1,0 +1,304 @@
+[
+  {
+    "paper_title": "Benchmarking Automatic Speech Recognition for Indian Languages in Agricultural Contexts",
+    "paper_title_zh": "",
+    "paper_id": "2602.03868",
+    "paper_abstract": "The digitization of agricultural advisory services in India requires robust Automatic Speech Recognition (ASR) systems capable of accurately transcribing domain-specific terminology in multiple Indian languages. This paper presents a benchmarking framework for evaluating ASR performance in agricultural contexts across Hindi, Telugu, and Odia languages. We introduce evaluation metrics including Agriculture Weighted Word Error Rate (AWWER) and domain-specific utility scoring to complement traditional metrics. Our evaluation of 10,934 audio recordings, each transcribed by up to 10 ASR models, reveals performance variations across languages and models, with Hindi achieving the best overall performance (WER: 16.2%) while Odia presents the greatest challenges (best WER: 35.1%, achieved only with speaker diarization). We characterize audio quality challenges inherent to real-world agricultural field recordings and demonstrate that speaker diarization with best-speaker selection can substantially reduce WER for multi-speaker recordings (upto 66% depending on the proportion of multi-speaker audio). We identify recurring error patterns in agricultural terminology and provide practical recommendations for improving ASR systems in low-resource agricultural domains. The study establishes baseline benchmarks for future agricultural ASR development.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Chandrashekar M S, Vineet Singh, Lakshmi Pedapudi",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Sounding Highlights: Dual-Pathway Audio Encoders for Audio-Visual Video Highlight Detection",
+    "paper_title_zh": "声音亮点：用于视听视频亮点检测的双路径音频编码器",
+    "paper_id": "2602.03891",
+    "paper_abstract": "Audio-visual video highlight detection aims to automatically identify the most salient moments in videos by leveraging both visual and auditory cues. However, existing models often underutilize the audio modality, focusing on high-level semantic features while failing to fully leverage the rich, dynamic characteristics of sound. To address this limitation, we propose a novel framework, Dual-Pathway Audio Encoders for Video Highlight Detection (DAViHD). The dual-pathway audio encoder is composed of a semantic pathway for content understanding and a dynamic pathway that captures spectro-temporal dynamics. The semantic pathway extracts high-level information by identifying the content within the audio, such as speech, music, or specific sound events. The dynamic pathway employs a frequency-adaptive mechanism as time evolves to jointly model these dynamics, enabling it to identify transient acoustic events via salient spectral bands and rapid energy changes. We integrate the novel audio encoder into a full audio-visual framework and achieve new state-of-the-art performance on the large-scale this http URL benchmark. Our results demonstrate that a sophisticated, dual-faceted audio representation is key to advancing the field of highlight detection.",
+    "paper_abstract_zh": "视听视频亮点检测旨在利用视觉和听觉线索自动识别视频中最重要的时刻。然而，现有模型往往未能充分利用音频模态，专注于高层语义特征，而未能充分利用声音的丰富动态特性。为解决这一局限性，我们提出了一种新颖的框架——用于视频亮点检测的双路径音频编码器（DAViHD）。该双路径音频编码器由用于内容理解的语义路径和捕获频谱时态动态的动态路径组成。语义路径通过识别音频内容（如语音、音乐或特定声音事件）提取高层信息。动态路径采用随时间演进的频率自适应机制，联合建模这些动态特性，能够通过显著频谱带和快速能量变化识别瞬态声学事件。我们将新颖的音频编码器集成到完整的视听框架中，并在大规模this http URL基准测试上取得了新的最先进性能。我们的研究结果表明，精细的双面音频表示是推动亮点检测领域发展的关键。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Seohyun Joo, Yoori Oh",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Classification"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Universal Robust Speech Adaptation for Cross-Domain Speech Recognition and Enhancement",
+    "paper_title_zh": "跨域语音识别与增强的通用鲁棒语音适应",
+    "paper_id": "2602.04307",
+    "paper_abstract": "Pre-trained models for automatic speech recognition (ASR) and speech enhancement (SE) have exhibited remarkable capabilities under matched noise and channel conditions. However, these models often suffer from severe performance degradation when confronted with domain shifts, particularly in the presence of unseen noise and channel distortions. In view of this, we in this paper present URSA-GAN, a unified and domain-aware generative framework specifically designed to mitigate mismatches in both noise and channel conditions. URSA-GAN leverages a dual-embedding architecture that consists of a noise encoder and a channel encoder, each pre-trained with limited in-domain data to capture domain-relevant representations. These embeddings condition a GAN-based speech generator, facilitating the synthesis of speech that is acoustically aligned with the target domain while preserving phonetic content. To enhance generalization further, we propose dynamic stochastic perturbation, a novel regularization technique that introduces controlled variability into the embeddings during generation, promoting robustness to unseen domains. Empirical results demonstrate that URSA-GAN effectively reduces character error rates in ASR and improves perceptual metrics in SE across diverse noisy and mismatched channel scenarios. Notably, evaluations on compound test conditions with both channel and noise degradations confirm the generalization ability of URSA-GAN, yielding relative improvements of 16.16% in ASR performance and 15.58% in SE metrics.",
+    "paper_abstract_zh": "用于自动语音识别(ASR)和语音增强(SE)的预训练模型在匹配的噪声和信道条件下表现出显著的能力。然而，当面对域偏移，特别是在存在未见过的噪声和信道失真时，这些模型往往会遭受严重的性能下降。鉴于此，本文提出了URSA-GAN，这是一个统一且具有域感知能力的生成框架，专门设计用于减轻噪声和信道条件中的不匹配问题。URSA-GAN利用了一种双重嵌入架构，该架构由噪声编码器和信道编码器组成，每个编码器都使用有限的域内数据进行预训练，以捕获域相关的表示。这些嵌入条件化了一个基于GAN的语音生成器，促进合成在声学上与目标域对齐同时保留语音内容的语音。为了进一步增强泛化能力，我们提出了动态随机扰动，一种新颖的正则化技术，在生成过程中向嵌入引入受控的变异性，从而提高对未见域的鲁棒性。实验结果表明，URSA-GAN在各种嘈杂和不匹配的信道场景中有效地降低了ASR的字符错误率，并提高了SE的感知指标。值得注意的是，在同时包含信道和噪声降级的复合测试条件下的评估证实了URSA-GAN的泛化能力，在ASR性能上实现了16.16%的相对改进，在SE指标上实现了15.58%的相对改进。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Chien-Chun Wang, Hung-Shin Lee, Hsin-Min Wang, Berlin Chen",
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "LALM-as-a-Judge: Benchmarking Large Audio-Language Models for Safety Evaluation in Multi-Turn Spoken Dialogues",
+    "paper_title_zh": "LALM-as-a-Judge：用于多轮口语对话安全评估的大型音频语言模型基准测试",
+    "paper_id": "2602.04796",
+    "paper_abstract": "Spoken dialogues with and between voice agents are becoming increasingly common, yet assessing them for their socially harmful content such as violence, harassment, and hate remains text-centric and fails to account for audio-specific cues and transcription errors. We present LALM-as-a-Judge, the first controlled benchmark and systematic study of large audio-language models (LALMs) as safety judges for multi-turn spoken dialogues. We generate 24,000 unsafe and synthetic spoken dialogues in English that consist of 3-10 turns, by having a single dialogue turn including content with one of 8 harmful categories (e.g., violence) and on one of 5 grades, from very mild to severe. On 160 dialogues, 5 human raters confirmed reliable unsafe detection and a meaningful severity scale. We benchmark three open-source LALMs: Qwen2-Audio, Audio Flamingo 3, and MERaLiON as zero-shot judges that output a scalar safety score in [0,1] across audio-only, transcription-only, or multimodal inputs, along with a transcription-only LLaMA baseline. We measure the judges' sensitivity to detecting unsafe content, the specificity in ordering severity levels, and the stability of the score in dialogue turns. Results reveal architecture- and modality-dependent trade-offs: the most sensitive judge is also the least stable across turns, while stable configurations sacrifice detection of mild harmful content. Transcription quality is a key bottleneck: Whisper-Large may significantly reduce sensitivity for transcription-only modes, while largely preserving severity ordering. Audio becomes crucial when paralinguistic cues or transcription fidelity are category-critical. We summarize all findings and provide actionable guidance for practitioners.",
+    "paper_abstract_zh": "与语音代理之间及语音代理的口语对话日益普遍，然而对其社会有害内容（如暴力、骚扰和仇恨）的评估仍以文本为中心，未能考虑音频特定线索和转录错误。我们提出了LALM-as-a-Judge，这是第一个将大型音频语言模型（LALMs）作为多轮口语对话安全裁判的受控基准和系统性研究。我们生成了24,000个不安全的合成英语口语对话，每个对话包含3-10轮，其中一轮包含8种有害类别（如暴力）之一的内容，并分为5个等级，从非常轻微到严重。在160个对话中，5名人类评估者确认了不安全检测的可靠性和有意义的严重性等级。我们基准测试了三个开源LALMs：Qwen2-Audio、Audio Flamingo 3和MERaLiON，作为仅音频、仅转录或多模态输入的零样本裁判，输出[0,1]范围内的标量安全分数，并设置了一个仅转录的LLaMA基线。我们测量了裁判检测不安全内容的敏感性、严重性等级排序的特异性以及对话轮次间分数的稳定性。结果揭示了架构和模态相关的权衡：最敏感的裁判在轮次间最不稳定，而稳定的配置则牺牲了对轻微有害内容的检测。转录质量是一个关键瓶颈：Whisper-Large可能会显著降低仅转录模式的敏感性，同时基本保持严重性排序。当副语言线索或转录保真度对类别至关重要时，音频变得至关重要。我们总结了所有发现并为从业者提供了可行的指导。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Amir Ivry, Shinji Watanabe",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Decoding Ambiguous Emotions with Test-Time Scaling in Audio-Language Models",
+    "paper_title_zh": "使用测试时缩放解码音频语言模型中的模糊情感",
+    "paper_id": "2602.03873",
+    "paper_abstract": "Emotion recognition from human speech is a critical enabler for socially aware conversational AI. However, while most prior work frames emotion recognition as a categorical classification problem, real-world affective states are often ambiguous, overlapping, and context-dependent, posing significant challenges for both annotation and automatic modeling. Recent large-scale audio language models (ALMs) offer new opportunities for nuanced affective reasoning without explicit emotion supervision, but their capacity to handle ambiguous emotions remains underexplored. At the same time, advances in inference-time techniques such as test-time scaling (TTS) have shown promise for improving generalization and adaptability in hard NLP tasks, but their relevance to affective computing is still largely unknown. In this work, we introduce the first benchmark for ambiguous emotion recognition in speech with ALMs under test-time scaling. Our evaluation systematically compares eight state-of-the-art ALMs and five TTS strategies across three prominent speech emotion datasets. We further provide an in-depth analysis of the interaction between model capacity, TTS, and affective ambiguity, offering new insights into the computational and representational challenges of ambiguous emotion understanding. Our benchmark establishes a foundation for developing more robust, context-aware, and emotionally intelligent speech-based AI systems, and highlights key future directions for bridging the gap between model assumptions and the complexity of real-world human emotion.",
+    "paper_abstract_zh": "从人类语音中识别情感是社交感知对话AI的关键使能技术。然而，尽管大多数先前工作将情感识别视为分类问题，但现实世界中的情感状态通常是模糊的、重叠的且依赖于上下文，这给标注和自动建模带来了重大挑战。最近的大规模音频语言模型（ALMs）为无需显式情感监督的细致情感推理提供了新机会，但它们处理模糊情感的能力仍未得到充分探索。与此同时，推理时技术（如测试时缩放（TTS））的进步已在困难的NLP任务中显示出提高泛化能力和适应性的潜力，但它们在情感计算中的相关性仍 largely 未知。在这项工作中，我们首次引入了在测试时缩放下使用ALMs进行语音模糊情感识别的基准。我们的评估系统性地比较了八个最先进的ALMs和五种TTS策略在三个 prominent 语音情感数据集上的表现。我们进一步深入分析了模型容量、TTS和情感模糊性之间的相互作用，为模糊情感理解的计算和表示挑战提供了新的见解。我们的基准为开发更鲁棒、上下文感知和情感智能的基于语音的AI系统奠定了基础，并强调了弥合模型假设与人类情感复杂性之间差距的关键未来方向。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Hong Jia, Weibin Li, Jingyao Wu, Xiaofeng Yu, Yan Gao, Jintao Cheng, Xiaoyu Tang, Feng Xia, Ting Dang",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Audit After Segmentation: Reference-Free Mask Quality Assessment for Language-Referred Audio-Visual Segmentation",
+    "paper_title_zh": "分割后审计：语言参考音频视觉分割的无参考掩码质量评估",
+    "paper_id": "2602.03892",
+    "paper_abstract": "Language-referred audio-visual segmentation (Ref-AVS) aims to segment target objects described by natural language by jointly reasoning over video, audio, and text. Beyond generating segmentation masks, providing rich and interpretable diagnoses of mask quality remains largely underexplored. In this work, we introduce Mask Quality Assessment in the Ref-AVS context (MQA-RefAVS), a new task that evaluates the quality of candidate segmentation masks without relying on ground-truth annotations as references at inference time. Given audio-visual-language inputs and each provided segmentation mask, the task requires estimating its IoU with the unobserved ground truth, identifying the corresponding error type, and recommending an actionable quality-control decision. To support this task, we construct MQ-RAVSBench, a benchmark featuring diverse and representative mask error modes that span both geometric and semantic issues. We further propose MQ-Auditor, a multimodal large language model (MLLM)-based auditor that explicitly reasons over multimodal cues and mask information to produce quantitative and qualitative mask quality assessments. Extensive experiments demonstrate that MQ-Auditor outperforms strong open-source and commercial MLLMs and can be integrated with existing Ref-AVS systems to detect segmentation failures and support downstream segmentation improvement. Data and codes will be released at this https URL.",
+    "paper_abstract_zh": "语言参考音频视觉分割(Ref-AVS)旨在通过联合推理视频、音频和文本来分割由自然语言描述的目标对象。除了生成分割掩码外，提供丰富且可解释的掩码质量诊断在很大程度上仍未被探索。在这项工作中，我们引入了Ref-AVS背景下的掩码质量评估(MQA-RefAVS)，这是一个新任务，用于评估候选分割掩码的质量，而在推理时不依赖真实标注作为参考。给定音频视觉语言输入和每个提供的分割掩码，该任务需要估计其与未观察到的真实值的IoU，识别相应的错误类型，并推荐可行的质量控制决策。为支持此任务，我们构建了MQ-RAVSBench基准，该基准包含多样且有代表性的掩码错误模式，涵盖几何和语义问题。我们进一步提出了MQ-Auditor，这是一个基于多模态大语言模型(MLLM)的审计器，它明确推理多模态线索和掩码信息，以产生定量和定性的掩码质量评估。大量实验表明，MQ-Auditor优于强大的开源和商业MLLM，并且可以与现有的Ref-AVS系统集成，以检测分割失败并支持下游分割改进。数据和代码将在此https URL发布。",
+    "subjects": [
+      "Multimedia (cs.MM)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)",
+      "Computer Vision and Pattern Recognition (cs.CV)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Jinxing Zhou, Yanghao Zhou, Yaoting Wang, Zongyan Han, Jiaqi Ma, Henghui Ding, Rao Muhammad Anwer, Hisham Cholakkal",
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Image&Video"
+    ]
+  },
+  {
+    "paper_title": "Frontend Token Enhancement for Token-Based Speech Recognition",
+    "paper_title_zh": "基于语音识别的令牌前端增强",
+    "paper_id": "2602.04217",
+    "paper_abstract": "Discretized representations of speech signals are efficient alternatives to continuous features for various speech applications, including automatic speech recognition (ASR) and speech language models. However, these representations, such as semantic or phonetic tokens derived from clustering outputs of self-supervised learning (SSL) speech models, are susceptible to environmental noise, which can degrade backend task performance. In this work, we introduce a frontend system that estimates clean speech tokens from noisy speech and evaluate it on an ASR backend using semantic tokens. We consider four types of enhancement models based on their input/output domains: wave-to-wave, token-to-token, continuous SSL features-to-token, and wave-to-token. These models are trained independently of ASR backends. Experiments on the CHiME-4 dataset demonstrate that wave-to-token enhancement achieves the best performance among the frontends. Moreover, it mostly outperforms the ASR system based on continuous SSL features.",
+    "paper_abstract_zh": "语音信号的离散表示是各种语音应用（包括自动语音识别（ASR）和语音语言模型）中连续特征的有效替代方案。然而，这些表示（例如，来自自监督学习（SSL）语音模型聚类输出的语义或音素令牌）容易受到环境噪声的影响，这可能会降低后端任务性能。在这项工作中，我们引入了一个前端系统，用于从嘈杂语音中估计干净语音令牌，并使用语义令牌在ASR后端上对其进行评估。我们考虑了四种基于输入/输出域的增强模型：波形到波形、令牌到令牌、连续SSL特征到令牌以及波形到令牌。这些模型的训练独立于ASR后端。在CHiME-4数据集上的实验表明，波形到令牌的增强在前端中实现了最佳性能。此外，它通常优于基于连续SSL特征的ASR系统。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Takanori Ashihara, Shota Horiguchi, Kohei Matsuura, Tsubasa Ochiai, Marc Delcroix",
+    "topic": [
+      "Speech Recognition",
+      "Speech Enhancement",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speaker-Aware Simulation Improves Conversational Speech Recognition",
+    "paper_title_zh": "说话人感知模拟提升对话语音识别",
+    "paper_id": "2602.04776",
+    "paper_abstract": "Automatic speech recognition (ASR) for conversational speech remains challenging due to the limited availability of large-scale, well-annotated multi-speaker dialogue data and the complex temporal dynamics of natural interactions. Speaker-aware simulated conversations (SASC) offer an effective data augmentation strategy by transforming single-speaker recordings into realistic multi-speaker dialogues. However, prior work has primarily focused on English data, leaving questions about the applicability to lower-resource languages. In this paper, we adapt and implement the SASC framework for Hungarian conversational ASR. We further propose C-SASC, an extended variant that incorporates pause modeling conditioned on utterance duration, enabling a more faithful representation of local temporal dependencies observed in human conversation while retaining the simplicity and efficiency of the original approach. We generate synthetic Hungarian dialogues from the BEA-Large corpus and combine them with real conversational data for ASR training. Both SASC and C-SASC are evaluated extensively under a wide range of simulation configurations, using conversational statistics derived from CallHome, BEA-Dialogue, and GRASS corpora. Experimental results show that speaker-aware conversational simulation consistently improves recognition performance over naive concatenation-based augmentation. While the additional duration conditioning in C-SASC yields modest but systematic gains--most notably in character-level error rates--its effectiveness depends on the match between source conversational statistics and the target domain. Overall, our findings confirm the robustness of speaker-aware conversational simulation for Hungarian ASR and highlight the benefits and limitations of increasingly detailed temporal modeling in synthetic dialogue generation.",
+    "paper_abstract_zh": "由于大规模、标注良好的多说话人对话数据有限以及自然交互中复杂的时间动态性，对话语音的自动语音识别(ASR)仍然具有挑战性。说话人感知模拟对话(SASC)通过将单说话人录音转换为真实的多说话人对话，提供了一种有效的数据增强策略。然而，先前的工作主要集中在英语数据上，使其在低资源语言中的适用性存疑。在本文中，我们为匈牙利对话ASR调整并实现了SASC框架。我们进一步提出了C-SASC，这是一种扩展变体，它结合了基于话语持续时间的停顿建模，能够在保留原始方法简单性和效率的同时，更忠实地表示人类对话中观察到的局部时间依赖性。我们从BEA-Large语料库生成了合成匈牙利对话，并将其与真实对话数据结合用于ASR训练。在从CallHome、BEA-Dialogue和GRASS语料库派生的对话统计数据的广泛模拟配置下，我们对SASC和C-SASC进行了全面评估。实验结果表明，与简单的基于连接的增强相比，说话人感知对话模拟持续提高了识别性能。虽然C-SASC中额外的持续时间 conditioning 带来了适度但系统的改进——最显著的是在字符级错误率方面——但其有效性取决于源对话统计与目标域之间的匹配度。总体而言，我们的研究结果证实了说话人感知对话模拟对匈牙利ASR的鲁棒性，并突显了在合成对话生成中日益详细的时间建模的益处和局限性。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Máté Gedeon, Péter Mihajlik",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "BASS: Benchmarking Audio LMs for Musical Structure and Semantic Reasoning",
+    "paper_title_zh": "BASS：用于音乐结构和语义推理的音频语言模型基准测试",
+    "paper_id": "2602.04085",
+    "paper_abstract": "Music understanding is a complex task that often requires reasoning over both structural and semantic elements of audio. We introduce BASS, designed to evaluate music understanding and reasoning in audio language models across four broad categories: structural segmentation, lyric transcription, musicological analysis, and artist collaboration. BASS comprises 2658 questions spanning 12 tasks, 1993 unique songs and covering over 138 hours of music from a wide range of genres and tracks, crafted to assess musicological knowledge and reasoning in real-world scenarios. We evaluate 14 open-source and frontier multimodal LMs, finding that even state-of-the-art models struggle on higher-level reasoning tasks such as structural segmentation and artist collaboration, while performing best on lyric transcription. Our analysis reveals that current models leverage linguistic priors effectively but remain limited in reasoning over musical structure, vocal, and musicological attributes. BASS provides an evaluation framework with widespread applications in music recommendation and search and has the potential to guide the development of audio LMs.",
+    "paper_abstract_zh": "音乐理解是一项复杂任务，通常需要对音频的结构和语义元素进行推理。我们介绍了BASS，旨在评估音频语言模型在音乐理解和推理方面的能力，涵盖四个广泛类别：结构分割、歌词转录、音乐分析和艺术家合作。BASS包含2658个问题，涵盖12个任务、1993首独特歌曲，覆盖超过138小时的音乐，涵盖广泛的流派和曲目，旨在评估现实场景中的音乐学知识和推理能力。我们评估了14个开源和前沿的多模态语言模型，发现即使最先进的模型在结构分割和艺术家合作等高级推理任务上也表现不佳，而在歌词转录方面表现最佳。我们的分析表明，当前模型能有效利用语言先验，但在推理音乐结构、声乐和音乐学属性方面仍然存在局限。BASS提供了一个评估框架，在音乐推荐和搜索中有广泛应用，并有潜力指导音频语言模型的发展。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Min Jang, Orevaoghene Ahia, Nazif Tamer, Sachin Kumar, Yulia Tsvetkov, Noah A. Smith",
+    "topic": [
+      "Music Information Retrieval",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "PFluxTTS: Hybrid Flow-Matching TTS with Robust Cross-Lingual Voice Cloning and Inference-Time Model Fusion",
+    "paper_title_zh": "",
+    "paper_id": "2602.04160",
+    "paper_abstract": "We present PFluxTTS, a hybrid text-to-speech system addressing three gaps in flow-matching TTS: the stability-naturalness trade-off, weak cross-lingual voice cloning, and limited audio quality from low-rate mel features. Our contributions are: (1) a dual-decoder design combining duration-guided and alignment-free models through inference-time vector-field fusion; (2) robust cloning using a sequence of speech-prompt embeddings in a FLUX-based decoder, preserving speaker traits across languages without prompt transcripts; and (3) a modified PeriodWave vocoder with super-resolution to 48 kHz. On cross-lingual in-the-wild data, PFluxTTS clearly outperforms F5-TTS, FishSpeech, and SparkTTS, matches ChatterBox in naturalness (MOS 4.11) while achieving 23% lower WER (6.9% vs. 9.0%), and surpasses ElevenLabs in speaker similarity (+0.32 SMOS). The system remains robust in challenging scenarios where most open-source models fail, while requiring only short reference audio and no extra training. Audio demos are available at this https URL",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Vikentii Pankov, Artem Gribul, Oktai Tatanov, Vladislav Proskurov, Yuliya Korotkova, Darima Mylzenova, Dmitrii Vypirailenko",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "HoliAntiSpoof: Audio LLM for Holistic Speech Anti-Spoofing",
+    "paper_title_zh": "HoliAntiSpoof: 用于整体语音反欺骗的音频大语言模型",
+    "paper_id": "2602.04535",
+    "paper_abstract": "Recent advances in speech synthesis and editing have made speech spoofing increasingly challenging. However, most existing methods treat spoofing as binary classification, overlooking that diverse spoofing techniques manipulate multiple, coupled speech attributes and their semantic effects. In this paper, we introduce HoliAntiSpoof, the first audio large language model (ALLM) framework for holistic speech anti-spoofing analysis. HoliAntiSpoof reformulates spoofing analysis as a unified text generation task, enabling joint reasoning over spoofing methods, affected speech attributes, and their semantic impacts. To support semantic-level analysis, we introduce DailyTalkEdit, a new anti-spoofing benchmark that simulates realistic conversational manipulations and provides annotations of semantic influence. Extensive experiments demonstrate that HoliAntiSpoof outperforms conventional baselines across multiple settings, while preliminary results show that in-context learning further improves out-of-domain generalization. These findings indicate that ALLMs not only enhance speech spoofing detection performance but also enable interpretable analysis of spoofing behaviors and their semantic effects, pointing towards more trustworthy and explainable speech security. Data and code are publicly available.",
+    "paper_abstract_zh": "最近语音合成和编辑的进展使得语音欺骗变得越来越具有挑战性。然而，大多数现有方法将欺骗视为二元分类问题，忽略了多样化的欺骗技术会同时操控多个相互关联的语音属性及其语义效应。在本文中，我们介绍了HoliAntiSpoof，这是首个用于整体语音反欺骗分析的音频大语言模型（ALLM）框架。HoliAntiSpoof将欺骗分析重新表述为一个统一的文本生成任务，能够对欺骗方法、受影响的语音属性及其语义影响进行联合推理。为了支持语义级别的分析，我们引入了DailyTalkEdit，这是一个新的反欺骗基准，它模拟了真实的对话操纵，并提供了语义影响的标注。大量实验表明，HoliAntiSpoof在多种设置下优于传统基线，而初步结果显示，上下文学习进一步提高了跨域泛化能力。这些发现表明，ALLM不仅提升了语音欺骗检测性能，还使得对欺骗行为及其语义效应的可解释分析成为可能，朝着更可信和可解释的语音安全方向发展。数据和代码已公开可用。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Xuenan Xu, Yiming Ren, Liwei Liu, Wen Wu, Baoxiang Li, Chaochao Lu, Shuai Wang, Chao Zhang",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Audio ControlNet for Fine-Grained Audio Generation and Editing",
+    "paper_title_zh": "用于细粒度音频生成和编辑的音频ControlNet",
+    "paper_id": "2602.04680",
+    "paper_abstract": "We study the fine-grained text-to-audio (T2A) generation task. While recent models can synthesize high-quality audio from text descriptions, they often lack precise control over attributes such as loudness, pitch, and sound events. Unlike prior approaches that retrain models for specific control types, we propose to train ControlNet models on top of pre-trained T2A backbones to achieve controllable generation over loudness, pitch, and event roll. We introduce two designs, T2A-ControlNet and T2A-Adapter, and show that the T2A-Adapter model offers a more efficient structure with strong control ability. With only 38M additional parameters, T2A-Adapter achieves state-of-the-art performance on the AudioSet-Strong in both event-level and segment-level F1 scores. We further extend this framework to audio editing, proposing T2A-Editor for removing and inserting audio events at time locations specified by instructions. Models, code, dataset pipelines, and benchmarks will be released to support future research on controllable audio generation and editing.",
+    "paper_abstract_zh": "我们研究了细粒度的文本到音频（T2A）生成任务。虽然最近的模型可以根据文本描述合成高质量音频，但它们通常对响度、音高和声音事件等属性缺乏精确控制。与之前为特定控制类型重新训练模型的方法不同，我们提出在预训练的T2A主干网络上训练ControlNet模型，以实现对响度、音高和事件轨迹的可控生成。我们介绍了两种设计：T2A-ControlNet和T2A-Adapter，并证明T2A-Adapter模型提供了更高效的结构，同时具有强大的控制能力。仅需额外3800万参数，T2A-Adapter在AudioSet-Strong上的事件级和段落级F1分数上均取得了最先进的性能。我们进一步将此框架扩展到音频编辑，提出了T2A-Editor，用于根据指令在指定时间位置移除和插入音频事件。我们将发布模型、代码、数据集流程和基准，以支持未来对可控音频生成和编辑的研究。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)",
+      "Computation and Language (cs.CL)",
+      "Multimedia (cs.MM)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Haina Zhu, Yao Xiao, Xiquan Li, Ziyang Ma, Jianwei Yu, Bowen Zhang, Mingqi Yang, Xie Chen",
+    "topic": [
+      "Audio Representation Learning",
+      "Music Generation",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
+    "paper_title_zh": "UniAudio 2.0: 一种具有文本对齐分解音频令牌化的统一音频语言模型",
+    "paper_id": "2602.04683",
+    "paper_abstract": "We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens, which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical generation, and (ii) reconstruction tokens, which encode semantic-rich acoustic cues for high-fidelity waveform reconstruction. This design achieves understanding performance comparable to strong continuous representations while improving generation quality and reconstruction fidelity over prior discrete tokenizers. Second, we introduce a unified autoregressive architecture for text and audio, together with multi-stage training and multi-task data construction. Using this framework, we train UniAudio 2.0 on 100B text tokens and 60B audio tokens. Across a wide range of speech, sound, and music tasks, UniAudio 2.0 performs competitively on in-domain evaluations and demonstrates strong few-shot and zero-shot generalization to unseen tasks. Demo, code, and checkpoints will be available at \\href{this https URL}{this https URL}.",
+    "paper_abstract_zh": "我们研究了音频语言模型中的两个基础问题：(1) 如何设计一种音频令牌化器，能够作为理解和生成的中间表示；(2) 如何构建一个在少样本和零样本设置下具有泛化能力的音频基础模型，类似于大型语言模型。为此，我们做出了以下两项贡献。首先，我们提出了ReasoningCodec，一种离散音频编解码器，将音频分解为(i)推理令牌，它们编码文本对齐的高层次分析和规划表示，用于音频理解和分层生成；(ii)重建令牌，它们编码语义丰富的声学线索，用于高保真波形重建。这种设计实现了与强连续表示相当的理解性能，同时优于先前的离散令牌化器的生成质量和重建保真度。其次，我们引入了一种用于文本和音频的统一自回归架构，以及多阶段训练和多任务数据构建。使用此框架，我们在100B文本令牌和60B音频令牌上训练了UniAudio 2.0。在广泛的语音、声音和音乐任务中，UniAudio 2.0在领域内评估中表现具有竞争力，并展现出对未见任务的强大少样本和零样本泛化能力。演示、代码和检查点将在提供的URL上提供。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Dongchao Yang, Yuanyuan Wang, Dading Chong, Songxiang Liu, Xixin Wu, Helen Meng",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Codec",
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Music Generation"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Fine-Grained Frame Modeling in Multi-head Self-Attention for Speech Deepfake Detection",
+    "paper_title_zh": "",
+    "paper_id": "2602.04702",
+    "paper_abstract": "Transformer-based models have shown strong performance in speech deepfake detection, largely due to the effectiveness of the multi-head self-attention (MHSA) mechanism. MHSA provides frame-level attention scores, which are particularly valuable because deepfake artifacts often occur in small, localized regions along the temporal dimension of speech. This makes fine-grained frame modeling essential for accurately detecting subtle spoofing cues. In this work, we propose fine-grained frame modeling (FGFM) for MHSA-based speech deepfake detection, where the most informative frames are first selected through a multi-head voting (MHV) module. These selected frames are then refined via a cross-layer refinement (CLR) module to enhance the model's ability to learn subtle spoofing cues. Experimental results demonstrate that our method outperforms the baseline model and achieves Equal Error Rate (EER) of 0.90%, 1.88%, and 6.64% on the LA21, DF21, and ITW datasets, respectively. These consistent improvements across multiple benchmarks highlight the effectiveness of our fine-grained modeling for robust speech deepfake detection.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Tuan Dat Phuong, Duc-Tuan Truong, Long-Vu Hoang, Trang Nguyen Thi Thu",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "DementiaBank-Emotion: A Multi-Rater Emotion Annotation Corpus for Alzheimer's Disease Speech (Version 1.0)",
+    "paper_title_zh": "DementiaBank-Emotion：一个针对阿尔茨海默病言语的多评分者情感标注语料库（版本1.0）",
+    "paper_id": "2602.04247",
+    "paper_abstract": "We present DementiaBank-Emotion, the first multi-rater emotion annotation corpus for Alzheimer's disease (AD) speech. Annotating 1,492 utterances from 108 speakers for Ekman's six basic emotions and neutral, we find that AD patients express significantly more non-neutral emotions (16.9%) than healthy controls (5.7%; p < .001). Exploratory acoustic analysis suggests a possible dissociation: control speakers showed substantial F0 modulation for sadness (Delta = -3.45 semitones from baseline), whereas AD speakers showed minimal change (Delta = +0.11 semitones; interaction p = .023), though this finding is based on limited samples (sadness: n=5 control, n=15 AD) and requires replication. Within AD speech, loudness differentiates emotion categories, indicating partially preserved emotion-prosody mappings. We release the corpus, annotation guidelines, and calibration workshop materials to support research on emotion recognition in clinical populations.",
+    "paper_abstract_zh": "我们提出了DementiaBank-Emotion，这是首个针对阿尔茨海默病（AD）言语的多评分者情感标注语料库。我们对108名说话者的1492个语句进行了Ekman六种基本情感和中性情感的标注，发现AD患者表达的非中性情感（16.9%）显著多于健康对照组（5.7%；p < .001）。探索性声学分析表明可能存在分离现象：对照组说话者在悲伤情绪中表现出显著的基频调制（与基线相比变化-3.45半音），而AD组说话者变化最小（与基线相比变化+0.11半音；交互作用p = .023），尽管这一发现基于有限的样本（悲伤：对照组n=5，AD组n=15），需要进一步验证。在AD言语中，响度能够区分情感类别，表明部分情感-韵律映射得以保留。我们发布了语料库、标注指南和校准研讨会材料，以支持临床人群情感识别的研究。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-05",
+    "paper_authors": "Cheonkam Jeong, Jessica Liao, Audrey Lu, Yutong Song, Christopher Rashidian, Donna Krogh, Erik Krogh, Mahkameh Rasouli, Jung-Ah Lee, Nikil Dutt, Lisa M Gibbs, David Sultzer, Julie Rousseau, Jocelyn Ludlow, Margaret Galvez, Alexander Nuth, Chet Khay, Sabine Brunswicker, Adeline Nyamathi",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Speech"
+    ]
+  }
+]
