@@ -1,0 +1,263 @@
+[
+  {
+    "paper_title": "ARCHI-TTS: A flow-matching-based Text-to-Speech Model with Self-supervised Semantic Aligner and Accelerated Inference",
+    "paper_title_zh": "ARCHI-TTS: 一种基于流匹配的文本转语音模型，具有自监督语义对齐器和加速推理",
+    "paper_id": "2602.05207",
+    "paper_abstract": "Although diffusion-based, non-autoregressive text-to-speech (TTS) systems have demonstrated impressive zero-shot synthesis capabilities, their efficacy is still hindered by two key challenges: the difficulty of text-speech alignment modeling and the high computational overhead of the iterative denoising process. To address these limitations, we propose ARCHI-TTS that features a dedicated semantic aligner to ensure robust temporal and semantic consistency between text and audio. To overcome high computational inference costs, ARCHI-TTS employs an efficient inference strategy that reuses encoder features across denoising steps, drastically accelerating synthesis without performance degradation. An auxiliary CTC loss applied to the condition encoder further enhances the semantic understanding. Experimental results demonstrate that ARCHI-TTS achieves a WER of 1.98% on LibriSpeech-PC test-clean, and 1.47%/1.42% on SeedTTS test-en/test-zh with a high inference efficiency, consistently outperforming recent state-of-the-art TTS systems.",
+    "paper_abstract_zh": "尽管基于扩散的非自回归文本转语音(TTS)系统已经展示了令人印象深刻的零样本合成能力，但其功效仍受到两个关键挑战的阻碍：文本-语音对齐建模的困难以及迭代去噪过程的高计算开销。为了解决这些局限性，我们提出了ARCHI-TTS，它配备了专门的语义对齐器，以确保文本和音频之间的鲁棒时间一致性和语义一致性。为了克服高计算推理成本，ARCHI-TTS采用了一种高效的推理策略，该策略在去噪步骤中重用编码器特征，极大地加速了合成而不会降低性能。应用于条件编码器的辅助CTC损失进一步增强了语义理解。实验结果表明，ARCHI-TTS在LibriSpeech-PC test-clean上实现了1.98%的词错误率(WER)，在SeedTTS test-en/test-zh上分别实现了1.47%/1.42%的WER，并且具有高推理效率，持续优于最近的最新TTS系统。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Chunyat Wu, Jiajun Deng, Zhengxi Liu, Zheqi Dai, Haolin He, Qiuqiang Kong",
+    "topic": [
+      "Speech Synthesis",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Exterior sound field estimation based on physics-constrained kernel",
+    "paper_title_zh": "基于物理约束核的外部声场估计",
+    "paper_id": "2602.05236",
+    "paper_abstract": "Exterior sound field interpolation is a challenging problem that often requires specific array configurations and prior knowledge on the source conditions. We propose an interpolation method based on Gaussian processes using a point source reproducing kernel with a trainable inner product formulation made to fit exterior sound fields. While this estimation does not have a closed formula, it allows for the definition of a flexible estimator that is not restricted by microphone distribution and attenuates higher harmonic orders automatically with parameters directly optimized from the recordings, meaning an arbitrary distribution of microphones can be used. The proposed kernel estimator is compared in simulated experiments to the conventional method using spherical wave functions and an established physics-informed machine learning model, achieving lower interpolation error by approximately 2 dB on average within the analyzed frequencies of 100 Hz and 2.5 kHz and reconstructing the ground truth sound field more consistently within the target region.",
+    "paper_abstract_zh": "外部声场插值是一个具有挑战性的问题，通常需要特定的阵列配置和关于源条件的先验知识。我们提出了一种基于高斯过程的插值方法，使用点源 reproducing 核，其内积形式经过训练以适应外部声场。虽然这种估计没有封闭公式，但它允许定义一个灵活的估计器，不受麦克风分布限制，并能自动衰减高阶谐波，参数直接从录音中优化，这意味着可以使用任意分布的麦克风。在模拟实验中，我们将所提出的核估计器与使用球面波函数的传统方法和已建立的物理信息机器学习模型进行了比较，在100 Hz至2.5 kHz的分析频率范围内，平均降低了约2 dB的插值误差，并在目标区域内更一致地重建了真实声场。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Juliano G. C. Ribeiro, Ryo Matsuda, Jorge Trevino",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Wave-Trainer-Fit: Neural Vocoder with Trainable Prior and Fixed-Point Iteration towards High-Quality Speech Generation from SSL features",
+    "paper_title_zh": "Wave-Trainer-Fit: 具有可训练先验和定点迭代的神经声码器，用于从SSL特征生成高质量语音",
+    "paper_id": "2602.05443",
+    "paper_abstract": "We propose WaveTrainerFit, a neural vocoder that performs high-quality waveform generation from data-driven features such as SSL features. WaveTrainerFit builds upon the WaveFit vocoder, which integrates diffusion model and generative adversarial network. Furthermore, the proposed method incorporates the following key improvements: 1. By introducing trainable priors, the inference process starts from noise close to the target speech instead of Gaussian noise. 2. Reference-aware gain adjustment is performed by imposing constraints on the trainable prior to matching the speech energy. These improvements are expected to reduce the complexity of waveform modeling from data-driven features, enabling high-quality waveform generation with fewer inference steps. Through experiments, we showed that WaveTrainerFit can generate highly natural waveforms with improved speaker similarity from data-driven features, while requiring fewer iterations than WaveFit. Moreover, we showed that the proposed method works robustly with respect to the depth at which SSL features are extracted. Code and pre-trained models are available from this https URL.",
+    "paper_abstract_zh": "我们提出了WaveTrainerFit，一种神经声码器，能够从数据驱动的特征（如SSL特征）执行高质量波形生成。WaveTrainerFit基于WaveFit声码器构建，该声码器集成了扩散模型和生成对抗网络。此外，所提出的方法包含以下关键改进：1. 通过引入可训练先验，推理过程从接近目标语音的噪声而非高斯噪声开始。2. 通过对可训练先验施加约束以匹配语音能量，执行参考感知增益调整。这些改进预计将减少从数据驱动特征进行波形建模的复杂性，从而实现更少推理步骤的高质量波形生成。通过实验，我们展示了WaveTrainerFit能够从数据驱动特征生成高度自然的波形，同时提高说话人相似性，并且比WaveFit需要更少的迭代次数。此外，我们证明了所提出的方法在SSL特征提取的深度方面具有鲁棒性。代码和预训练模型可从提供的https URL获取。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Hien Ohnaka, Yuma Shirahata, Masaya Kawamura",
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Zero-Shot TTS With Enhanced Audio Prompts: Bsc Submission For The 2026 Wildspoof Challenge TTS Track",
+    "paper_title_zh": "",
+    "paper_id": "2602.05770",
+    "paper_abstract": "We evaluate two non-autoregressive architectures, StyleTTS2 and F5-TTS, to address the spontaneous nature of in-the-wild speech. Our models utilize flexible duration modeling to improve prosodic naturalness. To handle acoustic noise, we implement a multi-stage enhancement pipeline using the Sidon model, which significantly outperforms standard Demucs in signal quality. Experimental results show that finetuning enhanced audios yields superior robustness, achieving up to 4.21 UTMOS and 3.47 DNSMOS. Furthermore, we analyze the impact of reference prompt quality and length on zero-shot synthesis performance, demonstrating the effectiveness of our approach for realistic speech generation.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Jose Giraldo, Alex Peiró-Lilja, Rodolfo Zevallos, Cristina España-Bonet",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Phase-Only Positioning in Distributed MIMO Under Phase Impairments: AP Selection Using Deep Learning",
+    "paper_title_zh": "",
+    "paper_id": "2602.05034",
+    "paper_abstract": "Carrier phase positioning (CPP) can enable cm-level accuracy in next-generation wireless systems, while recent literature shows that accuracy remains high using phase-only measurements in distributed MIMO (D-MIMO). However, the impact of phase synchronization errors on such systems remains insufficiently explored. To address this gap, we first show that the proposed hyperbola intersection method achieves highly accurate positioning even in the presence of phase synchronization errors, when trained on appropriate data reflecting such impairments. We then introduce a deep learning (DL)-based D-MIMO antenna point (AP) selection framework that ensures high-precision localization under phase synchronization errors. Simulation results show that the proposed framework improves positioning accuracy compared to prior-art methods, while reducing inference complexity by approximately 19.7%.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Fatih Ayten, Musa Furkan Keskin, Akshay Jain, Mehmet C. Ilter, Ossi Kaltiokallio, Jukka Talvitie, Elena Simona Lohan, Mikko Valkama",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "HyperPotter: Spell the Charm of High-Order Interactions in Audio Deepfake Detection",
+    "paper_title_zh": "HyperPotter：施展高阶交互在音频深度伪造检测中的魔力",
+    "paper_id": "2602.05670",
+    "paper_abstract": "Advances in AIGC technologies have enabled the synthesis of highly realistic audio deepfakes capable of deceiving human auditory perception. Although numerous audio deepfake detection (ADD) methods have been developed, most rely on local temporal/spectral features or pairwise relations, overlooking high-order interactions (HOIs). HOIs capture discriminative patterns that emerge from multiple feature components beyond their individual contributions. We propose HyperPotter, a hypergraph-based framework that explicitly models these synergistic HOIs through clustering-based hyperedges with class-aware prototype initialization. Extensive experiments demonstrate that HyperPotter surpasses its baseline by an average relative gain of 22.15% across 11 datasets and outperforms state-of-the-art methods by 13.96% on 4 challenging cross-domain datasets, demonstrating superior generalization to diverse attacks and speakers.",
+    "paper_abstract_zh": "AIGC技术的进步使得合成高度逼真的音频深度伪造成为可能，能够欺骗人类的听觉感知。尽管已经开发了许多音频深度伪造检测（ADD）方法，但大多数方法依赖于局部时间/频谱特征或成对关系，忽略了高阶交互（HOIs）。HOIs捕捉由多个特征组件产生的、超出其个体贡献的判别性模式。我们提出了HyperPotter，这是一个基于超图的框架，通过带有类感知原型初始化的基于聚类的超边来显式建模这些协同HOIs。大量实验表明，HyperPotter在11个数据集上以22.15%的平均相对增益超越了其基线，并在4个具有挑战性的跨域数据集上以13.96%的优势优于最先进的方法，展示了对各种攻击和说话者的卓越泛化能力。",
+    "subjects": [
+      "Artificial Intelligence (cs.AI)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Qing Wen, Haohao Li, Zhongjie Ba, Peng Cheng, Miao He, Li Lu, Kui Ren",
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "AudioSAE: Towards Understanding of Audio-Processing Models with Sparse AutoEncoders",
+    "paper_title_zh": "AudioSAE：使用稀疏自编码器理解音频处理模型",
+    "paper_id": "2602.05027",
+    "paper_abstract": "Sparse Autoencoders (SAEs) are powerful tools for interpreting neural representations, yet their use in audio remains underexplored. We train SAEs across all encoder layers of Whisper and HuBERT, provide an extensive evaluation of their stability, interpretability, and show their practical utility. Over 50% of the features remain consistent across random seeds, and reconstruction quality is preserved. SAE features capture general acoustic and semantic information as well as specific events, including environmental noises and paralinguistic sounds (e.g. laughter, whispering) and disentangle them effectively, requiring removal of only 19-27% of features to erase a concept. Feature steering reduces Whisper's false speech detections by 70% with negligible WER increase, demonstrating real-world applicability. Finally, we find SAE features correlated with human EEG activity during speech perception, indicating alignment with human neural processing. The code and checkpoints are available at this https URL.",
+    "paper_abstract_zh": "稀疏自编码器（SAEs）是解释神经表示的强大工具，但在音频领域的应用仍探索不足。我们在Whisper和HuBERT的所有编码器层上训练SAEs，对其稳定性、可解释性进行了广泛评估，并展示了其实用性。超过50%的特征在不同随机种子下保持一致，且重建质量得以保留。SAE特征捕捉了通用的声学和语义信息以及特定事件，包括环境噪声和副语言声音（如笑声、耳语），并能有效分离它们，只需移除19-27%的特征即可消除一个概念。通过特征引导，Whisper的错误语音检测减少了70%，同时词错误率（WER） negligible增加，证明了其实际应用价值。最后，我们发现SAE特征与人类语音感知过程中的脑电图（EEG）活动相关，表明其与人类神经处理的一致性。代码和模型检查点可在提供的URL获取。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Georgii Aparin, Tasnima Sadekova, Alexey Rukhovich, Assel Yermekova, Laida Kushnareva, Vadim Popov, Kristian Kuznetsov, Irina Piontkovskaya",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Speech-XL: Towards Long-Form Speech Understanding in Large Speech Language Models",
+    "paper_title_zh": "Speech-XL: 走向大型语音语言模型中的长语音理解",
+    "paper_id": "2602.05373",
+    "paper_abstract": "Despite the growing success of Large Speech Language Models (LSLMs) in processing short-term acoustic signals, their extension to long-form audio understanding is severely bottlenecked. This limitation stems from the limited context length and the exorbitant memory footprints required for long-form inference. In this work, we propose Speech-XL, a new model that capitalizes on the intrinsic key-value (KV) sparsification capacity of Large Language Models (LLMs) to achieve high-ratio speech input compression. Specifically, we introduce a novel special token, the Speech Summarization Token (SST), for each speech interval to encapsulate the intra-interval speech information into its associated KV pairs. The SST module is trained via instruction fine-tuning, employing a curriculum learning strategy where the SST learns to compress information in a progressive manner--advancing from low-ratio (simple) to high-ratio (challenging) compression. Despite utilizing significantly less training data than other baselines, our model achieves highly competitive performance on major benchmarks, including LongSpeech and AUDIOMARATHON. By addressing the long-standing bottlenecks in long-form audio modeling, our approach offers a novel perspective on the condensation of extensive acoustic sequences.",
+    "paper_abstract_zh": "尽管大型语音语言模型(LSLMs)在处理短期声学信号方面取得了日益成功的进展，但它们扩展到长音频理解却受到严重瓶颈的限制。这一限制源于有限的上下文长度以及长音频推理所需的巨大内存占用。在这项工作中，我们提出了Speech-XL，这是一种新型模型，它利用大型语言模型(LLMs)固有的键值(KV)稀疏化能力来实现高比例的语音输入压缩。具体而言，我们为每个语音区间引入了一种新颖的特殊标记——语音摘要标记(SST)，用于将区间内的语音信息封装到其关联的KV对中。SST模块通过指令微调进行训练，采用课程学习策略，使SST能够以渐进方式学习压缩信息——从低比例(简单)压缩逐步推进到高比例(挑战性)压缩。尽管使用的训练数据显著少于其他基线模型，我们的模型在LongSpeech和AUDIOMARATHON等主要基准测试上仍取得了极具竞争力的性能。通过解决长音频建模中长期存在的瓶颈，我们的方法为大规模声学序列的压缩提供了新的视角。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Haoqin Sun, Chenyang Lyu, Shiwan Zhao, Xuanfan Ni, Xiangyu Kong, Longyue Wang, Weihua Luo, Yong Qin",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Enabling Automatic Disordered Speech Recognition: An Impaired Speech Dataset in the Akan Language",
+    "paper_title_zh": "实现自动障碍语音识别：阿坎语障碍语音数据集",
+    "paper_id": "2602.05406",
+    "paper_abstract": "The lack of impaired speech data hinders advancements in the development of inclusive speech technologies, particularly in low-resource languages such as Akan. To address this gap, this study presents a curated corpus of speech samples from native Akan speakers with speech impairment. The dataset comprises of 50.01 hours of audio recordings cutting across four classes of impaired speech namely stammering, cerebral palsy, cleft palate, and stroke induced speech disorder. Recordings were done in controlled supervised environments were participants described pre-selected images in their own words. The resulting dataset is a collection of audio recordings, transcriptions, and associated metadata on speaker demographics, class of impairment, recording environment and device. The dataset is intended to support research in low-resource automatic disordered speech recognition systems and assistive speech technology.",
+    "paper_abstract_zh": "障碍语音数据的缺乏阻碍了包容性语音技术的发展，特别是在阿坎语等低资源语言中。为解决这一差距，本研究呈现了一个来自阿坎语母语障碍说话者的精选语音样本语料库。该数据集包含50.01小时的音频录音，涵盖四种障碍语音类别，即口吃、脑瘫、腭裂和卒中引起的语音障碍。录音在受控监督环境中进行，参与者用自己的话描述预先选择的图像。 resulting数据集是音频录音、转录文本及相关元数据的集合，包括说话人人口统计信息、障碍类别、录音环境和设备信息。该数据旨在支持低资源自动障碍语音识别系统和辅助语音技术的研究。",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Artificial Intelligence (cs.AI)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Isaac Wiafe, Akon Obu Ekpezu, Sumaya Ahmed Salihs, Elikem Doe Atsakpo, Fiifi Baffoe Payin Winful, Jamal-Deen Abdulai",
+    "topic": [
+      "Speech Recognition",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Instantaneous Spectra Analysis of Pulse Series - Application to Lung Sounds with Abnormalities",
+    "paper_title_zh": "脉冲序列的瞬时频谱分析 - 应用于异常肺音",
+    "paper_id": "2602.03680",
+    "paper_abstract": "The origin of the \"theoretical limit of time-frequency resolution of Fourier analysis\" is from its numerical implementation, especially from an assumption of \"Periodic Boundary Condition (PBC),\" which was introduced a century ago. We previously proposed to replace this condition with \"Linear eXtrapolation Condition (LXC),\" which does not require periodicity. This feature makes instantaneous spectra analysis of pulse series available, which replaces the short time Fourier transform (STFT). We applied the instantaneous spectra analysis to two lung sounds with abnormalities (crackles and wheezing) and to a normal lung sound, as a demonstration. Among them, crackles contains a random pulse series. The spectrum of each pulse is available, and the spectrogram of pulse series is available with assembling each spectrum. As a result, the time-frequency structure of given pulse series is visualized.",
+    "paper_abstract_zh": "傅里叶分析'时间-频率分辨率理论极限'的来源来自其数值实现，特别是来自一个世纪前引入的'周期边界条件(PBC)'假设。我们之前提出用'线性外推条件(LXC)'替代这一条件，该条件不需要周期性。这一特性使得脉冲序列的瞬时频谱分析成为可能，它取代了短时傅里叶变换(STFT)。我们将瞬时频谱分析应用于两种异常肺音(爆裂音和喘鸣音)和一种正常肺音作为演示。其中，爆裂音包含随机脉冲序列。每个脉冲的频谱都可以获得，通过组装每个频谱可以得到脉冲序列的语谱图。结果，给定脉冲序列的时间-频率结构被可视化。",
+    "subjects": [
+      "Physics and Society (physics.soc-ph)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Fumihiko Ishiyama",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "A$^2$-LLM: An End-to-end Conversational Audio Avatar Large Language Model",
+    "paper_title_zh": "",
+    "paper_id": "2602.04913",
+    "paper_abstract": "Developing expressive and responsive conversational digital humans is a cornerstone of next-generation human-computer interaction. While large language models (LLMs) have significantly enhanced dialogue capabilities, most current systems still rely on cascaded architectures that connect independent modules. These pipelines are often plagued by accumulated errors, high latency, and poor real-time performance. Lacking access to the underlying conversational context, these pipelines inherently prioritize rigid lip-sync over emotional depth. To address these challenges, we propose A$^2$-LLM, an end-to-end conversational audio avatar large language model that jointly reasons about language, audio prosody, and 3D facial motion within a unified framework. To facilitate training, we introduce FLAME-QA, a high-quality multimodal dataset designed to align semantic intent with expressive facial dynamics within a QA format. By leveraging deep semantic understanding, A$^2$-LLM generates emotionally rich facial movements beyond simple lip-synchronization. Experimental results demonstrate that our system achieves superior emotional expressiveness while maintaining real-time efficiency (500 ms latency, 0.7 RTF).",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Xiaolin Hu, Hang Yuan, Xinzhu Sang, Binbin Yan, Zhou Yu, Cong Huang, Kai Chen",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "CyIN: Cyclic Informative Latent Space for Bridging Complete and Incomplete Multimodal Learning",
+    "paper_title_zh": "CyIN：用于连接完整和不完整多模态学习的循环信息潜在空间",
+    "paper_id": "2602.04920",
+    "paper_abstract": "Multimodal machine learning, mimicking the human brain's ability to integrate various modalities has seen rapid growth. Most previous multimodal models are trained on perfectly paired multimodal input to reach optimal performance. In real-world deployments, however, the presence of modality is highly variable and unpredictable, causing the pre-trained models in suffering significant performance drops and fail to remain robust with dynamic missing modalities circumstances. In this paper, we present a novel Cyclic INformative Learning framework (CyIN) to bridge the gap between complete and incomplete multimodal learning. Specifically, we firstly build an informative latent space by adopting token- and label-level Information Bottleneck (IB) cyclically among various modalities. Capturing task-related features with variational approximation, the informative bottleneck latents are purified for more efficient cross-modal interaction and multimodal fusion. Moreover, to supplement the missing information caused by incomplete multimodal input, we propose cross-modal cyclic translation by reconstruct the missing modalities with the remained ones through forward and reverse propagation process. With the help of the extracted and reconstructed informative latents, CyIN succeeds in jointly optimizing complete and incomplete multimodal learning in one unified model. Extensive experiments on 4 multimodal datasets demonstrate the superior performance of our method in both complete and diverse incomplete scenarios.",
+    "paper_abstract_zh": "多模态机器学习模仿人类大脑整合多种模态的能力，近年来发展迅速。大多数先前的多模态模型在完全配对的多模态输入上进行训练以达到最佳性能。然而，在实际部署中，模态的存在具有高度可变性和不可预测性，导致预训练模型性能显著下降，无法在动态缺失模态的情况下保持鲁棒性。在本文中，我们提出了一种新颖的循环信息学习框架（CyIN），用于连接完整和不完整多模态学习之间的差距。具体而言，我们首先通过在各种模态间循环采用令牌级和标签级信息瓶颈（IB）来构建信息潜在空间。通过变分近似捕获任务相关特征，信息瓶颈潜在被净化，以实现更高效的跨模态交互和多模态融合。此外，为了补充不完整多模态输入导致的信息缺失，我们提出了跨模态循环翻译，通过正向和反向传播过程利用剩余模态重建缺失模态。借助提取和重建的信息潜在，CyIN成功地在统一模型中联合优化了完整和不完整多模态学习。在4个多模态数据集上的大量实验证明了我们的方法在完整和多样化不完整场景下的优越性能。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Ronghao Lin, Qiaolin He, Sijie Mai, Ying Zeng, Aolin Xiong, Li Huang, Yap-Peng Tan, Haifeng Hu",
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "Knowing When to Answer: Adaptive Confidence Refinement for Reliable Audio-Visual Question Answering",
+    "paper_title_zh": "",
+    "paper_id": "2602.04924",
+    "paper_abstract": "We present a formal problem formulation for \\textit{Reliable} Audio-Visual Question Answering ($\\mathcal{R}$-AVQA), where we prefer abstention over answering incorrectly. While recent AVQA models have high accuracy, their ability to identify when they are likely wrong and their consequent abstention from answering remain underexplored areas of research. To fill this gap, we explore several approaches and then propose Adaptive Confidence Refinement (ACR), a lightweight method to further enhance the performance of $\\mathcal{R}$-AVQA. Our key insight is that the Maximum Softmax Probability (MSP) is Bayes-optimal only under strong calibration, a condition usually not met in deep neural networks, particularly in multimodal models. Instead of replacing MSP, our ACR maintains it as a primary confidence signal and applies input-adaptive residual corrections when MSP is deemed unreliable. ACR introduces two learned heads: i) a Residual Risk Head that predicts low-magnitude correctness residuals that MSP does not capture, and ii) a Confidence Gating Head to determine MSP trustworthiness. Our experiments and theoretical analysis show that ACR consistently outperforms existing methods on in- and out-of-disrtibution, and data bias settings across three different AVQA architectures, establishing a solid foundation for $\\mathcal{R}$-AVQA task. The code and checkpoints will be available upon acceptance \\href{this https URL}{at here}",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Dinh Phu Tran, Jihoon Jeong, Saad Wazir, Seongah Kim, Thao Do, Cem Subakan, Daeyoung Kim",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Bagpiper: Solving Open-Ended Audio Tasks via Rich Captions",
+    "paper_title_zh": "Bagpiper: 通过丰富标题解决开放式音频任务",
+    "paper_id": "2602.05220",
+    "paper_abstract": "Current audio foundation models typically rely on rigid, task-specific supervision, addressing isolated factors of audio rather than the whole. In contrast, human intelligence processes audio holistically, seamlessly bridging physical signals with abstract cognitive concepts to execute complex tasks. Grounded in this philosophy, we introduce Bagpiper, an 8B audio foundation model that interprets physical audio via rich captions, i.e., comprehensive natural language descriptions that encapsulate the critical cognitive concepts inherent in the signal (e.g., transcription, audio events). By pre-training on a massive corpus of 600B tokens, the model establishes a robust bidirectional mapping between raw audio and this high-level conceptual space. During fine-tuning, Bagpiper adopts a caption-then-process workflow, simulating an intermediate cognitive reasoning step to solve diverse tasks without task-specific priors. Experimentally, Bagpiper outperforms Qwen-2.5-Omni on MMAU and AIRBench for audio understanding and surpasses CosyVoice3 and TangoFlux in generation quality, capable of synthesizing arbitrary compositions of speech, music, and sound effects. To the best of our knowledge, Bagpiper is among the first works that achieve unified understanding generation for general audio. Model, data, and code are available at Bagpiper Home Page.",
+    "paper_abstract_zh": "当前的音频基础模型通常依赖于严格、任务特定的监督，处理音频的孤立因素而非整体。相比之下，人类智能整体处理音频，无缝地将物理信号与抽象认知概念联系起来以执行复杂任务。基于这一理念，我们引入了Bagpiper，一个80亿参数的音频基础模型，它通过丰富标题（即封装信号中关键认知概念的全面自然语言描述，如转录、音频事件）来解释物理音频。通过在600B tokens的大规模语料库上进行预训练，该模型在原始音频和这个高级概念空间之间建立了强大的双向映射。在微调过程中，Bagpiper采用先标题再处理的工作流程，模拟中间的认知推理步骤，无需任务特定的先验知识即可解决多样化任务。实验表明，Bagpiper在MMAU和AIRBench音频理解任务上优于Qwen-2.5-Omni，在生成质量上超越CosyVoice3和TangoFlux，能够合成语音、音乐和音效的任意组合。据我们所知，Bagpiper是实现通用音频统一理解和生成的首批工作之一。模型、数据和代码可在Bagpiper主页获取。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-06",
+    "paper_authors": "Jinchuan Tian, Haoran Wang, Bo-Hao Su, Chien-yu Huang, Qingzheng Wang, Jiatong Shi, William Chen, Xun Gong, Siddhant Arora, Chin-Jou Li, Masao Someki, Takashi Maekaku, Yusuke Shinohara, Jin Sakuma, Chao-Han Huck Yang, Shinji Watanabe",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Music Generation",
+      "Audio Classification"
+    ],
+    "category": [
+      "Other"
+    ]
+  }
+]
