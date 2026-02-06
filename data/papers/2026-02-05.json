@@ -1,10 +1,10 @@
 [
   {
     "paper_title": "Benchmarking Automatic Speech Recognition for Indian Languages in Agricultural Contexts",
-    "paper_title_zh": "",
+    "paper_title_zh": "印度农业背景下自动语音识别的基准测试",
     "paper_id": "2602.03868",
     "paper_abstract": "The digitization of agricultural advisory services in India requires robust Automatic Speech Recognition (ASR) systems capable of accurately transcribing domain-specific terminology in multiple Indian languages. This paper presents a benchmarking framework for evaluating ASR performance in agricultural contexts across Hindi, Telugu, and Odia languages. We introduce evaluation metrics including Agriculture Weighted Word Error Rate (AWWER) and domain-specific utility scoring to complement traditional metrics. Our evaluation of 10,934 audio recordings, each transcribed by up to 10 ASR models, reveals performance variations across languages and models, with Hindi achieving the best overall performance (WER: 16.2%) while Odia presents the greatest challenges (best WER: 35.1%, achieved only with speaker diarization). We characterize audio quality challenges inherent to real-world agricultural field recordings and demonstrate that speaker diarization with best-speaker selection can substantially reduce WER for multi-speaker recordings (upto 66% depending on the proportion of multi-speaker audio). We identify recurring error patterns in agricultural terminology and provide practical recommendations for improving ASR systems in low-resource agricultural domains. The study establishes baseline benchmarks for future agricultural ASR development.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "印度农业咨询服务的数字化需要强大的自动语音识别(ASR)系统，能够准确转录多种印度语言的领域特定术语。本文提出了一个基准测试框架，用于评估印地语、泰卢固语和奥里亚语在农业背景下的ASR性能。我们引入了包括农业加权词错误率(AWWER)和领域特定效用评分在内的评估指标，以补充传统指标。我们对10,934个音频录音进行了评估，每个录音由多达10个ASR模型转录，结果显示不同语言和模型之间存在性能差异，其中印地语取得了最佳整体性能(WER: 16.2%)，而奥里亚语面临最大挑战(最佳WER: 35.1%，仅在说话人分离的情况下实现)。我们表征了真实农业现场录音中固有的音频质量挑战，并证明说话人分离与最佳说话人选择相结合可以显著减少多说话人录音的WER(根据多说话人音频的比例可降低高达66%)。我们确定了农业术语中重复出现的错误模式，并为改进低资源农业领域的ASR系统提供了实用建议。该研究为未来农业ASR开发建立了基准基准。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)",
       "Artificial Intelligence (cs.AI)",
@@ -13,8 +13,12 @@
     ],
     "update_time": "2026-02-05",
     "paper_authors": "Chandrashekar M S, Vineet Singh, Lakshmi Pedapudi",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Sounding Highlights: Dual-Pathway Audio Encoders for Audio-Visual Video Highlight Detection",
@@ -191,17 +195,22 @@
   },
   {
     "paper_title": "PFluxTTS: Hybrid Flow-Matching TTS with Robust Cross-Lingual Voice Cloning and Inference-Time Model Fusion",
-    "paper_title_zh": "",
+    "paper_title_zh": "PFluxTTS: 结合稳健跨语言语音克隆和推理时模型融合的混合流匹配TTS",
     "paper_id": "2602.04160",
     "paper_abstract": "We present PFluxTTS, a hybrid text-to-speech system addressing three gaps in flow-matching TTS: the stability-naturalness trade-off, weak cross-lingual voice cloning, and limited audio quality from low-rate mel features. Our contributions are: (1) a dual-decoder design combining duration-guided and alignment-free models through inference-time vector-field fusion; (2) robust cloning using a sequence of speech-prompt embeddings in a FLUX-based decoder, preserving speaker traits across languages without prompt transcripts; and (3) a modified PeriodWave vocoder with super-resolution to 48 kHz. On cross-lingual in-the-wild data, PFluxTTS clearly outperforms F5-TTS, FishSpeech, and SparkTTS, matches ChatterBox in naturalness (MOS 4.11) while achieving 23% lower WER (6.9% vs. 9.0%), and surpasses ElevenLabs in speaker similarity (+0.32 SMOS). The system remains robust in challenging scenarios where most open-source models fail, while requiring only short reference audio and no extra training. Audio demos are available at this https URL",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们提出了PFluxTTS，一个混合文本到语音系统，解决了流匹配TTS中的三个差距：稳定性与自然度的权衡、薄弱的跨语言语音克隆以及低速率梅尔特征导致的有限音频质量。我们的贡献包括：(1) 双解码器设计，通过推理时向量场融合结合了时长引导和无对齐模型；(2) 使用基于FLUX解码器的语音提示嵌入序列进行稳健克隆，无需提示转录即可保留跨语言的说话人特征；(3) 改进的PeriodWave声码器，支持超分辨率至48kHz。在跨语言野外数据上，PFluxTTS明显优于F5-TTS、FishSpeech和SparkTTS，自然度与ChatterBox相当（MOS 4.11），同时词错误率降低23%（6.9% vs. 9.0%），说话人相似度超过ElevenLabs（+0.32 SMOS）。在大多数开源模型失败的挑战性场景中，该系统仍保持稳健，仅需短参考音频且无需额外训练。音频演示可在提供的网址获取。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2026-02-05",
     "paper_authors": "Vikentii Pankov, Artem Gribul, Oktai Tatanov, Vladislav Proskurov, Yuliya Korotkova, Darima Mylzenova, Dmitrii Vypirailenko",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "HoliAntiSpoof: Audio LLM for Holistic Speech Anti-Spoofing",
@@ -269,17 +278,21 @@
   },
   {
     "paper_title": "Fine-Grained Frame Modeling in Multi-head Self-Attention for Speech Deepfake Detection",
-    "paper_title_zh": "",
+    "paper_title_zh": "基于多头自注意力的语音深度伪造检测中的细粒度帧建模",
     "paper_id": "2602.04702",
     "paper_abstract": "Transformer-based models have shown strong performance in speech deepfake detection, largely due to the effectiveness of the multi-head self-attention (MHSA) mechanism. MHSA provides frame-level attention scores, which are particularly valuable because deepfake artifacts often occur in small, localized regions along the temporal dimension of speech. This makes fine-grained frame modeling essential for accurately detecting subtle spoofing cues. In this work, we propose fine-grained frame modeling (FGFM) for MHSA-based speech deepfake detection, where the most informative frames are first selected through a multi-head voting (MHV) module. These selected frames are then refined via a cross-layer refinement (CLR) module to enhance the model's ability to learn subtle spoofing cues. Experimental results demonstrate that our method outperforms the baseline model and achieves Equal Error Rate (EER) of 0.90%, 1.88%, and 6.64% on the LA21, DF21, and ITW datasets, respectively. These consistent improvements across multiple benchmarks highlight the effectiveness of our fine-grained modeling for robust speech deepfake detection.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "基于Transformer的模型在语音深度伪造检测中表现出强大的性能，这主要归功于多头自注意力(MHSA)机制的有效性。MHSA提供帧级注意力分数，这些分数特别有价值，因为深度伪造伪影通常出现在语音时间维度上的小而局部化的区域。这使得细粒度帧建模对于准确检测细微的欺骗性线索至关重要。在这项工作中，我们提出了基于MHSA的语音深度伪造检测的细粒度帧建模(FGFM)，其中最信息丰富的帧首先通过多头投票(MHV)模块被选择。然后，这些选定的帧通过跨层精炼(CLR)模块进行优化，以增强模型学习细微欺骗性线索的能力。实验结果表明，我们的方法优于基线模型，并在LA21、DF21和ITW数据集上分别实现了0.90%、1.88%和6.64%的等错误率(EER)。这些在多个基准测试中的一致改进凸显了我们的细粒度建模对稳健语音深度伪造检测的有效性。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2026-02-05",
     "paper_authors": "Tuan Dat Phuong, Duc-Tuan Truong, Long-Vu Hoang, Trang Nguyen Thi Thu",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "DementiaBank-Emotion: A Multi-Rater Emotion Annotation Corpus for Alzheimer's Disease Speech (Version 1.0)",
