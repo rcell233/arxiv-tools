@@ -79,18 +79,22 @@
   },
   {
     "paper_title": "Phase-Only Positioning in Distributed MIMO Under Phase Impairments: AP Selection Using Deep Learning",
-    "paper_title_zh": "",
+    "paper_title_zh": "相位同步误差下分布式MIMO中的仅相位定位：基于深度学习的接入点选择",
     "paper_id": "2602.05034",
     "paper_abstract": "Carrier phase positioning (CPP) can enable cm-level accuracy in next-generation wireless systems, while recent literature shows that accuracy remains high using phase-only measurements in distributed MIMO (D-MIMO). However, the impact of phase synchronization errors on such systems remains insufficiently explored. To address this gap, we first show that the proposed hyperbola intersection method achieves highly accurate positioning even in the presence of phase synchronization errors, when trained on appropriate data reflecting such impairments. We then introduce a deep learning (DL)-based D-MIMO antenna point (AP) selection framework that ensures high-precision localization under phase synchronization errors. Simulation results show that the proposed framework improves positioning accuracy compared to prior-art methods, while reducing inference complexity by approximately 19.7%.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "载波相位定位(CPP)能够在下一代无线系统中实现厘米级精度，而近期研究表明，在分布式MIMO(D-MIMO)中使用仅相位测量仍能保持高精度。然而，相位同步误差对这类系统的影响尚未得到充分探索。为解决这一空白，我们首先表明，当使用反映此类损伤的适当数据进行训练时，所提出的双曲线相交方法即使在存在相位同步误差的情况下也能实现高精度定位。随后，我们引入了一种基于深度学习(DL)的D-MIMO天线点(AP)选择框架，该框架确保在相位同步误差下实现高精度定位。仿真结果表明，与现有方法相比，所提出的框架提高了定位精度，同时将推理复杂度降低了约19.7%。",
     "subjects": [
       "Signal Processing (eess.SP)",
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-02-06",
     "paper_authors": "Fatih Ayten, Musa Furkan Keskin, Akshay Jain, Mehmet C. Ilter, Ossi Kaltiokallio, Jukka Talvitie, Elena Simona Lohan, Mikko Valkama",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
   },
   {
     "paper_title": "HyperPotter: Spell the Charm of High-Order Interactions in Audio Deepfake Detection",
