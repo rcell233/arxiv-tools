@@ -60,17 +60,22 @@
   },
   {
     "paper_title": "Zero-Shot TTS With Enhanced Audio Prompts: Bsc Submission For The 2026 Wildspoof Challenge TTS Track",
-    "paper_title_zh": "",
+    "paper_title_zh": "增强音频提示的零样本TTS：2026 Wildspoof挑战赛TTS赛道Bsc提交",
     "paper_id": "2602.05770",
     "paper_abstract": "We evaluate two non-autoregressive architectures, StyleTTS2 and F5-TTS, to address the spontaneous nature of in-the-wild speech. Our models utilize flexible duration modeling to improve prosodic naturalness. To handle acoustic noise, we implement a multi-stage enhancement pipeline using the Sidon model, which significantly outperforms standard Demucs in signal quality. Experimental results show that finetuning enhanced audios yields superior robustness, achieving up to 4.21 UTMOS and 3.47 DNSMOS. Furthermore, we analyze the impact of reference prompt quality and length on zero-shot synthesis performance, demonstrating the effectiveness of our approach for realistic speech generation.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们评估了两种非自回归架构StyleTTS2和F5-TTS，以应对野外语音的自发性。我们的模型利用灵活的时长建模来提高韵律自然度。为了处理声学噪声，我们实现了基于Sidon模型的多阶段增强管道，其在信号质量上显著优于标准Demucs。实验结果表明，微调增强音频能获得更好的鲁棒性，最高达到4.21 UTMOS和3.47 DNSMOS。此外，我们分析了参考提示质量和长度对零样本合成性能的影响，证明了我们的方法在真实语音生成中的有效性。",
     "subjects": [
       "Audio and Speech Processing (eess.AS)"
     ],
     "update_time": "2026-02-06",
     "paper_authors": "Jose Giraldo, Alex Peiró-Lilja, Rodolfo Zevallos, Cristina España-Bonet",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis",
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "Phase-Only Positioning in Distributed MIMO Under Phase Impairments: AP Selection Using Deep Learning",
@@ -188,10 +193,10 @@
   },
   {
     "paper_title": "A$^2$-LLM: An End-to-end Conversational Audio Avatar Large Language Model",
-    "paper_title_zh": "",
+    "paper_title_zh": "A²-LLM：一种端到端会话音频头像大语言模型",
     "paper_id": "2602.04913",
     "paper_abstract": "Developing expressive and responsive conversational digital humans is a cornerstone of next-generation human-computer interaction. While large language models (LLMs) have significantly enhanced dialogue capabilities, most current systems still rely on cascaded architectures that connect independent modules. These pipelines are often plagued by accumulated errors, high latency, and poor real-time performance. Lacking access to the underlying conversational context, these pipelines inherently prioritize rigid lip-sync over emotional depth. To address these challenges, we propose A$^2$-LLM, an end-to-end conversational audio avatar large language model that jointly reasons about language, audio prosody, and 3D facial motion within a unified framework. To facilitate training, we introduce FLAME-QA, a high-quality multimodal dataset designed to align semantic intent with expressive facial dynamics within a QA format. By leveraging deep semantic understanding, A$^2$-LLM generates emotionally rich facial movements beyond simple lip-synchronization. Experimental results demonstrate that our system achieves superior emotional expressiveness while maintaining real-time efficiency (500 ms latency, 0.7 RTF).",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "开发具有表现力和响应能力的会话式数字人类是下一代人机交互的基石。虽然大型语言模型（LLM）显著增强了对话能力，但当前大多数系统仍依赖连接独立模块的级联架构。这些流水线常常受到累积误差、高延迟和实时性能差的影响。由于无法访问底层对话上下文，这些流水线本质上优先考虑严格的口型同步而非情感深度。为解决这些挑战，我们提出了A²-LLM，一种端到端的会话音频头像大语言模型，它在统一框架内共同推理语言、音频韵律和3D面部运动。为促进训练，我们引入了FLAME-QA，这是一个高质量的多模态数据集，旨在以问答格式对齐语义意图与表现性面部动态。利用深度语义理解，A²-LLM生成超越简单口型同步的、情感丰富的面部运动。实验结果表明，我们的系统在保持实时效率（500毫秒延迟，0.7 RTF）的同时实现了卓越的情感表现力。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Artificial Intelligence (cs.AI)",
@@ -199,8 +204,13 @@
     ],
     "update_time": "2026-02-06",
     "paper_authors": "Xiaolin Hu, Hang Yuan, Xinzhu Sang, Binbin Yan, Zhou Yu, Cong Huang, Kai Chen",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Speech Synthesis",
+      "Image Generation"
+    ],
+    "category": [
+      "Speech"
+    ]
   },
   {
     "paper_title": "CyIN: Cyclic Informative Latent Space for Bridging Complete and Incomplete Multimodal Learning",
