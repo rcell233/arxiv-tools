@@ -238,18 +238,23 @@
   },
   {
     "paper_title": "Knowing When to Answer: Adaptive Confidence Refinement for Reliable Audio-Visual Question Answering",
-    "paper_title_zh": "",
+    "paper_title_zh": "知道何时回答：自适应置信度细化用于可靠的视听问答",
     "paper_id": "2602.04924",
     "paper_abstract": "We present a formal problem formulation for \\textit{Reliable} Audio-Visual Question Answering ($\\mathcal{R}$-AVQA), where we prefer abstention over answering incorrectly. While recent AVQA models have high accuracy, their ability to identify when they are likely wrong and their consequent abstention from answering remain underexplored areas of research. To fill this gap, we explore several approaches and then propose Adaptive Confidence Refinement (ACR), a lightweight method to further enhance the performance of $\\mathcal{R}$-AVQA. Our key insight is that the Maximum Softmax Probability (MSP) is Bayes-optimal only under strong calibration, a condition usually not met in deep neural networks, particularly in multimodal models. Instead of replacing MSP, our ACR maintains it as a primary confidence signal and applies input-adaptive residual corrections when MSP is deemed unreliable. ACR introduces two learned heads: i) a Residual Risk Head that predicts low-magnitude correctness residuals that MSP does not capture, and ii) a Confidence Gating Head to determine MSP trustworthiness. Our experiments and theoretical analysis show that ACR consistently outperforms existing methods on in- and out-of-disrtibution, and data bias settings across three different AVQA architectures, establishing a solid foundation for $\\mathcal{R}$-AVQA task. The code and checkpoints will be available upon acceptance \\href{this https URL}{at here}",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "我们提出了可靠视听问答（R-AVQA）的正式问题表述，其中我们宁愿放弃回答也不愿给出错误答案。尽管最近的AVQA模型具有高准确性，但它们识别何时可能出错并因此选择不回答的能力仍然是研究中探索不足的领域。为了填补这一空白，我们探索了几种方法，然后提出了自适应置信度细化（ACR），这是一种轻量级方法，可进一步提高R-AVQA的性能。我们的关键见解是，最大softmax概率（MSP）仅在强校准条件下才是贝叶斯最优的，而这一条件通常在深度神经网络中，特别是在多模态模型中无法满足。ACR不替代MSP，而是将其作为主要的置信度信号，并在MSP被认为不可靠时应用输入自适应的残差校正。ACR引入了两个学习头：i）残差风险头，预测MSP无法捕获的低幅度正确性残差；ii）置信度门控头，用于确定MSP的可信度。我们的实验和理论分析表明，ACR在三种不同的AVQA架构上，在分布内、分布外和数据偏差设置中均 consistently优于现有方法，为R-AVQA任务奠定了坚实的基础。代码和检查点将在接受后通过此链接提供。",
     "subjects": [
       "Machine Learning (cs.LG)",
       "Sound (cs.SD)"
     ],
     "update_time": "2026-02-06",
     "paper_authors": "Dinh Phu Tran, Jihoon Jeong, Saad Wazir, Seongah Kim, Thao Do, Cem Subakan, Daeyoung Kim",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Image&Video"
+    ]
   },
   {
     "paper_title": "Bagpiper: Solving Open-Ended Audio Tasks via Rich Captions",
