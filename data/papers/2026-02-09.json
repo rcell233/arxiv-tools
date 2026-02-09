@@ -1,0 +1,254 @@
+[
+  {
+    "paper_title": "STACodec: Semantic Token Assignment for Balancing Acoustic Fidelity and Semantic Information in Audio Codecs",
+    "paper_title_zh": "STACodec：用于平衡音频编解码器中声学保真度与语义信息的语义令牌分配",
+    "paper_id": "2602.06180",
+    "paper_abstract": "Neural audio codecs are widely used for audio compression and can be integrated into token-based language models. Traditional codecs preserve acoustic details well but lack semantic information. Recent hybrid codecs attempt to incorporate semantic information through distillation, but this often degrades reconstruction performance, making it difficult to achieve both. To address this limitation, we introduce STACodec, a unified codec that integrates semantic information from self-supervised learning (SSL) models into the first layer of residual vector quantization (RVQ-1) via semantic token assignment (STA). To further eliminate reliance on SSL-based semantic tokenizers and improve efficiency during inference, we propose a semantic pre-distillation (SPD) module, which predicts semantic tokens directly for assignment to the first RVQ layer during inference. Experimental results show that STACodec outperforms existing hybrid codecs in both audio reconstruction and downstream semantic tasks, demonstrating a better balance between acoustic fidelity and semantic capability.",
+    "paper_abstract_zh": "神经音频编解码器广泛用于音频压缩，并可集成到基于令牌的语言模型中。传统编解码器能很好地保留声学细节，但缺乏语义信息。最近的混合编解码器试图通过蒸馏来引入语义信息，但这通常会降低重建性能，难以兼得二者。为了解决这一局限性，我们提出了STACodec，这是一种统一的编解码器，通过语义令牌分配（STA）将来自自监督学习（SSL）模型的语义信息整合到残差矢量量化（RVQ）的第一层（RVQ-1）中。为了进一步消除对基于SSL的语义分词器的依赖并提高推理效率，我们提出了一个语义预蒸馏（SPD）模块，该模块直接预测语义令牌，以便在推理过程中分配给第一个RVQ层。实验结果表明，STACodec在音频重建和下游语义任务中均优于现有的混合编解码器，在声学保真度和语义能力之间实现了更好的平衡。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Computation and Language (cs.CL)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Kaiyuan Zhang, Mohan Shi, Eray Eren, Natarajan Balaji Shankar, Zilai Wang, Abeer Alwan",
+    "topic": [
+      "Audio Codec",
+      "Audio Representation Learning"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "From Hallucination to Articulation: Language Model-Driven Losses for Ultra Low-Bitrate Neural Speech Coding",
+    "paper_title_zh": "从幻觉到表达：面向超低比特率神经语音编码的语言模型驱动损失函数",
+    "paper_id": "2602.06213",
+    "paper_abstract": "``Phoneme Hallucinations (PH)'' commonly occur in low-bitrate DNN-based codecs. It is the generative decoder's attempt to synthesize plausible outputs from excessively compressed tokens missing some semantic information. In this work, we propose language model-driven losses (LM loss) and show they may alleviate PHs better than a semantic distillation (SD) objective in very-low-bitrate settings. The proposed LM losses build upon language models pretrained to associate speech with text. When ground-truth transcripts are unavailable, we propose to modify a popular automatic speech recognition (ASR) model, Whisper, to compare the decoded utterance against the ASR-inferred transcriptions of the input speech. Else, we propose to use the timed-text regularizer (TTR) to compare WavLM representations of the decoded utterance against BERT representations of the ground-truth transcriptions. We test and compare LM losses against an SD objective, using a reference codec whose three-stage training regimen was designed after several popular codecs. Subjective and objective evaluations conclude that LM losses may provide stronger guidance to extract semantic information from self-supervised speech representations, boosting human-perceived semantic adherence while preserving overall output quality. Demo samples, code, and checkpoints are available online.",
+    "paper_abstract_zh": "在低比特率的基于深度神经网络的编解码器中，\"音素幻觉\"现象普遍存在。这是生成解码器试图从过度压缩的、缺少部分语义信息的令牌中合成合理输出的尝试。在这项工作中，我们提出了语言模型驱动的损失函数（LM损失），并表明在极低比特率设置下，它们比语义蒸馏（SD）目标能更好地减轻音素幻觉。所提出的LM损失基于预训练的语言模型，这些模型将语音与文本相关联。当真实转录不可用时，我们建议修改一个流行的自动语音识别（ASR）模型Whisper，将解码后的语音与输入语音的ASR推断转录进行比较。否则，我们建议使用时间文本正则化器（TTR）将解码语音的WavLM表示与真实转录的BERT表示进行比较。我们使用一个参考编解码器测试并比较了LM损失与SD目标，该参考编解码器的三阶段训练方案设计借鉴了几个流行的编解码器。主观和客观评估得出结论，LM损失可以提供更强的指导，从自监督语音表征中提取语义信息，同时保持整体输出质量，从而增强人类感知的语义一致性。演示样本、代码和检查点在线提供。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Jayeon Yi, Minje Kim",
+    "topic": [
+      "Audio Codec",
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "B-GRPO: Unsupervised Speech Emotion Recognition based on Batched-Group Relative Policy Optimization",
+    "paper_title_zh": "B-GRPO: 基于批量组相对策略优化的无监督语音情感识别",
+    "paper_id": "2602.06290",
+    "paper_abstract": "Unsupervised speech emotion recognition (SER) focuses on addressing the problem of data sparsity and annotation bias of emotional speech. Reinforcement learning (RL) is a promising method which enhances the performance through rule-based or model-based verification functions rather than human annotations. We treat the sample selection during the learning process as a long-term procedure and whether to select a sample as the action to make policy, thus achieving the application of RL to measure sample quality in SER. We propose a modified Group Relative Policy Optimization (GRPO) to adapt it to classification problems, which takes the samples in a batch as a group and uses the average reward of these samples as the baseline to calculate the advantage. And rather than using a verifiable reward function as in GRPO, we put forward self-reward functions and teacher-reward functions to encourage the model to produce high-confidence outputs. Experiments indicate that the proposed method improves the performance of baseline without RL by 19.8%.",
+    "paper_abstract_zh": "无监督语音情感识别（SER）旨在解决情感语音数据稀疏和标注偏差的问题。强化学习（RL）是一种有前景的方法，它通过基于规则或模型的验证函数而非人工标注来提升性能。我们将学习过程中的样本选择视为一个长期过程，并将是否选择样本作为策略动作，从而实现RL在SER中衡量样本质量的应用。我们提出了一种改进的组相对策略优化（GRPO）以适应分类问题，该方法将批次中的样本视为一组，并使用这些样本的平均奖励作为基线来计算优势。与GRPO中使用可验证奖励函数不同，我们提出了自我奖励函数和教师奖励函数，以鼓励模型产生高置信度的输出。实验表明，所提出的方法将基线（无RL）的性能提高了19.8%。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Yingying Gao, Shilei Zhang, Runyan Yang, Zihao Cui, Junlan Feng",
+    "topic": [
+      "Audio Classification",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Automatic Detection and Analysis of Singing Mistakes for Music Pedagogy",
+    "paper_title_zh": "音乐教学法中的歌唱错误自动检测与分析",
+    "paper_id": "2602.06917",
+    "paper_abstract": "The advancement of machine learning in audio analysis has opened new possibilities for technology-enhanced music education. This paper introduces a framework for automatic singing mistake detection in the context of music pedagogy, supported by a newly curated dataset. The dataset comprises synchronized teacher learner vocal recordings, with annotations marking different types of mistakes made by learners. Using this dataset, we develop different deep learning models for mistake detection and benchmark them. To compare the efficacy of mistake detection systems, a new evaluation methodology is proposed. Experiments indicate that the proposed learning-based methods are superior to rule-based methods. A systematic study of errors and a cross-teacher study reveal insights into music pedagogy that can be utilised for various music applications. This work sets out new directions of research in music pedagogy. The codes and dataset are publicly available.",
+    "paper_abstract_zh": "机器学习在音频分析领域的进步为技术增强型音乐教育开辟了新的可能性。本文介绍了一种在音乐教学法背景下用于自动歌唱错误检测的框架，并辅以一个新策划的数据集。该数据集包含教师和学习者的同步声乐录音，并标注了学习者犯下的不同类型的错误。利用这个数据集，我们开发了多种用于错误检测的深度学习模型并进行基准测试。为了比较错误检测系统的有效性，提出了一种新的评估方法。实验表明，所提出的学习方法优于基于规则的方法。对错误的系统研究和跨教师研究揭示了音乐教学法中的见解，这些见解可用于各种音乐应用。这项工作为音乐教学法的研究开辟了新的方向。代码和数据集已公开提供。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Sumit Kumar, Suraj Jaiswal, Parampreet Singh, Vipul Arora",
+    "topic": [
+      "Audio Classification",
+      "Music Information Retrieval"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "The Combination of Several Decorrelation Methods to Improve Acoustic Feedback Cancellation",
+    "paper_title_zh": "结合多种去相关方法提高声学反馈消除性能",
+    "paper_id": "2602.06921",
+    "paper_abstract": "This paper extends an acoustic feedback cancellation system by incorporating multiple decorrelation methods. The baseline system is based on a frequency-domain Kalman filter implemented in a multi-delay structure. The proposed extensions include a variable time delay line, prediction, distortion compensation, and a simplified reverberation model. Each extension is analyzed, and a practical parameter range is defined.\nWhile existing literature often focuses on a single extension, such as prediction, to describe an optimal system, this work demonstrates that each individual extension contributes to performance improvements. Furthermore, the combination of all proposed extensions results in a superior system. The evaluation is conducted using publicly available datasets, with performance assessed through system distance metrics and the objective speech quality measure PSEQ.",
+    "paper_abstract_zh": "本文通过结合多种去相关方法扩展了声学反馈消除系统。基础系统基于在多延迟结构中实现的频域卡尔曼滤波器。提出的扩展包括可变时间延迟线、预测、失真补偿和简化的混响模型。对每种扩展进行了分析，并定义了实用的参数范围。尽管现有文献通常关注单一扩展（如预测）来描述最优系统，但本研究表明每种单独扩展都有助于性能提升。此外，所有提出的扩展组合产生了更优的系统。评估使用公开可用的数据集进行，性能通过系统距离度量和客观语音质量度量PSEQ进行评估。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Klaus Linhard, Philipp Bulling",
+    "topic": [
+      "Speech Enhancement"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Misophonia Trigger Sound Detection on Synthetic Soundscapes Using a Hybrid Model with a Frozen Pre-Trained CNN and a Time-Series Module",
+    "paper_title_zh": "",
+    "paper_id": "2602.06271",
+    "paper_abstract": "Misophonia is a disorder characterized by a decreased tolerance to specific everyday sounds (trigger sounds) that can evoke intense negative emotional responses such as anger, panic, or anxiety. These reactions can substantially impair daily functioning and quality of life. Assistive technologies that selectively detect trigger sounds could help reduce distress and improve well-being. In this study, we investigate sound event detection (SED) to localize intervals of trigger sounds in continuous environmental audio as a foundational step toward such assistive support. Motivated by the scarcity of real-world misophonia data, we generate synthetic soundscapes tailored to misophonia trigger sound detection using audio synthesis techniques. Then, we perform trigger sound detection tasks using hybrid CNN-based models. The models combine feature extraction using a frozen pre-trained CNN backbone with a trainable time-series module such as gated recurrent units (GRUs), long short-term memories (LSTMs), echo state networks (ESNs), and their bidirectional variants. The detection performance is evaluated using common SED metrics, including Polyphonic Sound Detection Score 1 (PSDS1). On the multi-class trigger SED task, bidirectional temporal modeling consistently improves detection performance, with Bidirectional GRU (BiGRU) achieving the best overall accuracy. Notably, the Bidirectional ESN (BiESN) attains competitive performance while requiring orders of magnitude fewer trainable parameters by optimizing only the readout. We further simulate user personalization via a few-shot \"eating sound\" detection task with at most five support clips, in which BiGRU and BiESN are compared. In this strict adaptation setting, BiESN shows robust and stable performance, suggesting that lightweight temporal modules are promising for personalized misophonia trigger SED.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Kurumi Sashida, Gouhei Tanaka",
+    "topic": [],
+    "category": []
+  },
+  {
+    "paper_title": "Scaling Speech Tokenizers with Diffusion Autoencoders",
+    "paper_title_zh": "使用扩散自编码器扩展语音标记器",
+    "paper_id": "2602.06602",
+    "paper_abstract": "Speech tokenizers are foundational to speech language models, yet existing approaches face two major challenges: (1) balancing trade-offs between encoding semantics for understanding and acoustics for reconstruction, and (2) achieving low bit rates and low token rates. We propose Speech Diffusion Tokenizer (SiTok), a diffusion autoencoder that jointly learns semantic-rich representations through supervised learning and enables high-fidelity audio reconstruction with diffusion. We scale SiTok to 1.6B parameters and train it on 2 million hours of speech. Experiments show that SiTok outperforms strong baselines on understanding, reconstruction and generation tasks, at an extremely low token rate of $12.5$ Hz and a bit-rate of 200 bits-per-second.",
+    "paper_abstract_zh": "语音标记器是语音语言模型的基础，然而现有方法面临两大挑战：(1)平衡用于理解的语义编码与用于重建的声学编码之间的权衡，以及(2)实现低比特率和低标记率。我们提出了语音扩散标记器(SiTok)，这是一种扩散自编码器，通过监督学习联合学习语义丰富的表示，并利用扩散实现高保真音频重建。我们将SiTok扩展到16亿参数，并在200万小时的语音数据上进行了训练。实验表明，在极低的标记率12.5 Hz和比特率200比特/秒的情况下，SiTok在理解、重建和生成任务上优于强大的基线模型。",
+    "subjects": [
+      "Audio and Speech Processing (eess.AS)",
+      "Machine Learning (cs.LG)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Yuancheng Wang, Zhenyu Tang, Yun Wang, Arthur Hinsvark, Yingru Liu, Yinghao Li, Kainan Peng, Junyi Ao, Mingbo Ma, Mike Seltzer, Qing He, Xubo Liu",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition",
+      "Speech Synthesis",
+      "Audio Codec"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Reading Between the Waves: Robust Topic Segmentation Using Inter-Sentence Audio Features",
+    "paper_title_zh": "在波纹之间阅读：基于句子间音频特征的鲁棒主题分割",
+    "paper_id": "2602.06647",
+    "paper_abstract": "Spoken content, such as online videos and podcasts, often spans multiple topics, which makes automatic topic segmentation essential for user navigation and downstream applications. However, current methods do not fully leverage acoustic features, leaving room for improvement. We propose a multi-modal approach that fine-tunes both a text encoder and a Siamese audio encoder, capturing acoustic cues around sentence boundaries. Experiments on a large-scale dataset of YouTube videos show substantial gains over text-only and multi-modal baselines. Our model also proves more resilient to ASR noise and outperforms a larger text-only baseline on three additional datasets in Portuguese, German, and English, underscoring the value of learned acoustic features for robust topic segmentation.",
+    "paper_abstract_zh": "口语内容，如在线视频和播客，通常涵盖多个主题，这使得自动主题分割对于用户导航和下游应用至关重要。然而，当前方法未能充分利用音频特征，仍有改进空间。我们提出了一种多模态方法，通过微调文本编码器和孪生音频编码器，捕捉句子边界周围的音频线索。在YouTube视频的大规模数据集上的实验表明，该方法相比纯文本和多模态基线模型取得了显著提升。我们的模型对ASR噪声更具鲁棒性，并且在葡萄牙语、德语和英语的三个额外数据集上超越了更大的纯文本基线模型，这证明了学习到的音频特征对鲁棒主题分割的价值。",
+    "subjects": [
+      "Computation and Language (cs.CL)",
+      "Audio and Speech Processing (eess.AS)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Steffen Freisinger, Philipp Seeberger, Tobias Bocklet, Korbinian Riedhammer",
+    "topic": [
+      "Audio Representation Learning",
+      "Speech Recognition"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "AI-Generated Music Detection in Broadcast Monitoring",
+    "paper_title_zh": "广播监测中的AI生成音乐检测",
+    "paper_id": "2602.06823",
+    "paper_abstract": "AI music generators have advanced to the point where their outputs are often indistinguishable from human compositions. While detection methods have emerged, they are typically designed and validated in music streaming contexts with clean, full-length tracks. Broadcast audio, however, poses a different challenge: music appears as short excerpts, often masked by dominant speech, conditions under which existing detectors fail. In this work, we introduce AI-OpenBMAT, the first dataset tailored to broadcast-style AI-music detection. It contains 3,294 one-minute audio excerpts (54.9 hours) that follow the duration patterns and loudness relations of real television audio, combining human-made production music with stylistically matched continuations generated with Suno v3.5. We benchmark a CNN baseline and state-of-the-art SpectTTTra models to assess SNR and duration robustness, and evaluate on a full broadcast scenario. Across all settings, models that excel in streaming scenarios suffer substantial degradation, with F1-scores dropping below 60% when music is in the background or has a short duration. These results highlight speech masking and short music length as critical open challenges for AI music detection, and position AI-OpenBMAT as a benchmark for developing detectors capable of meeting industrial broadcast requirements.",
+    "paper_abstract_zh": "AI音乐生成器已经发展到其输出通常与人类创作难以区分的程度。虽然检测方法已经出现，但它们通常在音乐流媒体环境中设计和验证，使用干净、完整的音轨。然而，广播音频带来了不同的挑战：音乐以短片段形式出现，通常被主导语音掩盖，在这些条件下现有检测器会失效。在这项工作中，我们介绍了AI-OpenBMAT，这是第一个专门针对广播风格AI音乐检测的数据集。它包含3,294个一分钟音频片段（54.9小时），这些片段遵循真实电视音频的持续时间和响度关系，结合了人类制作的制作音乐与使用Suno v3.5生成的风格匹配的延续。我们对CNN基线和最先进的SpectTTTra模型进行了基准测试，以评估信噪比和持续时间鲁棒性，并在完整的广播场景中进行了评估。在所有设置中，在流媒体场景中表现出色的模型遭受了显著性能下降，当音乐处于背景或持续时间较短时，F1分数降至60%以下。这些结果突显了语音掩蔽和短音乐长度作为AI音乐检测的关键开放挑战，并将AI-OpenBMAT定位为开发能够满足工业广播要求的检测器的基准。",
+    "subjects": [
+      "Signal Processing (eess.SP)",
+      "Audio and Speech Processing (eess.AS)",
+      "Artificial Intelligence (cs.AI)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "David Lopez-Ayala, Asier Cabello, Pablo Zinemanas, Emilio Molina, Martin Rocamora",
+    "topic": [
+      "Audio Classification",
+      "Music Information Retrieval",
+      "Music Generation"
+    ],
+    "category": [
+      "Music"
+    ]
+  },
+  {
+    "paper_title": "Reciprocal Latent Fields for Precomputed Sound Propagation",
+    "paper_title_zh": "用于预计算声音传播的互惠潜场",
+    "paper_id": "2602.06937",
+    "paper_abstract": "Realistic sound propagation is essential for immersion in a virtual scene, yet physically accurate wave-based simulations remain computationally prohibitive for real-time applications. Wave coding methods address this limitation by precomputing and compressing impulse responses of a given scene into a set of scalar acoustic parameters, which can reach unmanageable sizes in large environments with many source-receiver pairs. We introduce Reciprocal Latent Fields (RLF), a memory-efficient framework for encoding and predicting these acoustic parameters. The RLF framework employs a volumetric grid of trainable latent embeddings decoded with a symmetric function, ensuring acoustic reciprocity. We study a variety of decoders and show that leveraging Riemannian metric learning leads to a better reproduction of acoustic phenomena in complex scenes. Experimental validation demonstrates that RLF maintains replication quality while reducing the memory footprint by several orders of magnitude. Furthermore, a MUSHRA-like subjective listening test indicates that sound rendered via RLF is perceptually indistinguishable from ground-truth simulations.",
+    "paper_abstract_zh": "逼真的声音传播对于虚拟场景的沉浸感至关重要，然而基于物理的波模拟在实时应用中仍然计算成本过高。波编码方法通过预计算和压缩给定场景的脉冲响应为一系列标量声学参数来解决这一限制，但在具有大量收发器对的大型环境中，这些参数可能达到难以管理的大小。我们引入了互惠潜场（RLF），这是一种用于编码和预测这些声学参数的内存高效框架。RLF框架采用可训练潜嵌入的体素网格，并通过对称函数解码，确保声学互惠性。我们研究了多种解码器，并表明利用黎曼度量学习可以更好地复现复杂场景中的声学现象。实验验证表明，RLF在保持复制质量的同时，将内存占用减少了几个数量级。此外，类似MUSHRA的主观听力测试表明，通过RLF渲染的声音在感知上与真实模拟无法区分。",
+    "subjects": [
+      "Machine Learning (cs.LG)",
+      "Audio and Speech Processing (eess.AS)",
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Hugo Seuté, Pranai Vasudev, Etienne Richan, Louis-Xavier Buffoni",
+    "topic": [
+      "Audio Representation Learning",
+      "Audio Codec"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "EMG-to-Speech with Fewer Channels",
+    "paper_title_zh": "更少通道的肌电语音转换",
+    "paper_id": "2602.06460",
+    "paper_abstract": "Surface electromyography (EMG) is a promising modality for silent speech interfaces, but its effectiveness depends heavily on sensor placement and channel availability. In this work, we investigate the contribution of individual and combined EMG channels to speech reconstruction performance. Our findings reveal that while certain EMG channels are individually more informative, the highest performance arises from subsets that leverage complementary relationships among channels. We also analyzed phoneme classification accuracy under channel ablations and observed interpretable patterns reflecting the anatomical roles of the underlying muscles. To address performance degradation from channel reduction, we pretrained models on full 8-channel data using random channel dropout and fine-tuned them on reduced-channel subsets. Fine-tuning consistently outperformed training from scratch for 4 - 6 channel settings, with the best dropout strategy depending on the number of channels. These results suggest that performance degradation from sensor reduction can be mitigated through pretraining and channel-aware design, supporting the development of lightweight and practical EMG-based silent speech systems.",
+    "paper_abstract_zh": "表面肌电(EMG)是无语音接口的一种有前景的模式，但其有效性在很大程度上取决于传感器放置和通道可用性。在这项工作中，我们研究了单个和组合EMG通道对语音重建性能的贡献。我们的发现表明，虽然某些EMG通道单独提供更多信息，但最高性能来自于利用通道间互补关系的子集。我们还分析了通道消融下的音素分类准确性，并观察到了反映底层肌肉解剖作用的可解释模式。为了解决通道减少导致的性能下降，我们使用随机通道 dropout 在完整的8通道数据上预训练模型，然后在减少通道的子集上微调它们。对于4-6通道设置，微调始终优于从头开始训练，最佳dropout策略取决于通道数量。这些结果表明，通过预训练和通道感知设计可以减轻传感器减少导致的性能下降，支持轻量化和实用的基于EMG的无语音系统的发展。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Injune Hwang, Jaejun Lee, Kyogu Lee",
+    "topic": [
+      "Speech Recognition",
+      "Speech Synthesis"
+    ],
+    "category": [
+      "Speech"
+    ]
+  },
+  {
+    "paper_title": "Hierarchical Activity Recognition and Captioning from Long-Form Audio",
+    "paper_title_zh": "基于长音频的分层活动识别与描述生成",
+    "paper_id": "2602.06765",
+    "paper_abstract": "Complex activities in real-world audio unfold over extended durations and exhibit hierarchical structure, yet most prior work focuses on short clips and isolated events. To bridge this gap, we introduce MultiAct, a new dataset and benchmark for multi-level structured understanding of human activities from long-form audio. MultiAct comprises long-duration kitchen recordings annotated at three semantic levels (activities, sub-activities and events) and paired with fine-grained captions and high-level summaries. We further propose a unified hierarchical model that jointly performs classification, detection, sequence prediction and multi-resolution captioning. Experiments on MultiAct establish strong baselines and reveal key challenges in modelling hierarchical and compositional structure of long-form audio. A promising direction for future work is the exploration of methods better suited to capturing the complex, long-range relationships in long-form audio.",
+    "paper_abstract_zh": "现实世界中的复杂活动音频会在较长时间内展开并表现出层次结构，但大多数先前的研究都集中在短片段和孤立事件上。为了填补这一空白，我们引入了MultiAct，这是一个用于从长音频中多级别结构化理解人类活动的新数据集和基准。MultiAct包含长时间厨房录音，这些录音在三个语义级别（活动、子活动和事件）上进行了标注，并配以细粒度描述和高层次摘要。我们进一步提出了一个统一的分层模型，该模型联合执行分类、检测、序列预测和多分辨率描述生成。在MultiAct上的实验建立了强有力的基线，并揭示了建模长音频层次结构和组合结构的关键挑战。未来工作的一个有前景的方向是探索更适合捕捉长音频中复杂长程关系的方法。",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Peng Zhang, Qingyu Luo, Philip J.B. Jackson, Wenwu Wang",
+    "topic": [
+      "Audio Classification",
+      "Other"
+    ],
+    "category": [
+      "Other"
+    ]
+  },
+  {
+    "paper_title": "DynFOA: Generating First-Order Ambisonics with Conditional Diffusion for Dynamic and Acoustically Complex 360-Degree Videos",
+    "paper_title_zh": "",
+    "paper_id": "2602.06846",
+    "paper_abstract": "Spatial audio is crucial for creating compelling immersive 360-degree video experiences. However, generating realistic spatial audio, such as first-order ambisonics (FOA), from 360-degree videos in complex acoustic scenes remains challenging. Existing methods often overlook the dynamic nature and acoustic complexity of 360-degree scenes, fail to fully account for dynamic sound sources, and neglect complex environmental effects such as occlusion, reflections, and reverberation, which are influenced by scene geometries and materials. We propose DynFOA, a framework based on dynamic acoustic perception and conditional diffusion, for generating high-fidelity FOA from 360-degree videos. DynFOA first performs visual processing via a video encoder, which detects and localizes multiple dynamic sound sources, estimates their depth and semantics, and reconstructs the scene geometry and materials using a 3D Gaussian Splatting. This reconstruction technique accurately models occlusion, reflections, and reverberation based on the geometries and materials of the reconstructed 3D scene and the listener's viewpoint. The audio encoder then captures the spatial motion and temporal 4D sound source trajectories to fine-tune the diffusion-based FOA generator. The fine-tuned FOA generator adjusts spatial cues in real time, ensuring consistent directional fidelity during listener head rotation and complex environmental changes. Extensive evaluations demonstrate that DynFOA consistently outperforms existing methods across metrics such as spatial accuracy, acoustic fidelity, and distribution matching, while also improving the user experience. Therefore, DynFOA provides a robust and scalable approach to rendering realistic dynamic spatial audio for VR and immersive media applications.",
+    "paper_abstract_zh": "",
+    "subjects": [
+      "Sound (cs.SD)"
+    ],
+    "update_time": "2026-02-09",
+    "paper_authors": "Ziyu Luo, Lin Chen, Qiang Qu, Xiaoming Chen, Yiran Shen",
+    "topic": [],
+    "category": []
+  }
+]
