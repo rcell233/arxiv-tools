@@ -239,16 +239,21 @@
   },
   {
     "paper_title": "DynFOA: Generating First-Order Ambisonics with Conditional Diffusion for Dynamic and Acoustically Complex 360-Degree Videos",
-    "paper_title_zh": "",
+    "paper_title_zh": "DynFOA: 基于条件扩散的动态和声学复杂360度视频一阶声场生成",
     "paper_id": "2602.06846",
     "paper_abstract": "Spatial audio is crucial for creating compelling immersive 360-degree video experiences. However, generating realistic spatial audio, such as first-order ambisonics (FOA), from 360-degree videos in complex acoustic scenes remains challenging. Existing methods often overlook the dynamic nature and acoustic complexity of 360-degree scenes, fail to fully account for dynamic sound sources, and neglect complex environmental effects such as occlusion, reflections, and reverberation, which are influenced by scene geometries and materials. We propose DynFOA, a framework based on dynamic acoustic perception and conditional diffusion, for generating high-fidelity FOA from 360-degree videos. DynFOA first performs visual processing via a video encoder, which detects and localizes multiple dynamic sound sources, estimates their depth and semantics, and reconstructs the scene geometry and materials using a 3D Gaussian Splatting. This reconstruction technique accurately models occlusion, reflections, and reverberation based on the geometries and materials of the reconstructed 3D scene and the listener's viewpoint. The audio encoder then captures the spatial motion and temporal 4D sound source trajectories to fine-tune the diffusion-based FOA generator. The fine-tuned FOA generator adjusts spatial cues in real time, ensuring consistent directional fidelity during listener head rotation and complex environmental changes. Extensive evaluations demonstrate that DynFOA consistently outperforms existing methods across metrics such as spatial accuracy, acoustic fidelity, and distribution matching, while also improving the user experience. Therefore, DynFOA provides a robust and scalable approach to rendering realistic dynamic spatial audio for VR and immersive media applications.",
-    "paper_abstract_zh": "",
+    "paper_abstract_zh": "空间音频对于创建引人入胜的沉浸式360度视频体验至关重要。然而，在复杂声学场景中从360度视频生成逼真的空间音频（如一阶声场FOA）仍然具有挑战性。现有方法往往忽视了360度场景的动态特性和声学复杂性，未能充分考虑动态声源，并且忽略了由场景几何形状和材料影响的复杂环境效应，如遮挡、反射和混响。我们提出了DynFOA，这是一个基于动态声学感知和条件扩散的框架，用于从360度视频生成高保真FOA。DynFOA首先通过视频编码器进行视觉处理，该编码器检测并定位多个动态声源，估计它们的深度和语义，并使用3D高斯飞溅技术重建场景几何形状和材料。这种重建技术基于重建的3D场景几何形状和材料以及听众视角，准确建模了遮挡、反射和混响。随后，音频编码器捕获空间运动和时间4D声源轨迹，以微调基于扩散的FOA生成器。微调后的FOA生成器实时调整空间线索，确保在听众头部旋转和复杂环境变化过程中保持一致的保真度。大量评估表明，DynFOA在空间准确性、声学保真度和分布匹配等指标上始终优于现有方法，同时提升了用户体验。因此，DynFOA为VR和沉浸式媒体应用中渲染逼真的动态空间音频提供了一种稳健且可扩展的方法。",
     "subjects": [
       "Sound (cs.SD)"
     ],
     "update_time": "2026-02-09",
     "paper_authors": "Ziyu Luo, Lin Chen, Qiang Qu, Xiaoming Chen, Yiran Shen",
-    "topic": [],
-    "category": []
+    "topic": [
+      "Audio Representation Learning",
+      "Other"
+    ],
+    "category": [
+      "Image&Video"
+    ]
   }
 ]
